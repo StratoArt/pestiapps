@@ -1,0 +1,30 @@
+﻿committee,moa_code,target_site,group_name,chemical_or_biological_group,active_ingredients,frac_group,resistance_risk
+FRAC,A1,RNA polymerase I,PA-fungicides (PhenylAmides),acylalanines,benalaxyl; benalaxyl-M; furalaxyl; metalaxyl; metalaxyl-M,4,High
+FRAC,A2,adenosine deaminase,hydroxy-(2-amino-) pyrimidines,hydroxy-(2-amino-) pyrimidines,bupirimate; dimethirimol; ethirimol,8,Medium
+FRAC,A3,DNA/RNA synthesis (proposed),heteroaromatics,isoxazoles; isothiazolones; imino-tosyl pyrimidinone,hymexazole; octhilinone; flumetylsulforim,32,Unknown
+FRAC,A4,DNA topoisomerase type II (gyrase),carboxylic acids,carboxylic acids,oxolinic acid,31,Unknown
+FRAC,A5,dihydroorotate dehydrogenase (DHODH),DHODHI-fungicides,phenyl-propanol; dihydroisoquinoline; quinoline amide,ipflufenoquin; quinofumelin; feneptamidoquin,52,Medium to High
+FRAC,A6,class II histone deacetylase,HDAC inhibitors,oxadiazol benzamides,flufenoxadiazam,56,Medium
+FRAC,B1,tubulin polymerization,MBC-fungicides,benzimidazoles; thiophanates,benomyl; carbendazim; fuberidazole; thiabendazole; thiophanate; thiophanate-methyl,1,High
+FRAC,B2,tubulin polymerization,N-phenyl carbamates,N-phenyl carbamates,diethofencarb,10,High
+FRAC,B3,tubulin polymerization,benzamides,toluamides; ethylamino-thiazole-carboxamide,zoxamide; ethaboxam,22,Low to Medium
+FRAC,B4,cell division (unknown site),phenylureas,phenylureas,pencycuron,20,Unknown
+FRAC,B5,delocalisation of spectrin-like proteins,benzamides,pyridinylmethyl-benzamides,fluopicolide; fluopimomide,43,Medium
+FRAC,B6,actin/myosin/fimbrin function,cyanoacrylates,aminocyanoacrylates,phenamacril,47,Medium to High
+FRAC,B7,tubulin dynamics modulator,pyridazine,pyridazine,pyridachlometyl,53,High
+FRAC,C1,complex I NADH oxidoreductase,pyrimidinamines / MET1,pyrimidinamines; pyrazole carboxamides; quinazoline,diflumetorim; tolfenpyrad; fenpyroximate; fenazaquin,39,Unknown
+FRAC,C2,complex II succinate dehydrogenase,SDHI-fungicides,phenyl-benzamides; pyrazole-4-carboxamides; pyridine-carboxamides,flutolanil; isofetamid; fluopyram; fluxapyroxad; boscalid; bixafen,7,Medium to High
+FRAC,C3,complex III cytochrome bc1 Qo site,QoI-fungicides,methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides,azoxystrobin; pyraclostrobin; kresoxim-methyl; trifloxystrobin; famoxadone,11,High
+FRAC,C4,complex III cytochrome bc1 Qi site,QiI-fungicides,cyano-imidazole; sulfamoyl-triazole; picolinamides,cyazofamid; amisulbrom; fenpicoxamid,21,Medium to High
+FRAC,C5,uncouplers of oxidative phosphorylation,dinitrophenyl-crotonates,"dinitrophenyl-crotonates; 2,6-dinitro-anilines",binapacryl; meptyldinocap; dinocap; fluazinam,29,Low
+FRAC,C6,ATP synthase,organo tin compounds,tri-phenyl tin compounds,fentin acetate; fentin chloride; fentin hydroxide,30,Low to Medium
+FRAC,C7,ATP transport,thiophene-carboxamides,thiophene-carboxamides,silthiofam,38,Low
+FRAC,C8,complex III cytochrome bc1 Qi and Qo site,QioSI fungicide,triazolo-pyrimidylamine,ametoctradin,45,Medium to High
+FRAC,D1,methionine biosynthesis,AP-fungicides,anilino-pyrimidines,cyprodinil; mepanipyrim; pyrimethanil,9,Medium
+FRAC,D2,"protein synthesis, ribosome termination",enopyranuronic acid antibiotic,enopyranuronic acid antibiotic,blasticidin-S,23,Low to Medium
+FRAC,D3,"protein synthesis, ribosome initiation",hexopyranosyl antibiotic,hexopyranosyl antibiotic,kasugamycin,24,Medium
+FRAC,D4,"protein synthesis, ribosome initiation",glucopyranosyl antibiotic,glucopyranosyl antibiotic,streptomycin,25,High
+FRAC,D5,"protein synthesis, ribosome elongation",tetracycline,tetracycline antibiotic,oxytetracycline,41,High
+FRAC,D6,leucyl-tRNA synthetase,benzoxaboroles,benzoxaboroles,tavaborole,54,Low
+FRAC,E1,"signal transduction, mechanism unknown",aza-naphthalenes,aryloxyquinoline; quinazolinone,quinoxyfen; proquinazid,13,Medium
+FRAC,E2,MAP/Histidine-Kinase in osmotic signal transduction,PP-fungicides,phenylpyrroles,fenpiclonil; fludioxonil,12,Medium to High

@@ -1,20 +1,53 @@
-const state={data:null,query:'',deferredPrompt:null};
-const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];
-async function loadData(){state.data=await fetch('data/demo.json').then(r=>r.json());}
-function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
-function go(route){location.hash=route;}
-function activate(route){$$('.view').forEach(v=>v.classList.toggle('active',v.id===route));$$('.bottom-nav a').forEach(a=>a.classList.toggle('active',a.dataset.route===route));window.scrollTo({top:0,behavior:'instant'});if(route==='pests')renderPests();if(route==='diseases')renderDiseases();if(route==='weeds')renderWeeds();if(route==='hosts')renderHosts();if(route==='moa')renderMoa();if(route==='detail')renderDetail();}
-function header(title,sub=''){return `<div class="section-head"><button class="back-btn" data-route="home">←</button><div><span class="eyebrow">OPT EXPLORER</span><h2>${esc(title)}</h2><p>${esc(sub)}</p></div></div>`}
-function renderPests(){const items=state.data.pests.filter(x=>JSON.stringify(x).toLowerCase().includes(state.query.toLowerCase()));$('#listView').innerHTML=header('Hama','Serangga, tungau, nematoda dan OPT terkait.')+`<div class="filter-row"><button class="chip active">Semua</button><button class="chip">Lepidoptera</button><button class="chip">Hemiptera</button><button class="chip">Thysanoptera</button></div><div class="list">${items.map(itemCard).join('')}</div>`;wireCards();}
-function itemCard(x){return `<button class="item-card" data-id="${esc(x.id)}"><span class="item-thumb"><img src="${esc(x.image||'assets/icons/icon.svg')}" alt=""></span><span><h3>${esc(x.name)}</h3><p>${esc(x.common)} · ${esc(x.group||'')}</p></span><span class="arrow">›</span></button>`}
-function renderDiseases(){const items=state.data.diseases;$('#diseaseList').innerHTML=header('Penyakit','Patogen, gejala dan inang.')+`<div class="list">${items.map(x=>`<button class="item-card" data-id="${x.id}"><span class="item-thumb">🍄</span><span><h3>${esc(x.name)}</h3><p>${esc(x.common)} · ${esc(x.group)}</p></span><span class="arrow">›</span></button>`).join('')}</div>`;wireCards();}
-function renderWeeds(){const items=state.data.weeds;$('#weedList').innerHTML=header('Gulma','Grass, broadleaf, sedge dan lainnya.')+`<div class="filter-row"><button class="chip active">Semua</button><button class="chip">Grass</button><button class="chip">Broadleaf</button><button class="chip">Sedge</button></div><div class="list">${items.map(x=>`<button class="item-card" data-id="${x.id}"><span class="item-thumb">🌿</span><span><h3>${esc(x.name)}</h3><p>${esc(x.common)} · ${esc(x.group)}</p></span><span class="arrow">›</span></button>`).join('')}</div>`;wireCards();}
-function renderHosts(){const items=state.data.hosts;$('#hostList').innerHTML=header('Tanaman & Inang','Lihat OPT yang terkait dengan setiap tanaman.')+`<div class="list">${items.map(x=>`<button class="item-card" data-id="${x.id}"><span class="item-thumb" style="font-size:30px">${x.emoji}</span><span><h3>${esc(x.name)}</h3><p><i>${esc(x.latin)}</i> · ${x.pests.length+x.diseases.length} OPT</p></span><span class="arrow">›</span></button>`).join('')}</div>`;wireCards();}
-function renderMoa(){const items=state.data.moa;$('#moaList').innerHTML=header('MoA Explorer','IRAC · FRAC · HRAC — klasifikasi mekanisme aksi.')+`<div class="filter-row"><button class="chip active">Semua</button><button class="chip">IRAC</button><button class="chip">FRAC</button><button class="chip">HRAC</button></div><div class="list">${items.map(x=>`<button class="item-card" data-moa="${esc(x.group)}"><span class="item-thumb" style="font-weight:900;color:var(--green)">${esc(x.committee)}<br>${esc(x.group)}</span><span><h3>${esc(x.name)}</h3><p>${esc(x.class)} · ${esc(x.target)}</p></span><span class="arrow">›</span></button>`).join('')}</div>`;$$('[data-moa]').forEach(b=>b.onclick=()=>{alert(`Group ${b.dataset.moa}: detail MoA akan terhubung ke master database resmi pada tahap data final.`)});}
-function renderDetail(){const id=sessionStorage.getItem('opt-detail');const x=state.data.pests.find(p=>p.id===id)||state.data.diseases.find(p=>p.id===id)||state.data.weeds.find(p=>p.id===id);if(!x){go('pests');return}$('#detailView').innerHTML=`<div class="detail-card"><div class="detail-top"><button class="back-btn" data-route="pests">← Kembali</button><div class="detail-illustration"><img src="${esc(x.image||'assets/icons/icon.svg')}" alt="Ilustrasi ${esc(x.name)}"></div><span class="tag">${esc(x.group||'OPT')}</span><h2>${esc(x.name)}</h2><div class="latin">${esc(x.common||'')}</div></div><div class="detail-body"><div class="detail-section"><h4>Informasi</h4><p><b>ID:</b> ${esc(x.id)}<br><b>Kelompok:</b> ${esc(x.group||'')}<br><b>Family:</b> ${esc(x.family||'—')}</p></div>${x.hosts?`<div class="detail-section"><h4>Tanaman Inang</h4><div class="host-pills">${x.hosts.map(h=>`<span class="host-pill">🌱 ${esc(h)}</span>`).join('')}</div></div>`:''}${x.symptoms?`<div class="detail-section"><h4>Gejala</h4><ul>${x.symptoms.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div>`:''}<div class="detail-section"><h4>MoA terkait</h4><div class="host-pills">${(x.moa||[]).map(m=>`<span class="host-pill">🧬 ${esc(m)}</span>`).join('')}</div></div></div></div>`;$$('[data-route]').forEach(b=>b.onclick=()=>go(b.dataset.route));}
-function wireCards(){$$('.item-card').forEach(b=>b.onclick=()=>{sessionStorage.setItem('opt-detail',b.dataset.id);go('detail')});$$('[data-route]').forEach(b=>b.onclick=()=>go(b.dataset.route));}
-function analyze(){const results=state.data.pests.slice(0,3);$('#scanResults').hidden=false;$('#scanResults').innerHTML=`<h3>Hasil Analisis</h3>${results.map((x,i)=>{const c=[87,21,8][i];return `<div class="result-row"><span class="rank">${i+1}</span><div><b>${esc(x.name)}</b><small style="display:block;color:var(--muted)">${c>=60?'Kemungkinan tinggi':c>=20?'Kemungkinan sedang':'Kemungkinan rendah'}</small><div class="bar"><span style="width:${c}%"></span></div></div><span class="confidence">${c}%</span></div>`}).join('')}`}
-function initScan(){$('#photoInput').addEventListener('change',e=>{const f=e.target.files?.[0];if(!f)return;const url=URL.createObjectURL(f);$('#previewImg').src=url;$('#previewWrap').hidden=false;$('#scanResults').hidden=true});$('#analyzeBtn').onclick=analyze;}
-function search(){state.query=$('#globalSearch').value.trim();go('pests');}
-function init(){loadData().then(()=>{const count=state.data.pests.length+state.data.diseases.length+state.data.weeds.length;$('#optCount').textContent=count+'+ demo';$('#aiCount').textContent=state.data.moa.reduce((a,x)=>a+x.ais.length,0)+'+';activate(location.hash.slice(1)||'home');});window.addEventListener('hashchange',()=>activate(location.hash.slice(1)||'home'));$('#searchSubmit').onclick=search;$('#globalSearch').addEventListener('keydown',e=>{if(e.key==='Enter')search()});initScan();$('#menuBtn').onclick=()=>$('#sideMenu').classList.add('open');$('#moreNav').onclick=e=>{e.preventDefault();$('#sideMenu').classList.add('open')};$('#closeMenu').onclick=()=>$('#sideMenu').classList.remove('open');$$('#sideMenu a').forEach(a=>a.onclick=()=>$('#sideMenu').classList.remove('open'));$('#themeBtn').onclick=()=>document.documentElement.classList.toggle('dark');$('#resetBtn').onclick=()=>location.reload();$('#aboutBtn').onclick=()=>alert('OPT Explorer — prototype mobile-first PWA. Data demo saat ini akan diganti master IRAC/FRAC/HRAC dan taxonomy OPT hasil scraping/normalisasi.');window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();state.deferredPrompt=e;$('#installBtn').hidden=false});$('#installBtn').onclick=async()=>{if(state.deferredPrompt){state.deferredPrompt.prompt();await state.deferredPrompt.userChoice;state.deferredPrompt=null;$('#installBtn').hidden=true}};if('serviceWorker' in navigator)navigator.serviceWorker.register('service-worker.js').catch(console.warn);}
-init();
+const state={committee:'IRAC',data:null,search:'',group:'ALL',deferredPrompt:null};
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
+const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
+
+async function load(){
+  const r=await fetch('data/moa_master_2026.json'); state.data=await r.json();
+  render();
+}
+function rows(){return state.data?.records?.[state.committee]||[]}
+function normalize(r){
+  if(state.committee==='IRAC') return {code:r[1],name:r[2],sub:r[3],chem:r[4],ai:splitAI(r[5]),cat:r[6]};
+  if(state.committee==='FRAC') return {code:r[1],name:r[2],sub:r[3],chem:r[4],ai:splitAI(r[5]),cat:r[6],risk:r[7]};
+  return {code:r[1],legacy:r[2],name:r[3],chem:r[4],ai:splitAI(r[5])};
+}
+function filtered(){
+ const q=state.search.toLowerCase();
+ return rows().map(normalize).filter(x=>{
+   const hay=[x.code,x.legacy,x.name,x.sub,x.chem,x.cat,...x.ai].filter(Boolean).join(' ').toLowerCase();
+   return (!q||hay.includes(q)) && (state.group==='ALL'||x.code===state.group);
+ });
+}
+function groups(){return [...new Set(rows().map(normalize).map(x=>x.code))].filter(Boolean)}
+function render(){
+  $('#committeeTitle').textContent=state.committee;
+  $('#committeeDesc').textContent=state.committee==='IRAC'?'Insecticide · Acaricide · Nematicide':state.committee==='FRAC'?'Fungicide resistance & mode of action':'Herbicide mode of action';
+  $('#count').textContent=rows().length;
+  $('#aiTotal').textContent=[...new Set(rows().flatMap(r=>{let x=normalize(r);return x.ai}))].length;
+  const gs=groups();
+  $('#groupFilters').innerHTML='<button class="chip active" data-group="ALL">Semua</button>'+gs.map(g=>`<button class="chip" data-group="${esc(g)}">${esc(g)}</button>`).join('');
+  $('#groupFilters').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;state.group=b.dataset.group;$$('.chip').forEach(x=>x.classList.toggle('active',x===b));renderList()});
+  renderList();
+}
+function renderList(){
+ const list=filtered(); $('#resultCount').textContent=list.length;
+ $('#cards').innerHTML=list.map((x,i)=>`<button class="moa-card" data-i="${i}"><div class="code">${esc(state.committee)} <strong>${esc(x.code)}</strong>${x.legacy?`<small>Legacy ${esc(x.legacy)}</small>`:''}</div><div class="moa-main"><h3>${esc(x.name)}</h3><p>${esc(x.chem||x.sub||'')}</p><div class="ai-row">${x.ai.slice(0,5).map(a=>`<span>${esc(a)}</span>`).join('')}${x.ai.length>5?`<span>+${x.ai.length-5}</span>`:''}</div></div><span class="arrow">›</span></button>`).join('')||'<div class="empty">Tidak ada data yang cocok.</div>';
+ $$('.moa-card').forEach(b=>b.addEventListener('click',()=>openDetail(list[+b.dataset.i])));
+}
+function openDetail(x){
+ $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet"><button class="close" id="closeDetail">×</button><div class="detail-code">${esc(state.committee)} <b>${esc(x.code)}</b>${x.legacy?` · Legacy ${esc(x.legacy)}`:''}</div><h2>${esc(x.name)}</h2>${x.sub?`<p class="muted">${esc(x.sub)}</p>`:''}<div class="detail-grid"><div><label>Target / proses</label><strong>${esc(x.name)}</strong></div><div><label>Kelas kimia</label><strong>${esc(x.chem||'—')}</strong></div>${x.cat?`<div><label>Kategori</label><strong>${esc(x.cat)}</strong></div>`:''}${x.risk?`<div><label>Resistance risk</label><strong>${esc(x.risk)}</strong></div>`:''}</div><h3>Active ingredients</h3><div class="ai-list">${x.ai.map(a=>`<span>${esc(a)}</span>`).join('')}</div><p class="source-note">Referensi klasifikasi resmi ${esc(state.committee)}. Selalu cek label dan registrasi lokal untuk penggunaan produk.</p></aside>`;
+ $('#detailBackdrop').addEventListener('click',closeDetail); $('#closeDetail').addEventListener('click',closeDetail); $('#detail').classList.add('show');
+}
+function closeDetail(){ $('#detail').classList.remove('show'); setTimeout(()=>$('#detail').innerHTML='',180); }
+function setCommittee(c){state.committee=c;state.group='ALL';state.search='';$('#search').value='';$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render();}
+
+$('#search').addEventListener('input',e=>{state.search=e.target.value;renderList()});
+$$('.tab').forEach(b=>b.addEventListener('click',()=>setCommittee(b.dataset.c)));
+$('#themeBtn').addEventListener('click',()=>document.documentElement.classList.toggle('dark'));
+$('#installBtn').addEventListener('click',async()=>{if(state.deferredPrompt){state.deferredPrompt.prompt();state.deferredPrompt=null}else alert('Gunakan menu Chrome → Tambahkan ke layar utama untuk memasang aplikasi.')});
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();state.deferredPrompt=e;$('#installBtn').hidden=false});
+window.addEventListener('appinstalled',()=>$('#installBtn').hidden=true);
+if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+load().catch(err=>{$('#cards').innerHTML='<div class="empty">Database gagal dimuat. Pastikan website dibuka melalui hosting/server, bukan file://.</div>';console.error(err)});

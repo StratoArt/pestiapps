@@ -1,0 +1,970 @@
+{
+  "version": "2026 snapshot",
+  "purpose": "OPT Explorer MoA reference data",
+  "sources": {
+    "IRAC": "https://irac-online.org/mode-of-action/",
+    "IRAC_classification": "https://irac-online.org/documents/moa-classification/",
+    "FRAC": "https://www.frac.info/publications",
+    "HRAC": "https://hracglobal.com/tools/2026-hrac-global-herbicide-moa-classification"
+  },
+  "records": {
+    "IRAC": [
+      [
+        "IRAC",
+        "1",
+        "Acetylcholinesterase (AChE) inhibitors",
+        "1A",
+        "Carbamates",
+        "Alanycarb; Aldicarb; Bendiocarb; Benfuracarb; Carbaryl; Carbofuran; Carbosulfan; Methiocarb; Methomyl; Oxamyl; Pirimicarb",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "1",
+        "Acetylcholinesterase (AChE) inhibitors",
+        "1B",
+        "Organophosphates",
+        "Acephate; Chlorpyrifos; Dimethoate; Fosthiazate; Malathion; Profenofos; Pirimiphos-methyl",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "2",
+        "GABA-gated chloride channel blockers",
+        "2A",
+        "Cyclodiene organochlorines",
+        "Chlordane; Endosulfan",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "2",
+        "GABA-gated chloride channel blockers",
+        "2B",
+        "Phenylpyrazoles (Fiproles)",
+        "Ethiprole; Fipronil",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "3",
+        "Sodium channel modulators",
+        "3A",
+        "Pyrethroids; Pyrethrins",
+        "Bifenthrin; Cyfluthrin; Cypermethrin; Deltamethrin; Esfenvalerate; Etofenprox; Lambda-cyhalothrin; Permethrin; Tefluthrin",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "4",
+        "nAChR competitive modulators",
+        "4A",
+        "Neonicotinoids",
+        "Acetamiprid; Clothianidin; Dinotefuran; Imidacloprid; Nitenpyram; Thiacloprid; Thiamethoxam",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "4",
+        "nAChR competitive modulators",
+        "4C",
+        "Sulfoximines",
+        "Sulfoxaflor",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "4",
+        "nAChR competitive modulators",
+        "4D",
+        "Butenolides",
+        "Flupyradifurone",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "5",
+        "nAChR allosteric modulators – Site I",
+        "5",
+        "Spinosyns",
+        "Spinetoram; Spinosad",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "6",
+        "Glutamate-gated chloride channel allosteric modulators",
+        "6",
+        "Avermectins; Milbemycins",
+        "Abamectin; Emamectin benzoate; Lepimectin; Milbemectin",
+        "Nerve and muscle action"
+      ],
+      [
+        "IRAC",
+        "7",
+        "Juvenile hormone receptor modulators",
+        "7A",
+        "Juvenile hormone analogues",
+        "Hydroprene; Kinoprene; Methoprene",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "7",
+        "Juvenile hormone receptor modulators",
+        "7B",
+        "Fenoxycarb",
+        "Fenoxycarb",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "7",
+        "Juvenile hormone receptor modulators",
+        "7C",
+        "Pyriproxyfen",
+        "Pyriproxyfen",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "8",
+        "Miscellaneous non-specific (multi-site) inhibitors",
+        "8A",
+        "Alkyl halides",
+        "1,3-Dichloropropene; Methyl bromide",
+        "Multi-site"
+      ],
+      [
+        "IRAC",
+        "9",
+        "Chordotonal organ TRPV channel modulators",
+        "9B",
+        "Pyridine azomethine derivatives",
+        "Pymetrozine; Pyrifluquinazon",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "9",
+        "Chordotonal organ TRPV channel modulators",
+        "9D",
+        "Pyropenes",
+        "Afidopyropen",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "10",
+        "Mite growth inhibitors affecting CHS1",
+        "10A",
+        "Mite growth inhibitors",
+        "Clofentezine; Diflovidazin; Hexythiazox",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "10",
+        "Mite growth inhibitors affecting CHS1",
+        "10B",
+        "Etoxazole",
+        "Etoxazole",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "11",
+        "Microbial disruptors of insect midgut membranes",
+        "11A",
+        "Bacillus thuringiensis",
+        "B.t. israelensis; B.t. aizawai; B.t. kurstaki; B.t. tenebrionis",
+        "Midgut"
+      ],
+      [
+        "IRAC",
+        "12",
+        "Inhibitors of mitochondrial ATP synthase",
+        "12A",
+        "Diafenthiuron",
+        "Diafenthiuron",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "12",
+        "Inhibitors of mitochondrial ATP synthase",
+        "12B",
+        "Organotin miticides",
+        "Azocyclotin; Cyhexatin; Fenbutatin oxide",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "12",
+        "Inhibitors of mitochondrial ATP synthase",
+        "12C",
+        "Propargite",
+        "Propargite",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "13",
+        "Uncouplers of oxidative phosphorylation via disruption of proton gradient",
+        "13",
+        "Pyrroles; Dinitrophenols",
+        "Chlorfenapyr; DNOC; Sulfluramid",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "14",
+        "nAChR channel blockers",
+        "14",
+        "Nereistoxin analogues",
+        "Bensultap; Cartap hydrochloride; Thiocyclam; Thiosultap-sodium",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "15",
+        "Inhibitors of chitin biosynthesis affecting CHS1",
+        "15",
+        "Benzoylureas",
+        "Bistrifluron; Chlorfluazuron; Diflubenzuron; Flufenoxuron; Hexaflumuron; Lufenuron; Novaluron; Teflubenzuron; Triflumuron",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "16",
+        "Inhibitors of chitin biosynthesis, type 1",
+        "16",
+        "Buprofezin",
+        "Buprofezin",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "17",
+        "Moulting disruptor, Dipteran",
+        "17",
+        "Cyromazine",
+        "Cyromazine",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "18",
+        "Ecdysone receptor agonists",
+        "18",
+        "Diacylhydrazines",
+        "Chromafenozide; Halofenozide; Methoxyfenozide; Tebufenozide",
+        "Growth regulation"
+      ],
+      [
+        "IRAC",
+        "19",
+        "Octopamine receptor agonists",
+        "19",
+        "Amitraz",
+        "Amitraz",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "20",
+        "Mitochondrial complex III electron transport inhibitors – Qo site",
+        "20A",
+        "Hydramethylnon",
+        "Hydramethylnon",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "20",
+        "Mitochondrial complex III electron transport inhibitors – Qo site",
+        "20B",
+        "Acequinocyl",
+        "Acequinocyl",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "20",
+        "Mitochondrial complex III electron transport inhibitors – Qo site",
+        "20C",
+        "Fluacrypyrim",
+        "Fluacrypyrim",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "20",
+        "Mitochondrial complex III electron transport inhibitors – Qo site",
+        "20D",
+        "Bifenazate",
+        "Bifenazate",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "21",
+        "Mitochondrial complex I electron transport inhibitors",
+        "21A",
+        "METI acaricides and insecticides",
+        "Fenazaquin; Fenpyroximate; Pyrimidifen; Pyridaben; Tebufenpyrad; Tolfenpyrad",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "21",
+        "Mitochondrial complex I electron transport inhibitors",
+        "21B",
+        "Rotenone",
+        "Rotenone",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "22",
+        "Voltage-dependent sodium channel blockers",
+        "22A",
+        "Oxadiazines",
+        "Indoxacarb",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "22",
+        "Voltage-dependent sodium channel blockers",
+        "22B",
+        "Semicarbazones",
+        "Metaflumizone",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "23",
+        "Inhibitors of acetyl-CoA carboxylase",
+        "23",
+        "Tetronic and Tetramic acid derivatives",
+        "Spirodiclofen; Spiromesifen; Spiropidion; Spirotetramat; Spidoxamat",
+        "Lipid synthesis; growth regulation"
+      ],
+      [
+        "IRAC",
+        "24",
+        "Mitochondrial complex IV electron transport inhibitors",
+        "24A",
+        "Phosphides",
+        "Aluminium phosphide; Calcium phosphide; Phosphine; Zinc phosphide",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "24",
+        "Mitochondrial complex IV electron transport inhibitors",
+        "24B",
+        "Cyanides",
+        "Calcium cyanide; Potassium cyanide; Sodium cyanide",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "25",
+        "Mitochondrial complex II electron transport inhibitors",
+        "25A",
+        "Beta-ketonitrile derivatives",
+        "Cyenopyrafen; Cyflumetofen",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "25",
+        "Mitochondrial complex II electron transport inhibitors",
+        "25B",
+        "Carboxanilides",
+        "Pyflubumide",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "28",
+        "Ryanodine receptor modulators",
+        "28",
+        "Diamides",
+        "Chlorantraniliprole; Cyantraniliprole; Cyclaniliprole; Flubendiamide; Tetraniliprole",
+        "Nerve and muscle action"
+      ],
+      [
+        "IRAC",
+        "29",
+        "Chordotonal organ nicotinamidase inhibitors",
+        "29",
+        "Flonicamid",
+        "Flonicamid",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "30",
+        "GABA-gated chloride channel allosteric modulators",
+        "30",
+        "Isoxazolines; Meta-diamides",
+        "Broflanilide; Fluxametamide; Isocycloseram",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "31",
+        "Baculoviruses",
+        "31",
+        "Granuloviruses; Nucleopolyhedroviruses",
+        "Cydia pomonella GV; Thaumatotibia leucotreta GV; Anticarsia gemmatalis MNPV; Helicoverpa armigera NPV",
+        "Midgut"
+      ],
+      [
+        "IRAC",
+        "32",
+        "nAChR allosteric modulators – Site II",
+        "32",
+        "GS-omega/kappa HXTX-Hv1a peptide",
+        "GS-omega/kappa HXTX-Hv1a peptide",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "33",
+        "Calcium-activated potassium channel (KCa2) modulators",
+        "33",
+        "Acynonapyr",
+        "Acynonapyr",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "34",
+        "Mitochondrial complex III electron transport inhibitors – Qi site",
+        "34",
+        "Flometoquin",
+        "Flometoquin",
+        "Energy metabolism"
+      ],
+      [
+        "IRAC",
+        "35",
+        "RNA interference mediated target suppressors",
+        "35",
+        "RNA",
+        "Ledprona; Vadescana",
+        "Protein / gene expression"
+      ],
+      [
+        "IRAC",
+        "36",
+        "Chordotonal organ modulators – undefined target site",
+        "36",
+        "Dimpyridaz",
+        "Dimpyridaz",
+        "Nerve action"
+      ],
+      [
+        "IRAC",
+        "37",
+        "Vesicle transport (V-ATPase) inhibitor",
+        "37",
+        "Oxazosulfyl",
+        "Oxazosulfyl",
+        "Cellular transport"
+      ],
+      [
+        "IRAC",
+        "UN",
+        "Unknown or uncertain mode of action",
+        "UN",
+        "Various",
+        "Azadirachtin; Bromopropylate; Benzoximate; Dicofol; Pyridalyl",
+        "Unknown / uncertain"
+      ]
+    ],
+    "FRAC": [
+      [
+        "FRAC",
+        "A1",
+        "RNA polymerase I",
+        "PA-fungicides (PhenylAmides)",
+        "acylalanines",
+        "benalaxyl; benalaxyl-M; furalaxyl; metalaxyl; metalaxyl-M",
+        "4",
+        "High"
+      ],
+      [
+        "FRAC",
+        "A2",
+        "adenosine deaminase",
+        "hydroxy-(2-amino-) pyrimidines",
+        "hydroxy-(2-amino-) pyrimidines",
+        "bupirimate; dimethirimol; ethirimol",
+        "8",
+        "Medium"
+      ],
+      [
+        "FRAC",
+        "A3",
+        "DNA/RNA synthesis (proposed)",
+        "heteroaromatics",
+        "isoxazoles; isothiazolones; imino-tosyl pyrimidinone",
+        "hymexazole; octhilinone; flumetylsulforim",
+        "32",
+        "Unknown"
+      ],
+      [
+        "FRAC",
+        "A4",
+        "DNA topoisomerase type II (gyrase)",
+        "carboxylic acids",
+        "carboxylic acids",
+        "oxolinic acid",
+        "31",
+        "Unknown"
+      ],
+      [
+        "FRAC",
+        "A5",
+        "dihydroorotate dehydrogenase (DHODH)",
+        "DHODHI-fungicides",
+        "phenyl-propanol; dihydroisoquinoline; quinoline amide",
+        "ipflufenoquin; quinofumelin; feneptamidoquin",
+        "52",
+        "Medium to High"
+      ],
+      [
+        "FRAC",
+        "A6",
+        "class II histone deacetylase",
+        "HDAC inhibitors",
+        "oxadiazol benzamides",
+        "flufenoxadiazam",
+        "56",
+        "Medium"
+      ],
+      [
+        "FRAC",
+        "B1",
+        "tubulin polymerization",
+        "MBC-fungicides",
+        "benzimidazoles; thiophanates",
+        "benomyl; carbendazim; fuberidazole; thiabendazole; thiophanate; thiophanate-methyl",
+        "1",
+        "High"
+      ],
+      [
+        "FRAC",
+        "B2",
+        "tubulin polymerization",
+        "N-phenyl carbamates",
+        "N-phenyl carbamates",
+        "diethofencarb",
+        "10",
+        "High"
+      ],
+      [
+        "FRAC",
+        "B3",
+        "tubulin polymerization",
+        "benzamides",
+        "toluamides; ethylamino-thiazole-carboxamide",
+        "zoxamide; ethaboxam",
+        "22",
+        "Low to Medium"
+      ],
+      [
+        "FRAC",
+        "B4",
+        "cell division (unknown site)",
+        "phenylureas",
+        "phenylureas",
+        "pencycuron",
+        "20",
+        "Unknown"
+      ],
+      [
+        "FRAC",
+        "B5",
+        "delocalisation of spectrin-like proteins",
+        "benzamides",
+        "pyridinylmethyl-benzamides",
+        "fluopicolide; fluopimomide",
+        "43",
+        "Medium"
+      ],
+      [
+        "FRAC",
+        "B6",
+        "actin/myosin/fimbrin function",
+        "cyanoacrylates",
+        "aminocyanoacrylates",
+        "phenamacril",
+        "47",
+        "Medium to High"
+      ],
+      [
+        "FRAC",
+        "B7",
+        "tubulin dynamics modulator",
+        "pyridazine",
+        "pyridazine",
+        "pyridachlometyl",
+        "53",
+        "High"
+      ],
+      [
+        "FRAC",
+        "C1",
+        "complex I NADH oxidoreductase",
+        "pyrimidinamines / MET1",
+        "pyrimidinamines; pyrazole carboxamides; quinazoline",
+        "diflumetorim; tolfenpyrad; fenpyroximate; fenazaquin",
+        "39",
+        "Unknown"
+      ],
+      [
+        "FRAC",
+        "C2",
+        "complex II succinate dehydrogenase",
+        "SDHI-fungicides",
+        "phenyl-benzamides; pyrazole-4-carboxamides; pyridine-carboxamides",
+        "flutolanil; isofetamid; fluopyram; fluxapyroxad; boscalid; bixafen",
+        "7",
+        "Medium to High"
+      ],
+      [
+        "FRAC",
+        "C3",
+        "complex III cytochrome bc1 Qo site",
+        "QoI-fungicides",
+        "methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides",
+        "azoxystrobin; pyraclostrobin; kresoxim-methyl; trifloxystrobin; famoxadone",
+        "11",
+        "High"
+      ],
+      [
+        "FRAC",
+        "C4",
+        "complex III cytochrome bc1 Qi site",
+        "QiI-fungicides",
+        "cyano-imidazole; sulfamoyl-triazole; picolinamides",
+        "cyazofamid; amisulbrom; fenpicoxamid",
+        "21",
+        "Medium to High"
+      ],
+      [
+        "FRAC",
+        "C5",
+        "uncouplers of oxidative phosphorylation",
+        "dinitrophenyl-crotonates",
+        "dinitrophenyl-crotonates; 2,6-dinitro-anilines",
+        "binapacryl; meptyldinocap; dinocap; fluazinam",
+        "29",
+        "Low"
+      ],
+      [
+        "FRAC",
+        "C6",
+        "ATP synthase",
+        "organo tin compounds",
+        "tri-phenyl tin compounds",
+        "fentin acetate; fentin chloride; fentin hydroxide",
+        "30",
+        "Low to Medium"
+      ],
+      [
+        "FRAC",
+        "C7",
+        "ATP transport",
+        "thiophene-carboxamides",
+        "thiophene-carboxamides",
+        "silthiofam",
+        "38",
+        "Low"
+      ],
+      [
+        "FRAC",
+        "C8",
+        "complex III cytochrome bc1 Qi and Qo site",
+        "QioSI fungicide",
+        "triazolo-pyrimidylamine",
+        "ametoctradin",
+        "45",
+        "Medium to High"
+      ],
+      [
+        "FRAC",
+        "D1",
+        "methionine biosynthesis",
+        "AP-fungicides",
+        "anilino-pyrimidines",
+        "cyprodinil; mepanipyrim; pyrimethanil",
+        "9",
+        "Medium"
+      ],
+      [
+        "FRAC",
+        "D2",
+        "protein synthesis, ribosome termination",
+        "enopyranuronic acid antibiotic",
+        "enopyranuronic acid antibiotic",
+        "blasticidin-S",
+        "23",
+        "Low to Medium"
+      ],
+      [
+        "FRAC",
+        "D3",
+        "protein synthesis, ribosome initiation",
+        "hexopyranosyl antibiotic",
+        "hexopyranosyl antibiotic",
+        "kasugamycin",
+        "24",
+        "Medium"
+      ],
+      [
+        "FRAC",
+        "D4",
+        "protein synthesis, ribosome initiation",
+        "glucopyranosyl antibiotic",
+        "glucopyranosyl antibiotic",
+        "streptomycin",
+        "25",
+        "High"
+      ],
+      [
+        "FRAC",
+        "D5",
+        "protein synthesis, ribosome elongation",
+        "tetracycline",
+        "tetracycline antibiotic",
+        "oxytetracycline",
+        "41",
+        "High"
+      ],
+      [
+        "FRAC",
+        "D6",
+        "leucyl-tRNA synthetase",
+        "benzoxaboroles",
+        "benzoxaboroles",
+        "tavaborole",
+        "54",
+        "Low"
+      ],
+      [
+        "FRAC",
+        "E1",
+        "signal transduction, mechanism unknown",
+        "aza-naphthalenes",
+        "aryloxyquinoline; quinazolinone",
+        "quinoxyfen; proquinazid",
+        "13",
+        "Medium"
+      ],
+      [
+        "FRAC",
+        "E2",
+        "MAP/Histidine-Kinase in osmotic signal transduction",
+        "PP-fungicides",
+        "phenylpyrroles",
+        "fenpiclonil; fludioxonil",
+        "12",
+        "Medium to High"
+      ]
+    ],
+    "HRAC": [
+      [
+        "HRAC",
+        "1",
+        "A",
+        "Inhibition of Acetyl CoA Carboxylase (ACCase)",
+        "Cyclohexanediones; Aryloxyphenoxypropionates",
+        "clethodim; sethoxydim; pinoxaden; haloxyfop-methyl; fenoxaprop-ethyl; cyhalofop-butyl"
+      ],
+      [
+        "HRAC",
+        "2",
+        "B",
+        "Inhibition of Acetolactate Synthase (ALS)",
+        "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones",
+        "imazamox; imazapyr; imazethapyr; imazosulfuron; chlorsulfuron; nicosulfuron; metsulfuron-methyl; penoxsulam; pyroxsulam; flucarbazone-Na"
+      ],
+      [
+        "HRAC",
+        "3",
+        "K1",
+        "Inhibition of Microtubule Assembly / α-Tubulin",
+        "Dinitroanilines; Pyridines; Phosphoroamidates",
+        "pendimethalin; trifluralin; prodiamine; dithiopyr; butamifos"
+      ],
+      [
+        "HRAC",
+        "4",
+        "O",
+        "Auxin Mimics",
+        "Pyridyloxycarboxylates; 6-Chloropicolinates; Phenoxycarboxylates; Benzoates",
+        "fluroxypyr; triclopyr; aminopyralid; 2,4-D; dicamba; clopyralid; picloram; quinclorac"
+      ],
+      [
+        "HRAC",
+        "5",
+        "C1,2",
+        "Inhibition of Photosynthesis at PS II – D1 Serine 264 binders",
+        "Triazines; Ureas; Uracils; Phenylcarbamates; Amides; Triazinones",
+        "prometryne; simazine; atrazine; isoproturon; diuron; linuron; metribuzin; propanil"
+      ],
+      [
+        "HRAC",
+        "6",
+        "C3",
+        "Inhibition of Photosynthesis at PS II – D1 Histidine 215 binders",
+        "Nitriles",
+        "bromoxynil; ioxynil"
+      ],
+      [
+        "HRAC",
+        "9",
+        "G",
+        "Inhibition of EPSPS",
+        "Glycines",
+        "glyphosate"
+      ],
+      [
+        "HRAC",
+        "10",
+        "H",
+        "Inhibition of Glutamine Synthetase (GS)",
+        "Phosphinic acids",
+        "glufosinate-ammonium"
+      ],
+      [
+        "HRAC",
+        "12",
+        "F1",
+        "Inhibition of Phytoene Desaturase (PDS)",
+        "Diphenyl heterocycles; N-Phenyl heterocycles",
+        "norflurazon; fluridone; diflufenican; flurochloridone"
+      ],
+      [
+        "HRAC",
+        "13",
+        "F4",
+        "Inhibition of Deoxy-D-Xylulose Phosphate Synthase (DXPS)",
+        "Pyrimidinyl / related",
+        "cyclopyrimorate"
+      ],
+      [
+        "HRAC",
+        "14",
+        "E",
+        "Inhibition of Protoporphyrinogen Oxidase (PPO)",
+        "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones",
+        "oxyfluorfen; acifluorfen; fomesafen; flumioxazin; carfentrazone-ethyl; sulfentrazone; saflufenacil; tiafenacil"
+      ],
+      [
+        "HRAC",
+        "15",
+        "K3",
+        "Inhibition of Very Long-Chain Fatty Acid Synthesis (VLCFA)",
+        "α-Chloroacetamides; Thiocarbamates; α-Oxyacetamides; α-Thioacetamides",
+        "acetochlor; alachlor; metolachlor; pretilachlor; butachlor; dimethenamid; thiobencarb; pyroxasulfone"
+      ],
+      [
+        "HRAC",
+        "18",
+        "I",
+        "Inhibition of Dihydropteroate Synthase (DHPS)",
+        "Carbamates",
+        "asulam"
+      ],
+      [
+        "HRAC",
+        "19",
+        "P",
+        "Auxin Transport Inhibitors",
+        "Arylcarboxylates",
+        "diflufenzopyr"
+      ],
+      [
+        "HRAC",
+        "22",
+        "D",
+        "PS I Electron Diversion",
+        "Pyridiniums",
+        "diquat; paraquat"
+      ],
+      [
+        "HRAC",
+        "23",
+        "K2",
+        "Microtubule Interference – Unclear Site of Action",
+        "Benzamides; Carbamates",
+        "propyzamide; pronamide; carbetamide; chlorpropham"
+      ],
+      [
+        "HRAC",
+        "27",
+        "F2",
+        "Inhibition of Hydroxyphenyl Pyruvate Dioxygenase (HPPD)",
+        "Triketones; Pyrazoles; Nitriles",
+        "topramezone; mesotrione; tembotrione; sulcotrione; isoxaflutole; benzofenap"
+      ],
+      [
+        "HRAC",
+        "28",
+        "none",
+        "Inhibition of Dihydroorotate Dehydrogenase (DHODH)",
+        "Pyrimidine carboxamides / related",
+        "tetflupyrolimet"
+      ],
+      [
+        "HRAC",
+        "29",
+        "L",
+        "Inhibition of Cellulose Synthesis",
+        "Benzonitriles; Indaziflam / related",
+        "dichlobenil; indaziflam; isoxaben"
+      ],
+      [
+        "HRAC",
+        "30",
+        "Q",
+        "Inhibition of Fatty Acid Thioesterase (FAT)",
+        "Benzyl ethers; Pyridines",
+        "cinmethylin; methiozolin"
+      ],
+      [
+        "HRAC",
+        "32",
+        "S",
+        "Inhibition of Solanesyl Diphosphate Synthase (SDPS)",
+        "Benzobicyclon / related",
+        "benzobicyclon; cyclopyrimorate"
+      ],
+      [
+        "HRAC",
+        "33",
+        "T",
+        "Inhibition of Homogentisate Solanesyltransferase (HST)",
+        "Isoxazolidinones / related",
+        "bixlozone; clomazone"
+      ],
+      [
+        "HRAC",
+        "Ø",
+        "Z",
+        "Unknown Mode of Action",
+        "Unknown / inconclusive",
+        "aclonifen; MSMA"
+      ]
+    ]
+  },
+  "note": "Initial structured import/snapshot. It is a working reference dataset; local registration and label directions remain authoritative."
+}

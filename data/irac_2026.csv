@@ -1,0 +1,54 @@
+﻿committee,group,mode_of_action,subgroup,chemical_class,active_ingredients,physiology_category
+IRAC,1,Acetylcholinesterase (AChE) inhibitors,1A,Carbamates,Alanycarb; Aldicarb; Bendiocarb; Benfuracarb; Carbaryl; Carbofuran; Carbosulfan; Methiocarb; Methomyl; Oxamyl; Pirimicarb,Nerve action
+IRAC,1,Acetylcholinesterase (AChE) inhibitors,1B,Organophosphates,Acephate; Chlorpyrifos; Dimethoate; Fosthiazate; Malathion; Profenofos; Pirimiphos-methyl,Nerve action
+IRAC,2,GABA-gated chloride channel blockers,2A,Cyclodiene organochlorines,Chlordane; Endosulfan,Nerve action
+IRAC,2,GABA-gated chloride channel blockers,2B,Phenylpyrazoles (Fiproles),Ethiprole; Fipronil,Nerve action
+IRAC,3,Sodium channel modulators,3A,Pyrethroids; Pyrethrins,Bifenthrin; Cyfluthrin; Cypermethrin; Deltamethrin; Esfenvalerate; Etofenprox; Lambda-cyhalothrin; Permethrin; Tefluthrin,Nerve action
+IRAC,4,nAChR competitive modulators,4A,Neonicotinoids,Acetamiprid; Clothianidin; Dinotefuran; Imidacloprid; Nitenpyram; Thiacloprid; Thiamethoxam,Nerve action
+IRAC,4,nAChR competitive modulators,4C,Sulfoximines,Sulfoxaflor,Nerve action
+IRAC,4,nAChR competitive modulators,4D,Butenolides,Flupyradifurone,Nerve action
+IRAC,5,nAChR allosteric modulators – Site I,5,Spinosyns,Spinetoram; Spinosad,Nerve action
+IRAC,6,Glutamate-gated chloride channel allosteric modulators,6,Avermectins; Milbemycins,Abamectin; Emamectin benzoate; Lepimectin; Milbemectin,Nerve and muscle action
+IRAC,7,Juvenile hormone receptor modulators,7A,Juvenile hormone analogues,Hydroprene; Kinoprene; Methoprene,Growth regulation
+IRAC,7,Juvenile hormone receptor modulators,7B,Fenoxycarb,Fenoxycarb,Growth regulation
+IRAC,7,Juvenile hormone receptor modulators,7C,Pyriproxyfen,Pyriproxyfen,Growth regulation
+IRAC,8,Miscellaneous non-specific (multi-site) inhibitors,8A,Alkyl halides,"1,3-Dichloropropene; Methyl bromide",Multi-site
+IRAC,9,Chordotonal organ TRPV channel modulators,9B,Pyridine azomethine derivatives,Pymetrozine; Pyrifluquinazon,Nerve action
+IRAC,9,Chordotonal organ TRPV channel modulators,9D,Pyropenes,Afidopyropen,Nerve action
+IRAC,10,Mite growth inhibitors affecting CHS1,10A,Mite growth inhibitors,Clofentezine; Diflovidazin; Hexythiazox,Growth regulation
+IRAC,10,Mite growth inhibitors affecting CHS1,10B,Etoxazole,Etoxazole,Growth regulation
+IRAC,11,Microbial disruptors of insect midgut membranes,11A,Bacillus thuringiensis,B.t. israelensis; B.t. aizawai; B.t. kurstaki; B.t. tenebrionis,Midgut
+IRAC,12,Inhibitors of mitochondrial ATP synthase,12A,Diafenthiuron,Diafenthiuron,Energy metabolism
+IRAC,12,Inhibitors of mitochondrial ATP synthase,12B,Organotin miticides,Azocyclotin; Cyhexatin; Fenbutatin oxide,Energy metabolism
+IRAC,12,Inhibitors of mitochondrial ATP synthase,12C,Propargite,Propargite,Energy metabolism
+IRAC,13,Uncouplers of oxidative phosphorylation via disruption of proton gradient,13,Pyrroles; Dinitrophenols,Chlorfenapyr; DNOC; Sulfluramid,Energy metabolism
+IRAC,14,nAChR channel blockers,14,Nereistoxin analogues,Bensultap; Cartap hydrochloride; Thiocyclam; Thiosultap-sodium,Nerve action
+IRAC,15,Inhibitors of chitin biosynthesis affecting CHS1,15,Benzoylureas,Bistrifluron; Chlorfluazuron; Diflubenzuron; Flufenoxuron; Hexaflumuron; Lufenuron; Novaluron; Teflubenzuron; Triflumuron,Growth regulation
+IRAC,16,"Inhibitors of chitin biosynthesis, type 1",16,Buprofezin,Buprofezin,Growth regulation
+IRAC,17,"Moulting disruptor, Dipteran",17,Cyromazine,Cyromazine,Growth regulation
+IRAC,18,Ecdysone receptor agonists,18,Diacylhydrazines,Chromafenozide; Halofenozide; Methoxyfenozide; Tebufenozide,Growth regulation
+IRAC,19,Octopamine receptor agonists,19,Amitraz,Amitraz,Nerve action
+IRAC,20,Mitochondrial complex III electron transport inhibitors – Qo site,20A,Hydramethylnon,Hydramethylnon,Energy metabolism
+IRAC,20,Mitochondrial complex III electron transport inhibitors – Qo site,20B,Acequinocyl,Acequinocyl,Energy metabolism
+IRAC,20,Mitochondrial complex III electron transport inhibitors – Qo site,20C,Fluacrypyrim,Fluacrypyrim,Energy metabolism
+IRAC,20,Mitochondrial complex III electron transport inhibitors – Qo site,20D,Bifenazate,Bifenazate,Energy metabolism
+IRAC,21,Mitochondrial complex I electron transport inhibitors,21A,METI acaricides and insecticides,Fenazaquin; Fenpyroximate; Pyrimidifen; Pyridaben; Tebufenpyrad; Tolfenpyrad,Energy metabolism
+IRAC,21,Mitochondrial complex I electron transport inhibitors,21B,Rotenone,Rotenone,Energy metabolism
+IRAC,22,Voltage-dependent sodium channel blockers,22A,Oxadiazines,Indoxacarb,Nerve action
+IRAC,22,Voltage-dependent sodium channel blockers,22B,Semicarbazones,Metaflumizone,Nerve action
+IRAC,23,Inhibitors of acetyl-CoA carboxylase,23,Tetronic and Tetramic acid derivatives,Spirodiclofen; Spiromesifen; Spiropidion; Spirotetramat; Spidoxamat,Lipid synthesis; growth regulation
+IRAC,24,Mitochondrial complex IV electron transport inhibitors,24A,Phosphides,Aluminium phosphide; Calcium phosphide; Phosphine; Zinc phosphide,Energy metabolism
+IRAC,24,Mitochondrial complex IV electron transport inhibitors,24B,Cyanides,Calcium cyanide; Potassium cyanide; Sodium cyanide,Energy metabolism
+IRAC,25,Mitochondrial complex II electron transport inhibitors,25A,Beta-ketonitrile derivatives,Cyenopyrafen; Cyflumetofen,Energy metabolism
+IRAC,25,Mitochondrial complex II electron transport inhibitors,25B,Carboxanilides,Pyflubumide,Energy metabolism
+IRAC,28,Ryanodine receptor modulators,28,Diamides,Chlorantraniliprole; Cyantraniliprole; Cyclaniliprole; Flubendiamide; Tetraniliprole,Nerve and muscle action
+IRAC,29,Chordotonal organ nicotinamidase inhibitors,29,Flonicamid,Flonicamid,Nerve action
+IRAC,30,GABA-gated chloride channel allosteric modulators,30,Isoxazolines; Meta-diamides,Broflanilide; Fluxametamide; Isocycloseram,Nerve action
+IRAC,31,Baculoviruses,31,Granuloviruses; Nucleopolyhedroviruses,Cydia pomonella GV; Thaumatotibia leucotreta GV; Anticarsia gemmatalis MNPV; Helicoverpa armigera NPV,Midgut
+IRAC,32,nAChR allosteric modulators – Site II,32,GS-omega/kappa HXTX-Hv1a peptide,GS-omega/kappa HXTX-Hv1a peptide,Nerve action
+IRAC,33,Calcium-activated potassium channel (KCa2) modulators,33,Acynonapyr,Acynonapyr,Nerve action
+IRAC,34,Mitochondrial complex III electron transport inhibitors – Qi site,34,Flometoquin,Flometoquin,Energy metabolism
+IRAC,35,RNA interference mediated target suppressors,35,RNA,Ledprona; Vadescana,Protein / gene expression
+IRAC,36,Chordotonal organ modulators – undefined target site,36,Dimpyridaz,Dimpyridaz,Nerve action
+IRAC,37,Vesicle transport (V-ATPase) inhibitor,37,Oxazosulfyl,Oxazosulfyl,Cellular transport
+IRAC,UN,Unknown or uncertain mode of action,UN,Various,Azadirachtin; Bromopropylate; Benzoximate; Dicofol; Pyridalyl,Unknown / uncertain
