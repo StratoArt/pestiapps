@@ -1,14 +1,15 @@
-const state={committee:'IRAC',data:null,opt:null,search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',deferredPrompt:null};
+const state={committee:'IRAC',data:null,opt:null,imageSources:null,search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',deferredPrompt:null};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
 
 async function load(){
-  const [moa,opt]=await Promise.all([
+  const [moa,opt,imageSources]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
-    fetch('data/opt.json').then(r=>r.json())
+    fetch('data/opt.json').then(r=>r.json()),
+    fetch('data/image_sources.json').then(r=>r.json())
   ]);
-  state.data=moa; state.opt=opt;
+  state.data=moa; state.opt=opt; state.imageSources=imageSources;
   updateHomeStats(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); render();
 }
 function rows(){return state.data?.records?.[state.committee]||[]}
@@ -61,6 +62,23 @@ function openDetail(x){
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
 }
 function closeDetail(){$('#detail').innerHTML=''}
+function photoBlock(x){
+  const img=(x.images||[])[0];
+  if(!img) return '';
+  const src=img.local_path || img.remote_url;
+  if(!src) return '';
+  return `<div class="photo-card">
+    <div class="photo-wrap"><img src="${esc(src)}" alt="Foto referensi ${esc(x.name)}" loading="lazy" onerror="this.closest('.photo-card').classList.add('photo-error')"><div class="photo-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""><span>Foto tidak tersedia offline</span></div></div>
+    <div class="photo-credit"><span><b>Foto referensi</b> · ${esc(img.license||'Lisensi tercantum pada sumber')}</span><a href="${esc(img.source_url)}" target="_blank" rel="noopener">Sumber ↗</a></div>
+  </div>`;
+}
+function photoThumb(x){
+  const img=(x.images||[])[0];
+  if(!img) return `<img src="assets/opt/${esc(x.icon)}" alt="">`;
+  const src=img.local_path || img.remote_url;
+  return `<div class="thumb-photo"><img src="${esc(src)}" alt="" loading="lazy" onerror="this.parentElement.classList.add('photo-error')"><div class="thumb-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""></div></div>`;
+}
+
 function renderTypes(){
   const type=state.type;
   const source=type==='Hama'?state.opt.categories: type==='Penyakit'?state.opt.diseases:state.opt.weeds;
@@ -75,17 +93,17 @@ function renderTypes(){
 function renderPests(){
   let list=state.opt.pests;
   if(state.pestFilter && state.pestFilter!=='Semua' && state.pestFilter!=='Hama') list=list.filter(x=>x.category===state.pestFilter);
-  $('#pestList').innerHTML=list.map((x,i)=>`<button class="opt-card" data-id="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)} · ${esc(x.family)}</small></div><span class="arrow">›</span></button>`).join('');
+  $('#pestList').innerHTML=list.map((x,i)=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)} · ${esc(x.family)}</small></div><span class="arrow">›</span></button>`).join('');
   $$('#pestList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.pests.find(x=>x.id===b.dataset.id),'Hama')));
   $$('.pest-tabs button').forEach(b=>b.classList.toggle('active',b.dataset.pestFilter===state.pestFilter));
 }
 function renderDiseases(){
-  $('#diseaseList').innerHTML=state.opt.diseases.map(x=>`<button class="opt-card" data-id="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}</small></div><span class="arrow">›</span></button>`).join('');
+  $('#diseaseList').innerHTML=state.opt.diseases.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}</small></div><span class="arrow">›</span></button>`).join('');
   $$('#diseaseList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.diseases.find(x=>x.id===b.dataset.id),'Penyakit')));
 }
 function renderWeeds(){
-  $('#weedList').innerHTML=state.opt.weeds.map(x=>`<button class="opt-card"><img src="assets/opt/${esc(x.icon)}"><div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}</small></div><span class="arrow">›</span></button>`).join('');
-  $$('#weedList .opt-card').forEach((b,i)=>b.addEventListener('click',()=>openOptDetail(state.opt.weeds[i],'Gulma')));
+  $('#weedList').innerHTML=state.opt.weeds.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}</small></div><span class="arrow">›</span></button>`).join('');
+  $$('#weedList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.weeds.find(x=>x.id===b.dataset.id),'Gulma')));
 }
 function renderCrops(){
   $('#cropGrid').innerHTML=state.opt.crops.map(x=>`<button class="crop-card" data-id="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.latin)}</small></button>`).join('');
@@ -95,7 +113,7 @@ function openOptDetail(x,type){
   const hosts=x.hosts||[];
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
     <button class="close" id="closeDetail">×</button>
-    <div class="detail-code">${esc(type)} · ${esc(x.category||x.family||'')}</div>
+    <div class="detail-code">${esc(type)} · ${esc(x.category||x.family||'')}</div>${photoBlock(x)}
     <div style="text-align:center;margin:16px 0 6px"><img src="assets/opt/${esc(x.icon)}" style="width:180px;height:150px;color:#0a7548"></div>
     <h2><i>${esc(x.name)}</i></h2><p class="muted">${esc(x.common||'')}</p>
     <div class="detail-grid"><div><label>Nama umum</label><strong>${esc(x.common||'—')}</strong></div><div><label>Kelompok</label><strong>${esc(x.category||'—')}</strong></div>${x.family?`<div><label>Famili</label><strong>${esc(x.family)}</strong></div>`:''}<div><label>Type OPT</label><strong>${esc(type)}</strong></div></div>

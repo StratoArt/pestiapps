@@ -1,0 +1,91 @@
+{
+  "policy": "Use real photos only when the source/license permits reuse. Keep attribution metadata with every asset.",
+  "preferred_sources": [
+    {
+      "source": "Wikimedia Commons",
+      "use": "Good candidate for reusable pest/disease/weed photos; verify the license of each individual file.",
+      "url": "https://commons.wikimedia.org/"
+    },
+    {
+      "source": "EPPO Global Database",
+      "use": "Excellent reference/photo discovery source, but EPPO photo pages state images are for educational purposes; obtain permission before commercial redistribution.",
+      "url": "https://gd.eppo.int/"
+    }
+  ],
+  "asset_record_fields": [
+    "entity_id",
+    "image_type",
+    "local_path",
+    "source_url",
+    "source_name",
+    "license",
+    "author",
+    "attribution",
+    "accessed_date",
+    "notes"
+  ],
+  "image_types": [
+    "hero",
+    "thumbnail",
+    "symptom",
+    "organism",
+    "life_cycle"
+  ],
+  "assets": {
+    "spodoptera-exigua": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "author": "Unknown author (file page)",
+      "attribution": "Spodoptera exigua larva feeding on Nicotiana attenuata — Wikimedia Commons, CC BY 2.5.",
+      "notes": "Real larva photo. Verify attribution text on the file page before redistribution."
+    },
+    "bemisia-tabaci": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bemisia_tabaci_from_USDA_2.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bemisia_tabaci_from_USDA_2.jpg",
+      "source_name": "Wikimedia Commons / USDA ARS",
+      "license": "Public domain",
+      "author": "Stephen Ausmus / USDA ARS",
+      "attribution": "Bemisia tabaci from USDA 2 — Stephen Ausmus, USDA ARS, public domain.",
+      "notes": "USDA ARS public-domain image."
+    },
+    "phytophthora": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Phytophthora_infestans.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phytophthora_infestans.webp",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "author": "Fehesha",
+      "attribution": "Phytophthora infestans — Fehesha, CC BY-SA 4.0.",
+      "notes": "Reference image of the pathogen; not a claim about every symptom on every host."
+    },
+    "fusarium-cepae": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/K7725-1-sm.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:K7725-1-sm.jpg",
+      "source_name": "Wikimedia Commons / USDA",
+      "license": "Public domain",
+      "author": "Keith Weller / USDA-ARS",
+      "attribution": "Plant-pathogenic strain of Fusarium oxysporum — Keith Weller, USDA-ARS, public domain.",
+      "notes": "Generic F. oxysporum reference image; not a shallot-specific symptom photo."
+    },
+    "echinochloa": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Echinochloa_crus-galli.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Echinochloa_crus-galli.jpg",
+      "source_name": "Wikimedia Commons / USDA-NRCS",
+      "license": "Public domain",
+      "author": "Robert H. Mohlenbrock / USDA-NRCS",
+      "attribution": "Echinochloa crus-galli — Robert H. Mohlenbrock, USDA-NRCS, public domain.",
+      "notes": "Public-domain botanical reference image."
+    }
+  }
+}

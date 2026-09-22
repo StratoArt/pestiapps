@@ -108,7 +108,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Hama penting pada bawang dan beberapa tanaman sayuran."
+      "notes": "Hama penting pada bawang dan beberapa tanaman sayuran.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "author": "Unknown author (file page)",
+          "attribution": "Spodoptera exigua larva feeding on Nicotiana attenuata — Wikimedia Commons, CC BY 2.5.",
+          "notes": "Real larva photo. Verify attribution text on the file page before redistribution."
+        }
+      ]
     },
     {
       "id": "spodoptera-frugiperda",
@@ -231,7 +244,20 @@
         "Nimfa",
         "Imago"
       ],
-      "notes": "Vektor penting berbagai virus tanaman."
+      "notes": "Vektor penting berbagai virus tanaman.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bemisia_tabaci_from_USDA_2.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Bemisia_tabaci_from_USDA_2.jpg",
+          "source_name": "Wikimedia Commons / USDA ARS",
+          "license": "Public domain",
+          "author": "Stephen Ausmus / USDA ARS",
+          "attribution": "Bemisia tabaci from USDA 2 — Stephen Ausmus, USDA ARS, public domain.",
+          "notes": "USDA ARS public-domain image."
+        }
+      ]
     },
     {
       "id": "aphis-gossypii",
@@ -830,6 +856,19 @@
         "Bercak basah kecokelatan",
         "Jaringan cepat nekrosis",
         "Sporulasi pada kelembapan tinggi"
+      ],
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Phytophthora_infestans.webp",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Phytophthora_infestans.webp",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "author": "Fehesha",
+          "attribution": "Phytophthora infestans — Fehesha, CC BY-SA 4.0.",
+          "notes": "Reference image of the pathogen; not a claim about every symptom on every host."
+        }
       ]
     },
     {
@@ -1108,6 +1147,15 @@
         "Layu bertahap",
         "Pembuluh berubah warna",
         "Tanaman kerdil"
+      ],
+      "notes": "Fusarium oxysporum complex mencakup berbagai forma specialis dan populasi inang-spesifik; jangan menyamakan semua isolat F. oxysporum sebagai patogen semua tanaman.",
+      "references": [
+        "EPPO Global Database",
+        "Literatur penyakit Fusarium pada tanaman inang spesifik"
+      ],
+      "aliases": [
+        "Fusarium wilt",
+        "Layu Fusarium"
       ]
     },
     {
@@ -1139,6 +1187,48 @@
         "Halo kuning",
         "Lesi pada daun dan buah"
       ]
+    },
+    {
+      "id": "fusarium-cepae",
+      "name": "Fusarium oxysporum f. sp. cepae",
+      "common": "Busuk pangkal Fusarium / moler",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai"
+      ],
+      "symptoms": [
+        "Daun menguning dan layu mulai dari ujung",
+        "Pertumbuhan tanaman melemah",
+        "Akar dan pangkal umbi mengalami pembusukan",
+        "Pangkal umbi dapat mengalami nekrosis dan membusuk"
+      ],
+      "notes": "Patogen penting pada Allium. Pada bawang merah dikenal sebagai salah satu penyebab penyakit moler/busuk pangkal.",
+      "references": [
+        "Sintayehu et al. (2011), Crop Protection — Fusarium basal rot of shallot",
+        "Nugroho et al. (2015), Agrosains — moler pada bawang merah",
+        "Marianah et al. (2024), Biodiversitas — Fusarium spp. associated with basal plate rot of shallot"
+      ],
+      "confidence_note": "Identifikasi spesies/forma specialis tidak sebaiknya ditentukan hanya dari gejala visual.",
+      "aliases": [
+        "FOCe",
+        "Fusarium basal rot",
+        "Moler"
+      ],
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/K7725-1-sm.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:K7725-1-sm.jpg",
+          "source_name": "Wikimedia Commons / USDA",
+          "license": "Public domain",
+          "author": "Keith Weller / USDA-ARS",
+          "attribution": "Plant-pathogenic strain of Fusarium oxysporum — Keith Weller, USDA-ARS, public domain.",
+          "notes": "Generic F. oxysporum reference image; not a shallot-specific symptom photo."
+        }
+      ]
     }
   ],
   "weeds": [
@@ -1153,6 +1243,19 @@
       ],
       "symptoms": [
         "Bersaing memperebutkan cahaya dan nutrisi"
+      ],
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Echinochloa_crus-galli.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Echinochloa_crus-galli.jpg",
+          "source_name": "Wikimedia Commons / USDA-NRCS",
+          "license": "Public domain",
+          "author": "Robert H. Mohlenbrock / USDA-NRCS",
+          "attribution": "Echinochloa crus-galli — Robert H. Mohlenbrock, USDA-NRCS, public domain.",
+          "notes": "Public-domain botanical reference image."
+        }
       ]
     },
     {
