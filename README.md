@@ -1,7 +1,16 @@
-# OPT Explorer v0.3
+# OPT Explorer v0.4
 
-Mobile-first PWA focused on IRAC, FRAC and HRAC exploration. No Google Sheets and no demo-plot module. Data is stored locally as JSON and cached for offline use.
+Mobile-first PWA inspired by the supplied OPT Explorer UI reference.
 
-Hero tagline: **Al-Kitab untuk Sales, Formulator dan Petani Mbois**.
+## Scope
+- IRAC / FRAC / HRAC MoA explorer
+- Search + group filters
+- Detail sheet for classifications and active ingredients
+- Offline JSON database
+- Installable PWA
+- Responsive desktop/mobile UI
 
-Data sources: official IRAC MoA Classification v11.5 (Feb 2026), FRAC Code List 2026, and HRAC Global 2026 classification.
+No Google Sheets and no demo-plot module are used in this version.
+
+## Run
+Serve this folder with any static host (GitHub Pages, Netlify, Cloudflare Pages, etc.). Do not open `index.html` directly with `file://` if you want the service worker to work.

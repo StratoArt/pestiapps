@@ -1,1 +1,80 @@
-<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#087443"><meta name="description" content="OPT Explorer — Al-Kitab untuk Sales, Formulator dan Petani Mbois. Jelajahi IRAC, FRAC dan HRAC."><link rel="manifest" href="manifest.json"><link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><title>OPT Explorer — IRAC · FRAC · HRAC</title></head><body><header class="topbar"><a class="brand" href="./"><span class="brand-mark">◒</span><span><b>OPT Explorer</b><small>IRAC · FRAC · HRAC</small></span></a><div class="top-actions"><button class="ghost-btn" id="installBtn" hidden>Install</button><button class="icon-btn" id="themeBtn" aria-label="Tema">☾</button></div></header><main class="page-shell"><section class="hero"><div class="hero-copy"><span class="eyebrow">AL-KITAB UNTUK SALES, FORMULATOR DAN PETANI MBOIS</span><h1>Kenali MoA.<br><em>Pilih dengan ilmu.</em></h1><p>Eksplorasi klasifikasi mode of action resmi IRAC, FRAC dan HRAC dalam satu aplikasi ringan untuk lapangan.</p><div class="search-wrap"><span>⌕</span><input id="search" placeholder="Cari group, MoA, chemical class, atau bahan aktif…" autocomplete="off"><button aria-label="Cari">→</button></div></div><div class="hero-art"><svg viewBox="0 0 360 250"><path d="M265 224C258 168 269 121 309 76M269 186c-35-25-60-25-91-16M277 147c34-16 55-14 72-5M282 115c-20-21-39-25-57-24M309 76c10-13 21-22 35-29"/><path d="M103 219c23-47 48-83 85-109 30-21 61-31 91-31-14 27-37 54-69 75-35 23-70 43-107 65Z"/><path d="M104 218c25-26 54-51 88-74"/></svg></div></section><nav class="tabs" aria-label="Resistance Action Committee"><button class="tab active" data-c="IRAC">IRAC · Insecticide</button><button class="tab" data-c="FRAC">FRAC · Fungicide</button><button class="tab" data-c="HRAC">HRAC · Herbicide</button></nav><section><div class="toolbar"><div><h2 id="committeeTitle">IRAC</h2><p id="committeeDesc">Insecticide · Acaricide · Nematicide</p></div><div class="stats"><div><strong id="count">—</strong><span>Group</span></div><div><strong id="aiTotal">—</strong><span>Active</span></div></div></div><div id="groupFilters" class="group-filters"></div><div class="toolbar"><p><b id="resultCount">—</b> klasifikasi ditampilkan</p></div><div id="cards" class="cards"></div></section></main><nav class="bottom" aria-label="Navigasi"><button class="active" data-c="IRAC">IRAC</button><button data-c="FRAC">FRAC</button><button data-c="HRAC">HRAC</button></nav><div id="detail"></div><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#087443">
+<meta name="description" content="OPT Explorer — Al-Kitab untuk Sales, Formulator dan Petani Mbois.">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css"><title>OPT Explorer</title>
+</head>
+<body>
+<div class="app-shell">
+<header class="app-header">
+  <button class="icon-button" id="menuBtn" aria-label="Menu">☰</button>
+  <a class="brand" href="#home" aria-label="OPT Explorer">
+    <img src="assets/icons/icon.svg" alt="" class="brand-logo">
+    <span><strong>OPT Explorer</strong><small>Pest · Disease · Weed · MoA</small></span>
+  </a>
+  <div class="header-actions"><button class="icon-button" id="themeBtn" aria-label="Tema">☾</button><button class="install-button" id="installBtn" hidden>Install</button></div>
+</header>
+
+<main>
+<section id="home" class="screen active-screen">
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-leaf leaf-a"></div><div class="hero-leaf leaf-b"></div>
+    <div class="hero-content">
+      <div class="hero-brand"><img src="assets/icons/icon.svg" alt=""><div><b>OPT Explorer</b><small>Pest · Disease · Weed · MoA</small></div></div>
+      <p class="hero-kicker">AL-KITAB UNTUK SALES, FORMULATOR DAN PETANI MBOIS</p>
+      <h1>Kenali MoA<br><span>sebelum terlambat.</span></h1>
+      <p class="hero-copy">Basis pengetahuan klasifikasi IRAC, FRAC dan HRAC untuk membantu membaca mekanisme aksi dan menyusun strategi pengelolaan resistensi.</p>
+      <button class="hero-search" data-go="explore"><span>⌕</span><span class="placeholder">Cari group, MoA, atau bahan aktif...</span><b>⌕</b></button>
+    </div>
+  </div>
+
+  <div class="home-grid">
+    <button class="feature-card green" data-go="explore"><span class="feature-icon">✦</span><span><strong>MoA Explorer</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="explore" data-committee="IRAC"><span class="feature-icon">⌁</span><span><strong>IRAC</strong><small>Insecticide · Acaricide</small></span><i>›</i></button>
+    <button class="feature-card red" data-go="explore" data-committee="FRAC"><span class="feature-icon">◉</span><span><strong>FRAC</strong><small>Fungicide resistance</small></span><i>›</i></button>
+    <button class="feature-card purple" data-go="explore" data-committee="HRAC"><span class="feature-icon">⌁</span><span><strong>HRAC</strong><small>Herbicide mode of action</small></span><i>›</i></button>
+  </div>
+
+  <div class="stats-card"><div><strong id="homeGroups">—</strong><span>MoA Group</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong>3</strong><span>Komite</span></div></div>
+  <p class="quote">“Pertanian yang lebih tangguh, dimulai dari pengetahuan.”</p>
+</section>
+
+<section id="explore" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong id="exploreTitle">IRAC</strong><small id="exploreSub">Insecticide · Acaricide · Nematicide</small></div><button class="icon-button light" id="focusSearch">⌕</button></div>
+  <div class="search-box"><span>⌕</span><input id="search" placeholder="Cari group, MoA, chemical class, atau bahan aktif..." autocomplete="off"><button id="clearSearch">×</button></div>
+  <div class="committee-tabs"><button class="active" data-c="IRAC">IRAC</button><button data-c="FRAC">FRAC</button><button data-c="HRAC">HRAC</button></div>
+  <div id="groupFilters" class="chips"></div>
+  <div class="list-meta"><span><b id="resultCount">—</b> klasifikasi</span><span id="activeCommittee">IRAC 2026</span></div>
+  <div id="cards" class="moa-list"></div>
+</section>
+
+<section id="menu" class="screen">
+  <div class="menu-head"><button class="back-button" data-go="home">←</button><h2>Menu</h2></div>
+  <div class="menu-list">
+    <button><span>◈</span><b>Tentang Aplikasi</b><i>›</i></button>
+    <button><span>▣</span><b>Database & Sumber</b><i>›</i></button>
+    <button id="menuOffline"><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
+    <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
+    <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
+    <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.4.0</small></button>
+  </div>
+  <div class="source-box"><strong>Sumber klasifikasi</strong><p>IRAC, FRAC dan HRAC. Data aplikasi disimpan lokal dalam JSON agar dapat digunakan offline.</p></div>
+</section>
+</main>
+
+<nav class="bottom-nav">
+  <button class="active" data-go="home"><span>⌂</span><small>Beranda</small></button>
+  <button data-go="explore"><span>⌕</span><small>Cari</small></button>
+  <button data-go="explore" data-committee="IRAC"><span>⚗</span><small>MoA</small></button>
+  <button data-go="menu"><span>☰</span><small>Menu</small></button>
+</nav>
+<div id="detail"></div>
+<script src="js/app.js"></script>
+</div>
+</body></html>
