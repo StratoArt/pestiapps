@@ -1,0 +1,3 @@
+{
+  "name":"OPT Explorer","short_name":"OPT Explorer","description":"Database OPT, IRAC, FRAC, HRAC, tanaman inang dan identifikasi foto.","start_url":"./index.html","display":"standalone","background_color":"#f5f8f5","theme_color":"#087443","orientation":"portrait-primary","icons":[{"src":"assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
