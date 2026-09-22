@@ -1,0 +1,160 @@
+{
+  "sources": [
+    {
+      "id": "pestisida-kementan",
+      "title": "PESTISIDA",
+      "publisher": "Pusat Penelitian dan Pengembangan Hortikultura · Kementerian Pertanian",
+      "type": "PDF sumber pengguna",
+      "scope": "Dasar pestisida, pergerakan, cara masuk, formulasi, resistensi dan rotasi historis",
+      "pages": "2-28"
+    },
+    {
+      "id": "formulation-types-bioscience-academy",
+      "title": "Agrobiology of Agrochemical Formulations I - Essentials · Formulation Types",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Formulation types, spray solution, retention/coverage, uptake/translocation dan target-site delivery",
+      "pages": "1-10"
+    },
+    {
+      "id": "irac-2026",
+      "title": "IRAC MoA Classification Version 11.5",
+      "publisher": "IRAC",
+      "type": "Current external classification",
+      "scope": "Insecticide/acaricide/nematicide mode of action",
+      "year": "2026"
+    },
+    {
+      "id": "frac-2026",
+      "title": "FRAC Code List 2026",
+      "publisher": "FRAC",
+      "type": "Current external classification",
+      "scope": "Fungicide mode of action",
+      "year": "2026"
+    },
+    {
+      "id": "hrac-2026",
+      "title": "HRAC Global Herbicide MoA Classification 2026",
+      "publisher": "HRAC Global",
+      "type": "Current external classification",
+      "scope": "Herbicide mode of action",
+      "year": "2026"
+    },
+    {
+      "id": "eppo",
+      "title": "EPPO Global Database",
+      "publisher": "EPPO",
+      "type": "External reference database",
+      "scope": "OPT taxonomy, host/pest information and photo references"
+    },
+    {
+      "id": "fusarium-watermelon-seminis-2016",
+      "title": "Management of Fusarium Wilt in Watermelon",
+      "publisher": "Seminis Vegetable Seeds, Inc.",
+      "type": "PDF sumber pengguna",
+      "scope": "Fusarium wilt watermelon: FON, races, symptoms, favorable conditions and integrated management",
+      "year": "2016",
+      "pages": "1-2"
+    },
+    {
+      "id": "mechanism-of-action-bioscience",
+      "title": "Mastering Pesticide Mechanism of Action — Fungicide / Herbicide / Insecticide",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Target-site mechanisms and biochemical pathways across fungicides, herbicides and insecticides",
+      "pages": "3-13"
+    },
+    {
+      "id": "formulation-types-adjuvants-bioscience",
+      "title": "Understanding the Agrobiology of Agrochemical Formulations — Formulation Types and Formulation Adjuvants",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Formulation types plus formulation/spray adjuvants",
+      "pages": "1-18"
+    },
+    {
+      "id": "formulation-types-essentials-bioscience",
+      "title": "Agrobiology of Agrochemical Formulations I — Essentials · Formulation Types",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Formulation types, bioavailability and spray-solution behavior",
+      "pages": "1-13"
+    },
+    {
+      "id": "insecticide-formulation-moa-bioscience",
+      "title": "Understanding the Agrobiology of Agrochemical Formulations — Insecticide Formulation and Mode of Action",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Insecticide systemic/contact/translaminar behavior, uptake, transport, formulations and adjuvants",
+      "pages": "1-14"
+    },
+    {
+      "id": "formulation-adjuvants-bioscience",
+      "title": "Agrobiology of Agrochemical Formulations I — Formulation Adjuvants",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Formulation and spray adjuvants, spreading, retention and uptake",
+      "pages": "1-8"
+    },
+    {
+      "id": "formulation-application-bioscience",
+      "title": "Understanding the Agrobiology of Agrochemical Formulations — Formulation Application: Spray Quality",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Droplet size, spreading, spray volume, drying time and application technology",
+      "pages": "1-13"
+    },
+    {
+      "id": "insecticide-mechanisms-bioscience",
+      "title": "Mastering Pesticide Mode of Action — Insecticide MOA",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Insecticide mechanism categories, neural targets, energy metabolism and physiological disruption",
+      "pages": "1-9"
+    },
+    {
+      "id": "tabel-hama-indonesia",
+      "title": "Jenis Tanaman | Hama & Pengobatannya",
+      "publisher": "Dokumen sumber pengguna",
+      "type": "PDF sumber pengguna",
+      "scope": "Historical Indonesian crop–pest/disease/weed–product–pesticide classification table",
+      "pages": "1-37"
+    },
+    {
+      "id": "fungicide-formulation-moa-bioscience-2026",
+      "title": "Understanding the Agrobiology of Agrochemical Formulations — Fungicide Formulation and Mode of Action",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Fungal pathogen biology, protectant/curative/eradicant timing, contact/systemic characteristics, ergosterol and respiratory mechanisms, fungicide formulation/adjuvant strategy",
+      "pages": "1-11"
+    },
+    {
+      "id": "herbicide-moa-bioscience-2026",
+      "title": "Mastering Pesticide Mode of Action — Herbicide MOA",
+      "publisher": "BioScience Academy / Crop Protection R&D Training",
+      "type": "PDF sumber pengguna",
+      "scope": "Herbicide biochemical pathways including photosynthesis, EPSPS, HPPD, PPO, PDS, GS, ALS, ACCase, VLCFA, ATP, auxin and mitosis",
+      "pages": "1-9"
+    },
+    {
+      "id": "babyleaf-field-guide-australia-2014",
+      "title": "Pests, Diseases and Disorders of Babyleaf Vegetables — A Field Identification Guide",
+      "publisher": "Applied Horticultural Research / Horticulture Australia Ltd.",
+      "type": "PDF sumber pengguna",
+      "scope": "Field identification of insects, diseases and disorders of lettuce, spinach and brassicas; symptoms, damage and occurrence",
+      "year": "2014",
+      "pages": "1-61",
+      "note": "Historical field guide; photographs are copyrighted and must not be redistributed without permission."
+    },
+    {
+      "id": "onion-seed-treatments-seminis-2015",
+      "title": "Onion Seed Treatments",
+      "publisher": "Seminis Vegetable Seeds, Inc. / Monsanto Company",
+      "type": "PDF sumber pengguna",
+      "scope": "Onion seed treatment examples, active ingredients, applied rates and target soil/seed-borne pests/diseases",
+      "year": "2015",
+      "pages": "1",
+      "note": "US/Canada/Mexico-specific offerings and historical label data; not an Indonesian registration source."
+    }
+  ]
+}

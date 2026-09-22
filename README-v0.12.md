@@ -44,4 +44,7 @@ The Australian babyleaf guide explicitly states it was first published in 2014 a
 
 The onion seed-treatment sheet is a historical US/Canada/Mexico-specific source and explicitly says its offerings are specific to those markets. It must not be presented as Indonesian registration data.
 
-- v0.12.1: dedicated Tentang Aplikasi screen with creator credit and source-count note.
+## v0.12.1
+- Added a dedicated **Tentang Aplikasi** screen from the Menu.
+- Credit displayed exactly as requested: **Dibuat oleh Amrizal Ivan Pratama S.P. - Bayer District Representative Nganjuk 2026 all rights reserved**.
+- Source catalog currently contains 19 entries: 15 user-supplied PDFs and 4 external references (IRAC, FRAC, HRAC, EPPO).

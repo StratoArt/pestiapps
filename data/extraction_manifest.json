@@ -1,0 +1,20 @@
+{
+  "version": "0.11.0",
+  "new_sources": [
+    "fusarium-watermelon-seminis-2016",
+    "mechanism-of-action-bioscience",
+    "formulation-types-adjuvants-bioscience",
+    "formulation-types-essentials-bioscience",
+    "insecticide-formulation-moa-bioscience",
+    "formulation-adjuvants-bioscience",
+    "formulation-application-bioscience",
+    "insecticide-mechanisms-bioscience",
+    "tabel-hama-indonesia"
+  ],
+  "extracted_files": [
+    "agrobiology_knowledge.json",
+    "fusarium_watermelon.json",
+    "hama_source_table.json"
+  ],
+  "source_policy": "Source-derived knowledge is kept separate from current IRAC/FRAC/HRAC master classifications and from current Indonesian product registration."
+}

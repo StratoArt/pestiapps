@@ -40,10 +40,13 @@
     <button class="feature-card grass" data-go="weed"><span class="feature-icon">🌿</span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
     <button class="feature-card purple" data-go="crops"><span class="feature-icon">🌱</span><span><strong>Tanaman & Inang</strong><small>Lihat OPT pada tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="explore"><span class="feature-icon">⚗</span><span><strong>MoA Explorer</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
+    <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
+    <button class="feature-card amber" data-go="calculators"><span class="feature-icon">🧮</span><span><strong>Calculator Suite</strong><small>Dosis · Area · Spray · Kalibrasi</small></span><i>›</i></button>
   </div>
 
-  <div class="stats-card"><div><strong id="homeOpt">—</strong><span>OPT</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong>Lengkap</strong><span>IRAC · FRAC · HRAC</span></div></div>
+  <div class="stats-card"><div><strong id="homeOpt">—</strong><span>OPT</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong id="homeFormulations">—</strong><span>Formulasi</span></div></div>
   <p class="quote">“Pertanian yang lebih tangguh, dimulai dari pengetahuan.”</p>
 </section>
 
@@ -88,22 +91,93 @@
   <div id="cards" class="moa-list"></div>
 </section>
 
+<section id="formulations" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Formulation Explorer</strong><small>Kenali bentuk formulasi dan perilaku di spray solution</small></div><button class="icon-button light" id="formulationSearchBtn">⌕</button></div>
+  <div class="bio-card">
+    <div class="bio-head"><div><span class="eyebrow">DARI FORMULASI KE TARGET SITE</span><h2>Bioavailability</h2><p>Ilustrasi sumber tentang retention, uptake/translocation dan target-site delivery.</p></div><span class="bio-pill">SOURCE</span></div>
+    <div class="bio-flow">
+      <div class="bio-stage"><strong>100%</strong><span>Retention & Coverage</span></div><div class="bio-arrow">→</div><div class="bio-stage"><strong>10%</strong><span>Uptake / Translocation</span></div><div class="bio-arrow">→</div><div class="bio-stage"><strong>0.1%</strong><span>Target-site Delivery</span></div>
+    </div>
+    <div class="loss-row"><span>Potensi kehilangan:</span><div id="bioLosses"></div></div>
+    <small class="source-footnote">Angka 100% / 10% / 0,1% dipertahankan sebagai ilustrasi dari sumber, bukan efisiensi universal.</small>
+  </div>
+  <div class="search-box"><span>⌕</span><input id="formulationSearch" placeholder="Cari kode atau tipe formulasi..." autocomplete="off"><button id="clearFormulationSearch">×</button></div>
+  <div class="formulation-tabs"><button class="active" data-form-filter="ALL">Semua</button><button data-form-filter="Dry / solid">Padat</button><button data-form-filter="Liquid">Cair</button><button data-form-filter="Emulsion">Emulsi</button></div>
+  <div id="formulationList" class="formulation-grid"></div>
+  <div class="source-box"><strong>Basis sumber</strong><p>Materi formulasi ini diekstrak dari PDF “Agrobiology of Agrochemical Formulations I - Essentials · Formulation Types”. Karakteristik kelebihan/kekurangan mengikuti framing sumber dan tidak dianggap sebagai aturan universal.</p></div>
+</section>
+
+<section id="library" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Agrobiology Library</strong><small>Ekstraksi pengetahuan dari sumber yang kamu tambahkan</small></div><button class="icon-button light" id="librarySearchBtn">⌕</button></div>
+  <div class="library-hero"><div><span class="eyebrow">SOURCE-DERIVED KNOWLEDGE</span><h2>Dari formulasi sampai target site</h2><p>Materi baru dipecah menjadi konsep yang bisa dibaca cepat: adjuvan, kualitas semprotan, delivery insektisida, mekanisme aksi, dan studi Fusarium semangka.</p></div><div class="library-flow"><span>FORMULATION</span><b>→</b><span>SPRAY</span><b>→</b><span>UPTAKE</span><b>→</b><span>TARGET</span></div></div>
+  <div class="search-box"><span>⌕</span><input id="librarySearch" placeholder="Cari konsep, bahan aktif, atau istilah..." autocomplete="off"><button id="clearLibrarySearch">×</button></div>
+  <div class="library-tabs"><button class="active" data-library-filter="ALL">Semua</button><button data-library-filter="formulation">Formulasi</button><button data-library-filter="adjuvant">Adjuvan</button><button data-library-filter="spray-quality">Spray Quality</button><button data-library-filter="insecticide">Insektisida</button><button data-library-filter="mechanism">Mekanisme Aksi</button><button data-library-filter="fusarium">Fusarium</button></div>
+  <div id="libraryList" class="library-list"></div>
+  <div id="hamaSourceCard" class="source-box"></div>
+</section>
+
+<section id="calculators" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Calculator Suite</strong><small>Hitung dari label & hasil kalibrasi — bukan rekomendasi dosis</small></div></div>
+  <div class="calc-note"><strong>⚠️ Prinsip keamanan</strong><p>Masukkan angka yang berasal dari label produk, hasil kalibrasi, atau data lapangan. Kalkulator hanya menghitung; tidak menetapkan dosis, konsentrasi, interval, PHI, atau produk yang harus digunakan.</p></div>
+  <div class="calc-tabs" id="calcTabs">
+    <button class="active" data-calc="area">📐 Area</button><button data-calc="spray">💧 Spray</button><button data-calc="dose">🧪 Dosis</button><button data-calc="backpack">🎒 Backpack</button><button data-calc="sprayer">🚜 Sprayer</button><button data-calc="tank">🧴 / Tank</button><button data-calc="granule">🌾 Granule</button><button data-calc="ai">⚗️ AI</button><button data-calc="seed">🌱 Seed</button>
+  </div>
+  <div id="calculatorPanel"></div>
+  <div class="calc-sources"><strong>Metode perhitungan</strong><p>Rumus area, spray volume, dosis per tank dan kalibrasi mengikuti metode yang dijelaskan dalam sumber extension/pertanian; satuan aplikasi ditampilkan dalam sistem metrik. Selalu cek label dan registrasi lokal sebelum aplikasi.</p><div class="calc-source-links"><a href="https://www.dpi.nsw.gov.au/biosecurity/weeds/weed-control/herbicides/spray-equipment-calibration-methods" target="_blank" rel="noopener">NSW DPI · Calibration ↗</a><a href="https://extension.uga.edu/publications/detail.html?number=C683" target="_blank" rel="noopener">UGA Extension · Calibration ↗</a><a href="https://mplk.politanikoe.ac.id/index.php/142-perlintan/praktek-perlintan/221-teknik-kalibrasi-pestisida-dan-alat-semprot" target="_blank" rel="noopener">Politeknik Negeri Kupang · Kalibrasi ↗</a></div></div>
+</section>
+
 <section id="scan" class="screen">
   <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></div></div>
   <div class="scan-box"><div class="scan-preview"><div class="scan-corners"></div><span>📷</span><strong>Ambil foto / pilih foto</strong><small>Mode demo — hasil identifikasi perlu diverifikasi di lapangan.</small></div><button class="primary-btn">Ambil Foto</button></div>
   <div class="analysis-card"><h3>Hasil Analisis</h3><div class="analysis-row"><b>1</b><div><strong>Thrips parvispinus</strong><small>Kemungkinan tinggi</small></div><em>87%</em></div><div class="analysis-row"><b>2</b><div><strong>Tetranychus spp.</strong><small>Kemungkinan sedang</small></div><em>21%</em></div><div class="analysis-row"><b>3</b><div><strong>Aphis gossypii</strong><small>Kemungkinan rendah</small></div><em>8%</em></div></div>
 </section>
 
+<section id="knowledge" class="screen">
+  <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Pestisida — Knowledge</strong><small>Ekstraksi materi PDF Kementan</small></div></div>
+  <div class="source-box"><strong>Lapisan referensi Kementan</strong><p>Materi ini dibaca sebagai sumber pengetahuan dan konteks historis. Kode MoA terkini tetap mengikuti klasifikasi IRAC, FRAC dan HRAC yang terpisah.</p></div>
+  <div id="knowledgeList" class="knowledge-list"></div>
+</section>
+
+<section id="about" class="screen">
+  <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Tentang Aplikasi</strong><small>OPT Explorer · Crop Protection Knowledge Engine</small></div></div>
+  <div class="about-card">
+    <div class="about-mark">◈</div>
+    <span class="eyebrow">OPT EXPLORER</span>
+    <h2>Kenali OPT sebelum Terlambat</h2>
+    <p class="about-tagline">Al-Kitab untuk Sales, Formulator dan Petani Mbois</p>
+    <div class="about-divider"></div>
+    <p class="about-credit">Dibuat oleh <strong>Amrizal Ivan Pratama S.P.</strong><br>Bayer District Representative Nganjuk<br><span>2026 all rights reserved</span></p>
+  </div>
+  <div class="source-box">
+    <strong>Tentang OPT Explorer</strong>
+    <p>Aplikasi ini menggabungkan eksplorasi OPT, tanaman/inang, formulasi, mode of action, resistance management, knowledge library dan calculator tools dalam satu PWA yang dapat digunakan secara offline.</p>
+  </div>
+  <div class="source-box">
+    <strong>Catatan sumber</strong>
+    <p>Database aplikasi memuat 15 PDF sumber pengguna serta referensi eksternal IRAC, FRAC, HRAC dan EPPO. Materi historis/source-derived dipisahkan dari klasifikasi MoA terkini dan tidak otomatis menjadi rekomendasi penggunaan produk.</p>
+  </div>
+</section>
+
+<section id="sources" class="screen">
+  <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Database & Sumber</strong><small>Jejak sumber untuk membaca data dengan nyaman</small></div></div>
+  <div id="sourceList" class="source-list"></div>
+  <div class="source-box"><strong>Catatan penggunaan</strong><p>PDF pengguna dipakai sebagai lapisan pengetahuan/reference. Klasifikasi MoA terkini tetap dipisahkan dari materi historis; selalu verifikasi label dan registrasi lokal sebelum aplikasi.</p></div>
+</section>
+
 <section id="menu" class="screen">
   <div class="menu-head"><button class="back-button" data-go="home">←</button><h2>Menu</h2></div>
   <div class="menu-list">
-    <button><span>◈</span><b>Tentang Aplikasi</b><i>›</i></button>
-    <button><span>▣</span><b>Database & Sumber</b><i>›</i></button>
+    <button id="openAbout"><span>◈</span><b>Tentang Aplikasi</b><i>›</i></button>
+    <button id="openSources"><span>▣</span><b>Database & Sumber</b><i>›</i></button>
+    <button id="openKnowledge"><span>📘</span><b>Pestisida — Knowledge</b><small>Ekstrak PDF Kementan</small><i>›</i></button>
+    <button id="openFormulations"><span>🧪</span><b>Formulation Explorer</b><small>SG · WP · SC · EC · EW · ME</small><i>›</i></button>
+    <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
+    <button id="openCalculators"><span>🧮</span><b>Calculator Suite</b><small>Area · Dosis · Spray · Kalibrasi · Seed</small><i>›</i></button>
     <button><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.7.0</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.12.1</small></button>
   </div>
   <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>
@@ -118,6 +192,7 @@
 </nav>
 <div id="detail"></div>
 <script src="js/app.js"></script>
+<script src="js/calculators.js"></script>
 </div>
 </body>
 </html>
