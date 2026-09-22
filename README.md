@@ -49,3 +49,7 @@ Ditambahkan `data/opt_control.json` untuk menghubungkan OPT dengan bahan aktif y
 - Added an in-app EPPO viewer using an iframe, with direct-open fallback.
 - No EPPO images are copied or redistributed by this project.
 - EPPO photo pages state that their pictures are for educational purposes only and require permission from original photographers for publication in commercial websites.
+
+
+## v0.9.1 — Fokus Padi, Bawang Merah & Cabai
+Database diperluas dengan OPT tambahan, terutama hama dan penyakit pada padi, bawang merah, dan cabai. Record baru juga diberi EPPO code/link bila teridentifikasi di EPPO Global Database. Relasi crop → OPT diperjelas untuk tiga komoditas prioritas.

@@ -844,6 +844,348 @@
         "Imago"
       ],
       "notes": "Kompleks spesies yang berasosiasi dengan singkong."
+    },
+    {
+      "id": "thrips-tabaci",
+      "name": "Thrips tabaci",
+      "common": "Thrips bawang",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thysanoptera.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai",
+        "Cabai"
+      ],
+      "symptoms": [
+        "Daun berwarna keperakan",
+        "Daun menguning dan mengering",
+        "Kerusakan pada jaringan muda"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Thrips penting pada tanaman bawang; juga dapat ditemukan pada berbagai tanaman sayuran.",
+      "eppo": {
+        "code": "THRITB",
+        "url": "https://gd.eppo.int/taxon/THRITB/photos",
+        "name": "Thrips tabaci"
+      }
+    },
+    {
+      "id": "liriomyza-chinensis",
+      "name": "Liriomyza chinensis",
+      "common": "Lalat pengorok daun bawang",
+      "category": "Diptera",
+      "family": "Agromyzidae",
+      "icon": "diptera.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang daun"
+      ],
+      "symptoms": [
+        "Korokan berkelok pada daun",
+        "Daun menguning",
+        "Fotosintesis menurun"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Agromyzid leaf miner yang berasosiasi dengan Allium.",
+      "eppo": {
+        "code": "LIRICH",
+        "url": "https://gd.eppo.int/taxon/LIRICH/photos",
+        "name": "Liriomyza chinensis"
+      }
+    },
+    {
+      "id": "delia-antiqua",
+      "name": "Delia antiqua",
+      "common": "Lalat bawang",
+      "category": "Diptera",
+      "family": "Anthomyiidae",
+      "icon": "diptera.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai"
+      ],
+      "symptoms": [
+        "Larva merusak pangkal dan umbi",
+        "Tanaman layu",
+        "Umbi membusuk sekunder"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Onion fly; penting terutama pada sistem produksi Allium tertentu.",
+      "eppo": {
+        "code": "HYLEAN",
+        "url": "https://gd.eppo.int/taxon/HYLEAN/photos",
+        "name": "Delia antiqua"
+      }
+    },
+    {
+      "id": "mythimna-separata",
+      "name": "Mythimna separata",
+      "common": "Ulat grayak padi",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Padi",
+        "Jagung"
+      ],
+      "symptoms": [
+        "Daun dimakan dari tepi",
+        "Defoliasi",
+        "Tanaman muda dapat gundul"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Armyworm yang memiliki padi sebagai salah satu inang utama.",
+      "eppo": {
+        "code": "PSEDSE",
+        "url": "https://gd.eppo.int/taxon/PSEDSE/photos",
+        "name": "Mythimna separata"
+      }
+    },
+    {
+      "id": "orseolia-oryzae",
+      "name": "Orseolia oryzae",
+      "common": "Lalat bibit/penggerek puru padi",
+      "category": "Diptera",
+      "family": "Cecidomyiidae",
+      "icon": "diptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Terbentuk daun berbentuk tabung seperti daun bawang",
+        "Anakan terserang tidak menghasilkan malai normal",
+        "Pertumbuhan terganggu"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Rice gall midge; EPPO mencatat keberadaannya di Indonesia.",
+      "eppo": {
+        "code": "PACHOR",
+        "url": "https://gd.eppo.int/taxon/PACHOR/photos",
+        "name": "Orseolia oryzae"
+      }
+    },
+    {
+      "id": "pomacea-canaliculata",
+      "name": "Pomacea canaliculata",
+      "common": "Keong mas",
+      "category": "Mollusca",
+      "family": "Ampullariidae",
+      "icon": "mollusca.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bibit padi terpotong",
+        "Rumpun muda habis dimakan",
+        "Petak tampak berlubang"
+      ],
+      "life": [
+        "Telur",
+        "Juvenil",
+        "Dewasa"
+      ],
+      "notes": "Hama penting pada fase awal pertanaman padi; pengelolaan perlu memperhatikan umur tanaman dan kondisi sawah.",
+      "eppo": {
+        "code": "POMACA",
+        "url": "https://gd.eppo.int/taxon/POMACA/photos",
+        "name": "Pomacea canaliculata"
+      }
+    },
+    {
+      "id": "nymphula-depunctalis",
+      "name": "Nymphula depunctalis",
+      "common": "Penggulung daun air padi",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun terpotong dan digulung",
+        "Larva berlindung dalam gulungan daun",
+        "Kerusakan meningkat pada sawah tergenang"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Rice caseworm/leaf roller yang terkait dengan lingkungan sawah berair.",
+      "eppo": {
+        "code": "NYMPDE",
+        "url": "https://gd.eppo.int/taxon/NYMPDE/photos",
+        "name": "Nymphula depunctalis"
+      }
+    },
+    {
+      "id": "dicladispa-armigera",
+      "name": "Dicladispa armigera",
+      "common": "Kumbang hispa padi",
+      "category": "Coleoptera",
+      "family": "Chrysomelidae",
+      "icon": "coleoptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun tergores dan memutih",
+        "Epidermis rusak",
+        "Pertumbuhan tanaman terganggu"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Rice hispa; dewasa dan larva dapat merusak jaringan daun.",
+      "eppo": {
+        "code": "DICLAR",
+        "url": "https://gd.eppo.int/taxon/DICLAR/photos",
+        "name": "Dicladispa armigera"
+      }
+    },
+    {
+      "id": "polyphagotarsonemus-latus",
+      "name": "Polyphagotarsonemus latus",
+      "common": "Tungau kuning lebar",
+      "category": "Acari",
+      "family": "Tarsonemidae",
+      "icon": "acari.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Bawang merah"
+      ],
+      "symptoms": [
+        "Daun muda keriting",
+        "Pertumbuhan pucuk terhambat",
+        "Permukaan daun tampak rusak/bronzing"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Nimfa",
+        "Dewasa"
+      ],
+      "notes": "Broad mite; sering menyerang jaringan muda pada berbagai tanaman hortikultura.",
+      "eppo": {
+        "code": "POLYLA",
+        "url": "https://gd.eppo.int/taxon/POLYLA/photos",
+        "name": "Polyphagotarsonemus latus"
+      }
+    },
+    {
+      "id": "bactrocera-dorsalis",
+      "name": "Bactrocera dorsalis",
+      "common": "Lalat buah",
+      "category": "Diptera",
+      "family": "Tephritidae",
+      "icon": "diptera.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Tusukan pada buah",
+        "Larva berkembang di dalam buah",
+        "Buah busuk dan gugur"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Lalat buah dengan inang sangat luas; pengelolaan biasanya memadukan sanitasi dan teknik pengendalian lainnya.",
+      "eppo": {
+        "code": "DACUDO",
+        "url": "https://gd.eppo.int/taxon/DACUDO/photos",
+        "name": "Bactrocera dorsalis"
+      }
+    },
+    {
+      "id": "aphis-craccivora",
+      "name": "Aphis craccivora",
+      "common": "Kutu daun kacang",
+      "category": "Hemiptera",
+      "family": "Aphididae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Koloni kutu pada pucuk",
+        "Daun keriting",
+        "Honeydew dan embun jelaga",
+        "Dapat berperan sebagai vektor virus"
+      ],
+      "life": [
+        "Nimfa",
+        "Dewasa"
+      ],
+      "notes": "Aphid dengan kisaran inang luas; hubungan dengan virus bergantung pada virus dan sistem tanaman.",
+      "eppo": {
+        "code": "APHICR",
+        "url": "https://gd.eppo.int/taxon/APHICR/photos",
+        "name": "Aphis craccivora"
+      }
+    },
+    {
+      "id": "bemisia-tabaci-chili",
+      "name": "Bemisia tabaci",
+      "common": "Kutu kebul",
+      "category": "Hemiptera",
+      "family": "Aleyrodidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Honeydew dan embun jelaga",
+        "Pertumbuhan tanaman menurun",
+        "Dapat menularkan berbagai virus"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "EPPO mencatat B. tabaci sebagai organisme yang berasosiasi dengan Capsicum annuum.",
+      "eppo": {
+        "code": "BEMITA",
+        "url": "https://gd.eppo.int/taxon/BEMITA/photos",
+        "name": "Bemisia tabaci"
+      }
     }
   ],
   "diseases": [
@@ -1239,6 +1581,260 @@
         "url": "https://gd.eppo.int/taxon/FUSACE/photos",
         "name": "Fusarium oxysporum f. sp. cepae"
       }
+    },
+    {
+      "id": "rice-brown-spot",
+      "name": "Bipolaris oryzae",
+      "common": "Bercak cokelat padi",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bercak cokelat berbentuk oval pada daun",
+        "Biji dapat berubah warna",
+        "Tanaman lemah pada kondisi stres"
+      ],
+      "notes": "Brown spot pada padi; diagnosis perlu dibedakan dari penyakit bercak daun lain.",
+      "eppo": {
+        "code": "COCHMI",
+        "url": "https://gd.eppo.int/taxon/COCHMI/photos",
+        "name": "Bipolaris oryzae"
+      }
+    },
+    {
+      "id": "rice-bacterial-leaf-streak",
+      "name": "Xanthomonas oryzae pv. oryzicola",
+      "common": "Bacterial leaf streak / hawar daun bergaris",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Garis atau bercak transparan memanjang",
+        "Eksudat bakteri dapat terlihat pada kondisi lembap",
+        "Daun dapat mengering"
+      ],
+      "notes": "Berbeda dari bacterial leaf blight yang disebabkan X. oryzae pv. oryzae.",
+      "eppo": {
+        "code": "XANTTO",
+        "url": "https://gd.eppo.int/taxon/XANTTO/photos",
+        "name": "Xanthomonas oryzae pv. oryzicola"
+      }
+    },
+    {
+      "id": "rice-bakanae",
+      "name": "Fusarium fujikuroi",
+      "common": "Bakanae padi",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Tanaman memanjang tidak normal",
+        "Daun pucat",
+        "Tanaman dapat mati atau menghasilkan anakan lemah"
+      ],
+      "notes": "Bakanae-associated Fusarium; identifikasi spesies dapat memerlukan pemeriksaan laboratorium.",
+      "eppo": {
+        "code": "FUSAFJ",
+        "url": "https://gd.eppo.int/taxon/FUSAFJ/photos",
+        "name": "Fusarium fujikuroi"
+      }
+    },
+    {
+      "id": "rice-false-smut",
+      "name": "Ustilaginoidea virens",
+      "common": "False smut / gosong palsu padi",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bola spora hijau-oranye menggantikan sebagian bulir",
+        "Massa spora membesar dari bulir",
+        "Mudah terlihat saat malai keluar"
+      ],
+      "notes": "Penyakit malai yang menjadi penting pada kondisi lingkungan tertentu.",
+      "eppo": {
+        "code": "USTIVI",
+        "url": "https://gd.eppo.int/taxon/USTIVI/photos",
+        "name": "Ustilaginoidea virens"
+      }
+    },
+    {
+      "id": "rice-narrow-brown-leaf-spot",
+      "name": "Cercospora janseana",
+      "common": "Narrow brown leaf spot",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bercak cokelat sempit memanjang",
+        "Bercak mengikuti arah tulang daun",
+        "Daun tampak bergaris cokelat"
+      ],
+      "notes": "Penyakit bercak daun sempit pada padi.",
+      "eppo": {
+        "code": "CERCOR",
+        "url": "https://gd.eppo.int/taxon/CERCOR/photos",
+        "name": "Cercospora janseana"
+      }
+    },
+    {
+      "id": "onion-purple-blotch",
+      "name": "Alternaria porri",
+      "common": "Bercak ungu bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai"
+      ],
+      "symptoms": [
+        "Bercak kecil berair lalu membesar",
+        "Bercak ungu kecokelatan",
+        "Daun mengering dari area terserang"
+      ],
+      "notes": "Purple blotch pada Allium.",
+      "eppo": {
+        "code": "ALTEPO",
+        "url": "https://gd.eppo.int/taxon/ALTEPO/photos",
+        "name": "Alternaria porri"
+      }
+    },
+    {
+      "id": "onion-downy-mildew",
+      "name": "Peronospora destructor",
+      "common": "Embun bulu bawang",
+      "category": "Oomycete",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai"
+      ],
+      "symptoms": [
+        "Daun pucat dan memanjang",
+        "Sporulasi abu-ungu pada kondisi lembap",
+        "Daun rebah dan mengering"
+      ],
+      "notes": "Downy mildew of onion; EPPO mengklasifikasikannya sebagai oomycete.",
+      "eppo": {
+        "code": "PERODE",
+        "url": "https://gd.eppo.int/taxon/PERODE/photos",
+        "name": "Peronospora destructor"
+      }
+    },
+    {
+      "id": "onion-stemphylium",
+      "name": "Stemphylium vesicarium",
+      "common": "Bercak daun Stemphylium bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai"
+      ],
+      "symptoms": [
+        "Bercak cokelat pada daun",
+        "Lesi dapat membesar dan menyatu",
+        "Daun mengering pada serangan berat"
+      ],
+      "notes": "Stemphylium leaf blight pada Allium.",
+      "eppo": {
+        "code": "STEMVE",
+        "url": "https://gd.eppo.int/taxon/STEMVE/photos",
+        "name": "Stemphylium vesicarium"
+      }
+    },
+    {
+      "id": "chili-phytophthora-capsici",
+      "name": "Phytophthora capsici",
+      "common": "Layu/busuk Phytophthora pada cabai",
+      "category": "Oomycete",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Layu cepat",
+        "Busuk pangkal atau akar",
+        "Buah dapat membusuk",
+        "Gejala berat pada kondisi basah"
+      ],
+      "notes": "P. capsici tercatat sebagai patogen/inang pada Capsicum annuum.",
+      "eppo": {
+        "code": "PHYTCP",
+        "url": "https://gd.eppo.int/taxon/PHYTCP/photos",
+        "name": "Phytophthora capsici"
+      }
+    },
+    {
+      "id": "chili-cercospora",
+      "name": "Cercospora capsici",
+      "common": "Bercak daun Cercospora cabai",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Bercak daun",
+        "Jaringan tengah bercak dapat mengering",
+        "Daun dapat gugur pada serangan berat"
+      ],
+      "notes": "EPPO mencatat C. capsici sebagai organisme yang berasosiasi dengan Capsicum.",
+      "eppo": {
+        "code": "CERCCP",
+        "url": "https://gd.eppo.int/taxon/CERCCP/photos",
+        "name": "Cercospora capsici"
+      }
+    },
+    {
+      "id": "chili-bacterial-spot",
+      "name": "Xanthomonas spp.",
+      "common": "Bercak bakteri cabai",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Bercak kecil pada daun",
+        "Lesi pada buah",
+        "Daun dapat gugur",
+        "Bercak dapat tampak berair pada awal infeksi"
+      ],
+      "notes": "Kelompok Xanthomonas yang menyerang Capsicum perlu dibedakan sampai tingkat spesies/pathovar bila diperlukan.",
+      "eppo": {
+        "code": "XANTHO",
+        "url": "https://gd.eppo.int/taxon/XANTHO/photos",
+        "name": "Xanthomonas"
+      }
+    },
+    {
+      "id": "chili-anthracnose-complex",
+      "name": "Colletotrichum spp.",
+      "common": "Antraknosa cabai",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai"
+      ],
+      "symptoms": [
+        "Lesi cekung pada buah",
+        "Bercak membesar konsentris",
+        "Buah membusuk",
+        "Spora dapat muncul pada jaringan terserang"
+      ],
+      "notes": "Antraknosa cabai merupakan kompleks Colletotrichum; spesies penyebab perlu dikonfirmasi bila diperlukan.",
+      "images": []
     }
   ],
   "weeds": [
@@ -1509,13 +2105,53 @@
       "id": "padi",
       "name": "Padi",
       "latin": "Oryza sativa",
-      "icon": "crop-rice.svg"
+      "icon": "crop-rice.svg",
+      "related_opt": [
+        "nilaparvata-lugens",
+        "sogatella-furcifera",
+        "nephotettix",
+        "scirpophaga-incertulas",
+        "chilo-suppressalis",
+        "cnaphalocrocis-medinalis",
+        "mythimna-separata",
+        "orseolia-oryzae",
+        "pomacea-canaliculata",
+        "nymphula-depunctalis",
+        "dicladispa-armigera",
+        "rice-blast",
+        "rice-bacterial-blight",
+        "rice-sheath-blight",
+        "rice-tungro",
+        "rice-brown-spot",
+        "rice-bacterial-leaf-streak",
+        "rice-bakanae",
+        "rice-false-smut",
+        "rice-narrow-brown-leaf-spot"
+      ]
     },
     {
       "id": "cabai",
       "name": "Cabai",
       "latin": "Capsicum annuum",
-      "icon": "crop-chili.svg"
+      "icon": "crop-chili.svg",
+      "related_opt": [
+        "spodoptera-litura",
+        "helicoverpa-armigera",
+        "thrips-parvispinus",
+        "bemisia-tabaci",
+        "aphis-gossypii",
+        "tetranychus",
+        "polyphagotarsonemus-latus",
+        "bactrocera-dorsalis",
+        "aphis-craccivora",
+        "fusarium-wilt",
+        "phytophthora",
+        "chili-phytophthora-capsici",
+        "chili-cercospora",
+        "chili-bacterial-spot",
+        "chili-anthracnose-complex",
+        "mosaic"
+      ]
     },
     {
       "id": "tomat",
