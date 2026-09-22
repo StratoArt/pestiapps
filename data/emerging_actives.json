@@ -1,0 +1,123 @@
+{
+  "title": "Emerging & Pipeline Actives",
+  "purpose": "Bahan aktif baru/pipeline yang belum tentu tercantum sebagai active ingredient pada snapshot IRAC/FRAC/HRAC saat ini. Dipisahkan dari klasifikasi resmi.",
+  "records": [
+    {
+      "name": "Isoflualanam",
+      "type": "Insecticide",
+      "chemical_class": "Isoxazoline",
+      "claimed_moa": "GABA-gated chloride channel allosteric modulator",
+      "claimed_group": "IRAC Group 30",
+      "official_current_listed": false,
+      "market_status": "KingAgroot: Indonesia 2026 listed in product/registration roadmap",
+      "targets": "Lepidoptera; Coleoptera; Acarina; Hemiptera; Thysanoptera",
+      "source": "KingAgroot Isoflualanam technical PDF / R&D portfolio",
+      "url": "https://www.kingagroot.com/en/assets/pdf/Isoflualanam.pdf",
+      "notes": "IRAC v11.5 (Feb 2026) has Group 30 but its Appendix 5 active-ingredient list does not include Isoflualanam. Treat Group 30 as a company/secondary-source claim until IRAC formally lists the AI."
+    },
+    {
+      "name": "Flupymezotiaz",
+      "type": "Insecticide",
+      "chemical_class": "Mesoionic insecticide",
+      "claimed_moa": "nAChR competitive modulators",
+      "claimed_group": "IRAC Group 4",
+      "official_current_listed": false,
+      "market_status": "KingAgroot pipeline / to be launched",
+      "targets": "Resistant Lepidoptera in rice (company description)",
+      "source": "KingAgroot R&D portfolio",
+      "url": "https://www.kingagroot.com/en/html/RDAchievements.html",
+      "notes": "Do not treat as current Indonesian registration or current IRAC active-ingredient listing without verification."
+    },
+    {
+      "name": "Dimpyrargyl",
+      "type": "Insecticide",
+      "chemical_class": "Patented insecticide",
+      "claimed_moa": "Chordotonal organ function inhibitor",
+      "claimed_group": "Not assigned in app",
+      "official_current_listed": false,
+      "market_status": "KingAgroot pipeline / to be launched",
+      "targets": "Aphids (company description)",
+      "source": "KingAgroot R&D portfolio",
+      "url": "https://www.kingagroot.com/en/html/RDAchievements.html",
+      "notes": "No MoA group assigned in this app unless supported by an authoritative classification source."
+    },
+    {
+      "name": "KAI-210220",
+      "type": "Fungicide",
+      "chemical_class": "Novel fungicide",
+      "claimed_moa": "New mode of action; exact FRAC group not assigned in app",
+      "claimed_group": "Not assigned",
+      "official_current_listed": false,
+      "market_status": "KingAgroot pipeline / to be launched",
+      "targets": "Powdery mildew (company description)",
+      "source": "KingAgroot R&D portfolio",
+      "url": "https://www.kingagroot.com/en/html/RDAchievements.html",
+      "notes": "Company describes a new MoA and no cross-resistance to existing FRAC MoAs; not treated as an official FRAC classification."
+    },
+    {
+      "name": "Cinflubrolin",
+      "type": "Herbicide",
+      "chemical_class": "FAT inhibitor",
+      "claimed_moa": "Fatty acid thioesterase (FAT) inhibitor",
+      "claimed_group": "Not assigned in app",
+      "official_current_listed": false,
+      "market_status": "KingAgroot: expected China launch 2026",
+      "targets": "Echinochloa; Leptochloa; Digitaria; sedges",
+      "source": "KingAgroot R&D portfolio",
+      "url": "https://www.kingagroot.com/Bahasa/html/RDAchievements.html",
+      "notes": "Global pipeline reference only; not an Indonesian registration claim."
+    },
+    {
+      "name": "Flusulfinam",
+      "type": "Herbicide",
+      "chemical_class": "HPPD inhibitor",
+      "claimed_moa": "HPPD inhibitor",
+      "claimed_group": "Not assigned in app",
+      "official_current_listed": false,
+      "market_status": "KingAgroot: Cambodia registered 2022; China launch 2024",
+      "targets": "Echinochloa; Echinochloa oryzicola; Digitaria; Leptochloa; broadleaf; sedges",
+      "source": "KingAgroot R&D portfolio",
+      "url": "https://www.kingagroot.com/Bahasa/html/RDAchievements.html",
+      "notes": "Reference only; verify current local registration separately."
+    },
+    {
+      "name": "Tripyrasulfone",
+      "type": "Herbicide",
+      "chemical_class": "HPPD inhibitor",
+      "claimed_moa": "HPPD inhibitor",
+      "claimed_group": "Not assigned in app",
+      "official_current_listed": false,
+      "market_status": "Launched China 2020; registered Pakistan/Cambodia 2023",
+      "targets": "Echinochloa crus-galli; Leptochloa chinensis",
+      "source": "KingAgroot R&D portfolio",
+      "url": "https://www.kingagroot.com/Bahasa/html/RDAchievements.html",
+      "notes": "Reference only; verify current local registration separately."
+    },
+    {
+      "name": "Sihalodiamide (Cyhalodiamide)",
+      "type": "Insektisida",
+      "chemical_class": "Diamida",
+      "claimed_moa": "Modulator reseptor ryanodine",
+      "claimed_group": "IRAC Group 28",
+      "official_current_listed": false,
+      "market_status": "Bahan teknis terdaftar di Indonesia; Kementerian Pertanian SK 774/KPTS/SR.330/M/12/2020 mencantumkan CYHALODIAMIDE 95 TC. Status produk formulasi/komoditas harus diverifikasi terpisah.",
+      "targets": "Lepidoptera dan hama serangga lainnya",
+      "source": "Kementerian Pertanian RI; IRAC historical/future chemistry material",
+      "url": "https://simpel1.pertanian.go.id/api/pengumuman/SK/774.pdf",
+      "notes": "IRAC current online list v11.5 tidak menampilkan cyhalodiamide sebagai active ingredient pada daftar Group 28, tetapi IRAC material tentang future chemistries mengaitkannya dengan Ry-R modulators. Jangan menampilkan sebagai current IRAC-listed tanpa label status ini."
+    },
+    {
+      "name": "Tiorantraniliprole",
+      "type": "Insektisida",
+      "chemical_class": "Diamida",
+      "claimed_moa": "Modulator reseptor ryanodine",
+      "claimed_group": "IRAC Group 28",
+      "official_current_listed": false,
+      "market_status": "Bahan aktif novel; status pasar/registrasi Indonesia perlu diverifikasi dari registri/label Indonesia.",
+      "targets": "Terutama Lepidoptera",
+      "source": "BCPC Pesticide Compendium / PPDB; PubChem",
+      "url": "https://www.bcpcpesticidecompendium.org/tiorantraniliprole.html",
+      "notes": "Sumber PPDB mencantumkan IRAC 28. Tidak ditemukan pada daftar AI current IRAC online yang diperiksa; karena itu ditampilkan sebagai emerging/externally verified, bukan sebagai current IRAC master entry."
+    }
+  ]
+}

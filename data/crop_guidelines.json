@@ -1,0 +1,36 @@
+{
+  "title": "Pedoman OPT Tanaman dari Sumber EPPO",
+  "language": "Bahasa Indonesia",
+  "records": [
+    {
+      "crop": "Bawang merah",
+      "source": "EPPO PP 2/4(2) Allium Crops",
+      "focus": "Hama, penyakit, gulma dan prinsip perlindungan tanaman",
+      "note": "Sumber regional/historis EPPO; gunakan sebagai pengetahuan OPT dan hubungan inang, bukan sebagai bukti registrasi pestisida Indonesia."
+    },
+    {
+      "crop": "Jagung",
+      "source": "EPPO PP 2/17(1) Maize",
+      "focus": "Hama tanah, penggerek, ulat, kutu daun, tungau, penyakit dan gulma",
+      "note": "Sumber regional/historis EPPO; bukan bukti registrasi pestisida Indonesia."
+    },
+    {
+      "crop": "Kubis-kubisan",
+      "source": "EPPO PP 2/7(1) Vegetable Brassicas",
+      "focus": "Penyakit jamur/oomycete, bakteri, virus, kutu daun, lalat, kumbang, ulat, nematoda, siput dan gulma",
+      "note": "Sumber regional/historis EPPO; bukan bukti registrasi pestisida Indonesia."
+    },
+    {
+      "crop": "Cucurbitaceae / Cucurbita, Cucumis, Citrullus",
+      "source": "EPPO PP 2/32(1) Outdoor cucurbits",
+      "focus": "Biologi OPT, gejala, strategi GPP, monitoring, penyakit tular tanah, embun tepung, downy mildew, Botrytis, Cladosporium, antraknosa, bakteri, virus, thrips, kutu kebul, tungau, nematoda dan gulma",
+      "note": "Sumber EPPO 2004 dan bersifat regional/historis. Contoh bahan aktif pada dokumen tidak boleh dianggap sebagai registrasi Indonesia saat ini. Hanya gunakan produk yang terdaftar untuk tujuan/crop tersebut."
+    },
+    {
+      "crop": "Solanaceae / Tomat, Cabai/Paprika, Terung",
+      "source": "EPPO PP 2/30(1) Outdoor solanaceous crops",
+      "focus": "Prinsip GPP, penyakit akar/batang, Phytophthora, layu Fusarium/Verticillium, antraknosa, Alternaria, late blight, Septoria, Fulvia, embun tepung, Botrytis, bakteri/virus, kutu daun, thrips, kutu kebul, wireworm, noctuid, Ostrinia, Leptinotarsa, tungau, Meloidogyne dan gulma",
+      "note": "Sumber EPPO 2004 dan bersifat regional/historis. Dokumen sendiri menegaskan bahwa contoh bahan aktif dapat tidak terdaftar atau dibatasi di negara lain. Gunakan hanya produk yang terdaftar dan ikuti label lokal."
+    }
+  ]
+}

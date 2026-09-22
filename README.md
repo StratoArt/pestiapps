@@ -1,4 +1,4 @@
-# OPT Explorer v0.12.1
+# OPT Explorer v0.14.0.0
 
 **Al-Kitab untuk Sales, Formulator dan Petani Mbois**
 
@@ -44,4 +44,24 @@ The Australian babyleaf guide explicitly states it was first published in 2014 a
 
 The onion seed-treatment sheet is a historical US/Canada/Mexico-specific source and explicitly says its offerings are specific to those markets. It must not be presented as Indonesian registration data.
 
-- v0.12.1: dedicated Tentang Aplikasi screen with creator credit and source-count note.
+- v0.14.0.0: dedicated Tentang Aplikasi screen with creator credit and source-count note.
+
+
+## v0.14.0.2 Emerging Actives
+Added a separate Emerging/Pipeline layer for novel actives that may be absent from the current official AI lists. Isoflualanam is shown with the company-claimed IRAC Group 30 and Indonesia 2026 roadmap, but is explicitly marked as not present in the IRAC v11.5 Appendix 5 AI list in this snapshot.
+
+
+## v0.13.3 — IRAC Resistance & Nematicide Knowledge Layer
+- Added `data/irac_nematicides_2026.json`: N-1/N-2/N-3/N-4 plus N-UN/N-UNX/N-UNB/N-UNF/N-UNE, translated to Bahasa Indonesia.
+- Added `data/irac_pests_2026.json`: IRAC resistance directory pest list with Indonesian UI translations and scientific names preserved.
+- Added `data/irac_target_site_map.json`: target-site taxonomy derived from the supplied IRAC visual.
+- Added `data/irm_spodoptera_exigua_2025.json`: source-derived biology, symptoms, resistance mechanisms, IRM and IPM guidance for *Spodoptera exigua*.
+- Added EPPO outdoor Cucurbit and Solanaceous crop knowledge to `data/crop_guidelines.json`.
+- Source dates and historical/regulatory caveats are preserved; EPPO examples are not treated as current Indonesian registrations.
+
+
+## v0.14.0
+- Target Site visual explainer: target biologis → efek → kelompok MoA.
+- Icon aplikasi baru dari pengguna dipasang sebagai favicon/manifest/PWA icon.
+- Scan & Identifikasi aktif: kamera/galeri, preview, prompt analisis Bahasa Indonesia, dan handoff foto ke ChatGPT via Web Share API bila perangkat mendukung.
+- Fallback: salin prompt dan buka ChatGPT secara manual.

@@ -1,0 +1,65 @@
+{
+  "pest": "Spodoptera exigua",
+  "common_id": "Ulat bawang / ulat grayak beet armyworm",
+  "source": "IRAC Chewing Pest Working Group",
+  "source_date": "June 2025",
+  "poster_version": "2.0",
+  "source_url": "https://irac-online.org/",
+  "language": "Bahasa Indonesia",
+  "biology": {
+    "hosts": [
+      "Asparagus",
+      "Alfalfa",
+      "Brassica",
+      "Seledri",
+      "Kapas",
+      "Terung",
+      "Selada",
+      "Jagung",
+      "Paprika/cabai",
+      "Padi",
+      "Stroberi",
+      "Bit gula",
+      "Tomat"
+    ],
+    "life_cycle": [
+      "Telur",
+      "Larva",
+      "Pupa",
+      "Imago"
+    ],
+    "generation_days": "21–24 hari dalam kondisi yang memungkinkan",
+    "distribution_note": "Berasal dari Asia Tenggara dan kini tersebar di hampir semua benua kecuali Antarktika; tidak memiliki mekanisme diapause sehingga keberlangsungan musim dingin terutama pada wilayah hangat atau rumah kaca."
+  },
+  "damage_symptoms": [
+    "Kelompok telur putih kecil di permukaan bawah daun",
+    "Larva muda membuat daun seperti terskeletonisasi dengan tulang daun tersisa",
+    "Larva tua memakan helaian daun dan membuat lubang tidak beraturan",
+    "Defoliasi berat dapat menghambat pertumbuhan",
+    "Larva dapat membuat lubang pada buah, bunga, dan polong",
+    "Tanaman melemah sehingga fotosintesis dan hasil turun",
+    "Frass/kotoran berbentuk butiran hijau hingga hitam di sekitar area makan"
+  ],
+  "resistance_mechanisms": [
+    "Detoksifikasi metabolik atau sekuestrasi yang meningkat melalui enzim seperti sitokrom P450, karboksilesterase, glutathione S-transferase, dan UDP-glikosiltransferase",
+    "Ketidakpekaan target site",
+    "Penurunan penetrasi sebagai faktor yang berkontribusi"
+  ],
+  "irm_recommendations": [
+    "Jangan memperlakukan generasi berturut-turut dengan produk dari MoA yang sama",
+    "Gunakan kira-kira jendela 30 hari untuk aplikasi insektisida dengan MoA yang sama",
+    "Gunakan kembali MoA hanya setelah 30 hari berlalu dari jendela perlakuan sebelumnya",
+    "Jangan menggunakan produk dari MoA yang sama pada lebih dari 50% siklus tanaman",
+    "Untuk tanaman berumur pendek (<50 hari), pertimbangkan lama siklus tanaman sebagai jendela perlakuan agar penanaman berikutnya tidak menerima MoA yang sama"
+  ],
+  "ipm": [
+    "Hindari penanaman tanaman inang seperti sayuran daun, kapas, dan tomat secara berturut-turut",
+    "Bersihkan sisa tanaman dan gulma yang dapat menjadi inang alternatif",
+    "Lakukan monitoring dengan perangkap dan inspeksi visual/digital",
+    "Gunakan varietas yang relatif kurang rentan bila tersedia dan pertimbangkan rotasi tanaman",
+    "Lindungi predator/parasitoid atau gunakan musuh alami",
+    "Integrasikan entomopatogen/bioinsektisida dalam program pengelolaan",
+    "Gunakan insektisida hanya bila diperlukan berdasarkan tekanan hama dan ambang yang relevan"
+  ],
+  "safety_note": "Poster bersifat edukatif. Untuk keputusan aplikasi, ikuti label produk dan klasifikasi IRAC terbaru; sumber ini tidak memberikan dosis produk Indonesia."
+}

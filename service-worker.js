@@ -1,5 +1,5 @@
-const CACHE='opt-explorer-v0.12.1';
-const CORE=['./','./index.html','./manifest.json','./css/style.css','./js/app.js','./js/calculators.js','./data/moa_master_2026.json','./data/opt.json','./data/image_sources.json','./data/opt_control.json','./data/eppo_links.json','./data/formulations.json','./data/pesticide_knowledge.json','./data/sources.json','./data/agrobiology_knowledge.json','./data/fusarium_watermelon.json','./data/hama_source_table.json','./data/seed_treatments.json','./data/extraction_manifest.json','./assets/icons/icon.svg'];
+const CACHE='opt-explorer-v0.14.0';
+const CORE=['./','./index.html','./manifest.json','./css/style.css','./js/app.js','./js/calculators.js','./data/moa_master_2026.json','./data/emerging_actives.json','./data/opt.json','./data/image_sources.json','./data/opt_control.json','./data/eppo_links.json','./data/formulations.json','./data/pesticide_knowledge.json','./data/sources.json','./data/agrobiology_knowledge.json','./data/fusarium_watermelon.json','./data/hama_source_table.json','./data/seed_treatments.json','./data/extraction_manifest.json','./assets/icons/icon.svg','./assets/icons/icon-192.png','./assets/icons/icon-512.png','./data/irac_target_site_map.json','./data/scan_analysis_guide.json'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener('fetch',e=>{

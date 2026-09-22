@@ -1,0 +1,107 @@
+{
+  "title": "IRAC Target-Site Taxonomy — poster-derived educational layer",
+  "language": "Bahasa Indonesia",
+  "source_note": "Diterjemahkan dari visual IRAC yang diberikan pengguna. Kategori fisiologis digunakan sebagai cara membaca target, bukan sebagai pengganti nomor kelompok MoA untuk manajemen resistensi.",
+  "categories": [
+    {
+      "id": "nerve-muscle",
+      "name_id": "Target saraf & otot",
+      "groups": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "14",
+        "22",
+        "28",
+        "30",
+        "32",
+        "37"
+      ],
+      "short": "Mengganggu sistem saraf atau otot sehingga hama cepat berhenti bergerak, makan, atau mati.",
+      "analogy": "Seperti memutus kabel listrik dan kontrol gerak.",
+      "effect": "Gerakan kacau, kejang, lumpuh, berhenti makan.",
+      "speed": "Umumnya cepat",
+      "icon": "🧠"
+    },
+    {
+      "id": "respiration",
+      "name_id": "Target respirasi",
+      "groups": [
+        "13",
+        "21",
+        "34"
+      ],
+      "short": "Mengganggu mesin energi sel di mitokondria sehingga produksi energi terganggu.",
+      "analogy": "Seperti mematikan pembangkit listrik di dalam sel.",
+      "effect": "Energi sel turun → aktivitas menurun → hama mati.",
+      "speed": "Cepat hingga sedang",
+      "icon": "⚡"
+    },
+    {
+      "id": "midgut",
+      "name_id": "Target usus tengah",
+      "groups": [
+        "11",
+        "31"
+      ],
+      "short": "Menyerang usus tengah, terutama pada larva Lepidoptera, melalui toksin mikroba.",
+      "analogy": "Seperti merusak pusat pencernaan larva.",
+      "effect": "Kerusakan usus → berhenti makan → kematian.",
+      "speed": "Sedang",
+      "icon": "🦠"
+    },
+    {
+      "id": "growth-development",
+      "name_id": "Target pertumbuhan & perkembangan",
+      "groups": [
+        "7",
+        "15",
+        "18"
+      ],
+      "short": "Mengganggu hormon, pembentukan kitin, atau proses perkembangan sehingga serangga gagal tumbuh normal.",
+      "analogy": "Seperti mengacaukan proses ganti kulit dan tumbuh.",
+      "effect": "Gagal moulting, perkembangan terganggu, reproduksi menurun.",
+      "speed": "Lambat hingga sedang",
+      "icon": "🌱"
+    },
+    {
+      "id": "unknown",
+      "name_id": "MoA tidak diketahui / belum pasti",
+      "groups": [
+        "UN"
+      ],
+      "short": "Target atau mekanismenya belum dijelaskan dengan tingkat kepastian yang memadai.",
+      "analogy": "Kita tahu ada efek, tetapi belum tahu tombol biologis yang tepat.",
+      "effect": "Bervariasi menurut bahan aktif.",
+      "speed": "Bervariasi",
+      "icon": "❔"
+    }
+  ],
+  "group_descriptions": {
+    "1": "Penghambat asetilkolinesterase (AChE)",
+    "2": "Penghambat kanal klorida berpintu GABA",
+    "3": "Modulator kanal natrium",
+    "4": "Modulator kompetitif reseptor asetilkolin nikotinik (nAChR)",
+    "5": "Modulator alosterik nAChR — Site I",
+    "6": "Modulator alosterik kanal klorida berpintu glutamat (GluCl)",
+    "14": "Penghambat kanal nAChR",
+    "22": "Penghambat kanal natrium bergantung tegangan",
+    "28": "Modulator reseptor ryanodine",
+    "30": "Modulator alosterik kanal klorida berpintu GABA",
+    "32": "Modulator alosterik nAChR — Site II",
+    "37": "Penghambat transport vesikel (V-ATPase)",
+    "13": "Pelepas fosforilasi oksidatif melalui gangguan gradien proton",
+    "21": "Penghambat transport elektron kompleks I mitokondria",
+    "34": "Penghambat transport elektron kompleks III — situs Qi",
+    "11": "Perusak membran usus tengah serangga oleh toksin mikroba",
+    "31": "Baculovirus",
+    "7": "Modulator reseptor hormon juvenil",
+    "15": "Penghambat biosintesis kitin yang memengaruhi CHS1",
+    "18": "Agonis reseptor ekdison",
+    "UN": "MoA tidak diketahui atau belum pasti"
+  },
+  "ui_note": "Warna/kategori fisiologis membantu memahami target, gejala dan kecepatan aksi. Untuk manajemen resistensi, gunakan nomor kelompok MoA, bukan warna kategori."
+}

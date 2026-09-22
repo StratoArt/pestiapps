@@ -1,11 +1,19 @@
-const state={committee:'IRAC',data:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false};
+const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
 
+const ID_MOA={
+'Acetylcholinesterase (AChE) inhibitors':'Penghambat asetilkolinesterase (AChE)','GABA-gated chloride channel blockers':'Penghambat saluran klorida berpintu GABA','Sodium channel modulators':'Modulator saluran natrium','nAChR competitive modulators':'Modulator kompetitif reseptor nAChR','nAChR allosteric modulators – Site I':'Modulator alosterik nAChR – Situs I','Glutamate-gated chloride channel allosteric modulators':'Modulator alosterik saluran klorida berpintu glutamat','Juvenile hormone receptor modulators':'Modulator reseptor hormon juvenil','Chordotonal organ TRPV channel modulators':'Modulator kanal TRPV organ kordotonal','Mite growth inhibitors affecting CHS1':'Penghambat pertumbuhan tungau yang memengaruhi CHS1','Microbial disruptors of insect midgut membranes':'Pengganggu membran usus tengah serangga oleh mikroba','Inhibitors of mitochondrial ATP synthase':'Penghambat ATP sintase mitokondria','Uncouplers of oxidative phosphorylation via disruption of proton gradient':'Pengurai fosforilasi oksidatif melalui gangguan gradien proton','nAChR channel blockers':'Penghambat kanal nAChR','Inhibitors of chitin biosynthesis affecting CHS1':'Penghambat biosintesis kitin yang memengaruhi CHS1','Inhibitors of chitin biosynthesis, type 1':'Penghambat biosintesis kitin tipe 1','Moulting disruptor, Dipteran':'Pengganggu pergantian kulit pada Diptera','Ecdysone receptor agonists':'Agonis reseptor ekdison','Octopamine receptor agonists':'Agonis reseptor oktopamin','Voltage-dependent sodium channel blockers':'Penghambat saluran natrium bergantung tegangan','Inhibitors of acetyl-CoA carboxylase':'Penghambat asetil-KoA karboksilase','Mitochondrial complex IV electron transport inhibitors':'Penghambat transpor elektron kompleks IV mitokondria','Mitochondrial complex II electron transport inhibitors':'Penghambat transpor elektron kompleks II mitokondria','Ryanodine receptor modulators':'Modulator reseptor ryanodine','Chordotonal organ nicotinamidase inhibitors':'Penghambat nikotinamidase organ kordotonal','GABA-gated chloride channel allosteric modulators':'Modulator alosterik saluran klorida berpintu GABA',
+'RNA polymerase I':'RNA polimerase I','DNA/RNA synthesis (proposed)':'Sintesis DNA/RNA (diusulkan)','DNA topoisomerase type II (gyrase)':'DNA topoisomerase tipe II (girase)','dihydroorotate dehydrogenase (DHODH)':'Dihidroorotat dehidrogenase (DHODH)','tubulin polymerization':'Polimerisasi tubulin','cell division (unknown site)':'Pembelahan sel (situs belum diketahui)','actin/myosin/fimbrin function':'Fungsi aktin/miosin/fimbrin','complex II succinate dehydrogenase':'Kompleks II – suksinat dehidrogenase','complex III cytochrome bc1 Qo site':'Kompleks III sitokrom bc1 – situs Qo','complex III cytochrome bc1 Qi site':'Kompleks III sitokrom bc1 – situs Qi','uncouplers of oxidative phosphorylation':'Pengurai fosforilasi oksidatif','ATP synthase':'ATP sintase','methionine biosynthesis':'Biosintesis metionin','protein synthesis, ribosome termination':'Sintesis protein – terminasi ribosom','protein synthesis, ribosome initiation':'Sintesis protein – inisiasi ribosom','protein synthesis, ribosome elongation':'Sintesis protein – elongasi ribosom','leucyl-tRNA synthetase':'Leusil-tRNA sintetase','signal transduction, mechanism unknown':'Transduksi sinyal, mekanisme belum diketahui',
+'Inhibition of Acetyl CoA Carboxylase (ACCase)':'Penghambatan asetil-KoA karboksilase (ACCase)','Inhibition of Acetolactate Synthase (ALS)':'Penghambatan asetolaktat sintase (ALS)','Inhibition of Microtubule Assembly / α-Tubulin':'Penghambatan pembentukan mikrotubulus / α-tubulin','Auxin Mimics':'Mimetik auksin','Inhibition of Photosynthesis at PS II – D1 Serine 264 binders':'Penghambatan fotosintesis PS II – pengikat D1 Serin 264','Inhibition of Photosynthesis at PS II – D1 Histidine 215 binders':'Penghambatan fotosintesis PS II – pengikat D1 Histidin 215','Inhibition of EPSPS':'Penghambatan EPSPS','Inhibition of Glutamine Synthetase (GS)':'Penghambatan glutamin sintetase (GS)','Inhibition of Phytoene Desaturase (PDS)':'Penghambatan fitoena desaturase (PDS)','Inhibition of Deoxy-D-Xylulose Phosphate Synthase (DXPS)':'Penghambatan deoksi-D-xilulosa fosfat sintase (DXPS)','Inhibition of Protoporphyrinogen Oxidase (PPO)':'Penghambatan protoporfirinogen oksidase (PPO)','Inhibition of Very Long-Chain Fatty Acid Synthesis (VLCFA)':'Penghambatan sintesis asam lemak rantai sangat panjang (VLCFA)','Inhibition of Dihydropteroate Synthase (DHPS)':'Penghambatan dihidropteroat sintase (DHPS)','Auxin Transport Inhibitors':'Penghambat transport auksin','PS I Electron Diversion':'Pengalihan elektron PSI','Microtubule Interference – Unclear Site of Action':'Gangguan mikrotubulus – situs kerja belum jelas','Inhibition of Hydroxyphenyl Pyruvate Dioxygenase (HPPD)':'Penghambatan hidroksifenil piruvat dioksigenase (HPPD)','Inhibition of Dihydroorotate Dehydrogenase (DHODH)':'Penghambatan dihidroorotat dehidrogenase (DHODH)','Inhibition of Cellulose Synthesis':'Penghambatan sintesis selulosa','Inhibition of Fatty Acid Thioesterase (FAT)':'Penghambatan fatty acid thioesterase (FAT)','Inhibition of Solanesyl Diphosphate Synthase (SDPS)':'Penghambatan solanesil difosfat sintase (SDPS)','Inhibition of Homogentisate Solanesyltransferase (HST)':'Penghambatan homogentisat solanesiltransferase (HST)','Unknown Mode of Action':'Mekanisme kerja belum diketahui'};
+const moaLabel=x=>ID_MOA[x]||x;
+
+
 async function load(){
-  const [moa,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,sources,agroKnowledge,fusarium,hamaSource]=await Promise.all([
+  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
+    fetch('data/emerging_actives.json').then(r=>r.json()),
     fetch('data/opt.json').then(r=>r.json()),
     fetch('data/image_sources.json').then(r=>r.json()),
     fetch('data/opt_control.json').then(r=>r.json()),
@@ -15,9 +23,12 @@ async function load(){
     fetch('data/sources.json').then(r=>r.json()),
     fetch('data/agrobiology_knowledge.json').then(r=>r.json()),
     fetch('data/fusarium_watermelon.json').then(r=>r.json()),
-    fetch('data/hama_source_table.json').then(r=>r.json())
+    fetch('data/hama_source_table.json').then(r=>r.json()),
+    fetch('data/crop_guidelines.json').then(r=>r.json()),
+    fetch('data/irac_target_site_map.json').then(r=>r.json()),
+    fetch('data/scan_analysis_guide.json').then(r=>r.json())
   ]);
-  state.data=moa; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource;
+  state.data=moa; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines;
   updateHomeStats(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderKnowledge(); renderSources(); renderLibrary(); render();
 }
 function rows(){return state.data?.records?.[state.committee]||[]}
@@ -26,49 +37,97 @@ function normalize(r){
   if(state.committee==='FRAC')return{code:r[1],name:r[2],sub:r[3],chem:r[4],ai:splitAI(r[5]),cat:r[6],risk:r[7]};
   return{code:r[1],legacy:r[2],name:r[3],chem:r[4],ai:splitAI(r[5])}
 }
+function groupRows(){return rows().map(normalize)}
+function expandedRows(){
+  const out=[];
+  groupRows().forEach(g=>{
+    const ais=g.ai.length?g.ai:['(Tidak ada bahan aktif tercantum)'];
+    ais.forEach((ai,i)=>out.push({...g,id:`${state.committee}:${g.code}:${i}:${ai}`,active:ai}));
+  });
+  return out;
+}
 function filtered(){
   const q=state.search.toLowerCase();
-  return rows().map(normalize).filter(x=>{
-    const hay=[x.code,x.legacy,x.name,x.sub,x.chem,x.cat,x.risk,...x.ai].filter(Boolean).join(' ').toLowerCase();
+  let source=state.moaView==='group'?groupRows():expandedRows();
+  if(state.committee==='IRAC' && state.moaView==='ai') source=source.concat((state.emerging?.records||[]).filter(x=>x.claimed_group==='IRAC Group 28').map((x,i)=>({code:'28',name:'Ryanodine receptor modulators',sub:'Emerging / eksternal',chem:x.chemical_class,ai:[x.name],active:x.name,cat:'Bahan aktif emerging',status:'emerging',id:`IRAC:EMERGING:${i}:${x.name}`,source:x})));
+  return source.filter(x=>{
+    const hay=[x.code,x.legacy,x.name,x.sub,x.chem,x.cat,x.risk,x.active,...x.ai,x.source?.market_status,x.source?.targets].filter(Boolean).join(' ').toLowerCase();
     return(!q||hay.includes(q))&&(state.group==='ALL'||x.code===state.group)
   })
 }
-function groups(){return[...new Set(rows().map(normalize).map(x=>x.code))].filter(Boolean)}
+function groups(){return[...new Set(groupRows().map(x=>x.code))].filter(Boolean)}
 function updateHomeStats(){
   const pests=state.opt.pests.length, diseases=state.opt.diseases.length, weeds=state.opt.weeds.length;
   $('#homeOpt').textContent=pests+diseases+weeds+'+';
   const all=['IRAC','FRAC','HRAC'].flatMap(c=>state.data?.records?.[c]||[]);
-  $('#homeAI').textContent=[...new Set(all.flatMap(r=>splitAI(r[5])))].length+'+';
+  $('#homeAI').textContent=[...new Set(all.flatMap(r=>splitAI(r[5]).map(a=>a.toLowerCase())))].length+'+';
   $('#homeFormulations').textContent=(state.formulations?.items?.length||0)+'+';
 }
 function render(){
   if(state.screen!=='explore')return;
+  if(state.moaView==='emerging'){ renderEmerging(); return; }
+  if(state.moaView==='target'){ renderTargetSite(); return; }
   $('#exploreTitle').textContent=state.committee;
-  $('#exploreSub').textContent=state.committee==='IRAC'?'Insecticide · Acaricide · Nematicide':state.committee==='FRAC'?'Fungicide resistance & mode of action':'Herbicide mode of action';
+  $('#exploreSub').textContent=state.committee==='IRAC'?'Insecticide · Acaricide · Nematicide':state.committee==='FRAC'?'Resistensi dan mekanisme kerja fungisida':'Mekanisme kerja herbisida';
   $('#activeCommittee').textContent=state.committee+' 2026';
   const gs=groups();
   $('#groupFilters').innerHTML='<button class="chip active" data-group="ALL">Semua</button>'+gs.map(g=>`<button class="chip" data-group="${esc(g)}">${esc(g)}</button>`).join('');
   $$('.chip').forEach(b=>b.addEventListener('click',()=>{state.group=b.dataset.group;$$('.chip').forEach(x=>x.classList.toggle('active',x===b));renderList()}));
+  $$('.moa-view-tabs button').forEach(b=>b.addEventListener('click',()=>{state.moaView=b.dataset.moaView;$$('.moa-view-tabs button').forEach(x=>x.classList.toggle('active',x===b));render()}));
   renderList();
+}
+function renderTargetSite(){
+  $('#exploreTitle').textContent='Target Site'; $('#exploreSub').textContent='Cara mudah memahami target biologis insektisida'; $('#activeCommittee').textContent='IRAC · Target Site'; $('#groupFilters').innerHTML='';
+  const cats=state.targetMap?.categories||[]; const active=cats.find(c=>c.id===state.targetCategory)||cats[0]; $('#resultCount').textContent=cats.length;
+  const insectSvg=`<svg class="target-insect-svg" viewBox="0 0 240 300" role="img" aria-label="Ilustrasi serangga dan target biologis"><defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b7b4b"/><stop offset="1" stop-color="#35ad76"/></linearGradient></defs><ellipse cx="120" cy="150" rx="48" ry="92" fill="url(#tg)"/><circle cx="120" cy="56" r="31" fill="#145c40"/><ellipse cx="78" cy="126" rx="45" ry="72" fill="#dff3e8"/><ellipse cx="162" cy="126" rx="45" ry="72" fill="#dff3e8"/><circle cx="110" cy="53" r="4" fill="#fff"/><circle cx="130" cy="53" r="4" fill="#fff"/><path d="M95 36 Q65 12 52 28 M145 36 Q175 12 188 28" fill="none" stroke="#145c40" stroke-width="4" stroke-linecap="round"/><path d="M86 148 Q52 142 33 124 M86 170 Q48 180 29 201 M154 148 Q188 142 207 124 M154 170 Q192 180 211 201" fill="none" stroke="#145c40" stroke-width="5" stroke-linecap="round"/><circle cx="120" cy="104" r="13" fill="#fff" stroke="#0b7b4b" stroke-width="5"/><circle cx="120" cy="153" r="18" fill="#fff" stroke="#0b7b4b" stroke-width="5"/><circle cx="120" cy="211" r="13" fill="#fff" stroke="#0b7b4b" stroke-width="5"/><text x="120" y="109" text-anchor="middle" font-size="10" font-weight="800" fill="#087443">N</text><text x="120" y="158" text-anchor="middle" font-size="10" font-weight="800" fill="#087443">E</text><text x="120" y="216" text-anchor="middle" font-size="10" font-weight="800" fill="#087443">G</text></svg>`;
+  const cards=cats.map(c=>`<button class="target-cat ${c.id===active.id?'active':''}" data-target-cat="${esc(c.id)}"><span class="target-cat-icon">${esc(c.icon||'◉')}</span><span><b>${esc(c.name_id)}</b><small>${esc(c.speed)}</small></span><i>›</i></button>`).join('');
+  $('#cards').innerHTML=`<div class="target-map-intro"><div><span class="eyebrow">IRAC · TARGET-SITE TAXONOMY</span><h2>Dari target biologis → efek pada OPT</h2><p>Warna kategori membantu memahami bagian/fungsi biologis yang dipengaruhi. Untuk rotasi resistensi, tetap gunakan nomor kelompok MoA.</p></div></div><div class="target-visual"><div class="target-visual-art">${insectSvg}<span class="target-label label-head">Saraf & otot</span><span class="target-label label-mid">Usus tengah</span><span class="target-label label-body">Pertumbuhan</span><span class="target-label label-power">Respirasi</span></div><div class="target-detail"><div class="target-detail-badge">${esc(active.icon||'◉')} ${esc(active.name_id)}</div><h3>${esc(active.short)}</h3><div class="target-analogy"><b>Gampangnya:</b> ${esc(active.analogy)}</div><div class="target-effect"><b>Efek yang biasanya terlihat:</b><p>${esc(active.effect)}</p></div><div class="target-groups"><b>Kelompok MoA:</b><div>${(active.groups||[]).map(g=>`<span>${esc(g)}</span>`).join('')}</div></div></div></div><div class="target-cats">${cards}</div><div class="target-footer-note"><b>Catatan penting:</b> kategori fisiologis ini adalah alat bantu memahami target, bukan dasar rotasi. IRAC menyatakan manajemen resistensi harus didasarkan pada nomor kelompok MoA.</div>`;
+  $$('.target-cat').forEach(b=>b.addEventListener('click',()=>{state.targetCategory=b.dataset.targetCat;renderTargetSite()}));
+}
+function renderEmerging(){
+  $('#exploreTitle').textContent='Emerging';
+  $('#exploreSub').textContent='Bahan aktif baru · pipeline · pra-klasifikasi';
+  $('#activeCommittee').textContent='Emerging / Pipeline';
+  $('#groupFilters').innerHTML='';
+  const q=state.search.toLowerCase();
+  const list=(state.emerging?.records||[]).filter(x=>!q || [x.name,x.type,x.chemical_class,x.claimed_moa,x.claimed_group,x.market_status,x.targets].join(' ').toLowerCase().includes(q));
+  $('#resultCount').textContent=list.length;
+  $('#cards').innerHTML=list.map((x,i)=>`<button class="moa-card emerging-card" data-i="${i}">
+    <div class="code"><strong>NEW</strong><small>${esc(x.type)}</small></div>
+    <div class="moa-main"><h3>${esc(x.name)}</h3><p>${esc(x.claimed_moa)}</p><div class="ai-row"><span>${esc(x.claimed_group)}</span><span>${esc(x.chemical_class)}</span></div></div><span class="arrow">›</span>
+  </button>`).join('')||'<div class="empty">Tidak ada data emerging yang cocok.</div>';
+  $$('.emerging-card').forEach(b=>b.addEventListener('click',()=>openEmergingDetail(list[+b.dataset.i])));
+}
+function openEmergingDetail(x){
+  state.detailRef={kind:'emerging',id:x.name};
+  if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
+  $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
+    <button class="close" id="closeDetail">×</button><div class="detail-code">EMERGING · ${esc(x.type)}</div>
+    <h2>${esc(x.name)}</h2><p class="muted">${esc(x.chemical_class)}</p>
+    <div class="detail-grid"><div><label>MoA diklaim</label><strong>${esc(x.claimed_moa)}</strong></div><div><label>Kelompok</label><strong>${esc(x.claimed_group)}</strong></div><div><label>Status</label><strong>${esc(x.market_status)}</strong></div><div><label>OPT/sasaran</label><strong>${esc(x.targets)}</strong></div></div>
+    <div class="source-box"><strong>Catatan database</strong><p>${esc(x.notes)}</p><p><a href="${esc(x.url)}" target="_blank" rel="noopener">Buka sumber</a></p></div>
+    <p class="source-note">Ini adalah lapisan emerging/pipeline dan bukan pengganti klasifikasi resmi IRAC/FRAC/HRAC atau bukti registrasi Indonesia. Status lokal harus diverifikasi pada registri dan label terbaru.</p>
+  </aside>`;
+  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
 }
 function renderList(){
   const list=filtered();
   $('#resultCount').textContent=list.length;
   $('#cards').innerHTML=list.map((x,i)=>`<button class="moa-card" data-i="${i}">
     <div class="code">${esc(state.committee)}<strong>${esc(x.code)}</strong>${x.legacy?`<small>Legacy ${esc(x.legacy)}</small>`:''}</div>
-    <div class="moa-main"><h3>${esc(x.name)}</h3><p>${esc(x.chem||x.sub||'')}</p><div class="ai-row">${x.ai.slice(0,4).map(a=>`<span>${esc(a)}</span>`).join('')}${x.ai.length>4?`<span>+${x.ai.length-4}</span>`:''}</div></div><span class="arrow">›</span>
+    <div class="moa-main"><h3>${esc(state.moaView==='ai' ? x.active : x.name)}</h3><p>${esc(moaLabel(x.name))}</p><div class="ai-row">${state.moaView==='ai'?`<span>${esc(x.chem||x.sub||'')}</span>`:x.ai.slice(0,4).map(a=>`<span>${esc(a)}</span>`).join('')}${state.moaView==='group'&&x.ai.length>4?`<span>+${x.ai.length-4}</span>`:''}</div></div><span class="arrow">›</span>
   </button>`).join('')||'<div class="empty">Tidak ada data yang cocok.</div>';
   $$('.moa-card').forEach(b=>b.addEventListener('click',()=>openDetail(list[+b.dataset.i])));
 }
 function openDetail(x){
-  state.detailRef={kind:'moa',id:x.code};
+  state.detailRef={kind:'moa',id:x.id||x.code};
   if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
     <button class="close" id="closeDetail">×</button><div class="detail-code">${esc(state.committee)} · ${esc(x.code)}${x.legacy?` · Legacy ${esc(x.legacy)}`:''}</div>
-    <h2>${esc(x.name)}</h2>${x.sub?`<p class="muted">${esc(x.sub)}</p>`:''}
-    <div class="detail-grid"><div><label>Mode / target</label><strong>${esc(x.name)}</strong></div><div><label>Kelas kimia</label><strong>${esc(x.chem||'—')}</strong></div>${x.cat?`<div><label>Kategori</label><strong>${esc(x.cat)}</strong></div>`:''}${x.risk?`<div><label>Resistance risk</label><strong>${esc(x.risk)}</strong></div>`:''}</div>
-    <h3>Active ingredients</h3><div class="ai-list">${x.ai.map(a=>`<span>${esc(a)}</span>`).join('')}</div>
-    <p class="source-note">Referensi klasifikasi ${esc(state.committee)}. Gunakan sebagai referensi teknis dan selalu cek label serta registrasi lokal sebelum aplikasi.</p>
+    <h2>${esc(state.moaView==='ai' ? x.active : moaLabel(x.name))}</h2>${x.sub?`<p class="muted">${esc(x.sub)}</p>`:''}
+    <div class="detail-grid"><div><label>Kelompok MoA</label><strong>${esc(x.code)}</strong></div><div><label>Mode / target</label><strong>${esc(moaLabel(x.name))}</strong></div><div><label>Kelas kimia</label><strong>${esc(x.chem||'—')}</strong></div>${x.cat?`<div><label>Kategori</label><strong>${esc(x.cat)}</strong></div>`:''}${x.risk?`<div><label>Resistance risk</label><strong>${esc(x.risk)}</strong></div>`:''}</div>
+    <h3>Bahan aktif</h3><div class="ai-list">${(state.moaView==='ai'?[x.active]:x.ai).map(a=>`<span>${esc(a)}</span>`).join('')}</div>
+    <p class="source-note">Referensi klasifikasi ${esc(state.committee)}. Data klasifikasi mengikuti snapshot yang dimuat di aplikasi; selalu cek sumber resmi terbaru, label dan registrasi lokal sebelum aplikasi.</p>
   </aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
 }
@@ -108,7 +167,7 @@ function handlePopState(e){
     $('#detail').innerHTML='';
     if(state.detailRef){
       if(state.detailRef.kind==='formulation') openFormulationDetail(state.formulations.items.find(x=>x.code===state.detailRef.id));
-      else if(state.detailRef.kind==='moa'){ const x=filtered().find(x=>x.code===state.detailRef.id); if(x) openDetail(x); }
+      else if(state.detailRef.kind==='moa'){ const x=filtered().find(x=>x.id===state.detailRef.id||x.code===state.detailRef.id); if(x) openDetail(x); }
       else if(state.detailRef.kind==='opt'){ const pool=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds]; const x=pool.find(x=>x.id===state.detailRef.id); if(x) openOptDetail(x,state.detailRef.type); }
       else if(state.detailRef.kind==='crop'){ const x=state.opt.crops.find(x=>x.id===state.detailRef.id); if(x) openCropDetail(x); }
       else if(state.detailRef.kind==='library'){ const x=libraryItemById(state.detailRef.id); if(x) openLibraryDetail(x); }
@@ -363,10 +422,25 @@ function openCropDetail(crop){
     <button class="close" id="closeDetail">×</button><div class="detail-code">Tanaman & Inang</div>
     <div style="text-align:center;margin:16px 0 6px"><img src="assets/opt/${esc(crop.icon)}" style="width:150px;height:130px;color:#0a7548"></div>
     <h2>${esc(crop.name)}</h2><p class="muted"><i>${esc(crop.latin)}</i></p>
+    ${crop.source_guidelines?`<div class="source-box"><strong>Sumber pengetahuan</strong><p>${esc(crop.source_guidelines.summary_id)}</p><small>${esc(crop.source_guidelines.source)} · ${esc(crop.source_guidelines.source_note)}</small></div>`:''}
     <h3>OPT terkait</h3><div class="opt-list">${related.slice(0,12).map(x=>`<div class="opt-card" style="cursor:default"><img src="assets/opt/${esc(x.icon)}"><div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category||'')}</small></div></div>`).join('')||'<div class="empty">Belum ada relasi OPT.</div>'}</div>
   </aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
 }
+function setScanFile(file){
+  if(!file || !file.type.startsWith('image/')) return; state.scanFile=file;
+  const preview=$('#scanPreview'); const url=URL.createObjectURL(file); preview.style.backgroundImage=`url("${url}")`; preview.style.backgroundSize='cover'; preview.style.backgroundPosition='center';
+  preview.querySelector('span').textContent='✓'; $('#scanPreviewTitle').textContent=file.name||'Foto siap dianalisis'; $('#scanPreviewHint').textContent='Foto siap dibagikan ke ChatGPT.';
+  $('#scanFileMeta').hidden=false; $('#scanFileMeta').textContent=`${file.name||'foto'} · ${Math.round(file.size/1024)} KB`; $('#analyzeChatGPTBtn').disabled=false; $('#copyScanPromptBtn').disabled=false;
+}
+function buildScanPrompt(){return `Saya sedang menggunakan OPT Explorer untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.\n\nTugas:\n1. Identifikasi tanaman/komoditas jika dapat terlihat.\n2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA.\n3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian.\n4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung.\n5. Jelaskan ciri yang membedakannya dari kandidat lain.\n6. Jika foto tidak cukup, minta foto tambahan yang spesifik.\n7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas.\n8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan.\n9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.\n\nJawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
+async function shareScanToChatGPT(){
+  if(!state.scanFile)return; const prompt=buildScanPrompt(), file=state.scanFile;
+  if(navigator.share && navigator.canShare){try{if(navigator.canShare({files:[file]})){await navigator.share({title:'OPT Explorer — Analisis Foto OPT',text:prompt,files:[file]});return;}}catch(e){if(e?.name==='AbortError')return;}}
+  try{await navigator.clipboard.writeText(prompt)}catch(e){}
+  window.open('https://chatgpt.com/','_blank','noopener'); alert('Browser ini tidak mendukung berbagi file langsung. ChatGPT sudah dibuka. Tempel foto secara manual lalu kirim prompt yang sudah disalin jika tersedia.');
+}
+async function copyScanPrompt(){try{await navigator.clipboard.writeText(buildScanPrompt());alert('Prompt analisis sudah disalin.')}catch(e){alert(buildScanPrompt())}}
 function showScreen(id,opts={}){
   if(opts.history!==false) pushNav(id);
   $$('.screen').forEach(s=>s.classList.toggle('active-screen',s.id===id));
@@ -375,7 +449,7 @@ function showScreen(id,opts={}){
   if(id==='types')renderTypes(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary();
   window.scrollTo({top:0,behavior:'smooth'});
 }
-function setCommittee(c){state.committee=c;state.group='ALL';state.search='';$('#search').value='';$$('.committee-tabs button').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render()}
+function setCommittee(c){state.committee=c;state.moaView='ai';state.group='ALL';state.search='';$('#search').value='';$$('.committee-tabs button').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render()}
 $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
   if(b.dataset.committee)setCommittee(b.dataset.committee);
   if(b.classList.contains('back-button') && state.historyReady && history.length>1){ history.back(); return; }
@@ -384,7 +458,7 @@ $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
 $$('.committee-tabs button').forEach(b=>b.addEventListener('click',()=>setCommittee(b.dataset.c)));
 $$('.mini-tabs button[data-type]').forEach(b=>b.addEventListener('click',()=>{state.type=b.dataset.type;$$('.mini-tabs button[data-type]').forEach(x=>x.classList.toggle('active',x===b));renderTypes()}));
 $$('.pest-tabs button').forEach(b=>b.addEventListener('click',()=>{state.pestFilter=b.dataset.pestFilter;renderPests()}));
-$('#search').addEventListener('input',e=>{state.search=e.target.value;renderList()});$('#clearSearch').addEventListener('click',()=>{$('#search').value='';state.search='';renderList()});$('#focusSearch').addEventListener('click',()=>$('#search').focus());
+$('#search').addEventListener('input',e=>{state.search=e.target.value;state.moaView==='emerging'?renderEmerging():renderList()});$('#clearSearch').addEventListener('click',()=>{$('#search').value='';state.search='';state.moaView==='emerging'?renderEmerging():renderList()});$('#focusSearch').addEventListener('click',()=>$('#search').focus());
 $('#optSearch').addEventListener('input',e=>{
   const q=e.target.value.toLowerCase();
   $$('#typeGrid .type-card').forEach(card=>card.style.display=card.textContent.toLowerCase().includes(q)?'':'none')
@@ -406,6 +480,12 @@ $('#librarySearchBtn').addEventListener('click',()=>$('#librarySearch').focus())
 $('#menuBtn').addEventListener('click',()=>showScreen('menu'));
 $('#menuTheme').addEventListener('click',()=>document.documentElement.classList.toggle('dark'));
 $('#themeBtn').addEventListener('click',()=>document.documentElement.classList.toggle('dark'));
+$('#cameraBtn').addEventListener('click',()=>$('#cameraInput').click());
+$('#galleryBtn').addEventListener('click',()=>$('#galleryInput').click());
+$('#cameraInput').addEventListener('change',e=>setScanFile(e.target.files?.[0]));
+$('#galleryInput').addEventListener('change',e=>setScanFile(e.target.files?.[0]));
+$('#analyzeChatGPTBtn').addEventListener('click',shareScanToChatGPT);
+$('#copyScanPromptBtn').addEventListener('click',copyScanPrompt);
 $('#installBtn').addEventListener('click',async()=>{if(state.deferredPrompt){await state.deferredPrompt.prompt();state.deferredPrompt=null}else alert('Gunakan menu Chrome → Tambahkan ke layar utama untuk memasang aplikasi.')});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();state.deferredPrompt=e;$('#installBtn').hidden=false});
 window.addEventListener('appinstalled',()=>$('#installBtn').hidden=true);

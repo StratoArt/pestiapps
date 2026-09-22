@@ -155,6 +155,91 @@
       "year": "2015",
       "pages": "1",
       "note": "US/Canada/Mexico-specific offerings and historical label data; not an Indonesian registration source."
+    },
+    {
+      "id": "eppo-pp2-4-allium",
+      "title": "EPPO PP 2/4(2) Guidelines on Good Plant Protection Practice: Allium Crops",
+      "type": "PDF",
+      "language": "English",
+      "scope": "Bawang dan tanaman Allium; hama, penyakit, gulma dan prinsip GPP",
+      "source_url": "EPPO Standard PP 2/4(2)",
+      "status": "Historical/regional reference; approved/revised 2000",
+      "notes": "Digunakan sebagai sumber OPT dan tanaman inang; bukan bukti registrasi Indonesia."
+    },
+    {
+      "id": "eppo-pp2-17-maize",
+      "title": "EPPO PP 2/17(1) Guidelines on Good Plant Protection Practice: Maize",
+      "type": "PDF",
+      "language": "English",
+      "scope": "Jagung; hama, penyakit, gulma dan prinsip GPP",
+      "source_url": "EPPO Standard PP 2/17(1)",
+      "status": "Historical/regional reference; approved 1999",
+      "notes": "Digunakan sebagai sumber OPT dan hubungan tanaman-inang; bukan bukti registrasi Indonesia."
+    },
+    {
+      "id": "eppo-pp2-7-brassicas",
+      "title": "EPPO PP 2/7(1) Guidelines on Good Plant Protection Practice: Vegetable Brassicas",
+      "type": "PDF",
+      "language": "English",
+      "scope": "Kubis-kubisan; hama, penyakit, gulma dan prinsip GPP",
+      "source_url": "EPPO Standard PP 2/7(1)",
+      "status": "Historical/regional reference; approved 1996, edited 1998",
+      "notes": "Digunakan sebagai sumber OPT dan tanaman inang; bukan bukti registrasi Indonesia."
+    },
+    {
+      "id": "irac-nematicides-2026",
+      "title": "IRAC Nematode Working Group — Nematicide Mode of Action Classification",
+      "publisher": "IRAC",
+      "type": "Current external classification / reference",
+      "scope": "Klasifikasi MoA nematisida N-1 sampai N-4 serta kelompok N-UN, N-UNX, N-UNB, N-UNF dan N-UNE",
+      "year": "2026",
+      "url": "https://irac-online.org/documents/nematicides-poster/"
+    },
+    {
+      "id": "irac-pests-2026",
+      "title": "IRAC Pest Database — Resistance information by pest",
+      "publisher": "IRAC",
+      "type": "Current external resistance reference",
+      "scope": "Direktori OPT dengan informasi resistensi; nama umum dan nama Latin",
+      "year": "2026",
+      "url": "https://irac-online.org/pests/"
+    },
+    {
+      "id": "irac-lepidoptera-poster-2025",
+      "title": "IRAC Spodoptera exigua — Recommendations for Sustainable Resistance Management",
+      "publisher": "IRAC Chewing Pest Working Group",
+      "type": "PDF sumber pengguna / IRAC educational poster",
+      "scope": "Biologi, gejala, mekanisme resistensi, IRM dan IPM untuk Spodoptera exigua",
+      "year": "2025",
+      "pages": "1",
+      "url": "https://irac-online.org/"
+    },
+    {
+      "id": "irac-target-site-poster",
+      "title": "IRAC Lepidoptera — Mode of Action Classification by Target Site",
+      "publisher": "IRAC",
+      "type": "Visual source / educational taxonomy",
+      "scope": "Pengelompokan MoA berdasarkan target saraf-otot, respirasi, midgut, pertumbuhan-perkembangan dan MoA tidak diketahui",
+      "year": "2026",
+      "url": "https://irac-online.org/mode-of-action/"
+    },
+    {
+      "id": "eppo-cucurbits-pp2-032",
+      "title": "EPPO PP 2/32(1) Good Plant Protection Practice — Outdoor cucurbits",
+      "publisher": "EPPO",
+      "type": "PDF sumber pengguna",
+      "scope": "OPT dan strategi GPP pada melon, semangka, mentimun, labu dan Cucurbitaceae lain di lapangan terbuka",
+      "year": "2004",
+      "pages": "1-10"
+    },
+    {
+      "id": "eppo-solanaceous-pp2-030",
+      "title": "EPPO PP 2/30(1) Good Plant Protection Practice — Outdoor solanaceous crops",
+      "publisher": "EPPO",
+      "type": "PDF sumber pengguna",
+      "scope": "OPT dan strategi GPP pada tomat, cabai/paprika dan terung di lapangan terbuka",
+      "year": "2004",
+      "pages": "1-14"
     }
   ]
 }

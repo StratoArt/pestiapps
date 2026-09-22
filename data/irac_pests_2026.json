@@ -1,0 +1,339 @@
+{
+  "version": "IRAC Pest Resistance Directory — 2026 reference layer",
+  "language": "Bahasa Indonesia",
+  "source": "IRAC",
+  "source_url": "https://irac-online.org/pests/",
+  "note": "Direktori ini mengikuti daftar organisme pada halaman Resistance information by pest. Nama Indonesia adalah terjemahan untuk UI; nama Latin dipertahankan. Ketersediaan data pada direktori tidak sama dengan status registrasi pestisida di Indonesia.",
+  "records": [
+    {
+      "common_en": "Aedes mosquito",
+      "scientific_name": "Aedes spp",
+      "common_id": "Nyamuk Aedes",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "African cowpea thrips",
+      "scientific_name": "Megalurothrips sjostedti",
+      "common_id": "Thrips kacang tunggak Afrika",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "American serpentine leafminer",
+      "scientific_name": "Liriomyza trifolii",
+      "common_id": "Pengorok daun Amerika",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Amrasca spp.",
+      "scientific_name": "Amrasca biguttula biguttula",
+      "common_id": "Wereng daun Amrasca",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Anopheline Mosquitoes",
+      "scientific_name": "Anopheles spp",
+      "common_id": "Nyamuk Anopheles",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Asian Citrus Psyllid",
+      "scientific_name": "Diaphorina citri",
+      "common_id": "Kutu loncat jeruk Asia",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Avocado thrips",
+      "scientific_name": "Scirtothrips perseae",
+      "common_id": "Thrips alpukat",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Beet armyworm",
+      "scientific_name": "Spodoptera exigua",
+      "common_id": "Ulat grayak / ulat bawang",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Birdcherry oat aphid",
+      "scientific_name": "Rhopalosiphum padi",
+      "common_id": "Kutu daun oat",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Blackfly",
+      "scientific_name": "Simulium spp",
+      "common_id": "Lalat hitam",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Brown marmorated stink bug",
+      "scientific_name": "Halyomorpha halys",
+      "common_id": "Kepik cokelat marmer",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Brown planthopper",
+      "scientific_name": "Nilaparvata lugens",
+      "common_id": "Wereng cokelat",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Cabbage stem flea beetle",
+      "scientific_name": "Psylliodes chrysocephala",
+      "common_id": "Kumbang altika batang kubis",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Chilo suppressalis",
+      "scientific_name": "Chilo suppressalis",
+      "common_id": "Penggerek batang padi Chilo",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Cimex lectularius",
+      "scientific_name": "Cimex lectularius",
+      "common_id": "Kutu busuk",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Citrus red mite",
+      "scientific_name": "Panonychus citri",
+      "common_id": "Tungau merah jeruk",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Cockroaches",
+      "scientific_name": "Cockroach Species",
+      "common_id": "Kecoa",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Codling Moth",
+      "scientific_name": "Cydia pomonella",
+      "common_id": "Penggerek buah apel",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Colorado potato beetle",
+      "scientific_name": "Leptinotarsa decemlineata",
+      "common_id": "Kumbang kentang Colorado",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Corn earworm",
+      "scientific_name": "Helicoverpa zea",
+      "common_id": "Penggerek tongkol jagung",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Corn leafhopper",
+      "scientific_name": "Dalbulus maidis",
+      "common_id": "Wereng daun jagung",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Currant lettuce aphid",
+      "scientific_name": "Nasonovia ribisnigri",
+      "common_id": "Kutu daun selada",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Diamondback Moth",
+      "scientific_name": "Plutella xylostella",
+      "common_id": "Plutella / ulat daun kubis",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Eggplant fruit borer",
+      "scientific_name": "Leucinodes orbonalis",
+      "common_id": "Penggerek buah terung",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "English grain aphid",
+      "scientific_name": "Sitobion avenae",
+      "common_id": "Kutu daun serealia",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "European Corn Borer",
+      "scientific_name": "Ostrinia nubilalis",
+      "common_id": "Penggerek batang jagung Eropa",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "European grapevine moth",
+      "scientific_name": "Lobesia botrana",
+      "common_id": "Ngengat buah anggur Eropa",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "European Red Mite",
+      "scientific_name": "Panonychus ulmi",
+      "common_id": "Tungau merah Eropa",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Fall armyworm",
+      "scientific_name": "Spodoptera frugiperda",
+      "common_id": "Ulat grayak jagung",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Glasshouse whitefly",
+      "scientific_name": "Trialeurodes vaporariorum",
+      "common_id": "Kutu kebul rumah kaca",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Green peach aphid",
+      "scientific_name": "Myzus persicae",
+      "common_id": "Kutu daun persik hijau",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Green-belly stink bug",
+      "scientific_name": "Dichelops melacanthus",
+      "common_id": "Kepik perut hijau",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "House mosquito",
+      "scientific_name": "Culex spp",
+      "common_id": "Nyamuk Culex",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Housefly",
+      "scientific_name": "Musca domestica",
+      "common_id": "Lalat rumah",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Kissing bug",
+      "scientific_name": "Triatominae bugs",
+      "common_id": "Kepik triatoma",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Melon & Cotton Aphid",
+      "scientific_name": "Aphis gossypii",
+      "common_id": "Kutu daun melon & kapas",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Old world bollworm",
+      "scientific_name": "Helicoverpa armigera",
+      "common_id": "Penggerek buah kapas / ulat buah",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Onion Thrips",
+      "scientific_name": "Thrips tabaci",
+      "common_id": "Thrips bawang",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Pollen Beetle",
+      "scientific_name": "Meligethes aeneus",
+      "common_id": "Kumbang serbuk sari",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Red flour beetle",
+      "scientific_name": "Tribolium castaneum",
+      "common_id": "Kumbang tepung merah",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "San José scale",
+      "scientific_name": "Comstockaspis perniciosa",
+      "common_id": "Kutu sisik San José",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Sandfly",
+      "scientific_name": "Sandfly species",
+      "common_id": "Lalat pasir",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Southeast Asian Thrip",
+      "scientific_name": "Thrips parvispinus",
+      "common_id": "Thrips Asia Tenggara",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Spittlebug",
+      "scientific_name": "Mahanarva fimbriolata",
+      "common_id": "Wereng busa",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Stink Bug",
+      "scientific_name": "Euschistus heros",
+      "common_id": "Kepik",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Sugarcane Borer",
+      "scientific_name": "Diatraea saccharalis",
+      "common_id": "Penggerek batang tebu",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Taro caterpillar",
+      "scientific_name": "Spodoptera litura",
+      "common_id": "Ulat grayak",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Tobacco budworm",
+      "scientific_name": "Heliothis virescens",
+      "common_id": "Ulat pucuk tembakau",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Tobacco Thrips",
+      "scientific_name": "Frankliniella fusca",
+      "common_id": "Thrips tembakau",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Tobacco Whitefly",
+      "scientific_name": "Bemisia tabaci",
+      "common_id": "Kutu kebul",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Tomato leafminer",
+      "scientific_name": "Tuta absoluta",
+      "common_id": "Pengorok daun tomat",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Tsetse fly",
+      "scientific_name": "Glossina spp",
+      "common_id": "Lalat tsetse",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Twospotted Spider Mite",
+      "scientific_name": "Tetranychus urticae",
+      "common_id": "Tungau dua titik",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "Western flower thrips",
+      "scientific_name": "Frankliniella occidentalis",
+      "common_id": "Thrips bunga barat",
+      "source_url": "https://irac-online.org/pests/"
+    },
+    {
+      "common_en": "White-backed planthopper",
+      "scientific_name": "Sogatella furcifera",
+      "common_id": "Wereng punggung putih",
+      "source_url": "https://irac-online.org/pests/"
+    }
+  ]
+}

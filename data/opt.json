@@ -89,16 +89,33 @@
     {
       "id": "spodoptera-exigua",
       "name": "Spodoptera exigua",
-      "common": "Ulat grayak",
+      "common": "Ulat bawang / ulat grayak (beet armyworm)",
       "category": "Lepidoptera",
       "family": "Noctuidae",
       "icon": "spodoptera.svg",
       "hosts": [
+        "Alfalfa",
+        "Asparagus",
+        "Bawang daun",
         "Bawang merah",
-        "Bawang daun"
+        "Bit gula",
+        "Brassica",
+        "Jagung",
+        "Kapas",
+        "Padi",
+        "Paprika/cabai",
+        "Selada",
+        "Seledri",
+        "Stroberi",
+        "Terung",
+        "Tomat"
       ],
       "symptoms": [
         "Daun berlubang dan terpotong",
+        "Daun terskeletonisasi pada larva muda",
+        "Defoliasi berat",
+        "Frass hijau–hitam di sekitar area makan",
+        "Larva dapat masuk ke buah, bunga, atau polong",
         "Larva masuk ke daun",
         "Tanaman menguning dan pertumbuhan terganggu"
       ],
@@ -126,7 +143,9 @@
         "code": "LAPHEG",
         "url": "https://gd.eppo.int/taxon/LAPHEG/photos",
         "name": "Spodoptera exigua"
-      }
+      },
+      "source_irm": "data/irm_spodoptera_exigua_2025.json",
+      "irm_note": "Poster IRAC 2025: resistensi dapat melibatkan detoksifikasi metabolik, perubahan target-site, dan penurunan penetrasi; IRAC merekomendasikan pengaturan jendela MoA sekitar 30 hari dan membatasi paparan MoA yang sama pada maksimal 50% siklus tanaman."
     },
     {
       "id": "spodoptera-frugiperda",
@@ -173,7 +192,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Hama utama kelompok Brassica."
+      "notes": "Hama utama kelompok Brassica.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Plutella.xylostella.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Plutella.xylostella.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5/3.0",
+          "author": "See source page",
+          "attribution": "Plutella xylostella — Wikimedia Commons source.",
+          "notes": "James K. Lindsey; diamondback moth."
+        }
+      ]
     },
     {
       "id": "helicoverpa-armigera",
@@ -258,9 +290,9 @@
           "source_url": "https://commons.wikimedia.org/wiki/File:Bemisia_tabaci_from_USDA_2.jpg",
           "source_name": "Wikimedia Commons / USDA ARS",
           "license": "Public domain",
-          "author": "Stephen Ausmus / USDA ARS",
-          "attribution": "Bemisia tabaci from USDA 2 — Stephen Ausmus, USDA ARS, public domain.",
-          "notes": "USDA ARS public-domain image."
+          "author": "See source page",
+          "attribution": "Bemisia tabaci — Wikimedia Commons source.",
+          "notes": "Stephen Ausmus / USDA ARS."
         }
       ]
     },
@@ -285,7 +317,20 @@
         "Nimfa",
         "Imago"
       ],
-      "notes": "Dapat menjadi vektor virus."
+      "notes": "Dapat menjadi vektor virus.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aphis_gossypii.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aphis_gossypii.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "author": "See source page",
+          "attribution": "Aphis gossypii — Wikimedia Commons source.",
+          "notes": "Seo Hong-ryeol; Aphis gossypii."
+        }
+      ]
     },
     {
       "id": "nilaparvata-lugens",
@@ -631,7 +676,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Polifag dan menyerang banyak tanaman budidaya."
+      "notes": "Polifag dan menyerang banyak tanaman budidaya.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_litura_larvae.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_litura_larvae.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "verify license on file page",
+          "author": "See source page",
+          "attribution": "Spodoptera litura — Wikimedia Commons source.",
+          "notes": "Larval photo; check current file license."
+        }
+      ]
     },
     {
       "id": "agrotis-ipsilon",
@@ -1186,6 +1244,503 @@
         "url": "https://gd.eppo.int/taxon/BEMITA/photos",
         "name": "Bemisia tabaci"
       }
+    },
+    {
+      "id": "ceutorhynchus-suturalis",
+      "name": "Ceutorhynchus suturalis",
+      "common": "Kumbang bawang",
+      "category": "Coleoptera",
+      "family": "Curculionidae",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [
+        "Hama yang tercantum pada pedoman EPPO untuk tanaman Allium."
+      ],
+      "life": [],
+      "notes": "Hama yang tercantum pada pedoman EPPO untuk tanaman Allium.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "delia-platura",
+      "name": "Delia platura",
+      "common": "Lalat bibit kacang",
+      "category": "Diptera",
+      "family": "Anthomyiidae",
+      "hosts": [
+        "Bawang",
+        "Jagung"
+      ],
+      "symptoms": [
+        "Larva dapat menyerang bibit."
+      ],
+      "life": [],
+      "notes": "Larva dapat menyerang bibit.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "delia-florigela",
+      "name": "Delia florilega",
+      "common": "Lalat bibit",
+      "category": "Diptera",
+      "family": "Anthomyiidae",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [
+        "Tercantum sebagai hama Allium dalam pedoman EPPO."
+      ],
+      "life": [],
+      "notes": "Tercantum sebagai hama Allium dalam pedoman EPPO.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "acrolepiopsis-assectella",
+      "name": "Acrolepiopsis assectella",
+      "common": "Penggerek daun bawang",
+      "category": "Lepidoptera",
+      "family": "Acrolepiidae",
+      "hosts": [
+        "Bawang daun",
+        "Bawang"
+      ],
+      "symptoms": [
+        "Larva merupakan hama daun pada tanaman Allium."
+      ],
+      "life": [],
+      "notes": "Larva merupakan hama daun pada tanaman Allium.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "liriomyza-allium",
+      "name": "Liriomyza spp.",
+      "common": "Lalat pengorok daun",
+      "category": "Diptera",
+      "family": "Agromyzidae",
+      "hosts": [
+        "Bawang",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Pengorok daun yang tercantum dalam pedoman Allium."
+      ],
+      "life": [],
+      "notes": "Pengorok daun yang tercantum dalam pedoman Allium.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "ditylenchus-dipsaci",
+      "name": "Ditylenchus dipsaci",
+      "common": "Nematoda batang dan umbi",
+      "category": "Nematoda",
+      "family": "Anguinidae",
+      "hosts": [
+        "Bawang",
+        "Bawang putih"
+      ],
+      "symptoms": [
+        "Menyerang batang dan umbi."
+      ],
+      "life": [],
+      "notes": "Menyerang batang dan umbi.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "oscinella-frit",
+      "name": "Oscinella frit",
+      "common": "Lalat frit",
+      "category": "Diptera",
+      "family": "Chloropidae",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [
+        "Larva merusak pucuk muda dan titik tumbuh."
+      ],
+      "life": [],
+      "notes": "Larva merusak pucuk muda dan titik tumbuh.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "geomyza-tripunctata",
+      "name": "Geomyza tripunctata",
+      "common": "Lalat serealia",
+      "category": "Diptera",
+      "family": "Opomyzidae",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [
+        "Larva dapat merusak bibit melalui pengorokan atau pemotongan pangkal."
+      ],
+      "life": [],
+      "notes": "Larva dapat merusak bibit melalui pengorokan atau pemotongan pangkal.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "tanymecus-dilaticollis",
+      "name": "Tanymecus dilaticollis",
+      "common": "Kumbang jagung",
+      "category": "Coleoptera",
+      "family": "Curculionidae",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [
+        "Hama yang tercantum dalam pedoman EPPO untuk jagung."
+      ],
+      "life": [],
+      "notes": "Hama yang tercantum dalam pedoman EPPO untuk jagung.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "ostrinia-nubilalis",
+      "name": "Ostrinia nubilalis",
+      "common": "Penggerek batang jagung Eropa",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [
+        "Larva penggerek batang jagung."
+      ],
+      "life": [],
+      "notes": "Larva penggerek batang jagung.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ostrinia_nubilalis.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ostrinia_nubilalis.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "author": "See source page",
+          "attribution": "Ostrinia nubilalis — Wikimedia Commons.",
+          "notes": "Foto nyata imago Ostrinia nubilalis; lisensi perlu dipertahankan sesuai halaman sumber."
+        }
+      ],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "sesamia-nonagrioides",
+      "name": "Sesamia nonagrioides",
+      "common": "Penggerek batang jagung",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [
+        "Penggerek batang jagung yang tercantum dalam pedoman EPPO."
+      ],
+      "life": [],
+      "notes": "Penggerek batang jagung yang tercantum dalam pedoman EPPO.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "tetranychus-urticae",
+      "name": "Tetranychus urticae",
+      "common": "Tungau laba-laba dua bercak",
+      "category": "Acari",
+      "family": "Tetranychidae",
+      "hosts": [
+        "Jagung",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Tungau yang tercantum sebagai hama jagung dalam pedoman EPPO."
+      ],
+      "life": [],
+      "notes": "Tungau yang tercantum sebagai hama jagung dalam pedoman EPPO.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "tetranychus-cinnabarinus",
+      "name": "Tetranychus cinnabarinus",
+      "common": "Tungau merah",
+      "category": "Acari",
+      "family": "Tetranychidae",
+      "hosts": [
+        "Jagung",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Tungau yang tercantum sebagai hama jagung."
+      ],
+      "life": [],
+      "notes": "Tungau yang tercantum sebagai hama jagung.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "tetranychus-turkestani",
+      "name": "Tetranychus turkestani",
+      "common": "Tungau Turkestan",
+      "category": "Acari",
+      "family": "Tetranychidae",
+      "hosts": [
+        "Jagung",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Tungau yang tercantum sebagai hama jagung."
+      ],
+      "life": [],
+      "notes": "Tungau yang tercantum sebagai hama jagung.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "brevicoryne-brassicae",
+      "name": "Brevicoryne brassicae",
+      "common": "Kutu daun kubis",
+      "category": "Hemiptera",
+      "family": "Aphididae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Koloni pada daun muda; daun dapat terdistorsi."
+      ],
+      "life": [],
+      "notes": "Koloni pada daun muda; daun dapat terdistorsi.",
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "",
+          "source_url": "https://commons.wikimedia.org/wiki/Brevicoryne_brassicae",
+          "source_name": "Wikimedia Commons",
+          "license": "Lisensi per file",
+          "author": "See source page",
+          "attribution": "Brevicoryne brassicae — Wikimedia Commons.",
+          "notes": "Galeri spesies tersedia; file individu harus diverifikasi sebelum dipakai."
+        }
+      ],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "phyllotreta-spp",
+      "name": "Phyllotreta spp.",
+      "common": "Kumbang daun/kumbang flea",
+      "category": "Coleoptera",
+      "family": "Chrysomelidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Kumbang kecil yang tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Kumbang kecil yang tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "delia-radicum",
+      "name": "Delia radicum",
+      "common": "Lalat akar kubis",
+      "category": "Diptera",
+      "family": "Anthomyiidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Larva menyerang akar Brassica."
+      ],
+      "life": [],
+      "notes": "Larva menyerang akar Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "delia-floralis",
+      "name": "Delia floralis",
+      "common": "Lalat akar lobak",
+      "category": "Diptera",
+      "family": "Anthomyiidae",
+      "hosts": [
+        "Brassica",
+        "Lobak"
+      ],
+      "symptoms": [
+        "Hama akar Brassica."
+      ],
+      "life": [],
+      "notes": "Hama akar Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "psyliodes-chrysocephala",
+      "name": "Psylliodes chrysocephala",
+      "common": "Kumbang flea batang kubis",
+      "category": "Coleoptera",
+      "family": "Chrysomelidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "ceutorhynchus-pallidactylus",
+      "name": "Ceutorhynchus pallidactylus",
+      "common": "Kumbang penggerek batang kubis",
+      "category": "Coleoptera",
+      "family": "Curculionidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "ceutorhynchus-pleurostigma",
+      "name": "Ceutorhynchus pleurostigma",
+      "common": "Kumbang pembentuk puru akar lobak",
+      "category": "Coleoptera",
+      "family": "Curculionidae",
+      "hosts": [
+        "Brassica",
+        "Lobak"
+      ],
+      "symptoms": [
+        "Tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "meligethes-spp",
+      "name": "Meligethes spp.",
+      "common": "Kumbang serbuk sari",
+      "category": "Coleoptera",
+      "family": "Nitidulidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "aleurodes-proletella",
+      "name": "Aleurodes proletella",
+      "common": "Kutu kebul kubis",
+      "category": "Hemiptera",
+      "family": "Aleyrodidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
+    },
+    {
+      "id": "heterodera-cruciferae",
+      "name": "Heterodera cruciferae",
+      "common": "Nematoda sista Brassica",
+      "category": "Nematoda",
+      "family": "Heteroderidae",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [
+        "Nematoda yang tercantum sebagai hama Brassica."
+      ],
+      "life": [],
+      "notes": "Nematoda yang tercantum sebagai hama Brassica.",
+      "images": [],
+      "source_refs": [
+        "EPPO GPP crop guidelines 2000/1999"
+      ]
     }
   ],
   "diseases": [
@@ -1212,9 +1767,9 @@
           "source_url": "https://commons.wikimedia.org/wiki/File:Phytophthora_infestans.webp",
           "source_name": "Wikimedia Commons",
           "license": "CC BY-SA 4.0",
-          "author": "Fehesha",
-          "attribution": "Phytophthora infestans — Fehesha, CC BY-SA 4.0.",
-          "notes": "Reference image of the pathogen; not a claim about every symptom on every host."
+          "author": "See source page",
+          "attribution": "Phytophthora infestans — Wikimedia Commons source.",
+          "notes": "Reference image of Phytophthora infestans."
         }
       ]
     },
@@ -1300,6 +1855,19 @@
         "Bercak klorotik",
         "Lapisan sporulasi",
         "Daun cepat rusak"
+      ],
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Peronospora_destructor.JPG",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peronospora_destructor.JPG",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0 / CC BY 3.0 US",
+          "author": "See source page",
+          "attribution": "Peronospora spp. — Wikimedia Commons source.",
+          "notes": "Howard F. Schwartz / Bugwood; downy mildew on onion."
+        }
       ]
     },
     {
@@ -1317,6 +1885,19 @@
         "Pangkal batang busuk",
         "Tanaman roboh",
         "Akar kecokelatan"
+      ],
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rhizoctonia_solani.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Rhizoctonia_solani.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 3.0 US",
+          "author": "See source page",
+          "attribution": "Rhizoctonia solani — Wikimedia Commons source.",
+          "notes": "David B. Langston / University of Georgia / Bugwood."
+        }
       ]
     },
     {
@@ -1393,6 +1974,19 @@
         "Layu mendadak",
         "Pembuluh kecokelatan",
         "Eksudat bakteri"
+      ],
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ralstonia_solanacearum_symptoms.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ralstonia_solanacearum_symptoms.jpg",
+          "source_name": "Wikimedia Commons / USDA",
+          "license": "Public domain",
+          "author": "See source page",
+          "attribution": "Ralstonia solanacearum species complex — Wikimedia Commons source.",
+          "notes": "Tomato bacterial wilt symptoms."
+        }
       ]
     },
     {
@@ -1427,6 +2021,19 @@
         "Bercak konsentris",
         "Daun menguning",
         "Nekrosis meluas"
+      ],
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alternaria_porri.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Alternaria_porri.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "author": "See source page",
+          "attribution": "Alternaria spp. — Wikimedia Commons source.",
+          "notes": "New Zealand Fungal and Plant Disease Collection (PDD) / Landcare Research."
+        }
       ]
     },
     {
@@ -1460,6 +2067,19 @@
         "Bercak kuning bersudut",
         "Sporulasi di bawah daun",
         "Daun cepat nekrosis"
+      ],
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pseudoperonospora_cubensis_147541589.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pseudoperonospora_cubensis_147541589.jpg",
+          "source_name": "Wikimedia Commons / iNaturalist",
+          "license": "CC BY 4.0",
+          "author": "See source page",
+          "attribution": "Pseudoperonospora cubensis — Wikimedia Commons source.",
+          "notes": "Nathan T. Jones / iNaturalist; cucurbit downy mildew."
+        }
       ]
     },
     {
@@ -1835,6 +2455,758 @@
       ],
       "notes": "Antraknosa cabai merupakan kompleks Colletotrichum; spesies penyebab perlu dikonfirmasi bila diperlukan.",
       "images": []
+    },
+    {
+      "id": "stromatinia-cepivorum",
+      "name": "Stromatinia cepivorum",
+      "common": "Busuk putih bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai",
+        "Bawang putih",
+        "Bawang daun"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "botryotinia-squamosa",
+      "name": "Botryotinia squamosa",
+      "common": "Bercak daun/daun busuk bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "phytophthora-porri",
+      "name": "Phytophthora porri",
+      "common": "Ujung putih",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang daun",
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "alternaria-porri",
+      "name": "Alternaria porri",
+      "common": "Bercak ungu",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang bombai",
+        "Bawang daun"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alternaria_porri.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Alternaria_porri.jpg",
+          "source_name": "Wikimedia Commons / New Zealand Fungal and Plant Disease Collection",
+          "license": "CC BY 3.0",
+          "author": "See source page",
+          "attribution": "Alternaria porri — Wikimedia Commons.",
+          "notes": "Foto Alternaria porri pada daun; CC BY 3.0."
+        }
+      ],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "cladosporium-allii",
+      "name": "Cladosporium spp.",
+      "common": "Bercak daun Cladosporium",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "puccinia-allii",
+      "name": "Puccinia allii",
+      "common": "Karat bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang putih",
+        "Bawang daun"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "urocystis-cepulae",
+      "name": "Urocystis cepulae",
+      "common": "Gosong bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "botrytis-aclada",
+      "name": "Botrytis aclada",
+      "common": "Busuk leher bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "colletotrichum-circinans",
+      "name": "Colletotrichum dematium f.sp. circinans",
+      "common": "Smudge/bercak gelap bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "pyrenochaeta-terrestris",
+      "name": "Pyrenochaeta terrestris",
+      "common": "Akar merah muda",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "fusarium-culmorum",
+      "name": "Fusarium culmorum",
+      "common": "Busuk pangkal/kaki",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang",
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "aspergillus-niger",
+      "name": "Aspergillus niger",
+      "common": "Kapang hitam bawang",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "penicillium-spp",
+      "name": "Penicillium spp.",
+      "common": "Kapang biru",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "burkholderia-gladioli-alliicola",
+      "name": "Burkholderia gladioli pv. alliicola",
+      "common": "Busuk leher bakteri",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "setosphaeria-turcica",
+      "name": "Setosphaeria turcica",
+      "common": "Hawar daun utara jagung",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "sphacelotheca-reiliana",
+      "name": "Sphacelotheca reiliana",
+      "common": "Gosong kepala jagung",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "ustilago-maydis",
+      "name": "Ustilago maydis",
+      "common": "Gosong jagung",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [
+        {
+          "image_type": "symptom",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ustilago_maydis_J1a.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ustilago_maydis_J1a.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "Periksa halaman sumber",
+          "author": "See source page",
+          "attribution": "Ustilago maydis — Wikimedia Commons.",
+          "notes": "Foto nyata Ustilago maydis; lisensi mengikuti halaman file."
+        }
+      ],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "pythium-maize",
+      "name": "Pythium spp.",
+      "common": "Pencokelatan akar jagung",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "fusarium-maize",
+      "name": "Fusarium spp.",
+      "common": "Busuk akar, batang dan tongkol jagung",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "colletotrichum-graminicola",
+      "name": "Colletotrichum graminicola",
+      "common": "Antraknosa jagung",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "sclerophthora-macrospora",
+      "name": "Sclerophthora macrospora",
+      "common": "Bulai/top gila jagung",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "leptosphaeria-maculans",
+      "name": "Leptosphaeria maculans",
+      "common": "Kanker batang dan bercak daun Brassica",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "mycosphaerella-brassicicola",
+      "name": "Mycosphaerella brassicicola",
+      "common": "Bercak cincin Brassica",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "peronospora-parasitica",
+      "name": "Peronospora parasitica",
+      "common": "Embun bulu Brassica",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "albugo-candida",
+      "name": "Albugo candida",
+      "common": "Karatan/blas putih Brassica",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "erysiphe-cruciferarum",
+      "name": "Erysiphe cruciferarum",
+      "common": "Embun tepung Brassica",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "alternaria-brassicae",
+      "name": "Alternaria brassicae",
+      "common": "Bercak daun gelap Brassica",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "alternaria-brassicicola",
+      "name": "Alternaria brassicicola",
+      "common": "Bercak daun gelap Brassica",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "pyrenopeziza-brassicae",
+      "name": "Pyrenopeziza brassicae",
+      "common": "Bercak daun terang Brassica",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "botrytis-cinerea-brassica",
+      "name": "Botrytis cinerea",
+      "common": "Kapang abu-abu",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "rhizoctonia-solani-brassica",
+      "name": "Rhizoctonia solani",
+      "common": "Wirestem/busuk pangkal",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "plasmodiophora-brassicae",
+      "name": "Plasmodiophora brassicae",
+      "common": "Akar gada",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "phytophthora-brassica",
+      "name": "Phytophthora spp.",
+      "common": "Busuk akar/penyimpanan",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "verticillium-dahliae",
+      "name": "Verticillium dahliae",
+      "common": "Layu Verticillium",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "xanthomonas-campestris",
+      "name": "Xanthomonas campestris pv. campestris",
+      "common": "Busuk hitam",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "erwinia-pseudomonas-brassica",
+      "name": "Erwinia dan Pseudomonas spp.",
+      "common": "Busuk lunak",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "pseudomonas-syringae-maculicola",
+      "name": "Pseudomonas syringae pv. maculicola",
+      "common": "Bercak bakteri",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "cauliflower-mosaic-virus",
+      "name": "Cauliflower mosaic caulimovirus",
+      "common": "Virus mosaik kembang kol",
+      "category": "Virus",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
+    },
+    {
+      "id": "turnip-mosaic-virus",
+      "name": "Turnip mosaic potyvirus",
+      "common": "Virus mosaik lobak",
+      "category": "Virus",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis",
+        "Brassica"
+      ],
+      "symptoms": [],
+      "notes": "Data sumber EPPO Guidelines on Good Plant Protection Practice; pedoman bersifat regional dan historis, bukan bukti registrasi Indonesia.",
+      "images": [],
+      "source_refs": [
+        "EPPO PP 2/4 Allium Crops",
+        "EPPO PP 2/17 Maize",
+        "EPPO PP 2/7 Vegetable Brassicas"
+      ]
     }
   ],
   "weeds": [
@@ -1858,9 +3230,9 @@
           "source_url": "https://commons.wikimedia.org/wiki/File:Echinochloa_crus-galli.jpg",
           "source_name": "Wikimedia Commons / USDA-NRCS",
           "license": "Public domain",
-          "author": "Robert H. Mohlenbrock / USDA-NRCS",
-          "attribution": "Echinochloa crus-galli — Robert H. Mohlenbrock, USDA-NRCS, public domain.",
-          "notes": "Public-domain botanical reference image."
+          "author": "See source page",
+          "attribution": "Echinochloa crus-galli — Wikimedia Commons source.",
+          "notes": "Robert H. Mohlenbrock / USDA-NRCS."
         }
       ]
     },
@@ -1878,6 +3250,19 @@
       "symptoms": [
         "Tumbuh dari umbi",
         "Sulit dikendalikan bila populasi tinggi"
+      ],
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cyperus_iria_(2724216169).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/Category:Cyperus_iria",
+          "source_name": "Wikimedia Commons",
+          "license": "verify license on file page",
+          "author": "See source page",
+          "attribution": "Cyperus rotundus — Wikimedia Commons source.",
+          "notes": "Cyperus iria category; selected photo file."
+        }
       ]
     },
     {
@@ -1939,6 +3324,19 @@
       ],
       "symptoms": [
         "Mengganggu pertumbuhan padi di sawah"
+      ],
+      "images": [
+        {
+          "image_type": "organism",
+          "local_path": "",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Monochoria_vaginalis_(5781099211).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Monochoria_vaginalis_(5781099211).jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "author": "See source page",
+          "attribution": "Monochoria vaginalis — Wikimedia Commons source.",
+          "notes": "Dinesh Valke; Monochoria vaginalis."
+        }
       ]
     },
     {
@@ -2163,13 +3561,53 @@
       "id": "bawang",
       "name": "Bawang merah",
       "latin": "Allium cepa var. aggregatum",
-      "icon": "crop-onion.svg"
+      "icon": "crop-onion.svg",
+      "source_guidelines": {
+        "source": "EPPO PP 2/4(2) Allium Crops",
+        "summary_id": "Pedoman GPP Allium mencakup bawang bombai, bawang merah, bawang daun, kucai dan bawang putih; menekankan rotasi, sanitasi, bahan tanam sehat dan pemantauan hama/penyakit.",
+        "source_note": "Sumber regional EPPO, bukan bukti registrasi Indonesia."
+      }
     },
     {
       "id": "kubis",
       "name": "Kubis",
       "latin": "Brassica oleracea",
-      "icon": "crop-cabbage.svg"
+      "icon": "crop-cabbage.svg",
+      "related_opt": [
+        "brevicoryne-brassicae",
+        "phyllotreta-spp",
+        "delia-radicum",
+        "delia-floralis",
+        "psyliodes-chrysocephala",
+        "ceutorhynchus-pallidactylus",
+        "ceutorhynchus-pleurostigma",
+        "meligethes-spp",
+        "aleurodes-proletella",
+        "heterodera-cruciferae",
+        "leptosphaeria-maculans",
+        "mycosphaerella-brassicicola",
+        "peronospora-parasitica",
+        "albugo-candida",
+        "erysiphe-cruciferarum",
+        "alternaria-brassicae",
+        "alternaria-brassicicola",
+        "pyrenopeziza-brassicae",
+        "botrytis-cinerea-brassica",
+        "rhizoctonia-solani-brassica",
+        "plasmodiophora-brassicae",
+        "phytophthora-brassica",
+        "verticillium-dahliae",
+        "xanthomonas-campestris",
+        "erwinia-pseudomonas-brassica",
+        "pseudomonas-syringae-maculicola",
+        "cauliflower-mosaic-virus",
+        "turnip-mosaic-virus"
+      ],
+      "source_guidelines": {
+        "source": "EPPO PP 2/7(1) Vegetable Brassicas",
+        "summary_id": "Pedoman GPP Brassica mencakup kubis, kembang kol, brokoli, sawi dan Brassica lain; mencakup penyakit jamur/oomycete, bakteri, virus, kutu daun, lalat, kumbang, ulat, nematoda, siput dan gulma.",
+        "source_note": "Sumber regional EPPO, bukan bukti registrasi Indonesia."
+      }
     },
     {
       "id": "mentimun",
@@ -2181,7 +3619,29 @@
       "id": "jagung",
       "name": "Jagung",
       "latin": "Zea mays",
-      "icon": "crop-corn.svg"
+      "icon": "crop-corn.svg",
+      "related_opt": [
+        "oscinella-frit",
+        "geomyza-tripunctata",
+        "tanymecus-dilaticollis",
+        "ostrinia-nubilalis",
+        "sesamia-nonagrioides",
+        "tetranychus-urticae",
+        "tetranychus-cinnabarinus",
+        "tetranychus-turkestani",
+        "setosphaeria-turcica",
+        "sphacelotheca-reiliana",
+        "ustilago-maydis",
+        "pythium-maize",
+        "fusarium-maize",
+        "colletotrichum-graminicola",
+        "sclerophthora-macrospora"
+      ],
+      "source_guidelines": {
+        "source": "EPPO PP 2/17(1) Maize",
+        "summary_id": "Pedoman GPP jagung mencakup penyakit daun, gosong, busuk akar/batang/tongkol, serangga tanah, penggerek, ulat, kutu daun, tungau dan gulma; menekankan benih sehat, varietas sesuai, sanitasi, rotasi dan ambang pengendalian bila tersedia.",
+        "source_note": "Sumber regional EPPO, bukan bukti registrasi Indonesia."
+      }
     },
     {
       "id": "kedelai",

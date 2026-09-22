@@ -35,9 +35,9 @@
   </div>
 
   <div class="home-grid">
-    <button class="feature-card green" data-go="types"><span class="feature-icon">🪲</span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
-    <button class="feature-card coral" data-go="disease"><span class="feature-icon">🍄</span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
-    <button class="feature-card grass" data-go="weed"><span class="feature-icon">🌿</span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="types"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
+    <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
+    <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
     <button class="feature-card purple" data-go="crops"><span class="feature-icon">🌱</span><span><strong>Tanaman & Inang</strong><small>Lihat OPT pada tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="explore"><span class="feature-icon">⚗</span><span><strong>MoA Explorer</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
     <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
@@ -86,6 +86,7 @@
   <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong id="exploreTitle">IRAC</strong><small id="exploreSub">Insecticide · Acaricide · Nematicide</small></div><button class="icon-button light" id="focusSearch">⌕</button></div>
   <div class="search-box"><span>⌕</span><input id="search" placeholder="Cari group, MoA, chemical class, atau bahan aktif..." autocomplete="off"><button id="clearSearch">×</button></div>
   <div class="committee-tabs"><button class="active" data-c="IRAC">IRAC</button><button data-c="FRAC">FRAC</button><button data-c="HRAC">HRAC</button></div>
+  <div class="moa-view-tabs"><button class="active" data-moa-view="ai">Bahan Aktif</button><button data-moa-view="group">Kelompok MoA</button><button data-moa-view="emerging">Emerging</button><button data-moa-view="target">Target Site</button></div>
   <div id="groupFilters" class="chips"></div>
   <div class="list-meta"><span><b id="resultCount">—</b> klasifikasi</span><span id="activeCommittee">IRAC 2026</span></div>
   <div id="cards" class="moa-list"></div>
@@ -128,8 +129,17 @@
 
 <section id="scan" class="screen">
   <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></div></div>
-  <div class="scan-box"><div class="scan-preview"><div class="scan-corners"></div><span>📷</span><strong>Ambil foto / pilih foto</strong><small>Mode demo — hasil identifikasi perlu diverifikasi di lapangan.</small></div><button class="primary-btn">Ambil Foto</button></div>
-  <div class="analysis-card"><h3>Hasil Analisis</h3><div class="analysis-row"><b>1</b><div><strong>Thrips parvispinus</strong><small>Kemungkinan tinggi</small></div><em>87%</em></div><div class="analysis-row"><b>2</b><div><strong>Tetranychus spp.</strong><small>Kemungkinan sedang</small></div><em>21%</em></div><div class="analysis-row"><b>3</b><div><strong>Aphis gossypii</strong><small>Kemungkinan rendah</small></div><em>8%</em></div></div>
+  <div class="scan-box scan-live">
+    <div class="scan-preview" id="scanPreview"><div class="scan-corners"></div><span>📷</span><strong id="scanPreviewTitle">Ambil foto / pilih foto</strong><small id="scanPreviewHint">Foto akan dibagikan ke ChatGPT untuk dianalisis setelah kamu memilihnya.</small></div>
+    <div class="scan-actions"><button class="primary-btn" id="cameraBtn">📷 Buka Kamera</button><button class="secondary-btn" id="galleryBtn">🖼 Pilih dari Galeri</button></div>
+    <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
+    <input id="galleryInput" type="file" accept="image/*" hidden>
+    <div id="scanFileMeta" class="scan-file-meta" hidden></div>
+    <button class="chatgpt-btn" id="analyzeChatGPTBtn" disabled>✦ Analisis dengan ChatGPT</button>
+    <button class="ghost-btn" id="copyScanPromptBtn" disabled>Salin prompt analisis</button>
+  </div>
+  <div class="scan-info"><strong>Bagaimana cara kerjanya?</strong><ol><li>Foto OPT atau gejala tanaman.</li><li>OPT Explorer menyiapkan prompt identifikasi berbahasa Indonesia.</li><li>Foto dibagikan ke ChatGPT melalui menu Share jika perangkat mendukung.</li><li>ChatGPT menganalisis foto dan memberi kandidat OPT/penyakit beserta alasan dan foto tambahan yang diperlukan.</li></ol><p><b>Catatan:</b> hasil foto adalah identifikasi awal, bukan diagnosis pasti. Panduan Tomat yang menjadi sumber aplikasi juga menegaskan bahwa diagnosis tidak sebaiknya hanya mengandalkan panduan/foto dan dapat memerlukan konfirmasi profesional/laboratorium.</p></div>
+  <div class="analysis-card" id="analysisGuideCard"><h3>Format hasil yang diminta</h3><div class="analysis-row"><b>1</b><div><strong>Kandidat utama</strong><small>Nama umum + nama ilmiah + ciri yang cocok</small></div></div><div class="analysis-row"><b>2</b><div><strong>Kandidat pembanding</strong><small>Perbedaan utama dengan kandidat lain</small></div></div><div class="analysis-row"><b>3</b><div><strong>Langkah verifikasi</strong><small>Foto/observasi tambahan yang diperlukan</small></div></div></div>
 </section>
 
 <section id="knowledge" class="screen">
@@ -177,7 +187,7 @@
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.12.1</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.14.0</small></button>
   </div>
   <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>
