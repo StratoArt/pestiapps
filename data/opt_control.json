@@ -1,0 +1,221 @@
+{
+  "schema_version": "0.8",
+  "purpose": "Referensi teknis hubungan OPT dengan bahan aktif yang dilaporkan efektif/ditujukan untuk OPT tertentu. Bukan pengganti label/registrasi lokal.",
+  "status_levels": {
+    "documented": "Ada bukti literatur/rujukan teknis untuk OPT tersebut.",
+    "group_reference": "Hubungan berdasarkan kelompok OPT/MoA dan perlu verifikasi label untuk spesies, tanaman, dan negara.",
+    "label_required": "Jangan gunakan sebagai rekomendasi aplikasi sebelum label/registrasi lokal diverifikasi."
+  },
+  "active_ingredients": [
+    {
+      "id": "tetraniliprole",
+      "name": "Tetraniliprole",
+      "committee": "IRAC",
+      "group": "28",
+      "class": "Diamide",
+      "status": "documented"
+    },
+    {
+      "id": "chlorantraniliprole",
+      "name": "Chlorantraniliprole",
+      "committee": "IRAC",
+      "group": "28",
+      "class": "Diamide",
+      "status": "documented"
+    },
+    {
+      "id": "flubendiamide",
+      "name": "Flubendiamide",
+      "committee": "IRAC",
+      "group": "28",
+      "class": "Diamide",
+      "status": "documented"
+    },
+    {
+      "id": "spinosad",
+      "name": "Spinosad",
+      "committee": "IRAC",
+      "group": "5",
+      "class": "Spinosyn",
+      "status": "documented"
+    },
+    {
+      "id": "emamectin-benzoate",
+      "name": "Emamectin benzoate",
+      "committee": "IRAC",
+      "group": "6",
+      "class": "Avermectin",
+      "status": "documented"
+    },
+    {
+      "id": "methoxyfenozide",
+      "name": "Methoxyfenozide",
+      "committee": "IRAC",
+      "group": "18",
+      "class": "Diacylhydrazine",
+      "status": "documented"
+    },
+    {
+      "id": "tebuconazole",
+      "name": "Tebuconazole",
+      "committee": "FRAC",
+      "group": "3",
+      "class": "DMI / SBI",
+      "status": "documented"
+    },
+    {
+      "id": "prochloraz",
+      "name": "Prochloraz",
+      "committee": "FRAC",
+      "group": "3",
+      "class": "DMI / SBI",
+      "status": "documented"
+    },
+    {
+      "id": "mancozeb",
+      "name": "Mancozeb",
+      "committee": "FRAC",
+      "group": "M03",
+      "class": "Multi-site",
+      "status": "documented"
+    },
+    {
+      "id": "metalaxyl",
+      "name": "Metalaxyl",
+      "committee": "FRAC",
+      "group": "4",
+      "class": "Phenylamides",
+      "status": "group_reference"
+    },
+    {
+      "id": "cyhalofop-butyl",
+      "name": "Cyhalofop-butyl",
+      "committee": "HRAC",
+      "group": "1",
+      "class": "ACCase inhibitor",
+      "status": "group_reference"
+    },
+    {
+      "id": "bispyribac-sodium",
+      "name": "Bispyribac-sodium",
+      "committee": "HRAC",
+      "group": "2",
+      "class": "ALS inhibitor",
+      "status": "group_reference"
+    },
+    {
+      "id": "penoxsulam",
+      "name": "Penoxsulam",
+      "committee": "HRAC",
+      "group": "2",
+      "class": "ALS inhibitor",
+      "status": "group_reference"
+    },
+    {
+      "id": "pretilachlor",
+      "name": "Pretilachlor",
+      "committee": "HRAC",
+      "group": "15",
+      "class": "VLCFA inhibitor",
+      "status": "group_reference"
+    },
+    {
+      "id": "butachlor",
+      "name": "Butachlor",
+      "committee": "HRAC",
+      "group": "15",
+      "class": "VLCFA inhibitor",
+      "status": "group_reference"
+    }
+  ],
+  "relationships": {
+    "spodoptera-exigua": [
+      {
+        "active_id": "tetraniliprole",
+        "status": "documented",
+        "note": "Diamide/Group 28. Use only where the product label includes the target crop and pest."
+      },
+      {
+        "active_id": "chlorantraniliprole",
+        "status": "documented",
+        "note": "Documented against S. exigua; resistance/cross-resistance to diamides can occur."
+      },
+      {
+        "active_id": "flubendiamide",
+        "status": "documented",
+        "note": "Documented against S. exigua in shallot research."
+      },
+      {
+        "active_id": "spinosad",
+        "status": "documented",
+        "note": "Documented toxicity/control in S. exigua studies."
+      },
+      {
+        "active_id": "emamectin-benzoate",
+        "status": "documented",
+        "note": "Evaluated against S. exigua; field efficacy depends on population and label."
+      },
+      {
+        "active_id": "methoxyfenozide",
+        "status": "documented",
+        "note": "Evaluated against S. exigua; use only if locally registered/labeled."
+      }
+    ],
+    "fusarium-cepae": [
+      {
+        "active_id": "tebuconazole",
+        "status": "documented",
+        "note": "Reported to control Fusarium basal rot/F. oxysporum f. sp. cepae; verify local crop/pest registration."
+      },
+      {
+        "active_id": "prochloraz",
+        "status": "documented",
+        "note": "Reported as effective against Fusarium basal rot pathogens; verify local label."
+      },
+      {
+        "active_id": "mancozeb",
+        "status": "documented",
+        "note": "Evaluated in Fusarium basal rot management studies; do not infer label approval from literature."
+      }
+    ],
+    "phytophthora": [
+      {
+        "active_id": "metalaxyl",
+        "status": "group_reference",
+        "note": "Phenylamide activity is relevant to oomycetes; confirm pathogen, crop and resistance status."
+      },
+      {
+        "active_id": "mancozeb",
+        "status": "group_reference",
+        "note": "Multi-site protectant reference; confirm current local label."
+      }
+    ],
+    "echinochloa": [
+      {
+        "active_id": "cyhalofop-butyl",
+        "status": "group_reference",
+        "note": "ACCase inhibitor used for Echinochloa spp. in rice systems; verify species/crop label."
+      },
+      {
+        "active_id": "bispyribac-sodium",
+        "status": "group_reference",
+        "note": "ALS inhibitor used for grass weeds in rice systems; resistance can occur."
+      },
+      {
+        "active_id": "penoxsulam",
+        "status": "group_reference",
+        "note": "ALS inhibitor used for grass weeds in rice systems; verify label and resistance status."
+      },
+      {
+        "active_id": "pretilachlor",
+        "status": "group_reference",
+        "note": "Pre-emergence VLCFA inhibitor used in rice weed management; verify label."
+      },
+      {
+        "active_id": "butachlor",
+        "status": "group_reference",
+        "note": "VLCFA inhibitor used in rice weed management; verify label."
+      }
+    ]
+  }
+}

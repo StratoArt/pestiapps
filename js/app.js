@@ -1,15 +1,17 @@
-const state={committee:'IRAC',data:null,opt:null,imageSources:null,search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',deferredPrompt:null};
+const state={committee:'IRAC',data:null,opt:null,imageSources:null,control:null,eppoLinks:null,search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',deferredPrompt:null};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
 
 async function load(){
-  const [moa,opt,imageSources]=await Promise.all([
+  const [moa,opt,imageSources,control,eppoLinks]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
     fetch('data/opt.json').then(r=>r.json()),
-    fetch('data/image_sources.json').then(r=>r.json())
+    fetch('data/image_sources.json').then(r=>r.json()),
+    fetch('data/opt_control.json').then(r=>r.json()),
+    fetch('data/eppo_links.json').then(r=>r.json())
   ]);
-  state.data=moa; state.opt=opt; state.imageSources=imageSources;
+  state.data=moa; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks;
   updateHomeStats(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); render();
 }
 function rows(){return state.data?.records?.[state.committee]||[]}
@@ -109,6 +111,78 @@ function renderCrops(){
   $('#cropGrid').innerHTML=state.opt.crops.map(x=>`<button class="crop-card" data-id="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.latin)}</small></button>`).join('');
   $$('.crop-card').forEach(b=>b.addEventListener('click',()=>openCropDetail(state.opt.crops.find(x=>x.id===b.dataset.id))));
 }
+
+function controlBlock(x){
+  const rel=(state.control?.relationships||{})[x.id]||[];
+  if(!rel.length) return `<div class="control-empty">Belum ada relasi bahan aktif terverifikasi untuk OPT ini. Data akan ditambahkan bertahap berdasarkan literatur dan label lokal.</div>`;
+  const master=Object.fromEntries((state.control?.active_ingredients||[]).map(a=>[a.id,a]));
+  return `<h3>Bahan aktif terkait</h3>
+    <p class="source-note">Referensi teknis — bukan rekomendasi otomatis. Cek label, komoditas, OPT sasaran, dosis, interval, PHI dan registrasi Indonesia sebelum aplikasi.</p>
+    <div class="ai-control-list">${rel.map(r=>{
+      const a=master[r.active_id]||{};
+      const badge=r.status==='documented'?'Terdokumentasi':'Perlu verifikasi';
+      return `<div class="ai-control-card">
+        <div class="ai-control-head"><strong>${esc(a.name||r.active_id)}</strong><span>${esc(badge)}</span></div>
+        <div class="ai-control-meta">${esc(a.committee||'')} ${a.group?`· Group ${esc(a.group)}`:''}${a.class?` · ${esc(a.class)}`:''}</div>
+        <p>${esc(r.note||'')}</p>
+      </div>`;
+    }).join('')}</div>`;
+}
+
+
+function eppoBlock(x){
+  const e=x.eppo || state.eppoLinks?.links?.[x.id];
+  if(!e) return '';
+  return `<section class="eppo-ref">
+    <div class="eppo-ref-head">
+      <div><strong>📷 Referensi Foto EPPO</strong><small>Foto tetap berada di EPPO Global Database</small></div>
+      <button class="btn eppo-open" onclick="openEppoViewer('${esc(e.url)}','${esc(e.name)}')">Lihat di aplikasi</button>
+    </div>
+    <p>OPT Explorer tidak menyalin foto EPPO. Tombol di atas membuka halaman foto asli EPPO; jika embedding diblokir browser, tersedia tombol untuk membukanya langsung.</p>
+  </section>`;
+}
+
+window.openEppoViewer=function(url,name){
+  let modal=document.getElementById('eppoViewer');
+  if(!modal){
+    modal=document.createElement('div');
+    modal.id='eppoViewer';
+    modal.className='eppo-modal';
+    modal.innerHTML=`<div class="eppo-sheet">
+      <div class="eppo-bar">
+        <button class="eppo-close" onclick="closeEppoViewer()">← Kembali</button>
+        <strong id="eppoViewerTitle">EPPO</strong>
+        <a id="eppoDirect" class="eppo-direct" target="_blank" rel="noopener">↗</a>
+      </div>
+      <div class="eppo-frame-wrap">
+        <iframe id="eppoFrame" title="EPPO Global Database"></iframe>
+        <div id="eppoFallback" class="eppo-fallback">
+          <div>EPPO menolak ditampilkan di dalam frame.</div>
+          <a id="eppoFallbackLink" class="btn" target="_blank" rel="noopener">Buka halaman EPPO ↗</a>
+        </div>
+      </div>
+    </div>`;
+    document.body.appendChild(modal);
+  }
+  document.getElementById('eppoViewerTitle').textContent=name||'EPPO';
+  document.getElementById('eppoDirect').href=url;
+  document.getElementById('eppoFallbackLink').href=url;
+  document.getElementById('eppoFallback').style.display='none';
+  const frame=document.getElementById('eppoFrame');
+  frame.style.display='block';
+  frame.src=url;
+  modal.classList.add('show');
+  // If EPPO blocks framing, the browser may fire load but display an error page;
+  // keep a direct-open control always visible as the robust fallback.
+};
+window.closeEppoViewer=function(){
+  const modal=document.getElementById('eppoViewer');
+  if(!modal) return;
+  modal.classList.remove('show');
+  const frame=document.getElementById('eppoFrame');
+  frame.src='about:blank';
+};
+
 function openOptDetail(x,type){
   const hosts=x.hosts||[];
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
@@ -121,6 +195,8 @@ function openOptDetail(x,type){
     ${x.symptoms?.length?`<h3>Gejala / ciri</h3><div class="source-box"><ul style="margin:0;padding-left:17px">${x.symptoms.map(s=>`<li style="font-size:10px;margin:6px 0">${esc(s)}</li>`).join('')}</ul></div>`:''}
     ${x.life?.length?`<h3>Siklus hidup</h3><div class="tag-row">${x.life.map(s=>`<span>${esc(s)}</span>`).join('')}</div>`:''}
     ${x.notes?`<p class="source-note">${esc(x.notes)}</p>`:''}
+    ${controlBlock(x)}
+    ${eppoBlock(x)}
   </aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
 }

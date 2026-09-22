@@ -35,3 +35,17 @@ Versi ini menyiapkan metadata untuk foto nyata. Jangan mengambil gambar web seca
 - If a photo is unavailable/offline, the app falls back to the local SVG illustration.
 - EPPO photos are kept as discovery/reference sources only because EPPO states its photos are for educational use and commercial publication requires permission.
 
+
+
+## v0.8 — OPT → Bahan Aktif
+Ditambahkan `data/opt_control.json` untuk menghubungkan OPT dengan bahan aktif yang terdokumentasi atau masih perlu verifikasi. UI detail OPT sekarang menampilkan bahan aktif, IRAC/FRAC/HRAC group, status evidence, dan catatan kehati-hatian.
+
+**Penting:** relasi bahan aktif bukan rekomendasi aplikasi otomatis. Verifikasi label, komoditas, OPT sasaran, dosis, interval, PHI, registrasi dan status resistensi lokal sebelum digunakan.
+
+
+## v0.9 — EPPO Viewer
+- Added `data/eppo_links.json`.
+- Added EPPO photo reference buttons for selected OPT records.
+- Added an in-app EPPO viewer using an iframe, with direct-open fallback.
+- No EPPO images are copied or redistributed by this project.
+- EPPO photo pages state that their pictures are for educational purposes only and require permission from original photographers for publication in commercial websites.

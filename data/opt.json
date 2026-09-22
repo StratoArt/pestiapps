@@ -121,7 +121,12 @@
           "attribution": "Spodoptera exigua larva feeding on Nicotiana attenuata — Wikimedia Commons, CC BY 2.5.",
           "notes": "Real larva photo. Verify attribution text on the file page before redistribution."
         }
-      ]
+      ],
+      "eppo": {
+        "code": "LAPHEG",
+        "url": "https://gd.eppo.int/taxon/LAPHEG/photos",
+        "name": "Spodoptera exigua"
+      }
     },
     {
       "id": "spodoptera-frugiperda",
@@ -1228,7 +1233,12 @@
           "attribution": "Plant-pathogenic strain of Fusarium oxysporum — Keith Weller, USDA-ARS, public domain.",
           "notes": "Generic F. oxysporum reference image; not a shallot-specific symptom photo."
         }
-      ]
+      ],
+      "eppo": {
+        "code": "FUSACE",
+        "url": "https://gd.eppo.int/taxon/FUSACE/photos",
+        "name": "Fusarium oxysporum f. sp. cepae"
+      }
     }
   ],
   "weeds": [
