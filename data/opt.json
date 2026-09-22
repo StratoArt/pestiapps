@@ -1,0 +1,1528 @@
+{
+  "categories": [
+    {
+      "id": "lepidoptera",
+      "name": "Lepidoptera",
+      "label": "Ulat",
+      "type": "Hama",
+      "icon": "lepidoptera.svg"
+    },
+    {
+      "id": "hemiptera",
+      "name": "Hemiptera",
+      "label": "Kutu · Wereng · Kepik",
+      "type": "Hama",
+      "icon": "hemiptera.svg"
+    },
+    {
+      "id": "thysanoptera",
+      "name": "Thysanoptera",
+      "label": "Thrips",
+      "type": "Hama",
+      "icon": "thrips.svg"
+    },
+    {
+      "id": "coleoptera",
+      "name": "Coleoptera",
+      "label": "Kumbang",
+      "type": "Hama",
+      "icon": "coleoptera.svg"
+    },
+    {
+      "id": "diptera",
+      "name": "Diptera",
+      "label": "Lalat",
+      "type": "Hama",
+      "icon": "diptera.svg"
+    },
+    {
+      "id": "orthoptera",
+      "name": "Orthoptera",
+      "label": "Belalang",
+      "type": "Hama",
+      "icon": "orthoptera.svg"
+    },
+    {
+      "id": "isoptera",
+      "name": "Isoptera",
+      "label": "Rayap",
+      "type": "Hama",
+      "icon": "isoptera.svg"
+    },
+    {
+      "id": "acari",
+      "name": "Acari",
+      "label": "Tungau",
+      "type": "Hama",
+      "icon": "acari.svg"
+    },
+    {
+      "id": "nematoda",
+      "name": "Nematoda",
+      "label": "Nematoda",
+      "type": "Hama",
+      "icon": "nematoda.svg"
+    },
+    {
+      "id": "mollusca",
+      "name": "Mollusca",
+      "label": "Siput · Keong",
+      "type": "Hama",
+      "icon": "mollusca.svg"
+    },
+    {
+      "id": "rodentia",
+      "name": "Rodentia",
+      "label": "Tikus",
+      "type": "Hama",
+      "icon": "rodentia.svg"
+    },
+    {
+      "id": "lainnya",
+      "name": "Lainnya",
+      "label": "Lain-lain",
+      "type": "Hama",
+      "icon": "lainnya.svg"
+    }
+  ],
+  "pests": [
+    {
+      "id": "spodoptera-exigua",
+      "name": "Spodoptera exigua",
+      "common": "Ulat grayak",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "icon": "spodoptera.svg",
+      "hosts": [
+        "Bawang merah",
+        "Bawang daun"
+      ],
+      "symptoms": [
+        "Daun berlubang dan terpotong",
+        "Larva masuk ke daun",
+        "Tanaman menguning dan pertumbuhan terganggu"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Hama penting pada bawang dan beberapa tanaman sayuran."
+    },
+    {
+      "id": "spodoptera-frugiperda",
+      "name": "Spodoptera frugiperda",
+      "common": "Fall armyworm / ulat grayak jagung",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "icon": "spodoptera.svg",
+      "hosts": [
+        "Jagung"
+      ],
+      "symptoms": [
+        "Daun berlubang",
+        "Kotoran larva pada pucuk",
+        "Whorl rusak"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Sering menyerang titik tumbuh jagung."
+    },
+    {
+      "id": "plutella-xylostella",
+      "name": "Plutella xylostella",
+      "common": "Ulat krop",
+      "category": "Lepidoptera",
+      "family": "Plutellidae",
+      "icon": "plutella.svg",
+      "hosts": [
+        "Kubis",
+        "Sawi"
+      ],
+      "symptoms": [
+        "Daun berlubang kecil",
+        "Epidermis daun tersisa seperti jendela",
+        "Krop rusak"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Hama utama kelompok Brassica."
+    },
+    {
+      "id": "helicoverpa-armigera",
+      "name": "Helicoverpa armigera",
+      "common": "Ulat buah",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "icon": "helicoverpa.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Jagung"
+      ],
+      "symptoms": [
+        "Buah berlubang",
+        "Kotoran larva di sekitar lubang",
+        "Bunga dan pucuk rusak"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva dapat masuk ke buah dan menyebabkan busuk sekunder."
+    },
+    {
+      "id": "thrips-parvispinus",
+      "name": "Thrips parvispinus",
+      "common": "Thrips",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thrips.svg",
+      "hosts": [
+        "Cabai",
+        "Bawang",
+        "Tomat",
+        "Kacang"
+      ],
+      "symptoms": [
+        "Daun keperakan / bercak putih",
+        "Daun keriting dan deformasi",
+        "Pertumbuhan terhambat"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Serangan berat dapat mengganggu pucuk dan bunga."
+    },
+    {
+      "id": "bemisia-tabaci",
+      "name": "Bemisia tabaci",
+      "common": "Kutu kebul",
+      "category": "Hemiptera",
+      "family": "Aleyrodidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Kedelai",
+        "Melon"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Embun madu",
+        "Pertumbuhan cendawan jelaga",
+        "Dapat menularkan virus"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Vektor penting berbagai virus tanaman."
+    },
+    {
+      "id": "aphis-gossypii",
+      "name": "Aphis gossypii",
+      "common": "Kutu daun",
+      "category": "Hemiptera",
+      "family": "Aphididae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Cabai",
+        "Melon",
+        "Mentimun"
+      ],
+      "symptoms": [
+        "Pucuk keriting",
+        "Embun madu",
+        "Koloni pada pucuk muda"
+      ],
+      "life": [
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Dapat menjadi vektor virus."
+    },
+    {
+      "id": "nilaparvata-lugens",
+      "name": "Nilaparvata lugens",
+      "common": "Wereng coklat",
+      "category": "Hemiptera",
+      "family": "Delphacidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Tanaman mengering bertahap",
+        "Gejala hopperburn"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Hama utama padi dengan potensi ledakan populasi."
+    },
+    {
+      "id": "cnaphalocrocis-medinalis",
+      "name": "Cnaphalocrocis medinalis",
+      "common": "Penggerek daun padi",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "icon": "helicoverpa.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menggulung",
+        "Jaringan daun dimakan dari dalam gulungan"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva hidup di dalam daun yang digulung."
+    },
+    {
+      "id": "liriomyza",
+      "name": "Liriomyza spp.",
+      "common": "Lalat pengorok daun",
+      "category": "Diptera",
+      "family": "Agromyzidae",
+      "icon": "diptera.svg",
+      "hosts": [
+        "Tomat",
+        "Kacang",
+        "Bawang"
+      ],
+      "symptoms": [
+        "Korokan berliku pada daun",
+        "Fotosintesis terganggu",
+        "Daun mengering pada serangan berat"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva berada di jaringan daun."
+    },
+    {
+      "id": "tetranychus",
+      "name": "Tetranychus spp.",
+      "common": "Tungau merah / tungau dua titik",
+      "category": "Acari",
+      "family": "Tetranychidae",
+      "icon": "acari.svg",
+      "hosts": [
+        "Cabai",
+        "Kedelai",
+        "Melon"
+      ],
+      "symptoms": [
+        "Bintik klorotik",
+        "Daun kusam",
+        "Jaring halus pada populasi tinggi"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Populasi berkembang cepat pada kondisi panas dan kering."
+    },
+    {
+      "id": "nematoda-puru",
+      "name": "Meloidogyne spp.",
+      "common": "Nematoda puru akar",
+      "category": "Nematoda",
+      "family": "Meloidogynidae",
+      "icon": "nematoda.svg",
+      "hosts": [
+        "Tomat",
+        "Cabai",
+        "Melon"
+      ],
+      "symptoms": [
+        "Puru pada akar",
+        "Tanaman kerdil",
+        "Daun mudah layu"
+      ],
+      "life": [
+        "Telur",
+        "Juvenil",
+        "Dewasa"
+      ],
+      "notes": "Kerusakan akar menghambat penyerapan air dan nutrisi."
+    },
+    {
+      "id": "leptocorisa-oratorius",
+      "name": "Leptocorisa oratorius",
+      "common": "Walang sangit",
+      "category": "Hemiptera",
+      "family": "Alydidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bulir hampa atau berisi sebagian",
+        "Biji berubah warna dan mutu gabah menurun"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Menyerang bulir padi terutama pada fase pengisian."
+    },
+    {
+      "id": "scirpophaga-incertulas",
+      "name": "Scirpophaga incertulas",
+      "common": "Penggerek batang padi kuning",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Sundep pada fase vegetatif",
+        "Beluk pada fase generatif",
+        "Pucuk mati dan mudah dicabut"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva merusak jaringan batang dari dalam."
+    },
+    {
+      "id": "chilo-suppressalis",
+      "name": "Chilo suppressalis",
+      "common": "Penggerek batang padi",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Sundep",
+        "Beluk",
+        "Anakan mati"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva hidup dan makan di dalam batang."
+    },
+    {
+      "id": "cnaphalocrocis-medinalis-2",
+      "name": "Cnaphalocrocis medinalis",
+      "common": "Hama putih / penggulung daun padi",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menggulung",
+        "Jaringan hijau di dalam gulungan terkikis"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Data alias untuk pencarian lokal."
+    },
+    {
+      "id": "bemisia-vaporariorum",
+      "name": "Trialeurodes vaporariorum",
+      "common": "Kutu kebul rumah kaca",
+      "category": "Hemiptera",
+      "family": "Aleyrodidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Tomat",
+        "Mentimun",
+        "Melon"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Embun madu",
+        "Populasi pada bagian bawah daun"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Kutu kebul dapat menjadi vektor dan menurunkan vigor tanaman."
+    },
+    {
+      "id": "helopeltis",
+      "name": "Helopeltis spp.",
+      "common": "Helopeltis / kepik pengisap",
+      "category": "Hemiptera",
+      "family": "Miridae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Kakao",
+        "Teh",
+        "Jambu"
+      ],
+      "symptoms": [
+        "Bercak nekrotik",
+        "Pucuk mengering",
+        "Buah mengalami luka tusukan"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Penting pada beberapa komoditas perkebunan."
+    },
+    {
+      "id": "recilia-dorsalis",
+      "name": "Recilia dorsalis",
+      "common": "Wereng punggung putih",
+      "category": "Hemiptera",
+      "family": "Cicadellidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Vigor tanaman menurun",
+        "Dapat berasosiasi dengan penyakit virus"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Serangga pengisap pada tanaman padi."
+    },
+    {
+      "id": "sogatella-furcifera",
+      "name": "Sogatella furcifera",
+      "common": "Wereng punggung putih",
+      "category": "Hemiptera",
+      "family": "Delphacidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Tanaman melemah",
+        "Populasi tinggi dapat menyebabkan kerusakan berat"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Salah satu wereng penting pada padi."
+    },
+    {
+      "id": "nephotettix",
+      "name": "Nephotettix spp.",
+      "common": "Wereng hijau",
+      "category": "Hemiptera",
+      "family": "Cicadellidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Tanaman kerdil",
+        "Berperan sebagai vektor tungro"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Kelompok vektor penting penyakit tungro."
+    },
+    {
+      "id": "spodoptera-litura",
+      "name": "Spodoptera litura",
+      "common": "Ulat grayak",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "icon": "spodoptera.svg",
+      "hosts": [
+        "Kedelai",
+        "Cabai",
+        "Tomat",
+        "Bawang"
+      ],
+      "symptoms": [
+        "Daun berlubang luas",
+        "Defoliasi",
+        "Larva aktif terutama malam hari"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Polifag dan menyerang banyak tanaman budidaya."
+    },
+    {
+      "id": "agrotis-ipsilon",
+      "name": "Agrotis ipsilon",
+      "common": "Ulat tanah",
+      "category": "Lepidoptera",
+      "family": "Noctuidae",
+      "icon": "spodoptera.svg",
+      "hosts": [
+        "Jagung",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Bibit terpotong dekat permukaan tanah",
+        "Tanaman muda rebah"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva bersembunyi di tanah pada siang hari."
+    },
+    {
+      "id": "bemisia",
+      "name": "Bemisia tabaci",
+      "common": "Kutu kebul",
+      "category": "Hemiptera",
+      "family": "Aleyrodidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Kedelai",
+        "Melon"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Embun madu",
+        "Pertumbuhan terganggu",
+        "Dapat menularkan virus"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Alias pencarian umum untuk Bemisia tabaci."
+    },
+    {
+      "id": "pseudococcus",
+      "name": "Pseudococcus spp.",
+      "common": "Kutu putih",
+      "category": "Hemiptera",
+      "family": "Pseudococcidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Jeruk",
+        "Pepaya",
+        "Anggur",
+        "Tanaman hias"
+      ],
+      "symptoms": [
+        "Koloni berlapis lilin putih",
+        "Embun madu",
+        "Pertumbuhan pucuk terganggu"
+      ],
+      "life": [
+        "Telur/Nimfa",
+        "Imago"
+      ],
+      "notes": "Serangga pengisap dengan lapisan lilin."
+    },
+    {
+      "id": "aphid",
+      "name": "Aphididae spp.",
+      "common": "Kutu daun",
+      "category": "Hemiptera",
+      "family": "Aphididae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Cabai",
+        "Melon",
+        "Mentimun",
+        "Kacang"
+      ],
+      "symptoms": [
+        "Daun keriting",
+        "Koloni pada pucuk",
+        "Embun madu"
+      ],
+      "life": [
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Kelompok umum kutu daun."
+    },
+    {
+      "id": "caloptilia",
+      "name": "Caloptilia spp.",
+      "common": "Pengorok daun",
+      "category": "Lepidoptera",
+      "family": "Gracillariidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Jeruk",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Korokan pada daun muda",
+        "Daun menggulung",
+        "Pucuk terganggu"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Beberapa spesies menjadi hama pada pucuk dan daun muda."
+    },
+    {
+      "id": "brontispa-longissima",
+      "name": "Brontispa longissima",
+      "common": "Kumbang janur kelapa",
+      "category": "Coleoptera",
+      "family": "Chrysomelidae",
+      "icon": "coleoptera.svg",
+      "hosts": [
+        "Kelapa"
+      ],
+      "symptoms": [
+        "Daun muda berwarna cokelat",
+        "Jaringan daun tergores"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Menyerang daun muda kelapa."
+    },
+    {
+      "id": "oryctes-rhinoceros",
+      "name": "Oryctes rhinoceros",
+      "common": "Kumbang tanduk",
+      "category": "Coleoptera",
+      "family": "Scarabaeidae",
+      "icon": "coleoptera.svg",
+      "hosts": [
+        "Kelapa",
+        "Kelapa sawit"
+      ],
+      "symptoms": [
+        "Daun tombak rusak",
+        "Lubang pada pelepah muda",
+        "Daun berbentuk kipas setelah membuka"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Hama penting palma."
+    },
+    {
+      "id": "hypothenemus-hampei",
+      "name": "Hypothenemus hampei",
+      "common": "Penggerek buah kopi",
+      "category": "Coleoptera",
+      "family": "Curculionidae",
+      "icon": "coleoptera.svg",
+      "hosts": [
+        "Kopi"
+      ],
+      "symptoms": [
+        "Lubang masuk pada buah",
+        "Biji rusak",
+        "Mutu kopi menurun"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Betina membuat lubang masuk ke buah kopi."
+    },
+    {
+      "id": "bemisia-cassava",
+      "name": "Bemisia tabaci complex",
+      "common": "Kutu kebul singkong",
+      "category": "Hemiptera",
+      "family": "Aleyrodidae",
+      "icon": "hemiptera.svg",
+      "hosts": [
+        "Singkong"
+      ],
+      "symptoms": [
+        "Daun menguning",
+        "Embun madu",
+        "Vektor virus singkong"
+      ],
+      "life": [
+        "Telur",
+        "Nimfa",
+        "Imago"
+      ],
+      "notes": "Kompleks spesies yang berasosiasi dengan singkong."
+    }
+  ],
+  "diseases": [
+    {
+      "id": "phytophthora",
+      "name": "Phytophthora infestans",
+      "common": "Busuk daun / late blight",
+      "category": "Fungi-like",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Tomat",
+        "Kentang"
+      ],
+      "symptoms": [
+        "Bercak basah kecokelatan",
+        "Jaringan cepat nekrosis",
+        "Sporulasi pada kelembapan tinggi"
+      ]
+    },
+    {
+      "id": "colletotrichum",
+      "name": "Colletotrichum spp.",
+      "common": "Antraknosa",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai",
+        "Mangga",
+        "Tomat"
+      ],
+      "symptoms": [
+        "Bercak cekung",
+        "Lesi membesar",
+        "Busuk buah"
+      ]
+    },
+    {
+      "id": "xanthomonas",
+      "name": "Xanthomonas spp.",
+      "common": "Hawar daun bakteri",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi",
+        "Tomat",
+        "Cabai"
+      ],
+      "symptoms": [
+        "Bercak/hawar daun",
+        "Daun menguning",
+        "Luka berair pada kondisi lembap"
+      ]
+    },
+    {
+      "id": "mosaic",
+      "name": "Mosaic virus",
+      "common": "Mosaik",
+      "category": "Virus",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Mentimun"
+      ],
+      "symptoms": [
+        "Pola mosaik",
+        "Daun keriting",
+        "Pertumbuhan terhambat"
+      ]
+    },
+    {
+      "id": "fusarium",
+      "name": "Fusarium oxysporum",
+      "common": "Layu fusarium",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Melon"
+      ],
+      "symptoms": [
+        "Layu bertahap",
+        "Perubahan warna pembuluh",
+        "Tanaman kerdil"
+      ]
+    },
+    {
+      "id": "downy",
+      "name": "Peronospora spp.",
+      "common": "Embun bulu",
+      "category": "Oomycete",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Bawang",
+        "Mentimun"
+      ],
+      "symptoms": [
+        "Bercak klorotik",
+        "Lapisan sporulasi",
+        "Daun cepat rusak"
+      ]
+    },
+    {
+      "id": "rhizoctonia",
+      "name": "Rhizoctonia solani",
+      "common": "Rebah semai / busuk pangkal",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi",
+        "Kedelai",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Pangkal batang busuk",
+        "Tanaman roboh",
+        "Akar kecokelatan"
+      ]
+    },
+    {
+      "id": "rice-blast",
+      "name": "Magnaporthe oryzae",
+      "common": "Blas padi",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bercak berbentuk belah ketupat",
+        "Leher malai dapat membusuk",
+        "Malai mengering"
+      ]
+    },
+    {
+      "id": "rice-bacterial-blight",
+      "name": "Xanthomonas oryzae pv. oryzae",
+      "common": "Hawar daun bakteri",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun menguning dari tepi",
+        "Hawar memanjang",
+        "Gejala kresek pada tanaman muda"
+      ]
+    },
+    {
+      "id": "rice-tungro",
+      "name": "Rice tungro virus complex",
+      "common": "Tungro",
+      "category": "Virus",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Daun kuning-oranye",
+        "Tanaman kerdil",
+        "Anakan berkurang"
+      ]
+    },
+    {
+      "id": "rice-sheath-blight",
+      "name": "Rhizoctonia solani",
+      "common": "Hawar pelepah",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bercak pada pelepah",
+        "Lesi meluas ke daun",
+        "Rebah pada kondisi berat"
+      ]
+    },
+    {
+      "id": "tomato-bacterial-wilt",
+      "name": "Ralstonia solanacearum species complex",
+      "common": "Layu bakteri",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Tomat",
+        "Cabai"
+      ],
+      "symptoms": [
+        "Layu mendadak",
+        "Pembuluh kecokelatan",
+        "Eksudat bakteri"
+      ]
+    },
+    {
+      "id": "cercospora",
+      "name": "Cercospora spp.",
+      "common": "Bercak daun cercospora",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kedelai",
+        "Bawang",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Bercak cokelat/abu-abu",
+        "Daun menguning",
+        "Defoliasi bila berat"
+      ]
+    },
+    {
+      "id": "alternaria",
+      "name": "Alternaria spp.",
+      "common": "Bercak alternaria",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Tomat",
+        "Kubis",
+        "Bawang"
+      ],
+      "symptoms": [
+        "Bercak konsentris",
+        "Daun menguning",
+        "Nekrosis meluas"
+      ]
+    },
+    {
+      "id": "powdery-mildew",
+      "name": "Podosphaera / Erysiphe spp.",
+      "common": "Embun tepung",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Mentimun",
+        "Melon",
+        "Kedelai"
+      ],
+      "symptoms": [
+        "Lapisan putih seperti tepung",
+        "Daun menguning",
+        "Fotosintesis menurun"
+      ]
+    },
+    {
+      "id": "downy-cucurbits",
+      "name": "Pseudoperonospora cubensis",
+      "common": "Embun bulu mentimun",
+      "category": "Oomycete",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Mentimun",
+        "Melon"
+      ],
+      "symptoms": [
+        "Bercak kuning bersudut",
+        "Sporulasi di bawah daun",
+        "Daun cepat nekrosis"
+      ]
+    },
+    {
+      "id": "anthracnose-onion",
+      "name": "Colletotrichum spp.",
+      "common": "Antraknosa / patek",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai",
+        "Bawang"
+      ],
+      "symptoms": [
+        "Bercak cekung",
+        "Lesi melingkar",
+        "Busuk buah atau umbi"
+      ]
+    },
+    {
+      "id": "fusarium-wilt",
+      "name": "Fusarium oxysporum complex",
+      "common": "Layu fusarium",
+      "category": "Fungi",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Cabai",
+        "Tomat",
+        "Melon",
+        "Pisang"
+      ],
+      "symptoms": [
+        "Layu bertahap",
+        "Pembuluh berubah warna",
+        "Tanaman kerdil"
+      ]
+    },
+    {
+      "id": "black-rot",
+      "name": "Xanthomonas campestris pv. campestris",
+      "common": "Busuk hitam kubis",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Kubis"
+      ],
+      "symptoms": [
+        "V berbatas tegas pada daun",
+        "Jaringan menghitam",
+        "Daun mengering"
+      ]
+    },
+    {
+      "id": "citrus-canker",
+      "name": "Xanthomonas citri pv. citri",
+      "common": "Kanker jeruk",
+      "category": "Bacteria",
+      "icon": "disease-leaf.svg",
+      "hosts": [
+        "Jeruk"
+      ],
+      "symptoms": [
+        "Lesi gabus",
+        "Halo kuning",
+        "Lesi pada daun dan buah"
+      ]
+    }
+  ],
+  "weeds": [
+    {
+      "id": "echinochloa",
+      "name": "Echinochloa crus-galli",
+      "common": "Jajagoan",
+      "category": "Grass",
+      "icon": "weed-grass.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Bersaing memperebutkan cahaya dan nutrisi"
+      ]
+    },
+    {
+      "id": "cyperus",
+      "name": "Cyperus rotundus",
+      "common": "Teki",
+      "category": "Sedge",
+      "icon": "weed-sedge.svg",
+      "hosts": [
+        "Jagung",
+        "Kedelai",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Tumbuh dari umbi",
+        "Sulit dikendalikan bila populasi tinggi"
+      ]
+    },
+    {
+      "id": "eleusine",
+      "name": "Eleusine indica",
+      "common": "Rambut belulang",
+      "category": "Grass",
+      "icon": "weed-grass.svg",
+      "hosts": [
+        "Jagung",
+        "Kedelai",
+        "Perkebunan"
+      ],
+      "symptoms": [
+        "Rumput berumpun",
+        "Kompetisi tinggi pada lahan terbuka"
+      ]
+    },
+    {
+      "id": "amaranthus",
+      "name": "Amaranthus spinosus",
+      "common": "Bayam duri",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Jagung",
+        "Kedelai",
+        "Sayuran"
+      ],
+      "symptoms": [
+        "Tumbuh cepat",
+        "Menghasilkan banyak biji"
+      ]
+    },
+    {
+      "id": "ageratum",
+      "name": "Ageratum conyzoides",
+      "common": "Babadotan",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Jagung",
+        "Kedelai",
+        "Perkebunan"
+      ],
+      "symptoms": [
+        "Membentuk populasi rapat",
+        "Kompetisi dengan tanaman utama"
+      ]
+    },
+    {
+      "id": "monochoria",
+      "name": "Monochoria vaginalis",
+      "common": "Eceng padi",
+      "category": "Aquatic",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Mengganggu pertumbuhan padi di sawah"
+      ]
+    },
+    {
+      "id": "fimb",
+      "name": "Fimbristylis miliacea",
+      "common": "Jekeng",
+      "category": "Sedge",
+      "icon": "weed-sedge.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Tumbuh cepat pada lahan sawah",
+        "Kompetisi dengan padi"
+      ]
+    },
+    {
+      "id": "monochoria-vaginalis",
+      "name": "Monochoria vaginalis",
+      "common": "Eceng padi",
+      "category": "Aquatic",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Menghambat pertumbuhan padi",
+        "Populasi tinggi menutup permukaan sawah"
+      ]
+    },
+    {
+      "id": "ludwigia",
+      "name": "Ludwigia hyssopifolia",
+      "common": "Jukut weru / kayu apu sawah",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Tumbuh cepat pada sawah",
+        "Bersaing dengan padi"
+      ]
+    },
+    {
+      "id": "sphenochlea",
+      "name": "Sphenochlea zeylanica",
+      "common": "Gonda",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Populasi rapat",
+        "Kompetisi pada lahan sawah"
+      ]
+    },
+    {
+      "id": "ischaemum",
+      "name": "Ischaemum rugosum",
+      "common": "Ischaemum",
+      "category": "Grass",
+      "icon": "weed-grass.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Rumput berumpun",
+        "Kompetisi kuat dengan padi"
+      ]
+    },
+    {
+      "id": "leptochloa",
+      "name": "Leptochloa chinensis",
+      "common": "Timunan",
+      "category": "Grass",
+      "icon": "weed-grass.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Tumbuh pada sawah",
+        "Bersaing memperebutkan nutrisi"
+      ]
+    },
+    {
+      "id": "echinochloa-crus",
+      "name": "Echinochloa colona",
+      "common": "Jajagoan kecil",
+      "category": "Grass",
+      "icon": "weed-grass.svg",
+      "hosts": [
+        "Padi",
+        "Jagung"
+      ],
+      "symptoms": [
+        "Rumput berumpun",
+        "Tumbuh cepat pada kondisi terbuka"
+      ]
+    },
+    {
+      "id": "cyperus-difformis",
+      "name": "Cyperus difformis",
+      "common": "Teki kecil",
+      "category": "Sedge",
+      "icon": "weed-sedge.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Tumbuh cepat pada sawah",
+        "Menghasilkan banyak biji"
+      ]
+    },
+    {
+      "id": "portulaca",
+      "name": "Portulaca oleracea",
+      "common": "Krokot",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Sayuran",
+        "Jagung"
+      ],
+      "symptoms": [
+        "Tumbuh menjalar",
+        "Bersaing pada lahan terbuka"
+      ]
+    },
+    {
+      "id": "commelina",
+      "name": "Commelina benghalensis",
+      "common": "Gewor",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Jagung",
+        "Kedelai"
+      ],
+      "symptoms": [
+        "Pertumbuhan menjalar",
+        "Sulit ditekan bila sudah membentuk populasi"
+      ]
+    },
+    {
+      "id": "mimosa",
+      "name": "Mimosa pudica",
+      "common": "Putri malu",
+      "category": "Broadleaf",
+      "icon": "weed-broadleaf.svg",
+      "hosts": [
+        "Perkebunan",
+        "Lahan kering"
+      ],
+      "symptoms": [
+        "Tumbuh menyemak",
+        "Mengganggu akses dan kompetisi tanaman"
+      ]
+    }
+  ],
+  "crops": [
+    {
+      "id": "padi",
+      "name": "Padi",
+      "latin": "Oryza sativa",
+      "icon": "crop-rice.svg"
+    },
+    {
+      "id": "cabai",
+      "name": "Cabai",
+      "latin": "Capsicum annuum",
+      "icon": "crop-chili.svg"
+    },
+    {
+      "id": "tomat",
+      "name": "Tomat",
+      "latin": "Solanum lycopersicum",
+      "icon": "crop-tomato.svg"
+    },
+    {
+      "id": "bawang",
+      "name": "Bawang merah",
+      "latin": "Allium cepa var. aggregatum",
+      "icon": "crop-onion.svg"
+    },
+    {
+      "id": "kubis",
+      "name": "Kubis",
+      "latin": "Brassica oleracea",
+      "icon": "crop-cabbage.svg"
+    },
+    {
+      "id": "mentimun",
+      "name": "Mentimun",
+      "latin": "Cucumis sativus",
+      "icon": "crop-cucumber.svg"
+    },
+    {
+      "id": "jagung",
+      "name": "Jagung",
+      "latin": "Zea mays",
+      "icon": "crop-corn.svg"
+    },
+    {
+      "id": "kedelai",
+      "name": "Kedelai",
+      "latin": "Glycine max",
+      "icon": "crop-soy.svg"
+    },
+    {
+      "id": "semangka",
+      "name": "Semangka",
+      "latin": "Citrullus lanatus",
+      "icon": "crop-watermelon.svg"
+    },
+    {
+      "id": "melon",
+      "name": "Melon",
+      "latin": "Cucumis melo",
+      "icon": "crop-melon.svg"
+    },
+    {
+      "id": "kentang",
+      "name": "Kentang",
+      "latin": "Solanum tuberosum",
+      "icon": "crop-potato.svg"
+    },
+    {
+      "id": "kacang",
+      "name": "Kacang panjang",
+      "latin": "Vigna unguiculata subsp. sesquipedalis",
+      "icon": "crop-beans.svg"
+    },
+    {
+      "id": "terung",
+      "name": "Terung",
+      "latin": "Solanum melongena",
+      "icon": "crop-eggplant.svg"
+    },
+    {
+      "id": "pisang",
+      "name": "Pisang",
+      "latin": "Musa spp.",
+      "icon": "crop-banana.svg"
+    },
+    {
+      "id": "jeruk",
+      "name": "Jeruk",
+      "latin": "Citrus spp.",
+      "icon": "crop-citrus.svg"
+    },
+    {
+      "id": "kopi",
+      "name": "Kopi",
+      "latin": "Coffea spp.",
+      "icon": "crop-coffee.svg"
+    },
+    {
+      "id": "kakao",
+      "name": "Kakao",
+      "latin": "Theobroma cacao",
+      "icon": "crop-cacao.svg"
+    },
+    {
+      "id": "teh",
+      "name": "Teh",
+      "latin": "Camellia sinensis",
+      "icon": "crop-tea.svg"
+    },
+    {
+      "id": "kelapa",
+      "name": "Kelapa",
+      "latin": "Cocos nucifera",
+      "icon": "crop-coconut.svg"
+    },
+    {
+      "id": "sawit",
+      "name": "Kelapa sawit",
+      "latin": "Elaeis guineensis",
+      "icon": "crop-palm.svg"
+    },
+    {
+      "id": "singkong",
+      "name": "Singkong",
+      "latin": "Manihot esculenta",
+      "icon": "crop-cassava.svg"
+    },
+    {
+      "id": "kacang-tanah",
+      "name": "Kacang tanah",
+      "latin": "Arachis hypogaea",
+      "icon": "crop-peanut.svg"
+    }
+  ]
+}

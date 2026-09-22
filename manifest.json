@@ -1,7 +1,17 @@
 {
-  "name":"OPT Explorer",
-  "short_name":"OPT Explorer",
-  "description":"Al-Kitab untuk Sales, Formulator dan Petani Mbois — eksplorasi IRAC, FRAC dan HRAC.",
-  "lang":"id-ID","start_url":"./","display":"standalone","background_color":"#f6faf7","theme_color":"#087443",
-  "icons":[{"src":"assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "name": "OPT Explorer",
+  "short_name": "OPT Explorer",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#087443",
+  "description": "Al-Kitab untuk Sales, Formulator dan Petani Mbois.",
+  "icons": [
+    {
+      "src": "assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

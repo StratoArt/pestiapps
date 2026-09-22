@@ -1,16 +1,24 @@
-# OPT Explorer v0.4
+# OPT Explorer v0.6
 
-Mobile-first PWA inspired by the supplied OPT Explorer UI reference.
+Mobile-first PWA untuk eksplorasi OPT dan MoA.
 
-## Scope
-- IRAC / FRAC / HRAC MoA explorer
-- Search + group filters
-- Detail sheet for classifications and active ingredients
-- Offline JSON database
-- Installable PWA
-- Responsive desktop/mobile UI
+## Fokus
+- Jenis OPT: Hama, Penyakit, Gulma
+- Line-art SVG ringan
+- Detail OPT: nama ilmiah, nama umum, kelompok, famili, inang, gejala, siklus hidup
+- Tanaman & Inang
+- IRAC · FRAC · HRAC
+- PWA/offline
 
-No Google Sheets and no demo-plot module are used in this version.
+## Database
+Versi ini memperluas starter database untuk penggunaan awal. Data OPT tidak dimaksudkan sebagai pengganti diagnosis lapangan, label produk, atau registrasi pestisida.
 
-## Run
-Serve this folder with any static host (GitHub Pages, Netlify, Cloudflare Pages, etc.). Do not open `index.html` directly with `file://` if you want the service worker to work.
+## Arsitektur lanjutan
+`data/schema.json` sudah menyiapkan entitas untuk:
+1. Resistance Management
+2. Urutan pencampuran / tank-mix
+3. Kalkulator dosis
+4. Kalkulator luas lahan & volume semprot
+5. Database produk & label
+
+Modul tersebut sengaja dipisahkan dari database OPT agar dapat ditambahkan tanpa membongkar UI utama.

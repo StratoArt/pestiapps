@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#087443">
 <meta name="description" content="OPT Explorer — Al-Kitab untuk Sales, Formulator dan Petani Mbois.">
-<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css"><title>OPT Explorer</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>OPT Explorer</title>
 </head>
 <body>
 <div class="app-shell">
 <header class="app-header">
   <button class="icon-button" id="menuBtn" aria-label="Menu">☰</button>
-  <a class="brand" href="#home" aria-label="OPT Explorer">
+  <a class="brand" href="#home">
     <img src="assets/icons/icon.svg" alt="" class="brand-logo">
     <span><strong>OPT Explorer</strong><small>Pest · Disease · Weed · MoA</small></span>
   </a>
@@ -22,26 +24,59 @@
 <main>
 <section id="home" class="screen active-screen">
   <div class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-leaf leaf-a"></div><div class="hero-leaf leaf-b"></div>
+    <div class="hero-bg"></div><div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-brand"><img src="assets/icons/icon.svg" alt=""><div><b>OPT Explorer</b><small>Pest · Disease · Weed · MoA</small></div></div>
       <p class="hero-kicker">AL-KITAB UNTUK SALES, FORMULATOR DAN PETANI MBOIS</p>
-      <h1>Kenali MoA<br><span>sebelum terlambat.</span></h1>
-      <p class="hero-copy">Basis pengetahuan klasifikasi IRAC, FRAC dan HRAC untuk membantu membaca mekanisme aksi dan menyusun strategi pengelolaan resistensi.</p>
-      <button class="hero-search" data-go="explore"><span>⌕</span><span class="placeholder">Cari group, MoA, atau bahan aktif...</span><b>⌕</b></button>
+      <h1>Kenali OPT<br><span>sebelum Terlambat</span></h1>
+      <p class="hero-copy">Basis pengetahuan hama, penyakit, gulma dan mekanisme aksi untuk pertanian yang lebih berkelanjutan.</p>
+      <button class="hero-search" data-go="types"><span>⌕</span><span class="placeholder">Cari OPT, tanaman, atau bahan aktif...</span><b>⌗</b></button>
     </div>
   </div>
 
   <div class="home-grid">
-    <button class="feature-card green" data-go="explore"><span class="feature-icon">✦</span><span><strong>MoA Explorer</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
-    <button class="feature-card blue" data-go="explore" data-committee="IRAC"><span class="feature-icon">⌁</span><span><strong>IRAC</strong><small>Insecticide · Acaricide</small></span><i>›</i></button>
-    <button class="feature-card red" data-go="explore" data-committee="FRAC"><span class="feature-icon">◉</span><span><strong>FRAC</strong><small>Fungicide resistance</small></span><i>›</i></button>
-    <button class="feature-card purple" data-go="explore" data-committee="HRAC"><span class="feature-icon">⌁</span><span><strong>HRAC</strong><small>Herbicide mode of action</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="types"><span class="feature-icon">🪲</span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
+    <button class="feature-card coral" data-go="disease"><span class="feature-icon">🍄</span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
+    <button class="feature-card grass" data-go="weed"><span class="feature-icon">🌿</span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
+    <button class="feature-card purple" data-go="crops"><span class="feature-icon">🌱</span><span><strong>Tanaman & Inang</strong><small>Lihat OPT pada tanaman</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="explore"><span class="feature-icon">⚗</span><span><strong>MoA Explorer</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
+    <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
   </div>
 
-  <div class="stats-card"><div><strong id="homeGroups">—</strong><span>MoA Group</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong>3</strong><span>Komite</span></div></div>
+  <div class="stats-card"><div><strong id="homeOpt">—</strong><span>OPT</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong>Lengkap</strong><span>IRAC · FRAC · HRAC</span></div></div>
   <p class="quote">“Pertanian yang lebih tangguh, dimulai dari pengetahuan.”</p>
+</section>
+
+<section id="types" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Jenis OPT</strong><small>Pilih kelompok organisme pengganggu tanaman</small></div><button class="icon-button light" id="typeSearchBtn">⌕</button></div>
+  <div class="search-box"><span>⌕</span><input id="optSearch" placeholder="Cari jenis OPT..." autocomplete="off"><button id="clearOptSearch">×</button></div>
+  <div class="mini-tabs"><button class="active" data-type="Hama">Hama</button><button data-type="Penyakit">Penyakit</button><button data-type="Gulma">Gulma</button></div>
+  <div id="typeGrid" class="type-grid"></div>
+  <div class="promo-strip"><img src="assets/opt/crop-rice.svg"><div><strong>Kenali Musuh Tanaman</strong><small>Lindungi Hasil Panen dengan keputusan berbasis informasi.</small></div></div>
+</section>
+
+<section id="pests" class="screen">
+  <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Hama</strong><small>Serangga · Tungau · Nematoda</small></div><button class="icon-button light" id="pestSearchBtn">⌕</button></div>
+  <div class="mini-tabs pest-tabs"><button class="active" data-pest-filter="Semua">Semua</button><button data-pest-filter="Lepidoptera">Lepidoptera</button><button data-pest-filter="Hemiptera">Hemiptera</button><button data-pest-filter="Thysanoptera">Thysanoptera</button></div>
+  <div id="pestList" class="opt-list"></div>
+</section>
+
+<section id="disease" class="screen">
+  <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Penyakit</strong><small>Fungi · Bacteria · Virus · Oomycete</small></div><button class="icon-button light">⌕</button></div>
+  <div class="mini-tabs"><button class="active">Semua</button><button>Fungi</button><button>Bacteria</button><button>Virus</button></div>
+  <div id="diseaseList" class="opt-list"></div>
+</section>
+
+<section id="weed" class="screen">
+  <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Gulma</strong><small>Grass · Broadleaf · Sedge · Aquatic</small></div><button class="icon-button light">⌕</button></div>
+  <div class="mini-tabs"><button class="active">Semua</button><button>Grass</button><button>Broadleaf</button><button>Sedge</button></div>
+  <div id="weedList" class="opt-list"></div>
+</section>
+
+<section id="crops" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Tanaman & Inang</strong><small>Lihat OPT berdasarkan tanaman</small></div><button class="icon-button light">⌕</button></div>
+  <div class="mini-tabs"><button class="active">Semua</button><button>Sayuran</button><button>Buah</button><button>Pangan</button><button>Perkebunan</button></div>
+  <div id="cropGrid" class="crop-grid"></div>
 </section>
 
 <section id="explore" class="screen">
@@ -53,28 +88,36 @@
   <div id="cards" class="moa-list"></div>
 </section>
 
+<section id="scan" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></div></div>
+  <div class="scan-box"><div class="scan-preview"><div class="scan-corners"></div><span>📷</span><strong>Ambil foto / pilih foto</strong><small>Mode demo — hasil identifikasi perlu diverifikasi di lapangan.</small></div><button class="primary-btn">Ambil Foto</button></div>
+  <div class="analysis-card"><h3>Hasil Analisis</h3><div class="analysis-row"><b>1</b><div><strong>Thrips parvispinus</strong><small>Kemungkinan tinggi</small></div><em>87%</em></div><div class="analysis-row"><b>2</b><div><strong>Tetranychus spp.</strong><small>Kemungkinan sedang</small></div><em>21%</em></div><div class="analysis-row"><b>3</b><div><strong>Aphis gossypii</strong><small>Kemungkinan rendah</small></div><em>8%</em></div></div>
+</section>
+
 <section id="menu" class="screen">
   <div class="menu-head"><button class="back-button" data-go="home">←</button><h2>Menu</h2></div>
   <div class="menu-list">
     <button><span>◈</span><b>Tentang Aplikasi</b><i>›</i></button>
     <button><span>▣</span><b>Database & Sumber</b><i>›</i></button>
-    <button id="menuOffline"><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
+    <button><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.4.0</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.5.0</small></button>
   </div>
-  <div class="source-box"><strong>Sumber klasifikasi</strong><p>IRAC, FRAC dan HRAC. Data aplikasi disimpan lokal dalam JSON agar dapat digunakan offline.</p></div>
+  <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>
 </main>
 
 <nav class="bottom-nav">
   <button class="active" data-go="home"><span>⌂</span><small>Beranda</small></button>
-  <button data-go="explore"><span>⌕</span><small>Cari</small></button>
-  <button data-go="explore" data-committee="IRAC"><span>⚗</span><small>MoA</small></button>
+  <button data-go="types"><span>⌕</span><small>Cari</small></button>
+  <button data-go="scan"><span>▣</span><small>Scan</small></button>
+  <button data-go="crops"><span>♧</span><small>Inang</small></button>
   <button data-go="menu"><span>☰</span><small>Menu</small></button>
 </nav>
 <div id="detail"></div>
 <script src="js/app.js"></script>
 </div>
-</body></html>
+</body>
+</html>
