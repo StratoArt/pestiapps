@@ -1,4 +1,4 @@
-const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null};
+const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,cropGrowth:null,cropNutritionProfiles:null,nutrition:null,nutritionFilter:'ALL',nutritionSearch:'',libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null,lensSearch:''};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
@@ -11,7 +11,7 @@ const moaLabel=x=>ID_MOA[x]||x;
 
 
 async function load(){
-  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources]=await Promise.all([
+  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources,cropGrowth,nutrition,cropNutritionProfiles]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
     fetch('data/emerging_actives.json').then(r=>r.json()),
     fetch('data/opt.json').then(r=>r.json()),
@@ -28,11 +28,15 @@ async function load(){
     fetch('data/crop_guidelines.json').then(r=>r.json()),
     fetch('data/irac_target_site_map.json').then(r=>r.json()),
     fetch('data/scan_analysis_guide.json').then(r=>r.json()),
-    fetch('data/crop_opt_sources_2026.json').then(r=>r.json())
+    fetch('data/crop_opt_sources_2026.json').then(r=>r.json()),
+    fetch('data/crop_growth_guidelines_2026.json').then(r=>r.json()),
+    fetch('data/crop_nutrition_guideline_2026.json').then(r=>r.json()),
+    fetch('data/crop_nutrition_crop_guidelines_2026.json').then(r=>r.json())
   ]);
-  state.data=moa; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
-  updateHomeStats(); renderPesticides(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderKnowledge(); renderSources(); renderLibrary(); render();
+  state.data=moa; state.cropGrowth=cropGrowth; state.cropNutritionProfiles=cropNutritionProfiles; state.nutrition=nutrition; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
+  updateHomeStats(); renderPesticides(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderNutrition(); renderCropGuidelines(); renderKnowledge(); renderSources(); renderLibrary(); render();
 }
+function normalizeText(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
 function rows(){return state.data?.records?.[state.committee]||[]}
 function normalize(r){
   if(state.committee==='IRAC')return{code:r[1],name:r[2],sub:r[3],chem:r[4],ai:splitAI(r[5]),cat:r[6]};
@@ -200,14 +204,14 @@ function handlePopState(e){
 window.addEventListener('popstate',handlePopState);
 
 function photoBlock(x){
-  const img=(x.images||[])[0];
-  if(!img) return '';
-  const src=img.local_path || img.remote_url;
-  if(!src) return '';
-  return `<div class="photo-card">
-    <div class="photo-wrap"><img src="${esc(src)}" alt="Foto referensi ${esc(x.name)}" loading="lazy" onerror="this.closest('.photo-card').classList.add('photo-error')"><div class="photo-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""><span>Foto tidak tersedia offline</span></div></div>
-    <div class="photo-credit"><span><b>Foto referensi</b> · ${esc(img.license||'Lisensi tercantum pada sumber')}</span><a href="${esc(img.source_url)}" target="_blank" rel="noopener">Sumber ↗</a></div>
-  </div>`;
+  const imgs=(x.images||[]).filter(img=>img && (img.local_path||img.remote_url));
+  if(!imgs.length) return '';
+  return `<section class="media-gallery"><div class="media-gallery-head"><div><span class="eyebrow">VISUAL REFERENSI</span><h3>Foto & ilustrasi OPT</h3></div><span>${imgs.length} aset</span></div><div class="media-gallery-grid">${imgs.map((img,i)=>{
+    const src=img.local_path || img.remote_url;
+    const label=img.image_type==='lifecycle'?'Siklus hidup':img.image_type==='species_reference'?'Tabel spesies / inang':img.image_type==='organism'?'Foto organisme':'Referensi visual';
+    const link=img.source_url?`<a href="${esc(img.source_url)}" target="_blank" rel="noopener">Sumber ↗</a>`:'';
+    return `<article class="media-card"><div class="media-image"><img src="${esc(src)}" alt="${esc(label)} ${esc(x.name)}" loading="lazy" onerror="this.closest('.media-card').classList.add('media-error')"><div class="media-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""><span>Visual tidak tersedia offline</span></div></div><div class="media-caption"><strong>${esc(label)}</strong><small>${esc(img.notes||img.attribution||'Referensi visual')}</small>${link}</div></article>`;
+  }).join('')}</div></section>`;
 }
 function photoThumb(x){
   const img=(x.images||[])[0];
@@ -331,6 +335,49 @@ function openLibraryDetail(x){
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail);
 }
 
+function cropNutritionProfileForCrop(cropId){ return (state.cropNutritionProfiles?.records||[]).find(r=>r.crop_id===cropId); }
+function nutritionFocusTags(ids){
+  return (ids||[]).map(id=>`<button class="nutrient-mini" data-nutrient-id="${esc(id)}">${esc(id)}</button>`).join('');
+}
+function nutritionBlockForCrop(crop){
+  const r=cropNutritionProfileForCrop(crop.id); if(!r) return '';
+  return `<section class="crop-nutrition-section">
+    <div class="growth-head"><div><span class="eyebrow">CROP NUTRITION PROFILE</span><h3>Guideline Nutrisi</h3></div><span class="growth-status">KUALITATIF</span></div>
+    <div class="nutrition-profile-summary"><strong>${esc(r.production_goal)}</strong><p>${esc(r.note)}</p></div>
+    <div class="nutrition-focus"><div><span class="eyebrow">Fokus hara umum</span><div class="nutrient-focus-tags">${nutritionFocusTags(r.nutrition_focus)}</div></div></div>
+    <div class="crop-stage-nutrition">${(r.stages||[]).map(st=>`<article><div class="stage-nutrition-head"><strong>${esc(st.name)}</strong><div>${nutritionFocusTags(st.focus)}</div></div><small>Fokus fisiologis, bukan dosis aplikasi.</small></article>`).join('')}</div>
+    <div class="nutrition-two-col"><div><h4>Hal yang perlu diamati</h4><ul>${(r.diagnostic_watchpoints||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div><div><h4>Biostimulan</h4><ul>${(r.biostimulant_context||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul><h4>PGR</h4><ul>${(r.pgr_context||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div></div>
+    <div class="source-note">Status: ${esc(r.status)}. Profil ini menghubungkan fase pertumbuhan dengan fungsi nutrisi secara kualitatif; tidak menetapkan dosis, ppm, interval atau produk.</div>
+  </section>`;
+}
+function renderCropGuidelines(){
+  const root=$('#cropGuidelineList'); if(!root||!state.opt||!state.cropNutritionProfiles)return;
+  const q=normalizeText($('#cropGuidelineSearch')?.value||'');
+  const rows=(state.cropNutritionProfiles.records||[]).map(r=>{const c=state.opt.crops.find(x=>x.id===r.crop_id);return {...r,crop:c};}).filter(r=>r.crop && (!q||normalizeText([r.crop.name,r.crop.latin,r.family,r.production_goal,r.nutrition_focus.join(' ')].join(' ')).includes(q)));
+  root.innerHTML=rows.map(r=>`<button class="crop-guideline-card" data-crop-guideline="${esc(r.crop_id)}"><img src="assets/opt/${esc(r.crop.icon)}"><div><span class="eyebrow">${esc(r.family)}</span><h3>${esc(r.crop.name)}</h3><p>${esc(r.production_goal)}</p><div class="nutrient-focus-tags">${nutritionFocusTags(r.nutrition_focus)}</div></div><span class="arrow">›</span></button>`).join('')||'<div class="empty">Crop tidak ditemukan.</div>';
+  $$('.crop-guideline-card').forEach(b=>b.addEventListener('click',()=>{const c=state.opt.crops.find(x=>x.id===b.dataset.cropGuideline);if(c)openCropDetail(c);}));
+}
+
+function renderNutrition(){
+  const root=$('#nutritionList'); if(!root||!state.nutrition)return;
+  const q=normalizeText(state.nutritionSearch||'');
+  const f=state.nutritionFilter;
+  const cards=[];
+  (state.nutrition.categories||[]).forEach(cat=>{
+    if(f!=='ALL'&&f!==cat.id)return;
+    (cat.items||[]).forEach(x=>cards.push({type:'category',categoryId:cat.id,category:cat.name,...x}));
+  });
+  if(f==='ALL'||f==='biostimulants') (state.nutrition.biostimulants||[]).forEach(x=>cards.push({type:'biostimulant',categoryId:'biostimulants',category:'Biostimulan',...x}));
+  if(f==='ALL'||f==='growth_regulators') (state.nutrition.growth_regulators||[]).forEach(x=>cards.push({type:'pgr',categoryId:'growth_regulators',category:'Plant Growth Regulator (PGR)',...x}));
+  const filtered=cards.filter(x=>!q||normalizeText([x.name,x.symbol,x.group,x.category,x.what,x.examples?.join(' '),...(x.role||[])].join(' ')).includes(q));
+  $('#nutritionSearchBtn')?.setAttribute('aria-label','Cari nutrisi');
+  root.innerHTML=filtered.length?filtered.map(x=>{
+    const badge=x.type==='category'?(x.group||x.category):(x.category||'');
+    return `<article class="nutrition-card"><div class="nutrition-card-head"><div><span class="eyebrow">${esc(x.category||'')}</span><h3>${esc(x.name)}${x.symbol?` <small>${esc(x.symbol)}</small>`:''}</h3></div><span class="nutrition-badge">${esc(badge)}</span></div>${x.what?`<p class="nutrition-what">${esc(x.what)}</p>`:''}${x.forms?.length?`<div class="nutrition-forms"><b>Bentuk umum:</b> ${x.forms.map(v=>esc(v)).join(' · ')}</div>`:''}${x.examples?.length?`<div class="tag-row">${x.examples.map(v=>`<span>${esc(v)}</span>`).join('')}</div>`:''}${x.mobility?`<div class="nutrition-meta"><span>Mobilitas: ${esc(x.mobility)}</span></div>`:''}<div class="nutrition-role"><b>Peran pada tanaman</b><ul>${(x.role||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div>${x.diagnostic_clue?`<div class="nutrition-diagnostic"><b>Petunjuk gejala:</b> ${esc(x.diagnostic_clue)}</div>`:''}${x.note?`<p class="nutrition-note">${esc(x.note)}</p>`:''}</article>`;
+  }).join(''):`<div class="empty">Tidak ada data nutrisi yang cocok dengan pencarian.</div>`;
+  const fw=state.nutrition.diagnostic_framework; const interactions=state.nutrition.interaction_examples||[];
+  if($('#nutritionFramework')) $('#nutritionFramework').innerHTML=`<div class="nutrition-framework-grid"><div><span class="eyebrow">DIAGNOSIS</span><h3>${esc(fw?.title||'Kerangka diagnosis nutrisi')}</h3><ol>${(fw?.steps||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ol><p class="source-note">${esc(fw?.note||'')}</p></div><div><span class="eyebrow">INTERAKSI</span><h3>Nutrient balance</h3>${interactions.map(v=>`<div class="interaction-row"><strong>${esc(v.pair)}</strong><span>${esc(v.type)}</span><small>${esc(v.note)}</small></div>`).join('')}</div></div>`;
+}
 function renderKnowledge(){
   if(!state.pesticideKnowledge||!$('#knowledgeList')) return;
   $('#knowledgeList').innerHTML=state.pesticideKnowledge.sections.map(sec=>`<article class="knowledge-card"><div class="knowledge-head"><div><span>PDF KEMENTAN · HALAMAN ${esc(sec.pages)}</span><h3>${esc(sec.title)}</h3></div>${sec.warning?'<b class="knowledge-warn">REFERENSI HISTORIS</b>':''}</div><ul>${sec.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${sec.warning?`<p class="knowledge-note">${esc(sec.warning)}</p>`:''}</article>`).join('');
@@ -366,7 +413,7 @@ function pesticideMatches(){
   const q=state.pesticideSearch.toLowerCase();
   return pesticideRecords().filter(p=>{
     const hay=[p['Nama Merk'],p['Perusahaan'],p['Bahan Aktif'],p['Formulasi'],p['IRAC Group'],p['FRAC Group'],p['HRAC Group'],p['Sasaran Hama/Penyakit/Gulma']].join(' ').toLowerCase();
-    return (state.pesticideFilter==='ALL'||p['Kategori']===state.pesticideFilter)&&(!q||hay.includes(q));
+    const cat=String(p['Kategori']||''); const catOk=state.pesticideFilter==='ALL'||cat===state.pesticideFilter||(state.pesticideFilter==='LAINNYA'&&!['Insektisida','Fungisida','Herbisida'].includes(cat)); return catOk&&(!q||hay.includes(q));
   });
 }
 function renderPesticides(){
@@ -417,10 +464,12 @@ function openPesticideDetail(p){
       <div><label>Kemasan</label><strong>${esc(p['Kemasan']||'—')}</strong></div>
       <div><label>Kategori</label><strong>${esc(p['Kategori']||'—')}</strong></div>
     </div>
+    <div class="pesticide-status-grid"><div><label>Status registrasi pada sumber</label><strong>${esc(p['Status Registrasi']||'Tidak dicantumkan')}</strong></div><div><label>Status pasar pada sumber</label><strong>${esc(p['Status Pasar']||'Tidak dicantumkan')}</strong></div><div><label>Nomor pendaftaran</label><strong>${esc(p['Nomor Pendaftaran']||'Tidak dicantumkan')}</strong></div><div><label>Sumber data</label><strong>${esc(p['Sumber Data']||p['database_source']||'—')}</strong></div></div>
+    ${p.source_variant_count>1?`<div class="source-box"><strong>${esc(p.source_variant_count)} varian baris sumber</strong><p>Nama produk ini muncul pada beberapa baris sumber dengan perbedaan penulisan/perusahaan/bahan aktif. Semua varian asal dipertahankan di database.</p></div>`:''}
     <h3>Sasaran dalam dataset</h3><div class="source-box"><p style="margin:0">${esc(p['Sasaran Hama/Penyakit/Gulma']||'—')}</p></div>
     <h3>MoA dalam dataset</h3><div class="tag-row">${sourceGroups.length?sourceGroups.map(g=>`<span>${esc(g)}</span>`).join(''):'<span>Belum tersedia / perlu verifikasi</span>'}</div>
     ${moa.length?`<h3>Tautan ke master Bahan Aktif Pestisida</h3><div class="ai-control-list">${moa.map(m=>`<div class="ai-control-card"><div class="ai-control-head"><strong>${esc(m.name||'')}</strong><span>${esc(m.committee||'')}</span></div><div class="ai-control-meta">Group ${esc(m.group||m.code||'')}</div></div>`).join('')}</div>`:''}
-    ${related.length?`<h3>OPT yang terhubung</h3><p class="source-note">Koneksi ini dibuat dari kecocokan teks sasaran pada dataset dengan nama/alias OPT Explorer. Ini bukan konfirmasi label.</p><div class="pesticide-related-opt">${related.map(x=>`<button data-opt-id="${esc(x.id)}" data-opt-type="${esc(x._type||'Hama')}" class="related-opt-card"><strong>${esc(x.name)}</strong><span>${esc(x.common||x.category||'')}</span></button>`).join('')}</div>`:''}
+    ${related.length?`<h3>OPT yang terhubung</h3><p class="source-note">Koneksi ini dibuat dari kecocokan teks sasaran pada dataset dengan nama/alias Crop Expert. Ini bukan konfirmasi label.</p><div class="pesticide-related-opt">${related.map(x=>`<button data-opt-id="${esc(x.id)}" data-opt-type="${esc(x._type||'Hama')}" class="related-opt-card"><strong>${esc(x.name)}</strong><span>${esc(x.common||x.category||'')}</span></button>`).join('')}</div>`:''}
     <div class="source-box"><strong>⚠️ Status data</strong><p>Data produk berasal dari dataset pengguna. Status registrasi, komoditas, dosis, interval, PHI, kompatibilitas, dan penggunaan legal harus diverifikasi pada label/registrasi Indonesia terkini.</p></div>
   </aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail);
@@ -450,7 +499,7 @@ function eppoBlock(x){
       <div><strong>📷 Referensi Foto EPPO</strong><small>Foto tetap berada di EPPO Global Database</small></div>
       <button class="btn eppo-open" onclick="openEppoViewer('${esc(e.url)}','${esc(e.name)}')">Lihat di aplikasi</button>
     </div>
-    <p>OPT Explorer tidak menyalin foto EPPO. Tombol di atas membuka halaman foto asli EPPO; jika embedding diblokir browser, tersedia tombol untuk membukanya langsung.</p>
+    <p>Crop Expert tidak menyalin foto EPPO. Tombol di atas membuka halaman foto asli EPPO; jika embedding diblokir browser, tersedia tombol untuk membukanya langsung.</p>
   </section>`;
 }
 
@@ -497,6 +546,43 @@ window.closeEppoViewer=function(opts={}){
   if(!opts.fromHistory && state.historyReady && !state.historyLock) history.back();
 };
 
+function growthRecordForCrop(cropId){ return (state.cropGrowth?.records||[]).find(r=>r.crop_id===cropId); }
+function growthLinksForOpt(optId){
+  const out=[];
+  for(const r of (state.cropGrowth?.records||[])) for(const l of (r.opt_stage_links||[])) if(l.opt_id===optId) out.push({...l,crop_id:r.crop_id,crop_name:r.crop_name,phases:r.phases||[]});
+  return out;
+}
+function growthBlockForCrop(crop){
+  const g=growthRecordForCrop(crop.id); if(!g) return '';
+  const phases=g.phases||[];
+  const links=g.opt_stage_links||[];
+  return `<section class="growth-section"><div class="growth-head"><div><span class="eyebrow">CROP GROWTH GUIDELINE</span><h3>Tahapan Pertumbuhan</h3></div><span class="growth-status">${g.source_status==='source_supported'?'SOURCE':'KERANGKA'}</span></div>
+    <div class="growth-timeline">${phases.map((p,i)=>`<div class="growth-stage"><span>${i+1}</span><strong>${esc(p.name)}</strong>${p.label?`<small>${esc(p.label)}</small>`:''}</div>`).join('')}</div>
+    ${links.length?`<div class="growth-opt-map"><h4>OPT menurut fase</h4>${phases.map(ph=>{const ls=links.filter(l=>(l.stages||[]).includes(ph.id)); if(!ls.length)return ''; return `<div class="growth-opt-row"><div class="growth-phase"><strong>${esc(ph.name)}</strong><small>${esc(ph.group||'')}</small></div><div class="growth-opt-items">${ls.map(l=>{const ox=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])].find(v=>v.id===l.opt_id); return `<button class="stage-opt-link" data-opt-stage-ref="${esc(`${l.type}|${l.opt_id}`)}">${esc(l.type)} · ${esc(ox?.common||ox?.name||l.opt_id)} ›</button>`}).join('')}</div></div>`}).join('')}</div>`:''}
+    ${g.note?`<div class="source-note">${esc(g.note)}</div>`:''}
+    ${g.sources?.length?`<div class="growth-sources">${g.sources.map(s=>`<small>• ${esc(s.name)}${s.note?` — ${esc(s.note)}`:''}</small>`).join('')}</div>`:''}
+  </section>`;
+}
+function growthBlockForOpt(x){
+  const links=growthLinksForOpt(x.id); if(!links.length) return '';
+  return `<section class="growth-section"><div class="growth-head"><div><span class="eyebrow">CROP GROWTH STAGE</span><h3>Fase serangan / pengamatan</h3></div></div>
+    ${links.map(l=>`<div class="opt-growth-card"><strong>${esc(l.crop_name)}</strong><div class="tag-row">${(l.phases||[]).filter(p=>(l.stages||[]).includes(p.id)).map(p=>`<span>${esc(p.name)}</span>`).join('')}</div><p>${esc(l.importance_note||'')}</p></div>`).join('')}
+    <div class="source-note">Pemetaan fase ditampilkan hanya dari sumber yang tercatat di database. Ini bukan ambang kendali atau jadwal aplikasi.</div>
+  </section>`;
+}
+function lifeCycleBlock(x){
+  const ref=x.life_cycle_reference;
+  if(!ref) return '';
+  return `<section class="lifecycle-section"><div class="growth-head"><div><span class="eyebrow">BIOLOGI OPT</span><h3>Siklus hidup</h3></div><span class="growth-status">REFERENSI</span></div>
+    <div class="lifecycle-stages">${(ref.stages||[]).map((v,i)=>`<div class="lifecycle-stage"><span>${i+1}</span><strong>${esc(v)}</strong>${i<(ref.stages||[]).length-1?'<b>→</b>':''}</div>`).join('')}</div>
+    ${ref.source_note?`<div class="source-note">${esc(ref.source_note)}</div>`:''}
+  </section>`;
+}
+function sourceTableBlock(x){
+  const t=x.source_table; if(!t) return '';
+  const row=(label,arr,cls)=>arr?.length?`<div class="source-host-row"><strong>${esc(label)}</strong><div class="tag-row">${arr.map(v=>`<span class="${cls||''}">${esc(v)}</span>`).join('')}</div></div>`:'';
+  return `<section class="source-table-section"><div class="growth-head"><div><span class="eyebrow">DATA GAMBAR REFERENSI</span><h3>Inang & tingkat kerusakan</h3></div></div>${row('Kerusakan berat',t.severe,'severe')}${row('Kerusakan sedang',t.moderate,'moderate')}<div class="source-note">${esc(t.source||'Data berasal dari sumber visual pengguna.')}. Istilah dan kelompok tanaman dipertahankan dari tabel sumber; data ini bukan klaim universal untuk semua lokasi.</div></section>`;
+}
 function openOptDetail(x,type){
   state.detailRef={kind:'opt',id:x.id,type};
   if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
@@ -509,8 +595,11 @@ function openOptDetail(x,type){
     <div class="detail-grid"><div><label>Nama umum</label><strong>${esc(x.common||'—')}</strong></div><div><label>Kelompok</label><strong>${esc(x.category||'—')}</strong></div>${x.family?`<div><label>Famili</label><strong>${esc(x.family)}</strong></div>`:''}<div><label>Type OPT</label><strong>${esc(type)}</strong></div></div>
     ${hosts.length?`<h3>Tanaman Inang</h3><div class="tag-row">${hosts.map(h=>`<span>${esc(h)}</span>`).join('')}</div>`:''}
     ${x.symptoms?.length?`<h3>Gejala / ciri</h3><div class="source-box"><ul style="margin:0;padding-left:17px">${x.symptoms.map(s=>`<li style="font-size:10px;margin:6px 0">${esc(s)}</li>`).join('')}</ul></div>`:''}
-    ${x.life?.length?`<h3>Siklus hidup</h3><div class="tag-row">${x.life.map(s=>`<span>${esc(s)}</span>`).join('')}</div>`:''}
+    ${lifeCycleBlock(x)}
+    ${x.life?.length?`<h3>Tahap perkembangan</h3><div class="tag-row">${x.life.map(s=>`<span>${esc(s)}</span>`).join('')}</div>`:''}
+    ${sourceTableBlock(x)}
     ${x.notes?`<p class="source-note">${esc(x.notes)}</p>`:''}
+    ${growthBlockForOpt(x)}
     ${controlBlock(x)}
     ${pesticideBlock(x)}
     ${eppoBlock(x)}
@@ -531,10 +620,12 @@ function openCropDetail(crop){
     <h2>${esc(crop.name)}</h2><p class="muted"><i>${esc(crop.latin)}</i></p>
     ${crop.source_guidelines?`<div class="source-box"><strong>Sumber pengetahuan</strong><p>${esc(crop.source_guidelines.summary_id)}</p><small>${esc(crop.source_guidelines.source)} · ${esc(crop.source_guidelines.source_note)}</small></div>`:''}
     <div class="crop-source-badge">${rows.length} relasi OPT dari lapisan sumber + master</div>
+    ${growthBlockForCrop(crop)}
+    ${nutritionBlockForCrop(crop)}
     <h3>OPT terkait</h3>${sections||'<div class="empty">Belum ada relasi OPT yang terpetakan.</div>'}
     <div class="source-note">Relasi dari TABEL HAMA (ID).pdf diperlakukan sebagai sumber pengetahuan/provenance. Nama produk pada dokumen tidak dianggap sebagai bukti registrasi pestisida Indonesia saat ini.</div>
   </aside>`;
-  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.crop-opt-link').forEach(b=>b.addEventListener('click',()=>openCropOptRef(b.dataset.optRef)));
+  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.crop-opt-link').forEach(b=>b.addEventListener('click',()=>openCropOptRef(b.dataset.optRef))); $$('.stage-opt-link').forEach(b=>b.addEventListener('click',()=>{const [t,id]=String(b.dataset.optStageRef||'').split('|'); const x=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds].find(v=>v.id===id); if(x) openOptDetail(x,t);}));
 }
 function openCropOptRef(ref){
   const [type,id,scientific,common]=String(ref||'').split('|');
@@ -548,7 +639,7 @@ function openCropOptRef(ref){
     <button class="close" id="closeDetail">×</button><div class="detail-code">${esc(type)} · sumber tanaman</div>
     <div style="text-align:center;margin:18px 0 8px"><img src="assets/opt/${icon}" style="width:150px;height:125px"></div>
     <h2>${esc(scientific||common||'OPT')}</h2><p class="muted">${esc(common||'')}</p>
-    <div class="source-box"><strong>Relasi OPT pada tanaman</strong><p>Entri ini berasal dari lapisan relasi sumber tanaman dan belum memiliki record detail lengkap di Master OPT Explorer.</p></div>
+    <div class="source-box"><strong>Relasi OPT pada tanaman</strong><p>Entri ini berasal dari lapisan relasi sumber tanaman dan belum memiliki record detail lengkap di Master Crop Expert.</p></div>
     <div class="source-note">Data sumber ditampilkan apa adanya dan tidak dipakai untuk membuat klaim diagnosis, registrasi pestisida, dosis, atau rekomendasi aplikasi.</div>
   </aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail); $('#closeDetail').addEventListener('click',closeDetail);
@@ -556,13 +647,30 @@ function openCropOptRef(ref){
 function setScanFile(file){
   if(!file || !file.type.startsWith('image/')) return; state.scanFile=file;
   const preview=$('#scanPreview'); const url=URL.createObjectURL(file); preview.style.backgroundImage=`url("${url}")`; preview.style.backgroundSize='cover'; preview.style.backgroundPosition='center';
-  preview.querySelector('span').textContent='✓'; $('#scanPreviewTitle').textContent=file.name||'Foto siap dianalisis'; $('#scanPreviewHint').textContent='Foto siap dibagikan ke ChatGPT.';
-  $('#scanFileMeta').hidden=false; $('#scanFileMeta').textContent=`${file.name||'foto'} · ${Math.round(file.size/1024)} KB`; $('#analyzeChatGPTBtn').disabled=false; $('#copyScanPromptBtn').disabled=false;
+  preview.querySelector('span').textContent='✓'; $('#scanPreviewTitle').textContent=file.name||'Foto siap dianalisis'; $('#scanPreviewHint').textContent='Foto siap. Kamu bisa lanjut ke Google Lens atau ChatGPT.';
+  $('#scanFileMeta').hidden=false; $('#scanFileMeta').textContent=`${file.name||'foto'} · ${Math.round(file.size/1024)} KB`; $('#analyzeChatGPTBtn').disabled=false; $('#copyScanPromptBtn').disabled=false; $('#googleLensBtn').disabled=false;
 }
-function buildScanPrompt(){return `Saya sedang menggunakan OPT Explorer untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.\n\nTugas:\n1. Identifikasi tanaman/komoditas jika dapat terlihat.\n2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA.\n3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian.\n4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung.\n5. Jelaskan ciri yang membedakannya dari kandidat lain.\n6. Jika foto tidak cukup, minta foto tambahan yang spesifik.\n7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas.\n8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan.\n9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.\n\nJawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
+function buildScanPrompt(){return `Saya sedang menggunakan Crop Expert untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.\n\nTugas:\n1. Identifikasi tanaman/komoditas jika dapat terlihat.\n2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA.\n3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian.\n4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung.\n5. Jelaskan ciri yang membedakannya dari kandidat lain.\n6. Jika foto tidak cukup, minta foto tambahan yang spesifik.\n7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas.\n8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan.\n9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.\n\nJawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
+function openGoogleLens(){
+  if(!state.scanFile)return;
+  window.open('https://lens.google.com/','_blank','noopener');
+}
+function optSearchPool(){return [...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];}
+function searchOptFromLens(){
+  const q=String($('#lensResultSearch')?.value||'').trim().toLowerCase();
+  if(!q)return;
+  const pool=optSearchPool();
+  const hits=pool.filter(x=>[x.name,x.common,x.scientific,x.family,x.order,...(x.aliases||[])].filter(Boolean).join(' ').toLowerCase().includes(q));
+  if(hits.length===1){openOptDetail(hits[0], hits[0].category==='Penyakit'?'Penyakit':hits[0].category==='Gulma'?'Gulma':'Hama');return;}
+  if(!hits.length){alert('Belum ada kecocokan dengan kata tersebut di database Crop Expert. Coba nama ilmiah atau nama umum lain dari hasil Google Lens.');return;}
+  state.detailRef={kind:'lens-results',id:q};
+  $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet"><button class="close" id="closeDetail">×</button><div class="detail-code">HASIL PENCARIAN LENS</div><h2>${esc(q)}</h2><p class="muted">Beberapa kandidat ditemukan di database Crop Expert.</p><div class="lens-hit-list">${hits.slice(0,20).map(x=>`<button class="lens-hit" data-opt-id="${esc(x.id)}" data-opt-type="${esc(x.category||'Hama')}"><strong>${esc(x.name)}</strong><span>${esc(x.common||x.scientific||x.category||'')}</span></button>`).join('')}</div></aside>`;
+  $('#detailBackdrop').addEventListener('click',closeDetail); $('#closeDetail').addEventListener('click',closeDetail);
+  $$('.lens-hit').forEach(b=>b.addEventListener('click',()=>{const x=optSearchPool().find(v=>v.id===b.dataset.optId);if(x)openOptDetail(x,b.dataset.optType);}));
+}
 async function shareScanToChatGPT(){
   if(!state.scanFile)return; const prompt=buildScanPrompt(), file=state.scanFile;
-  if(navigator.share && navigator.canShare){try{if(navigator.canShare({files:[file]})){await navigator.share({title:'OPT Explorer — Analisis Foto OPT',text:prompt,files:[file]});return;}}catch(e){if(e?.name==='AbortError')return;}}
+  if(navigator.share && navigator.canShare){try{if(navigator.canShare({files:[file]})){await navigator.share({title:'Crop Expert — Analisis Foto OPT',text:prompt,files:[file]});return;}}catch(e){if(e?.name==='AbortError')return;}}
   try{await navigator.clipboard.writeText(prompt)}catch(e){}
   window.open('https://chatgpt.com/','_blank','noopener'); alert('Browser ini tidak mendukung berbagi file langsung. ChatGPT sudah dibuka. Tempel foto secara manual lalu kirim prompt yang sudah disalin jika tersedia.');
 }
@@ -572,7 +680,7 @@ function showScreen(id,opts={}){
   $$('.screen').forEach(s=>s.classList.toggle('active-screen',s.id===id));
   $$('.bottom-nav button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));
   state.screen=id; if(id==='explore')render();
-  if(id==='types')renderTypes(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary(); if(id==='pesticides')renderPesticides();
+  if(id==='types')renderTypes(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary(); if(id==='pesticides')renderPesticides(); if(id==='nutrition')renderNutrition(); if(id==='crop-guidelines')renderCropGuidelines();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function setCommittee(c){state.committee=c;state.moaView='ai';state.group='ALL';state.search='';$('#search').value='';$$('.committee-tabs button').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render()}
@@ -604,6 +712,13 @@ $('#librarySearch').addEventListener('input',e=>{state.librarySearch=e.target.va
 $('#clearLibrarySearch').addEventListener('click',()=>{$('#librarySearch').value='';state.librarySearch='';renderLibrary()});
 $$('.library-tabs button').forEach(b=>b.addEventListener('click',()=>{state.libraryFilter=b.dataset.libraryFilter;renderLibrary()}));
 $('#librarySearchBtn').addEventListener('click',()=>$('#librarySearch').focus());
+$('#nutritionSearchBtn').addEventListener('click',()=>$('#nutritionSearch').focus());
+$('#nutritionSearch').addEventListener('input',e=>{state.nutritionSearch=e.target.value;renderNutrition()});
+$('#clearNutritionSearch').addEventListener('click',()=>{$('#nutritionSearch').value='';state.nutritionSearch='';renderNutrition()});
+$$('.nutrition-tabs button').forEach(b=>b.addEventListener('click',()=>{state.nutritionFilter=b.dataset.nutritionFilter;$$('.nutrition-tabs button').forEach(x=>x.classList.toggle('active',x===b));renderNutrition()}));
+$('#openNutrition').addEventListener('click',()=>showScreen('nutrition'));
+$('#openCropGuidelines').addEventListener('click',()=>showScreen('crop-guidelines'));
+$('#cropGuidelineSearch').addEventListener('input',renderCropGuidelines);
 $('#pesticideSearchBtn').addEventListener('click',()=>$('#pesticideSearch').focus());
 $('#pesticideSearch').addEventListener('input',e=>{state.pesticideSearch=e.target.value;renderPesticides()});
 $('#clearPesticideSearch').addEventListener('click',()=>{$('#pesticideSearch').value='';state.pesticideSearch='';renderPesticides()});
@@ -615,7 +730,10 @@ $('#cameraBtn').addEventListener('click',()=>$('#cameraInput').click());
 $('#galleryBtn').addEventListener('click',()=>$('#galleryInput').click());
 $('#cameraInput').addEventListener('change',e=>setScanFile(e.target.files?.[0]));
 $('#galleryInput').addEventListener('change',e=>setScanFile(e.target.files?.[0]));
+$('#googleLensBtn').addEventListener('click',openGoogleLens);
 $('#analyzeChatGPTBtn').addEventListener('click',shareScanToChatGPT);
+$('#lensResultSearchBtn').addEventListener('click',searchOptFromLens);
+$('#lensResultSearch').addEventListener('keydown',e=>{if(e.key==='Enter')searchOptFromLens()});
 $('#copyScanPromptBtn').addEventListener('click',copyScanPrompt);
 $('#installBtn').addEventListener('click',async()=>{if(state.deferredPrompt){await state.deferredPrompt.prompt();state.deferredPrompt=null}else alert('Gunakan menu Chrome → Tambahkan ke layar utama untuk memasang aplikasi.')});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();state.deferredPrompt=e;$('#installBtn').hidden=false});

@@ -1,4 +1,4 @@
-/* OPT Explorer v0.12 — Calculator Suite
+/* Crop Expert v0.12 — Calculator Suite
    Calculation aid only. It does not prescribe products, doses, intervals, PHI or PPE. */
 (function(){
   const C={tab:'area'};
