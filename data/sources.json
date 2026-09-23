@@ -267,6 +267,134 @@
       "title": "HRAC Global Herbicide MoA Classification 2026",
       "url": "https://hracglobal.com/tools/2026-hrac-global-herbicide-moa-classification",
       "type": "Official master classification"
+    },
+    {
+      "id": "irri-rice-crop-stages-2026",
+      "title": "IRRI Rice Knowledge Bank — Crop stages",
+      "type": "web",
+      "url": "https://www.knowledgebank.irri.org/images/docs/needs-and-opportunity-assessment.pdf",
+      "status": "current web reference",
+      "note": "Stage 0–9 framework used for rice phenology layer."
+    },
+    {
+      "id": "crop-phenology-growth-stages-protection-user",
+      "title": "Crop phenology: Growth stages and protection",
+      "type": "user-library-visual",
+      "status": "user supplied",
+      "note": "Used as source visual for rice growth/protection timing; not treated as universal calendar."
+    },
+    {
+      "id": "user-spodoptera-exigua-lifecycle-2026",
+      "name": "Gambar siklus hidup Spodoptera exigua — pengguna",
+      "type": "user_provided_image",
+      "year": 2026,
+      "url": "",
+      "note": "Telur → larva → pupa → imago. Dipakai sebagai referensi visual pada detail OPT."
+    },
+    {
+      "id": "user-spodoptera-exigua-larva-2026",
+      "name": "Foto larva Spodoptera exigua — pengguna",
+      "type": "user_provided_image",
+      "year": 2026,
+      "url": "",
+      "note": "Referensi visual larva."
+    },
+    {
+      "id": "user-thrips-lifecycle-2026",
+      "name": "Gambar siklus hidup thrips — pengguna",
+      "type": "user_provided_image",
+      "year": 2026,
+      "url": "",
+      "note": "Telur, instar 1, instar 2, prepupa, pupa, imago; gambar memuat durasi tahap."
+    },
+    {
+      "id": "user-thrips-species-hosts-2026",
+      "name": "Tabel spesies thrips dan tanaman terdampak — pengguna",
+      "type": "user_provided_image",
+      "year": 2026,
+      "url": "",
+      "note": "Enam entri pada tabel menjadi dasar penambahan spesies thrips dan data tingkat kerusakan/inang."
+    },
+    {
+      "id": "plant-nutrients-tamu",
+      "title": "Essential Nutrients for Plants",
+      "publisher": "Texas A&M AgriLife Extension Service",
+      "type": "External nutrition/crop reference",
+      "scope": "Crop nutrition guideline and diagnostic framework",
+      "year": "2021",
+      "url": "https://agrilifeextension.tamu.edu/library/gardening/essential-nutrients-for-plants/"
+    },
+    {
+      "id": "plant-nutrients-umn-2026",
+      "title": "Foliar testing for fruit and vegetable crops",
+      "publisher": "University of Minnesota Extension",
+      "type": "External nutrition/crop reference",
+      "scope": "Crop nutrition guideline and diagnostic framework",
+      "year": "2026",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/foliar-testing-for-fruit-and-vegetable-crops"
+    },
+    {
+      "id": "nutrient-mobility-ufifas",
+      "title": "Movement of Plant Nutrients",
+      "publisher": "UF/IFAS Extension",
+      "type": "External nutrition/crop reference",
+      "scope": "Crop nutrition guideline and diagnostic framework",
+      "year": "2025",
+      "url": "https://ask.ifas.ufl.edu/publication/HS1373"
+    },
+    {
+      "id": "nutrient-interactions-missouri",
+      "title": "When More Is Less: How Excess Nutrients Can Cause Deficiencies in Crops",
+      "publisher": "University of Missouri Extension",
+      "type": "External nutrition/crop reference",
+      "scope": "Crop nutrition guideline and diagnostic framework",
+      "year": "2025",
+      "url": "https://extension.missouri.edu/publications/g9069"
+    },
+    {
+      "id": "fao-crop-stages",
+      "title": "Crop water needs / growth stages",
+      "publisher": "FAO",
+      "type": "External nutrition/crop reference",
+      "scope": "Crop nutrition guideline and diagnostic framework",
+      "year": "n.d.",
+      "url": "https://www.fao.org/4/s2022e/s2022e07.htm"
+    },
+    {
+      "id": "biostimulants-frontiers-2016",
+      "title": "Biostimulants in Plant Science: A Global Perspective",
+      "publisher": "Frontiers in Plant Science",
+      "type": "Scientific review",
+      "scope": "Biostimulant concept and categories",
+      "year": "2016",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.02049/full"
+    },
+    {
+      "id": "humic-fulvic-2015",
+      "title": "Humic and fulvic acids as biostimulants in horticulture",
+      "publisher": "Scientia Horticulturae / ScienceDirect",
+      "type": "Scientific review",
+      "scope": "Humic substances, roots, nutrient uptake and stress responses",
+      "year": "2015",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304423815301771"
+    },
+    {
+      "id": "triacontanol-pubmed",
+      "title": "Triacontanol as a dynamic growth regulator for plants under diverse environmental conditions",
+      "publisher": "PubMed",
+      "type": "Scientific review",
+      "scope": "Triacontanol physiological and stress-response effects",
+      "year": "2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32377038/"
+    },
+    {
+      "id": "cytokinin-pubmed",
+      "title": "Cytokinins as central regulators during plant growth and stress response",
+      "publisher": "PubMed",
+      "type": "Scientific review",
+      "scope": "Cytokinin biology, development and stress response",
+      "year": "2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33025178/"
     }
   ]
 }

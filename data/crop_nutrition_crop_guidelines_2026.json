@@ -1,0 +1,2283 @@
+{
+  "version": "2026.1",
+  "title": "Crop Nutrition & Growth Guideline",
+  "language": "id",
+  "purpose": "Profil nutrisi kualitatif untuk 30 crop di Crop Expert, terhubung dengan fase pertumbuhan.",
+  "status": "qualitative_framework",
+  "scope_note": "Tidak memuat dosis, target ppm, rekomendasi pupuk spesifik, atau jadwal aplikasi. Fokus pada hubungan fase–fungsi–diagnostik untuk pembelajaran dan pengambilan keputusan yang perlu diverifikasi secara lokal.",
+  "records": [
+    {
+      "crop_id": "padi",
+      "family": "Serealia",
+      "production_goal": "Produksi gabah dan pengisian bulir",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Perkecambahan & pembentukan tanaman",
+          "focus": [
+            "P",
+            "N",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif / pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "reproductive",
+          "name": "Inisiasi bunga / organ reproduktif",
+          "focus": [
+            "P",
+            "K",
+            "S",
+            "B"
+          ]
+        },
+        {
+          "id": "fill",
+          "name": "Pengisian biji / bulir",
+          "focus": [
+            "K",
+            "N",
+            "Mg"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "Keseimbangan N-K sepanjang vegetatif hingga reproduktif",
+        "P pada pembentukan akar dan awal pertumbuhan",
+        "Zn pada kondisi yang memang berisiko defisiensi",
+        "B/Mg/S sebagai pendukung fungsi fisiologis; kebutuhan aktual diverifikasi analisis"
+      ],
+      "diagnostic_watchpoints": [
+        "Gejala pada daun tua vs muda",
+        "Kondisi tergenang dan pH dapat mengubah ketersediaan hara",
+        "Bedakan defisiensi dengan kerusakan OPT/fitotoksisitas",
+        "Bedakan gejala nutrisi dengan kerusakan wereng/penggerek, blas, bercak dan fitotoksisitas."
+      ],
+      "biostimulant_context": [
+        "Amino/humat/fulvat/seaweed dapat dipelajari sebagai pendukung proses fisiologis; efek tidak menggantikan hara esensial"
+      ],
+      "pgr_context": [
+        "PGR bukan bagian rutin dari kebutuhan hara; penggunaan harus spesifik varietas/tujuan dan label"
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "cabai",
+      "family": "Sayuran buah",
+      "production_goal": "Pertumbuhan vegetatif, pembungaan, fruit set dan pengisian buah",
+      "stages": [
+        {
+          "id": "nursery",
+          "name": "Persemaian & establishment",
+          "focus": [
+            "P",
+            "Ca",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & percabangan",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "fruiting",
+          "name": "Pembesaran & pengisian buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Panen bertahap",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K mendukung translokasi dan kualitas buah",
+        "Ca/B penting dalam jaringan muda dan reproduksi; jangan menganggap gejala sebagai bukti defisiensi tanpa verifikasi",
+        "N perlu seimbang agar vegetatif tidak berlebihan"
+      ],
+      "diagnostic_watchpoints": [
+        "Perhatikan gejala pada pucuk muda, bunga dan buah",
+        "Bedakan blossom-end/fruit disorders dari penyakit dan air",
+        "Gangguan Ca pada buah tidak otomatis berarti Ca tanah rendah; distribusi Ca dipengaruhi aliran air/transpirasi dan akar."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat dipelajari untuk root growth, nutrient-use efficiency dan stress response; respons tergantung produk"
+      ],
+      "pgr_context": [
+        "Auksin, sitokinin/CPPU, GA3 atau TRIA bukan pengganti nutrisi; gunakan hanya untuk tujuan spesifik dan label lokal"
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "tomat",
+      "family": "Sayuran buah / cucurbit",
+      "production_goal": "Pertumbuhan tajuk, pembungaan, fruit set dan kualitas buah",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Persemaian / establishment",
+          "focus": [
+            "P",
+            "Ca",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "fruiting",
+          "name": "Pembesaran / pengisian buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Panen & pemeliharaan tanaman",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "Ca",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "Gangguan kualitas buah perlu dibaca bersama status air, akar, salinitas dan keseimbangan K/Ca/Mg."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "bawang",
+      "family": "Umbi lapis",
+      "production_goal": "Pembentukan dan pengisian umbi",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Perkecambahan / establishment",
+          "focus": [
+            "P",
+            "N",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & pembentukan daun",
+          "focus": [
+            "N",
+            "S",
+            "K"
+          ]
+        },
+        {
+          "id": "bulb-init",
+          "name": "Inisiasi umbi",
+          "focus": [
+            "K",
+            "S",
+            "P"
+          ]
+        },
+        {
+          "id": "bulb-fill",
+          "name": "Pembesaran / pengisian umbi",
+          "focus": [
+            "K",
+            "S",
+            "Ca"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Ca"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "S",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kubis",
+      "family": "Brassica sayuran krop",
+      "production_goal": "Pembentukan tajuk dan kepala",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "B"
+          ]
+        },
+        {
+          "id": "canopy",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "S",
+            "Ca",
+            "K"
+          ]
+        },
+        {
+          "id": "curd",
+          "name": "Pembentukan curd / kepala bunga",
+          "focus": [
+            "B",
+            "Ca",
+            "K",
+            "S"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan & panen",
+          "focus": [
+            "K",
+            "Ca",
+            "B"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "B",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "mentimun",
+      "family": "Sayuran buah / cucurbit",
+      "production_goal": "Vigor, bunga betina, fruit set dan pembesaran buah",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Persemaian / establishment",
+          "focus": [
+            "P",
+            "Ca",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "fruiting",
+          "name": "Pembesaran / pengisian buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Panen & pemeliharaan tanaman",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "Ca",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "Gangguan kualitas buah perlu dibaca bersama status air, akar, salinitas dan keseimbangan K/Ca/Mg."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "jagung",
+      "family": "Serealia",
+      "production_goal": "Biomassa, pembentukan tongkol, pengisian biji",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Perkecambahan & pembentukan tanaman",
+          "focus": [
+            "P",
+            "N",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif / pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "reproductive",
+          "name": "Inisiasi bunga / organ reproduktif",
+          "focus": [
+            "P",
+            "K",
+            "S",
+            "B"
+          ]
+        },
+        {
+          "id": "fill",
+          "name": "Pengisian biji / bulir",
+          "focus": [
+            "K",
+            "N",
+            "Mg"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "P",
+        "K",
+        "Zn"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kedelai",
+      "family": "Legum",
+      "production_goal": "Nodulasi, pembungaan, pengisian polong",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment & nodulasi awal",
+          "focus": [
+            "P",
+            "Mo",
+            "S"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif",
+          "focus": [
+            "P",
+            "K",
+            "S",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan",
+          "focus": [
+            "B",
+            "P",
+            "K"
+          ]
+        },
+        {
+          "id": "pod-fill",
+          "name": "Pembentukan & pengisian polong",
+          "focus": [
+            "K",
+            "S",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "P",
+        "K",
+        "S",
+        "Mo",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "semangka",
+      "family": "Sayuran buah / cucurbit",
+      "production_goal": "Pertumbuhan sulur, fruit set dan pengisian buah",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Persemaian / establishment",
+          "focus": [
+            "P",
+            "Ca",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "fruiting",
+          "name": "Pembesaran / pengisian buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Panen & pemeliharaan tanaman",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "Ca",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "Gangguan kualitas buah perlu dibaca bersama status air, akar, salinitas dan keseimbangan K/Ca/Mg."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "melon",
+      "family": "Sayuran buah / cucurbit",
+      "production_goal": "Pertumbuhan sulur, fruit set dan kualitas buah",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Persemaian / establishment",
+          "focus": [
+            "P",
+            "Ca",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "fruiting",
+          "name": "Pembesaran / pengisian buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Panen & pemeliharaan tanaman",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "Ca",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "Gangguan kualitas buah perlu dibaca bersama status air, akar, salinitas dan keseimbangan K/Ca/Mg."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kentang",
+      "family": "Umbi",
+      "production_goal": "Pembentukan dan pembesaran umbi",
+      "stages": [
+        {
+          "id": "emergence",
+          "name": "Tumbuh & emergence",
+          "focus": [
+            "P",
+            "N",
+            "Zn"
+          ]
+        },
+        {
+          "id": "canopy",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "initiation",
+          "name": "Inisiasi organ simpan",
+          "focus": [
+            "P",
+            "K",
+            "Ca"
+          ]
+        },
+        {
+          "id": "bulking",
+          "name": "Pembesaran organ simpan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Ca"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "Ca",
+        "Mg"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kacang",
+      "family": "Legum",
+      "production_goal": "Vegetatif, pembungaan, pembentukan dan pengisian polong",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment & nodulasi awal",
+          "focus": [
+            "P",
+            "Mo",
+            "S"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif",
+          "focus": [
+            "P",
+            "K",
+            "S",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan",
+          "focus": [
+            "B",
+            "P",
+            "K"
+          ]
+        },
+        {
+          "id": "pod-fill",
+          "name": "Pembentukan & pengisian polong",
+          "focus": [
+            "K",
+            "S",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "P",
+        "K",
+        "S",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "terung",
+      "family": "Sayuran buah / cucurbit",
+      "production_goal": "Vegetatif, pembungaan dan produksi buah",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Persemaian / establishment",
+          "focus": [
+            "P",
+            "Ca",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif & pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "fruiting",
+          "name": "Pembesaran / pengisian buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Panen & pemeliharaan tanaman",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "Ca",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "Gangguan kualitas buah perlu dibaca bersama status air, akar, salinitas dan keseimbangan K/Ca/Mg."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "pisang",
+      "family": "Tanaman buah/perennial",
+      "production_goal": "Pembentukan tajuk, pembungaan dan pengisian tandan",
+      "stages": [
+        {
+          "id": "flush",
+          "name": "Flush vegetatif",
+          "focus": [
+            "N",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "development",
+          "name": "Perkembangan buah/biji",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturation",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "postharvest",
+          "name": "Pasca panen / pemulihan",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "jeruk",
+      "family": "Tanaman buah/perennial",
+      "production_goal": "Flush vegetatif, pembungaan, fruit set dan pembesaran buah",
+      "stages": [
+        {
+          "id": "flush",
+          "name": "Flush vegetatif",
+          "focus": [
+            "N",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "development",
+          "name": "Perkembangan buah/biji",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturation",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "postharvest",
+          "name": "Pasca panen / pemulihan",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kopi",
+      "family": "Tanaman buah/perennial",
+      "production_goal": "Pertumbuhan flush, pembungaan dan pengisian buah",
+      "stages": [
+        {
+          "id": "flush",
+          "name": "Flush vegetatif",
+          "focus": [
+            "N",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "development",
+          "name": "Perkembangan buah/biji",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturation",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "postharvest",
+          "name": "Pasca panen / pemulihan",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kakao",
+      "family": "Tanaman buah/perennial",
+      "production_goal": "Pertumbuhan flush, pembungaan, pod set dan pengisian biji",
+      "stages": [
+        {
+          "id": "flush",
+          "name": "Flush vegetatif",
+          "focus": [
+            "N",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "P",
+            "K",
+            "B",
+            "Ca"
+          ]
+        },
+        {
+          "id": "development",
+          "name": "Perkembangan buah/biji",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturation",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "postharvest",
+          "name": "Pasca panen / pemulihan",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "teh",
+      "family": "Sayuran daun",
+      "production_goal": "Pertumbuhan flush dan produksi pucuk",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "Ca"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Pembentukan daun",
+          "focus": [
+            "N",
+            "K",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Pembesaran & panen",
+          "focus": [
+            "N",
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Mg",
+        "S"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kelapa",
+      "family": "Palma",
+      "production_goal": "Pembentukan daun, bunga dan buah",
+      "stages": [
+        {
+          "id": "vegetative",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan",
+          "focus": [
+            "B",
+            "K",
+            "Ca"
+          ]
+        },
+        {
+          "id": "bunch-fill",
+          "name": "Pengisian tandan/buah",
+          "focus": [
+            "K",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "maintenance",
+          "name": "Pemeliharaan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "sawit",
+      "family": "Palma",
+      "production_goal": "Pembentukan tajuk, bunga dan tandan buah",
+      "stages": [
+        {
+          "id": "vegetative",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan",
+          "focus": [
+            "B",
+            "K",
+            "Ca"
+          ]
+        },
+        {
+          "id": "bunch-fill",
+          "name": "Pengisian tandan/buah",
+          "focus": [
+            "K",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "maintenance",
+          "name": "Pemeliharaan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "singkong",
+      "family": "Umbi akar",
+      "production_goal": "Pembentukan tajuk dan pembesaran akar simpan",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "Zn"
+          ]
+        },
+        {
+          "id": "canopy",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "root-init",
+          "name": "Inisiasi akar simpan",
+          "focus": [
+            "P",
+            "K",
+            "Ca"
+          ]
+        },
+        {
+          "id": "root-bulking",
+          "name": "Pembesaran akar simpan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "K",
+        "N",
+        "P",
+        "Mg"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kacang-tanah",
+      "family": "Legum",
+      "production_goal": "Vegetatif, berbunga, pembentukan ginofor dan pengisian polong",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment & nodulasi awal",
+          "focus": [
+            "P",
+            "Mo",
+            "S"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif",
+          "focus": [
+            "P",
+            "K",
+            "S",
+            "Mg"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan",
+          "focus": [
+            "B",
+            "P",
+            "K"
+          ]
+        },
+        {
+          "id": "pod-fill",
+          "name": "Pembentukan & pengisian polong",
+          "focus": [
+            "K",
+            "S",
+            "Mg",
+            "B"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "P",
+        "Ca",
+        "S",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "sawi",
+      "family": "Sayuran daun",
+      "production_goal": "Pembentukan daun dan biomassa",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "Ca"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Pembentukan daun",
+          "focus": [
+            "N",
+            "K",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Pembesaran & panen",
+          "focus": [
+            "N",
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "K",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "caisim",
+      "family": "Sayuran daun",
+      "production_goal": "Pembentukan daun dan biomassa",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "Ca"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Pembentukan daun",
+          "focus": [
+            "N",
+            "K",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Pembesaran & panen",
+          "focus": [
+            "N",
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "K",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "pakcoy",
+      "family": "Sayuran daun",
+      "production_goal": "Pembentukan roset daun dan biomassa",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "Ca"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Pembentukan daun",
+          "focus": [
+            "N",
+            "K",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Pembesaran & panen",
+          "focus": [
+            "N",
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "K",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "anggur",
+      "family": "Anggur",
+      "production_goal": "Bud break, flowering, fruit set, veraison dan pematangan",
+      "stages": [
+        {
+          "id": "budbreak",
+          "name": "Bud break & pertumbuhan awal",
+          "focus": [
+            "N",
+            "P",
+            "Zn"
+          ]
+        },
+        {
+          "id": "flowering",
+          "name": "Pembungaan & fruit set",
+          "focus": [
+            "B",
+            "Ca",
+            "P",
+            "K"
+          ]
+        },
+        {
+          "id": "berry-growth",
+          "name": "Pertumbuhan buah",
+          "focus": [
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        },
+        {
+          "id": "veraison",
+          "name": "Veraison / pemasakan",
+          "focus": [
+            "K",
+            "Mg",
+            "Ca"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Pematangan & panen",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "jagung-manis",
+      "family": "Serealia",
+      "production_goal": "Biomassa, pembentukan tongkol dan pengisian biji",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Perkecambahan & pembentukan tanaman",
+          "focus": [
+            "P",
+            "N",
+            "Zn"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Vegetatif / pembentukan tajuk",
+          "focus": [
+            "N",
+            "K",
+            "Mg"
+          ]
+        },
+        {
+          "id": "reproductive",
+          "name": "Inisiasi bunga / organ reproduktif",
+          "focus": [
+            "P",
+            "K",
+            "S",
+            "B"
+          ]
+        },
+        {
+          "id": "fill",
+          "name": "Pengisian biji / bulir",
+          "focus": [
+            "K",
+            "N",
+            "Mg"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan",
+          "focus": [
+            "K",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "P",
+        "K",
+        "Zn"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kembang-kol",
+      "family": "Brassica sayuran krop",
+      "production_goal": "Pembentukan tajuk dan curd",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "B"
+          ]
+        },
+        {
+          "id": "canopy",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "S",
+            "Ca",
+            "K"
+          ]
+        },
+        {
+          "id": "curd",
+          "name": "Pembentukan curd / kepala bunga",
+          "focus": [
+            "B",
+            "Ca",
+            "K",
+            "S"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan & panen",
+          "focus": [
+            "K",
+            "Ca",
+            "B"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "B",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "brokoli",
+      "family": "Brassica sayuran krop",
+      "production_goal": "Pembentukan tajuk dan kepala bunga",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "B"
+          ]
+        },
+        {
+          "id": "canopy",
+          "name": "Pembentukan tajuk",
+          "focus": [
+            "N",
+            "S",
+            "Ca",
+            "K"
+          ]
+        },
+        {
+          "id": "curd",
+          "name": "Pembentukan curd / kepala bunga",
+          "focus": [
+            "B",
+            "Ca",
+            "K",
+            "S"
+          ]
+        },
+        {
+          "id": "maturity",
+          "name": "Pematangan & panen",
+          "focus": [
+            "K",
+            "Ca",
+            "B"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "B",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    },
+    {
+      "crop_id": "kailan",
+      "family": "Sayuran daun",
+      "production_goal": "Pembentukan daun dan batang muda",
+      "stages": [
+        {
+          "id": "establishment",
+          "name": "Establishment",
+          "focus": [
+            "P",
+            "N",
+            "Ca"
+          ]
+        },
+        {
+          "id": "vegetative",
+          "name": "Pembentukan daun",
+          "focus": [
+            "N",
+            "K",
+            "Mg",
+            "S"
+          ]
+        },
+        {
+          "id": "harvest",
+          "name": "Pembesaran & panen",
+          "focus": [
+            "N",
+            "K",
+            "Ca",
+            "Mg"
+          ]
+        }
+      ],
+      "nutrition_focus": [
+        "N",
+        "S",
+        "K",
+        "Ca"
+      ],
+      "diagnostic_watchpoints": [
+        "Gunakan posisi gejala (daun tua vs muda) sebagai petunjuk awal, bukan diagnosis tunggal.",
+        "Periksa pH, kelembapan, akar/media, salinitas dan riwayat pemupukan.",
+        "Konfirmasi dengan analisis tanah/jaringan bila keputusan korektif penting.",
+        "S dan B penting dalam Brassica, tetapi aplikasi tidak boleh didasarkan pada gejala visual saja."
+      ],
+      "biostimulant_context": [
+        "Biostimulan dapat diposisikan sebagai pendukung efisiensi nutrisi atau toleransi stres; bukan pengganti unsur esensial."
+      ],
+      "pgr_context": [
+        "PGR hanya relevan untuk tujuan fisiologis tertentu dan harus mengikuti label/registrasi lokal."
+      ],
+      "status": "qualitative_framework",
+      "note": "Kerangka kualitatif untuk pembelajaran dan observasi. Bukan rekomendasi dosis atau jadwal pemupukan/PGR. Sesuaikan dengan varietas, tanah/media, iklim, sistem budidaya, target hasil dan analisis tanah/jaringan.",
+      "source_ids": [
+        "plant-nutrients-tamu",
+        "plant-nutrients-umn-2026",
+        "nutrient-mobility-ufifas",
+        "nutrient-interactions-missouri"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "plant-nutrients-tamu",
+      "title": "Essential Nutrients for Plants",
+      "publisher": "Texas A&M AgriLife Extension Service",
+      "year": "2021",
+      "url": "https://agrilifeextension.tamu.edu/library/gardening/essential-nutrients-for-plants/"
+    },
+    {
+      "id": "plant-nutrients-umn-2026",
+      "title": "Foliar testing for fruit and vegetable crops",
+      "publisher": "University of Minnesota Extension",
+      "year": "2026",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/foliar-testing-for-fruit-and-vegetable-crops"
+    },
+    {
+      "id": "nutrient-mobility-ufifas",
+      "title": "Movement of Plant Nutrients",
+      "publisher": "UF/IFAS Extension",
+      "year": "2025",
+      "url": "https://ask.ifas.ufl.edu/publication/HS1373"
+    },
+    {
+      "id": "nutrient-interactions-missouri",
+      "title": "When More Is Less: How Excess Nutrients Can Cause Deficiencies in Crops",
+      "publisher": "University of Missouri Extension",
+      "year": "2025",
+      "url": "https://extension.missouri.edu/publications/g9069"
+    },
+    {
+      "id": "fao-crop-stages",
+      "title": "Crop water needs / growth stages",
+      "publisher": "FAO",
+      "year": "n.d.",
+      "url": "https://www.fao.org/4/s2022e/s2022e07.htm"
+    }
+  ]
+}

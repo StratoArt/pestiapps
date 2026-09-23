@@ -1,20 +1,21 @@
-# OPT Explorer — MoA Data 2026
+# Crop Expert Data
 
-Initial structured snapshot from official IRAC, FRAC and HRAC 2026 materials.
+## v0.20.0 layers
+- `opt.json` — master OPT and crop identity data.
+- `crop_opt_sources_2026.json` — source-derived crop ↔ OPT relationships.
+- `crop_growth_guidelines_2026.json` — crop growth-stage/phenology layer and source-backed OPT timing where available.
+- `opt_control.json` — provenance-aware OPT ↔ active ingredient relationships.
+- `pesticide_database_id.json` — user pesticide product dataset.
+- `moa_master_2026.json` — IRAC/FRAC/HRAC classification master layer.
 
-Files:
-- irac_2026.csv
-- frac_2026.csv
-- hrac_2026.csv
-- moa_master_2026.json
+### Status rules
+`source_supported` means the stage/timing relationship has an identified source in the dataset.
 
-Next pass: expand the active-ingredient lists and add OPT ↔ active-ingredient target relationships.
+`framework_only` means the phase sequence is a navigation framework only. It must not be interpreted as a universal HST calendar or an evidence-backed OPT attack window.
 
-### v0.12 additions
-- `seed_treatments.json`: source-derived historical onion seed-treatment examples. These are not Indonesian registration data.
-- Calculator Suite implements area, spray volume, dose, backpack calibration, sprayer calibration, product/tank, granule, active ingredient and seed-treatment arithmetic.
+`source_product` in `opt_control.json` means the active ingredient is derived from a product named in a source table. It is not a current Indonesian registration claim and not an automatic spray recommendation.
 
-- `irac_nematicides_2026.json` — klasifikasi MoA nematisida IRAC.
-- `irac_pests_2026.json` — direktori OPT/resistensi IRAC dengan terjemahan UI Indonesia.
-- `irac_target_site_map.json` — taxonomy target-site dari visual IRAC.
-- `irm_spodoptera_exigua_2025.json` — materi IRM/IPM Spodoptera exigua dari poster IRAC 2025.
+`database_link` means the relationship comes from target matching in the user product database and requires label verification.
+
+### Crop Nutrition Guideline 2026
+`crop_nutrition_guideline_2026.json` adalah layer pengetahuan nutrisi tanaman yang memisahkan unsur esensial, unsur bermanfaat/non-esensial, biostimulan, dan PGR. Data ini bersifat pengetahuan fisiologi/biologi; bukan rekomendasi dosis aplikasi.

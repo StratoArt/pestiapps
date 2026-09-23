@@ -129,6 +129,17 @@
       "images": [
         {
           "image_type": "organism",
+          "local_path": "assets/opt/reference/spodoptera-exigua-larva.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Foto larva Spodoptera exigua yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi visual larva."
+        },
+        {
+          "image_type": "organism",
           "local_path": "",
           "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
           "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
@@ -137,6 +148,17 @@
           "author": "Unknown author (file page)",
           "attribution": "Spodoptera exigua larva feeding on Nicotiana attenuata — Wikimedia Commons, CC BY 2.5.",
           "notes": "Real larva photo. Verify attribution text on the file page before redistribution."
+        },
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/spodoptera-exigua-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup Spodoptera exigua yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan tahapan telur → larva → pupa → imago."
         }
       ],
       "eppo": {
@@ -145,7 +167,16 @@
         "name": "Spodoptera exigua"
       },
       "source_irm": "data/irm_spodoptera_exigua_2025.json",
-      "irm_note": "Poster IRAC 2025: resistensi dapat melibatkan detoksifikasi metabolik, perubahan target-site, dan penurunan penetrasi; IRAC merekomendasikan pengaturan jendela MoA sekitar 30 hari dan membatasi paparan MoA yang sama pada maksimal 50% siklus tanaman."
+      "irm_note": "Poster IRAC 2025: resistensi dapat melibatkan detoksifikasi metabolik, perubahan target-site, dan penurunan penetrasi; IRAC merekomendasikan pengaturan jendela MoA sekitar 30 hari dan membatasi paparan MoA yang sama pada maksimal 50% siklus tanaman.",
+      "life_cycle_reference": {
+        "stages": [
+          "Telur",
+          "Larva",
+          "Pupa",
+          "Imago"
+        ],
+        "source_note": "Urutan tahap diekstrak dari gambar siklus hidup yang diberikan pengguna; durasi tidak dicantumkan pada gambar tersebut."
+      }
     },
     {
       "id": "spodoptera-frugiperda",
@@ -255,7 +286,42 @@
         "Nimfa",
         "Imago"
       ],
-      "notes": "Serangan berat dapat mengganggu pucuk dan bunga."
+      "notes": "Serangan berat dapat mengganggu pucuk dan bunga.",
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap ditampilkan mengikuti teks pada gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      }
     },
     {
       "id": "bemisia-tabaci",
@@ -931,6 +997,53 @@
         "code": "THRITB",
         "url": "https://gd.eppo.int/taxon/THRITB/photos",
         "name": "Thrips tabaci"
+      },
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap ditampilkan mengikuti teks pada gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      },
+      "source_table": {
+        "source": "Tabel spesies thrips yang diberikan pengguna",
+        "severe": [
+          "Onion",
+          "Kale",
+          "Cabbage",
+          "Snowpea"
+        ],
+        "moderate": [
+          "Tomato"
+        ]
       }
     },
     {
@@ -1741,6 +1854,384 @@
       "source_refs": [
         "EPPO GPP crop guidelines 2000/1999"
       ]
+    },
+    {
+      "id": "frankliniella-occidentalis",
+      "name": "Frankliniella occidentalis",
+      "common": "Thrips bunga barat (Western flower thrips)",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thrips.svg",
+      "hosts": [
+        "Kacang panjang",
+        "Tomat",
+        "Mentimun",
+        "Mawar",
+        "Anyelir",
+        "Cabai",
+        "Kacang"
+      ],
+      "symptoms": [
+        "Kerusakan jaringan akibat aktivitas makan thrips",
+        "Daun dapat menunjukkan gejala keperakan/bronzing atau deformasi; gejala spesifik perlu dikonfirmasi di lapangan"
+      ],
+      "life": [
+        "Telur",
+        "Instar 1",
+        "Instar 2",
+        "Prepupa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Entri spesies ditambahkan dari tabel referensi thrips yang diberikan pengguna. Data inang/tingkat kerusakan mengikuti tabel sumber dan bukan klaim universal untuk semua lokasi.",
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap mengikuti gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      },
+      "source_table": {
+        "source": "Tabel spesies thrips yang diberikan pengguna",
+        "severe": [
+          "French bean",
+          "Tomato",
+          "Cucurbits",
+          "Roses",
+          "Carnation"
+        ],
+        "moderate": [
+          "Onion",
+          "Chillies",
+          "Capsicum",
+          "Bean"
+        ]
+      }
+    },
+    {
+      "id": "frankliniella-schultzei",
+      "name": "Frankliniella schultzei",
+      "common": "Thrips bunga umum (Common blossom thrips)",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thrips.svg",
+      "hosts": [
+        "Kacang panjang",
+        "Tomat",
+        "Mentimun",
+        "Terung",
+        "Kacang tanah"
+      ],
+      "symptoms": [
+        "Kerusakan jaringan akibat aktivitas makan thrips",
+        "Daun dapat menunjukkan gejala keperakan/bronzing atau deformasi; gejala spesifik perlu dikonfirmasi di lapangan"
+      ],
+      "life": [
+        "Telur",
+        "Instar 1",
+        "Instar 2",
+        "Prepupa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Entri spesies ditambahkan dari tabel referensi thrips yang diberikan pengguna. Data inang/tingkat kerusakan mengikuti tabel sumber dan bukan klaim universal untuk semua lokasi.",
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap mengikuti gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      },
+      "source_table": {
+        "source": "Tabel spesies thrips yang diberikan pengguna",
+        "severe": [
+          "French bean",
+          "Tomato",
+          "Cucumber",
+          "Egg plant"
+        ],
+        "moderate": [
+          "Onion",
+          "Chillies",
+          "Capsicum",
+          "Peanuts"
+        ]
+      }
+    },
+    {
+      "id": "hydatothrips-adolfifriderici",
+      "name": "Hydatothrips adolfifriderici",
+      "common": "Thrips daun kacang (Bean leaf thrips)",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thrips.svg",
+      "hosts": [
+        "Kacang",
+        "Kacang panjang",
+        "Kacang tunggak",
+        "Dolichos"
+      ],
+      "symptoms": [
+        "Kerusakan jaringan akibat aktivitas makan thrips",
+        "Daun dapat menunjukkan gejala keperakan/bronzing atau deformasi; gejala spesifik perlu dikonfirmasi di lapangan"
+      ],
+      "life": [
+        "Telur",
+        "Instar 1",
+        "Instar 2",
+        "Prepupa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Entri spesies ditambahkan dari tabel referensi thrips yang diberikan pengguna. Data inang/tingkat kerusakan mengikuti tabel sumber dan bukan klaim universal untuk semua lokasi.",
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap mengikuti gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      },
+      "source_table": {
+        "source": "Tabel spesies thrips yang diberikan pengguna",
+        "severe": [
+          "Bean",
+          "French bean",
+          "Cowpea"
+        ],
+        "moderate": [
+          "Dolichos"
+        ]
+      }
+    },
+    {
+      "id": "megalurothrips-sjostedti",
+      "name": "Megalurothrips sjostedti",
+      "common": "Thrips bunga kacang (Bean flower thrips)",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thrips.svg",
+      "hosts": [
+        "Kacang tunggak",
+        "Kacang",
+        "Dolichos",
+        "Kacang panjang"
+      ],
+      "symptoms": [
+        "Kerusakan jaringan akibat aktivitas makan thrips",
+        "Daun dapat menunjukkan gejala keperakan/bronzing atau deformasi; gejala spesifik perlu dikonfirmasi di lapangan"
+      ],
+      "life": [
+        "Telur",
+        "Instar 1",
+        "Instar 2",
+        "Prepupa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Entri spesies ditambahkan dari tabel referensi thrips yang diberikan pengguna. Data inang/tingkat kerusakan mengikuti tabel sumber dan bukan klaim universal untuk semua lokasi.",
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap mengikuti gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      },
+      "source_table": {
+        "source": "Tabel spesies thrips yang diberikan pengguna",
+        "severe": [
+          "Cowpea",
+          "Bean",
+          "Dolichos",
+          "French bean"
+        ],
+        "moderate": []
+      }
+    },
+    {
+      "id": "ceratothripoides-brunneus",
+      "name": "Ceratothripoides brunneus",
+      "common": "Thrips tomat (Tomato thrips)",
+      "category": "Thysanoptera",
+      "family": "Thripidae",
+      "icon": "thrips.svg",
+      "hosts": [
+        "Tomat",
+        "Nightshade/Terung",
+        "Cabai",
+        "Paprika"
+      ],
+      "symptoms": [
+        "Kerusakan jaringan akibat aktivitas makan thrips",
+        "Daun dapat menunjukkan gejala keperakan/bronzing atau deformasi; gejala spesifik perlu dikonfirmasi di lapangan"
+      ],
+      "life": [
+        "Telur",
+        "Instar 1",
+        "Instar 2",
+        "Prepupa",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Entri spesies ditambahkan dari tabel referensi thrips yang diberikan pengguna. Data inang/tingkat kerusakan mengikuti tabel sumber dan bukan klaim universal untuk semua lokasi.",
+      "images": [
+        {
+          "image_type": "lifecycle",
+          "local_path": "assets/opt/reference/thrips-life-cycle.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar siklus hidup thrips yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Menampilkan telur, instar 1, instar 2, prepupa, pupa dan imago."
+        },
+        {
+          "image_type": "species_reference",
+          "local_path": "assets/opt/reference/thrips-species-hosts.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar referensi pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Tabel spesies thrips dan tanaman terdampak yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Digunakan sebagai referensi daftar spesies dan kisaran kerusakan pada tabel."
+        }
+      ],
+      "life_cycle_reference": {
+        "stages": [
+          "Telur (3–4 hari)",
+          "Instar 1 (1–2 hari)",
+          "Instar 2 (2–4 hari)",
+          "Prepupa (1–2 hari)",
+          "Pupa (1–3 hari)",
+          "Imago (30–45 hari)"
+        ],
+        "source_note": "Durasi tahap mengikuti gambar siklus hidup thrips yang diberikan pengguna; dapat berubah menurut spesies dan kondisi lingkungan."
+      },
+      "source_table": {
+        "source": "Tabel spesies thrips yang diberikan pengguna",
+        "severe": [
+          "Tomato",
+          "Nightshade",
+          "Eggplant"
+        ],
+        "moderate": [
+          "Chilli",
+          "Capsicum"
+        ]
+      }
     }
   ],
   "diseases": [

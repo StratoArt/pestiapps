@@ -1,12 +1,412 @@
 {
-  "schema_version": "0.8",
-  "purpose": "Referensi teknis hubungan OPT dengan bahan aktif yang dilaporkan efektif/ditujukan untuk OPT tertentu. Bukan pengganti label/registrasi lokal.",
+  "schema_version": "2026.1",
+  "purpose": "Relasi bahan aktif ↔ OPT dengan provenance. Source-product/database-link tidak otomatis berarti rekomendasi atau registrasi.",
   "status_levels": {
-    "documented": "Ada bukti literatur/rujukan teknis untuk OPT tersebut.",
-    "group_reference": "Hubungan berdasarkan kelompok OPT/MoA dan perlu verifikasi label untuk spesies, tanaman, dan negara.",
-    "label_required": "Jangan gunakan sebagai rekomendasi aplikasi sebelum label/registrasi lokal diverifikasi."
+    "documented": "Terdokumentasi pada sumber teknis yang disimpan",
+    "source_product": "Bahan aktif diturunkan dari produk yang dicantumkan pada sumber tanaman/OPT",
+    "database_link": "Relasi sasaran dari database produk pengguna; perlu verifikasi label",
+    "verify": "Perlu verifikasi"
   },
   "active_ingredients": [
+    {
+      "id": "ai-imidakloprid",
+      "name": "Imidakloprid 120 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-spirotetramat",
+      "name": "Spirotetramat 120 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-imidakloprid120gl",
+      "name": "Imidakloprid 120 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-spirotetramat120gl",
+      "name": "Spirotetramat 120 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-spiromesifen2286gl",
+      "name": "Spiromesifen 228,6 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-abamektin114gl",
+      "name": "Abamektin 11,4 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-imidakloprid200gl",
+      "name": "Imidakloprid 200 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-tiametoksam141gl",
+      "name": "Tiametoksam 141 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-lambdasihalotrin106gl",
+      "name": "Lambda sihalotrin 106 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-pimetrozin50",
+      "name": "Pimetrozin 50%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-klorantraniliprol100gl",
+      "name": "Klorantraniliprol 100 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-tiametoksam200gl",
+      "name": "Tiametoksam 200 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-spiropidion30",
+      "name": "Spiropidion 30%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-asetamiprid24",
+      "name": "Asetamiprid 24%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-lufenuron200gl",
+      "name": "Lufenuron 200 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-siantraniliprol200gl",
+      "name": "Siantraniliprol 200 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-abamektin18gl",
+      "name": "Abamektin 18 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-difenokonazol250gl",
+      "name": "Difenokonazol 250 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-azoksistrobin200gl",
+      "name": "Azoksistrobin 200 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-difenokonazol125gl",
+      "name": "Difenokonazol 125 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-mandipropamid40gl",
+      "name": "Mandipropamid 40 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-klorotalonil400gl",
+      "name": "Klorotalonil 400 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-oksatiapiprolin6gl",
+      "name": "Oksatiapiprolin 6 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-trisiklazol400gl",
+      "name": "Trisiklazol 400 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-propikonazol125gl",
+      "name": "Propikonazol 125 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-pidiflumetofen75gl",
+      "name": "Pidiflumetofen 75 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-asibenzolarsmetil1",
+      "name": "Asibenzolar-S-metil 1%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-mankozeb48",
+      "name": "Mankozeb 48%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-mankozeb64",
+      "name": "Mankozeb 64%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-mefenoksam4",
+      "name": "Mefenoksam 4%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-sihalofopbutil300gl",
+      "name": "Sihalofop-butil 300 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-etoksisulfuron30gl",
+      "name": "Etoksisulfuron 30 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-ipaglifosat480gl",
+      "name": "IPA Glifosat 480 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-afidopiropen50glabamektin25gl",
+      "name": "Afidopiropen 50 g/L + Abamektin 25 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-fluksapiroksad250glpiraklostrobin250gl",
+      "name": "Fluksapiroksad 250 g/L + Piraklostrobin 250 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-piraklostrobin100gl",
+      "name": "Piraklostrobin 100 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-florpyrauxifenbenzylrinskor",
+      "name": "Florpyrauxifen-benzyl (Rinskor)",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-florpyrauxifenbenzylrinskorbahanaktifpendamping",
+      "name": "Florpyrauxifen-benzyl (Rinskor) + bahan aktif pendamping",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-pikoksistrobin200glfluksapiroksad80gl",
+      "name": "Pikoksistrobin 200 g/L + Fluksapiroksad 80 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-indoksakarb150gl",
+      "name": "Indoksakarb 150 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-flupyradifurone106glbifenthrin159gl",
+      "name": "Flupyradifurone 106 g/L + Bifenthrin 159 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-klorantraniliprol50gl",
+      "name": "Klorantraniliprol 50 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-broflanilida53",
+      "name": "Broflanilida 53%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-asetamiprid30gl",
+      "name": "Asetamiprid 30 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-imidakloprid50gl",
+      "name": "Imidakloprid 50 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-imidakloprid2monosultap58",
+      "name": "Imidakloprid 2% + Monosultap 58%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-metiltiofanat520gl",
+      "name": "Metil tiofanat 520 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-metiltiofanat70",
+      "name": "Metil tiofanat 70%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-buprofezin10etofenproks10",
+      "name": "Buprofezin 10% + Etofenproks 10%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-indoksakarb160glemamektinbenzoat20gl",
+      "name": "Indoksakarb 160 g/L + Emamektin benzoat 20 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-klorfenapir200gl",
+      "name": "Klorfenapir 200 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-emamektinbenzoat7klorbenzuron30",
+      "name": "Emamektin benzoat 7% + Klorbenzuron 30%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-karbendazimmankozeb",
+      "name": "Karbendazim + Mankozeb",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-mankozeb85",
+      "name": "Mankozeb 85%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-emamektinbenzoat50gl",
+      "name": "Emamektin benzoat 50 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-propineb70",
+      "name": "Propineb 70%",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
+    {
+      "id": "ai-ipaglifosat555gl",
+      "name": "IPA glifosat 555 g/L",
+      "committee": null,
+      "group": null,
+      "class": null
+    },
     {
       "id": "tetraniliprole",
       "name": "Tetraniliprole",
@@ -129,6 +529,1247 @@
     }
   ],
   "relationships": {
+    "aphid": [
+      {
+        "active_id": "ai-imidakloprid",
+        "status": "source_product",
+        "source_product": "Movento Energy 240 SC",
+        "source": "TABEL HAMA (ID).pdf",
+        "note": "Bahan aktif ini berasal dari produk Movento Energy 240 SC yang tercantum pada sumber tanaman/OPT. Verifikasi label, komoditas, OPT sasaran dan registrasi Indonesia sebelum aplikasi."
+      },
+      {
+        "active_id": "ai-spirotetramat",
+        "status": "source_product",
+        "source_product": "Movento Energy 240 SC",
+        "source": "TABEL HAMA (ID).pdf",
+        "note": "Bahan aktif ini berasal dari produk Movento Energy 240 SC yang tercantum pada sumber tanaman/OPT. Verifikasi label, komoditas, OPT sasaran dan registrasi Indonesia sebelum aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spirotetramat120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid200gl",
+        "status": "database_link",
+        "source_product": "Confidor 200 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-tiametoksam141gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lambdasihalotrin106gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pimetrozin50",
+        "status": "database_link",
+        "source_product": "Plenum 50 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spiropidion30",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid24",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-flupyradifurone106glbifenthrin159gl",
+        "status": "database_link",
+        "source_product": "Elevest 106/159 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Mospilan 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid50gl",
+        "status": "database_link",
+        "source_product": "Abuki 50 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid2monosultap58",
+        "status": "database_link",
+        "source_product": "Plush 60 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Sagri Bezz 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "bemisia-tabaci": [
+      {
+        "active_id": "ai-imidakloprid120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spirotetramat120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid200gl",
+        "status": "database_link",
+        "source_product": "Confidor 200 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-tiametoksam141gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lambdasihalotrin106gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pimetrozin50",
+        "status": "database_link",
+        "source_product": "Plenum 50 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spiropidion30",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid24",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lufenuron200gl",
+        "status": "database_link",
+        "source_product": "Minecto Xtra 200/200 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-siantraniliprol200gl",
+        "status": "database_link",
+        "source_product": "Minecto Xtra 200/200 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-flupyradifurone106glbifenthrin159gl",
+        "status": "database_link",
+        "source_product": "Elevest 106/159 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Mospilan 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid50gl",
+        "status": "database_link",
+        "source_product": "Abuki 50 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid2monosultap58",
+        "status": "database_link",
+        "source_product": "Plush 60 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-buprofezin10etofenproks10",
+        "status": "database_link",
+        "source_product": "Detonator 20 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Sagri Bezz 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "bemisia": [
+      {
+        "active_id": "ai-imidakloprid120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spirotetramat120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid200gl",
+        "status": "database_link",
+        "source_product": "Confidor 200 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-tiametoksam141gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lambdasihalotrin106gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pimetrozin50",
+        "status": "database_link",
+        "source_product": "Plenum 50 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spiropidion30",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid24",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lufenuron200gl",
+        "status": "database_link",
+        "source_product": "Minecto Xtra 200/200 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-siantraniliprol200gl",
+        "status": "database_link",
+        "source_product": "Minecto Xtra 200/200 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-flupyradifurone106glbifenthrin159gl",
+        "status": "database_link",
+        "source_product": "Elevest 106/159 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Mospilan 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid50gl",
+        "status": "database_link",
+        "source_product": "Abuki 50 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid2monosultap58",
+        "status": "database_link",
+        "source_product": "Plush 60 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-buprofezin10etofenproks10",
+        "status": "database_link",
+        "source_product": "Detonator 20 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Sagri Bezz 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "bemisia-vaporariorum": [
+      {
+        "active_id": "ai-imidakloprid120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spirotetramat120gl",
+        "status": "database_link",
+        "source_product": "Movento Energy 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid200gl",
+        "status": "database_link",
+        "source_product": "Confidor 200 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-tiametoksam141gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lambdasihalotrin106gl",
+        "status": "database_link",
+        "source_product": "Alika 247 ZC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pimetrozin50",
+        "status": "database_link",
+        "source_product": "Plenum 50 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-spiropidion30",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid24",
+        "status": "database_link",
+        "source_product": "Elestal Neo 30/24 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-lufenuron200gl",
+        "status": "database_link",
+        "source_product": "Minecto Xtra 200/200 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-siantraniliprol200gl",
+        "status": "database_link",
+        "source_product": "Minecto Xtra 200/200 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-flupyradifurone106glbifenthrin159gl",
+        "status": "database_link",
+        "source_product": "Elevest 106/159 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Mospilan 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid50gl",
+        "status": "database_link",
+        "source_product": "Abuki 50 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-imidakloprid2monosultap58",
+        "status": "database_link",
+        "source_product": "Plush 60 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-buprofezin10etofenproks10",
+        "status": "database_link",
+        "source_product": "Detonator 20 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asetamiprid30gl",
+        "status": "database_link",
+        "source_product": "Sagri Bezz 30 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "tetranychus": [
+      {
+        "active_id": "ai-spiromesifen2286gl",
+        "status": "database_link",
+        "source_product": "Oberon Speed 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin114gl",
+        "status": "database_link",
+        "source_product": "Oberon Speed 240 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Agrimec 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-afidopiropen50glabamektin25gl",
+        "status": "database_link",
+        "source_product": "Inveris Gold 50/25 DC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Demolish 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorfenapir200gl",
+        "status": "database_link",
+        "source_product": "Arjuna 200 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Prima-Cel 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorfenapir200gl",
+        "status": "database_link",
+        "source_product": "Otello 200 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "spodoptera-frugiperda": [
+      {
+        "active_id": "ai-klorantraniliprol100gl",
+        "status": "database_link",
+        "source_product": "Virtako 300 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-tiametoksam200gl",
+        "status": "database_link",
+        "source_product": "Virtako 300 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-indoksakarb150gl",
+        "status": "database_link",
+        "source_product": "Ammate 150 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorantraniliprol50gl",
+        "status": "database_link",
+        "source_product": "Prevathon 50 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-broflanilida53",
+        "status": "database_link",
+        "source_product": "Brofreya 53 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-indoksakarb160glemamektinbenzoat20gl",
+        "status": "database_link",
+        "source_product": "Srikandi 160/20 OD",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-emamektinbenzoat7klorbenzuron30",
+        "status": "database_link",
+        "source_product": "Sagri Beat 7/30 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-emamektinbenzoat50gl",
+        "status": "database_link",
+        "source_product": "Prima-FAW 50 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "spodoptera-litura": [
+      {
+        "active_id": "ai-klorantraniliprol100gl",
+        "status": "database_link",
+        "source_product": "Virtako 300 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-tiametoksam200gl",
+        "status": "database_link",
+        "source_product": "Virtako 300 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-indoksakarb150gl",
+        "status": "database_link",
+        "source_product": "Ammate 150 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorantraniliprol50gl",
+        "status": "database_link",
+        "source_product": "Prevathon 50 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-broflanilida53",
+        "status": "database_link",
+        "source_product": "Brofreya 53 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-indoksakarb160glemamektinbenzoat20gl",
+        "status": "database_link",
+        "source_product": "Srikandi 160/20 OD",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-emamektinbenzoat7klorbenzuron30",
+        "status": "database_link",
+        "source_product": "Sagri Beat 7/30 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-emamektinbenzoat50gl",
+        "status": "database_link",
+        "source_product": "Prima-FAW 50 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "liriomyza": [
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Agrimec 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-afidopiropen50glabamektin25gl",
+        "status": "database_link",
+        "source_product": "Inveris Gold 50/25 DC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Demolish 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Prima-Cel 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "liriomyza-chinensis": [
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Agrimec 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-afidopiropen50glabamektin25gl",
+        "status": "database_link",
+        "source_product": "Inveris Gold 50/25 DC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Demolish 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-abamektin18gl",
+        "status": "database_link",
+        "source_product": "Prima-Cel 18 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "colletotrichum": [
+      {
+        "active_id": "ai-difenokonazol250gl",
+        "status": "database_link",
+        "source_product": "Score 250 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-azoksistrobin200gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mandipropamid40gl",
+        "status": "database_link",
+        "source_product": "Revus Opti 440 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorotalonil400gl",
+        "status": "database_link",
+        "source_product": "Revus Opti 440 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorotalonil400gl",
+        "status": "database_link",
+        "source_product": "Orondis Opti 6/400 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-oksatiapiprolin6gl",
+        "status": "database_link",
+        "source_product": "Orondis Opti 6/400 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pidiflumetofen75gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asibenzolarsmetil1",
+        "status": "database_link",
+        "source_product": "Bion M 1/48 MZ",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb48",
+        "status": "database_link",
+        "source_product": "Bion M 1/48 MZ",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb64",
+        "status": "database_link",
+        "source_product": "Ridomil Gold MZ 68 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mefenoksam4",
+        "status": "database_link",
+        "source_product": "Ridomil Gold MZ 68 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-piraklostrobin100gl",
+        "status": "database_link",
+        "source_product": "Seltima 100 CS",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-metiltiofanat520gl",
+        "status": "database_link",
+        "source_product": "Dense 520 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-metiltiofanat70",
+        "status": "database_link",
+        "source_product": "Dense 70 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-karbendazimmankozeb",
+        "status": "database_link",
+        "source_product": "Sagri Manzim 65/20 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb85",
+        "status": "database_link",
+        "source_product": "Sagri Zeb 85 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-propineb70",
+        "status": "database_link",
+        "source_product": "Omni-Col 70 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "anthracnose-onion": [
+      {
+        "active_id": "ai-difenokonazol250gl",
+        "status": "database_link",
+        "source_product": "Score 250 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-azoksistrobin200gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mandipropamid40gl",
+        "status": "database_link",
+        "source_product": "Revus Opti 440 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorotalonil400gl",
+        "status": "database_link",
+        "source_product": "Revus Opti 440 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorotalonil400gl",
+        "status": "database_link",
+        "source_product": "Orondis Opti 6/400 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-oksatiapiprolin6gl",
+        "status": "database_link",
+        "source_product": "Orondis Opti 6/400 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pidiflumetofen75gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asibenzolarsmetil1",
+        "status": "database_link",
+        "source_product": "Bion M 1/48 MZ",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb48",
+        "status": "database_link",
+        "source_product": "Bion M 1/48 MZ",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb64",
+        "status": "database_link",
+        "source_product": "Ridomil Gold MZ 68 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mefenoksam4",
+        "status": "database_link",
+        "source_product": "Ridomil Gold MZ 68 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-piraklostrobin100gl",
+        "status": "database_link",
+        "source_product": "Seltima 100 CS",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-metiltiofanat520gl",
+        "status": "database_link",
+        "source_product": "Dense 520 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-metiltiofanat70",
+        "status": "database_link",
+        "source_product": "Dense 70 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-karbendazimmankozeb",
+        "status": "database_link",
+        "source_product": "Sagri Manzim 65/20 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb85",
+        "status": "database_link",
+        "source_product": "Sagri Zeb 85 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-propineb70",
+        "status": "database_link",
+        "source_product": "Omni-Col 70 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "chili-anthracnose-complex": [
+      {
+        "active_id": "ai-difenokonazol250gl",
+        "status": "database_link",
+        "source_product": "Score 250 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-azoksistrobin200gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mandipropamid40gl",
+        "status": "database_link",
+        "source_product": "Revus Opti 440 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorotalonil400gl",
+        "status": "database_link",
+        "source_product": "Revus Opti 440 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-klorotalonil400gl",
+        "status": "database_link",
+        "source_product": "Orondis Opti 6/400 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-oksatiapiprolin6gl",
+        "status": "database_link",
+        "source_product": "Orondis Opti 6/400 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pidiflumetofen75gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-asibenzolarsmetil1",
+        "status": "database_link",
+        "source_product": "Bion M 1/48 MZ",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb48",
+        "status": "database_link",
+        "source_product": "Bion M 1/48 MZ",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb64",
+        "status": "database_link",
+        "source_product": "Ridomil Gold MZ 68 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mefenoksam4",
+        "status": "database_link",
+        "source_product": "Ridomil Gold MZ 68 WG",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-piraklostrobin100gl",
+        "status": "database_link",
+        "source_product": "Seltima 100 CS",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-metiltiofanat520gl",
+        "status": "database_link",
+        "source_product": "Dense 520 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-metiltiofanat70",
+        "status": "database_link",
+        "source_product": "Dense 70 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-karbendazimmankozeb",
+        "status": "database_link",
+        "source_product": "Sagri Manzim 65/20 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-mankozeb85",
+        "status": "database_link",
+        "source_product": "Sagri Zeb 85 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-propineb70",
+        "status": "database_link",
+        "source_product": "Omni-Col 70 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "powdery-mildew": [
+      {
+        "active_id": "ai-difenokonazol250gl",
+        "status": "database_link",
+        "source_product": "Score 250 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-azoksistrobin200gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Amistar Top 325 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-trisiklazol400gl",
+        "status": "database_link",
+        "source_product": "Filia 525 SE",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-propikonazol125gl",
+        "status": "database_link",
+        "source_product": "Filia 525 SE",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pidiflumetofen75gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-difenokonazol125gl",
+        "status": "database_link",
+        "source_product": "Miravis Duo 75/125 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-fluksapiroksad250glpiraklostrobin250gl",
+        "status": "database_link",
+        "source_product": "Merivon 250/250 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-piraklostrobin100gl",
+        "status": "database_link",
+        "source_product": "Seltima 100 CS",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-pikoksistrobin200glfluksapiroksad80gl",
+        "status": "database_link",
+        "source_product": "Acapela System 200/80 SC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "cyperus": [
+      {
+        "active_id": "ai-sihalofopbutil300gl",
+        "status": "database_link",
+        "source_product": "Topmost 30/300 OD",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-etoksisulfuron30gl",
+        "status": "database_link",
+        "source_product": "Topmost 30/300 OD",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-ipaglifosat480gl",
+        "status": "database_link",
+        "source_product": "Touchdown Neo 480 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-florpyrauxifenbenzylrinskor",
+        "status": "database_link",
+        "source_product": "Loyant 25 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-florpyrauxifenbenzylrinskor",
+        "status": "database_link",
+        "source_product": "Novlect 120 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-florpyrauxifenbenzylrinskorbahanaktifpendamping",
+        "status": "database_link",
+        "source_product": "Novixid 32.5 OD",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-ipaglifosat555gl",
+        "status": "database_link",
+        "source_product": "Prima-Lima 555 SL",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
+    "helicoverpa-armigera": [
+      {
+        "active_id": "ai-indoksakarb150gl",
+        "status": "database_link",
+        "source_product": "Ammate 150 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-indoksakarb160glemamektinbenzoat20gl",
+        "status": "database_link",
+        "source_product": "Srikandi 160/20 OD",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-emamektinbenzoat7klorbenzuron30",
+        "status": "database_link",
+        "source_product": "Sagri Beat 7/30 WP",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      },
+      {
+        "active_id": "ai-emamektinbenzoat50gl",
+        "status": "database_link",
+        "source_product": "Prima-FAW 50 EC",
+        "source": "database_pestisida_indonesia",
+        "note": "Relasi berasal dari kecocokan sasaran pada database produk pengguna; bukan validasi label atau rekomendasi aplikasi."
+      }
+    ],
     "spodoptera-exigua": [
       {
         "active_id": "tetraniliprole",

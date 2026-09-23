@@ -1,0 +1,1229 @@
+{
+  "version": "2026.1",
+  "title": "Crop Growth Stage & OPT Timing Layer",
+  "language": "Bahasa Indonesia",
+  "purpose": "Kerangka pertumbuhan tanaman dan hubungan fase dengan OPT. Hubungan fase-OPT hanya diisi bila didukung sumber; bagian kerangka umum tidak dimaksudkan sebagai kalender HST universal.",
+  "records": [
+    {
+      "crop_id": "padi",
+      "crop_name": "Padi",
+      "source_status": "source_supported",
+      "sources": [
+        {
+          "name": "IRRI Rice Knowledge Bank — Crop stages",
+          "url": "https://www.knowledgebank.irri.org/images/docs/needs-and-opportunity-assessment.pdf",
+          "note": "IRRI membagi pertumbuhan menjadi vegetatif, reproduktif dan pemasakan dengan stage 0–9."
+        },
+        {
+          "name": "Crop phenology: Growth stages and protection",
+          "note": "Visual pengguna yang memetakan persemaian, pembentukan anakan, anakan maksimum, bunting-primordia, pengisian bulir dan panen serta beberapa OPT."
+        }
+      ],
+      "phases": [
+        {
+          "id": "v0",
+          "name": "Germinasi",
+          "group": "Vegetatif",
+          "irri_stage": 0,
+          "label": "0 = Germination"
+        },
+        {
+          "id": "v1",
+          "name": "Persemaian / bibit",
+          "group": "Vegetatif",
+          "irri_stage": 1,
+          "label": "1 = Seedling"
+        },
+        {
+          "id": "v2",
+          "name": "Pembentukan anakan",
+          "group": "Vegetatif",
+          "irri_stage": 2,
+          "label": "2 = Tillering"
+        },
+        {
+          "id": "v3",
+          "name": "Pemanjangan batang",
+          "group": "Vegetatif",
+          "irri_stage": 3,
+          "label": "3 = Stem elongation"
+        },
+        {
+          "id": "r4",
+          "name": "Inisiasi malai – bunting",
+          "group": "Reproduktif",
+          "irri_stage": 4,
+          "label": "4 = Panicle initiation to Boot"
+        },
+        {
+          "id": "r5",
+          "name": "Heading / keluar malai",
+          "group": "Reproduktif",
+          "irri_stage": 5,
+          "label": "5 = Heading"
+        },
+        {
+          "id": "r6",
+          "name": "Berbunga",
+          "group": "Reproduktif",
+          "irri_stage": 6,
+          "label": "6 = Flowering"
+        },
+        {
+          "id": "p7",
+          "name": "Masak susu",
+          "group": "Pemasakan",
+          "irri_stage": 7,
+          "label": "7 = Milk"
+        },
+        {
+          "id": "p8",
+          "name": "Masak adonan",
+          "group": "Pemasakan",
+          "irri_stage": 8,
+          "label": "8 = Dough"
+        },
+        {
+          "id": "p9",
+          "name": "Masak / matang",
+          "group": "Pemasakan",
+          "irri_stage": 9,
+          "label": "9 = Mature"
+        }
+      ],
+      "opt_stage_links": [
+        {
+          "opt_id": "scirpophaga-incertulas",
+          "type": "Hama",
+          "stages": [
+            "v0",
+            "v1",
+            "v2",
+            "v3",
+            "r4"
+          ],
+          "importance_note": "Sumber visual crop phenology menempatkan penggerek batang dari fase awal sampai bunting/primordia; sumber IRRI menyatakan stem borer dapat menyerang seluruh fase, dengan dampak hasil penting pada fase reproduktif."
+        },
+        {
+          "opt_id": "nilaparvata-lugens",
+          "type": "Hama",
+          "stages": [
+            "v1",
+            "v2",
+            "v3",
+            "r4",
+            "r5",
+            "r6",
+            "p7"
+          ],
+          "importance_note": "IRRI mencatat brown planthopper sebagai hama yang dapat berkembang pada berbagai fase; pemetaan ini dipakai sebagai fase pengamatan, bukan ambang kendali."
+        },
+        {
+          "opt_id": "sogatella-furcifera",
+          "type": "Hama",
+          "stages": [
+            "v1",
+            "v2",
+            "v3",
+            "r4",
+            "r5"
+          ],
+          "importance_note": "Fase pengamatan dari sumber padi; timing aplikasi tetap harus mengikuti label dan monitoring."
+        },
+        {
+          "opt_id": "cnaphalocrocis-medinalis",
+          "type": "Hama",
+          "stages": [
+            "v1",
+            "v2",
+            "v3",
+            "r4"
+          ],
+          "importance_note": "Sumber crop phenology menempatkan pelipat daun pada fase vegetatif sampai pertengahan."
+        },
+        {
+          "opt_id": "hydrellia-sp",
+          "type": "Hama",
+          "stages": [
+            "v1",
+            "v2"
+          ],
+          "importance_note": "Whorl maggot/lalat bibit berasosiasi dengan tanaman muda; sumber IRRI membahasnya sebagai rice whorl maggot."
+        },
+        {
+          "opt_id": "rice-blast",
+          "type": "Penyakit",
+          "stages": [
+            "v1",
+            "v2",
+            "v3",
+            "r4",
+            "r5"
+          ],
+          "importance_note": "Sumber crop phenology menampilkan blas pada fase vegetatif hingga sekitar bunting/primordia."
+        },
+        {
+          "opt_id": "rice-brown-spot",
+          "type": "Penyakit",
+          "stages": [
+            "v1",
+            "v2",
+            "v3",
+            "r4",
+            "r5",
+            "r6"
+          ],
+          "importance_note": "Sumber crop phenology dan sumber padi menempatkan bercak coklat pada rentang pertumbuhan vegetatif hingga reproduktif."
+        },
+        {
+          "opt_id": "rice-false-smut",
+          "type": "Penyakit",
+          "stages": [
+            "r4",
+            "r5",
+            "r6",
+            "p7"
+          ],
+          "importance_note": "Sumber crop phenology menempatkan gosong palsu pada fase reproduktif akhir menuju pengisian bulir."
+        },
+        {
+          "opt_id": "rhizoctonia-solani-brassica",
+          "type": "Penyakit",
+          "stages": [
+            "v2",
+            "v3",
+            "r4",
+            "r5"
+          ],
+          "importance_note": "Dipakai sebagai relasi sumber untuk Rhizoctonia pada padi; fase ini adalah layer pengamatan, bukan klaim epidemiologi universal."
+        },
+        {
+          "opt_id": "echinochloa",
+          "type": "Gulma",
+          "stages": [
+            "v0",
+            "v1",
+            "v2",
+            "v3"
+          ],
+          "importance_note": "Gulma padi sangat relevan pada fase awal karena kompetisi awal; sumber TABEL HAMA mencantumkan Echinochloa pada sistem padi."
+        }
+      ]
+    },
+    {
+      "crop_id": "cabai",
+      "crop_name": "Cabai",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "cabai-1",
+          "name": "Perkecambahan & bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "cabai-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "cabai-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "cabai-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "cabai-5",
+          "name": "Pembesaran & pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "tomat",
+      "crop_name": "Tomat",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "tomat-1",
+          "name": "Perkecambahan & bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "tomat-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "tomat-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "tomat-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "tomat-5",
+          "name": "Pembesaran & pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kubis",
+      "crop_name": "Kubis",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kubis-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kubis-2",
+          "name": "Vegetatif pembentukan daun",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kubis-3",
+          "name": "Pembentukan krop",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kubis-4",
+          "name": "Pembesaran krop",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kubis-5",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "mentimun",
+      "crop_name": "Mentimun",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "mentimun-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "mentimun-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "mentimun-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "mentimun-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "mentimun-5",
+          "name": "Pembesaran & panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "jagung",
+      "crop_name": "Jagung",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "jagung-1",
+          "name": "Perkecambahan & emergence",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-2",
+          "name": "Vegetatif awal",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-3",
+          "name": "Vegetatif cepat",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-4",
+          "name": "Tasseling/silking",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-5",
+          "name": "Pengisian biji",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-6",
+          "name": "Masak",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kedelai",
+      "crop_name": "Kedelai",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kedelai-1",
+          "name": "Perkecambahan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kedelai-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kedelai-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kedelai-4",
+          "name": "Pembentukan polong",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kedelai-5",
+          "name": "Pengisian biji",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kedelai-6",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "semangka",
+      "crop_name": "Semangka",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "semangka-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "semangka-2",
+          "name": "Vegetatif & merambat",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "semangka-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "semangka-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "semangka-5",
+          "name": "Pembesaran & pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "melon",
+      "crop_name": "Melon",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "melon-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "melon-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "melon-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "melon-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "melon-5",
+          "name": "Pembesaran & pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kentang",
+      "crop_name": "Kentang",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kentang-1",
+          "name": "Perkecambahan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kentang-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kentang-3",
+          "name": "Inisiasi umbi",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kentang-4",
+          "name": "Pembesaran umbi",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kentang-5",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "terung",
+      "crop_name": "Terung",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "terung-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "terung-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "terung-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "terung-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "terung-5",
+          "name": "Pembesaran & panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "pisang",
+      "crop_name": "Pisang",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "pisang-1",
+          "name": "Bibit/anakan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pisang-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pisang-3",
+          "name": "Inisiasi jantung",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pisang-4",
+          "name": "Pembungaan & tandan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pisang-5",
+          "name": "Pembesaran buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pisang-6",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "jeruk",
+      "crop_name": "Jeruk",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "jeruk-1",
+          "name": "Vegetatif flush",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jeruk-2",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jeruk-3",
+          "name": "Fruit set",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jeruk-4",
+          "name": "Pembesaran buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jeruk-5",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kopi",
+      "crop_name": "Kopi",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kopi-1",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kopi-2",
+          "name": "Induksi/pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kopi-3",
+          "name": "Fruit set",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kopi-4",
+          "name": "Pengisian buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kopi-5",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kakao",
+      "crop_name": "Kakao",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kakao-1",
+          "name": "Bibit/vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kakao-2",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kakao-3",
+          "name": "Fruit set",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kakao-4",
+          "name": "Pembesaran buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kakao-5",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "teh",
+      "crop_name": "Teh",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "teh-1",
+          "name": "Vegetatif flush",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "teh-2",
+          "name": "Pertumbuhan pucuk",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "teh-3",
+          "name": "Pemetikan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kelapa",
+      "crop_name": "Kelapa",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kelapa-1",
+          "name": "Bibit/juvenil",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kelapa-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kelapa-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kelapa-4",
+          "name": "Pembentukan buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kelapa-5",
+          "name": "Pembesaran & pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "singkong",
+      "crop_name": "Singkong",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "singkong-1",
+          "name": "Stek & establishment",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "singkong-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "singkong-3",
+          "name": "Pembentukan akar",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "singkong-4",
+          "name": "Pembesaran umbi",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "singkong-5",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kacang-tanah",
+      "crop_name": "Kacang tanah",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kacang-tanah-1",
+          "name": "Perkecambahan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-tanah-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-tanah-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-tanah-4",
+          "name": "Pegging/pembentukan polong",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-tanah-5",
+          "name": "Pengisian biji",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-tanah-6",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "sawi",
+      "crop_name": "Sawi",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "sawi-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawi-2",
+          "name": "Vegetatif daun",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawi-3",
+          "name": "Pembesaran tajuk",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawi-4",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "caisim",
+      "crop_name": "Caisim",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "caisim-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "caisim-2",
+          "name": "Vegetatif daun",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "caisim-3",
+          "name": "Pembesaran tajuk",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "caisim-4",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "anggur",
+      "crop_name": "Anggur",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "anggur-1",
+          "name": "Dormansi/flush",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "anggur-2",
+          "name": "Pertumbuhan tunas",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "anggur-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "anggur-4",
+          "name": "Fruit set",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "anggur-5",
+          "name": "Pembesaran buah",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "anggur-6",
+          "name": "Pematangan",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "jagung-manis",
+      "crop_name": "Jagung Manis",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "jagung-manis-1",
+          "name": "Perkecambahan & emergence",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-manis-2",
+          "name": "Vegetatif awal",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-manis-3",
+          "name": "Vegetatif cepat",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-manis-4",
+          "name": "Tasseling/silking",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-manis-5",
+          "name": "Pengisian biji",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "jagung-manis-6",
+          "name": "Panen susu",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kembang-kol",
+      "crop_name": "Kembang Kol",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kembang-kol-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kembang-kol-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kembang-kol-3",
+          "name": "Inisiasi curd",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kembang-kol-4",
+          "name": "Pembesaran curd",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kembang-kol-5",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "brokoli",
+      "crop_name": "Brokoli",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "brokoli-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "brokoli-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "brokoli-3",
+          "name": "Inisiasi head",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "brokoli-4",
+          "name": "Pembesaran head",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "brokoli-5",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kailan",
+      "crop_name": "Kailan",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kailan-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kailan-2",
+          "name": "Vegetatif daun",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kailan-3",
+          "name": "Pembentukan batang/pucuk",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kailan-4",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "bawang",
+      "crop_name": "Bawang merah",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "bawang-1",
+          "name": "Perkecambahan/awal pertumbuhan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "bawang-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "bawang-3",
+          "name": "Pembentukan umbi",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "bawang-4",
+          "name": "Pembesaran umbi",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "bawang-5",
+          "name": "Pematangan & panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "kacang",
+      "crop_name": "Kacang panjang",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "kacang-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-4",
+          "name": "Pembentukan polong",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "kacang-5",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "sawit",
+      "crop_name": "Kelapa sawit",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "sawit-1",
+          "name": "Pembibitan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawit-2",
+          "name": "Vegetatif",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawit-3",
+          "name": "Pembungaan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawit-4",
+          "name": "Pembentukan tandan",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "sawit-5",
+          "name": "Pengisian & pematangan buah",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "pakcoy",
+      "crop_name": "Pak Coy",
+      "source_status": "framework_only",
+      "sources": [],
+      "phases": [
+        {
+          "id": "pakcoy-1",
+          "name": "Bibit",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pakcoy-2",
+          "name": "Vegetatif daun",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pakcoy-3",
+          "name": "Pembentukan roset",
+          "group": "Kerangka umum"
+        },
+        {
+          "id": "pakcoy-4",
+          "name": "Panen",
+          "group": "Kerangka umum"
+        }
+      ],
+      "opt_stage_links": [],
+      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    }
+  ]
+}

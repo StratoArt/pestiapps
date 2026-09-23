@@ -1,7 +1,7 @@
 {
   "title": "Relasi OPT per tanaman — sumber TABEL HAMA (ID)",
   "source": "TABEL HAMA (ID).pdf",
-  "source_note": "Relasi OPT diturunkan dari tabel pada PDF pengguna. Nama produk lama dipertahankan sebagai provenance saja; data ini bukan bukti registrasi Indonesia saat ini.",
+  "source_note": "Relasi OPT diturunkan dari tabel pada PDF pengguna. Nama produk lama dipertahankan sebagai provenance saja; data ini bukan bukti registrasi Indonesia saat ini. Padi diperluas dengan sumber IRRI Rice Knowledge Bank untuk memperkaya daftar hama/penyakit; relasi sumber dibedakan dari master OPT.",
   "records": {
     "padi": [
       {
@@ -66,6 +66,459 @@
         "source_product": "Rumpas",
         "source_page": 27,
         "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit busuk batang",
+        "scientific": "Helminthosporium sigmoideum",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 25
+      },
+      {
+        "type": "Penyakit",
+        "common": "Blas",
+        "scientific": "Pyricularia oryzae",
+        "master_id": "rice-blast",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 25
+      },
+      {
+        "type": "Penyakit",
+        "common": "Hawar daun",
+        "scientific": "Xanthomonas oryzae",
+        "master_id": "rice-bacterial-blight",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 25
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit bercak coklat",
+        "scientific": "Helminthosporium oryzae",
+        "master_id": "rice-brown-spot",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 25
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit gosong palsu",
+        "scientific": "Ustilaginoidea virens",
+        "master_id": "rice-false-smut",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 25
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit bercak bulir gabah",
+        "scientific": "Dirty panicle",
+        "master_id": "rice-dirty-panicle",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 27
+      },
+      {
+        "type": "Hama",
+        "common": "Penggulung daun",
+        "scientific": "Cnaphalocrocis medinalis",
+        "master_id": "cnaphalocrocis-medinalis",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 28
+      },
+      {
+        "type": "Hama",
+        "common": "Hama belalang",
+        "scientific": "Oxya sp.",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 28
+      },
+      {
+        "type": "Hama",
+        "common": "Hama lalat bibit",
+        "scientific": "Hydrellia sp.",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 28
+      },
+      {
+        "type": "Hama",
+        "common": "Wereng coklat",
+        "scientific": "Nilaparvata lugens",
+        "master_id": "nilaparvata-lugens",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 28
+      },
+      {
+        "type": "Hama",
+        "common": "Wereng punggung putih",
+        "scientific": "Sogatella furcifera",
+        "master_id": "sogatella-furcifera",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 28
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Marsilea crenata",
+        "master_id": "marsilea-crenata",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Monochoria vaginalis",
+        "master_id": "monochoria-vaginalis",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Teki",
+        "scientific": "Cyperus spp.",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Teki",
+        "scientific": "Fimbristylis litoralis",
+        "master_id": "fimbristylis-litoralis",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Ludwigia perennis",
+        "master_id": "ludwigia-perennis",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Ludwigia hyssopifolia",
+        "master_id": "ludwigia",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Sphenochlea zeylanica",
+        "master_id": "sphenochlea",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun sempit",
+        "scientific": "Ischaemum rugosum",
+        "master_id": "ischaemum",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun sempit",
+        "scientific": "Echinochloa colona",
+        "master_id": "echinochloa-crus",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun sempit",
+        "scientific": "Leptochloa chinensis",
+        "master_id": "leptochloa",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun sempit",
+        "scientific": "Leersia hexandra",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Teki",
+        "scientific": "Cyperus difformis",
+        "master_id": "cyperus-difformis",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Teki",
+        "scientific": "Fimbristylis miliacea",
+        "master_id": "fimb",
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Alternanthera philoxeroides",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 29
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun sempit",
+        "scientific": "Paspalum distichum",
+        "master_id": null,
+        "source": "TABEL HAMA (ID).pdf",
+        "source_page": 30
+      },
+      {
+        "type": "Hama",
+        "common": "Black bug",
+        "scientific": "Scotinophara spp.",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Zigzag leafhopper",
+        "scientific": "Recilia dorsalis",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice skipper",
+        "scientific": "Pelopidas mathias",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice thrips",
+        "scientific": "Stenchaetothrips biformis",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice whorl maggot",
+        "scientific": "Hydrellia spp.",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Mealy bug",
+        "scientific": "Brevennia rehi",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Mole cricket",
+        "scientific": "Gryllotalpa spp.",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Ant",
+        "scientific": "Formicidae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Armyworm",
+        "scientific": "Mythimna separata",
+        "master_id": "mythimna-separata",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Green semilooper",
+        "scientific": "Naranga aenescens",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Greenhorned caterpillar",
+        "scientific": "Melanitis leda ismene",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice bug",
+        "scientific": "Leptocorisa oratorius",
+        "master_id": "leptocorisa-oratorius",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Field cricket",
+        "scientific": "Gryllidae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Cutworm",
+        "scientific": "Agrotis spp.",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Green leafhopper",
+        "scientific": "Nephotettix spp.",
+        "master_id": "nephotettix",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice caseworm",
+        "scientific": "Nymphula depunctalis",
+        "master_id": "nymphula-depunctalis",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Grasshopper / locust",
+        "scientific": "Orthoptera",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice gall midge",
+        "scientific": "Orseolia oryzae",
+        "master_id": "orseolia-oryzae",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Rice hispa",
+        "scientific": "Dicladispa armigera",
+        "master_id": "dicladispa-armigera",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Root grub",
+        "scientific": "Scarabaeidae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Hama",
+        "common": "Root aphid",
+        "scientific": "Rhopalosiphum rufiabdominale",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bacterial blight",
+        "scientific": "Xanthomonas oryzae pv. oryzae",
+        "master_id": "rice-bacterial-blight",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bacterial leaf streak",
+        "scientific": "Xanthomonas oryzae pv. oryzicola",
+        "master_id": "rice-bacterial-leaf-streak",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Blast (leaf and collar)",
+        "scientific": "Magnaporthe oryzae",
+        "master_id": "rice-blast",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Brown spot",
+        "scientific": "Bipolaris oryzae",
+        "master_id": "rice-brown-spot",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Rice grassy stunt",
+        "scientific": "Rice grassy stunt virus",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Rice ragged stunt",
+        "scientific": "Rice ragged stunt virus",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Tungro",
+        "scientific": "Rice tungro virus complex",
+        "master_id": "rice-tungro",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Leaf scald",
+        "scientific": "Microdochium oryzae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Red stripe",
+        "scientific": "Acidovorax avenae subsp. avenae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bakanae",
+        "scientific": "Fusarium fujikuroi",
+        "master_id": "rice-bakanae",
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Sheath rot",
+        "scientific": "Sarocladium oryzae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Stem rot",
+        "scientific": "Sclerotium oryzae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bacterial sheath brown rot",
+        "scientific": "Pseudomonas fuscovaginae",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Rice stripe virus disease",
+        "scientific": "Rice stripe virus",
+        "master_id": null,
+        "source": "IRRI Rice Knowledge Bank"
       }
     ],
     "cabai": [
@@ -609,5 +1062,12 @@
     "sawit": [],
     "singkong": [],
     "kacang-tanah": []
+  },
+  "source_expansion": {
+    "IRRI Rice Knowledge Bank": [
+      "https://www.knowledgebank.irri.org/step-by-step-production/growth/pests-and-diseases/insects",
+      "https://www.knowledgebank.irri.org/step-by-step-production/growth/pests-and-diseases/diseases"
+    ],
+    "IRRI rice weeds guide": "https://library.irri.org/cgi-bin/koha/opac-detail.pl?biblionumber=74166"
   }
 }
