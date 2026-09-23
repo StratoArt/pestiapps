@@ -1,11 +1,9 @@
 {
-  "version": "2026 snapshot",
-  "purpose": "OPT Explorer MoA reference data",
-  "sources": {
-    "IRAC": "https://irac-online.org/mode-of-action/",
-    "IRAC_classification": "https://irac-online.org/documents/moa-classification/",
-    "FRAC": "https://www.frac.info/publications",
-    "HRAC": "https://hracglobal.com/tools/2026-hrac-global-herbicide-moa-classification"
+  "version": "0.16.0",
+  "master_sources": {
+    "IRAC": "IRAC MoA Classification v11.5, February 2026",
+    "FRAC": "FRAC Code List 2026 (last update May 2026)",
+    "HRAC": "HRAC Global Herbicide MoA Classification 2026"
   },
   "records": {
     "IRAC": [
@@ -15,8 +13,9 @@
         "Acetylcholinesterase (AChE) inhibitors",
         "1A",
         "Carbamates",
-        "Alanycarb; Aldicarb; Bendiocarb; Benfuracarb; Carbaryl; Carbofuran; Carbosulfan; Methiocarb; Methomyl; Oxamyl; Pirimicarb",
-        "Nerve action"
+        "Alanycarb; Aldicarb; Bendiocarb; Benfuracarb; Butocarboxim; Butoxycarboxim; Carbaryl; Carbofuran; Carbosulfan; Ethiofencarb; Fenobucarb; Formetanate; Furathiocarb; Isoprocarb; Methiocarb; Methomyl; Metolcarb; Oxamyl; Pirimicarb; Propoxur; Thiodicarb; Thiofanox; Triazamate; Trimethacarb; XMC; Xylylcarb",
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -24,8 +23,9 @@
         "Acetylcholinesterase (AChE) inhibitors",
         "1B",
         "Organophosphates",
-        "Acephate; Chlorpyrifos; Dimethoate; Fosthiazate; Malathion; Profenofos; Pirimiphos-methyl",
-        "Nerve action"
+        "Acephate; Azamethiphos; Azinphos-ethyl; Azinphos-methyl; Cadusafos; Chlorethoxyfos; Chlorfenvinphos; Chlormephos; Chlorpyrifos; Chlorpyrifos-methyl; Coumaphos; Cyanophos; Demeton-S-methyl; Diazinon; Dichlorvos/DDVP; Dicrotophos; Dimethoate; Dimethylvinphos; Disulfoton; EPN; Ethion; Ethoprophos; Famphur; Fenamiphos; Fenitrothion; Fenthion; Fosthiazate; Heptenophos; Imicyafos; Isofenphos; Isopropyl O-(methoxyaminothiophosphoryl) salicylate; Isoxathion; Malathion; Mecarbam; Methamidophos; Methidathion; Mevinphos; Monocrotophos; Naled; Omethoate; Oxydemeton-methyl; Parathion; Parathion-methyl; Phenthoate; Phorate; Phosalone; Phosmet; Phosphamidon; Phoxim; Pirimiphos-methyl; Profenofos; Propetamphos; Prothiofos; Pyraclofos; Pyridaphenthion; Quinalphos; Sulfotep; Tebupirimfos; Temephos; Terbufos; Tetrachlorvinphos; Thiometon; Triazophos; Trichlorfon; Vamidothion",
+        "Nerve & Muscle",
+        "pestdb-022"
       ],
       [
         "IRAC",
@@ -34,7 +34,8 @@
         "2A",
         "Cyclodiene organochlorines",
         "Chlordane; Endosulfan",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -43,7 +44,8 @@
         "2B",
         "Phenylpyrazoles (Fiproles)",
         "Ethiprole; Fipronil",
-        "Nerve action"
+        "Nerve & Muscle",
+        "pestdb-041"
       ],
       [
         "IRAC",
@@ -51,8 +53,19 @@
         "Sodium channel modulators",
         "3A",
         "Pyrethroids; Pyrethrins",
-        "Bifenthrin; Cyfluthrin; Cypermethrin; Deltamethrin; Esfenvalerate; Etofenprox; Lambda-cyhalothrin; Permethrin; Tefluthrin",
-        "Nerve action"
+        "Acrinathrin; Allethrin; d-cis-trans Allethrin; d-trans Allethrin; Bifenthrin; Bioallethrin; Bioallethrin S-cyclopentenyl isomer; Bioresmethrin; Cycloprothrin; Cyfluthrin; beta-Cyfluthrin; Cyhalothrin; lambda-Cyhalothrin; gamma-Cyhalothrin; Cypermethrin; alpha-Cypermethrin; beta-Cypermethrin; theta-Cypermethrin; zeta-Cypermethrin; Cyphenothrin (1R)-trans-isomers; Deltamethrin; Empenthrin (EZ)-(1R)-isomers; Esfenvalerate; Etofenprox; Fenpropathrin; Fenvalerate; Flucythrinate; Flumethrin; tau-Fluvalinate; Halfenprox; Imiprothrin; Kadethrin; Permethrin; Phenothrin (1R)-trans-isomer; Prallethrin; Pyrethrins (pyrethrum); Resmethrin; Silafluofen; Tefluthrin; Tetramethrin; Tetramethrin (1R)-isomers; Tralomethrin; Transfluthrin",
+        "Nerve & Muscle",
+        "pestdb-003;pestdb-004;pestdb-069"
+      ],
+      [
+        "IRAC",
+        "3",
+        "Unknown",
+        "3B",
+        "",
+        "Methoxychlor; DDT",
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -61,7 +74,18 @@
         "4A",
         "Neonicotinoids",
         "Acetamiprid; Clothianidin; Dinotefuran; Imidacloprid; Nitenpyram; Thiacloprid; Thiamethoxam",
-        "Nerve action"
+        "Nerve & Muscle",
+        "pestdb-002;pestdb-007;pestdb-073"
+      ],
+      [
+        "IRAC",
+        "4",
+        "Unknown",
+        "4B",
+        "",
+        "Nicotine",
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -70,7 +94,8 @@
         "4C",
         "Sulfoximines",
         "Sulfoxaflor",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -79,7 +104,28 @@
         "4D",
         "Butenolides",
         "Flupyradifurone",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
+      ],
+      [
+        "IRAC",
+        "4",
+        "Unknown",
+        "4E",
+        "",
+        "Dicloromezotiaz; Fenmezoditiaz; Triflumezopyrim",
+        "Nerve & Muscle",
+        "pestdb-052"
+      ],
+      [
+        "IRAC",
+        "4",
+        "Unknown",
+        "4F",
+        "",
+        "Flupyrimin",
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -88,7 +134,8 @@
         "5",
         "Spinosyns",
         "Spinetoram; Spinosad",
-        "Nerve action"
+        "Nerve & Muscle",
+        "pestdb-051"
       ],
       [
         "IRAC",
@@ -97,7 +144,8 @@
         "6",
         "Avermectins; Milbemycins",
         "Abamectin; Emamectin benzoate; Lepimectin; Milbemectin",
-        "Nerve and muscle action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -106,7 +154,8 @@
         "7A",
         "Juvenile hormone analogues",
         "Hydroprene; Kinoprene; Methoprene",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -115,7 +164,8 @@
         "7B",
         "Fenoxycarb",
         "Fenoxycarb",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -124,7 +174,8 @@
         "7C",
         "Pyriproxyfen",
         "Pyriproxyfen",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -132,8 +183,59 @@
         "Miscellaneous non-specific (multi-site) inhibitors",
         "8A",
         "Alkyl halides",
-        "1,3-Dichloropropene; Methyl bromide",
-        "Multi-site"
+        "1,3-Dichloropropene; Methyl bromide; other alkyl halides",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "8",
+        "Unknown",
+        "8B",
+        "",
+        "Chloropicrin",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "8",
+        "Unknown",
+        "8C",
+        "",
+        "Cryolite; Sulfuryl fluoride",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "8",
+        "Unknown",
+        "8D",
+        "",
+        "Borax; Boric acid; Disodium octaborate; Sodium borate; Sodium metaborate",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "8",
+        "Unknown",
+        "8E",
+        "",
+        "Tartar emetic",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "8",
+        "Unknown",
+        "8F",
+        "",
+        "Dazomet; Metam; Methyl isocyanate",
+        "Unknown / Non-specific",
+        ""
       ],
       [
         "IRAC",
@@ -142,7 +244,8 @@
         "9B",
         "Pyridine azomethine derivatives",
         "Pymetrozine; Pyrifluquinazon",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -151,7 +254,8 @@
         "9D",
         "Pyropenes",
         "Afidopyropen",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -160,7 +264,8 @@
         "10A",
         "Mite growth inhibitors",
         "Clofentezine; Diflovidazin; Hexythiazox",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -169,7 +274,8 @@
         "10B",
         "Etoxazole",
         "Etoxazole",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -177,8 +283,19 @@
         "Microbial disruptors of insect midgut membranes",
         "11A",
         "Bacillus thuringiensis",
-        "B.t. israelensis; B.t. aizawai; B.t. kurstaki; B.t. tenebrionis",
-        "Midgut"
+        "Bacillus thuringiensis subsp. israelensis; Bacillus thuringiensis subsp. aizawai; Bacillus thuringiensis subsp. kurstaki; Bacillus thuringiensis subsp. tenebrionis; Cry1Ab; Cry1Ac; Cry1Fa; Cry1A.105; Cry2Ab; Vip3A; mCry3A; Cry3Ab; Cry3Bb; Cry34Ab1/Cry35Ab1",
+        "Midgut",
+        ""
+      ],
+      [
+        "IRAC",
+        "11",
+        "Unknown",
+        "11B",
+        "",
+        "Bacillus sphaericus",
+        "Midgut",
+        ""
       ],
       [
         "IRAC",
@@ -187,7 +304,8 @@
         "12A",
         "Diafenthiuron",
         "Diafenthiuron",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -196,7 +314,8 @@
         "12B",
         "Organotin miticides",
         "Azocyclotin; Cyhexatin; Fenbutatin oxide",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -205,7 +324,18 @@
         "12C",
         "Propargite",
         "Propargite",
-        "Energy metabolism"
+        "Respiration",
+        ""
+      ],
+      [
+        "IRAC",
+        "12",
+        "Unknown",
+        "12D",
+        "",
+        "Tetradifon",
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -213,8 +343,9 @@
         "Uncouplers of oxidative phosphorylation via disruption of proton gradient",
         "13",
         "Pyrroles; Dinitrophenols",
-        "Chlorfenapyr; DNOC; Sulfluramid",
-        "Energy metabolism"
+        "Sulfluramid; Chlorfenapyr; DNOC",
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -223,7 +354,8 @@
         "14",
         "Nereistoxin analogues",
         "Bensultap; Cartap hydrochloride; Thiocyclam; Thiosultap-sodium",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -231,8 +363,9 @@
         "Inhibitors of chitin biosynthesis affecting CHS1",
         "15",
         "Benzoylureas",
-        "Bistrifluron; Chlorfluazuron; Diflubenzuron; Flufenoxuron; Hexaflumuron; Lufenuron; Novaluron; Teflubenzuron; Triflumuron",
-        "Growth regulation"
+        "Bistrifluron; Chlorfluazuron; Diflubenzuron; Flucycloxuron; Flufenoxuron; Hexaflumuron; Lufenuron; Novaluron; Noviflumuron; Teflubenzuron; Triflumuron",
+        "Growth & Development",
+        "pestdb-023"
       ],
       [
         "IRAC",
@@ -241,7 +374,8 @@
         "16",
         "Buprofezin",
         "Buprofezin",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -250,7 +384,8 @@
         "17",
         "Cyromazine",
         "Cyromazine",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -259,7 +394,8 @@
         "18",
         "Diacylhydrazines",
         "Chromafenozide; Halofenozide; Methoxyfenozide; Tebufenozide",
-        "Growth regulation"
+        "Growth & Development",
+        ""
       ],
       [
         "IRAC",
@@ -268,7 +404,8 @@
         "19",
         "Amitraz",
         "Amitraz",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -277,7 +414,8 @@
         "20A",
         "Hydramethylnon",
         "Hydramethylnon",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -286,7 +424,8 @@
         "20B",
         "Acequinocyl",
         "Acequinocyl",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -295,7 +434,8 @@
         "20C",
         "Fluacrypyrim",
         "Fluacrypyrim",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -304,7 +444,8 @@
         "20D",
         "Bifenazate",
         "Bifenazate",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -312,8 +453,9 @@
         "Mitochondrial complex I electron transport inhibitors",
         "21A",
         "METI acaricides and insecticides",
-        "Fenazaquin; Fenpyroximate; Pyrimidifen; Pyridaben; Tebufenpyrad; Tolfenpyrad",
-        "Energy metabolism"
+        "Fenazaquin; Fenpyroximate; Pyridaben; Pyrimidifen; Tebufenpyrad; Tolfenpyrad",
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -321,8 +463,9 @@
         "Mitochondrial complex I electron transport inhibitors",
         "21B",
         "Rotenone",
-        "Rotenone",
-        "Energy metabolism"
+        "Rotenone (Derris)",
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -331,7 +474,8 @@
         "22A",
         "Oxadiazines",
         "Indoxacarb",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -340,7 +484,8 @@
         "22B",
         "Semicarbazones",
         "Metaflumizone",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -348,8 +493,9 @@
         "Inhibitors of acetyl-CoA carboxylase",
         "23",
         "Tetronic and Tetramic acid derivatives",
-        "Spirodiclofen; Spiromesifen; Spiropidion; Spirotetramat; Spidoxamat",
-        "Lipid synthesis; growth regulation"
+        "Spidoxamat; Spirodiclofen; Spiromesifen; Spiropidion; Spirotetramat",
+        "Growth & Development",
+        "pestdb-002;pestdb-005;pestdb-006;pestdb-020"
       ],
       [
         "IRAC",
@@ -358,7 +504,8 @@
         "24A",
         "Phosphides",
         "Aluminium phosphide; Calcium phosphide; Phosphine; Zinc phosphide",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -366,8 +513,9 @@
         "Mitochondrial complex IV electron transport inhibitors",
         "24B",
         "Cyanides",
-        "Calcium cyanide; Potassium cyanide; Sodium cyanide",
-        "Energy metabolism"
+        "Calcium cyanide; Potassium cyanide; Sodium cyanide; Cyanide",
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -376,7 +524,8 @@
         "25A",
         "Beta-ketonitrile derivatives",
         "Cyenopyrafen; Cyflumetofen",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -385,7 +534,8 @@
         "25B",
         "Carboxanilides",
         "Pyflubumide",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
@@ -394,7 +544,8 @@
         "28",
         "Diamides",
         "Chlorantraniliprole; Cyantraniliprole; Cyclaniliprole; Flubendiamide; Tetraniliprole",
-        "Nerve and muscle action"
+        "Nerve & Muscle",
+        "pestdb-001;pestdb-005;pestdb-017;pestdb-058"
       ],
       [
         "IRAC",
@@ -403,7 +554,8 @@
         "29",
         "Flonicamid",
         "Flonicamid",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -411,8 +563,9 @@
         "GABA-gated chloride channel allosteric modulators",
         "30",
         "Isoxazolines; Meta-diamides",
-        "Broflanilide; Fluxametamide; Isocycloseram",
-        "Nerve action"
+        "Isocycloseram; Broflanilide; Cyproflanilide; Fluxametamide",
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -421,7 +574,8 @@
         "31",
         "Granuloviruses; Nucleopolyhedroviruses",
         "Cydia pomonella GV; Thaumatotibia leucotreta GV; Anticarsia gemmatalis MNPV; Helicoverpa armigera NPV",
-        "Midgut"
+        "Midgut",
+        ""
       ],
       [
         "IRAC",
@@ -430,7 +584,8 @@
         "32",
         "GS-omega/kappa HXTX-Hv1a peptide",
         "GS-omega/kappa HXTX-Hv1a peptide",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -439,7 +594,8 @@
         "33",
         "Acynonapyr",
         "Acynonapyr",
-        "Nerve action"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -448,34 +604,38 @@
         "34",
         "Flometoquin",
         "Flometoquin",
-        "Energy metabolism"
+        "Respiration",
+        ""
       ],
       [
         "IRAC",
         "35",
         "RNA interference mediated target suppressors",
         "35",
-        "RNA",
+        "Ribonucleic acids (RNA)",
         "Ledprona; Vadescana",
-        "Protein / gene expression"
+        "Protein Suppressors",
+        ""
       ],
       [
         "IRAC",
         "36",
         "Chordotonal organ modulators – undefined target site",
         "36",
-        "Dimpyridaz",
-        "Dimpyridaz",
-        "Nerve action"
+        "Pyridazine pyrazolecarboxamides",
+        "Dimpropyridaz",
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
         "37",
-        "Vesicle transport (V-ATPase) inhibitor",
+        "Vesicular acetylcholine transporter (VAChT) inhibitor",
         "37",
         "Oxazosulfyl",
         "Oxazosulfyl",
-        "Cellular transport"
+        "Nerve & Muscle",
+        ""
       ],
       [
         "IRAC",
@@ -483,8 +643,69 @@
         "Unknown or uncertain mode of action",
         "UN",
         "Various",
-        "Azadirachtin; Bromopropylate; Benzoximate; Dicofol; Pyridalyl",
-        "Unknown / uncertain"
+        "Azadirachtin; Benzoximate; Benzpyrimoxan; Bromopropylate; Chinomethionat; Dicofol; Lime sulfur; Mancozeb; Pyridalyl; Sulfur",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "UNB",
+        "Unknown",
+        "UNB",
+        "",
+        "Burkholderia spp; Wolbachia pipientis (Zap)",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "UNE",
+        "Unknown",
+        "UNE",
+        "",
+        "Chenopodium ambrosioides near ambrosioides extract; Clitoria ternatea extract; Fatty acid monoesters with glycerol or propanediol; Neem oil; Nonanoic acid; Sabadilla extract",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "UNF",
+        "Unknown",
+        "UNF",
+        "",
+        "Akanthomyces muscarius Ve6; Beauveria bassiana strains; Metarhizium brunneum strain F52; Paecilomyces fumosoroseus Apopka strain 97",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "UNM",
+        "Unknown",
+        "UNM",
+        "",
+        "Diatomaceous earth; Mineral oil; Polydimethylsiloxane (PDMS)",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "UNP",
+        "Unknown",
+        "UNP",
+        "",
+        "",
+        "Unknown / Non-specific",
+        ""
+      ],
+      [
+        "IRAC",
+        "UNV",
+        "Unknown",
+        "UNV",
+        "",
+        "",
+        "Unknown / Non-specific",
+        ""
       ]
     ],
     "FRAC": [
@@ -496,7 +717,8 @@
         "acylalanines",
         "benalaxyl; benalaxyl-M; furalaxyl; metalaxyl; metalaxyl-M",
         "4",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -506,7 +728,8 @@
         "hydroxy-(2-amino-) pyrimidines",
         "bupirimate; dimethirimol; ethirimol",
         "8",
-        "Medium"
+        "Medium",
+        ""
       ],
       [
         "FRAC",
@@ -516,7 +739,8 @@
         "isoxazoles; isothiazolones; imino-tosyl pyrimidinone",
         "hymexazole; octhilinone; flumetylsulforim",
         "32",
-        "Unknown"
+        "Unknown",
+        ""
       ],
       [
         "FRAC",
@@ -526,7 +750,8 @@
         "carboxylic acids",
         "oxolinic acid",
         "31",
-        "Unknown"
+        "Unknown",
+        ""
       ],
       [
         "FRAC",
@@ -536,7 +761,8 @@
         "phenyl-propanol; dihydroisoquinoline; quinoline amide",
         "ipflufenoquin; quinofumelin; feneptamidoquin",
         "52",
-        "Medium to High"
+        "Medium to High",
+        ""
       ],
       [
         "FRAC",
@@ -546,7 +772,8 @@
         "oxadiazol benzamides",
         "flufenoxadiazam",
         "56",
-        "Medium"
+        "Medium",
+        ""
       ],
       [
         "FRAC",
@@ -556,7 +783,8 @@
         "benzimidazoles; thiophanates",
         "benomyl; carbendazim; fuberidazole; thiabendazole; thiophanate; thiophanate-methyl",
         "1",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -566,7 +794,8 @@
         "N-phenyl carbamates",
         "diethofencarb",
         "10",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -576,7 +805,8 @@
         "toluamides; ethylamino-thiazole-carboxamide",
         "zoxamide; ethaboxam",
         "22",
-        "Low to Medium"
+        "Low to Medium",
+        ""
       ],
       [
         "FRAC",
@@ -586,7 +816,8 @@
         "phenylureas",
         "pencycuron",
         "20",
-        "Unknown"
+        "Unknown",
+        ""
       ],
       [
         "FRAC",
@@ -596,7 +827,8 @@
         "pyridinylmethyl-benzamides",
         "fluopicolide; fluopimomide",
         "43",
-        "Medium"
+        "Medium",
+        ""
       ],
       [
         "FRAC",
@@ -606,7 +838,8 @@
         "aminocyanoacrylates",
         "phenamacril",
         "47",
-        "Medium to High"
+        "Medium to High",
+        ""
       ],
       [
         "FRAC",
@@ -616,7 +849,8 @@
         "pyridazine",
         "pyridachlometyl",
         "53",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -626,7 +860,8 @@
         "pyrimidinamines; pyrazole carboxamides; quinazoline",
         "diflumetorim; tolfenpyrad; fenpyroximate; fenazaquin",
         "39",
-        "Unknown"
+        "Unknown",
+        ""
       ],
       [
         "FRAC",
@@ -636,7 +871,8 @@
         "phenyl-benzamides; pyrazole-4-carboxamides; pyridine-carboxamides",
         "flutolanil; isofetamid; fluopyram; fluxapyroxad; boscalid; bixafen",
         "7",
-        "Medium to High"
+        "Medium to High",
+        ""
       ],
       [
         "FRAC",
@@ -646,7 +882,8 @@
         "methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides",
         "azoxystrobin; pyraclostrobin; kresoxim-methyl; trifloxystrobin; famoxadone",
         "11",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -656,7 +893,8 @@
         "cyano-imidazole; sulfamoyl-triazole; picolinamides",
         "cyazofamid; amisulbrom; fenpicoxamid",
         "21",
-        "Medium to High"
+        "Medium to High",
+        ""
       ],
       [
         "FRAC",
@@ -666,7 +904,8 @@
         "dinitrophenyl-crotonates; 2,6-dinitro-anilines",
         "binapacryl; meptyldinocap; dinocap; fluazinam",
         "29",
-        "Low"
+        "Low",
+        ""
       ],
       [
         "FRAC",
@@ -676,7 +915,8 @@
         "tri-phenyl tin compounds",
         "fentin acetate; fentin chloride; fentin hydroxide",
         "30",
-        "Low to Medium"
+        "Low to Medium",
+        ""
       ],
       [
         "FRAC",
@@ -686,7 +926,8 @@
         "thiophene-carboxamides",
         "silthiofam",
         "38",
-        "Low"
+        "Low",
+        ""
       ],
       [
         "FRAC",
@@ -696,7 +937,8 @@
         "triazolo-pyrimidylamine",
         "ametoctradin",
         "45",
-        "Medium to High"
+        "Medium to High",
+        ""
       ],
       [
         "FRAC",
@@ -706,7 +948,8 @@
         "anilino-pyrimidines",
         "cyprodinil; mepanipyrim; pyrimethanil",
         "9",
-        "Medium"
+        "Medium",
+        ""
       ],
       [
         "FRAC",
@@ -716,7 +959,8 @@
         "enopyranuronic acid antibiotic",
         "blasticidin-S",
         "23",
-        "Low to Medium"
+        "Low to Medium",
+        ""
       ],
       [
         "FRAC",
@@ -726,7 +970,8 @@
         "hexopyranosyl antibiotic",
         "kasugamycin",
         "24",
-        "Medium"
+        "Medium",
+        ""
       ],
       [
         "FRAC",
@@ -736,7 +981,8 @@
         "glucopyranosyl antibiotic",
         "streptomycin",
         "25",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -746,7 +992,8 @@
         "tetracycline antibiotic",
         "oxytetracycline",
         "41",
-        "High"
+        "High",
+        ""
       ],
       [
         "FRAC",
@@ -756,7 +1003,8 @@
         "benzoxaboroles",
         "tavaborole",
         "54",
-        "Low"
+        "Low",
+        ""
       ],
       [
         "FRAC",
@@ -766,7 +1014,8 @@
         "aryloxyquinoline; quinazolinone",
         "quinoxyfen; proquinazid",
         "13",
-        "Medium"
+        "Medium",
+        ""
       ],
       [
         "FRAC",
@@ -776,7 +1025,591 @@
         "phenylpyrroles",
         "fenpiclonil; fludioxonil",
         "12",
-        "Medium to High"
+        "Medium to High",
+        ""
+      ],
+      [
+        "FRAC",
+        "E3",
+        "MAP/Histidine-Kinase in osmotic signal transduction (os-1, Daf1)",
+        "dicarboximides",
+        "dicarboximides",
+        "chlozolinate; dimethachlone; iprodione; procymidone; vinclozolin",
+        "2",
+        "Medium to High",
+        ""
+      ],
+      [
+        "FRAC",
+        "F2",
+        "phospholipid biosynthesis, methyltransferase",
+        "phosphoro-thiolates",
+        "phosphoro-thiolates",
+        "edifenphos; iprobenfos (IBP); pyrazophos",
+        "6",
+        "Low to Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "F3",
+        "cell peroxidation (proposed)",
+        "aromatic hydrocarbons",
+        "aromatic hydrocarbons",
+        "biphenyl; chloroneb; dicloran; quintozene (PCNB); tecnazene (TCNB); tolclofos-methyl",
+        "14",
+        "Low to Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "F4",
+        "cell membrane permeability, fatty acids (proposed)",
+        "carbamates",
+        "carbamates",
+        "iodocarb; propamocarb; prothiocarb",
+        "28",
+        "Low to Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "F8",
+        "ergosterol binding",
+        "polyene amphoteric macrolide antifungal antibiotic",
+        "polyene amphoteric macrolide antifungal antibiotic",
+        "natamycin (pimaricin)",
+        "48",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "F9",
+        "lipid homeostasis and transfer/storage; oxysterol binding protein homologue inhibition",
+        "OSBPI-fungicides",
+        "OSBPI-fungicides",
+        "oxathiapiprolin; fluoxapiprolin",
+        "49",
+        "Medium to High",
+        ""
+      ],
+      [
+        "FRAC",
+        "F10",
+        "interaction with lipid fraction of cell membrane, multiple effects on membrane integrity",
+        "protein fragment polypeptide",
+        "protein fragment polypeptide",
+        "ASFBIOF01-02",
+        "51",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "G1",
+        "C14-demethylase in sterol biosynthesis (erg11/cyp51)",
+        "DMI-fungicides (SBI Class I)",
+        "DMI-fungicides (SBI Class I)",
+        "triforine; pyrifenox; pyrisoxazole; fenarimol; nuarimol; imazalil; oxpoconazole; pefurazoate; prochloraz; triflumizole; azaconazole; bitertanol; bromuconazole; cyproconazole; difenoconazole; diniconazole; epoxiconazole; etaconazole; fenbuconazole; fluquinconazole; flusilazole; flutriafol; hexaconazole; imibenconazole; ipconazole; mefentrifluconazole; metconazole; myclobutanil; penconazole; propiconazole; simeconazole; tebuconazole; tetraconazole; triadimefon; triadimenol; triticonazole; prothioconazole",
+        "3",
+        "Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "G2",
+        "Δ14-reductase and Δ8→Δ7-isomerase in sterol biosynthesis (erg24, erg2)",
+        "Amines (SBI Class II)",
+        "Amines (SBI Class II)",
+        "aldimorph; dodemorph; fenpropimorph; tridemorph; fenpropidin; piperalin; spiroxamine",
+        "5",
+        "Low to Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "G3",
+        "3-keto reductase, C4-demethylation (erg27)",
+        "KRI-fungicides (SBI Class III)",
+        "KRI-fungicides (SBI Class III)",
+        "fenhexamid; fenpyrazamine",
+        "17",
+        "Low to Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "G4",
+        "squalene epoxidase in sterol biosynthesis (erg1) (SBI Class IV)",
+        "thiocarbamates; allylamines",
+        "thiocarbamates; allylamines",
+        "pyributicarb; naftifine; terbinafine",
+        "18",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "H4",
+        "chitin synthase",
+        "polyoxins",
+        "polyoxins",
+        "polyoxin",
+        "19",
+        "Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "H5",
+        "cellulose synthase; CAA-fungicides",
+        "cinnamic acid amides; valinamide carbamates; mandelic acid amides",
+        "cinnamic acid amides; valinamide carbamates; mandelic acid amides",
+        "dimethomorph; flumorph; pyrimorph; benthiavalicarb; iprovalicarb; valifenalate; mandipropamid",
+        "40",
+        "Low to Medium",
+        "pestdb-027"
+      ],
+      [
+        "FRAC",
+        "H6",
+        "GWT-1 protein in GPI-anchor biosynthesis",
+        "GWT-1 inhibitors",
+        "GWT-1 inhibitors",
+        "aminopyrifen",
+        "55",
+        "Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "I1",
+        "reductase in melanin biosynthesis",
+        "MBI-R",
+        "MBI-R",
+        "fthalide; pyroquilon; tricyclazole",
+        "16.1",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "I2",
+        "dehydratase in melanin biosynthesis",
+        "MBI-D",
+        "MBI-D",
+        "carpropamid; diclocymet; fenoxanil",
+        "16.2",
+        "Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "I3",
+        "polyketide synthase in melanin biosynthesis",
+        "MBI-P",
+        "MBI-P",
+        "tolprocarb",
+        "16.3",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "J1",
+        "Erysiphe necator CYP51 (ERG11); RNAi",
+        "RNAi-fungicides",
+        "RNAi-fungicides",
+        "erysichrona",
+        "57",
+        "Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "P01",
+        "salicylate-related benzo-thiadiazole (BTH)",
+        "host defence inducer",
+        "host defence inducer",
+        "acibenzolar-S-methyl",
+        "P01",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P02",
+        "salicylate-related benzisothiazole",
+        "host defence inducer",
+        "host defence inducer",
+        "probenazole",
+        "P02",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P03",
+        "salicylate-related thiadiazole-carboxamide",
+        "host defence inducer",
+        "host defence inducer",
+        "tiadinil; isotianil",
+        "P03",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P04",
+        "polysaccharide elicitors",
+        "natural compound polysaccharides",
+        "natural compound polysaccharides",
+        "laminarin",
+        "P04",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P05",
+        "anthraquinone elicitors",
+        "plant extract",
+        "plant extract",
+        "extract from Reynoutria sachalinensis",
+        "P05",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P06",
+        "microbial elicitors",
+        "microbial",
+        "microbial",
+        "Bacillus mycoides isolate J; Saccharomyces cerevisiae strain LAS117",
+        "P06",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P07",
+        "phosphonates",
+        "phosphonates",
+        "phosphonates",
+        "fosetyl-Al; phosphorous acid and salts",
+        "P07",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "P08",
+        "salicylate-related isothiazole",
+        "isothiazolylmethyl ether",
+        "isothiazolylmethyl ether",
+        "dichlobentiazox",
+        "P08",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P09",
+        "peptide elicitors",
+        "flagellin peptide",
+        "flagellin peptide",
+        "Flg22-Bt",
+        "P09",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P10",
+        "defence priming agents",
+        "natural small molecule metabolite",
+        "natural small molecule metabolite",
+        "ascr#18",
+        "P10",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "P11",
+        "SAR elicitor – activation of PR protein genes and phytoalexins",
+        "plant extract",
+        "plant extract",
+        "beet extract (Beta vulgaris)",
+        "P11",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "U06",
+        "cell membrane disruption (proposed)",
+        "guanidines",
+        "guanidines",
+        "dodine",
+        "U06",
+        "Low to Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "U12",
+        "unknown",
+        "thiazolidine",
+        "thiazolidine",
+        "flutianil",
+        "U12",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "U13",
+        "unknown",
+        "pyrimidinone-hydrazones",
+        "pyrimidinone-hydrazones",
+        "ferimzone",
+        "U14",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "U14",
+        "complex III cytochrome bc1, unknown binding site (proposed)",
+        "4-quinolyl-acetate",
+        "4-quinolyl-acetate",
+        "tebufloquin",
+        "U16",
+        "Medium",
+        ""
+      ],
+      [
+        "FRAC",
+        "U16",
+        "unknown",
+        "tetrazolyloxime",
+        "tetrazolyloxime",
+        "picarbutrazox",
+        "U17",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "U17",
+        "unknown (inhibition of trehalase)",
+        "glucopyranosyl antibiotic",
+        "glucopyranosyl antibiotic",
+        "validamycin",
+        "U18",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "U18",
+        "unknown",
+        "nereistoxin analogues",
+        "nereistoxin analogues",
+        "cartap",
+        "U19",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "NC",
+        "not specified / diverse",
+        "mineral oils, organic oils, inorganic salts, biological-origin material",
+        "mineral oils, organic oils, inorganic salts, biological-origin material",
+        "diverse",
+        "NC",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "M01",
+        "multi-site contact activity",
+        "inorganic (electrophiles)",
+        "inorganic (electrophiles)",
+        "inorganic copper (different salts)",
+        "M01",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M02",
+        "multi-site contact activity",
+        "inorganic (electrophiles)",
+        "inorganic (electrophiles)",
+        "inorganic sulphur",
+        "M02",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M03",
+        "multi-site contact activity",
+        "dithiocarbamates and relatives (electrophiles)",
+        "dithiocarbamates and relatives (electrophiles)",
+        "amobam; ferbam; mancozeb; maneb; metiram; propineb; thiram; zinc thiazole; zineb; ziram",
+        "M03",
+        "Low",
+        "pestdb-009;pestdb-100"
+      ],
+      [
+        "FRAC",
+        "M04",
+        "multi-site contact activity",
+        "phthalimides (electrophiles)",
+        "phthalimides (electrophiles)",
+        "captan; captafol; folpet",
+        "M04",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M05",
+        "multi-site contact activity",
+        "chloronitriles (phthalonitriles)",
+        "chloronitriles (phthalonitriles)",
+        "chlorothalonil",
+        "M05",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M06",
+        "multi-site contact activity",
+        "sulfamides (electrophiles)",
+        "sulfamides (electrophiles)",
+        "dichlofluanid; tolylfluanid",
+        "M06",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M07",
+        "multi-site contact activity",
+        "bis-guanidines",
+        "bis-guanidines",
+        "guazatine; iminoctadine",
+        "M07",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M08",
+        "multi-site contact activity",
+        "triazines",
+        "triazines",
+        "anilazine",
+        "M08",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M09",
+        "multi-site contact activity",
+        "quinones (anthraquinones)",
+        "quinones (anthraquinones)",
+        "dithianon",
+        "M09",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M10",
+        "multi-site contact activity",
+        "quinoxalines (electrophiles)",
+        "quinoxalines (electrophiles)",
+        "chinomethionat / quinomethionate",
+        "M10",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M11",
+        "multi-site contact activity",
+        "maleimide (electrophiles)",
+        "maleimide (electrophiles)",
+        "fluoroimide",
+        "M11",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M12",
+        "multi-site contact activity",
+        "thiocarbamate (electrophiles)",
+        "thiocarbamate (electrophiles)",
+        "methasulfocarb",
+        "M12",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "M13",
+        "multi-site contact activity",
+        "inorganic (electrophiles)",
+        "inorganic (electrophiles)",
+        "zinc oxide",
+        "M13",
+        "Low",
+        ""
+      ],
+      [
+        "FRAC",
+        "BM01",
+        "biologicals with multiple modes of action",
+        "plant extract / polypeptide (lectin)",
+        "plant extract / polypeptide (lectin)",
+        "BLAD extract from lupine plantlets; extracts from Swinglea glutinosa; Melaleuca alternifolia tea tree oil; plant oils (eugenol, geraniol, thymol)",
+        "BM01",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "BM02",
+        "biologicals with multiple modes of action",
+        "microbial",
+        "microbial",
+        "Trichoderma spp.; Clonostachys rosea; Coniothyrium minitans; Hanseniaspora uvarum; Talaromyces flavus; Saccharomyces cerevisiae; Bacillus amyloliquefaciens; Bacillus subtilis; Bacillus velezensis; Erwinia PHC25279; Gluconobacter cerinus; Pseudomonas chlororaphis; Pseudomonas syringae; Rhizobium vitis; Streptomyces griseovirides; Streptomyces lydicus; Streptomyces griseofuscus; Willaertia magna strain C2c",
+        "BM02",
+        "Unknown",
+        ""
+      ],
+      [
+        "FRAC",
+        "BM03",
+        "biologicals with multiple modes of action",
+        "purified metabolites",
+        "purified metabolites",
+        "cinnamaldehyde; D-tagatose; choline pelargonate",
+        "BM03",
+        "Unknown",
+        ""
       ]
     ],
     "HRAC": [
@@ -786,7 +1619,8 @@
         "A",
         "Inhibition of Acetyl CoA Carboxylase (ACCase)",
         "Cyclohexanediones; Aryloxyphenoxypropionates",
-        "clethodim; sethoxydim; pinoxaden; haloxyfop-methyl; fenoxaprop-ethyl; cyhalofop-butyl"
+        "clethodim; Clethodim; Clodinafop-propargyl; Cycloxydim; cyhalofop-butyl; Cyhalofop-butyl; Diclofop-methyl; Fenoxaprop-ethyl; fenoxaprop-ethyl; Fluazifop-butyl; Haloxyfop-methyl; haloxyfop-methyl; Metamifop; Pinoxaden; pinoxaden; Profoxydim; Propaquizafop; Quizalofop-ethyl; Sethoxydim; sethoxydim; Tralkoxydim",
+        ""
       ],
       [
         "HRAC",
@@ -794,7 +1628,8 @@
         "B",
         "Inhibition of Acetolactate Synthase (ALS)",
         "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones",
-        "imazamox; imazapyr; imazethapyr; imazosulfuron; chlorsulfuron; nicosulfuron; metsulfuron-methyl; penoxsulam; pyroxsulam; flucarbazone-Na"
+        "Amidosulfuron; Azimsulfuron; Bensulfuron-methyl; Bispyribac-Na; Chlorimuron-ethyl; chlorsulfuron; Chlorsulfuron; Cinosulfuron; Cloransulam-methyl; Cyclosulfamuron; Diclosulam; Ethametsulfuron-methyl; Ethoxysulfuron; Flazasulfuron; Florasulam; Flucarbazone-Na; flucarbazone-Na; Flucetosulfuron; Flumetsulam; Flupyrsulfuron-methyl-Na; Foramsulfuron; Halosulfuron-methyl; Imazamox; imazamox; Imazapic; imazapyr; Imazapyr; Imazethapyr; imazethapyr; Imazosulfuron; imazosulfuron; Iodosulfuron-methyl-Na; Mesosulfuron-methyl; Metazosulfuron; metsulfuron-methyl; Metsulfuron-methyl; Nicosulfuron; nicosulfuron; Orthosulfamuron; Penoxsulam; penoxsulam; Propoxycarbazone-Na; Prosulfuron; Pyrazosulfuron-ethyl; Pyribenzoxim; Pyriftalid; Pyriminobac-methyl; Pyrimisulfan; Pyrithiobac-Na; pyroxsulam; Pyroxsulam; Rimsulfuron; Sulfometuron-methyl; Sulfosulfuron; Thiencarbazone-methyl; Thifensulfuron-methyl; Triafamone; Triasulfuron; Tribenuron-methyl; Trifloxysulfuron-Na; Triflusulfuron-methyl; Tritosulfuron",
+        "pestdb-010;pestdb-012"
       ],
       [
         "HRAC",
@@ -802,7 +1637,8 @@
         "K1",
         "Inhibition of Microtubule Assembly / α-Tubulin",
         "Dinitroanilines; Pyridines; Phosphoroamidates",
-        "pendimethalin; trifluralin; prodiamine; dithiopyr; butamifos"
+        "Benfluralin; Butamifos; butamifos; Chlorthal-dimethyl; dithiopyr; Dithiopyr; Ethalfluralin; Pendimethalin; pendimethalin; Prodiamine; prodiamine; Propyzamide/Pronamide; Trifluralin; trifluralin",
+        ""
       ],
       [
         "HRAC",
@@ -810,7 +1646,8 @@
         "O",
         "Auxin Mimics",
         "Pyridyloxycarboxylates; 6-Chloropicolinates; Phenoxycarboxylates; Benzoates",
-        "fluroxypyr; triclopyr; aminopyralid; 2,4-D; dicamba; clopyralid; picloram; quinclorac"
+        "2,4-D; 2,4-DB; Aminocyclopyrachlor; Aminopyralid; aminopyralid; Benazolin; Clopyralid; clopyralid; dicamba; Dicamba; Dichlorprop; Florpyrauxifen; Fluroxypyr; fluroxypyr; Halauxifen; MCPA; MCPB; Mecoprop; picloram; Picloram; quinclorac; Quinclorac; Quinmerac; triclopyr; Triclopyr",
+        ""
       ],
       [
         "HRAC",
@@ -818,7 +1655,8 @@
         "C1,2",
         "Inhibition of Photosynthesis at PS II – D1 Serine 264 binders",
         "Triazines; Ureas; Uracils; Phenylcarbamates; Amides; Triazinones",
-        "prometryne; simazine; atrazine; isoproturon; diuron; linuron; metribuzin; propanil"
+        "Ametryne; Amicarbazone; Atrazine; atrazine; Bromacil; Chloridazon/pyrazon; Chlortoluron; Cyanazine; Desmedipham; Dimethametryn; diuron; Diuron; Fluometuron; Hexazinone; isoproturon; Isoproturon; Lenacil; Linuron; linuron; Metamitron; Metobromuron; metribuzin; Metribuzin; Phenmedipham; Prometryne; prometryne; Propanil; propanil; Propazine; Simazine; simazine; Tebuthiuron; Terbacil; Terbuthylazine; Terbutryne",
+        "pestdb-082"
       ],
       [
         "HRAC",
@@ -826,7 +1664,8 @@
         "C3",
         "Inhibition of Photosynthesis at PS II – D1 Histidine 215 binders",
         "Nitriles",
-        "bromoxynil; ioxynil"
+        "Bentazon; bromoxynil; Bromoxynil; Ioxynil; ioxynil; Pyridate",
+        ""
       ],
       [
         "HRAC",
@@ -834,7 +1673,8 @@
         "G",
         "Inhibition of EPSPS",
         "Glycines",
-        "glyphosate"
+        "glyphosate; Glyphosate",
+        ""
       ],
       [
         "HRAC",
@@ -842,7 +1682,8 @@
         "H",
         "Inhibition of Glutamine Synthetase (GS)",
         "Phosphinic acids",
-        "glufosinate-ammonium"
+        "Glufosinate-ammonium; glufosinate-ammonium",
+        ""
       ],
       [
         "HRAC",
@@ -850,7 +1691,8 @@
         "F1",
         "Inhibition of Phytoene Desaturase (PDS)",
         "Diphenyl heterocycles; N-Phenyl heterocycles",
-        "norflurazon; fluridone; diflufenican; flurochloridone"
+        "Beflubutamid; Diflufenican; diflufenican; Fluridone; fluridone; flurochloridone; Flurochloridone; Flurtamone; Norflurazon; norflurazon; Picolinafen",
+        ""
       ],
       [
         "HRAC",
@@ -858,7 +1700,8 @@
         "F4",
         "Inhibition of Deoxy-D-Xylulose Phosphate Synthase (DXPS)",
         "Pyrimidinyl / related",
-        "cyclopyrimorate"
+        "Bixlozone; Clomazone; cyclopyrimorate",
+        ""
       ],
       [
         "HRAC",
@@ -866,7 +1709,8 @@
         "E",
         "Inhibition of Protoporphyrinogen Oxidase (PPO)",
         "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones",
-        "oxyfluorfen; acifluorfen; fomesafen; flumioxazin; carfentrazone-ethyl; sulfentrazone; saflufenacil; tiafenacil"
+        "acifluorfen; Acifluorfen; Bifenox; Carfentrazone-ethyl; carfentrazone-ethyl; Epyrifenacil; Flumiclorac-pentyl; Flumioxazin; flumioxazin; Fluthiacet-methyl; Fomesafen; fomesafen; Lactofen; Oxadiargyl; Oxadiazon; Oxyfluorfen; oxyfluorfen; Pentoxazone; Pyraclonil; Pyraflufen-ethyl; Saflufenacil; saflufenacil; Sulfentrazone; sulfentrazone; tiafenacil; Tiafenacil; Trifludimoxazin",
+        "pestdb-064"
       ],
       [
         "HRAC",
@@ -874,7 +1718,8 @@
         "K3",
         "Inhibition of Very Long-Chain Fatty Acid Synthesis (VLCFA)",
         "α-Chloroacetamides; Thiocarbamates; α-Oxyacetamides; α-Thioacetamides",
-        "acetochlor; alachlor; metolachlor; pretilachlor; butachlor; dimethenamid; thiobencarb; pyroxasulfone"
+        "acetochlor; Acetochlor; alachlor; Alachlor; Anilofos; Benfuresate; Bromobutide; Butachlor; butachlor; Cafenstrole; Cumyluron; Dimesulfazet; Dimethachlor; dimethenamid; Dimethenamid; EPTC; Esprocarb; Ethofumesate; Fenoxasulfone; Fentrazamide; Flufenacet; Ipfencarbazone; Mefenacet; Metazachlor; Methiozolin; Metolachlor; metolachlor; Molinate; Oxaziclomefone; Pethoxamid; pretilachlor; Pretilachlor; Propisochlor; Prosulfocarb; Pyroxasulfone; pyroxasulfone; thiobencarb; Thiobencarb/Benthiocarb; Triallate",
+        ""
       ],
       [
         "HRAC",
@@ -882,7 +1727,8 @@
         "I",
         "Inhibition of Dihydropteroate Synthase (DHPS)",
         "Carbamates",
-        "asulam"
+        "asulam; Asulam",
+        ""
       ],
       [
         "HRAC",
@@ -890,7 +1736,8 @@
         "P",
         "Auxin Transport Inhibitors",
         "Arylcarboxylates",
-        "diflufenzopyr"
+        "diflufenzopyr; Diflufenzopyr",
+        ""
       ],
       [
         "HRAC",
@@ -898,7 +1745,8 @@
         "D",
         "PS I Electron Diversion",
         "Pyridiniums",
-        "diquat; paraquat"
+        "Diquat; diquat; Paraquat; paraquat",
+        ""
       ],
       [
         "HRAC",
@@ -906,7 +1754,8 @@
         "K2",
         "Microtubule Interference – Unclear Site of Action",
         "Benzamides; Carbamates",
-        "propyzamide; pronamide; carbetamide; chlorpropham"
+        "Carbetamide; carbetamide; chlorpropham; Chlorpropham; pronamide; propyzamide; Propyzamide/Pronamide",
+        ""
       ],
       [
         "HRAC",
@@ -914,7 +1763,8 @@
         "F2",
         "Inhibition of Hydroxyphenyl Pyruvate Dioxygenase (HPPD)",
         "Triketones; Pyrazoles; Nitriles",
-        "topramezone; mesotrione; tembotrione; sulcotrione; isoxaflutole; benzofenap"
+        "Benzobicyclon; benzofenap; Benzofenap; Bicyclopyrone; Cyclopyrimorate; Fenquinotrione; isoxaflutole; Isoxaflutole; mesotrione; Mesotrione; Metproxybicyclone; Pyrasulfotole; Pyrazolynate; sulcotrione; Sulcotrione; Tefuryltrione; tembotrione; Tembotrione; Tolpyralate; Topramezone; topramezone",
+        "pestdb-010"
       ],
       [
         "HRAC",
@@ -922,7 +1772,8 @@
         "none",
         "Inhibition of Dihydroorotate Dehydrogenase (DHODH)",
         "Pyrimidine carboxamides / related",
-        "tetflupyrolimet"
+        "Amitrole; Bensulide; MSMA; Napropamide; Pelargonic acid; tetflupyrolimet",
+        ""
       ],
       [
         "HRAC",
@@ -930,7 +1781,8 @@
         "L",
         "Inhibition of Cellulose Synthesis",
         "Benzonitriles; Indaziflam / related",
-        "dichlobenil; indaziflam; isoxaben"
+        "Dichlobenil; dichlobenil; Flupoxam; Indaziflam; indaziflam; isoxaben; Isoxaben; Triaziflam",
+        "pestdb-011"
       ],
       [
         "HRAC",
@@ -938,7 +1790,8 @@
         "Q",
         "Inhibition of Fatty Acid Thioesterase (FAT)",
         "Benzyl ethers; Pyridines",
-        "cinmethylin; methiozolin"
+        "Cinmethylin; cinmethylin; methiozolin; Methiozolin",
+        ""
       ],
       [
         "HRAC",
@@ -946,7 +1799,8 @@
         "S",
         "Inhibition of Solanesyl Diphosphate Synthase (SDPS)",
         "Benzobicyclon / related",
-        "benzobicyclon; cyclopyrimorate"
+        "benzobicyclon; Cyclopyrimorate; cyclopyrimorate",
+        ""
       ],
       [
         "HRAC",
@@ -954,7 +1808,8 @@
         "T",
         "Inhibition of Homogentisate Solanesyltransferase (HST)",
         "Isoxazolidinones / related",
-        "bixlozone; clomazone"
+        "Aclonifen; bixlozone; clomazone",
+        ""
       ],
       [
         "HRAC",
@@ -962,9 +1817,14 @@
         "Z",
         "Unknown Mode of Action",
         "Unknown / inconclusive",
-        "aclonifen; MSMA"
+        "aclonifen; MSMA",
+        ""
       ]
     ]
   },
-  "note": "Initial structured import/snapshot. It is a working reference dataset; local registration and label directions remain authoritative."
+  "notes": [
+    "Official classification layer. Inclusion in IRAC/FRAC/HRAC does not imply Indonesian registration.",
+    "Product layer is linked separately from the user-provided Indonesian pesticide dataset.",
+    "Target-spectrum fields are source-derived where available; absence means not established in this master record."
+  ]
 }

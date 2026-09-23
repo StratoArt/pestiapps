@@ -3505,26 +3505,10 @@
       "latin": "Oryza sativa",
       "icon": "crop-rice.svg",
       "related_opt": [
-        "nilaparvata-lugens",
-        "sogatella-furcifera",
-        "nephotettix",
         "scirpophaga-incertulas",
-        "chilo-suppressalis",
-        "cnaphalocrocis-medinalis",
-        "mythimna-separata",
-        "orseolia-oryzae",
-        "pomacea-canaliculata",
-        "nymphula-depunctalis",
-        "dicladispa-armigera",
-        "rice-blast",
-        "rice-bacterial-blight",
-        "rice-sheath-blight",
-        "rice-tungro",
-        "rice-brown-spot",
-        "rice-bacterial-leaf-streak",
-        "rice-bakanae",
-        "rice-false-smut",
-        "rice-narrow-brown-leaf-spot"
+        "rhizoctonia-solani-brassica",
+        "rice-narrow-brown-leaf-spot",
+        "echinochloa"
       ]
     },
     {
@@ -3533,29 +3517,19 @@
       "latin": "Capsicum annuum",
       "icon": "crop-chili.svg",
       "related_opt": [
-        "spodoptera-litura",
+        "aphid",
         "helicoverpa-armigera",
-        "thrips-parvispinus",
-        "bemisia-tabaci",
-        "aphis-gossypii",
-        "tetranychus",
-        "polyphagotarsonemus-latus",
-        "bactrocera-dorsalis",
-        "aphis-craccivora",
-        "fusarium-wilt",
-        "phytophthora",
-        "chili-phytophthora-capsici",
+        "colletotrichum",
         "chili-cercospora",
-        "chili-bacterial-spot",
-        "chili-anthracnose-complex",
-        "mosaic"
+        "phytophthora-brassica"
       ]
     },
     {
       "id": "tomat",
       "name": "Tomat",
       "latin": "Solanum lycopersicum",
-      "icon": "crop-tomato.svg"
+      "icon": "crop-tomato.svg",
+      "related_opt": []
     },
     {
       "id": "bawang",
@@ -3564,45 +3538,25 @@
       "icon": "crop-onion.svg",
       "source_guidelines": {
         "source": "EPPO PP 2/4(2) Allium Crops",
-        "summary_id": "Pedoman GPP Allium mencakup bawang bombai, bawang merah, bawang daun, kucai dan bawang putih; menekankan rotasi, sanitasi, bahan tanam sehat dan pemantauan hama/penyakit.",
-        "source_note": "Sumber regional EPPO, bukan bukti registrasi Indonesia."
-      }
+        "summary_id": "Pedoman GPP Allium mencakup bawang bombai, bawang merah, bawang daun, kucai dan bawang putih; sumber tabel pengguna juga memuat gulma, penyakit dan hama bawang merah.",
+        "source_note": "Relasi OPT diperluas dari TABEL HAMA (ID).pdf dan EPPO PP 2/4(2); bukan bukti registrasi Indonesia."
+      },
+      "related_opt": [
+        "thrips-tabaci",
+        "aphid",
+        "spodoptera-exigua",
+        "alternaria-porri",
+        "onion-downy-mildew",
+        "fusarium",
+        "cyperus"
+      ]
     },
     {
       "id": "kubis",
       "name": "Kubis",
       "latin": "Brassica oleracea",
       "icon": "crop-cabbage.svg",
-      "related_opt": [
-        "brevicoryne-brassicae",
-        "phyllotreta-spp",
-        "delia-radicum",
-        "delia-floralis",
-        "psyliodes-chrysocephala",
-        "ceutorhynchus-pallidactylus",
-        "ceutorhynchus-pleurostigma",
-        "meligethes-spp",
-        "aleurodes-proletella",
-        "heterodera-cruciferae",
-        "leptosphaeria-maculans",
-        "mycosphaerella-brassicicola",
-        "peronospora-parasitica",
-        "albugo-candida",
-        "erysiphe-cruciferarum",
-        "alternaria-brassicae",
-        "alternaria-brassicicola",
-        "pyrenopeziza-brassicae",
-        "botrytis-cinerea-brassica",
-        "rhizoctonia-solani-brassica",
-        "plasmodiophora-brassicae",
-        "phytophthora-brassica",
-        "verticillium-dahliae",
-        "xanthomonas-campestris",
-        "erwinia-pseudomonas-brassica",
-        "pseudomonas-syringae-maculicola",
-        "cauliflower-mosaic-virus",
-        "turnip-mosaic-virus"
-      ],
+      "related_opt": [],
       "source_guidelines": {
         "source": "EPPO PP 2/7(1) Vegetable Brassicas",
         "summary_id": "Pedoman GPP Brassica mencakup kubis, kembang kol, brokoli, sawi dan Brassica lain; mencakup penyakit jamur/oomycete, bakteri, virus, kutu daun, lalat, kumbang, ulat, nematoda, siput dan gulma.",
@@ -3613,7 +3567,8 @@
       "id": "mentimun",
       "name": "Mentimun",
       "latin": "Cucumis sativus",
-      "icon": "crop-cucumber.svg"
+      "icon": "crop-cucumber.svg",
+      "related_opt": []
     },
     {
       "id": "jagung",
@@ -3621,21 +3576,7 @@
       "latin": "Zea mays",
       "icon": "crop-corn.svg",
       "related_opt": [
-        "oscinella-frit",
-        "geomyza-tripunctata",
-        "tanymecus-dilaticollis",
-        "ostrinia-nubilalis",
-        "sesamia-nonagrioides",
-        "tetranychus-urticae",
-        "tetranychus-cinnabarinus",
-        "tetranychus-turkestani",
-        "setosphaeria-turcica",
-        "sphacelotheca-reiliana",
-        "ustilago-maydis",
-        "pythium-maize",
-        "fusarium-maize",
-        "colletotrichum-graminicola",
-        "sclerophthora-macrospora"
+        "agrotis-ipsilon"
       ],
       "source_guidelines": {
         "source": "EPPO PP 2/17(1) Maize",
@@ -3647,91 +3588,213 @@
       "id": "kedelai",
       "name": "Kedelai",
       "latin": "Glycine max",
-      "icon": "crop-soy.svg"
+      "icon": "crop-soy.svg",
+      "related_opt": [
+        "delia-florigela",
+        "echinochloa-crus"
+      ]
     },
     {
       "id": "semangka",
       "name": "Semangka",
       "latin": "Citrullus lanatus",
-      "icon": "crop-watermelon.svg"
+      "icon": "crop-watermelon.svg",
+      "related_opt": []
     },
     {
       "id": "melon",
       "name": "Melon",
       "latin": "Cucumis melo",
-      "icon": "crop-melon.svg"
+      "icon": "crop-melon.svg",
+      "related_opt": []
     },
     {
       "id": "kentang",
       "name": "Kentang",
       "latin": "Solanum tuberosum",
-      "icon": "crop-potato.svg"
+      "icon": "crop-potato.svg",
+      "related_opt": []
     },
     {
       "id": "kacang",
       "name": "Kacang panjang",
       "latin": "Vigna unguiculata subsp. sesquipedalis",
-      "icon": "crop-beans.svg"
+      "icon": "crop-beans.svg",
+      "related_opt": [
+        "aphid",
+        "colletotrichum"
+      ]
     },
     {
       "id": "terung",
       "name": "Terung",
       "latin": "Solanum melongena",
-      "icon": "crop-eggplant.svg"
+      "icon": "crop-eggplant.svg",
+      "related_opt": []
     },
     {
       "id": "pisang",
       "name": "Pisang",
       "latin": "Musa spp.",
-      "icon": "crop-banana.svg"
+      "icon": "crop-banana.svg",
+      "related_opt": []
     },
     {
       "id": "jeruk",
       "name": "Jeruk",
       "latin": "Citrus spp.",
-      "icon": "crop-citrus.svg"
+      "icon": "crop-citrus.svg",
+      "related_opt": [
+        "aphid"
+      ]
     },
     {
       "id": "kopi",
       "name": "Kopi",
       "latin": "Coffea spp.",
-      "icon": "crop-coffee.svg"
+      "icon": "crop-coffee.svg",
+      "related_opt": []
     },
     {
       "id": "kakao",
       "name": "Kakao",
       "latin": "Theobroma cacao",
-      "icon": "crop-cacao.svg"
+      "icon": "crop-cacao.svg",
+      "related_opt": []
     },
     {
       "id": "teh",
       "name": "Teh",
       "latin": "Camellia sinensis",
-      "icon": "crop-tea.svg"
+      "icon": "crop-tea.svg",
+      "related_opt": []
     },
     {
       "id": "kelapa",
       "name": "Kelapa",
       "latin": "Cocos nucifera",
-      "icon": "crop-coconut.svg"
+      "icon": "crop-coconut.svg",
+      "related_opt": []
     },
     {
       "id": "sawit",
       "name": "Kelapa sawit",
       "latin": "Elaeis guineensis",
-      "icon": "crop-palm.svg"
+      "icon": "crop-palm.svg",
+      "related_opt": []
     },
     {
       "id": "singkong",
       "name": "Singkong",
       "latin": "Manihot esculenta",
-      "icon": "crop-cassava.svg"
+      "icon": "crop-cassava.svg",
+      "related_opt": []
     },
     {
       "id": "kacang-tanah",
       "name": "Kacang tanah",
       "latin": "Arachis hypogaea",
-      "icon": "crop-peanut.svg"
+      "icon": "crop-peanut.svg",
+      "related_opt": []
+    },
+    {
+      "id": "sawi",
+      "name": "Sawi",
+      "latin": "Brassica juncea",
+      "icon": "crop-mustard.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO PP 2/7(1) Vegetable Brassicas",
+        "summary_id": "Kelompok Brassica daun; data OPT spesifik tanaman ini akan ditampilkan jika relasinya tersedia di sumber/master.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
+    },
+    {
+      "id": "caisim",
+      "name": "Caisim",
+      "latin": "Brassica rapa var. parachinensis",
+      "icon": "crop-caisim.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO Vegetable Brassicas / minor-use extrapolation",
+        "summary_id": "Brassica daun; EPPO mencantumkan Brassica parachinensis sebagai leafy brassica.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
+    },
+    {
+      "id": "pakcoy",
+      "name": "Pak Coy",
+      "latin": "Brassica rapa subsp. chinensis",
+      "icon": "crop-pakcoy.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO Vegetable Brassicas / minor-use extrapolation",
+        "summary_id": "Brassica daun; EPPO mencantumkan B. chinensis sebagai leafy brassica.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
+    },
+    {
+      "id": "anggur",
+      "name": "Anggur",
+      "latin": "Vitis vinifera",
+      "icon": "crop-grape.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO PP 2/23(1) Grapevine",
+        "summary_id": "Komoditas anggur ditambahkan sebagai profil tanaman; relasi OPT ditampilkan jika tersedia di master/sumber yang dipetakan.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
+    },
+    {
+      "id": "jagung-manis",
+      "name": "Jagung Manis",
+      "latin": "Zea mays",
+      "icon": "crop-sweet-corn.svg",
+      "related_opt": [
+        "spodoptera-frugiperda",
+        "mythimna-separata"
+      ],
+      "source_guidelines": {
+        "source": "EPPO PP 2/17(1) Maize",
+        "summary_id": "Jagung manis menggunakan profil botani Zea mays; relasi OPT yang benar-benar terpetakan pada master dapat ditampilkan bersama profil jagung.",
+        "source_note": "Tidak menganggap semua data jagung otomatis sebagai klaim spesifik kultivar manis."
+      }
+    },
+    {
+      "id": "kembang-kol",
+      "name": "Kembang Kol",
+      "latin": "Brassica oleracea var. botrytis",
+      "icon": "crop-cauliflower.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO PP 2/7(1) Vegetable Brassicas",
+        "summary_id": "Flowerhead brassica; EPPO secara eksplisit mencantumkan cauliflower/kembang kol.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
+    },
+    {
+      "id": "brokoli",
+      "name": "Brokoli",
+      "latin": "Brassica oleracea var. italica",
+      "icon": "crop-broccoli.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO PP 2/7(1) Vegetable Brassicas",
+        "summary_id": "Flowerhead brassica; EPPO secara eksplisit mencantumkan broccoli.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
+    },
+    {
+      "id": "kailan",
+      "name": "Kailan",
+      "latin": "Brassica alboglabra",
+      "icon": "crop-kailan.svg",
+      "related_opt": [],
+      "source_guidelines": {
+        "source": "EPPO vegetable brassicas / minor-use extrapolation",
+        "summary_id": "Chinese kale/kailan tercantum sebagai Brassica alboglabra pada sumber EPPO minor-use.",
+        "source_note": "Sumber regional EPPO; bukan bukti registrasi Indonesia."
+      }
     }
   ]
 }

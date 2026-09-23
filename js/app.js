@@ -1,4 +1,4 @@
-const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null};
+const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
@@ -11,7 +11,7 @@ const moaLabel=x=>ID_MOA[x]||x;
 
 
 async function load(){
-  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide]=await Promise.all([
+  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
     fetch('data/emerging_actives.json').then(r=>r.json()),
     fetch('data/opt.json').then(r=>r.json()),
@@ -20,16 +20,18 @@ async function load(){
     fetch('data/eppo_links.json').then(r=>r.json()),
     fetch('data/formulations.json').then(r=>r.json()),
     fetch('data/pesticide_knowledge.json').then(r=>r.json()),
+    fetch('data/pesticide_database_id.json').then(r=>r.json()),
     fetch('data/sources.json').then(r=>r.json()),
     fetch('data/agrobiology_knowledge.json').then(r=>r.json()),
     fetch('data/fusarium_watermelon.json').then(r=>r.json()),
     fetch('data/hama_source_table.json').then(r=>r.json()),
     fetch('data/crop_guidelines.json').then(r=>r.json()),
     fetch('data/irac_target_site_map.json').then(r=>r.json()),
-    fetch('data/scan_analysis_guide.json').then(r=>r.json())
+    fetch('data/scan_analysis_guide.json').then(r=>r.json()),
+    fetch('data/crop_opt_sources_2026.json').then(r=>r.json())
   ]);
-  state.data=moa; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines;
-  updateHomeStats(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderKnowledge(); renderSources(); renderLibrary(); render();
+  state.data=moa; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
+  updateHomeStats(); renderPesticides(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderKnowledge(); renderSources(); renderLibrary(); render();
 }
 function rows(){return state.data?.records?.[state.committee]||[]}
 function normalize(r){
@@ -108,7 +110,7 @@ function openEmergingDetail(x){
     <div class="source-box"><strong>Catatan database</strong><p>${esc(x.notes)}</p><p><a href="${esc(x.url)}" target="_blank" rel="noopener">Buka sumber</a></p></div>
     <p class="source-note">Ini adalah lapisan emerging/pipeline dan bukan pengganti klasifikasi resmi IRAC/FRAC/HRAC atau bukti registrasi Indonesia. Status lokal harus diverifikasi pada registri dan label terbaru.</p>
   </aside>`;
-  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
+  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.pesticide-link-card').forEach(b=>b.addEventListener('click',()=>openPesticideDetail(pesticideRecords().find(v=>v.id===b.dataset.pesticideId))));
 }
 function renderList(){
   const list=filtered();
@@ -119,6 +121,19 @@ function renderList(){
   </button>`).join('')||'<div class="empty">Tidak ada data yang cocok.</div>';
   $$('.moa-card').forEach(b=>b.addEventListener('click',()=>openDetail(list[+b.dataset.i])));
 }
+function normalizeAIName(s){
+  let x=String(s||'').toLowerCase().trim();
+  x=x.replace(/\b\d+(?:[.,]\d+)?\s*(?:g\/l|g\/kg|%)\b/gi,'').replace(/\s+/g,' ').trim();
+  const a={'tetraniliprol':'tetraniliprole','spirotetramat':'spirotetramat','propineb':'propineb','beta siflutrin':'beta-cyfluthrin','deltametrin':'deltamethrin','imidakloprid':'imidacloprid','klorantraniliprol':'chlorantraniliprole'};
+  return a[x]||x;
+}
+function productsForAI(ai){
+  const q=normalizeAIName(ai); return (state.pesticides?.records||[]).filter(p=>String(p['Bahan Aktif']||'').split(';').some(v=>normalizeAIName(v)===q));
+}
+function productBlockForAI(ai){
+  const ps=productsForAI(ai); if(!ps.length)return '';
+  return `<h3>Contoh produk dalam database Indonesia</h3><div class="ai-control-list">${ps.slice(0,16).map(p=>`<button class="ai-control-card pesticide-link-card" data-pesticide-id="${esc(p.id)}"><div class="ai-control-head"><strong>${esc(p['Nama Merk'])}</strong><span>${esc(p['Kategori']||'')}</span></div><div class="ai-control-meta">${esc(p['Bahan Aktif']||'')} · ${esc(p['Formulasi']||'')}</div><p>Sasaran dataset: ${esc(p['Sasaran Hama/Penyakit/Gulma']||'—')}</p></button>`).join('')}</div>`;
+}
 function openDetail(x){
   state.detailRef={kind:'moa',id:x.id||x.code};
   if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
@@ -127,9 +142,10 @@ function openDetail(x){
     <h2>${esc(state.moaView==='ai' ? x.active : moaLabel(x.name))}</h2>${x.sub?`<p class="muted">${esc(x.sub)}</p>`:''}
     <div class="detail-grid"><div><label>Kelompok MoA</label><strong>${esc(x.code)}</strong></div><div><label>Mode / target</label><strong>${esc(moaLabel(x.name))}</strong></div><div><label>Kelas kimia</label><strong>${esc(x.chem||'—')}</strong></div>${x.cat?`<div><label>Kategori</label><strong>${esc(x.cat)}</strong></div>`:''}${x.risk?`<div><label>Resistance risk</label><strong>${esc(x.risk)}</strong></div>`:''}</div>
     <h3>Bahan aktif</h3><div class="ai-list">${(state.moaView==='ai'?[x.active]:x.ai).map(a=>`<span>${esc(a)}</span>`).join('')}</div>
-    <p class="source-note">Referensi klasifikasi ${esc(state.committee)}. Data klasifikasi mengikuti snapshot yang dimuat di aplikasi; selalu cek sumber resmi terbaru, label dan registrasi lokal sebelum aplikasi.</p>
+    ${(state.moaView==='ai'&&x.active)?productBlockForAI(x.active):''}
+    <p class="source-note">Master ${esc(state.committee)} mengikuti snapshot resmi 2026 yang dimuat di aplikasi. Contoh produk berasal dari database produk Indonesia pengguna dan bukan bukti registrasi/label. Selalu cek sumber resmi terbaru dan registrasi lokal.</p>
   </aside>`;
-  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
+  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.pesticide-link-card').forEach(b=>b.addEventListener('click',()=>openPesticideDetail(pesticideRecords().find(v=>v.id===b.dataset.pesticideId))));
 }
 function closeDetail(opts={}){
   const hadDetail=!!$('#detail').innerHTML.trim();
@@ -170,7 +186,8 @@ function handlePopState(e){
       else if(state.detailRef.kind==='moa'){ const x=filtered().find(x=>x.id===state.detailRef.id||x.code===state.detailRef.id); if(x) openDetail(x); }
       else if(state.detailRef.kind==='opt'){ const pool=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds]; const x=pool.find(x=>x.id===state.detailRef.id); if(x) openOptDetail(x,state.detailRef.type); }
       else if(state.detailRef.kind==='crop'){ const x=state.opt.crops.find(x=>x.id===state.detailRef.id); if(x) openCropDetail(x); }
-      else if(state.detailRef.kind==='library'){ const x=libraryItemById(state.detailRef.id); if(x) openLibraryDetail(x); }
+      else if(state.detailRef.kind==='crop-opt'){ openCropOptRef(`${state.detailRef.type}|${state.detailRef.id||''}|${state.detailRef.scientific||''}|${state.detailRef.common||''}`); }
+      else if(state.detailRef.kind==='library'){ const x=libraryItemById(state.detailRef.id); if(x) openLibraryDetail(x); } else if(state.detailRef.kind==='pesticide'){ const x=state.pesticides?.records?.find(x=>x.id===state.detailRef.id); if(x) openPesticideDetail(x); }
     }
   }else{
     history.pushState(navState(),'',location.href);
@@ -265,6 +282,7 @@ function openFormulationDetail(x){
   if(state.historyReady&&!state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet formulation-detail"><button class="close" id="closeDetail">×</button><div class="detail-code">FORMULATION · ${esc(x.code)}</div>${formulationVisual(x)}<h2>${esc(x.name)}</h2><p class="muted">${esc(x.category)} · ${esc(x.system)}</p><div class="detail-grid"><div><label>Kode</label><strong>${esc(x.code)}</strong></div><div><label>Perilaku</label><strong>${esc(x.system)}</strong></div><div><label>Halaman sumber</label><strong>${esc(x.pages)}</strong></div>${x.droplet?`<div><label>Ukuran droplet</label><strong>${esc(x.droplet)}</strong></div>`:''}</div><h3>Keunggulan yang disebut sumber</h3><div class="source-box"><ul>${x.advantages.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div><h3>Keterbatasan yang disebut sumber</h3><div class="source-box warn"><ul>${x.disadvantages.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div><h3>Apa yang terjadi saat pencampuran?</h3><p class="detail-copy">${esc(x.mixing)}</p><div class="source-note">Sumber: Agrobiology of Agrochemical Formulations I - Essentials · Formulation Types, halaman ${esc(x.pages)}. Karakteristik di atas adalah ekstraksi materi sumber.</div></aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail);
+  $$('.pesticide-link-card').forEach(b=>b.addEventListener('click',()=>openPesticideDetail(state.pesticides.records.find(v=>v.id===b.dataset.pesticideId))));
 }
 function libraryItems(){
   const items=[];
@@ -340,6 +358,90 @@ function controlBlock(x){
 }
 
 
+
+function pesticideRecords(){
+  return state.pesticides?.records||[];
+}
+function pesticideMatches(){
+  const q=state.pesticideSearch.toLowerCase();
+  return pesticideRecords().filter(p=>{
+    const hay=[p['Nama Merk'],p['Perusahaan'],p['Bahan Aktif'],p['Formulasi'],p['IRAC Group'],p['FRAC Group'],p['HRAC Group'],p['Sasaran Hama/Penyakit/Gulma']].join(' ').toLowerCase();
+    return (state.pesticideFilter==='ALL'||p['Kategori']===state.pesticideFilter)&&(!q||hay.includes(q));
+  });
+}
+function renderPesticides(){
+  if(!state.pesticides||!$('#pesticideList'))return;
+  const list=pesticideMatches();
+  $('#pesticideCount').textContent=pesticideRecords().length;
+  $('#pesticideResultCount').textContent=list.length;
+  $('#pesticideList').innerHTML=list.map(p=>{
+    const groups=[p['IRAC Group'],p['FRAC Group'],p['HRAC Group']].filter(x=>x&&x!=='-'&&!String(x).toLowerCase().includes('tidak tersedia'));
+    return `<button class="pesticide-card" data-pesticide-id="${esc(p.id)}">
+      <div class="pesticide-card-top"><span class="pesticide-category">${esc(p['Kategori'])}</span>${groups.length?`<span class="pesticide-groups">${groups.map(g=>esc(g)).join(' · ')}</span>`:''}</div>
+      <h3>${esc(p['Nama Merk'])}</h3>
+      <p class="pesticide-ai">${esc(p['Bahan Aktif'])}</p>
+      <div class="pesticide-meta"><span>${esc(p['Perusahaan']||'—')}</span><span>${esc(p['Formulasi']||'—')}</span></div>
+      <p class="pesticide-target"><b>Sasaran:</b> ${esc(p['Sasaran Hama/Penyakit/Gulma']||'—')}</p>
+    </button>`;
+  }).join('')||'<div class="empty">Tidak ada produk yang cocok.</div>';
+  $$('.pesticide-card').forEach(b=>b.addEventListener('click',()=>openPesticideDetail(pesticideRecords().find(x=>x.id===b.dataset.pesticideId))));
+  $$('.pesticide-tabs button').forEach(b=>b.classList.toggle('active',b.dataset.pesticideFilter===state.pesticideFilter));
+}
+function pesticideRelatedOpt(p){
+  const ids=p.linked_opt_ids||[];
+  const pests=state.opt?.pests||[], diseases=state.opt?.diseases||[], weeds=state.opt?.weeds||[];
+  const all=[...pests,...diseases,...weeds];
+  return ids.map(id=>{
+    const x=all.find(v=>v.id===id);
+    if(!x)return null;
+    return {...x,_type:pests.some(v=>v.id===id)?'Hama':diseases.some(v=>v.id===id)?'Penyakit':'Gulma'};
+  }).filter(Boolean);
+}
+function pesticideMoaMatches(p){
+  return p.ai_master_matches||[];
+}
+function openPesticideDetail(p){
+  if(!p)return;
+  state.detailRef={kind:'pesticide',id:p.id};
+  if(state.historyReady&&!state.historyLock)history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
+  const related=pesticideRelatedOpt(p);
+  const moa=pesticideMoaMatches(p);
+  const sourceGroups=[p['IRAC Group'],p['FRAC Group'],p['HRAC Group']].filter(x=>x&&x!=='');
+  $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
+    <button class="close" id="closeDetail">×</button>
+    <div class="detail-code">${esc(p['Kategori']||'Pestisida')} · ${esc(p['Nama Merk']||'')}</div>
+    <div class="pesticide-detail-hero"><div class="pesticide-bottle">🧴</div><div><h2>${esc(p['Nama Merk'])}</h2><p class="muted">${esc(p['Perusahaan']||'')}</p></div></div>
+    <div class="detail-grid">
+      <div><label>Bahan aktif</label><strong>${esc(p['Bahan Aktif']||'—')}</strong></div>
+      <div><label>Formulasi</label><strong>${esc(p['Formulasi']||'—')}</strong></div>
+      <div><label>Kemasan</label><strong>${esc(p['Kemasan']||'—')}</strong></div>
+      <div><label>Kategori</label><strong>${esc(p['Kategori']||'—')}</strong></div>
+    </div>
+    <h3>Sasaran dalam dataset</h3><div class="source-box"><p style="margin:0">${esc(p['Sasaran Hama/Penyakit/Gulma']||'—')}</p></div>
+    <h3>MoA dalam dataset</h3><div class="tag-row">${sourceGroups.length?sourceGroups.map(g=>`<span>${esc(g)}</span>`).join(''):'<span>Belum tersedia / perlu verifikasi</span>'}</div>
+    ${moa.length?`<h3>Tautan ke master Bahan Aktif Pestisida</h3><div class="ai-control-list">${moa.map(m=>`<div class="ai-control-card"><div class="ai-control-head"><strong>${esc(m.name||'')}</strong><span>${esc(m.committee||'')}</span></div><div class="ai-control-meta">Group ${esc(m.group||m.code||'')}</div></div>`).join('')}</div>`:''}
+    ${related.length?`<h3>OPT yang terhubung</h3><p class="source-note">Koneksi ini dibuat dari kecocokan teks sasaran pada dataset dengan nama/alias OPT Explorer. Ini bukan konfirmasi label.</p><div class="pesticide-related-opt">${related.map(x=>`<button data-opt-id="${esc(x.id)}" data-opt-type="${esc(x._type||'Hama')}" class="related-opt-card"><strong>${esc(x.name)}</strong><span>${esc(x.common||x.category||'')}</span></button>`).join('')}</div>`:''}
+    <div class="source-box"><strong>⚠️ Status data</strong><p>Data produk berasal dari dataset pengguna. Status registrasi, komoditas, dosis, interval, PHI, kompatibilitas, dan penggunaan legal harus diverifikasi pada label/registrasi Indonesia terkini.</p></div>
+  </aside>`;
+  $('#detailBackdrop').addEventListener('click',closeDetail);
+  $('#closeDetail').addEventListener('click',closeDetail);
+  $$('.related-opt-card').forEach(b=>b.addEventListener('click',()=>{
+    const all=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];
+    const x=all.find(v=>v.id===b.dataset.optId); if(x) openOptDetail(x,b.dataset.optType);
+  }));
+}
+function pesticideBlock(x){
+  if(!state.pesticides)return '';
+  const ids=[];
+  const all=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];
+  const p=state.pesticides.records.filter(v=>(v.linked_opt_ids||[]).includes(x.id));
+  if(!p.length)return '';
+  return `<h3>Produk dalam Database Pestisida</h3>
+    <p class="source-note">Ditautkan dari kecocokan sasaran pada dataset produk. Bukan rekomendasi penggunaan dan bukan validasi label.</p>
+    <div class="ai-control-list">${p.slice(0,12).map(v=>`<button class="ai-control-card pesticide-link-card" data-pesticide-id="${esc(v.id)}"><div class="ai-control-head"><strong>${esc(v['Nama Merk'])}</strong><span>${esc(v['Kategori']||'')}</span></div><div class="ai-control-meta">${esc(v['Bahan Aktif']||'')} ${v['IRAC Group']?`· IRAC ${esc(v['IRAC Group'])}`:''}${v['FRAC Group']&&v['FRAC Group']!=='-'?` · FRAC ${esc(v['FRAC Group'])}`:''}${v['HRAC Group']&&v['HRAC Group']!=='-'?` · HRAC ${esc(v['HRAC Group'])}`:''}</div><p>Sasaran dataset: ${esc(v['Sasaran Hama/Penyakit/Gulma']||'—')}</p></button>`).join('')}</div>
+    ${p.length>12?`<button class="btn" id="morePesticidesForOpt">Lihat semua ${p.length} produk terkait ↗</button>`:''}`;
+}
+
 function eppoBlock(x){
   const e=x.eppo || state.eppoLinks?.links?.[x.id];
   if(!e) return '';
@@ -410,22 +512,46 @@ function openOptDetail(x,type){
     ${x.life?.length?`<h3>Siklus hidup</h3><div class="tag-row">${x.life.map(s=>`<span>${esc(s)}</span>`).join('')}</div>`:''}
     ${x.notes?`<p class="source-note">${esc(x.notes)}</p>`:''}
     ${controlBlock(x)}
+    ${pesticideBlock(x)}
     ${eppoBlock(x)}
   </aside>`;
-  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
+  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.pesticide-link-card').forEach(b=>b.addEventListener('click',()=>openPesticideDetail(pesticideRecords().find(v=>v.id===b.dataset.pesticideId))));
 }
 function openCropDetail(crop){
   state.detailRef={kind:'crop',id:crop.id};
   if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
-  const related=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds].filter(x=>(x.hosts||[]).some(h=>h.toLowerCase().includes(crop.name.split(' ')[0].toLowerCase())||crop.name.toLowerCase().includes(h.toLowerCase())));
+  const master=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds];
+  const sourceRows=(state.cropOptSources?.records?.[crop.id]||[]);
+  const fallback=master.filter(x=>(x.hosts||[]).some(h=>h.toLowerCase().includes(crop.name.split(' ')[0].toLowerCase())||crop.name.toLowerCase().includes(h.toLowerCase()))).map(x=>({type:x.category==='Fungi'||x.category==='Bacteria'||x.category==='Fungi-like'?'Penyakit':x.category==='Grass'||x.category==='Broadleaf'||x.category==='Sedge'?'Gulma':'Hama',common:x.common||x.name,scientific:x.name,master_id:x.id,source:'master'}));
+  const rows=sourceRows.length?sourceRows:fallback;
+  const sections=['Hama','Penyakit','Gulma'].map(type=>{const list=rows.filter(x=>x.type===type); if(!list.length)return ''; return `<div class="crop-opt-section"><div class="crop-opt-section-head"><strong>${type}</strong><span>${list.length}</span></div><div class="opt-list">${list.map(x=>{const m=x.master_id?master.find(v=>v.id===x.master_id):null; const ref=`${type}|${x.master_id||''}|${x.scientific||x.common||''}|${x.common||''}`; return `<button class="opt-card crop-opt-link" data-opt-ref="${esc(ref)}"><img src="assets/opt/${esc(m?.icon|| (type==='Hama'?'category-pest.svg':type==='Penyakit'?'category-disease.svg':'category-weed.svg'))}"><div class="opt-main"><h3>${esc(x.scientific||x.common)}</h3><p>${esc(x.common||'')}</p><small>${esc(type)}${x.source&&x.source!=='master'?' · sumber tabel pengguna':''}</small></div><span class="arrow">›</span></button>`}).join('')}</div></div>`}).join('');
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
     <button class="close" id="closeDetail">×</button><div class="detail-code">Tanaman & Inang</div>
     <div style="text-align:center;margin:16px 0 6px"><img src="assets/opt/${esc(crop.icon)}" style="width:150px;height:130px;color:#0a7548"></div>
     <h2>${esc(crop.name)}</h2><p class="muted"><i>${esc(crop.latin)}</i></p>
     ${crop.source_guidelines?`<div class="source-box"><strong>Sumber pengetahuan</strong><p>${esc(crop.source_guidelines.summary_id)}</p><small>${esc(crop.source_guidelines.source)} · ${esc(crop.source_guidelines.source_note)}</small></div>`:''}
-    <h3>OPT terkait</h3><div class="opt-list">${related.slice(0,12).map(x=>`<div class="opt-card" style="cursor:default"><img src="assets/opt/${esc(x.icon)}"><div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category||'')}</small></div></div>`).join('')||'<div class="empty">Belum ada relasi OPT.</div>'}</div>
+    <div class="crop-source-badge">${rows.length} relasi OPT dari lapisan sumber + master</div>
+    <h3>OPT terkait</h3>${sections||'<div class="empty">Belum ada relasi OPT yang terpetakan.</div>'}
+    <div class="source-note">Relasi dari TABEL HAMA (ID).pdf diperlakukan sebagai sumber pengetahuan/provenance. Nama produk pada dokumen tidak dianggap sebagai bukti registrasi pestisida Indonesia saat ini.</div>
   </aside>`;
-  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail)
+  $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.crop-opt-link').forEach(b=>b.addEventListener('click',()=>openCropOptRef(b.dataset.optRef)));
+}
+function openCropOptRef(ref){
+  const [type,id,scientific,common]=String(ref||'').split('|');
+  const master=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds];
+  const m=id?master.find(v=>v.id===id):null;
+  if(m){ openOptDetail(m,type); return; }
+  state.detailRef={kind:'crop-opt',id:'',type,scientific,common};
+  if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
+  const icon=type==='Hama'?'category-pest.svg':type==='Penyakit'?'category-disease.svg':'category-weed.svg';
+  $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
+    <button class="close" id="closeDetail">×</button><div class="detail-code">${esc(type)} · sumber tanaman</div>
+    <div style="text-align:center;margin:18px 0 8px"><img src="assets/opt/${icon}" style="width:150px;height:125px"></div>
+    <h2>${esc(scientific||common||'OPT')}</h2><p class="muted">${esc(common||'')}</p>
+    <div class="source-box"><strong>Relasi OPT pada tanaman</strong><p>Entri ini berasal dari lapisan relasi sumber tanaman dan belum memiliki record detail lengkap di Master OPT Explorer.</p></div>
+    <div class="source-note">Data sumber ditampilkan apa adanya dan tidak dipakai untuk membuat klaim diagnosis, registrasi pestisida, dosis, atau rekomendasi aplikasi.</div>
+  </aside>`;
+  $('#detailBackdrop').addEventListener('click',closeDetail); $('#closeDetail').addEventListener('click',closeDetail);
 }
 function setScanFile(file){
   if(!file || !file.type.startsWith('image/')) return; state.scanFile=file;
@@ -446,7 +572,7 @@ function showScreen(id,opts={}){
   $$('.screen').forEach(s=>s.classList.toggle('active-screen',s.id===id));
   $$('.bottom-nav button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));
   state.screen=id; if(id==='explore')render();
-  if(id==='types')renderTypes(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary();
+  if(id==='types')renderTypes(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary(); if(id==='pesticides')renderPesticides();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function setCommittee(c){state.committee=c;state.moaView='ai';state.group='ALL';state.search='';$('#search').value='';$$('.committee-tabs button').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render()}
@@ -473,10 +599,15 @@ $('#openAbout').addEventListener('click',()=>showScreen('about'));
 $('#openSources').addEventListener('click',()=>showScreen('sources'));
 $('#openKnowledge').addEventListener('click',()=>showScreen('knowledge'));
 $('#openLibrary').addEventListener('click',()=>showScreen('library'));
+$('#openPesticides').addEventListener('click',()=>showScreen('pesticides'));
 $('#librarySearch').addEventListener('input',e=>{state.librarySearch=e.target.value;renderLibrary()});
 $('#clearLibrarySearch').addEventListener('click',()=>{$('#librarySearch').value='';state.librarySearch='';renderLibrary()});
 $$('.library-tabs button').forEach(b=>b.addEventListener('click',()=>{state.libraryFilter=b.dataset.libraryFilter;renderLibrary()}));
 $('#librarySearchBtn').addEventListener('click',()=>$('#librarySearch').focus());
+$('#pesticideSearchBtn').addEventListener('click',()=>$('#pesticideSearch').focus());
+$('#pesticideSearch').addEventListener('input',e=>{state.pesticideSearch=e.target.value;renderPesticides()});
+$('#clearPesticideSearch').addEventListener('click',()=>{$('#pesticideSearch').value='';state.pesticideSearch='';renderPesticides()});
+$$('.pesticide-tabs button').forEach(b=>b.addEventListener('click',()=>{state.pesticideFilter=b.dataset.pesticideFilter;renderPesticides()}));
 $('#menuBtn').addEventListener('click',()=>showScreen('menu'));
 $('#menuTheme').addEventListener('click',()=>document.documentElement.classList.toggle('dark'));
 $('#themeBtn').addEventListener('click',()=>document.documentElement.classList.toggle('dark'));

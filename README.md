@@ -1,4 +1,4 @@
-# OPT Explorer v0.14.0.0
+# OPT Explorer v0.15.0
 
 **Al-Kitab untuk Sales, Formulator dan Petani Mbois**
 
@@ -65,3 +65,38 @@ Added a separate Emerging/Pipeline layer for novel actives that may be absent fr
 - Icon aplikasi baru dari pengguna dipasang sebagai favicon/manifest/PWA icon.
 - Scan & Identifikasi aktif: kamera/galeri, preview, prompt analisis Bahasa Indonesia, dan handoff foto ke ChatGPT via Web Share API bila perangkat mendukung.
 - Fallback: salin prompt dan buka ChatGPT secara manual.
+
+
+## v0.15.0 — Database Pestisida Indonesia
+- Menambahkan `data/pesticide_database_id.json` dari CSV pengguna (105 record).
+- Menambahkan layar **Database Pestisida** untuk pencarian produk, perusahaan, bahan aktif, formulasi, MoA, dan sasaran.
+- Produk dapat dibuka ke detail dan ditautkan ke OPT Explorer berdasarkan kecocokan teks sasaran.
+- Bahan aktif yang berhasil dicocokkan dengan master MoA ditampilkan sebagai tautan teknis ke klasifikasi IRAC/FRAC/HRAC.
+- Koneksi produk ↔ OPT dan produk ↔ MoA bukan validasi label/registrasi atau rekomendasi aplikasi.
+
+
+## v0.16.1 — UI Home
+- Kartu **MoA Explorer** pada Beranda diganti menjadi **Bahan Aktif Pestisida**.
+- Ikon diganti menjadi ikon lab/kimia berbasis SVG agar lebih konsisten di Android.
+- Jalur dan engine IRAC/FRAC/HRAC tetap menggunakan route `explore`; perubahan ini hanya branding/UI.
+
+
+## v0.17.0 — Crop OPT mapping
+- Relasi Tanaman & Inang diperluas dengan lapisan source-derived dari TABEL HAMA (ID).pdf.
+- Bawang merah kini menampilkan Hama, Penyakit, dan Gulma, termasuk multi-name weed/disease rows yang ada di PDF.
+- Relasi diterapkan lintas tanaman yang sudah ada di katalog.
+- Ikon Tanaman & Inang diganti menjadi ilustrasi crop/host 2D SVG.
+- Provenance produk lama tetap dipisahkan dari status registrasi Indonesia saat ini.
+
+
+## v0.17.1 — Crop Icon Pack
+- Seluruh 22 tanaman di katalog menggunakan ikon 2D crop yang dibuat khusus per komoditas.
+- Ikon tidak lagi memakai ilustrasi tanaman generik; setiap komoditas memiliki bentuk visual pembeda seperti malai padi, tongkol jagung, buah cabai, umbi bawang, kubis, tomat, kentang, buah kakao, kopi, kelapa, sawit, singkong, kacang tanah, dan lainnya.
+- Service worker diperbarui agar ikon crop ikut tersedia untuk penggunaan offline setelah instalasi/cache.
+
+
+## v0.17.2 — Komoditas tambahan & OPT clickable
+- Tambahan komoditas: Sawi, Caisim, Pak Coy, Anggur, Jagung Manis, Kembang Kol, Brokoli, Kailan.
+- Setiap komoditas memiliki ilustrasi SVG 2D crop khusus.
+- Daftar OPT pada detail tanaman sekarang berupa tombol/kartu yang bisa diklik. Jika OPT sudah ada di Master, dibuka ke detail OPT lengkap; jika hanya berasal dari lapisan relasi sumber, dibuka ke detail provenance ringkas tanpa mengarang data.
+- Cache service worker dinaikkan ke v0.17.2.

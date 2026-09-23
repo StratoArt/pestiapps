@@ -38,11 +38,12 @@
     <button class="feature-card green" data-go="types"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
     <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
     <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
-    <button class="feature-card purple" data-go="crops"><span class="feature-icon">🌱</span><span><strong>Tanaman & Inang</strong><small>Lihat OPT pada tanaman</small></span><i>›</i></button>
-    <button class="feature-card blue" data-go="explore"><span class="feature-icon">⚗</span><span><strong>MoA Explorer</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
+    <button class="feature-card purple" data-go="crops"><span class="feature-icon image-icon"><img src="assets/opt/category-host.svg" alt=""></span><span><strong>Tanaman & Inang</strong><small>Lihat OPT pada tanaman</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="explore"><span class="feature-icon image-icon"><img src="assets/ui/chemistry-flask.svg" alt=""></span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
     <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="pesticides"><span class="feature-icon">🧴</span><span><strong>Database Pestisida</strong><small>Produk · Bahan Aktif · Sasaran · MoA</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="calculators"><span class="feature-icon">🧮</span><span><strong>Calculator Suite</strong><small>Dosis · Area · Spray · Kalibrasi</small></span><i>›</i></button>
   </div>
 
@@ -174,6 +175,19 @@
   <div class="source-box"><strong>Catatan penggunaan</strong><p>PDF pengguna dipakai sebagai lapisan pengetahuan/reference. Klasifikasi MoA terkini tetap dipisahkan dari materi historis; selalu verifikasi label dan registrasi lokal sebelum aplikasi.</p></div>
 </section>
 
+<section id="pesticides" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Database Pestisida</strong><small>Produk Indonesia · bahan aktif · sasaran · MoA</small></div><button class="icon-button light" id="pesticideSearchBtn">⌕</button></div>
+  <div class="pesticide-hero">
+    <div><span class="eyebrow">DATASET PENGGUNA</span><h2>Produk → Bahan Aktif → Sasaran → MoA</h2><p>Database ini menghubungkan data produk yang kamu upload dengan database OPT Explorer dan klasifikasi MoA yang sudah ada.</p></div>
+    <div class="pesticide-stat"><strong id="pesticideCount">—</strong><span>produk</span></div>
+  </div>
+  <div class="search-box"><span>⌕</span><input id="pesticideSearch" placeholder="Cari produk, bahan aktif, perusahaan, atau sasaran..." autocomplete="off"><button id="clearPesticideSearch">×</button></div>
+  <div class="pesticide-tabs"><button class="active" data-pesticide-filter="ALL">Semua</button><button data-pesticide-filter="Insektisida">Insektisida</button><button data-pesticide-filter="Fungisida">Fungisida</button><button data-pesticide-filter="Herbisida">Herbisida</button></div>
+  <div class="list-meta"><span><b id="pesticideResultCount">—</b> hasil</span><span id="pesticideSourceLabel">Dataset pengguna</span></div>
+  <div id="pesticideList" class="pesticide-list"></div>
+  <div class="source-box"><strong>Catatan data</strong><p>Data produk berasal dari CSV yang kamu upload. Klasifikasi dan sasaran pada dataset ditampilkan apa adanya. Hubungan ke OPT Explorer adalah pencocokan teknis untuk navigasi, bukan konfirmasi registrasi atau rekomendasi penggunaan.</p></div>
+</section>
+
 <section id="menu" class="screen">
   <div class="menu-head"><button class="back-button" data-go="home">←</button><h2>Menu</h2></div>
   <div class="menu-list">
@@ -182,12 +196,13 @@
     <button id="openKnowledge"><span>📘</span><b>Pestisida — Knowledge</b><small>Ekstrak PDF Kementan</small><i>›</i></button>
     <button id="openFormulations"><span>🧪</span><b>Formulation Explorer</b><small>SG · WP · SC · EC · EW · ME</small><i>›</i></button>
     <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
+    <button id="openPesticides"><span>🧴</span><b>Database Pestisida Indonesia</b><small>Produk · bahan aktif · sasaran · MoA</small><i>›</i></button>
     <button id="openCalculators"><span>🧮</span><b>Calculator Suite</b><small>Area · Dosis · Spray · Kalibrasi · Seed</small><i>›</i></button>
     <button><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.14.0</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.15.0</small></button>
   </div>
   <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>

@@ -64,3 +64,44 @@
 /* v0.14 Scan */
 .scan-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.scan-actions .primary-btn{margin-top:10px}.secondary-btn,.chatgpt-btn,.ghost-btn{width:100%;border-radius:11px;padding:12px;margin-top:10px;font-weight:800;cursor:pointer}.secondary-btn{border:1px solid #cfe1d7;background:#f5faf7;color:#24634a}.chatgpt-btn{border:0;background:#111;color:#fff}.chatgpt-btn:disabled,.ghost-btn:disabled{opacity:.45;cursor:not-allowed}.ghost-btn{border:1px solid var(--line);background:#fff;color:#3e5d50}.scan-file-meta{font-size:9px;color:var(--muted);padding:8px 2px}.scan-preview{background-size:cover;background-position:center}.scan-info{background:#eef7f2;border:1px solid #d8e9df;border-radius:15px;padding:13px;margin-top:10px}.scan-info strong{font-size:12px}.scan-info ol{margin:8px 0 8px;padding-left:18px}.scan-info li,.scan-info p{font-size:9px;line-height:1.55;color:#5e6e67}.scan-info p{margin:8px 0 0}
 @media(max-width:680px){.target-visual{grid-template-columns:1fr}.target-visual-art{min-height:280px}.target-insect-svg{height:250px}.target-cats{grid-template-columns:1fr 1fr}.scan-actions{grid-template-columns:1fr}.chatgpt-btn{font-size:12px}}
+
+/* v0.15.0 — Indonesia Pesticide Database */
+.pesticide-hero{display:flex;justify-content:space-between;gap:14px;align-items:stretch;margin:14px 0;padding:18px;border:1px solid #dce9e2;border-radius:22px;background:linear-gradient(135deg,#f2fbf6,#fff)}
+.pesticide-hero h2{margin:5px 0 6px;font-size:20px}
+.pesticide-hero p{margin:0;color:#5d6d65;font-size:12px;line-height:1.5}
+.pesticide-stat{min-width:74px;border-radius:18px;background:#087443;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px}
+.pesticide-stat strong{font-size:26px;line-height:1}
+.pesticide-stat span{font-size:10px;margin-top:5px}
+.pesticide-tabs{display:flex;gap:7px;overflow:auto;padding:3px 0 9px;scrollbar-width:none}
+.pesticide-tabs::-webkit-scrollbar{display:none}
+.pesticide-tabs button{border:1px solid #d7e4dd;background:#fff;color:#496058;border-radius:999px;padding:9px 13px;white-space:nowrap;font-weight:700;font-size:11px}
+.pesticide-tabs button.active{background:#087443;color:#fff;border-color:#087443}
+.pesticide-list{display:grid;gap:10px;margin:8px 0 18px}
+.pesticide-card{appearance:none;text-align:left;border:1px solid #e0e9e4;background:#fff;border-radius:18px;padding:14px;box-shadow:0 6px 20px rgba(21,70,48,.05);cursor:pointer}
+.pesticide-card:active{transform:scale(.995)}
+.pesticide-card-top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.pesticide-category{font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#087443;background:#e9f7ef;border-radius:999px;padding:5px 8px}
+.pesticide-groups{font-size:9px;color:#7b8a83;font-weight:700}
+.pesticide-card h3{margin:9px 0 4px;font-size:15px;color:#16382b}
+.pesticide-ai{margin:0;color:#42564d;font-size:11px;line-height:1.45}
+.pesticide-meta{display:flex;justify-content:space-between;gap:8px;margin-top:9px;color:#829089;font-size:9px}
+.pesticide-target{margin:9px 0 0;padding-top:9px;border-top:1px dashed #e0e8e3;color:#5d6b64;font-size:10px;line-height:1.45}
+.pesticide-detail-hero{display:flex;align-items:center;gap:12px;margin:10px 0 16px}
+.pesticide-bottle{width:58px;height:58px;border-radius:18px;background:#e9f7ef;display:grid;place-items:center;font-size:28px}
+.pesticide-detail-hero h2{margin:0;font-size:21px}
+.pesticide-related-opt{display:grid;gap:8px}
+.related-opt-card{border:1px solid #dce8e2;background:#f9fcfa;border-radius:14px;padding:11px;text-align:left;display:flex;flex-direction:column;gap:4px}
+.related-opt-card strong{font-size:11px;color:#173d2d}
+.related-opt-card span{font-size:9px;color:#708078}
+.pesticide-link-card{width:100%;border:1px solid #e0e9e4;background:#fff;cursor:pointer;text-align:left}
+@media(min-width:760px){
+  .pesticide-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pesticide-related-opt{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+html.dark .pesticide-hero,html.dark .pesticide-card,html.dark .pesticide-tabs button,html.dark .related-opt-card,html.dark .pesticide-link-card{background:#14231c;border-color:#294337;color:#e8f2ed}
+html.dark .pesticide-hero p,html.dark .pesticide-ai,html.dark .pesticide-meta,html.dark .pesticide-target,html.dark .related-opt-card span{color:#aabbb2}
+html.dark .pesticide-card h3,html.dark .related-opt-card strong{color:#edf7f1}
+
+.crop-source-badge{display:inline-flex;background:#e8f5ee;color:#176744;border-radius:999px;padding:7px 10px;font-size:9px;font-weight:800;margin:10px 0}.crop-opt-section{margin-top:14px}.crop-opt-section-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 7px;color:#426154}.crop-opt-section-head strong{font-size:12px}.crop-opt-section-head span{font-size:9px;background:#eef5f1;border-radius:999px;padding:3px 7px}
+
+.crop-opt-link{cursor:pointer;appearance:none;font:inherit;color:inherit}.crop-opt-link:active{transform:scale(.995)}

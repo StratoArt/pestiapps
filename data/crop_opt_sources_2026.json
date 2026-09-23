@@ -1,0 +1,613 @@
+{
+  "title": "Relasi OPT per tanaman — sumber TABEL HAMA (ID)",
+  "source": "TABEL HAMA (ID).pdf",
+  "source_note": "Relasi OPT diturunkan dari tabel pada PDF pengguna. Nama produk lama dipertahankan sebagai provenance saja; data ini bukan bukti registrasi Indonesia saat ini.",
+  "records": {
+    "padi": [
+      {
+        "type": "Hama",
+        "common": "Penggerek batang",
+        "scientific": "Scirpophaga incertulas",
+        "master_id": "scirpophaga-incertulas",
+        "source_product": "Belt Expert",
+        "source_page": 27,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bercak daun",
+        "scientific": "Cercospora sp.",
+        "master_id": null,
+        "source_product": "Nativo",
+        "source_page": 27,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Busuk pelepah",
+        "scientific": "Rhizoctonia solani",
+        "master_id": "rhizoctonia-solani-brassica",
+        "source_product": "Antracol",
+        "source_page": 27,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit bercak daun",
+        "scientific": "Cercospora janseana",
+        "master_id": "rice-narrow-brown-leaf-spot",
+        "source_product": "Folicur Gold",
+        "source_page": 27,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit busuk upih",
+        "scientific": "Rhizoctonia sp.",
+        "master_id": null,
+        "source_product": "Folicur WP",
+        "source_page": 27,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "",
+        "master_id": null,
+        "source_product": "Ricestar Extra",
+        "source_page": 29,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma golongan rumput",
+        "scientific": "Echinochloa crus-galli",
+        "master_id": "echinochloa",
+        "source_product": "Rumpas",
+        "source_page": 27,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "cabai": [
+      {
+        "type": "Hama",
+        "common": "Hama penggerek buah",
+        "scientific": "",
+        "master_id": null,
+        "source_product": "Vayego",
+        "source_page": 7,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Kutu daun",
+        "scientific": "Myzus persicae",
+        "master_id": "aphid",
+        "source_product": "Confidor",
+        "source_page": 7,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Myzus persicae",
+        "scientific": "",
+        "master_id": null,
+        "source_product": "Buldok",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Ulat buah",
+        "scientific": "Helicoverpa armigera",
+        "master_id": "helicoverpa-armigera",
+        "source_product": "Valacor",
+        "source_page": 7,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Antraknosa",
+        "scientific": "",
+        "master_id": "colletotrichum",
+        "source_product": "Antracol",
+        "source_page": 8,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Antraknosa",
+        "scientific": "Colletotrichum capsici",
+        "master_id": "colletotrichum",
+        "source_product": "Folicur WP",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Colletotrichum capsici",
+        "scientific": "Busuk buah",
+        "master_id": null,
+        "source_product": "Trivia",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit antraknosa",
+        "scientific": "Colletotrichum capsici",
+        "master_id": null,
+        "source_product": "Luna Smart",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit bercak daun",
+        "scientific": "Cercospora capsici",
+        "master_id": "chili-cercospora",
+        "source_product": "Folicur Gold",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "busuk daun dan busuk buah",
+        "scientific": "Phytophthora spp.",
+        "master_id": "phytophthora-brassica",
+        "source_product": "Previcur N",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma golongan rumput",
+        "scientific": "Digitaria ciliaris",
+        "master_id": null,
+        "source_product": "Rumpas",
+        "source_page": 6,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "tomat": [],
+    "bawang": [
+      {
+        "type": "Hama",
+        "common": "Hama pengorok daun",
+        "scientific": "Liriomyza huidobrensis",
+        "master_id": null,
+        "source_product": "Vayego",
+        "source_page": 5,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Hama trips",
+        "scientific": "Thrips tabaci",
+        "master_id": "thrips-tabaci",
+        "source_product": "",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Kutu daun",
+        "scientific": "Myzus persicae",
+        "master_id": "aphid",
+        "source_product": "Movanto Energy",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Ulat Grayak",
+        "scientific": "Spodoptera exigua",
+        "master_id": "spodoptera-exigua",
+        "source_product": "Buldok",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bercak ungu",
+        "scientific": "Alternaria alii",
+        "master_id": "alternaria-porri",
+        "source_product": "Antracol",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bercak ungu",
+        "scientific": "Alternaria porri",
+        "master_id": "alternaria-porri",
+        "source_product": "Folicur WP",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit Bercak ungu",
+        "scientific": "Alternaria porri",
+        "master_id": "alternaria-porri",
+        "source_product": "Folicur Gold",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit busuk daun",
+        "scientific": "Peronospora destructor",
+        "master_id": "onion-downy-mildew",
+        "source_product": "",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit busuk leher",
+        "scientific": "Botrytis alii",
+        "master_id": null,
+        "source_product": "",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit embun bulu",
+        "scientific": "Peronospora destructor",
+        "master_id": "onion-downy-mildew",
+        "source_product": "Previcur N",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit fusarium",
+        "scientific": "Fusarium oxysporum",
+        "master_id": "fusarium",
+        "source_product": "",
+        "source_page": 4,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Alternanthera sesilis",
+        "master_id": null,
+        "source_product": "Rumpas",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma berdaun lebar",
+        "scientific": "Amaranthus sp.",
+        "master_id": null,
+        "source_product": "",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma golongan rumput",
+        "scientific": "Digitaria adcendens",
+        "master_id": null,
+        "source_product": "",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Teki",
+        "scientific": "Cyperus iria",
+        "master_id": "cyperus",
+        "source_product": "",
+        "source_page": 3,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "kubis": [],
+    "mentimun": [],
+    "jagung": [
+      {
+        "type": "Hama",
+        "common": "Belalang",
+        "scientific": "Locusta migratoria",
+        "master_id": null,
+        "source_product": "Baycarb",
+        "source_page": 9,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Belalang",
+        "scientific": "Locusta sp.",
+        "master_id": null,
+        "source_product": "Decis",
+        "source_page": 9,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Belalang",
+        "scientific": "Oxya sp.",
+        "master_id": null,
+        "source_product": "Confidor",
+        "source_page": 9,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Hama belalang",
+        "scientific": "Oxya sp.",
+        "master_id": null,
+        "source_product": "Confidor Extra",
+        "source_page": 9,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Hama gudang",
+        "scientific": "Sitophilus zeamais",
+        "master_id": null,
+        "source_product": "Decis",
+        "source_page": 5,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Ulat tanah",
+        "scientific": "",
+        "master_id": "agrotis-ipsilon",
+        "source_product": "Gaucho",
+        "source_page": 5,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Bulai",
+        "scientific": "Peronosclerospora maydis",
+        "master_id": null,
+        "source_product": "Antracol",
+        "source_page": 8,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit bulai",
+        "scientific": "Peronosclerospora maydis",
+        "master_id": null,
+        "source_product": "Folicur Gold",
+        "source_page": 9,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Berdaun lebar",
+        "scientific": "Cleome rutidosperma",
+        "master_id": null,
+        "source_product": "Adengo",
+        "source_page": 8,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "kedelai": [
+      {
+        "type": "Hama",
+        "common": "Lalat bibit",
+        "scientific": "Agromyza phaseoli",
+        "master_id": "delia-florigela",
+        "source_product": "Decis",
+        "source_page": 15,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Penggerek polong",
+        "scientific": "Etiella zinckenella",
+        "master_id": null,
+        "source_product": "Buldok",
+        "source_page": 15,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit karat",
+        "scientific": "Phakopsora pachyrhizi",
+        "master_id": null,
+        "source_product": "Antracol",
+        "source_page": 15,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Gulma",
+        "common": "Gulma golongan rumput",
+        "scientific": "Echinochloa colona",
+        "master_id": "echinochloa-crus",
+        "source_product": "Rumpas",
+        "source_page": 15,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "semangka": [],
+    "melon": [],
+    "kentang": [],
+    "kacang": [
+      {
+        "type": "Hama",
+        "common": "Kutu daun",
+        "scientific": "Aphis sp.",
+        "master_id": "aphid",
+        "source_product": "Confidor",
+        "source_page": 12,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Perusak daun",
+        "scientific": "Spodoptera sp.",
+        "master_id": null,
+        "source_product": "Buldok",
+        "source_page": 12,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Antraknosa",
+        "scientific": "Colletotrichum lindemuthianum",
+        "master_id": "colletotrichum",
+        "source_product": "Trivia",
+        "source_page": 12,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit bercak daun",
+        "scientific": "Cercospora vignae",
+        "master_id": null,
+        "source_product": "Folicur Gold",
+        "source_page": 12,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit karat",
+        "scientific": "Uromyces vignae",
+        "master_id": null,
+        "source_product": "Antracol",
+        "source_page": 12,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "terung": [],
+    "pisang": [],
+    "jeruk": [
+      {
+        "type": "Hama",
+        "common": "Aphis sp.",
+        "scientific": "Phyllocnistis citrella",
+        "master_id": null,
+        "source_product": "Buldok",
+        "source_page": 10,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Hama kutu daun",
+        "scientific": "Aphis sp.",
+        "master_id": null,
+        "source_product": "Confidor Extra",
+        "source_page": 11,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Kutu daun",
+        "scientific": "Aphis sp.",
+        "master_id": "aphid",
+        "source_product": "Confidor",
+        "source_page": 10,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Kutu daun",
+        "scientific": "Toxoptera citridus",
+        "master_id": "aphid",
+        "source_product": "Movento Energy",
+        "source_page": 11,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Pengisap pucuk",
+        "scientific": "Diaphorina citri",
+        "master_id": null,
+        "source_product": "Decis",
+        "source_page": 11,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit embun tepung",
+        "scientific": "Oidium tingitaninum",
+        "master_id": null,
+        "source_product": "Folicur Gold",
+        "source_page": 10,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit kudis",
+        "scientific": "Elsinoe fawcettii",
+        "master_id": null,
+        "source_product": "Nativo",
+        "source_page": 10,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Tepung",
+        "scientific": "Oidium tingitaninum",
+        "master_id": null,
+        "source_product": "Antracol",
+        "source_page": 10,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "kopi": [],
+    "kakao": [
+      {
+        "type": "Hama",
+        "common": "Pengisap buah",
+        "scientific": "Helopeltis antoni",
+        "master_id": null,
+        "source_product": "Buldok",
+        "source_page": 14,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Hama",
+        "common": "Pengisap buah",
+        "scientific": "Helopeltis antonii",
+        "master_id": null,
+        "source_product": "Decis",
+        "source_page": 14,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Pengisap buah",
+        "scientific": "Helopeltis sp.",
+        "master_id": null,
+        "source_product": "Baycarb",
+        "source_page": 14,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit busuk buah",
+        "scientific": "Phytophthora palmivora",
+        "master_id": null,
+        "source_product": "Trivia",
+        "source_page": 14,
+        "source": "TABEL HAMA (ID).pdf"
+      },
+      {
+        "type": "Penyakit",
+        "common": "Penyakit pembuluh kayu",
+        "scientific": "Oncobasidium theobromae",
+        "master_id": null,
+        "source_product": "Nativo",
+        "source_page": 14,
+        "source": "TABEL HAMA (ID).pdf"
+      }
+    ],
+    "teh": [],
+    "kelapa": [],
+    "sawit": [],
+    "singkong": [],
+    "kacang-tanah": []
+  }
+}

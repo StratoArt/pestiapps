@@ -48,3 +48,11 @@ The onion seed-treatment sheet is a historical US/Canada/Mexico-specific source 
 - Added a dedicated **Tentang Aplikasi** screen from the Menu.
 - Credit displayed exactly as requested: **Dibuat oleh Amrizal Ivan Pratama S.P. - Bayer District Representative Nganjuk 2026 all rights reserved**.
 - Source catalog currently contains 19 entries: 15 user-supplied PDFs and 4 external references (IRAC, FRAC, HRAC, EPPO).
+
+
+## v0.16.0 — Resistance Action Committee Master Engine
+- IRAC MoA Classification v11.5 (Feb 2026) expanded to comprehensive Appendix 5 AI mapping and official physiological categories.
+- FRAC Code List 2026 expanded with official target-site/process, group, AI and resistance-risk records, including M03 Propineb.
+- HRAC Global 2026 expanded from the official poster/master-layer with current AI mapping.
+- Active ingredient → Indonesian product crosswalk added.
+- Product examples are a separate Indonesian dataset and do not imply registration.

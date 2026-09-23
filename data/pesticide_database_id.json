@@ -1,0 +1,2746 @@
+{
+  "version": "0.15.0",
+  "title": "Database Pestisida Indonesia — dataset pengguna",
+  "source_type": "user_uploaded_csv",
+  "source_file": "Scrapping Data - database_pestisida_indonesia_MoA_sasaran.csv",
+  "record_count": 105,
+  "fields": [
+    "Kategori",
+    "Nama Merk",
+    "Perusahaan",
+    "Bahan Aktif",
+    "Formulasi",
+    "Kemasan",
+    "IRAC Group",
+    "FRAC Group",
+    "HRAC Group",
+    "Sasaran Hama/Penyakit/Gulma"
+  ],
+  "notes": [
+    "Dataset ini dipertahankan sebagai data sumber pengguna dan tidak dianggap sebagai registrasi resmi terkini.",
+    "IRAC/FRAC/HRAC yang tercantum di CSV disimpan sebagai klasifikasi sumber dataset.",
+    "Kecocokan dengan OPT Explorer menggunakan teks sasaran dan/atau pencocokan bahan aktif; ini bukan validasi label.",
+    "Status registrasi, komoditas, dosis, interval, PHI, kompatibilitas, dan legalitas penggunaan harus diverifikasi dari label/registrasi Indonesia terkini."
+  ],
+  "records": [
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Vayego 200 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Tetraniliprol 200 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "28",
+      "FRAC Group": "-",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat Lepidoptera; penggerek",
+      "id": "pestdb-001",
+      "irac_group_source": "28",
+      "frac_group_source": "-",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "28",
+          "group": "28",
+          "name": "Ryanodine receptor modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Movento Energy 240 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Imidakloprid 120 g/L; Spirotetramat 120 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "23 + 4A",
+      "FRAC Group": "-",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; trips;",
+      "id": "pestdb-002",
+      "irac_group_source": "23 + 4A",
+      "frac_group_source": "-",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        },
+        {
+          "committee": "IRAC",
+          "code": "23",
+          "group": "23",
+          "name": "Inhibitors of acetyl-CoA carboxylase"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Decis 25 EC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Deltametrin 25 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "50 ml; 100 ml; 250 ml; 500 ml; 5 L",
+      "IRAC Group": "3A",
+      "FRAC Group": "-",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-003",
+      "irac_group_source": "3A",
+      "frac_group_source": "-",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Buldok 25 EC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Beta siflutrin 25 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "100 ml; 250 ml; 500 ml",
+      "IRAC Group": "3A",
+      "FRAC Group": "-",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Hama serangga sesuai label produk",
+      "id": "pestdb-004",
+      "irac_group_source": "3A",
+      "frac_group_source": "-",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Camalus 360 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Tetraniliprol 120 g/L; Spirotetramat 240 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "100 ml; 250 ml",
+      "IRAC Group": "28 + 23",
+      "FRAC Group": "",
+      "HRAC Group": "",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-005",
+      "irac_group_source": "28 + 23",
+      "frac_group_source": "",
+      "hrac_group_source": "",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "28",
+          "group": "28",
+          "name": "Ryanodine receptor modulators"
+        },
+        {
+          "committee": "IRAC",
+          "code": "23",
+          "group": "23",
+          "name": "Inhibitors of acetyl-CoA carboxylase"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Oberon Speed 240 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Spiromesifen 228,6 g/L; Abamektin 11,4 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "6 + 23",
+      "FRAC Group": "",
+      "HRAC Group": "",
+      "Sasaran Hama/Penyakit/Gulma": "Tungau; Thrips; Kutu",
+      "id": "pestdb-006",
+      "irac_group_source": "6 + 23",
+      "frac_group_source": "",
+      "hrac_group_source": "",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "23",
+          "group": "23",
+          "name": "Inhibitors of acetyl-CoA carboxylase"
+        },
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Confidor 200 SL",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Imidakloprid 200 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "60 ml",
+      "IRAC Group": "4A",
+      "FRAC Group": "",
+      "HRAC Group": "",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; trips; wereng",
+      "id": "pestdb-007",
+      "irac_group_source": "4A",
+      "frac_group_source": "",
+      "hrac_group_source": "",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sivanto Prime 200 SL",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Flupiradifuron 200 g/L ",
+      "Formulasi": "SL",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "4D",
+      "FRAC Group": "",
+      "HRAC Group": "",
+      "Sasaran Hama/Penyakit/Gulma": "",
+      "id": "pestdb-008",
+      "irac_group_source": "4D",
+      "frac_group_source": "",
+      "hrac_group_source": "",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4D",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Trivia 73 WP",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Fluopikolid 6%; Propineb 66,7%",
+      "Formulasi": "WP",
+      "Kemasan": "50 g; 200 g",
+      "IRAC Group": "-",
+      "FRAC Group": "43 + M03",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Phytophthora; Pythium; penyakit oomycete",
+      "id": "pestdb-009",
+      "irac_group_source": "-",
+      "frac_group_source": "43 + M03",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "B5",
+          "group": "B5",
+          "name": "delocalisation of spectrin-like proteins"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Council Complete 300 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Triafamone 100 g/L; Tefuryltrione 200 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "-",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Gulma sesuai label produk",
+      "id": "pestdb-010",
+      "irac_group_source": "-",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Becano 500 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Indaziflam 500 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "250 ml; 500 ml; 1 L",
+      "IRAC Group": "-",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "29",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput; gulma daun lebar",
+      "id": "pestdb-011",
+      "irac_group_source": "-",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "29",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "29",
+          "group": "29",
+          "name": "L"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Adengo 315 SC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Isoksaflutol 225 g/L; Thiencarbazone-methyl 90 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "-",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "27",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput; gulma daun lebar",
+      "id": "pestdb-012",
+      "irac_group_source": "-",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "27",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "27",
+          "group": "27",
+          "name": "F2"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Rumpas 110 EW",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Fenoksaprop-P-etil 110 g/L",
+      "Formulasi": "EW",
+      "Kemasan": "100 ml; 250 ml",
+      "IRAC Group": "-",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "1",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput",
+      "id": "pestdb-013",
+      "irac_group_source": "-",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "1",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "1",
+          "group": "1",
+          "name": "A"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Ricestar 69 EC",
+      "Perusahaan": "Bayer Indonesia",
+      "Bahan Aktif": "Fenoksaprop-P-etil 69 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "100 ml; 250 ml",
+      "IRAC Group": "-",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "1",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput",
+      "id": "pestdb-014",
+      "irac_group_source": "-",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "1",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "1",
+          "group": "1",
+          "name": "A"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Alika 247 ZC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Tiametoksam 141 g/L; Lambda sihalotrin 106 g/L",
+      "Formulasi": "ZC",
+      "Kemasan": "50 ml; 250 ml; 500 ml",
+      "IRAC Group": "4A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; wereng; trips",
+      "id": "pestdb-015",
+      "irac_group_source": "4A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        },
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Plenum 50 WG",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Pimetrozin 50%",
+      "Formulasi": "WG",
+      "Kemasan": "25 g; 100 g",
+      "IRAC Group": "9B",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "wereng; kutu daun; kutu kebul",
+      "id": "pestdb-016",
+      "irac_group_source": "9B",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "9",
+          "group": "9B",
+          "name": "Chordotonal organ TRPV channel modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Virtako 300 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Klorantraniliprol 100 g/L; Tiametoksam 200 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "10 ml; 50 ml; 100 ml",
+      "IRAC Group": "4A + 28",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat Lepidoptera; penggerek batang; ulat grayak",
+      "id": "pestdb-017",
+      "irac_group_source": "4A + 28",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "28",
+          "group": "28",
+          "name": "Ryanodine receptor modulators"
+        },
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Incipio 200 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Isosikloseram 200 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "100 ml",
+      "IRAC Group": "30",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Hama serangga sesuai label produk",
+      "id": "pestdb-018",
+      "irac_group_source": "30",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "30",
+          "group": "30",
+          "name": "GABA-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Vestoria 20 WG",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Triflumezopirim 20%",
+      "Formulasi": "WG",
+      "Kemasan": "12,5 g; 25 g; 50 g",
+      "IRAC Group": "4E",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "wereng",
+      "id": "pestdb-019",
+      "irac_group_source": "4E",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Elestal Neo 30/24 WG",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Spiropidion 30%; Asetamiprid 24%",
+      "Formulasi": "WG",
+      "Kemasan": "30 g; 150 g",
+      "IRAC Group": "4A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; trips; wereng",
+      "id": "pestdb-020",
+      "irac_group_source": "4A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "23",
+          "group": "23",
+          "name": "Inhibitors of acetyl-CoA carboxylase"
+        },
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Simodis 100 DC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Isosikloseram 100 g/L",
+      "Formulasi": "DC",
+      "Kemasan": "100 ml",
+      "IRAC Group": "30",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Hama serangga sesuai label produk",
+      "id": "pestdb-021",
+      "irac_group_source": "30",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "30",
+          "group": "30",
+          "name": "GABA-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Curacron 500 EC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Profenofos 500 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "100 ml; 250 ml; 500 ml",
+      "IRAC Group": "1B",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; trips; kutu; penggerek",
+      "id": "pestdb-022",
+      "irac_group_source": "1B",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1B",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Minecto Xtra 200/200 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Lufenuron 200 g/L; Siantraniliprol 200 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml",
+      "IRAC Group": "28 + 15",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat Lepidoptera; kutu kebul; trips",
+      "id": "pestdb-023",
+      "irac_group_source": "28 + 15",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "15",
+          "group": "15",
+          "name": "Inhibitors of chitin biosynthesis affecting CHS1"
+        },
+        {
+          "committee": "IRAC",
+          "code": "28",
+          "group": "28",
+          "name": "Ryanodine receptor modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Agrimec 18 EC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Abamektin 18 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "250 ml; 500 ml",
+      "IRAC Group": "6",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; tungau; pengorok daun",
+      "id": "pestdb-024",
+      "irac_group_source": "6",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "liriomyza",
+        "liriomyza-chinensis",
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Score 250 EC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Difenokonazol 250 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "80 ml; 250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "3",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "antraknosa; bercak daun; embun tepung",
+      "id": "pestdb-025",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "3",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex",
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Amistar Top 325 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Azoksistrobin 200 g/L; Difenokonazol 125 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml; 250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "3 + 11",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "antraknosa; bercak daun; embun tepung",
+      "id": "pestdb-026",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "3 + 11",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "C3",
+          "group": "C3",
+          "name": "complex III cytochrome bc1 Qo site"
+        }
+      ],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex",
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Revus Opti 440 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Mandipropamid 40 g/L; Klorotalonil 400 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M05 + 40",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; hawar; antraknosa",
+      "id": "pestdb-027",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M05 + 40",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Anvil 50 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Heksakonazol 50 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "250 ml; 1 L",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Penyakit jamur sesuai label produk",
+      "id": "pestdb-028",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Orondis Opti 6/400 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Klorotalonil 400 g/L; Oksatiapiprolin 6 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "500 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M05 + 49",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; hawar; antraknosa",
+      "id": "pestdb-029",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M05 + 49",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Filia 525 SE",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Trisiklazol 400 g/L; Propikonazol 125 g/L",
+      "Formulasi": "SE",
+      "Kemasan": "50 ml; 250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "3",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; karat; embun tepung",
+      "id": "pestdb-030",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "3",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Miravis Duo 75/125 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Pidiflumetofen 75 g/L; Difenokonazol 125 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "100 ml; 250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "3",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "antraknosa; bercak daun; embun tepung",
+      "id": "pestdb-031",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "3",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex",
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Bion M 1/48 MZ",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Asibenzolar-S-metil 1%; Mankozeb 48%",
+      "Formulasi": "WP",
+      "Kemasan": "500 g",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M03",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; hawar",
+      "id": "pestdb-032",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M03",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Ridomil Gold MZ 68 WG",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Mankozeb 64%; Mefenoksam 4%",
+      "Formulasi": "WG",
+      "Kemasan": "100 g; 250 g; 500 g",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M03 + 4",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; hawar",
+      "id": "pestdb-033",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M03 + 4",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "A1",
+          "group": "A1",
+          "name": "RNA polymerase I"
+        }
+      ],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Topmost 30/300 OD",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Sihalofop-butil 300 g/L; Etoksisulfuron 30 g/L",
+      "Formulasi": "OD",
+      "Kemasan": "250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "1 + 2",
+      "Sasaran Hama/Penyakit/Gulma": "teki; gulma berdaun lebar",
+      "id": "pestdb-034",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "1 + 2",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "1",
+          "group": "1",
+          "name": "A"
+        }
+      ],
+      "linked_opt_ids": [
+        "cyperus"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Gramoxone 276 SL",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Parakuat diklorida 276 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "250 ml; 500 ml; 1 L; 5 L; 20 L; 200 L",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "22",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; gulma rumput",
+      "id": "pestdb-035",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "22",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "22",
+          "group": "22",
+          "name": "D"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Calaris 550 SC",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Mesotrion 50 g/L; Atrazin 500 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "250 ml; 500 ml; 1 L",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "5 + 27",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; gulma rumput",
+      "id": "pestdb-036",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "5 + 27",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "27",
+          "group": "27",
+          "name": "F2"
+        },
+        {
+          "committee": "HRAC",
+          "code": "5",
+          "group": "5",
+          "name": "C1,2"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Touchdown Neo 480 SL",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "IPA Glifosat 480 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "1 L; 4 L; 20 L",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "9",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput; gulma daun lebar; teki",
+      "id": "pestdb-037",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "9",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "9",
+          "group": "9",
+          "name": "G"
+        }
+      ],
+      "linked_opt_ids": [
+        "cyperus"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Topshot 60 OD",
+      "Perusahaan": "Syngenta Indonesia",
+      "Bahan Aktif": "Penoksulam 10 g/L; Sihalofop-butil 50 g/L",
+      "Formulasi": "OD",
+      "Kemasan": "250 ml; 500 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "1",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput",
+      "id": "pestdb-038",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "1",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "2",
+          "group": "2",
+          "name": "B"
+        },
+        {
+          "committee": "HRAC",
+          "code": "1",
+          "group": "1",
+          "name": "A"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Imunit 75/75 SC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Alfa-sipermetrin 75 g/L + Teflubenzuron 75 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "100 ml",
+      "IRAC Group": "15 + 3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-039",
+      "irac_group_source": "15 + 3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "15",
+          "group": "15",
+          "name": "Inhibitors of chitin biosynthesis affecting CHS1"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Inveris Gold 50/25 DC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Afidopiropen 50 g/L + Abamektin 25 g/L",
+      "Formulasi": "DC",
+      "Kemasan": "250 ml",
+      "IRAC Group": "6 + 9D",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; tungau; pengorok daun",
+      "id": "pestdb-040",
+      "irac_group_source": "6 + 9D",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "liriomyza",
+        "liriomyza-chinensis",
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Regent 50 SC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Fipronil 50 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "100 ml; 500 ml",
+      "IRAC Group": "2B",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "penggerek; wereng; trips; jangkrik",
+      "id": "pestdb-041",
+      "irac_group_source": "2B",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "2",
+          "group": "2B",
+          "name": "GABA-gated chloride channel blockers"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Fastac 15 EC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Alfa-sipermetrin 15 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "100 ml; 250 ml; 500 ml",
+      "IRAC Group": "3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-042",
+      "irac_group_source": "3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Merivon 250/250 SC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Fluksapiroksad 250 g/L + Piraklostrobin 250 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "100 ml; 250 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "7 + 11",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; embun tepung; penyakit jamur",
+      "id": "pestdb-043",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "7 + 11",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "C2",
+          "group": "C2",
+          "name": "complex II succinate dehydrogenase"
+        },
+        {
+          "committee": "FRAC",
+          "code": "C3",
+          "group": "C3",
+          "name": "complex III cytochrome bc1 Qo site"
+        }
+      ],
+      "linked_opt_ids": [
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Cevya 400 SC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Mefentriflukonazol 400 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "3",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Penyakit jamur sesuai label produk",
+      "id": "pestdb-044",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "3",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Seltima 100 CS",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Piraklostrobin 100 g/L",
+      "Formulasi": "CS",
+      "Kemasan": "250 ml; 500 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "11",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; embun tepung; hawar",
+      "id": "pestdb-045",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "11",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "C3",
+          "group": "C3",
+          "name": "complex III cytochrome bc1 Qo site"
+        }
+      ],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex",
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Prowl 330 EC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Pendimetalin 330 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "3",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput tahunan; gulma daun lebar",
+      "id": "pestdb-046",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "3",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "3",
+          "group": "3",
+          "name": "K1"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Luxinum 750 EC",
+      "Perusahaan": "BASF Indonesia",
+      "Bahan Aktif": "Simetilin 750 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "15",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput; gulma daun lebar",
+      "id": "pestdb-047",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "15",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "30",
+          "group": "30",
+          "name": "Q"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Loyant 25 EC",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Florpyrauxifen-benzyl (Rinskor)",
+      "Formulasi": "EC",
+      "Kemasan": "500 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "4",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; teki",
+      "id": "pestdb-048",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "4",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "cyperus"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Novlect 120 EC",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Florpyrauxifen-benzyl (Rinskor)",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "4",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; teki",
+      "id": "pestdb-049",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "4",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "cyperus"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Novixid 32.5 OD",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Florpyrauxifen-benzyl (Rinskor) + bahan aktif pendamping",
+      "Formulasi": "OD",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "4",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; teki",
+      "id": "pestdb-050",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "4",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "cyperus"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Delegate 25 WG",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Spinetoram 25%",
+      "Formulasi": "WG",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "5",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; ulat",
+      "id": "pestdb-051",
+      "irac_group_source": "5",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "5",
+          "group": "5",
+          "name": "nAChR allosteric modulators – Site I"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Pexalon 106 SC",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Triflumezopyrim 106 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Hama serangga sesuai label produk",
+      "id": "pestdb-052",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Acapela System 200/80 SC",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Pikoksistrobin 200 g/L + Fluksapiroksad 80 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "7",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; embun tepung; penyakit jamur",
+      "id": "pestdb-053",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "7",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "C2",
+          "group": "C2",
+          "name": "complex II succinate dehydrogenase"
+        }
+      ],
+      "linked_opt_ids": [
+        "powdery-mildew"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Zorvec Encantia 300/30 SE",
+      "Perusahaan": "Corteva Agriscience Manufacturing Indonesia",
+      "Bahan Aktif": "Oxathiapiprolin 30 g/L + Mandipropamid 300 g/L",
+      "Formulasi": "SE",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "40",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Phytophthora; Pythium",
+      "id": "pestdb-054",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "40",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Ammate 150 EC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Indoksakarb 150 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "22A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat grayak; ulat buah; ulat Lepidoptera",
+      "id": "pestdb-055",
+      "irac_group_source": "22A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "22",
+          "group": "22A",
+          "name": "Voltage-dependent sodium channel blockers"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura",
+        "helicoverpa-armigera"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Elevest 106/159 SC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Flupyradifurone 106 g/L + Bifenthrin 159 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "4D + 3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; wereng; trips",
+      "id": "pestdb-056",
+      "irac_group_source": "4D + 3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4D",
+          "name": "nAChR competitive modulators"
+        },
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Marshal 200 EC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Karbosulfan 200 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "1A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "penggerek; ulat; wereng",
+      "id": "pestdb-057",
+      "irac_group_source": "1A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1A",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Prevathon 50 SC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Klorantraniliprol 50 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "50 ml; 100 ml; 250 ml",
+      "IRAC Group": "28",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat Lepidoptera; penggerek batang; ulat grayak",
+      "id": "pestdb-058",
+      "irac_group_source": "28",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "28",
+          "group": "28",
+          "name": "Ryanodine receptor modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Quintect 105 SC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Fluopikolid 52,5 g/L + Propamokarb HCl 52,5 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "43 + 28",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Phytophthora; Pythium; penyakit oomycete",
+      "id": "pestdb-059",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "43 + 28",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "B5",
+          "group": "B5",
+          "name": "delocalisation of spectrin-like proteins"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Flint Pro 64.8 WG",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Trifloxistrobin 50% + Fluopikolid 14,8%",
+      "Formulasi": "WG",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "43 + 11",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Phytophthora; Pythium; penyakit oomycete",
+      "id": "pestdb-060",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "43 + 11",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "C3",
+          "group": "C3",
+          "name": "complex III cytochrome bc1 Qo site"
+        },
+        {
+          "committee": "FRAC",
+          "code": "B5",
+          "group": "B5",
+          "name": "delocalisation of spectrin-like proteins"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Infinito 687.5 SC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Fluopikolid 62,5 g/L + Propamokarb HCl 625 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "43 + 28",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Phytophthora; Pythium; penyakit oomycete",
+      "id": "pestdb-061",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "43 + 28",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "B5",
+          "group": "B5",
+          "name": "delocalisation of spectrin-like proteins"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Affinity 40 WG",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Metsulfuron-metil + bahan aktif pendamping",
+      "Formulasi": "WG",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "2",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; beberapa gulma berdaun sempit",
+      "id": "pestdb-062",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "2",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "2",
+          "group": "2",
+          "name": "B"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Ally 20 WG",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Metsulfuron-metil 20%",
+      "Formulasi": "WG",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "2",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; beberapa gulma berdaun sempit",
+      "id": "pestdb-063",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "2",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "2",
+          "group": "2",
+          "name": "B"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Boral 480 SC",
+      "Perusahaan": "FMC Indonesia",
+      "Bahan Aktif": "Sulfentrazone 480 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Gulma sesuai label produk",
+      "id": "pestdb-064",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "14",
+          "group": "14",
+          "name": "E"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Metindo 40 SP",
+      "Perusahaan": "PT Mitra Kreasidharma (MKD)",
+      "Bahan Aktif": "Metomil 40%",
+      "Formulasi": "SP",
+      "Kemasan": "100 g",
+      "IRAC Group": "1A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu",
+      "id": "pestdb-065",
+      "irac_group_source": "1A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1A",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Bomba 25 WP",
+      "Perusahaan": "PT Mitra Kreasidharma (MKD)",
+      "Bahan Aktif": "Metomil 25%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "1A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu",
+      "id": "pestdb-066",
+      "irac_group_source": "1A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1A",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Bomber 20 EC",
+      "Perusahaan": "PT Mitra Kreasidharma (MKD)",
+      "Bahan Aktif": "Permetrin 20 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Hama serangga sesuai label produk",
+      "id": "pestdb-067",
+      "irac_group_source": "3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Brasso 250 EC",
+      "Perusahaan": "PT Mitra Kreasidharma (MKD)",
+      "Bahan Aktif": "Sipermetrin 250 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-068",
+      "irac_group_source": "3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Delta 25 EC",
+      "Perusahaan": "PT Mitra Kreasidharma (MKD)",
+      "Bahan Aktif": "Deltametrin 25 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-069",
+      "irac_group_source": "3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Metsulindo 20 WP",
+      "Perusahaan": "PT Mitra Kreasidharma (MKD)",
+      "Bahan Aktif": "Metil metsulfuron 20%",
+      "Formulasi": "WP",
+      "Kemasan": "250 g",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "2",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; beberapa gulma berdaun sempit",
+      "id": "pestdb-070",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "2",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "2",
+          "group": "2",
+          "name": "B"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Brofreya 53 SC",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Broflanilida 53%",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "30",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat grayak; ulat Lepidoptera",
+      "id": "pestdb-071",
+      "irac_group_source": "30",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "30",
+          "group": "30",
+          "name": "GABA-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Mospilan 30 EC",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Asetamiprid 30 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "4A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; trips; wereng",
+      "id": "pestdb-072",
+      "irac_group_source": "4A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Abuki 50 SL",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Imidakloprid 50 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "500 ml",
+      "IRAC Group": "4A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; wereng; trips",
+      "id": "pestdb-073",
+      "irac_group_source": "4A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Spontan 400 SL",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Dimehipo 400 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "14",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "penggerek; wereng; ulat",
+      "id": "pestdb-074",
+      "irac_group_source": "14",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Panzer 290 SL",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Bisultap",
+      "Formulasi": "SL",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "14",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "penggerek; ulat",
+      "id": "pestdb-075",
+      "irac_group_source": "14",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "14",
+          "group": "14",
+          "name": "nAChR channel blockers"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Plush 60 WP",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Imidakloprid 2% + Monosultap 58%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "4A + 14",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; wereng; trips",
+      "id": "pestdb-076",
+      "irac_group_source": "4A + 14",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sevin 85 SP",
+      "Perusahaan": "Agricon",
+      "Bahan Aktif": "Karbaril 85%",
+      "Formulasi": "SP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "1A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; kumbang",
+      "id": "pestdb-077",
+      "irac_group_source": "1A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1A",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Demolish 18 EC",
+      "Perusahaan": "PT Dharma Guna Wibawa (DGW)",
+      "Bahan Aktif": "Abamektin 18 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "50 ml; 100 ml; 200 ml",
+      "IRAC Group": "6",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; tungau; pengorok daun",
+      "id": "pestdb-078",
+      "irac_group_source": "6",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "liriomyza",
+        "liriomyza-chinensis",
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Dense 520 SC",
+      "Perusahaan": "PT Dharma Guna Wibawa (DGW)",
+      "Bahan Aktif": "Metil tiofanat 520 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "200 ml; 500 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "1",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; busuk jamur",
+      "id": "pestdb-079",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "1",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "B1",
+          "group": "B1",
+          "name": "tubulin polymerization"
+        }
+      ],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Dense 70 WP",
+      "Perusahaan": "PT Dharma Guna Wibawa (DGW)",
+      "Bahan Aktif": "Metil tiofanat 70%",
+      "Formulasi": "WP",
+      "Kemasan": "200 g; 500 g",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "1",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; busuk jamur",
+      "id": "pestdb-080",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "1",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "B1",
+          "group": "B1",
+          "name": "tubulin polymerization"
+        }
+      ],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Detonator 20 WP",
+      "Perusahaan": "PT Dharma Guna Wibawa (DGW)",
+      "Bahan Aktif": "Buprofezin 10% + Etofenproks 10%",
+      "Formulasi": "WP",
+      "Kemasan": "30 g",
+      "IRAC Group": "16 + 3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "wereng; kutu kebul; kutu sisik",
+      "id": "pestdb-081",
+      "irac_group_source": "16 + 3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "16",
+          "group": "16",
+          "name": "Inhibitors of chitin biosynthesis, type 1"
+        },
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Daimex 80 WP",
+      "Perusahaan": "PT Dharma Guna Wibawa (DGW)",
+      "Bahan Aktif": "Diuron 80 g/L",
+      "Formulasi": "WP",
+      "Kemasan": "250 g",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "5",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput; gulma daun lebar",
+      "id": "pestdb-082",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "5",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "5",
+          "group": "5",
+          "name": "C1,2"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sumo 50 EC",
+      "Perusahaan": "PT Belirang Kalisari / BelKa",
+      "Bahan Aktif": "Beta-siflutrin 50 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "80 ml; 250 ml; 500 ml",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; kutu; kumbang",
+      "id": "pestdb-083",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Klocyper 500/50 EC",
+      "Perusahaan": "PT Belirang Kalisari / BelKa",
+      "Bahan Aktif": "Klorpirifos 500 g/L + Sipermetrin 50 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "3A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu; kumbang",
+      "id": "pestdb-084",
+      "irac_group_source": "3A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1B",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        },
+        {
+          "committee": "IRAC",
+          "code": "3",
+          "group": "3A",
+          "name": "Sodium channel modulators"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Srikandi 160/20 OD",
+      "Perusahaan": "PT Belirang Kalisari / BelKa",
+      "Bahan Aktif": "Indoksakarb 160 g/L + Emamektin benzoat 20 g/L",
+      "Formulasi": "OD",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "6 + 22A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; ulat grayak; ulat buah",
+      "id": "pestdb-085",
+      "irac_group_source": "6 + 22A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "22",
+          "group": "22A",
+          "name": "Voltage-dependent sodium channel blockers"
+        },
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura",
+        "helicoverpa-armigera"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Arjuna 200 EC",
+      "Perusahaan": "PT Belirang Kalisari / BelKa",
+      "Bahan Aktif": "Klorfenapir 200 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "13",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; ulat; tungau",
+      "id": "pestdb-086",
+      "irac_group_source": "13",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "13",
+          "group": "13",
+          "name": "Uncouplers of oxidative phosphorylation via disruption of proton gradient"
+        }
+      ],
+      "linked_opt_ids": [
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sagri Beat 7/30 WP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Emamektin benzoat 7% + Klorbenzuron 30%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "6",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; ulat grayak; ulat buah",
+      "id": "pestdb-087",
+      "irac_group_source": "6",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura",
+        "helicoverpa-armigera"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sagri Meth 77 SP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Metomil 77%",
+      "Formulasi": "SP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "1A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu",
+      "id": "pestdb-088",
+      "irac_group_source": "1A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1A",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sagri Bezz 30 EC",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Asetamiprid 30 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "4A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "kutu daun; kutu kebul; trips; wereng",
+      "id": "pestdb-089",
+      "irac_group_source": "4A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "4",
+          "group": "4A",
+          "name": "nAChR competitive modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "bemisia-tabaci",
+        "bemisia",
+        "bemisia-vaporariorum",
+        "aphid"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Sagri Clear 30/30 WP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Bahan aktif kombinasi 30/30%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Hama serangga sesuai label produk",
+      "id": "pestdb-090",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Sagri Bat 70 WP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Bahan aktif formulasi 70%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Penyakit jamur sesuai label produk",
+      "id": "pestdb-091",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Sagri Manzim 65/20 WP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Karbendazim + Mankozeb",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M03 + 1",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; hawar",
+      "id": "pestdb-092",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M03 + 1",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "FRAC",
+          "code": "B1",
+          "group": "B1",
+          "name": "tubulin polymerization"
+        }
+      ],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Sagri Zeb 85 WP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Mankozeb 85%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M03",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; hawar",
+      "id": "pestdb-093",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M03",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Sagri Nil 77 WP",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Bahan aktif formulasi 77%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Penyakit jamur sesuai label produk",
+      "id": "pestdb-094",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Sagri Storm 100/400/50 SC",
+      "Perusahaan": "PT Satya Agro Indonesia (SAGRI)",
+      "Bahan Aktif": "Bahan aktif kombinasi 100/400/50 g/L",
+      "Formulasi": "SC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "Gulma sesuai label produk",
+      "id": "pestdb-095",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Prima-Cel 18 EC",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Abamektin 18 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "6",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; tungau; pengorok daun",
+      "id": "pestdb-096",
+      "irac_group_source": "6",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "liriomyza",
+        "liriomyza-chinensis",
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Prima-Net 40 WP",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Metomil 40%",
+      "Formulasi": "WP",
+      "Kemasan": "100 g; 200 g; 400 g",
+      "IRAC Group": "1A",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; thrips; kutu",
+      "id": "pestdb-097",
+      "irac_group_source": "1A",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "1",
+          "group": "1A",
+          "name": "Acetylcholinesterase (AChE) inhibitors"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Otello 200 EC",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Klorfenapir 200 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "13",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "thrips; ulat; tungau",
+      "id": "pestdb-098",
+      "irac_group_source": "13",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "13",
+          "group": "13",
+          "name": "Uncouplers of oxidative phosphorylation via disruption of proton gradient"
+        }
+      ],
+      "linked_opt_ids": [
+        "tetranychus"
+      ]
+    },
+    {
+      "Kategori": "Insektisida",
+      "Nama Merk": "Prima-FAW 50 EC",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Emamektin benzoat 50 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "6",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "ulat; ulat grayak; ulat buah",
+      "id": "pestdb-099",
+      "irac_group_source": "6",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [
+        {
+          "committee": "IRAC",
+          "code": "6",
+          "group": "6",
+          "name": "Glutamate-gated chloride channel allosteric modulators"
+        }
+      ],
+      "linked_opt_ids": [
+        "spodoptera-frugiperda",
+        "spodoptera-litura",
+        "helicoverpa-armigera"
+      ]
+    },
+    {
+      "Kategori": "Fungisida",
+      "Nama Merk": "Omni-Col 70 WP",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Propineb 70%",
+      "Formulasi": "WP",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "M03",
+      "HRAC Group": "Tidak tersedia / perlu verifikasi",
+      "Sasaran Hama/Penyakit/Gulma": "bercak daun; antraknosa; hawar",
+      "id": "pestdb-100",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "M03",
+      "hrac_group_source": "Tidak tersedia / perlu verifikasi",
+      "ai_master_matches": [],
+      "linked_opt_ids": [
+        "colletotrichum",
+        "anthracnose-onion",
+        "chili-anthracnose-complex"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Prima-Furon 20 WG",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Metil metsulfuron 20%",
+      "Formulasi": "WG",
+      "Kemasan": "5 g; 250 g; 500 g",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "2",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; beberapa gulma berdaun sempit",
+      "id": "pestdb-101",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "2",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "2",
+          "group": "2",
+          "name": "B"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Prima-Lima 555 SL",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "IPA glifosat 555 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "500 ml; 1 L; 4 L; 5 L; 20 L",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "9",
+      "Sasaran Hama/Penyakit/Gulma": "gulma rumput; gulma daun lebar; teki",
+      "id": "pestdb-102",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "9",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "9",
+          "group": "9",
+          "name": "G"
+        }
+      ],
+      "linked_opt_ids": [
+        "cyperus"
+      ]
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Prima-Kuat 276 SL",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Parakuat diklorida 276 g/L",
+      "Formulasi": "SL",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "22",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar; gulma rumput",
+      "id": "pestdb-103",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "22",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "22",
+          "group": "22",
+          "name": "D"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Prima-Guard 480 EC",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Triklopir BEE 480 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "4",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar berkayu; gulma berdaun lebar",
+      "id": "pestdb-104",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "4",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "4",
+          "group": "4",
+          "name": "O"
+        }
+      ],
+      "linked_opt_ids": []
+    },
+    {
+      "Kategori": "Herbisida",
+      "Nama Merk": "Prima-Care 480 EC",
+      "Perusahaan": "PT Prima Karya Berjaya",
+      "Bahan Aktif": "Fluroksipir MHE 480 g/L",
+      "Formulasi": "EC",
+      "Kemasan": "Tidak ditemukan pada sumber yang diverifikasi",
+      "IRAC Group": "Tidak tersedia / perlu verifikasi",
+      "FRAC Group": "Tidak tersedia / perlu verifikasi",
+      "HRAC Group": "4",
+      "Sasaran Hama/Penyakit/Gulma": "gulma daun lebar",
+      "id": "pestdb-105",
+      "irac_group_source": "Tidak tersedia / perlu verifikasi",
+      "frac_group_source": "Tidak tersedia / perlu verifikasi",
+      "hrac_group_source": "4",
+      "ai_master_matches": [
+        {
+          "committee": "HRAC",
+          "code": "4",
+          "group": "4",
+          "name": "O"
+        }
+      ],
+      "linked_opt_ids": []
+    }
+  ]
+}

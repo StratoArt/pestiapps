@@ -240,6 +240,33 @@
       "scope": "OPT dan strategi GPP pada tomat, cabai/paprika dan terung di lapangan terbuka",
       "year": "2004",
       "pages": "1-14"
+    },
+    {
+      "id": "pesticide-database-indonesia-user-csv",
+      "title": "Database Pestisida Indonesia — Produk, MoA & Sasaran",
+      "publisher": "Dataset pengguna / hasil scraping",
+      "type": "CSV sumber pengguna",
+      "scope": "Nama produk, perusahaan, bahan aktif, formulasi, kemasan, IRAC/FRAC/HRAC dan sasaran hama/penyakit/gulma",
+      "year": "2026",
+      "records": 105
+    },
+    {
+      "id": "irac-11-5-master",
+      "title": "IRAC MoA Classification v11.5 — February 2026",
+      "url": "https://irac-online.org/documents/moa-classification/",
+      "type": "Official master classification"
+    },
+    {
+      "id": "frac-code-list-2026",
+      "title": "FRAC Code List 2026",
+      "url": "https://www.frac.info/publications",
+      "type": "Official master classification"
+    },
+    {
+      "id": "hrac-2026-master",
+      "title": "HRAC Global Herbicide MoA Classification 2026",
+      "url": "https://hracglobal.com/tools/2026-hrac-global-herbicide-moa-classification",
+      "type": "Official master classification"
     }
   ]
 }

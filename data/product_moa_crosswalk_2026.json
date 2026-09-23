@@ -1,0 +1,1076 @@
+{
+  "version": "0.16.0",
+  "records": [
+    {
+      "product_id": "pestdb-001",
+      "brand": "Vayego 200 SC",
+      "active_ingredients": [
+        "tetraniliprole"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "28",
+          "subgroup": "28",
+          "ai": "Tetraniliprole"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-002",
+      "brand": "Movento Energy 240 SC",
+      "active_ingredients": [
+        "imidacloprid",
+        "spirotetramat"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "4",
+          "subgroup": "4A",
+          "ai": "Imidacloprid"
+        },
+        {
+          "committee": "IRAC",
+          "group": "23",
+          "subgroup": "23",
+          "ai": "Spirotetramat"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-003",
+      "brand": "Decis 25 EC",
+      "active_ingredients": [
+        "deltamethrin"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "3",
+          "subgroup": "3A",
+          "ai": "Deltamethrin"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-004",
+      "brand": "Buldok 25 EC",
+      "active_ingredients": [
+        "beta-cyfluthrin"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "3",
+          "subgroup": "3A",
+          "ai": "beta-Cyfluthrin"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-005",
+      "brand": "Camalus 360 SC",
+      "active_ingredients": [
+        "tetraniliprole",
+        "spirotetramat"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "23",
+          "subgroup": "23",
+          "ai": "Spirotetramat"
+        },
+        {
+          "committee": "IRAC",
+          "group": "28",
+          "subgroup": "28",
+          "ai": "Tetraniliprole"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-006",
+      "brand": "Oberon Speed 240 SC",
+      "active_ingredients": [
+        "spiromesifen",
+        "abamektin"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "23",
+          "subgroup": "23",
+          "ai": "Spiromesifen"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-007",
+      "brand": "Confidor 200 SL",
+      "active_ingredients": [
+        "imidacloprid"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "4",
+          "subgroup": "4A",
+          "ai": "Imidacloprid"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-008",
+      "brand": "Sivanto Prime 200 SL",
+      "active_ingredients": [
+        "flupiradifuron"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-009",
+      "brand": "Trivia 73 WP",
+      "active_ingredients": [
+        "fluopikolid",
+        "propineb"
+      ],
+      "classifications": [
+        {
+          "committee": "FRAC",
+          "group": "M03",
+          "subgroup": "dithiocarbamates and relatives (electrophiles)",
+          "ai": "propineb"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-010",
+      "brand": "Council Complete 300 SC",
+      "active_ingredients": [
+        "triafamone",
+        "tefuryltrione"
+      ],
+      "classifications": [
+        {
+          "committee": "HRAC",
+          "group": "2",
+          "subgroup": "B",
+          "ai": "Triafamone"
+        },
+        {
+          "committee": "HRAC",
+          "group": "27",
+          "subgroup": "F2",
+          "ai": "Tefuryltrione"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-011",
+      "brand": "Becano 500 SC",
+      "active_ingredients": [
+        "indaziflam"
+      ],
+      "classifications": [
+        {
+          "committee": "HRAC",
+          "group": "29",
+          "subgroup": "L",
+          "ai": "Indaziflam"
+        },
+        {
+          "committee": "HRAC",
+          "group": "29",
+          "subgroup": "L",
+          "ai": "indaziflam"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-012",
+      "brand": "Adengo 315 SC",
+      "active_ingredients": [
+        "isoksaflutol",
+        "thiencarbazone-methyl"
+      ],
+      "classifications": [
+        {
+          "committee": "HRAC",
+          "group": "2",
+          "subgroup": "B",
+          "ai": "Thiencarbazone-methyl"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-013",
+      "brand": "Rumpas 110 EW",
+      "active_ingredients": [
+        "fenoksaprop-p-etil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-014",
+      "brand": "Ricestar 69 EC",
+      "active_ingredients": [
+        "fenoksaprop-p-etil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-015",
+      "brand": "Alika 247 ZC",
+      "active_ingredients": [
+        "tiametoksam",
+        "lambda sihalotrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-016",
+      "brand": "Plenum 50 WG",
+      "active_ingredients": [
+        "pimetrozin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-017",
+      "brand": "Virtako 300 SC",
+      "active_ingredients": [
+        "chlorantraniliprole",
+        "tiametoksam"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "28",
+          "subgroup": "28",
+          "ai": "Chlorantraniliprole"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-018",
+      "brand": "Incipio 200 SC",
+      "active_ingredients": [
+        "isosikloseram"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-019",
+      "brand": "Vestoria 20 WG",
+      "active_ingredients": [
+        "triflumezopirim"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-020",
+      "brand": "Elestal Neo 30/24 WG",
+      "active_ingredients": [
+        "spiropidion",
+        "asetamiprid"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "23",
+          "subgroup": "23",
+          "ai": "Spiropidion"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-021",
+      "brand": "Simodis 100 DC",
+      "active_ingredients": [
+        "isosikloseram"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-022",
+      "brand": "Curacron 500 EC",
+      "active_ingredients": [
+        "profenofos"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "1",
+          "subgroup": "1B",
+          "ai": "Profenofos"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-023",
+      "brand": "Minecto Xtra 200/200 SC",
+      "active_ingredients": [
+        "lufenuron",
+        "siantraniliprol"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "15",
+          "subgroup": "15",
+          "ai": "Lufenuron"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-024",
+      "brand": "Agrimec 18 EC",
+      "active_ingredients": [
+        "abamektin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-025",
+      "brand": "Score 250 EC",
+      "active_ingredients": [
+        "difenokonazol"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-026",
+      "brand": "Amistar Top 325 SC",
+      "active_ingredients": [
+        "azoksistrobin",
+        "difenokonazol"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-027",
+      "brand": "Revus Opti 440 SC",
+      "active_ingredients": [
+        "mandipropamid",
+        "klorotalonil"
+      ],
+      "classifications": [
+        {
+          "committee": "FRAC",
+          "group": "H5",
+          "subgroup": "cinnamic acid amides; valinamide carbamates; mandelic acid amides",
+          "ai": "mandipropamid"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-028",
+      "brand": "Anvil 50 SC",
+      "active_ingredients": [
+        "heksakonazol"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-029",
+      "brand": "Orondis Opti 6/400 SC",
+      "active_ingredients": [
+        "klorotalonil",
+        "oksatiapiprolin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-030",
+      "brand": "Filia 525 SE",
+      "active_ingredients": [
+        "trisiklazol",
+        "propikonazol"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-031",
+      "brand": "Miravis Duo 75/125 SC",
+      "active_ingredients": [
+        "pidiflumetofen",
+        "difenokonazol"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-032",
+      "brand": "Bion M 1/48 MZ",
+      "active_ingredients": [
+        "asibenzolar-s-metil",
+        "mankozeb"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-033",
+      "brand": "Ridomil Gold MZ 68 WG",
+      "active_ingredients": [
+        "mankozeb",
+        "mefenoksam"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-034",
+      "brand": "Topmost 30/300 OD",
+      "active_ingredients": [
+        "sihalofop-butil",
+        "etoksisulfuron"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-035",
+      "brand": "Gramoxone 276 SL",
+      "active_ingredients": [
+        "parakuat diklorida"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-036",
+      "brand": "Calaris 550 SC",
+      "active_ingredients": [
+        "mesotrion",
+        "atrazin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-037",
+      "brand": "Touchdown Neo 480 SL",
+      "active_ingredients": [
+        "ipa glifosat"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-038",
+      "brand": "Topshot 60 OD",
+      "active_ingredients": [
+        "penoksulam",
+        "sihalofop-butil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-039",
+      "brand": "Imunit 75/75 SC",
+      "active_ingredients": [
+        "alfa-sipermetrin + teflubenzuron"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-040",
+      "brand": "Inveris Gold 50/25 DC",
+      "active_ingredients": [
+        "afidopiropen + abamektin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-041",
+      "brand": "Regent 50 SC",
+      "active_ingredients": [
+        "fipronil"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "2",
+          "subgroup": "2B",
+          "ai": "Fipronil"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-042",
+      "brand": "Fastac 15 EC",
+      "active_ingredients": [
+        "alfa-sipermetrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-043",
+      "brand": "Merivon 250/250 SC",
+      "active_ingredients": [
+        "fluksapiroksad + piraklostrobin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-044",
+      "brand": "Cevya 400 SC",
+      "active_ingredients": [
+        "mefentriflukonazol"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-045",
+      "brand": "Seltima 100 CS",
+      "active_ingredients": [
+        "piraklostrobin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-046",
+      "brand": "Prowl 330 EC",
+      "active_ingredients": [
+        "pendimetalin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-047",
+      "brand": "Luxinum 750 EC",
+      "active_ingredients": [
+        "simetilin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-048",
+      "brand": "Loyant 25 EC",
+      "active_ingredients": [
+        "florpyrauxifen-benzyl"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-049",
+      "brand": "Novlect 120 EC",
+      "active_ingredients": [
+        "florpyrauxifen-benzyl"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-050",
+      "brand": "Novixid 32.5 OD",
+      "active_ingredients": [
+        "florpyrauxifen-benzyl + bahan aktif pendamping"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-051",
+      "brand": "Delegate 25 WG",
+      "active_ingredients": [
+        "spinetoram"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "5",
+          "subgroup": "5",
+          "ai": "Spinetoram"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-052",
+      "brand": "Pexalon 106 SC",
+      "active_ingredients": [
+        "triflumezopyrim"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "4",
+          "subgroup": "4E",
+          "ai": "Triflumezopyrim"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-053",
+      "brand": "Acapela System 200/80 SC",
+      "active_ingredients": [
+        "pikoksistrobin + fluksapiroksad"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-054",
+      "brand": "Zorvec Encantia 300/30 SE",
+      "active_ingredients": [
+        "oxathiapiprolin + mandipropamid"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-055",
+      "brand": "Ammate 150 EC",
+      "active_ingredients": [
+        "indoksakarb"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-056",
+      "brand": "Elevest 106/159 SC",
+      "active_ingredients": [
+        "flupyradifurone + bifenthrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-057",
+      "brand": "Marshal 200 EC",
+      "active_ingredients": [
+        "karbosulfan"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-058",
+      "brand": "Prevathon 50 SC",
+      "active_ingredients": [
+        "chlorantraniliprole"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "28",
+          "subgroup": "28",
+          "ai": "Chlorantraniliprole"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-059",
+      "brand": "Quintect 105 SC",
+      "active_ingredients": [
+        "fluopikolid + propamokarb hcl"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-060",
+      "brand": "Flint Pro 64.8 WG",
+      "active_ingredients": [
+        "trifloxistrobin + fluopikolid"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-061",
+      "brand": "Infinito 687.5 SC",
+      "active_ingredients": [
+        "fluopikolid + propamokarb hcl"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-062",
+      "brand": "Affinity 40 WG",
+      "active_ingredients": [
+        "metsulfuron-metil + bahan aktif pendamping"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-063",
+      "brand": "Ally 20 WG",
+      "active_ingredients": [
+        "metsulfuron-metil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-064",
+      "brand": "Boral 480 SC",
+      "active_ingredients": [
+        "sulfentrazone"
+      ],
+      "classifications": [
+        {
+          "committee": "HRAC",
+          "group": "14",
+          "subgroup": "E",
+          "ai": "Sulfentrazone"
+        },
+        {
+          "committee": "HRAC",
+          "group": "14",
+          "subgroup": "E",
+          "ai": "sulfentrazone"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-065",
+      "brand": "Metindo 40 SP",
+      "active_ingredients": [
+        "metomil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-066",
+      "brand": "Bomba 25 WP",
+      "active_ingredients": [
+        "metomil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-067",
+      "brand": "Bomber 20 EC",
+      "active_ingredients": [
+        "permetrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-068",
+      "brand": "Brasso 250 EC",
+      "active_ingredients": [
+        "sipermetrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-069",
+      "brand": "Delta 25 EC",
+      "active_ingredients": [
+        "deltamethrin"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "3",
+          "subgroup": "3A",
+          "ai": "Deltamethrin"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-070",
+      "brand": "Metsulindo 20 WP",
+      "active_ingredients": [
+        "metil metsulfuron"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-071",
+      "brand": "Brofreya 53 SC",
+      "active_ingredients": [
+        "broflanilida"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-072",
+      "brand": "Mospilan 30 EC",
+      "active_ingredients": [
+        "asetamiprid"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-073",
+      "brand": "Abuki 50 SL",
+      "active_ingredients": [
+        "imidacloprid"
+      ],
+      "classifications": [
+        {
+          "committee": "IRAC",
+          "group": "4",
+          "subgroup": "4A",
+          "ai": "Imidacloprid"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-074",
+      "brand": "Spontan 400 SL",
+      "active_ingredients": [
+        "dimehipo"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-075",
+      "brand": "Panzer 290 SL",
+      "active_ingredients": [
+        "bisultap"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-076",
+      "brand": "Plush 60 WP",
+      "active_ingredients": [
+        "imidakloprid + monosultap"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-077",
+      "brand": "Sevin 85 SP",
+      "active_ingredients": [
+        "karbaril"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-078",
+      "brand": "Demolish 18 EC",
+      "active_ingredients": [
+        "abamektin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-079",
+      "brand": "Dense 520 SC",
+      "active_ingredients": [
+        "metil tiofanat"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-080",
+      "brand": "Dense 70 WP",
+      "active_ingredients": [
+        "metil tiofanat"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-081",
+      "brand": "Detonator 20 WP",
+      "active_ingredients": [
+        "buprofezin + etofenproks"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-082",
+      "brand": "Daimex 80 WP",
+      "active_ingredients": [
+        "diuron"
+      ],
+      "classifications": [
+        {
+          "committee": "HRAC",
+          "group": "5",
+          "subgroup": "C1,2",
+          "ai": "diuron"
+        },
+        {
+          "committee": "HRAC",
+          "group": "5",
+          "subgroup": "C1,2",
+          "ai": "Diuron"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-083",
+      "brand": "Sumo 50 EC",
+      "active_ingredients": [
+        "beta-siflutrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-084",
+      "brand": "Klocyper 500/50 EC",
+      "active_ingredients": [
+        "klorpirifos + sipermetrin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-085",
+      "brand": "Srikandi 160/20 OD",
+      "active_ingredients": [
+        "indoksakarb + emamektin benzoat"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-086",
+      "brand": "Arjuna 200 EC",
+      "active_ingredients": [
+        "klorfenapir"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-087",
+      "brand": "Sagri Beat 7/30 WP",
+      "active_ingredients": [
+        "emamektin benzoat + klorbenzuron"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-088",
+      "brand": "Sagri Meth 77 SP",
+      "active_ingredients": [
+        "metomil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-089",
+      "brand": "Sagri Bezz 30 EC",
+      "active_ingredients": [
+        "asetamiprid"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-090",
+      "brand": "Sagri Clear 30/30 WP",
+      "active_ingredients": [
+        "bahan aktif kombinasi 30/30%"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-091",
+      "brand": "Sagri Bat 70 WP",
+      "active_ingredients": [
+        "bahan aktif formulasi"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-092",
+      "brand": "Sagri Manzim 65/20 WP",
+      "active_ingredients": [
+        "karbendazim + mankozeb"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-093",
+      "brand": "Sagri Zeb 85 WP",
+      "active_ingredients": [
+        "mankozeb"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-094",
+      "brand": "Sagri Nil 77 WP",
+      "active_ingredients": [
+        "bahan aktif formulasi"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-095",
+      "brand": "Sagri Storm 100/400/50 SC",
+      "active_ingredients": [
+        "bahan aktif kombinasi 100/400/50"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-096",
+      "brand": "Prima-Cel 18 EC",
+      "active_ingredients": [
+        "abamektin"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-097",
+      "brand": "Prima-Net 40 WP",
+      "active_ingredients": [
+        "metomil"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-098",
+      "brand": "Otello 200 EC",
+      "active_ingredients": [
+        "klorfenapir"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-099",
+      "brand": "Prima-FAW 50 EC",
+      "active_ingredients": [
+        "emamektin benzoat"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-100",
+      "brand": "Omni-Col 70 WP",
+      "active_ingredients": [
+        "propineb"
+      ],
+      "classifications": [
+        {
+          "committee": "FRAC",
+          "group": "M03",
+          "subgroup": "dithiocarbamates and relatives (electrophiles)",
+          "ai": "propineb"
+        }
+      ]
+    },
+    {
+      "product_id": "pestdb-101",
+      "brand": "Prima-Furon 20 WG",
+      "active_ingredients": [
+        "metil metsulfuron"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-102",
+      "brand": "Prima-Lima 555 SL",
+      "active_ingredients": [
+        "ipa glifosat"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-103",
+      "brand": "Prima-Kuat 276 SL",
+      "active_ingredients": [
+        "parakuat diklorida"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-104",
+      "brand": "Prima-Guard 480 EC",
+      "active_ingredients": [
+        "triklopir bee"
+      ],
+      "classifications": []
+    },
+    {
+      "product_id": "pestdb-105",
+      "brand": "Prima-Care 480 EC",
+      "active_ingredients": [
+        "fluroksipir mhe"
+      ],
+      "classifications": []
+    }
+  ]
+}
