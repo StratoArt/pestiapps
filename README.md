@@ -1,4 +1,4 @@
-# OPT Explorer v0.15.0
+# Crop Expert v0.23.0
 
 **Al-Kitab untuk Sales, Formulator dan Petani Mbois**
 
@@ -70,7 +70,7 @@ Added a separate Emerging/Pipeline layer for novel actives that may be absent fr
 ## v0.15.0 — Database Pestisida Indonesia
 - Menambahkan `data/pesticide_database_id.json` dari CSV pengguna (105 record).
 - Menambahkan layar **Database Pestisida** untuk pencarian produk, perusahaan, bahan aktif, formulasi, MoA, dan sasaran.
-- Produk dapat dibuka ke detail dan ditautkan ke OPT Explorer berdasarkan kecocokan teks sasaran.
+- Produk dapat dibuka ke detail dan ditautkan ke Crop Expert berdasarkan kecocokan teks sasaran.
 - Bahan aktif yang berhasil dicocokkan dengan master MoA ditampilkan sebagai tautan teknis ke klasifikasi IRAC/FRAC/HRAC.
 - Koneksi produk ↔ OPT dan produk ↔ MoA bukan validasi label/registrasi atau rekomendasi aplikasi.
 
@@ -100,3 +100,71 @@ Added a separate Emerging/Pipeline layer for novel actives that may be absent fr
 - Setiap komoditas memiliki ilustrasi SVG 2D crop khusus.
 - Daftar OPT pada detail tanaman sekarang berupa tombol/kartu yang bisa diklik. Jika OPT sudah ada di Master, dibuka ke detail OPT lengkap; jika hanya berasal dari lapisan relasi sumber, dibuka ke detail provenance ringkas tanpa mengarang data.
 - Cache service worker dinaikkan ke v0.17.2.
+
+
+## v0.18.0 — Header & Padi Expansion
+- Hero branding duplikat “Crop Expert · Pest · Disease · Weed · MoA” dihapus agar headline langsung menjadi fokus.
+- Ikon aplikasi dikembalikan ke gaya logo daun 2D hijau/putih seperti referensi UI awal.
+- Data padi diperluas dari TABEL HAMA (ID).pdf dan ditambah lapisan sumber IRRI Rice Knowledge Bank untuk hama dan penyakit.
+- Relasi padi tetap mempertahankan provenance sumber dan tidak mengubahnya menjadi klaim registrasi pestisida.
+
+## v0.20.0 — Crop Growth Stage & OPT Timing
+- README version header is now updated to v0.20.0; this file supersedes the older v0.15/v0.12 notes below.
+- Added `data/crop_growth_guidelines_2026.json` as a separate crop-phenology layer.
+- Padi has a source-supported 0–9 IRRI stage framework: germination, seedling, tillering, stem elongation, panicle initiation/boot, heading, flowering, milk, dough and mature.
+- Padi also includes source-derived OPT observation windows from the user's crop-phenology visual and IRRI rice material. These are displayed as observation/phenology relationships, not automatic spray schedules or thresholds.
+- All 30 crops now have a growth-stage navigation framework. Non-padi frameworks are explicitly marked `framework_only` and do not claim universal HST or OPT timing until a crop-specific source is added.
+- Crop detail now contains a horizontal growth-stage timeline and, when supported, an `OPT menurut fase` mapping.
+- OPT detail now contains `Fase serangan / pengamatan` when a source-supported phase relationship exists.
+- Existing `data/opt_control.json` has been expanded with provenance-aware active-ingredient relationships derived from source-listed products and the user pesticide database. These are technical/source links, not automatic recommendations or current registration claims.
+- Any active-ingredient control information must still be checked against the current Indonesian product label, crop, target OPT, dose, interval, PHI, application restrictions and registration.
+- The original user-supplied leaf application icon is restored as `assets/icons/icon.svg` with regenerated PNG PWA icons.
+- The header subtitle `Pest · Disease · Weed · MoA` has been removed so the hero can focus on `Kenali OPT sebelum Terlambat`.
+
+### Phenology source notes
+IRRI's crop-stage material divides rice development into vegetative (germination, seedling, tillering, stem elongation), reproductive (panicle initiation/boot, heading, flowering) and ripening (milk, dough, mature). The source also records field observations for weeds, insects and diseases by crop stage.
+
+The supplied `Crop phenology: Growth stages and protection.png` is retained as a user-source visual for the rice protection timeline. It shows rice milestones including persemaian, pembentukan anakan, anakan maksimum, bunting-primordia, pengisian bulir and panen, alongside selected OPT timing. The app does not treat that visual as a universal calendar for every rice variety or production system.
+
+### Data architecture
+The Crop module is now separated into four layers:
+1. **Crop identity** — icon, common name, scientific name.
+2. **Crop growth** — phase/stage sequence and source metadata.
+3. **Crop ↔ OPT** — pest, disease and weed relationships.
+4. **OPT ↔ control knowledge** — active-ingredient/product provenance and MoA links.
+
+This separation makes it possible to expand each crop with crop-specific growth guides and source-backed OPT timing without overwriting the master OPT or MoA datasets.
+
+## v0.20.0 — Media & Thrips Expansion
+- Menambahkan galeri visual OPT pada detail Hama.
+- Menambahkan referensi siklus hidup *Spodoptera exigua* dan foto larva dari gambar pengguna.
+- Menambahkan referensi siklus hidup thrips dan tabel spesies/inang dari gambar pengguna.
+- Menambahkan 5 spesies thrips dari tabel pengguna: *Frankliniella occidentalis*, *Frankliniella schultzei*, *Hydatothrips adolfifriderici*, *Megalurothrips sjostedti*, dan *Ceratothripoides brunneus*.
+- Menambahkan blok “Siklus hidup” dan “Inang & tingkat kerusakan” pada detail OPT jika data sumber tersedia.
+- Media pengguna ditandai sebagai referensi visual; tidak otomatis dianggap sebagai bukti registrasi, diagnosis, atau rekomendasi pengendalian.
+
+
+## v0.21.0 — Pesticide Database & Google Lens Scan Flow
+- Database Pestisida memakai CSV pengguna `database_pestisida_indonesia_DEEP_SCRAPING_v8_Advansia_2026(1).csv` sebagai basis utama.
+- 774 baris sumber dikonsolidasikan menjadi 747 nama produk unik dari CSV, dengan 1 record legacy Crop Expert yang dipertahankan; total database aplikasi 748 record.
+- Baris sumber duplikat untuk nama produk yang sama dipertahankan sebagai `source_variants` agar provenance tidak hilang.
+- Kartu Beranda menempatkan **Database Pestisida** tepat di sebelah **Bahan Aktif Pestisida**.
+- Scan & Identifikasi sekarang memprioritaskan **Google Lens** sebagai jalur identifikasi visual eksternal; ChatGPT tetap opsi lanjutan.
+- Setelah hasil Lens diperoleh, nama kandidat dapat dimasukkan kembali ke Crop Expert untuk mencari record OPT yang cocok.
+- Tidak ada klaim bahwa PWA menerima hasil Lens secara otomatis; Lens berjalan di halaman Google/Chrome dan hasilnya tetap diverifikasi melalui database Crop Expert.
+- Status registrasi/pasar, nomor pendaftaran, sumber data dan varian sumber ditampilkan pada detail produk bila tersedia.
+
+## v0.22.0 — Crop Expert + Crop Nutrition Guideline
+
+- Nama aplikasi/brand diganti menjadi **Crop Expert**.
+- Ditambahkan modul **Crop Nutrition Guideline**.
+- Materi mencakup:
+  - unsur esensial non-mineral: C, H, O;
+  - makro esensial: N, P, K, Ca, Mg, S;
+  - mikro esensial: Fe, Mn, Zn, Cu, B, Mo, Cl, Ni;
+  - unsur bermanfaat/non-esensial: Si, Na, Co, Se;
+  - biostimulan: asam amino/protein hydrolysates, asam humat, asam fulvat, ekstrak rumput laut;
+  - PGR/bioregulator: auksin, giberelin, sitokinin/CPPU, triakontanol, etilen/ethephon.
+- Setiap entri menyimpan definisi, bentuk umum, fungsi/peran, dan catatan batasan.
+- Struktur data disiapkan agar versi berikutnya dapat menambahkan **Crop Nutrition Profile per crop** berdasarkan 30 crop yang sudah ada, termasuk fase pertumbuhan, kebutuhan nutrisi per fase, gejala kekurangan/kelebihan, dan parameter pemantauan.
+- Materi PGR/biostimulan dibedakan dari unsur hara esensial; tidak dianggap sebagai pengganti nutrisi mineral.

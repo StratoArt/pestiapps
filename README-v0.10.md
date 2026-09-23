@@ -1,4 +1,4 @@
-# OPT Explorer v0.6
+# Crop Expert v0.6
 
 Mobile-first PWA untuk eksplorasi OPT dan MoA.
 
