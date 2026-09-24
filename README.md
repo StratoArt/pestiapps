@@ -175,3 +175,11 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Menambahkan crop profile knowledge layer (`data/crop_profiles_2026.json`).
 - Nutrisi kunci pada profil crop kini menampilkan fungsi sederhana dan contoh sumber pupuk.
 - Modul tetap mempertahankan growth/OPT timing layer v0.23 sebagai basis utama.
+
+
+## v0.23.2 — Fusarium Bawang Merah, Weather & Spray Assist
+- Menambahkan dua foto pengguna untuk `Fusarium oxysporum f. sp. cepae` pada bawang merah; foto kedua menjadi visual utama.
+- Menambahkan kurasi foto hama utama untuk bawang merah, padi, dan cabai dengan sumber/lisensi dicatat pada record OPT.
+- Menambahkan `Weather & Spray Assist` berbasis lokasi perangkat + Open-Meteo untuk cuaca lokal dan indikator kondisi cuaca umum.
+- Menambahkan tautan Calculator Suite ke Pranatani Kalibrasi & Takaran dan JuruTani Tools.
+- Indikator cuaca bukan rekomendasi dosis/produk dan tidak menggantikan label, kalibrasi, PPE, interval, PHI, kompatibilitas, atau pengamatan lapangan.

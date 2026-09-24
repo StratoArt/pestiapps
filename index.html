@@ -46,6 +46,7 @@
     <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="calculators"><span class="feature-icon">🧮</span><span><strong>Calculator Suite</strong><small>Dosis · Area · Spray · Kalibrasi</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="weather"><span class="feature-icon">🌦️</span><span><strong>Weather & Spray Assist</strong><small>Cuaca lokal · jendela semprot</small></span><i>›</i></button>
   </div>
 
   <div class="stats-card"><div><strong id="homeOpt">—</strong><span>OPT</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong id="homeFormulations">—</strong><span>Formulasi</span></div></div>
@@ -144,7 +145,15 @@
     <button class="active" data-calc="area">📐 Area</button><button data-calc="spray">💧 Spray</button><button data-calc="dose">🧪 Dosis</button><button data-calc="backpack">🎒 Backpack</button><button data-calc="sprayer">🚜 Sprayer</button><button data-calc="tank">🧴 / Tank</button><button data-calc="granule">🌾 Granule</button><button data-calc="ai">⚗️ AI</button><button data-calc="seed">🌱 Seed</button>
   </div>
   <div id="calculatorPanel"></div>
+  <div id="calculatorExternalTools"></div>
   <div class="calc-sources"><strong>Metode perhitungan</strong><p>Rumus area, spray volume, dosis per tank dan kalibrasi mengikuti metode yang dijelaskan dalam sumber extension/pertanian; satuan aplikasi ditampilkan dalam sistem metrik. Selalu cek label dan registrasi lokal sebelum aplikasi.</p><div class="calc-source-links"><a href="https://www.dpi.nsw.gov.au/biosecurity/weeds/weed-control/herbicides/spray-equipment-calibration-methods" target="_blank" rel="noopener">NSW DPI · Calibration ↗</a><a href="https://extension.uga.edu/publications/detail.html?number=C683" target="_blank" rel="noopener">UGA Extension · Calibration ↗</a><a href="https://mplk.politanikoe.ac.id/index.php/142-perlintan/praktek-perlintan/221-teknik-kalibrasi-pestisida-dan-alat-semprot" target="_blank" rel="noopener">Politeknik Negeri Kupang · Kalibrasi ↗</a></div></div>
+</section>
+
+<section id="weather" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Weather & Spray Assist</strong><small>Cuaca lokal untuk membantu perencanaan waktu aplikasi</small></div><button class="icon-button light" id="weatherRefresh">↻</button></div>
+  <div class="weather-note"><strong>⚠️ Indikator cuaca, bukan resep aplikasi</strong><p>Data cuaca dipakai untuk membaca kondisi lingkungan. Keputusan aplikasi tetap harus mengikuti label produk, komoditas, OPT sasaran, alat, PPE, interval, PHI, dan kondisi lapangan.</p></div>
+  <div class="weather-actions"><button class="primary-btn" id="weatherLocate">📍 Gunakan lokasi perangkat</button><button class="secondary-btn" id="weatherManual">⌖ Masukkan koordinat</button></div>
+  <div id="weatherPanel" class="weather-panel"><div class="empty">Aktifkan lokasi perangkat untuk memuat cuaca lokal.</div></div>
 </section>
 
 <section id="scan" class="screen">
@@ -221,11 +230,12 @@
     <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
     <button id="openPesticides"><span>🧴</span><b>Database Pestisida Indonesia</b><small>Produk · bahan aktif · sasaran · MoA</small><i>›</i></button>
     <button id="openCalculators"><span>🧮</span><b>Calculator Suite</b><small>Area · Dosis · Spray · Kalibrasi · Seed</small><i>›</i></button>
+    <button id="openWeather"><span>🌦️</span><b>Weather & Spray Assist</b><small>Cuaca lokal · jendela semprot</small><i>›</i></button>
     <button><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.23.0</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.23.2</small></button>
   </div>
   <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>
@@ -241,6 +251,7 @@
 <div id="detail"></div>
 <script src="js/app.js"></script>
 <script src="js/calculators.js"></script>
+<script src="js/weather.js"></script>
 </div>
 </body>
 </html>
