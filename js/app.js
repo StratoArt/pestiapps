@@ -1,4 +1,4 @@
-const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,cropGrowth:null,cropNutritionProfiles:null,cropProfiles:null,nutrition:null,nutritionFilter:'ALL',nutritionSearch:'',libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null,lensSearch:''};
+const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,cropGrowth:null,cropNutritionProfiles:null,cropProfiles:null,featuredPests:null,nutrition:null,nutritionFilter:'ALL',nutritionSearch:'',libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null,lensSearch:''};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
@@ -11,7 +11,7 @@ const moaLabel=x=>ID_MOA[x]||x;
 
 
 async function load(){
-  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources,cropGrowth,nutrition,cropNutritionProfiles,cropProfiles]=await Promise.all([
+  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources,cropGrowth,nutrition,cropNutritionProfiles,cropProfiles,featuredPests]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
     fetch('data/emerging_actives.json').then(r=>r.json()),
     fetch('data/opt.json').then(r=>r.json()),
@@ -32,9 +32,10 @@ async function load(){
     fetch('data/crop_growth_guidelines_2026.json').then(r=>r.json()),
     fetch('data/crop_nutrition_guideline_2026.json').then(r=>r.json()),
     fetch('data/crop_nutrition_crop_guidelines_2026.json').then(r=>r.json()),
-    fetch('data/crop_profiles_2026.json').then(r=>r.json())
+    fetch('data/crop_profiles_2026.json').then(r=>r.json()),
+    fetch('data/crop_featured_pests_2026.json').then(r=>r.json())
   ]);
-  state.data=moa; state.cropGrowth=cropGrowth; state.cropNutritionProfiles=cropNutritionProfiles; state.cropProfiles=cropProfiles; state.nutrition=nutrition; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
+  state.data=moa; state.featuredPests=featuredPests; state.cropGrowth=cropGrowth; state.cropNutritionProfiles=cropNutritionProfiles; state.cropProfiles=cropProfiles; state.nutrition=nutrition; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
   updateHomeStats(); renderPesticides(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderNutrition(); renderCropGuidelines(); renderKnowledge(); renderSources(); renderLibrary(); render();
 }
 function normalizeText(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
@@ -345,6 +346,16 @@ function integratedNutrient(cropId,key){
   if(!master)return null;
   return {...master, key, cropSpecific:(profile?.nutrition_keys||[]).includes(key)};
 }
+function featuredPestsForCrop(cropId){
+  const ids=state.featuredPests?.records?.[cropId]||[];
+  const pool=state.opt?.pests||[];
+  return ids.map(id=>pool.find(x=>x.id===id)).filter(Boolean);
+}
+function featuredPestsBlock(crop){
+  const list=featuredPestsForCrop(crop.id);
+  if(!list.length) return '';
+  return `<section class="featured-pests-section"><div class="growth-head"><div><span class="eyebrow">FOTO REFERENSI</span><h3>Hama utama</h3></div><span class="growth-status">KURASI</span></div><p class="source-note">Foto ditampilkan sebagai referensi visual. Daftar ini bukan ranking universal dan bukan penetapan ambang kendali.</p><div class="featured-pest-grid">${list.map(x=>`<button class="featured-pest-card" data-featured-opt="${esc(x.id)}"><div class="featured-pest-image">${photoThumb(x)}</div><strong><i>${esc(x.name)}</i></strong><span>${esc(x.common||'')}</span></button>`).join('')}</div></section>`;
+}
 function cropNutritionProfileForCrop(cropId){ return (state.cropNutritionProfiles?.records||[]).find(r=>r.crop_id===cropId); }
 function nutritionFocusTags(ids){
   return (ids||[]).map(id=>`<button class="nutrient-mini" data-nutrient-id="${esc(id)}">${esc(id)}</button>`).join('');
@@ -644,10 +655,12 @@ function openCropDetail(crop){
     <div class="crop-source-badge">${rows.length} relasi OPT dari lapisan sumber + master</div>
     ${growthBlockForCrop(crop)}
     ${nutritionBlockForCrop(crop)}
+    ${featuredPestsBlock(crop)}
     <h3>OPT terkait</h3>${sections||'<div class="empty">Belum ada relasi OPT yang terpetakan.</div>'}
     <div class="source-note">Relasi dari TABEL HAMA (ID).pdf diperlakukan sebagai sumber pengetahuan/provenance. Nama produk pada dokumen tidak dianggap sebagai bukti registrasi pestisida Indonesia saat ini.</div>
   </aside>`;
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail); $$('.crop-opt-link').forEach(b=>b.addEventListener('click',()=>openCropOptRef(b.dataset.optRef))); $$('.stage-opt-link').forEach(b=>b.addEventListener('click',()=>{const [t,id]=String(b.dataset.optStageRef||'').split('|'); const x=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds].find(v=>v.id===id); if(x) openOptDetail(x,t);}));
+  $$('.featured-pest-card').forEach(b=>b.addEventListener('click',()=>{const x=(state.opt?.pests||[]).find(v=>v.id===b.dataset.featuredOpt); if(x) openOptDetail(x,'Hama');}));
 }
 function openCropOptRef(ref){
   const [type,id,scientific,common]=String(ref||'').split('|');

@@ -1,0 +1,22 @@
+{
+  "version": "2026.09",
+  "title": "Hama utama dengan foto referensi",
+  "records": {
+    "bawang": [
+      "spodoptera-exigua",
+      "thrips-parvispinus",
+      "liriomyza"
+    ],
+    "padi": [
+      "nilaparvata-lugens",
+      "scirpophaga-incertulas",
+      "cnaphalocrocis-medinalis"
+    ],
+    "cabai": [
+      "thrips-parvispinus",
+      "helicoverpa-armigera",
+      "bemisia-tabaci"
+    ]
+  },
+  "note": "Kurasi navigasi untuk tampilan foto utama; bukan ranking universal atau ambang ekonomi."
+}

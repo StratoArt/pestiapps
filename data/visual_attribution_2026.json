@@ -1,0 +1,89 @@
+{
+  "version": "2026.09",
+  "user_provided": [
+    {
+      "file": "assets/opt/reference/fusarium/fusarium-bawang-merah-gejala-utama.png",
+      "usage": "Foto utama Fusarium bawang merah",
+      "license": "user-provided"
+    },
+    {
+      "file": "assets/opt/reference/fusarium/fusarium-bawang-merah-gejala-galeri.png",
+      "usage": "Galeri gejala busuk pangkal bawang merah",
+      "license": "user-provided"
+    }
+  ],
+  "external": {
+    "spodoptera-exigua": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "author": "Unknown author (file page)",
+      "attribution": "Spodoptera exigua larva — Wikimedia Commons, CC BY 2.5."
+    },
+    "thrips-parvispinus": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Thrips_tabaci.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Thrips_tabaci.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "author": "Alton N. Sparks Jr. / University of Georgia / Bugwood.org",
+      "attribution": "Thrips tabaci — Wikimedia Commons, CC BY 3.0."
+    },
+    "liriomyza": {
+      "image_type": "organism_damage",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2510028-PPT-Leafminer_fly_(Genus_Liriomyza).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2510028-PPT-Leafminer_fly_(Genus_Liriomyza).jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 3.0 / CC BY-SA 3.0",
+      "author": "USDA / Bugwood.org (file page)",
+      "attribution": "Leafminer fly / Liriomyza — Wikimedia Commons, license as listed on file page."
+    },
+    "nilaparvata-lugens": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nilaparvata_lugens_-_Brown_planthopper_-_UGA5190055.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nilaparvata_lugens_-_Brown_planthopper_-_UGA5190055.jpg",
+      "source_name": "Wikimedia Commons / Bugwood.org",
+      "license": "CC BY 3.0 US",
+      "author": "Natasha Wright / FDACS, Bugwood.org",
+      "attribution": "Nilaparvata lugens — Wikimedia Commons, CC BY 3.0 US."
+    },
+    "scirpophaga-incertulas": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Scirpophaga_incertulas.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scirpophaga_incertulas.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "author": "Donald Hobern",
+      "attribution": "Scirpophaga incertulas — Wikimedia Commons, CC BY 2.0."
+    },
+    "cnaphalocrocis-medinalis": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cnaphalocrocis_medinalis.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cnaphalocrocis_medinalis.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "author": "Gannu03",
+      "attribution": "Cnaphalocrocis medinalis — Wikimedia Commons, CC BY-SA 4.0."
+    },
+    "helicoverpa-armigera": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Helicoverpa_armigera_(23188858534).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Helicoverpa_armigera_(23188858534).jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY (file page)",
+      "author": "Donald Hobern",
+      "attribution": "Helicoverpa armigera larva — Wikimedia Commons, license as listed on file page."
+    },
+    "bemisia-tabaci": {
+      "image_type": "organism",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bemisia_tabaci_from_USDA_2.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bemisia_tabaci_from_USDA_2.jpg",
+      "source_name": "Wikimedia Commons / USDA ARS",
+      "license": "Public domain",
+      "author": "Stephen Ausmus / USDA ARS",
+      "attribution": "Bemisia tabaci — USDA ARS via Wikimedia Commons, public domain."
+    }
+  }
+}

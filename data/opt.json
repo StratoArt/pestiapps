@@ -129,6 +129,17 @@
       "images": [
         {
           "image_type": "organism",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "author": "Unknown author (file page)",
+          "attribution": "Spodoptera exigua larva — Wikimedia Commons, CC BY 2.5.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        },
+        {
+          "image_type": "organism",
           "local_path": "assets/opt/reference/spodoptera-exigua-larva.png",
           "remote_url": "",
           "source_url": "",
@@ -137,17 +148,6 @@
           "author": "Pengguna",
           "attribution": "Foto larva Spodoptera exigua yang diberikan pengguna untuk Crop Expert.",
           "notes": "Digunakan sebagai referensi visual larva."
-        },
-        {
-          "image_type": "organism",
-          "local_path": "",
-          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
-          "source_name": "Wikimedia Commons",
-          "license": "CC BY 2.5",
-          "author": "Unknown author (file page)",
-          "attribution": "Spodoptera exigua larva feeding on Nicotiana attenuata — Wikimedia Commons, CC BY 2.5.",
-          "notes": "Real larva photo. Verify attribution text on the file page before redistribution."
         },
         {
           "image_type": "lifecycle",
@@ -261,7 +261,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Larva dapat masuk ke buah dan menyebabkan busuk sekunder."
+      "notes": "Larva dapat masuk ke buah dan menyebabkan busuk sekunder.",
+      "images": [
+        {
+          "image_type": "organism",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Helicoverpa_armigera_(23188858534).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Helicoverpa_armigera_(23188858534).jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY (file page)",
+          "author": "Donald Hobern",
+          "attribution": "Helicoverpa armigera larva — Wikimedia Commons, license as listed on file page.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        }
+      ]
     },
     {
       "id": "thrips-parvispinus",
@@ -288,6 +301,17 @@
       ],
       "notes": "Serangan berat dapat mengganggu pucuk dan bunga.",
       "images": [
+        {
+          "image_type": "organism",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Thrips_tabaci.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Thrips_tabaci.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "author": "Alton N. Sparks Jr. / University of Georgia / Bugwood.org",
+          "attribution": "Thrips tabaci — Wikimedia Commons, CC BY 3.0.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        },
         {
           "image_type": "lifecycle",
           "local_path": "assets/opt/reference/thrips-life-cycle.png",
@@ -351,14 +375,14 @@
       "images": [
         {
           "image_type": "organism",
-          "local_path": "",
           "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bemisia_tabaci_from_USDA_2.jpg",
           "source_url": "https://commons.wikimedia.org/wiki/File:Bemisia_tabaci_from_USDA_2.jpg",
           "source_name": "Wikimedia Commons / USDA ARS",
           "license": "Public domain",
-          "author": "See source page",
-          "attribution": "Bemisia tabaci — Wikimedia Commons source.",
-          "notes": "Stephen Ausmus / USDA ARS."
+          "author": "Stephen Ausmus / USDA ARS",
+          "attribution": "Bemisia tabaci — USDA ARS via Wikimedia Commons, public domain.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
         }
       ]
     },
@@ -418,7 +442,20 @@
         "Nimfa",
         "Imago"
       ],
-      "notes": "Hama utama padi dengan potensi ledakan populasi."
+      "notes": "Hama utama padi dengan potensi ledakan populasi.",
+      "images": [
+        {
+          "image_type": "organism",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nilaparvata_lugens_-_Brown_planthopper_-_UGA5190055.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nilaparvata_lugens_-_Brown_planthopper_-_UGA5190055.jpg",
+          "source_name": "Wikimedia Commons / Bugwood.org",
+          "license": "CC BY 3.0 US",
+          "author": "Natasha Wright / FDACS, Bugwood.org",
+          "attribution": "Nilaparvata lugens — Wikimedia Commons, CC BY 3.0 US.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        }
+      ]
     },
     {
       "id": "cnaphalocrocis-medinalis",
@@ -440,7 +477,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Larva hidup di dalam daun yang digulung."
+      "notes": "Larva hidup di dalam daun yang digulung.",
+      "images": [
+        {
+          "image_type": "organism",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cnaphalocrocis_medinalis.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cnaphalocrocis_medinalis.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "author": "Gannu03",
+          "attribution": "Cnaphalocrocis medinalis — Wikimedia Commons, CC BY-SA 4.0.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        }
+      ]
     },
     {
       "id": "liriomyza",
@@ -465,7 +515,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Larva berada di jaringan daun."
+      "notes": "Larva berada di jaringan daun.",
+      "images": [
+        {
+          "image_type": "organism_damage",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2510028-PPT-Leafminer_fly_(Genus_Liriomyza).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2510028-PPT-Leafminer_fly_(Genus_Liriomyza).jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 3.0 / CC BY-SA 3.0",
+          "author": "USDA / Bugwood.org (file page)",
+          "attribution": "Leafminer fly / Liriomyza — Wikimedia Commons, license as listed on file page.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        }
+      ]
     },
     {
       "id": "tetranychus",
@@ -557,7 +620,20 @@
         "Pupa",
         "Imago"
       ],
-      "notes": "Larva merusak jaringan batang dari dalam."
+      "notes": "Larva merusak jaringan batang dari dalam.",
+      "images": [
+        {
+          "image_type": "organism",
+          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Scirpophaga_incertulas.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Scirpophaga_incertulas.jpg",
+          "source_name": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "author": "Donald Hobern",
+          "attribution": "Scirpophaga incertulas — Wikimedia Commons, CC BY 2.0.",
+          "local_path": "",
+          "notes": "Foto referensi organisme; periksa atribusi pada halaman sumber sebelum redistribusi."
+        }
+      ]
     },
     {
       "id": "chilo-suppressalis",
@@ -2662,7 +2738,7 @@
         "Akar dan pangkal umbi mengalami pembusukan",
         "Pangkal umbi dapat mengalami nekrosis dan membusuk"
       ],
-      "notes": "Patogen penting pada Allium. Pada bawang merah dikenal sebagai salah satu penyebab penyakit moler/busuk pangkal.",
+      "notes": "Fusarium oxysporum f. sp. cepae dikaitkan dengan busuk pangkal/basal plate rot pada bawang merah. Identifikasi forma specialis tidak sebaiknya ditentukan hanya dari gejala visual.",
       "references": [
         "Sintayehu et al. (2011), Crop Protection — Fusarium basal rot of shallot",
         "Nugroho et al. (2015), Agrosains — moler pada bawang merah",
@@ -2676,15 +2752,26 @@
       ],
       "images": [
         {
-          "image_type": "organism",
-          "local_path": "",
-          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/K7725-1-sm.jpg",
-          "source_url": "https://commons.wikimedia.org/wiki/File:K7725-1-sm.jpg",
-          "source_name": "Wikimedia Commons / USDA",
-          "license": "Public domain",
-          "author": "Keith Weller / USDA-ARS",
-          "attribution": "Plant-pathogenic strain of Fusarium oxysporum — Keith Weller, USDA-ARS, public domain.",
-          "notes": "Generic F. oxysporum reference image; not a shallot-specific symptom photo."
+          "image_type": "symptom",
+          "local_path": "assets/opt/reference/fusarium/fusarium-bawang-merah-gejala-utama.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Foto gejala Fusarium pada bawang merah yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Dipakai sebagai gambar utama gejala penyakit Fusarium/busuk pangkal pada bawang merah."
+        },
+        {
+          "image_type": "symptom_gallery",
+          "local_path": "assets/opt/reference/fusarium/fusarium-bawang-merah-gejala-galeri.png",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Gambar pengguna",
+          "license": "user-provided",
+          "author": "Pengguna",
+          "attribution": "Gambar gejala busuk pangkal pada bawang merah yang diberikan pengguna untuk Crop Expert.",
+          "notes": "Panel A–C gejala busuk pangkal: daun melintir, pertumbuhan kerdil/daun layu, dan ujung daun mengering."
         }
       ],
       "eppo": {
