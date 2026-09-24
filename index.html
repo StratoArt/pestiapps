@@ -37,7 +37,7 @@
     <button class="feature-card green" data-go="types"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
     <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
     <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
-    <button class="feature-card purple" data-go="crops"><span class="feature-icon image-icon"><img src="assets/opt/category-host.svg" alt=""></span><span><strong>Tanaman & Inang</strong><small>Lihat OPT pada tanaman</small></span><i>›</i></button>
+    <button class="feature-card purple" data-go="crop-guidelines"><span class="feature-icon image-icon"><img src="assets/opt/category-host.svg" alt=""></span><span><strong>Panduan Budidaya Tanaman</strong><small>Fase · nutrisi · OPT · inang</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="explore"><span class="feature-icon image-icon"><img src="assets/ui/chemistry-flask.svg" alt=""></span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
     <button class="feature-card green" data-go="pesticides"><span class="feature-icon">🧴</span><span><strong>Database Pestisida</strong><small>Produk · Bahan Aktif · Sasaran · MoA</small></span><i>›</i></button>
     <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
@@ -79,7 +79,7 @@
 </section>
 
 <section id="crops" class="screen">
-  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Tanaman & Inang</strong><small>Lihat OPT berdasarkan tanaman</small></div><button class="icon-button light">⌕</button></div>
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Panduan Budidaya Tanaman</strong><small>Fase · nutrisi · OPT · inang</small></div><button class="icon-button light">⌕</button></div>
   <div class="mini-tabs"><button class="active">Semua</button><button>Sayuran</button><button>Buah</button><button>Pangan</button><button>Perkebunan</button></div>
   <div id="cropGrid" class="crop-grid"></div>
 </section>
@@ -121,7 +121,7 @@
 </section>
 
 <section id="crop-guidelines" class="screen">
-  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Crop Guideline</strong><small>30 crop · fase pertumbuhan · fokus nutrisi</small></div></div>
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Panduan Budidaya Tanaman</strong><small>30 crop · fase pertumbuhan · nutrisi · OPT</small></div></div>
   <div class="crop-guideline-hero"><div><span class="eyebrow">CROP EXPERT KNOWLEDGE</span><h2>Dari fase tanaman ke nutrisi</h2><p>Profil kualitatif yang menghubungkan fase pertumbuhan, fokus hara, diagnosis awal dan konteks biostimulan/PGR.</p></div><div class="crop-guideline-stat"><strong>30</strong><span>crop</span></div></div>
   <div class="search-box"><span>⌕</span><input id="cropGuidelineSearch" placeholder="Cari padi, cabai, jagung, nutrisi..." autocomplete="off"></div>
   <div id="cropGuidelineList" class="crop-guideline-list"></div>
@@ -215,8 +215,8 @@
     <button id="openAbout"><span>◈</span><b>Tentang Aplikasi</b><i>›</i></button>
     <button id="openSources"><span>▣</span><b>Database & Sumber</b><i>›</i></button>
     <button id="openKnowledge"><span>📘</span><b>Pestisida — Knowledge</b><small>Ekstrak PDF Kementan</small><i>›</i></button>
-    <button id="openNutrition"><span>🌱</span><b>Crop Nutrition Guideline</b><small>Hara · Biostimulan · PGR · unsur bermanfaat</small><i>›</i></button>
-    <button id="openCropGuidelines"><span>🌾</span><b>Crop Guideline</b><small>30 crop · fase · fokus nutrisi · diagnosis</small><i>›</i></button>
+    <button id="openNutrition"><span>🧪</span><b>Nutrition Knowledge</b><small>Ensiklopedia unsur hara & biostimulan</small><i>›</i></button>
+    <button id="openCropGuidelines"><span>🌱</span><b>Panduan Budidaya Tanaman</b><small>30 crop · fase · nutrisi · OPT · diagnosis</small><i>›</i></button>
     <button id="openFormulations"><span>🧪</span><b>Formulation Explorer</b><small>SG · WP · SC · EC · EW · ME</small><i>›</i></button>
     <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
     <button id="openPesticides"><span>🧴</span><b>Database Pestisida Indonesia</b><small>Produk · bahan aktif · sasaran · MoA</small><i>›</i></button>

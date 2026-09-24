@@ -168,3 +168,10 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Setiap entri menyimpan definisi, bentuk umum, fungsi/peran, dan catatan batasan.
 - Struktur data disiapkan agar versi berikutnya dapat menambahkan **Crop Nutrition Profile per crop** berdasarkan 30 crop yang sudah ada, termasuk fase pertumbuhan, kebutuhan nutrisi per fase, gejala kekurangan/kelebihan, dan parameter pemantauan.
 - Materi PGR/biostimulan dibedakan dari unsur hara esensial; tidak dianggap sebagai pengganti nutrisi mineral.
+
+
+## v0.23.1
+- Integrasi Panduan Budidaya Tanaman dari v0.18 ke Crop Expert v0.23.
+- Menambahkan crop profile knowledge layer (`data/crop_profiles_2026.json`).
+- Nutrisi kunci pada profil crop kini menampilkan fungsi sederhana dan contoh sumber pupuk.
+- Modul tetap mempertahankan growth/OPT timing layer v0.23 sebagai basis utama.
