@@ -1,4 +1,4 @@
-const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,cropGrowth:null,cropNutritionProfiles:null,nutrition:null,nutritionFilter:'ALL',nutritionSearch:'',libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null,lensSearch:''};
+const state={committee:'IRAC',data:null,emerging:null,opt:null,imageSources:null,control:null,eppoLinks:null,formulations:null,pesticideKnowledge:null,pesticides:null,sources:null,agroKnowledge:null,fusarium:null,hamaSource:null,cropGrowth:null,cropNutritionProfiles:null,cropProfiles:null,nutrition:null,nutritionFilter:'ALL',nutritionSearch:'',libraryFilter:'ALL',librarySearch:'',search:'',group:'ALL',screen:'home',type:'Hama',pestFilter:'Semua',formulationFilter:'ALL',formulationSearch:'',pesticideFilter:'ALL',pesticideSearch:'',moaView:'ai',detailRef:null,deferredPrompt:null,historyReady:false,historyLock:false,targetCategory:'nerve-muscle',scanFile:null,lensSearch:''};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
 const splitAI=s=>String(s||'').split(';').map(x=>x.trim()).filter(Boolean);
@@ -11,7 +11,7 @@ const moaLabel=x=>ID_MOA[x]||x;
 
 
 async function load(){
-  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources,cropGrowth,nutrition,cropNutritionProfiles]=await Promise.all([
+  const [moa,emerging,opt,imageSources,control,eppoLinks,formulations,pesticideKnowledge,pesticides,sources,agroKnowledge,fusarium,hamaSource,cropGuidelines,targetMap,scanGuide,cropOptSources,cropGrowth,nutrition,cropNutritionProfiles,cropProfiles]=await Promise.all([
     fetch('data/moa_master_2026.json').then(r=>r.json()),
     fetch('data/emerging_actives.json').then(r=>r.json()),
     fetch('data/opt.json').then(r=>r.json()),
@@ -31,9 +31,10 @@ async function load(){
     fetch('data/crop_opt_sources_2026.json').then(r=>r.json()),
     fetch('data/crop_growth_guidelines_2026.json').then(r=>r.json()),
     fetch('data/crop_nutrition_guideline_2026.json').then(r=>r.json()),
-    fetch('data/crop_nutrition_crop_guidelines_2026.json').then(r=>r.json())
+    fetch('data/crop_nutrition_crop_guidelines_2026.json').then(r=>r.json()),
+    fetch('data/crop_profiles_2026.json').then(r=>r.json())
   ]);
-  state.data=moa; state.cropGrowth=cropGrowth; state.cropNutritionProfiles=cropNutritionProfiles; state.nutrition=nutrition; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
+  state.data=moa; state.cropGrowth=cropGrowth; state.cropNutritionProfiles=cropNutritionProfiles; state.cropProfiles=cropProfiles; state.nutrition=nutrition; state.targetMap=targetMap; state.scanGuide=scanGuide; state.emerging=emerging; state.opt=opt; state.imageSources=imageSources; state.control=control; state.eppoLinks=eppoLinks; state.formulations=formulations; state.pesticideKnowledge=pesticideKnowledge; state.pesticides=pesticides; state.sources=sources; state.agroKnowledge=agroKnowledge; state.fusarium=fusarium; state.hamaSource=hamaSource; state.cropGuidelines=cropGuidelines; state.cropOptSources=cropOptSources;
   updateHomeStats(); renderPesticides(); renderTypes(); renderPests(); renderDiseases(); renderWeeds(); renderCrops(); renderFormulations(); renderNutrition(); renderCropGuidelines(); renderKnowledge(); renderSources(); renderLibrary(); render();
 }
 function normalizeText(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
@@ -335,21 +336,42 @@ function openLibraryDetail(x){
   $('#detailBackdrop').addEventListener('click',closeDetail);$('#closeDetail').addEventListener('click',closeDetail);
 }
 
+function integratedCropProfileForCrop(cropId){
+  return (state.cropProfiles?.records||[]).find(r=>r.crop_id===cropId);
+}
+function integratedNutrient(cropId,key){
+  const master=state.cropProfiles?.nutrition_master?.[key];
+  const profile=integratedCropProfileForCrop(cropId);
+  if(!master)return null;
+  return {...master, key, cropSpecific:(profile?.nutrition_keys||[]).includes(key)};
+}
 function cropNutritionProfileForCrop(cropId){ return (state.cropNutritionProfiles?.records||[]).find(r=>r.crop_id===cropId); }
 function nutritionFocusTags(ids){
   return (ids||[]).map(id=>`<button class="nutrient-mini" data-nutrient-id="${esc(id)}">${esc(id)}</button>`).join('');
 }
 function nutritionBlockForCrop(crop){
-  const r=cropNutritionProfileForCrop(crop.id); if(!r) return '';
+  const r=cropNutritionProfileForCrop(crop.id);
+  const legacy=integratedCropProfileForCrop(crop.id);
+  const keys=[...(legacy?.nutrition_keys||[]),...(r?.stages||[]).flatMap(s=>s.focus||[])].filter((v,i,a)=>v&&a.indexOf(v)===i);
+  const cards=keys.map(k=>{
+    const n=integratedNutrient(crop.id,k);
+    if(!n)return '';
+    return `<article class="nutrition-card">
+      <div class="nutrition-card-head"><div><span class="eyebrow">${esc(n.cropSpecific?'NUTRISI KUNCI CROP':'UNSUR HARA')}</span><h3>${esc(n.name)} <small>${esc(n.key)}</small></h3></div></div>
+      <p class="nutrition-what">${esc(n.simple||'')}</p>
+      ${n.sources?.length?`<div class="nutrition-forms"><b>Contoh sumber pupuk:</b> ${n.sources.map(v=>esc(v)).join(' · ')}</div>`:''}
+    </article>`;
+  }).join('');
   return `<section class="crop-nutrition-section">
-    <div class="growth-head"><div><span class="eyebrow">CROP NUTRITION PROFILE</span><h3>Guideline Nutrisi</h3></div><span class="growth-status">KUALITATIF</span></div>
-    <div class="nutrition-profile-summary"><strong>${esc(r.production_goal)}</strong><p>${esc(r.note)}</p></div>
-    <div class="nutrition-focus"><div><span class="eyebrow">Fokus hara umum</span><div class="nutrient-focus-tags">${nutritionFocusTags(r.nutrition_focus)}</div></div></div>
-    <div class="crop-stage-nutrition">${(r.stages||[]).map(st=>`<article><div class="stage-nutrition-head"><strong>${esc(st.name)}</strong><div>${nutritionFocusTags(st.focus)}</div></div><small>Fokus fisiologis, bukan dosis aplikasi.</small></article>`).join('')}</div>
-    <div class="nutrition-two-col"><div><h4>Hal yang perlu diamati</h4><ul>${(r.diagnostic_watchpoints||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div><div><h4>Biostimulan</h4><ul>${(r.biostimulant_context||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul><h4>PGR</h4><ul>${(r.pgr_context||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div></div>
-    <div class="source-note">Status: ${esc(r.status)}. Profil ini menghubungkan fase pertumbuhan dengan fungsi nutrisi secara kualitatif; tidak menetapkan dosis, ppm, interval atau produk.</div>
+    <div class="growth-head"><div><span class="eyebrow">CROP NUTRITION</span><h3>🧪 Nutrisi Kunci</h3></div><span class="growth-status">KUALITATIF</span></div>
+    ${r?`<div class="nutrition-profile-summary"><strong>${esc(r.production_goal)}</strong><p>${esc(r.note)}</p></div>`:''}
+    ${cards?`<div class="nutrient-grid">${cards}</div>`:''}
+    ${r?.stages?.length?`<div class="crop-stage-nutrition">${r.stages.map(st=>`<article><div class="stage-nutrition-head"><strong>${esc(st.name)}</strong><div class="nutrient-focus-tags">${(st.focus||[]).map(k=>`<span class="nutrient-mini">${esc(k)}</span>`).join('')}</div></div><small>Fokus fisiologis, bukan dosis aplikasi.</small></article>`).join('')}</div>`:''}
+    ${r?.diagnostic_watchpoints?.length?`<div class="nutrition-two-col"><div><h4>Hal yang perlu diamati</h4><ul>${r.diagnostic_watchpoints.map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div><div><h4>Biostimulan & PGR</h4><ul>${(r.biostimulant_context||[]).map(v=>`<li>${esc(v)}</li>`).join('')}${(r.pgr_context||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div></div>`:''}
+    <div class="source-note">Contoh sumber pupuk hanya menunjukkan sumber unsur hara, bukan rekomendasi dosis atau program pemupukan. Kebutuhan aktual perlu diverifikasi berdasarkan crop, varietas, kondisi tanah/media, lingkungan dan analisis yang relevan.</div>
   </section>`;
 }
+
 function renderCropGuidelines(){
   const root=$('#cropGuidelineList'); if(!root||!state.opt||!state.cropNutritionProfiles)return;
   const q=normalizeText($('#cropGuidelineSearch')?.value||'');
@@ -615,7 +637,7 @@ function openCropDetail(crop){
   const rows=sourceRows.length?sourceRows:fallback;
   const sections=['Hama','Penyakit','Gulma'].map(type=>{const list=rows.filter(x=>x.type===type); if(!list.length)return ''; return `<div class="crop-opt-section"><div class="crop-opt-section-head"><strong>${type}</strong><span>${list.length}</span></div><div class="opt-list">${list.map(x=>{const m=x.master_id?master.find(v=>v.id===x.master_id):null; const ref=`${type}|${x.master_id||''}|${x.scientific||x.common||''}|${x.common||''}`; return `<button class="opt-card crop-opt-link" data-opt-ref="${esc(ref)}"><img src="assets/opt/${esc(m?.icon|| (type==='Hama'?'category-pest.svg':type==='Penyakit'?'category-disease.svg':'category-weed.svg'))}"><div class="opt-main"><h3>${esc(x.scientific||x.common)}</h3><p>${esc(x.common||'')}</p><small>${esc(type)}${x.source&&x.source!=='master'?' · sumber tabel pengguna':''}</small></div><span class="arrow">›</span></button>`}).join('')}</div></div>`}).join('');
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
-    <button class="close" id="closeDetail">×</button><div class="detail-code">Tanaman & Inang</div>
+    <button class="close" id="closeDetail">×</button><div class="detail-code">Panduan Budidaya Tanaman</div>
     <div style="text-align:center;margin:16px 0 6px"><img src="assets/opt/${esc(crop.icon)}" style="width:150px;height:130px;color:#0a7548"></div>
     <h2>${esc(crop.name)}</h2><p class="muted"><i>${esc(crop.latin)}</i></p>
     ${crop.source_guidelines?`<div class="source-box"><strong>Sumber pengetahuan</strong><p>${esc(crop.source_guidelines.summary_id)}</p><small>${esc(crop.source_guidelines.source)} · ${esc(crop.source_guidelines.source_note)}</small></div>`:''}

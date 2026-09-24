@@ -1,0 +1,2699 @@
+{
+  "title": "Panduan Budidaya Tanaman — Crop Profile, Nutrisi, Fase Pertumbuhan & OPT",
+  "language": "Bahasa Indonesia",
+  "nutrition_master": {
+    "N": {
+      "name": "Nitrogen",
+      "simple": "Membantu membentuk daun, batang, klorofil, dan biomassa sehingga tanaman dapat tumbuh aktif.",
+      "sources": [
+        "Urea",
+        "ZA",
+        "Amonium nitrat",
+        "NPK mengandung N"
+      ]
+    },
+    "P": {
+      "name": "Fosfor",
+      "simple": "Mendukung perkembangan akar, transfer energi, dan proses pembentukan organ reproduktif.",
+      "sources": [
+        "SP-36",
+        "TSP",
+        "MAP",
+        "DAP",
+        "NPK mengandung P"
+      ]
+    },
+    "K": {
+      "name": "Kalium",
+      "simple": "Membantu mengatur air, kerja enzim, dan proses fisiologis serta mendukung kualitas hasil.",
+      "sources": [
+        "KCl",
+        "K2SO4/SOP",
+        "KNO3",
+        "NPK mengandung K"
+      ]
+    },
+    "S": {
+      "name": "Sulfur",
+      "simple": "Diperlukan untuk pembentukan asam amino tertentu, protein, dan metabolisme sulfur.",
+      "sources": [
+        "ZA",
+        "K2SO4/SOP",
+        "Gypsum",
+        "Pupuk majemuk mengandung S"
+      ]
+    },
+    "Ca": {
+      "name": "Kalsium",
+      "simple": "Membantu membentuk dan menjaga struktur dinding sel serta pertumbuhan jaringan muda.",
+      "sources": [
+        "Kalsium nitrat",
+        "Gypsum",
+        "Kapur pertanian",
+        "Dolomit"
+      ]
+    },
+    "Mg": {
+      "name": "Magnesium",
+      "simple": "Merupakan bagian penting klorofil dan membantu proses fotosintesis.",
+      "sources": [
+        "Kieserite",
+        "MgSO4",
+        "Dolomit"
+      ]
+    },
+    "Fe": {
+      "name": "Besi",
+      "simple": "Membantu pembentukan klorofil dan berbagai proses enzimatik, terutama pada jaringan muda.",
+      "sources": [
+        "Fe-EDTA",
+        "Fe-DTPA",
+        "Sumber Fe chelate"
+      ]
+    },
+    "Zn": {
+      "name": "Seng",
+      "simple": "Membantu kerja enzim dan berbagai proses pertumbuhan tanaman.",
+      "sources": [
+        "ZnSO4",
+        "Pupuk mikro mengandung Zn",
+        "Zn chelate"
+      ]
+    },
+    "Mn": {
+      "name": "Mangan",
+      "simple": "Mendukung kerja enzim dan proses fotosintesis.",
+      "sources": [
+        "MnSO4",
+        "Pupuk mikro mengandung Mn",
+        "Mn chelate"
+      ]
+    },
+    "B": {
+      "name": "Boron",
+      "simple": "Mendukung pertumbuhan jaringan muda, pembentukan dinding sel, dan proses reproduktif.",
+      "sources": [
+        "Boraks",
+        "Asam borat",
+        "Pupuk mikro mengandung B"
+      ]
+    },
+    "Cu": {
+      "name": "Tembaga",
+      "simple": "Mendukung kerja enzim dan pembentukan jaringan serta proses metabolisme tanaman.",
+      "sources": [
+        "CuSO4",
+        "Pupuk mikro mengandung Cu",
+        "Cu chelate"
+      ]
+    },
+    "Mo": {
+      "name": "Molibdenum",
+      "simple": "Membantu tanaman menggunakan nitrogen, termasuk proses perubahan nitrat menjadi bentuk yang dapat dimanfaatkan.",
+      "sources": [
+        "Natrium molibdat",
+        "Amonium molibdat",
+        "Pupuk mikro mengandung Mo"
+      ]
+    },
+    "Cl": {
+      "name": "Klor",
+      "simple": "Berperan dalam keseimbangan ion, tekanan turgor, dan beberapa proses fotosintesis.",
+      "sources": [
+        "KCl",
+        "Pupuk yang mengandung klor"
+      ]
+    },
+    "Ni": {
+      "name": "Nikel",
+      "simple": "Diperlukan dalam jumlah sangat kecil, terutama untuk kerja enzim urease dan metabolisme nitrogen.",
+      "sources": [
+        "Sumber mikro Ni khusus",
+        "Pupuk mikro mengandung Ni"
+      ]
+    }
+  },
+  "records": [
+    {
+      "crop_id": "padi",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "S",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "bbch": "00–09",
+          "name": "Perkecambahan",
+          "hst": "Umur HST bergantung sistem tanam; gunakan kondisi tanaman sebagai acuan.",
+          "description": "Benih menyerap air, akar lembaga dan koleoptil muncul.",
+          "key_nutrients": [
+            "P",
+            "K"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "10–19",
+          "name": "Perkembangan daun",
+          "hst": "HST tidak dipatok universal; gunakan jumlah daun/BBCH.",
+          "description": "Daun sejati berkembang dan sistem akar mulai terbentuk.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Zn"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "20–29",
+          "name": "Pembentukan anakan",
+          "hst": "HST bergantung varietas dan lingkungan; BBCH 20–29.",
+          "description": "Anakan mulai muncul sampai jumlah anakan maksimum terdeteksi.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Zn"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "30–39",
+          "name": "Pemanjangan batang & inisiasi malai",
+          "hst": "BBCH 30–39; waktu kalender mengikuti varietas.",
+          "description": "Batang memanjang, inisiasi dan diferensiasi malai berlangsung.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "40–49",
+          "name": "Bunting / booting",
+          "hst": "BBCH 40–49.",
+          "description": "Malai berkembang di dalam pelepah daun bendera.",
+          "key_nutrients": [
+            "K",
+            "N",
+            "S"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "50–59",
+          "name": "Keluar malai / heading",
+          "hst": "BBCH 50–59.",
+          "description": "Malai keluar dari pelepah daun bendera.",
+          "key_nutrients": [
+            "K",
+            "N",
+            "B"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "60–69",
+          "name": "Berbunga / anthesis",
+          "hst": "BBCH 60–69.",
+          "description": "Bunga membuka dan terjadi penyerbukan/pembuahan.",
+          "key_nutrients": [
+            "K",
+            "B",
+            "P"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "70–79",
+          "name": "Pengisian gabah",
+          "hst": "BBCH 70–79.",
+          "description": "Gabah membesar dan pati terakumulasi.",
+          "key_nutrients": [
+            "K",
+            "N",
+            "Mg"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "80–89",
+          "name": "Pemasakan",
+          "hst": "BBCH 80–89.",
+          "description": "Gabah berubah dari dough sampai masak penuh.",
+          "key_nutrients": [
+            "K",
+            "Mg"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        },
+        {
+          "bbch": "90–99",
+          "name": "Senescence / panen",
+          "hst": "BBCH 90–99.",
+          "description": "Tanaman menua; BBCH 99 menunjukkan produk telah dipanen.",
+          "key_nutrients": [
+            "K"
+          ],
+          "opt_note": "Hubungkan ke daftar OPT crop dan detail OPT; hubungan fase-spesifik hanya diisi jika sumber mendukung."
+        }
+      ]
+    },
+    {
+      "crop_id": "cabai",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran & pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "tomat",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "bawang",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "S",
+        "Ca",
+        "Mg",
+        "Zn",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Pertumbuhan awal",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan umbi",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran umbi",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kubis",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan krop",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "mentimun",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Panen bertahap",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "jagung",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "S",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan bunga jantan/betina",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian biji",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kedelai",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "S",
+        "Mo",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Mo",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Mo",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Mo",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan polong",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Mo",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian biji",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Mo",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Mo",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "semangka",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran & pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "melon",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran & pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kentang",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "S"
+      ],
+      "growth_stages": [
+        {
+          "name": "Tumbuh awal",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Inisiasi umbi",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran umbi",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kacang",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan polong",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "terung",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "pisang",
+      "nutrition_keys": [
+        "N",
+        "K",
+        "Mg",
+        "Ca",
+        "B",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Pertumbuhan vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "K",
+            "Mg",
+            "Ca",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan anakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "K",
+            "Mg",
+            "Ca",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan bunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "K",
+            "Mg",
+            "Ca",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "K",
+            "Mg",
+            "Ca",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "K",
+            "Mg",
+            "Ca",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "jeruk",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "Zn",
+        "B",
+        "Fe",
+        "Mn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Flush vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B",
+            "Fe",
+            "Mn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B",
+            "Fe",
+            "Mn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Fruit set",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B",
+            "Fe",
+            "Mn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B",
+            "Fe",
+            "Mn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "Zn",
+            "B",
+            "Fe",
+            "Mn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kopi",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "S",
+        "B",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Fruit set",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kakao",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "S",
+        "B",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian biji",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemasakan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "teh",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Mg",
+        "S",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan pucuk",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Flush aktif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pemetikan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kelapa",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Mg",
+        "B",
+        "Cl"
+      ],
+      "growth_stages": [
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan bunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian & pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "sawit",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Mg",
+        "B",
+        "Cl"
+      ],
+      "growth_stages": [
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Fruit set",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian buah",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan tandan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Mg",
+            "B",
+            "Cl"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "singkong",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "S",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Pertumbuhan awal",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan akar",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran umbi",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kacang-tanah",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Berbunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pegging/pembentukan polong",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian polong",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "sawi",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan roset",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan/panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "caisim",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan roset",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan/panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "pakcoy",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan roset",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan/panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "anggur",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Dormansi/pecah tunas",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pertumbuhan pucuk",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembungaan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Fruit set & pembesaran",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Veraison/pematangan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "jagung-manis",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "S",
+        "Zn"
+      ],
+      "growth_stages": [
+        {
+          "name": "Perkecambahan",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan bunga",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pengisian tongkol",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "S",
+            "Zn"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kembang-kol",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan curd",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran curd",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "brokoli",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan kepala",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembesaran kepala",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    },
+    {
+      "crop_id": "kailan",
+      "nutrition_keys": [
+        "N",
+        "P",
+        "K",
+        "Ca",
+        "Mg",
+        "B",
+        "Mo"
+      ],
+      "growth_stages": [
+        {
+          "name": "Persemaian",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Vegetatif",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pembentukan batang/daun",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        },
+        {
+          "name": "Pematangan/panen",
+          "hst": "Belum ditetapkan secara universal",
+          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "key_nutrients": [
+            "N",
+            "P",
+            "K",
+            "Ca",
+            "Mg",
+            "B",
+            "Mo"
+          ],
+          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "EOSDA — Rice Growth Stages",
+      "url": "https://eos.com/crop-management-guide/rice-growth-stages/",
+      "use": "Kerangka BBCH padi dan uraian fase; HST tidak dipaksakan karena fase dipengaruhi varietas, lingkungan, dan praktik budidaya."
+    },
+    {
+      "name": "TABEL HAMA (ID).pdf",
+      "use": "Relasi OPT per tanaman dari sumber pengguna."
+    },
+    {
+      "name": "EPPO Allium / Brassicas / Maize / Solanaceous GPP",
+      "use": "Kerangka hubungan OPT tanaman dan prinsip GPP; sumber regional/historis."
+    },
+    {
+      "name": "Alberta nutrient PDF supplied by user",
+      "url": "https://open.alberta.ca/dataset/4bd3f115-83b3-4652-977a-06bcf80c9b7e/resource/4ad0a606-c489-4185-847e-7ae5d7383149/download/1998-540-1.pdf",
+      "use": "Direncanakan sebagai sumber nutrisi; belum diambil otomatis karena endpoint mengembalikan 403 pada sesi ini."
+    }
+  ]
+}
