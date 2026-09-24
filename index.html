@@ -37,11 +37,10 @@
     <button class="feature-card green" data-go="types"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
     <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
     <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
-    <button class="feature-card purple" data-go="crop-guidelines"><span class="feature-icon image-icon"><img src="assets/opt/category-host.svg" alt=""></span><span><strong>Panduan Budidaya Tanaman</strong><small>Fase · nutrisi · OPT · inang</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="explore"><span class="feature-icon image-icon"><img src="assets/ui/chemistry-flask.svg" alt=""></span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
     <button class="feature-card green" data-go="pesticides"><span class="feature-icon">🧴</span><span><strong>Database Pestisida</strong><small>Produk · Bahan Aktif · Sasaran · MoA</small></span><i>›</i></button>
     <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
-    <button class="feature-card green" data-go="nutrition"><span class="feature-icon">🌱</span><span><strong>Crop Nutrition Guideline</strong><small>Hara · Biostimulan · PGR</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="nutrition"><span class="feature-icon">🌱</span><span><strong>Panduan Hara Tanaman</strong><small>Fungsi hara · sumber pupuk · biostimulan · PGR</small></span><i>›</i></button>
     <button class="feature-card teal" data-go="crop-guidelines"><span class="feature-icon">🌾</span><span><strong>Crop Guideline</strong><small>30 crop · fase · nutrisi · diagnosis</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
@@ -80,7 +79,7 @@
 </section>
 
 <section id="crops" class="screen">
-  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Panduan Budidaya Tanaman</strong><small>Fase · nutrisi · OPT · inang</small></div><button class="icon-button light">⌕</button></div>
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Crop Guideline</strong><small>Fase · HST · nutrisi · OPT</small></div><button class="icon-button light">⌕</button></div>
   <div class="mini-tabs"><button class="active">Semua</button><button>Sayuran</button><button>Buah</button><button>Pangan</button><button>Perkebunan</button></div>
   <div id="cropGrid" class="crop-grid"></div>
 </section>
@@ -112,8 +111,8 @@
 </section>
 
 <section id="nutrition" class="screen">
-  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Crop Nutrition Guideline</strong><small>Hara · Biostimulan · PGR</small></div><button class="icon-button light" id="nutritionSearchBtn">⌕</button></div>
-  <div class="nutrition-hero"><span class="eyebrow">CROP NUTRITION KNOWLEDGE</span><h2>Dari unsur hara → proses fisiologi → pertumbuhan</h2><p>Pelajari fungsi unsur hara esensial, bahan biostimulan, pengatur tumbuh, serta unsur bermanfaat/non-esensial tanpa mencampurkannya sebagai kategori yang sama.</p></div>
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Panduan Hara Tanaman</strong><small>Fungsi hara · sumber pupuk · biostimulan · PGR</small></div><button class="icon-button light" id="nutritionSearchBtn">⌕</button></div>
+  <div class="nutrition-hero"><span class="eyebrow">PANDUAN HARA TANAMAN</span><h2>Dari unsur hara → fungsi → sumber pupuk</h2><p>Pelajari fungsi unsur hara, bentuk yang diserap tanaman, contoh pupuk/sumber hara, serta konteks biostimulan dan PGR.</p></div>
   <div class="search-box"><span>⌕</span><input id="nutritionSearch" placeholder="Cari N, K, Boron, CPPU, humat, asam amino..." autocomplete="off"><button id="clearNutritionSearch">×</button></div>
   <div id="nutritionFramework" class="nutrition-framework"></div>
   <div class="nutrition-tabs"><button class="active" data-nutrition-filter="ALL">Semua</button><button data-nutrition-filter="essential_macro">Makro</button><button data-nutrition-filter="essential_micro">Mikro</button><button data-nutrition-filter="beneficial_nonessential">Bermanfaat</button><button data-nutrition-filter="biostimulants">Biostimulan</button><button data-nutrition-filter="growth_regulators">PGR</button></div>
@@ -122,8 +121,7 @@
 </section>
 
 <section id="crop-guidelines" class="screen">
-  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Panduan Budidaya Tanaman</strong><small>30 crop · fase pertumbuhan · nutrisi · OPT</small></div></div>
-  <div class="crop-guideline-hero"><div><span class="eyebrow">CROP EXPERT KNOWLEDGE</span><h2>Dari fase tanaman ke nutrisi</h2><p>Profil kualitatif yang menghubungkan fase pertumbuhan, fokus hara, diagnosis awal dan konteks biostimulan/PGR.</p></div><div class="crop-guideline-stat"><strong>30</strong><span>crop</span></div></div>
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Crop Guideline</strong><small>30 crop · fase · HST · nutrisi · OPT</small></div></div>
   <div class="search-box"><span>⌕</span><input id="cropGuidelineSearch" placeholder="Cari padi, cabai, jagung, nutrisi..." autocomplete="off"></div>
   <div id="cropGuidelineList" class="crop-guideline-list"></div>
   <div class="source-box"><strong>Catatan penting</strong><p>Ini adalah framework kualitatif, bukan rekomendasi pemupukan. Prioritas hara harus dikonfirmasi dengan varietas, target produksi, analisis tanah/jaringan, pH, air dan kondisi lapangan.</p></div>
@@ -225,7 +223,7 @@
     <button id="openSources"><span>▣</span><b>Database & Sumber</b><i>›</i></button>
     <button id="openKnowledge"><span>📘</span><b>Pestisida — Knowledge</b><small>Ekstrak PDF Kementan</small><i>›</i></button>
     <button id="openNutrition"><span>🧪</span><b>Nutrition Knowledge</b><small>Ensiklopedia unsur hara & biostimulan</small><i>›</i></button>
-    <button id="openCropGuidelines"><span>🌱</span><b>Panduan Budidaya Tanaman</b><small>30 crop · fase · nutrisi · OPT · diagnosis</small><i>›</i></button>
+    <button id="openCropGuidelines"><span>🌱</span><b>Crop Guideline</b><small>30 crop · fase · HST · nutrisi · OPT</small><i>›</i></button>
     <button id="openFormulations"><span>🧪</span><b>Formulation Explorer</b><small>SG · WP · SC · EC · EW · ME</small><i>›</i></button>
     <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
     <button id="openPesticides"><span>🧴</span><b>Database Pestisida Indonesia</b><small>Produk · bahan aktif · sasaran · MoA</small><i>›</i></button>
@@ -245,7 +243,7 @@
   <button class="active" data-go="home"><span>⌂</span><small>Beranda</small></button>
   <button data-go="types"><span>⌕</span><small>Cari</small></button>
   <button data-go="scan"><span>▣</span><small>Scan</small></button>
-  <button data-go="crops"><span>♧</span><small>Inang</small></button>
+  <button data-go="crop-guidelines"><span>🌱</span><small>Crop</small></button>
   <button data-go="menu"><span>☰</span><small>Menu</small></button>
 </nav>
 <div id="detail"></div>

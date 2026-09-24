@@ -387,7 +387,7 @@ function renderCropGuidelines(){
   const root=$('#cropGuidelineList'); if(!root||!state.opt||!state.cropNutritionProfiles)return;
   const q=normalizeText($('#cropGuidelineSearch')?.value||'');
   const rows=(state.cropNutritionProfiles.records||[]).map(r=>{const c=state.opt.crops.find(x=>x.id===r.crop_id);return {...r,crop:c};}).filter(r=>r.crop && (!q||normalizeText([r.crop.name,r.crop.latin,r.family,r.production_goal,r.nutrition_focus.join(' ')].join(' ')).includes(q)));
-  root.innerHTML=rows.map(r=>`<button class="crop-guideline-card" data-crop-guideline="${esc(r.crop_id)}"><img src="assets/opt/${esc(r.crop.icon)}"><div><span class="eyebrow">${esc(r.family)}</span><h3>${esc(r.crop.name)}</h3><p>${esc(r.production_goal)}</p><div class="nutrient-focus-tags">${nutritionFocusTags(r.nutrition_focus)}</div></div><span class="arrow">›</span></button>`).join('')||'<div class="empty">Crop tidak ditemukan.</div>';
+  root.innerHTML=rows.map(r=>`<button class="crop-guideline-card" data-crop-guideline="${esc(r.crop_id)}" title="${esc(r.crop.name)}"><img src="assets/opt/${esc(r.crop.icon)}" alt="${esc(r.crop.name)}"><strong>${esc(r.crop.name)}</strong></button>`).join('')||'<div class="empty">Crop tidak ditemukan.</div>';
   $$('.crop-guideline-card').forEach(b=>b.addEventListener('click',()=>{const c=state.opt.crops.find(x=>x.id===b.dataset.cropGuideline);if(c)openCropDetail(c);}));
 }
 
@@ -398,7 +398,7 @@ function renderNutrition(){
   const cards=[];
   (state.nutrition.categories||[]).forEach(cat=>{
     if(f!=='ALL'&&f!==cat.id)return;
-    (cat.items||[]).forEach(x=>cards.push({type:'category',categoryId:cat.id,category:cat.name,...x}));
+    (cat.items||[]).forEach(x=>{const master=state.cropProfiles?.nutrition_master?.[x.id];cards.push({type:'nutrient',categoryId:cat.id,category:cat.name,...x,sources:x.sources||master?.sources||[]});});
   });
   if(f==='ALL'||f==='biostimulants') (state.nutrition.biostimulants||[]).forEach(x=>cards.push({type:'biostimulant',categoryId:'biostimulants',category:'Biostimulan',...x}));
   if(f==='ALL'||f==='growth_regulators') (state.nutrition.growth_regulators||[]).forEach(x=>cards.push({type:'pgr',categoryId:'growth_regulators',category:'Plant Growth Regulator (PGR)',...x}));
@@ -406,7 +406,7 @@ function renderNutrition(){
   $('#nutritionSearchBtn')?.setAttribute('aria-label','Cari nutrisi');
   root.innerHTML=filtered.length?filtered.map(x=>{
     const badge=x.type==='category'?(x.group||x.category):(x.category||'');
-    return `<article class="nutrition-card"><div class="nutrition-card-head"><div><span class="eyebrow">${esc(x.category||'')}</span><h3>${esc(x.name)}${x.symbol?` <small>${esc(x.symbol)}</small>`:''}</h3></div><span class="nutrition-badge">${esc(badge)}</span></div>${x.what?`<p class="nutrition-what">${esc(x.what)}</p>`:''}${x.forms?.length?`<div class="nutrition-forms"><b>Bentuk umum:</b> ${x.forms.map(v=>esc(v)).join(' · ')}</div>`:''}${x.examples?.length?`<div class="tag-row">${x.examples.map(v=>`<span>${esc(v)}</span>`).join('')}</div>`:''}${x.mobility?`<div class="nutrition-meta"><span>Mobilitas: ${esc(x.mobility)}</span></div>`:''}<div class="nutrition-role"><b>Peran pada tanaman</b><ul>${(x.role||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div>${x.diagnostic_clue?`<div class="nutrition-diagnostic"><b>Petunjuk gejala:</b> ${esc(x.diagnostic_clue)}</div>`:''}${x.note?`<p class="nutrition-note">${esc(x.note)}</p>`:''}</article>`;
+    return `<article class="nutrition-card"><div class="nutrition-card-head"><div><span class="eyebrow">${esc(x.category||'')}</span><h3>${esc(x.name)}${x.symbol?` <small>${esc(x.symbol)}</small>`:''}</h3></div><span class="nutrition-badge">${esc(badge)}</span></div>${x.what?`<p class="nutrition-what">${esc(x.what)}</p>`:''}${x.forms?.length?`<div class="nutrition-forms"><b>Bentuk yang umum:</b> ${x.forms.map(v=>esc(v)).join(' · ')}</div>`:''}${x.sources?.length?`<div class="nutrition-forms fertilizer-sources"><b>Contoh pupuk / sumber hara:</b> ${x.sources.map(v=>esc(v)).join(' · ')}</div>`:''}${x.examples?.length?`<div class="tag-row">${x.examples.map(v=>`<span>${esc(v)}</span>`).join('')}</div>`:''}${x.mobility?`<div class="nutrition-meta"><span>Mobilitas: ${esc(x.mobility)}</span></div>`:''}<div class="nutrition-role"><b>Peran pada tanaman</b><ul>${(x.role||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul></div>${x.diagnostic_clue?`<div class="nutrition-diagnostic"><b>Petunjuk gejala:</b> ${esc(x.diagnostic_clue)}</div>`:''}${x.note?`<p class="nutrition-note">${esc(x.note)}</p>`:''}</article>`;
   }).join(''):`<div class="empty">Tidak ada data nutrisi yang cocok dengan pencarian.</div>`;
   const fw=state.nutrition.diagnostic_framework; const interactions=state.nutrition.interaction_examples||[];
   if($('#nutritionFramework')) $('#nutritionFramework').innerHTML=`<div class="nutrition-framework-grid"><div><span class="eyebrow">DIAGNOSIS</span><h3>${esc(fw?.title||'Kerangka diagnosis nutrisi')}</h3><ol>${(fw?.steps||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ol><p class="source-note">${esc(fw?.note||'')}</p></div><div><span class="eyebrow">INTERAKSI</span><h3>Nutrient balance</h3>${interactions.map(v=>`<div class="interaction-row"><strong>${esc(v.pair)}</strong><span>${esc(v.type)}</span><small>${esc(v.note)}</small></div>`).join('')}</div></div>`;
@@ -587,11 +587,26 @@ function growthLinksForOpt(optId){
 }
 function growthBlockForCrop(crop){
   const g=growthRecordForCrop(crop.id); if(!g) return '';
+  const legacy=integratedCropProfileForCrop(crop.id);
   const phases=g.phases||[];
   const links=g.opt_stage_links||[];
-  return `<section class="growth-section"><div class="growth-head"><div><span class="eyebrow">CROP GROWTH GUIDELINE</span><h3>Tahapan Pertumbuhan</h3></div><span class="growth-status">${g.source_status==='source_supported'?'SOURCE':'KERANGKA'}</span></div>
-    <div class="growth-timeline">${phases.map((p,i)=>`<div class="growth-stage"><span>${i+1}</span><strong>${esc(p.name)}</strong>${p.label?`<small>${esc(p.label)}</small>`:''}</div>`).join('')}</div>
-    ${links.length?`<div class="growth-opt-map"><h4>OPT menurut fase</h4>${phases.map(ph=>{const ls=links.filter(l=>(l.stages||[]).includes(ph.id)); if(!ls.length)return ''; return `<div class="growth-opt-row"><div class="growth-phase"><strong>${esc(ph.name)}</strong><small>${esc(ph.group||'')}</small></div><div class="growth-opt-items">${ls.map(l=>{const ox=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])].find(v=>v.id===l.opt_id); return `<button class="stage-opt-link" data-opt-stage-ref="${esc(`${l.type}|${l.opt_id}`)}">${esc(l.type)} · ${esc(ox?.common||ox?.name||l.opt_id)} ›</button>`}).join('')}</div></div>`}).join('')}</div>`:''}
+  const legacyStages=legacy?.growth_stages||[];
+  const allOpt=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];
+  const stageRows=phases.map((p,i)=>{
+    const ls=links.filter(l=>(l.stages||[]).includes(p.id));
+    const legacyStage=legacyStages[i]||null;
+    const hst=legacyStage?.hst||'Belum ada kisaran HST spesifik pada sumber yang digunakan.';
+    const nutrients=legacyStage?.key_nutrients||[];
+    return `<article class="growth-stage-detail">
+      <div class="growth-stage-title"><span>${i+1}</span><div><strong>${esc(p.name)}</strong><small>${esc(p.group||'')}</small></div></div>
+      <div class="growth-stage-meta"><span>⏱ ${esc(hst)}</span>${p.label?`<span>BBCH/Stage: ${esc(p.label)}</span>`:''}</div>
+      ${legacyStage?.description?`<p class="growth-stage-desc">${esc(legacyStage.description)}</p>`:''}
+      ${nutrients.length?`<div class="nutrient-focus-tags">${nutrients.map(k=>`<span class="nutrient-mini">Hara ${esc(k)}</span>`).join('')}</div>`:''}
+      <div class="stage-opt-box"><b>OPT yang terpetakan pada fase ini</b>${ls.length?`<div class="growth-opt-items">${ls.map(l=>{const ox=allOpt.find(v=>v.id===l.opt_id);return `<button class="stage-opt-link" data-opt-stage-ref="${esc(`${l.type}|${l.opt_id}`)}">${esc(l.type)} · ${esc(ox?.common||ox?.name||l.opt_id)} ›</button>`}).join('')}</div>`:`<small class="stage-opt-empty">Belum ada pemetaan fase-spesifik yang didukung sumber pada database.</small>`}</div>
+    </article>`;
+  }).join('');
+  return `<section class="growth-section"><div class="growth-head"><div><span class="eyebrow">CROP GROWTH GUIDELINE</span><h3>Fase Pertumbuhan · HST · OPT</h3></div><span class="growth-status">${g.source_status==='source_supported'?'SOURCE':'KERANGKA'}</span></div>
+    <div class="growth-detail-list">${stageRows}</div>
     ${g.note?`<div class="source-note">${esc(g.note)}</div>`:''}
     ${g.sources?.length?`<div class="growth-sources">${g.sources.map(s=>`<small>• ${esc(s.name)}${s.note?` — ${esc(s.note)}`:''}</small>`).join('')}</div>`:''}
   </section>`;
@@ -648,7 +663,7 @@ function openCropDetail(crop){
   const rows=sourceRows.length?sourceRows:fallback;
   const sections=['Hama','Penyakit','Gulma'].map(type=>{const list=rows.filter(x=>x.type===type); if(!list.length)return ''; return `<div class="crop-opt-section"><div class="crop-opt-section-head"><strong>${type}</strong><span>${list.length}</span></div><div class="opt-list">${list.map(x=>{const m=x.master_id?master.find(v=>v.id===x.master_id):null; const ref=`${type}|${x.master_id||''}|${x.scientific||x.common||''}|${x.common||''}`; return `<button class="opt-card crop-opt-link" data-opt-ref="${esc(ref)}"><img src="assets/opt/${esc(m?.icon|| (type==='Hama'?'category-pest.svg':type==='Penyakit'?'category-disease.svg':'category-weed.svg'))}"><div class="opt-main"><h3>${esc(x.scientific||x.common)}</h3><p>${esc(x.common||'')}</p><small>${esc(type)}${x.source&&x.source!=='master'?' · sumber tabel pengguna':''}</small></div><span class="arrow">›</span></button>`}).join('')}</div></div>`}).join('');
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">
-    <button class="close" id="closeDetail">×</button><div class="detail-code">Panduan Budidaya Tanaman</div>
+    <button class="close" id="closeDetail">×</button><div class="detail-code">Crop Guideline</div>
     <div style="text-align:center;margin:16px 0 6px"><img src="assets/opt/${esc(crop.icon)}" style="width:150px;height:130px;color:#0a7548"></div>
     <h2>${esc(crop.name)}</h2><p class="muted"><i>${esc(crop.latin)}</i></p>
     ${crop.source_guidelines?`<div class="source-box"><strong>Sumber pengetahuan</strong><p>${esc(crop.source_guidelines.summary_id)}</p><small>${esc(crop.source_guidelines.source)} · ${esc(crop.source_guidelines.source_note)}</small></div>`:''}

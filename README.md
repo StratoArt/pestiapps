@@ -177,9 +177,18 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Modul tetap mempertahankan growth/OPT timing layer v0.23 sebagai basis utama.
 
 
-## v0.23.2 — Fusarium Bawang Merah, Weather & Spray Assist
+## v0.23.3 — Fusarium Bawang Merah, Weather & Spray Assist
 - Menambahkan dua foto pengguna untuk `Fusarium oxysporum f. sp. cepae` pada bawang merah; foto kedua menjadi visual utama.
 - Menambahkan kurasi foto hama utama untuk bawang merah, padi, dan cabai dengan sumber/lisensi dicatat pada record OPT.
 - Menambahkan `Weather & Spray Assist` berbasis lokasi perangkat + Open-Meteo untuk cuaca lokal dan indikator kondisi cuaca umum.
 - Menambahkan tautan Calculator Suite ke Pranatani Kalibrasi & Takaran dan JuruTani Tools.
 - Indikator cuaca bukan rekomendasi dosis/produk dan tidak menggantikan label, kalibrasi, PPE, interval, PHI, kompatibilitas, atau pengamatan lapangan.
+
+## v0.23.3 — Crop Guideline Simplification & Panduan Hara Tanaman
+- Menghapus kartu beranda duplikat “Panduan Budidaya Tanaman”; navigasi utama menggunakan **Crop Guideline**.
+- Crop Guideline disederhanakan menjadi grid icon crop. Klik icon untuk membuka profil lengkap.
+- Detail crop sekarang menampilkan fase pertumbuhan, HST/keterangan umur dari layer data yang tersedia, fokus hara, dan OPT yang memiliki pemetaan fase-spesifik.
+- Jika sumber belum menyediakan pemetaan OPT per fase atau kisaran HST universal, aplikasi menampilkan status tersebut secara eksplisit dan tidak mengarang data.
+- Judul **Crop Nutrition Guideline** diganti menjadi **Panduan Hara Tanaman**.
+- Setiap unsur hara kini menampilkan contoh pupuk/sumber hara dari knowledge layer v0.18, selain fungsi dan bentuk hara.
+- Master klasifikasi IRAC/FRAC tetap mengikuti sumber resmi terbaru yang tersedia di aplikasi; klasifikasi tidak disamakan dengan status registrasi lokal.
