@@ -1,4 +1,4 @@
-# Crop Expert v0.23.6
+# Crop Expert v0.23.8
 
 **Al-Kitab untuk Sales, Formulator dan Petani Mbois**
 
@@ -177,7 +177,7 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Modul tetap mempertahankan growth/OPT timing layer v0.23 sebagai basis utama.
 
 
-## v0.23.6 — NPK Fertilizer Calculator
+## v0.23.8 — NPK Fertilizer Calculator
 - Added NPK calculator with single-product ratio check and 3-fertilizer blend math.
 - Uses N, P₂O₅ and K₂O label analysis entered by the user.
 - Reports kg/ha and total product for the selected area.
@@ -209,7 +209,7 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Master klasifikasi IRAC/FRAC tetap mengikuti sumber resmi terbaru yang tersedia di aplikasi; klasifikasi tidak disamakan dengan status registrasi lokal.
 
 
-## v0.23.6 — Cara Kerja Pestisida
+## v0.23.8 — Cara Kerja Pestisida
 - Menambahkan screen native **Cara Kerja Pestisida** untuk insektisida, fungisida, dan herbisida.
 - Ilustrasi insektisida diperjelas dengan larva: integument/cuticle, spirakel, mouthparts, CNS/saraf, stomach/midgut, dan hemolimfa.
 - Materi menggabungkan Agrobiology Library dengan klasifikasi resmi IRAC/FRAC/HRAC.
