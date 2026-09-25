@@ -1,4 +1,4 @@
-/* Crop Expert v0.12 — Calculator Suite
+/* Crop Expert v0.23.5 — Calculator Suite
    Calculation aid only. It does not prescribe products, doses, intervals, PHI or PPE. */
 (function(){
   const C={tab:'area'};
@@ -13,7 +13,7 @@
   function error(msg){return `<div class="calc-error">${esc(msg)}</div>`}
   function render(){
     const p=$('#calculatorPanel'); if(!p)return;
-    const tabs=[['area','📐 Area'],['spray','💧 Spray'],['dose','🧪 Dosis'],['backpack','🎒 Backpack'],['sprayer','🚜 Sprayer'],['tank','🧴 / Tank'],['granule','🌾 Granule'],['ai','⚗️ AI'],['seed','🌱 Seed']];
+    const tabs=[['area','📐 Area'],['spray','💧 Spray'],['dose','🧪 Dosis'],['backpack','🎒 Backpack'],['sprayer','🚜 Sprayer'],['tank','🧴 / Tank'],['granule','🌾 Granule'],['ai','⚗️ AI'],['seed','🌱 Seed'],['calibration','🧰 Kalibrasi'],['seedrate','🌱 Benih'],['fertilizer','🧪 Pupuk'],['npk','🧬 NPK']];
     $$('#calcTabs button').forEach(b=>b.classList.toggle('active',b.dataset.calc===C.tab));
     let html='';
     if(C.tab==='area') html=panel('Area Calculator','Hitung luas lahan dari bentuk sederhana atau bedengan.',select('Bentuk','shape',[['rect','Persegi panjang'],['square','Persegi'],['triangle','Segitiga'],['circle','Lingkaran'],['bed','Bedengan / jumlah unit']], 'full')+field('Panjang','a','0','m')+field('Lebar','b','0','m')+field('Jumlah bedengan','count','0','unit')+field('Radius','r','0','m')+`<div class="calc-field full calc-subtle">Untuk bedengan: panjang × lebar × jumlah bedengan. Untuk segitiga: ½ × alas × tinggi.</div>`);
@@ -25,12 +25,19 @@
     if(C.tab==='granule') html=panel('Granule Calculator','Hitung kebutuhan formulasi granular berdasarkan rate per hektare.',field('Luas lahan','area','0','ha')+field('Rate label','rate','0','kg/ha')+select('Unit rate','unit',[['kg/ha','kg/ha'],['g/ha','g/ha']])+field('Jumlah aplikasi','apps','1','kali')+`<div class="calc-field full calc-subtle">Jumlah aplikasi hanya mengalikan kebutuhan produk; pastikan label memang mengizinkan jumlah aplikasi tersebut.</div>`);
     if(C.tab==='ai') html=panel('Active Ingredient Calculator','Konversi kandungan formulasi menjadi jumlah bahan aktif. Gunakan konsentrasi yang benar-benar tercantum pada label.',select('Jenis formulasi','kind',[['liquid','Cair — g AI/L'],['solid','Padat — % AI']],'full')+field('Kandungan AI','conc','0','g AI/L atau %')+field('Rate formulasi','rate','0','L/ha atau kg/ha')+field('Luas lahan','area','0','ha')+`<div class="calc-field full calc-subtle">Cair: g AI/ha = g AI/L × L produk/ha. Padat: g AI/ha = kg produk/ha × (%/100) × 1000.</div>`);
     if(C.tab==='seed') html=panel('Seed Treatment Calculator','Hitung kebutuhan produk berdasarkan rate AI per kg benih dan kandungan AI produk.',field('Jumlah benih','seed','0','kg')+field('Target rate AI','aiRate','0','g AI/kg seed')+field('Kandungan AI produk','productConc','0','g AI/kg produk')+field('Aplikasi','apps','1','kali')+`<div class="calc-field full calc-subtle">Produk (g) = kebutuhan AI total (g) ÷ kandungan AI produk (g AI/kg produk) × 1 kg. Data seed-treatment pada sumber pengguna harus diverifikasi terhadap label lokal; jangan menganggap contoh US sebagai registrasi Indonesia.</div>`);
+    if(C.tab==='calibration') html=panel('Kalibrasi & Takaran','Gabungkan hasil kalibrasi dengan angka dosis dari label. Kalkulator tidak memilih dosis.',field('Air terpakai saat uji','calWater','0','L')+field('Luas petak uji','calArea','0','m²')+field('Kapasitas tangki penuh','calTank','0','L')+select('Bentuk dosis label','calBasis',[['area','Per hektare (ml/ha, L/ha, g/ha, kg/ha)'],['volume','Per volume air (ml/L atau g/L)']],'full')+field('Angka dosis label','calDose','0','')+select('Satuan dosis','calUnit',[['ml/ha','ml/ha'],['L/ha','L/ha'],['g/ha','g/ha'],['kg/ha','kg/ha'],['ml/L','ml/L'],['g/L','g/L']])+field('Luas target','calTarget','0','m²')+field('Volume botol ukur','calBottle','0','ml')+field('Jumlah tuangan tutup','calPours','0','kali')+`<div class="calc-field full calc-subtle">Rumus kalibrasi: L/ha = liter terpakai ÷ m² uji × 10.000. Untuk dosis per ha, produk/tangki = dosis/ha × cakupan tangki. Untuk dosis per liter, produk/tangki = konsentrasi × volume tangki.</div>`,'Hitung Kalibrasi');
+    if(C.tab==='seedrate') html=panel('Kalkulator Benih','Hitung kebutuhan benih berdasarkan populasi tanam. Nilai jarak tanam, daya tumbuh, dan cadangan diisi sesuai rencana budidaya.',field('Luas lahan','seedArea','0','m²')+field('Jarak antarbaris','rowSpace','0','cm')+field('Jarak dalam baris','plantSpace','0','cm')+field('Benih per lubang','seedsHole','1','butir')+field('Cadangan','seedReserve','10','%')+field('Daya tumbuh','germination','85','%')+`<div class="calc-field full calc-subtle">Populasi teoritis = luas ÷ (jarak baris × jarak dalam baris). Kebutuhan benih disesuaikan dengan benih/lubang, cadangan, dan daya tumbuh yang kamu masukkan.</div>`,'Hitung Benih');
+    if(C.tab==='fertilizer') html=panel('Kalkulator Pupuk','Hitung kebutuhan produk berdasarkan dosis yang sudah ditentukan dari label, rekomendasi teknis, atau hasil perhitungan agronomi.',field('Luas lahan','fertArea','0','ha')+field('Dosis pupuk','fertDose','0','kg/ha')+field('Jumlah aplikasi','fertApps','1','kali')+select('Satuan tampilan','fertUnit',[['kg','kg'],['ton','ton']],'full')+`<div class="calc-field full calc-subtle">Kalkulator ini hanya mengalikan dosis yang kamu masukkan × luas × jumlah aplikasi. Tidak memberikan rekomendasi jenis atau dosis pupuk.</div>`,'Hitung Pupuk');
+    if(C.tab==='npk') html=panel('Kalkulator NPK','Hitung kebutuhan pupuk dari target hara N–P₂O₅–K₂O dan analisis pupuk yang kamu masukkan. Mode campuran menyelesaikan tiga pupuk sekaligus secara matematis.',select('Mode perhitungan','npkMode',[['single','1 produk NPK — cek kecukupan N, P₂O₅, K₂O'],['blend','Campuran 3 pupuk — hitung komposisi']],'full')+field('Luas lahan','npkArea','1','ha')+field('Target N','npkN','0','kg N/ha')+field('Target P₂O₅','npkP','0','kg P₂O₅/ha')+field('Target K₂O','npkK','0','kg K₂O/ha')+`<div id="npkSingleFields" class="calc-grid full">${field('Kadar N pupuk','npk1N','16','%')}${field('Kadar P₂O₅ pupuk','npk1P','16','%')}${field('Kadar K₂O pupuk','npk1K','16','%')}</div>`+`<div id="npkBlendFields" class="calc-grid full" style="display:none">${field('Pupuk A — N','npkAN','46','%')}${field('Pupuk A — P₂O₅','npkAP','0','%')}${field('Pupuk A — K₂O','npkAK','0','%')}${field('Pupuk B — N','npkBN','0','%')}${field('Pupuk B — P₂O₅','npkBP','36','%')}${field('Pupuk B — K₂O','npkBK','0','%')}${field('Pupuk C — N','npkCN','0','%')}${field('Pupuk C — P₂O₅','npkCP','0','%')}${field('Pupuk C — K₂O','npkCK','60','%')}</div>`+`<div class="calc-field full calc-subtle">P₂O₅ dan K₂O mengikuti angka analisis pada label pupuk, bukan unsur P dan K elemental. Mode 1 produk menunjukkan berapa kg produk diperlukan untuk mencapai masing-masing target dan apakah rasio produk sesuai. Mode campuran menyelesaikan kg/ha masing-masing pupuk; hasil negatif atau sistem tidak memiliki solusi ditandai sebagai tidak valid.</div>`,'Hitung NPK');
     p.innerHTML=html;
     const host=document.getElementById('calculatorExternalTools');
-    if(host) host.innerHTML=`<div class="external-tools-grid"><a class="external-tool-card" href="https://pranatani.com/takaran.html" target="_blank" rel="noopener"><span>🧰</span><div><strong>Pranatani · Kalibrasi & Takaran</strong><small>Kalibrasi, takaran per tangki, dan konversi dari dosis label.</small></div><b>↗</b></a><a class="external-tool-card" href="https://jurutani.com/tools" target="_blank" rel="noopener"><span>🧮</span><div><strong>JuruTani · Tools Pertanian</strong><small>Kalkulator benih dan alat bantu pertanian online.</small></div><b>↗</b></a></div>`;
+    if(host) host.innerHTML=`<div class="calc-tool-grid"><button class="calc-tool-card" data-open-calc="calibration"><span>🧰</span><div><strong>Kalibrasi & Takaran</strong><small>Hitung L/ha, cakupan tangki, produk/tangki, dan ukuran takaran.</small></div><b>›</b></button><button class="calc-tool-card" data-open-calc="seedrate"><span>🌱</span><div><strong>Kalkulator Benih</strong><small>Hitung kebutuhan benih dari luas, jarak tanam, daya tumbuh, dan cadangan.</small></div><b>›</b></button><button class="calc-tool-card" data-open-calc="fertilizer"><span>🧪</span><div><strong>Kalkulator Pupuk</strong><small>Hitung kebutuhan pupuk dari luas dan dosis label/rekomendasi yang sudah ditentukan.</small></div><b>›</b></button><button class="calc-tool-card npk-tool-card" data-open-calc="npk"><span>🧬</span><div><strong>Kalkulator NPK</strong><small>Hitung kg/ha dan total pupuk dari target N–P₂O₅–K₂O atau campuran 3 pupuk.</small></div><b>›</b></button></div>`;
+    $$('#calculatorExternalTools [data-open-calc]').forEach(b=>b.onclick=()=>{C.tab=b.dataset.openCalc;render();document.getElementById('calculatorPanel')?.scrollIntoView({behavior:'smooth',block:'start'});});
     const run=$('#calcRun'), reset=$('#calcReset');
     run.onclick=calculate; reset.onclick=()=>render();
     const basis=$('#basis'); if(basis)basis.onchange=()=>{const u=$('#unit');if(!u)return;const area=basis.value==='area';u.innerHTML=(area?[['ml/ha','ml/ha'],['L/ha','L/ha'],['g/ha','g/ha'],['kg/ha','kg/ha']]:[['ml/L','ml/L'],['g/L','g/L']]).map(([v,t])=>`<option value="${v}">${t}</option>`).join('');};
+    const calBasis=$('#calBasis'); if(calBasis)calBasis.onchange=()=>{const u=$('#calUnit');if(!u)return;const area=calBasis.value==='area';u.innerHTML=(area?[['ml/ha','ml/ha'],['L/ha','L/ha'],['g/ha','g/ha'],['kg/ha','kg/ha']]:[['ml/L','ml/L'],['g/L','g/L']]).map(([v,t])=>`<option value="${v}">${t}</option>`).join('');};
+    const npkMode=$('#npkMode'); if(npkMode) npkMode.onchange=()=>{const single=$('#npkSingleFields'),blend=$('#npkBlendFields'); if(single)single.style.display=npkMode.value==='single'?'grid':'none'; if(blend)blend.style.display=npkMode.value==='blend'?'grid':'none';};
   }
   function calculate(){
     const out=$('#calcOutput'); if(!out)return; let e=null, html='';
@@ -72,6 +79,63 @@
     }
     if(C.tab==='seed'){
       const seed=val('seed'),aiRate=val('aiRate'),conc=val('productConc'),apps=val('apps');if(seed>0&&aiRate>0&&conc>0&&apps>0){const ai=seed*aiRate*apps,kgProduct=ai/conc,grams=kgProduct*1000;html=result('Kebutuhan seed treatment',[['Kebutuhan AI',f(ai)+' g AI'],['Produk',f(grams)+' g'],['Produk / kg seed',f(grams/seed)+' g/kg seed'],['Aplikasi',f(apps,0)+' kali']],`Produk (kg) = kebutuhan AI (g) ÷ kandungan produk (g AI/kg).`)}else html=error('Lengkapi jumlah benih, target rate AI, kandungan AI produk, dan jumlah aplikasi.');
+    }
+    if(C.tab==='calibration'){
+      const water=val('calWater'),area=val('calArea'),tank=val('calTank'),basis=$('#calBasis')?.value,dose=val('calDose'),target=val('calTarget'),unit=$('#calUnit')?.value,bottle=val('calBottle'),pours=val('calPours');
+      if(water>0&&area>0&&tank>0){
+        const lha=water/area*10000, cover=tank/lha, targetHa=target>0?target/10000:null;
+        let items=[['Volume aplikasi',f(lha)+' L/ha'],['Cakupan / tank',f(cover,4)+' ha'],['Area / tank',f(cover*10000,0)+' m²']];
+        if(dose>0){if(basis==='area'){const baseUnit=unit.split('/')[0],perTank=dose*cover,total=targetHa!==null?dose*targetHa:null;items.push(['Produk / tank',f(perTank)+' '+baseUnit]);if(total!==null)items.push(['Produk area target',f(total)+' '+baseUnit]);}else{const baseUnit=unit.split('/')[0],perTank=dose*tank,totalWater=targetHa!==null?targetHa*lha:null,total=totalWater!==null?dose*totalWater:null;items.push(['Produk / tank',f(perTank)+' '+baseUnit]);if(total!==null)items.push(['Produk area target',f(total)+' '+baseUnit]);}}
+        if(bottle>0&&pours>0)items.push(['Isi 1 takaran',f(bottle/pours,2)+' ml']);
+        html=result('Hasil kalibrasi & takaran',items,'L/ha = air terpakai ÷ luas uji × 10.000. Angka dosis tetap berasal dari input label/rekomendasi yang kamu masukkan.');
+      } else html=error('Masukkan air terpakai, luas petak uji, dan kapasitas tangki.');
+    }
+    if(C.tab==='seedrate'){
+      const area=val('seedArea'),row=val('rowSpace'),plant=val('plantSpace'),hole=val('seedsHole'),reserve=val('seedReserve'),germ=val('germination');
+      if(area>0&&row>0&&plant>0&&hole>0&&reserve>=0&&germ>0&&germ<=100){const spacing=row*plant/10000,pop=area/spacing,seeds=pop*hole*(1+reserve/100)/(germ/100);html=result('Kebutuhan benih',[['Populasi teoritis',f(pop,0)+' lubang'],['Kebutuhan dasar',f(pop*hole,0)+' butir'],['Dengan cadangan',f(pop*hole*(1+reserve/100),0)+' butir'],['Kebutuhan akhir',f(seeds,0)+' butir'],['Setara',f(seeds/1000,2)+' ribu butir']],`Kebutuhan akhir = populasi × benih/lubang × (1 + cadangan) ÷ daya tumbuh.`)}else html=error('Lengkapi luas, jarak tanam, benih/lubang, cadangan, dan daya tumbuh dengan angka yang valid.');
+    }
+    if(C.tab==='fertilizer'){
+      const area=val('fertArea'),dose=val('fertDose'),apps=val('fertApps');
+      if(area>0&&dose>0&&apps>0){const total=area*dose*apps;html=result('Kebutuhan pupuk',[['Per aplikasi',f(area*dose)+' kg'],['Total kebutuhan',f(total)+' kg'],['Setara',f(total/1000,3)+' ton'],['Luas',f(area,3)+' ha'],['Aplikasi',f(apps,0)+' kali']],`Total = luas × dosis yang kamu masukkan × jumlah aplikasi.`)}else html=error('Lengkapi luas lahan, dosis pupuk, dan jumlah aplikasi.');
+    }
+    if(C.tab==='npk'){
+      const area=val('npkArea'), tn=val('npkN'), tp=val('npkP'), tk=val('npkK'), mode=$('#npkMode')?.value;
+      const targets=[tn||0,tp||0,tk||0];
+      if(!(area>0) || targets.some(x=>x<0) || targets.every(x=>x===0)) html=error('Masukkan luas lahan dan minimal satu target hara N, P₂O₅, atau K₂O yang lebih dari 0.');
+      else if(mode==='single'){
+        const pn=val('npk1N'), pp=val('npk1P'), pk=val('npk1K');
+        if([pn,pp,pk].some(x=>x===null||x<0) || (pn+pp+pk)<=0) html=error('Lengkapi analisis N–P₂O₅–K₂O produk dengan angka yang valid.');
+        else {
+          const rates=targets.map((t,i)=>{const pct=[pn,pp,pk][i];return t>0&&pct>0?t/(pct/100):null;});
+          const positive=rates.filter(x=>x!==null);
+          const kgHa=Math.max(...positive);
+          const supplied=[pn,pp,pk].map(p=>kgHa*p/100);
+          const labels=['N','P₂O₅','K₂O'];
+          const rows=[['Dosis untuk N',rates[0]!==null?f(rates[0])+' kg/ha':'—'],['Dosis untuk P₂O₅',rates[1]!==null?f(rates[1])+' kg/ha':'—'],['Dosis untuk K₂O',rates[2]!==null?f(rates[2])+' kg/ha':'—'],['Dosis kerja tertinggi',f(kgHa)+' kg/ha'],['Total produk area',f(kgHa*area)+' kg']];
+          const balances=labels.map((lab,i)=>`${lab}: ${f(supplied[i])} vs target ${f(targets[i])} kg/ha`);
+          const excess=supplied.map((v,i)=>v-targets[i]);
+          html=result('Analisis 1 produk',rows,`Produk dihitung dengan kadar ${f(pn,2)}-${f(pp,2)}-${f(pk,2)}%. Dosis tertinggi dipakai hanya sebagai pembanding matematis agar semua target yang memiliki kadar >0 tercapai; hasil dapat menyebabkan kelebihan hara. ${balances.join(' · ')}`);
+          if(excess.some((x,i)=>x>0.01&&targets[i]>0)) html+=`<div class="calc-warning"><strong>Perhatian rasio</strong><p>Satu produk ${f(pn,0)}-${f(pp,0)}-${f(pk,0)} tidak dapat memenuhi semua target tepat sekaligus pada angka ini. Cek selisih hara sebelum menjadikan hasil sebagai rencana pemupukan.</p></div>`;
+        }
+      } else {
+        const A=[[val('npkAN')/100,val('npkBN')/100,val('npkCN')/100],[val('npkAP')/100,val('npkBP')/100,val('npkCP')/100],[val('npkAK')/100,val('npkBK')/100,val('npkCK')/100]];
+        const flat=A.flat();
+        if(flat.some(x=>!Number.isFinite(x)||x<0) || A.every(r=>r.every(x=>x===0))) html=error('Lengkapi analisis tiga pupuk dengan angka 0–100%.');
+        else {
+          const det=A[0][0]*(A[1][1]*A[2][2]-A[1][2]*A[2][1])-A[0][1]*(A[1][0]*A[2][2]-A[1][2]*A[2][0])+A[0][2]*(A[1][0]*A[2][1]-A[1][1]*A[2][0]);
+          if(Math.abs(det)<1e-10) html=error('Kombinasi tiga pupuk tidak memiliki solusi unik. Gunakan analisis pupuk yang berbeda.');
+          else {
+            const b=targets;
+            const determinant=m=>m[0][0]*(m[1][1]*m[2][2]-m[1][2]*m[2][1])-m[0][1]*(m[1][0]*m[2][2]-m[1][2]*m[2][0])+m[0][2]*(m[1][0]*m[2][1]-m[1][1]*m[2][0]);
+          const xs=[0,1,2].map(col=>{const m=A.map(r=>r.slice());m[0][col]=b[0];m[1][col]=b[1];m[2][col]=b[2];return determinant(m)/det;});
+            if(xs.some(x=>!Number.isFinite(x)||x<-1e-8)) html=error('Solusi matematis menghasilkan jumlah pupuk negatif. Kombinasi analisis ini tidak dapat memenuhi target hara tersebut tanpa menambah/mengganti pupuk.');
+            else {
+              const totalHa=xs.reduce((a,b)=>a+b,0), totalArea=xs.map(x=>x*area);
+              html=result('Hasil campuran 3 pupuk',[['Pupuk A',f(xs[0])+' kg/ha'],['Pupuk B',f(xs[1])+' kg/ha'],['Pupuk C',f(xs[2])+' kg/ha'],['Total campuran',f(totalHa)+' kg/ha'],['Total area',f(totalArea.reduce((a,b)=>a+b,0))+' kg']],`Persamaan: N = target N; P₂O₅ = target P₂O₅; K₂O = target K₂O. Hasil ini murni solusi matematika dari analisis pupuk yang dimasukkan.`);
+            }
+          }
+        }
+      }
     }
     out.innerHTML=html;
   }

@@ -1,4 +1,4 @@
-# Crop Expert v0.23.0
+# Crop Expert v0.23.6
 
 **Al-Kitab untuk Sales, Formulator dan Petani Mbois**
 
@@ -177,6 +177,21 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Modul tetap mempertahankan growth/OPT timing layer v0.23 sebagai basis utama.
 
 
+## v0.23.6 — NPK Fertilizer Calculator
+- Added NPK calculator with single-product ratio check and 3-fertilizer blend math.
+- Uses N, P₂O₅ and K₂O label analysis entered by the user.
+- Reports kg/ha and total product for the selected area.
+- Calculation aid only; it does not prescribe fertilizer type or rate.
+
+## v0.23.4 — Bayer-inspired UI & Internal Calculator Suite
+- Calculator Suite diberi visual Bayer-inspired: dominan putih/biru dengan aksen hijau, tetap menggunakan identitas Crop Expert.
+- Dua kartu tool eksternal di Calculator Suite diganti menjadi kalkulator internal.
+- Ditambahkan **Kalibrasi & Takaran**: L/ha, cakupan tangki, produk/tangki, target area, dan pengukuran takaran berdasarkan alat ukur pengguna.
+- Ditambahkan **Kalkulator Benih**: luas, jarak tanam, benih/lubang, cadangan, dan daya tumbuh.
+- Ditambahkan **Kalkulator Pupuk**: kebutuhan produk berdasarkan dosis input pengguna, luas, dan jumlah aplikasi.
+- Semua kalkulator tetap bersifat aritmetika: tidak memilih dosis atau produk.
+- Konsep fungsi Kalibrasi & Takaran mengikuti pola alat Pranatani; konsep Kalkulator Benih mengikuti pola tool JuruTani, lalu diimplementasikan ulang sebagai modul lokal Crop Expert.
+
 ## v0.23.3 — Fusarium Bawang Merah, Weather & Spray Assist
 - Menambahkan dua foto pengguna untuk `Fusarium oxysporum f. sp. cepae` pada bawang merah; foto kedua menjadi visual utama.
 - Menambahkan kurasi foto hama utama untuk bawang merah, padi, dan cabai dengan sumber/lisensi dicatat pada record OPT.
@@ -192,3 +207,11 @@ This separation makes it possible to expand each crop with crop-specific growth 
 - Judul **Crop Nutrition Guideline** diganti menjadi **Panduan Hara Tanaman**.
 - Setiap unsur hara kini menampilkan contoh pupuk/sumber hara dari knowledge layer v0.18, selain fungsi dan bentuk hara.
 - Master klasifikasi IRAC/FRAC tetap mengikuti sumber resmi terbaru yang tersedia di aplikasi; klasifikasi tidak disamakan dengan status registrasi lokal.
+
+
+## v0.23.6 — Cara Kerja Pestisida
+- Menambahkan screen native **Cara Kerja Pestisida** untuk insektisida, fungisida, dan herbisida.
+- Ilustrasi insektisida diperjelas dengan larva: integument/cuticle, spirakel, mouthparts, CNS/saraf, stomach/midgut, dan hemolimfa.
+- Materi menggabungkan Agrobiology Library dengan klasifikasi resmi IRAC/FRAC/HRAC.
+- Target-site visual dipindahkan dari konsep ilustrasi generik menjadi peta fisiologi yang lebih mudah dibaca.
+- Klasifikasi current tetap berada pada master MoA dan tidak diubah menjadi rekomendasi dosis.

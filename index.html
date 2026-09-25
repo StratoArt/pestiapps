@@ -44,6 +44,7 @@
     <button class="feature-card teal" data-go="crop-guidelines"><span class="feature-icon">🌾</span><span><strong>Crop Guideline</strong><small>30 crop · fase · nutrisi · diagnosis</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
+    <button class="feature-card blue moa-guide-card" data-go="pesticide-moa"><span class="feature-icon">⚗️</span><span><strong>Cara Kerja Pestisida</strong><small>Insektisida · Fungisida · Herbisida</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="calculators"><span class="feature-icon">🧮</span><span><strong>Calculator Suite</strong><small>Dosis · Area · Spray · Kalibrasi</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="weather"><span class="feature-icon">🌦️</span><span><strong>Weather & Spray Assist</strong><small>Cuaca lokal · jendela semprot</small></span><i>›</i></button>
   </div>
@@ -140,7 +141,7 @@
   <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Calculator Suite</strong><small>Hitung dari label & hasil kalibrasi — bukan rekomendasi dosis</small></div></div>
   <div class="calc-note"><strong>⚠️ Prinsip keamanan</strong><p>Masukkan angka yang berasal dari label produk, hasil kalibrasi, atau data lapangan. Kalkulator hanya menghitung; tidak menetapkan dosis, konsentrasi, interval, PHI, atau produk yang harus digunakan.</p></div>
   <div class="calc-tabs" id="calcTabs">
-    <button class="active" data-calc="area">📐 Area</button><button data-calc="spray">💧 Spray</button><button data-calc="dose">🧪 Dosis</button><button data-calc="backpack">🎒 Backpack</button><button data-calc="sprayer">🚜 Sprayer</button><button data-calc="tank">🧴 / Tank</button><button data-calc="granule">🌾 Granule</button><button data-calc="ai">⚗️ AI</button><button data-calc="seed">🌱 Seed</button>
+    <button class="active" data-calc="area">📐 Area</button><button data-calc="spray">💧 Spray</button><button data-calc="dose">🧪 Dosis</button><button data-calc="backpack">🎒 Backpack</button><button data-calc="sprayer">🚜 Sprayer</button><button data-calc="tank">🧴 / Tank</button><button data-calc="granule">🌾 Granule</button><button data-calc="ai">⚗️ AI</button><button data-calc="seed">🌱 Seed</button><button data-calc="calibration">🧰 Kalibrasi</button><button data-calc="seedrate">🌱 Benih</button><button data-calc="fertilizer">🧪 Pupuk</button>
   </div>
   <div id="calculatorPanel"></div>
   <div id="calculatorExternalTools"></div>
@@ -169,6 +170,14 @@
   <div class="scan-info"><strong>Alur baru — Google Lens → Crop Expert</strong><ol><li>Ambil atau pilih foto OPT/gejala tanaman.</li><li>Tekan <b>Identifikasi dengan Google Lens</b>. Lens akan dibuka di browser; pilih foto yang sama untuk pencarian visual.</li><li>Gunakan hasil Lens untuk mendapatkan kandidat nama/organisme, lalu cari namanya kembali di Crop Expert.</li><li>Jika kamu punya ChatGPT, tombol analisis lanjutan tetap tersedia sebagai opsi tambahan.</li></ol><p><b>Penting:</b> Crop Expert tidak menerima hasil Lens secara otomatis. Google Lens berjalan di halaman Google dan hasilnya tidak bisa dibaca kembali oleh PWA ini tanpa integrasi resmi/API. Jadi Lens menjadi mesin pencari visual eksternal, sedangkan Crop Expert menjadi database/verifikasi pengetahuan.</p><p><a href="https://lens.google.com/" target="_blank" rel="noopener">Buka Google Lens ↗</a></p></div>
   <div class="analysis-card scan-return-card"><h3>Sudah dapat nama dari Lens?</h3><p class="scan-return-copy">Masukkan nama kandidat dari Google Lens untuk mencari kecocokan di database Crop Expert.</p><div class="scan-return-row"><input id="lensResultSearch" placeholder="Contoh: Spodoptera exigua / Thrips tabaci" autocomplete="off"><button id="lensResultSearchBtn">Cari OPT</button></div></div>
   <div class="analysis-card" id="analysisGuideCard"><h3>Format hasil yang diminta</h3><div class="analysis-row"><b>1</b><div><strong>Kandidat utama</strong><small>Nama umum + nama ilmiah + ciri yang cocok</small></div></div><div class="analysis-row"><b>2</b><div><strong>Kandidat pembanding</strong><small>Perbedaan utama dengan kandidat lain</small></div></div><div class="analysis-row"><b>3</b><div><strong>Langkah verifikasi</strong><small>Foto/observasi tambahan yang diperlukan</small></div></div></div>
+</section>
+
+<section id="pesticide-moa" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Cara Kerja Pestisida</strong><small>Target biologis · site of action · efek</small></div></div>
+  <div class="moa-guide-hero"><span class="eyebrow">CROP EXPERT · MODE OF ACTION</span><h2>Bagaimana pestisida bekerja?</h2><p>Mulai dari <b>jalan masuk</b>, lanjut ke <b>jaringan/proses biologis</b>, lalu ke <b>target site</b> dan akhirnya efek pada organisme sasaran.</p><div class="moa-chain"><span>Masuk</span><b>→</b><span>Distribusi</span><b>→</b><span>Target</span><b>→</b><span>Efek</span></div></div>
+  <div class="moa-guide-tabs"><button class="active" data-guide="insecticide">🪲 Insektisida</button><button data-guide="fungicide">🍄 Fungisida</button><button data-guide="herbicide">🌿 Herbisida</button></div>
+  <div id="moaGuideContent"></div>
+  <div class="source-box"><strong>Basis klasifikasi</strong><p>Penjelasan edukatif dikombinasikan dari Agrobiology Library dan sumber resmi IRAC, FRAC, serta HRAC. Nomor kelompok dan klasifikasi aktif mengikuti master MoA aplikasi; gunakan label dan registrasi lokal untuk keputusan penggunaan.</p></div>
 </section>
 
 <section id="knowledge" class="screen">
@@ -226,6 +235,7 @@
     <button id="openCropGuidelines"><span>🌱</span><b>Crop Guideline</b><small>30 crop · fase · HST · nutrisi · OPT</small><i>›</i></button>
     <button id="openFormulations"><span>🧪</span><b>Formulation Explorer</b><small>SG · WP · SC · EC · EW · ME</small><i>›</i></button>
     <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
+    <button id="openPesticideMoa"><span>⚗️</span><b>Cara Kerja Pestisida</b><small>Insektisida · Fungisida · Herbisida</small><i>›</i></button>
     <button id="openPesticides"><span>🧴</span><b>Database Pestisida Indonesia</b><small>Produk · bahan aktif · sasaran · MoA</small><i>›</i></button>
     <button id="openCalculators"><span>🧮</span><b>Calculator Suite</b><small>Area · Dosis · Spray · Kalibrasi · Seed</small><i>›</i></button>
     <button id="openWeather"><span>🌦️</span><b>Weather & Spray Assist</b><small>Cuaca lokal · jendela semprot</small><i>›</i></button>
@@ -233,7 +243,7 @@
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.23.2</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.23.6</small></button>
   </div>
   <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>
