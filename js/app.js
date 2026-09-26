@@ -749,7 +749,7 @@ function setScanFile(file){
 function buildScanPrompt(){return `Saya sedang menggunakan Crop Expert untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.\n\nTugas:\n1. Identifikasi tanaman/komoditas jika dapat terlihat.\n2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA.\n3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian.\n4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung.\n5. Jelaskan ciri yang membedakannya dari kandidat lain.\n6. Jika foto tidak cukup, minta foto tambahan yang spesifik.\n7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas.\n8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan.\n9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.\n\nJawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
 function openGoogleLens(){
   if(!state.scanFile)return;
-  window.open('https://lens.google.com/','_blank','noopener');
+  window.open('https://www.google.com/imghp','_blank','noopener');
 }
 function optSearchPool(){return [...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];}
 function searchOptFromLens(){
