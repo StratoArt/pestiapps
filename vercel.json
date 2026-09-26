@@ -1,9 +1,5 @@
 {
-  "functions": {
-    "api/analyze.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
       "source": "/service-worker.js",
