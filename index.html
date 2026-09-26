@@ -27,8 +27,8 @@
     <div class="hero-bg"></div><div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-kicker">AL-KITAB UNTUK SALES, FORMULATOR DAN PETANI MBOIS</p>
-      <h1>Kenali OPT<br><span>sebelum Terlambat</span></h1>
-      <p class="hero-copy">Basis pengetahuan hama, penyakit, gulma dan mekanisme aksi untuk pertanian yang lebih berkelanjutan.</p>
+      <h1>Menuju Pertanian<br><span>yang Lebih Baik</span></h1>
+      <p class="hero-copy">Basis pengetahuan hama, penyakit, gulma, nutrisi dan bahan aktif pestisida untuk pertanian yang lebih baik</p>
       <button class="hero-search" data-go="types"><span>⌕</span><span class="placeholder">Cari OPT, tanaman, atau bahan aktif...</span><b>⌗</b></button>
     </div>
   </div>
@@ -51,6 +51,8 @@
 
   <div class="stats-card"><div><strong id="homeOpt">—</strong><span>OPT</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong id="homeFormulations">—</strong><span>Formulasi</span></div></div>
   <p class="quote">“Pertanian yang lebih tangguh, dimulai dari pengetahuan.”</p>
+  <div class="app-version" aria-label="Versi aplikasi"><span>Crop Expert</span><b>v0.24.0</b><em>AI Vision MVP</em></div>
+   <div class="supported-by" aria-label="Supported by Soilferti Agriculture"><span>Supported by</span><img src="assets/branding/soilferti-agriculture.png" alt="Soilferti Agriculture"></div>
 </section>
 
 <section id="types" class="screen">
@@ -158,7 +160,7 @@
 <section id="scan" class="screen">
   <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></div></div>
   <div class="scan-box scan-live">
-    <div class="scan-preview" id="scanPreview"><div class="scan-corners"></div><span>📷</span><strong id="scanPreviewTitle">Ambil foto / pilih foto</strong><small id="scanPreviewHint">Foto dipakai sebagai titik awal identifikasi. Kamu bisa lanjut ke Google Lens tanpa akun ChatGPT.</small></div>
+    <div class="scan-preview" id="scanPreview"><div class="scan-corners"></div><span>📷</span><strong id="scanPreviewTitle">Ambil foto / pilih foto</strong><small id="scanPreviewHint">Foto dianalisis langsung oleh Crop Expert AI. Jika foto belum cukup jelas, AI akan meminta foto tambahan.</small></div>
     <div class="scan-actions"><button class="primary-btn" id="cameraBtn">📷 Buka Kamera</button><button class="secondary-btn" id="galleryBtn">🖼 Pilih dari Galeri</button></div>
     <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
     <input id="galleryInput" type="file" accept="image/*" hidden>
@@ -167,7 +169,7 @@
     <button class="chatgpt-btn" id="analyzeChatGPTBtn" disabled>✦ Analisis lanjutan dengan ChatGPT</button>
     <button class="ghost-btn" id="copyScanPromptBtn" disabled>Salin prompt analisis</button>
   </div>
-  <div class="scan-info"><strong>Alur baru — Google Lens → Crop Expert</strong><ol><li>Ambil atau pilih foto OPT/gejala tanaman.</li><li>Tekan <b>Identifikasi dengan Google Lens</b>. Lens akan dibuka di browser; pilih foto yang sama untuk pencarian visual.</li><li>Gunakan hasil Lens untuk mendapatkan kandidat nama/organisme, lalu cari namanya kembali di Crop Expert.</li><li>Jika kamu punya ChatGPT, tombol analisis lanjutan tetap tersedia sebagai opsi tambahan.</li></ol><p><b>Penting:</b> Crop Expert tidak menerima hasil Lens secara otomatis. Google Lens berjalan di halaman Google dan hasilnya tidak bisa dibaca kembali oleh PWA ini tanpa integrasi resmi/API. Jadi Lens menjadi mesin pencari visual eksternal, sedangkan Crop Expert menjadi database/verifikasi pengetahuan.</p><p><a href="https://lens.google.com/" target="_blank" rel="noopener">Buka Google Lens ↗</a></p></div>
+  <div class="scan-info"><strong>🤖 AI Vision + Database Crop Expert</strong><ol><li>Ambil atau pilih foto OPT/gejala tanaman.</li><li>Tekan <b>Analisis dengan Crop Expert AI</b>.</li><li>AI memberikan maksimal 3 kandidat berdasarkan ciri yang terlihat.</li><li>Jika ada kecocokan, hasil dapat dibuka langsung di database Crop Expert.</li></ol><p><b>Catatan:</b> AI adalah alat identifikasi awal, bukan diagnosis pasti. Foto yang kurang jelas akan diminta untuk diulang/ditambah.</p><p><a href="https://lens.google.com/" target="_blank" rel="noopener">Buka Google Lens ↗</a></p></div>
   <div class="analysis-card scan-return-card"><h3>Sudah dapat nama dari Lens?</h3><p class="scan-return-copy">Masukkan nama kandidat dari Google Lens untuk mencari kecocokan di database Crop Expert.</p><div class="scan-return-row"><input id="lensResultSearch" placeholder="Contoh: Spodoptera exigua / Thrips tabaci" autocomplete="off"><button id="lensResultSearchBtn">Cari OPT</button></div></div>
   <div class="analysis-card" id="analysisGuideCard"><h3>Format hasil yang diminta</h3><div class="analysis-row"><b>1</b><div><strong>Kandidat utama</strong><small>Nama umum + nama ilmiah + ciri yang cocok</small></div></div><div class="analysis-row"><b>2</b><div><strong>Kandidat pembanding</strong><small>Perbedaan utama dengan kandidat lain</small></div></div><div class="analysis-row"><b>3</b><div><strong>Langkah verifikasi</strong><small>Foto/observasi tambahan yang diperlukan</small></div></div></div>
 </section>
@@ -190,11 +192,11 @@
   <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Tentang Aplikasi</strong><small>Crop Expert · Crop Protection Knowledge Engine</small></div></div>
   <div class="about-card">
     <div class="about-mark">◈</div>
-    <span class="eyebrow">CROP EXXPERT</span>
-    <h2>Kenali OPT sebelum Terlambat</h2>
-    <p class="about-tagline">Al-Kitab untuk Sales, Formulator dan Petani Mbois</p>
+    <span class="eyebrow">CROP EXPERT</span>
+    <h2>Menuju Pertanian yang Lebih Baik</h2>
+    <p class="about-tagline">Basis pengetahuan hama, penyakit, gulma, nutrisi dan bahan aktif pestisida untuk pertanian yang lebih baik</p>
     <div class="about-divider"></div>
-    <p class="about-credit">Dibuat oleh <strong>Amrizal Ivan Pratama S.P.</strong><br>Bayer District Representative Nganjuk<br><span>2026 all rights reserved</span></p>
+    <p class="about-credit">Dibuat oleh <strong>Amrizal Ivan Pratama S.P.</strong><br>Bayer District Representative Nganjuk<br><strong>Co-Founder Soilferti Agriculture</strong><br><span>Co Writer: Eber Lonameo S.P.<br><span>CEO PT Agri Chemical Indonesia</span><br><span>2026 all rights reserved</span></p>
   </div>
   <div class="source-box">
     <strong>Tentang Crop Expert</strong>
@@ -243,7 +245,7 @@
     <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
     <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
     <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
-    <button><span>ⓘ</span><b>Versi</b><small>v0.23.7</small></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.24.0</small></button>
   </div>
   <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
 </section>
@@ -258,6 +260,7 @@
 </nav>
 <div id="detail"></div>
 <script src="js/app.js"></script>
+<script src="js/scan-ai.js"></script>
 <script src="js/calculators.js"></script>
 <script src="js/weather.js"></script>
 </div>

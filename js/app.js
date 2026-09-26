@@ -744,7 +744,7 @@ function setScanFile(file){
   if(!file || !file.type.startsWith('image/')) return; state.scanFile=file;
   const preview=$('#scanPreview'); const url=URL.createObjectURL(file); preview.style.backgroundImage=`url("${url}")`; preview.style.backgroundSize='cover'; preview.style.backgroundPosition='center';
   preview.querySelector('span').textContent='✓'; $('#scanPreviewTitle').textContent=file.name||'Foto siap dianalisis'; $('#scanPreviewHint').textContent='Foto siap. Kamu bisa lanjut ke Google Lens atau ChatGPT.';
-  $('#scanFileMeta').hidden=false; $('#scanFileMeta').textContent=`${file.name||'foto'} · ${Math.round(file.size/1024)} KB`; $('#analyzeChatGPTBtn').disabled=false; $('#copyScanPromptBtn').disabled=false; $('#googleLensBtn').disabled=false;
+  $('#scanFileMeta').hidden=false; $('#scanFileMeta').textContent=`${file.name||'foto'} · ${Math.round(file.size/1024)} KB`; $('#analyzeChatGPTBtn').disabled=false; $('#copyScanPromptBtn').disabled=false; $('#googleLensBtn').disabled=false; window.CropExpertAI?.onFileReady?.();
 }
 function buildScanPrompt(){return `Saya sedang menggunakan Crop Expert untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.\n\nTugas:\n1. Identifikasi tanaman/komoditas jika dapat terlihat.\n2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA.\n3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian.\n4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung.\n5. Jelaskan ciri yang membedakannya dari kandidat lain.\n6. Jika foto tidak cukup, minta foto tambahan yang spesifik.\n7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas.\n8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan.\n9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.\n\nJawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
 function openGoogleLens(){
@@ -835,6 +835,9 @@ $('#copyScanPromptBtn').addEventListener('click',copyScanPrompt);
 $('#installBtn').addEventListener('click',async()=>{if(state.deferredPrompt){await state.deferredPrompt.prompt();state.deferredPrompt=null}else alert('Gunakan menu Chrome → Tambahkan ke layar utama untuk memasang aplikasi.')});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();state.deferredPrompt=e;$('#installBtn').hidden=false});
 window.addEventListener('appinstalled',()=>$('#installBtn').hidden=true);
-if('serviceWorker'in navigator)navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!sessionStorage.getItem('ce-sw-reloaded-v024')){sessionStorage.setItem('ce-sw-reloaded-v024','1');location.reload();}});
+  navigator.serviceWorker.register('service-worker.js?v=0.24.0',{updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{});
+}
 initHistory();
 load().catch(e=>console.error(e));
