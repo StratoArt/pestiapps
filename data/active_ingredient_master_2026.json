@@ -1,0 +1,3940 @@
+{
+  "version": "0.24.2",
+  "title": "Master Bahan Aktif 2026",
+  "record_count": 393,
+  "records": [
+    {
+      "AI ID": "ai-17-types",
+      "Bahan Aktif Standar": "17 types",
+      "Bahan Aktif Tampilan": "17 types",
+      "Variasi Nama Sumber": "17 types",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-2-4-d-dimethylamine",
+      "Bahan Aktif Standar": "2,4-D dimethylamine",
+      "Bahan Aktif Tampilan": "2,4-D dimethylamine",
+      "Variasi Nama Sumber": "2,4-D dimethylamine",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-2-4-d-dimethylammonium",
+      "Bahan Aktif Standar": "2,4-D Dimethylammonium",
+      "Bahan Aktif Tampilan": "2,4-D Dimethylammonium",
+      "Variasi Nama Sumber": "2,4-D Dimethylammonium",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-2-4-d-dimetil-amina",
+      "Bahan Aktif Standar": "2,4-D dimetil amina",
+      "Bahan Aktif Tampilan": "2,4-D dimetil amina",
+      "Variasi Nama Sumber": "2,4-D dimetil amina",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-2-4-d-dimetilamina",
+      "Bahan Aktif Standar": "2,4-D dimetilamina",
+      "Bahan Aktif Tampilan": "2,4-D dimetilamina",
+      "Variasi Nama Sumber": "2,4-D dimetilamina",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-2-4-d-dma",
+      "Bahan Aktif Standar": "2,4-D DMA",
+      "Bahan Aktif Tampilan": "2,4-D DMA",
+      "Variasi Nama Sumber": "2,4-D DMA",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-28-homobrassinolide-0-03-g-l-asam-giberelat-a4-a7",
+      "Bahan Aktif Standar": "28-Homobrassinolide 0,03 g/L + Asam giberelat (A4+A7)",
+      "Bahan Aktif Tampilan": "28-Homobrassinolide 0,03 g/L + Asam giberelat (A4+A7)",
+      "Variasi Nama Sumber": "28-Homobrassinolide 0,03 g/L + Asam giberelat (A4+A7)",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-abamectin",
+      "Bahan Aktif Standar": "abamectin",
+      "Bahan Aktif Tampilan": "abamektin",
+      "Variasi Nama Sumber": "Abamektin; abamectin; abamektin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 6",
+      "Kelas Kimia": "Avermectins; Milbemycins"
+    },
+    {
+      "AI ID": "ai-abamektin-18-g-l-etoksazol",
+      "Bahan Aktif Standar": "abamektin 18 g/L + etoksazol",
+      "Bahan Aktif Tampilan": "abamektin 18 g/L + etoksazol",
+      "Variasi Nama Sumber": "abamektin 18 g/L + etoksazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-abamektin-31-g-l-spirotetramat",
+      "Bahan Aktif Standar": "Abamektin 31 g/L + Spirotetramat",
+      "Bahan Aktif Tampilan": "Abamektin 31 g/L + Spirotetramat",
+      "Variasi Nama Sumber": "Abamektin 31 g/L + Spirotetramat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-acephate",
+      "Bahan Aktif Standar": "acephate",
+      "Bahan Aktif Tampilan": "asefat",
+      "Variasi Nama Sumber": "acephate; asefat",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1B",
+      "Kelas Kimia": "Organophosphates"
+    },
+    {
+      "AI ID": "ai-acetamiprid",
+      "Bahan Aktif Standar": "acetamiprid",
+      "Bahan Aktif Tampilan": "asetamiprid",
+      "Variasi Nama Sumber": "Asetamiprid",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 4A",
+      "Kelas Kimia": "Neonicotinoids"
+    },
+    {
+      "AI ID": "ai-acetamiprid-15-flonicamid",
+      "Bahan Aktif Standar": "acetamiprid 15% + flonicamid",
+      "Bahan Aktif Tampilan": "acetamiprid 15% + flonicamid",
+      "Variasi Nama Sumber": "acetamiprid 15% + flonicamid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-adjuvant",
+      "Bahan Aktif Standar": "adjuvant",
+      "Bahan Aktif Tampilan": "adjuvant",
+      "Variasi Nama Sumber": "adjuvant",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-afidopiropen-50-g-l-abamektin",
+      "Bahan Aktif Standar": "Afidopiropen 50 g/L + Abamektin",
+      "Bahan Aktif Tampilan": "Afidopiropen 50 g/L + Abamektin",
+      "Variasi Nama Sumber": "Afidopiropen 50 g/L + Abamektin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-afidopyropen",
+      "Bahan Aktif Standar": "Afidopyropen",
+      "Bahan Aktif Tampilan": "Afidopyropen",
+      "Variasi Nama Sumber": "afidopyropen",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 9D",
+      "Kelas Kimia": "Pyropenes"
+    },
+    {
+      "AI ID": "ai-alfa-sipermetrin-75-g-l-teflubenzuron",
+      "Bahan Aktif Standar": "Alfa-sipermetrin 75 g/L + Teflubenzuron",
+      "Bahan Aktif Tampilan": "Alfa-sipermetrin 75 g/L + Teflubenzuron",
+      "Variasi Nama Sumber": "Alfa-sipermetrin 75 g/L + Teflubenzuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-alfametrin",
+      "Bahan Aktif Standar": "alfametrin",
+      "Bahan Aktif Tampilan": "alfametrin",
+      "Variasi Nama Sumber": "alfametrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-alpha-cypermethrin",
+      "Bahan Aktif Standar": "alpha-cypermethrin",
+      "Bahan Aktif Tampilan": "alpha-cypermethrin",
+      "Variasi Nama Sumber": "Alfa-sipermetrin; alfa-sipermetrin; alpha-cypermethrin",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-ametryn",
+      "Bahan Aktif Standar": "ametryn",
+      "Bahan Aktif Tampilan": "ametrin",
+      "Variasi Nama Sumber": "ametrin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-amisulbrom",
+      "Bahan Aktif Standar": "amisulbrom",
+      "Bahan Aktif Tampilan": "amisulbrom",
+      "Variasi Nama Sumber": "amisulbrom",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 21",
+      "Kelas Kimia": "cyano-imidazole; sulfamoyl-triazole; picolinamides"
+    },
+    {
+      "AI ID": "ai-ammonium-glufosinate",
+      "Bahan Aktif Standar": "ammonium glufosinate",
+      "Bahan Aktif Tampilan": "ammonium glufosinate",
+      "Variasi Nama Sumber": "ammonium glufosinate",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-artikel-perusahaan-menyebut-seaweed-mengandung-alginic-acid-dan-amino-acids",
+      "Bahan Aktif Standar": "artikel perusahaan menyebut seaweed mengandung alginic acid dan amino acids",
+      "Bahan Aktif Tampilan": "artikel perusahaan menyebut seaweed mengandung alginic acid dan amino acids",
+      "Variasi Nama Sumber": "artikel perusahaan menyebut seaweed mengandung alginic acid dan amino acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-amino-dan-peptida",
+      "Bahan Aktif Standar": "Asam amino dan peptida",
+      "Bahan Aktif Tampilan": "Asam amino dan peptida",
+      "Variasi Nama Sumber": "Asam amino dan peptida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-amino-tumbuhan-alami-hormon-penggalak-pertumbuhan-unsur-surih",
+      "Bahan Aktif Standar": "Asam amino tumbuhan alami + hormon + penggalak pertumbuhan + unsur surih",
+      "Bahan Aktif Tampilan": "Asam amino tumbuhan alami + hormon + penggalak pertumbuhan + unsur surih",
+      "Variasi Nama Sumber": "Asam amino tumbuhan alami + hormon + penggalak pertumbuhan + unsur surih",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-giberelat",
+      "Bahan Aktif Standar": "asam giberelat",
+      "Bahan Aktif Tampilan": "asam giberelat",
+      "Variasi Nama Sumber": "asam giberelat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-malat",
+      "Bahan Aktif Standar": "asam malat",
+      "Bahan Aktif Tampilan": "asam malat",
+      "Variasi Nama Sumber": "asam malat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-organik-protein",
+      "Bahan Aktif Standar": "asam organik & protein",
+      "Bahan Aktif Tampilan": "asam organik & protein",
+      "Variasi Nama Sumber": "asam organik & protein",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-sitrat",
+      "Bahan Aktif Standar": "asam sitrat",
+      "Bahan Aktif Tampilan": "asam sitrat",
+      "Variasi Nama Sumber": "asam sitrat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-suksinat",
+      "Bahan Aktif Standar": "asam suksinat",
+      "Bahan Aktif Tampilan": "asam suksinat",
+      "Variasi Nama Sumber": "asam suksinat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asam-tartarat",
+      "Bahan Aktif Standar": "asam tartarat",
+      "Bahan Aktif Tampilan": "asam tartarat",
+      "Variasi Nama Sumber": "asam tartarat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asetamiprid-100-g-l-abamektin",
+      "Bahan Aktif Standar": "asetamiprid 100 g/L + abamektin",
+      "Bahan Aktif Tampilan": "asetamiprid 100 g/L + abamektin",
+      "Variasi Nama Sumber": "asetamiprid 100 g/L + abamektin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asetamiprid-81-g-l-flonicamid",
+      "Bahan Aktif Standar": "Asetamiprid 81 g/L + Flonicamid",
+      "Bahan Aktif Tampilan": "Asetamiprid 81 g/L + Flonicamid",
+      "Variasi Nama Sumber": "Asetamiprid 81 g/L + Flonicamid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-asibenzolar-s-metil",
+      "Bahan Aktif Standar": "Asibenzolar-S-metil",
+      "Bahan Aktif Tampilan": "Asibenzolar-S-metil",
+      "Variasi Nama Sumber": "Asibenzolar-S-metil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-atrazin-200-g-l-mesotrion-70-g-l-nikosulfuron",
+      "Bahan Aktif Standar": "atrazin 200 g/L + mesotrion 70 g/L + nikosulfuron",
+      "Bahan Aktif Tampilan": "atrazin 200 g/L + mesotrion 70 g/L + nikosulfuron",
+      "Variasi Nama Sumber": "atrazin 200 g/L + mesotrion 70 g/L + nikosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-atrazin-48-nikosulfuron",
+      "Bahan Aktif Standar": "atrazin 48% + nikosulfuron",
+      "Bahan Aktif Tampilan": "atrazin 48% + nikosulfuron",
+      "Variasi Nama Sumber": "atrazin 48% + nikosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-atrazin-500-g-l-mesotrion",
+      "Bahan Aktif Standar": "Atrazin 500 g/L + Mesotrion",
+      "Bahan Aktif Tampilan": "Atrazin 500 g/L + Mesotrion",
+      "Variasi Nama Sumber": "Atrazin 500 g/L + Mesotrion; atrazin 500 g/L + mesotrion",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-atrazin-72-nikosulfuron",
+      "Bahan Aktif Standar": "atrazin 72% + nikosulfuron",
+      "Bahan Aktif Tampilan": "atrazin 72% + nikosulfuron",
+      "Variasi Nama Sumber": "atrazin 72% + nikosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-atrazine",
+      "Bahan Aktif Standar": "atrazine",
+      "Bahan Aktif Tampilan": "atrazin",
+      "Variasi Nama Sumber": "Atrazin; atrazine",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 5",
+      "Kelas Kimia": "Triazines; Ureas; Uracils; Phenylcarbamates; Amides; Triazinones"
+    },
+    {
+      "AI ID": "ai-azoksistrobin-11-tebukonazol",
+      "Bahan Aktif Standar": "azoksistrobin 11% + tebukonazol",
+      "Bahan Aktif Tampilan": "azoksistrobin 11% + tebukonazol",
+      "Variasi Nama Sumber": "azoksistrobin 11% + tebukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoksistrobin-159-85-g-l-tebukonazol",
+      "Bahan Aktif Standar": "azoksistrobin 159.85 g/L + tebukonazol",
+      "Bahan Aktif Tampilan": "azoksistrobin 159.85 g/L + tebukonazol",
+      "Variasi Nama Sumber": "azoksistrobin 159.85 g/L + tebukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoksistrobin-18-2-difenokonazol",
+      "Bahan Aktif Standar": "azoksistrobin 18.2% + difenokonazol",
+      "Bahan Aktif Tampilan": "azoksistrobin 18.2% + difenokonazol",
+      "Variasi Nama Sumber": "azoksistrobin 18.2% + difenokonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoksistrobin-200-g-l-difenokonazol",
+      "Bahan Aktif Standar": "azoksistrobin 200 g/L + difenokonazol",
+      "Bahan Aktif Tampilan": "azoksistrobin 200 g/L + difenokonazol",
+      "Variasi Nama Sumber": "azoksistrobin 200 g/L + difenokonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoksistrobin-250-g-l-difenokonazol",
+      "Bahan Aktif Standar": "azoksistrobin 250 g/L + difenokonazol",
+      "Bahan Aktif Tampilan": "azoksistrobin 250 g/L + difenokonazol",
+      "Variasi Nama Sumber": "azoksistrobin 250 g/L + difenokonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoksistrobin-60-g-l-karbendazim-250-g-l-tebukonazol",
+      "Bahan Aktif Standar": "azoksistrobin 60 g/L + karbendazim 250 g/L + tebukonazol",
+      "Bahan Aktif Tampilan": "azoksistrobin 60 g/L + karbendazim 250 g/L + tebukonazol",
+      "Variasi Nama Sumber": "azoksistrobin 60 g/L + karbendazim 250 g/L + tebukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoxystrobin",
+      "Bahan Aktif Standar": "azoxystrobin",
+      "Bahan Aktif Tampilan": "azoksistrobin",
+      "Variasi Nama Sumber": "Azoksistrobin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 11",
+      "Kelas Kimia": "methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides"
+    },
+    {
+      "AI ID": "ai-azoxystrobin-200-g-l-difenoconazole",
+      "Bahan Aktif Standar": "azoxystrobin 200 g/L + difenoconazole",
+      "Bahan Aktif Tampilan": "azoxystrobin 200 g/L + difenoconazole",
+      "Variasi Nama Sumber": "azoxystrobin 200 g/L + difenoconazole",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-azoxystrobin-200-g-l-propiconazole",
+      "Bahan Aktif Standar": "azoxystrobin 200 g/L + propiconazole",
+      "Bahan Aktif Tampilan": "azoxystrobin 200 g/L + propiconazole",
+      "Variasi Nama Sumber": "azoxystrobin 200 g/L + propiconazole",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-b",
+      "Bahan Aktif Standar": "B",
+      "Bahan Aktif Tampilan": "B",
+      "Variasi Nama Sumber": "B",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-b2o3",
+      "Bahan Aktif Standar": "B2O3",
+      "Bahan Aktif Tampilan": "B2O3",
+      "Variasi Nama Sumber": "B2O3",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bahan-aktif-formulasi",
+      "Bahan Aktif Standar": "Bahan aktif formulasi",
+      "Bahan Aktif Tampilan": "Bahan aktif formulasi",
+      "Variasi Nama Sumber": "Bahan aktif formulasi",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bahan-aktif-kombinasi-100-400-50-g-l",
+      "Bahan Aktif Standar": "Bahan aktif kombinasi 100/400/50 g/L",
+      "Bahan Aktif Tampilan": "Bahan aktif kombinasi 100/400/50 g/L",
+      "Variasi Nama Sumber": "Bahan aktif kombinasi 100/400/50 g/L",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bahan-aktif-kombinasi-30-30",
+      "Bahan Aktif Standar": "Bahan aktif kombinasi 30/30%",
+      "Bahan Aktif Tampilan": "Bahan aktif kombinasi 30/30%",
+      "Variasi Nama Sumber": "Bahan aktif kombinasi 30/30%",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-belerang-85-k-1-zn-2-mn-1-ca",
+      "Bahan Aktif Standar": "belerang 85% + K 1% + Zn 2% + Mn 1% + Ca",
+      "Bahan Aktif Tampilan": "belerang 85% + K 1% + Zn 2% + Mn 1% + Ca",
+      "Variasi Nama Sumber": "belerang 85% + K 1% + Zn 2% + Mn 1% + Ca",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-benomil",
+      "Bahan Aktif Standar": "benomil",
+      "Bahan Aktif Tampilan": "benomil",
+      "Variasi Nama Sumber": "benomil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-benomyl",
+      "Bahan Aktif Standar": "benomyl",
+      "Bahan Aktif Tampilan": "benomyl",
+      "Variasi Nama Sumber": "benomyl",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 1",
+      "Kelas Kimia": "benzimidazoles; thiophanates"
+    },
+    {
+      "AI ID": "ai-bentazon",
+      "Bahan Aktif Standar": "Bentazon",
+      "Bahan Aktif Tampilan": "Bentazon",
+      "Variasi Nama Sumber": "bentazone",
+      "Status Normalisasi": "moa_variant",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 6",
+      "Kelas Kimia": "Nitriles"
+    },
+    {
+      "AI ID": "ai-bentazon-400-g-l-mcpa-sodium",
+      "Bahan Aktif Standar": "bentazon 400 g/L + MCPA sodium",
+      "Bahan Aktif Tampilan": "bentazon 400 g/L + MCPA sodium",
+      "Variasi Nama Sumber": "bentazon 400 g/L + MCPA sodium",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-beta-cyfluthrin",
+      "Bahan Aktif Standar": "beta-cyfluthrin",
+      "Bahan Aktif Tampilan": "beta-siflutrin",
+      "Variasi Nama Sumber": "Beta siflutrin; beta siflutrin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-beta-siflutrin",
+      "Bahan Aktif Standar": "Beta-siflutrin",
+      "Bahan Aktif Tampilan": "Beta-siflutrin",
+      "Variasi Nama Sumber": "Beta-siflutrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-bifenazate",
+      "Bahan Aktif Standar": "Bifenazate",
+      "Bahan Aktif Tampilan": "Bifenazate",
+      "Variasi Nama Sumber": "bifenazate",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 20D",
+      "Kelas Kimia": "Bifenazate"
+    },
+    {
+      "AI ID": "ai-bifenthrin",
+      "Bahan Aktif Standar": "bifenthrin",
+      "Bahan Aktif Tampilan": "bifenthrin",
+      "Variasi Nama Sumber": "bifenthrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-bispyribac-sodium",
+      "Bahan Aktif Standar": "bispyribac sodium",
+      "Bahan Aktif Tampilan": "bispyribac sodium",
+      "Variasi Nama Sumber": "bispyribac sodium",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bispyribac-sodium",
+      "Bahan Aktif Standar": "bispyribac-sodium",
+      "Bahan Aktif Tampilan": "natrium bispiribak",
+      "Variasi Nama Sumber": "Natrium bispiribak; natrium bispiribak",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bisultap",
+      "Bahan Aktif Standar": "Bisultap",
+      "Bahan Aktif Tampilan": "Bisultap",
+      "Variasi Nama Sumber": "Bisultap",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bisultap-dimehipo",
+      "Bahan Aktif Standar": "bisultap/dimehipo",
+      "Bahan Aktif Tampilan": "bisultap/dimehipo",
+      "Variasi Nama Sumber": "bisultap/dimehipo",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-boron-larut-air",
+      "Bahan Aktif Standar": "Boron larut air",
+      "Bahan Aktif Tampilan": "Boron larut air",
+      "Variasi Nama Sumber": "Boron larut air",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-bpmc",
+      "Bahan Aktif Standar": "BPMC",
+      "Bahan Aktif Tampilan": "BPMC",
+      "Variasi Nama Sumber": "BPMC",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-broflanilida",
+      "Bahan Aktif Standar": "Broflanilida",
+      "Bahan Aktif Tampilan": "Broflanilida",
+      "Variasi Nama Sumber": "Broflanilida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-broflanilide",
+      "Bahan Aktif Standar": "Broflanilide",
+      "Bahan Aktif Tampilan": "Broflanilide",
+      "Variasi Nama Sumber": "Broflanilide; broflanilide",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 30",
+      "Kelas Kimia": "Isoxazolines; Meta-diamides"
+    },
+    {
+      "AI ID": "ai-buprofezin",
+      "Bahan Aktif Standar": "buprofezin",
+      "Bahan Aktif Tampilan": "buprofezin",
+      "Variasi Nama Sumber": "Buprofezin; buprofezin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 16",
+      "Kelas Kimia": "Buprofezin"
+    },
+    {
+      "AI ID": "ai-buprofezin-10-etofenproks",
+      "Bahan Aktif Standar": "Buprofezin 10% + Etofenproks",
+      "Bahan Aktif Tampilan": "Buprofezin 10% + Etofenproks",
+      "Variasi Nama Sumber": "Buprofezin 10% + Etofenproks",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-butachlor",
+      "Bahan Aktif Standar": "butachlor",
+      "Bahan Aktif Tampilan": "butachlor",
+      "Variasi Nama Sumber": "butaklor",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 15",
+      "Kelas Kimia": "α-Chloroacetamides; Thiocarbamates; α-Oxyacetamides; α-Thioacetamides"
+    },
+    {
+      "AI ID": "ai-butaklor-286-g-l-oksadiargil",
+      "Bahan Aktif Standar": "Butaklor 286 g/L + Oksadiargil",
+      "Bahan Aktif Tampilan": "Butaklor 286 g/L + Oksadiargil",
+      "Variasi Nama Sumber": "Butaklor 286 g/L + Oksadiargil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-butaklor-500-g-l-oksadiazon",
+      "Bahan Aktif Standar": "butaklor 500 g/L + oksadiazon",
+      "Bahan Aktif Tampilan": "butaklor 500 g/L + oksadiazon",
+      "Variasi Nama Sumber": "butaklor 500 g/L + oksadiazon",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-cao",
+      "Bahan Aktif Standar": "CaO",
+      "Bahan Aktif Tampilan": "CaO",
+      "Variasi Nama Sumber": "CaO",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-carbosulfan",
+      "Bahan Aktif Standar": "carbosulfan",
+      "Bahan Aktif Tampilan": "carbosulfan",
+      "Variasi Nama Sumber": "carbosulfan",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1A",
+      "Kelas Kimia": "Carbamates"
+    },
+    {
+      "AI ID": "ai-chlorantraniliprole",
+      "Bahan Aktif Standar": "chlorantraniliprole",
+      "Bahan Aktif Tampilan": "klorantraniliprol",
+      "Variasi Nama Sumber": "Klorantraniliprol; chlorantraniliprole; klorantraniliprol",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 28",
+      "Kelas Kimia": "Diamides"
+    },
+    {
+      "AI ID": "ai-chlorantraniliprole-100-g-l-chlorfenapyr",
+      "Bahan Aktif Standar": "chlorantraniliprole 100 g/L + chlorfenapyr",
+      "Bahan Aktif Tampilan": "chlorantraniliprole 100 g/L + chlorfenapyr",
+      "Variasi Nama Sumber": "chlorantraniliprole 100 g/L + chlorfenapyr",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-chlorfenapyr",
+      "Bahan Aktif Standar": "chlorfenapyr",
+      "Bahan Aktif Tampilan": "klorfenapir",
+      "Variasi Nama Sumber": "Klorfenapir; chlorfenapyr; klorfenapir",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 13",
+      "Kelas Kimia": "Pyrroles; Dinitrophenols"
+    },
+    {
+      "AI ID": "ai-chlorfenapyr-180-g-l-indoxacarb",
+      "Bahan Aktif Standar": "chlorfenapyr 180 g/L + indoxacarb",
+      "Bahan Aktif Tampilan": "chlorfenapyr 180 g/L + indoxacarb",
+      "Variasi Nama Sumber": "chlorfenapyr 180 g/L + indoxacarb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-chlorfenapyr-200-g-l-imidacloprid",
+      "Bahan Aktif Standar": "chlorfenapyr 200 g/L + imidacloprid",
+      "Bahan Aktif Tampilan": "chlorfenapyr 200 g/L + imidacloprid",
+      "Variasi Nama Sumber": "chlorfenapyr 200 g/L + imidacloprid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-chlorfluazuron",
+      "Bahan Aktif Standar": "Chlorfluazuron",
+      "Bahan Aktif Tampilan": "Chlorfluazuron",
+      "Variasi Nama Sumber": "chlorfluazuron",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 15",
+      "Kelas Kimia": "Benzoylureas"
+    },
+    {
+      "AI ID": "ai-chlorothalonil",
+      "Bahan Aktif Standar": "chlorothalonil",
+      "Bahan Aktif Tampilan": "klorotalonil",
+      "Variasi Nama Sumber": "Klorotalonil; chlorothalonil; klorotalonil",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC M05",
+      "Kelas Kimia": "chloronitriles (phthalonitriles)"
+    },
+    {
+      "AI ID": "ai-chlorpyrifos",
+      "Bahan Aktif Standar": "chlorpyrifos",
+      "Bahan Aktif Tampilan": "klorpirifos",
+      "Variasi Nama Sumber": "klorpirifos",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1B",
+      "Kelas Kimia": "Organophosphates"
+    },
+    {
+      "AI ID": "ai-cinflubrolin",
+      "Bahan Aktif Standar": "cinflubrolin",
+      "Bahan Aktif Tampilan": "cinflubrolin",
+      "Variasi Nama Sumber": "cinflubrolin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-cinflubrolin-120-g-l-metil-bensulfuron",
+      "Bahan Aktif Standar": "cinflubrolin 120 g/L + metil bensulfuron",
+      "Bahan Aktif Tampilan": "cinflubrolin 120 g/L + metil bensulfuron",
+      "Variasi Nama Sumber": "cinflubrolin 120 g/L + metil bensulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-clodinafop-propargyl",
+      "Bahan Aktif Standar": "clodinafop-propargyl",
+      "Bahan Aktif Tampilan": "clodinafop-propargyl",
+      "Variasi Nama Sumber": "clodinafop-propargyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 1",
+      "Kelas Kimia": "Cyclohexanediones; Aryloxyphenoxypropionates"
+    },
+    {
+      "AI ID": "ai-clomazone-230-g-l-fomesafen-95-g-l-quizalofop-p-ethyl",
+      "Bahan Aktif Standar": "clomazone 230 g/L + fomesafen 95 g/L + quizalofop-P-ethyl",
+      "Bahan Aktif Tampilan": "clomazone 230 g/L + fomesafen 95 g/L + quizalofop-P-ethyl",
+      "Variasi Nama Sumber": "clomazone 230 g/L + fomesafen 95 g/L + quizalofop-P-ethyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-co",
+      "Bahan Aktif Standar": "Co",
+      "Bahan Aktif Tampilan": "Co",
+      "Variasi Nama Sumber": "Co",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-copper-hydroxide",
+      "Bahan Aktif Standar": "copper hydroxide",
+      "Bahan Aktif Tampilan": "copper hydroxide",
+      "Variasi Nama Sumber": "copper hydroxide",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-copper-oxychloride-sulfate-mixture",
+      "Bahan Aktif Standar": "copper oxychloride/sulfate mixture",
+      "Bahan Aktif Tampilan": "copper oxychloride/sulfate mixture",
+      "Variasi Nama Sumber": "copper oxychloride/sulfate mixture",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-cu",
+      "Bahan Aktif Standar": "Cu",
+      "Bahan Aktif Tampilan": "Cu",
+      "Variasi Nama Sumber": "Cu",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-cyantraniliprole",
+      "Bahan Aktif Standar": "cyantraniliprole",
+      "Bahan Aktif Tampilan": "siantraniliprol",
+      "Variasi Nama Sumber": "Siantraniliprol",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 28",
+      "Kelas Kimia": "Diamides"
+    },
+    {
+      "AI ID": "ai-cyazofamid",
+      "Bahan Aktif Standar": "cyazofamid",
+      "Bahan Aktif Tampilan": "cyazofamid",
+      "Variasi Nama Sumber": "Siazofamid",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 21",
+      "Kelas Kimia": "cyano-imidazole; sulfamoyl-triazole; picolinamides"
+    },
+    {
+      "AI ID": "ai-cyclobunofen",
+      "Bahan Aktif Standar": "cyclobunofen",
+      "Bahan Aktif Tampilan": "cyclobunofen",
+      "Variasi Nama Sumber": "cyclobunofen",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-cyhalofop-butyl",
+      "Bahan Aktif Standar": "cyhalofop-butyl",
+      "Bahan Aktif Tampilan": "sihalofop-butil",
+      "Variasi Nama Sumber": "Sihalofop-butil",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 1",
+      "Kelas Kimia": "Cyclohexanediones; Aryloxyphenoxypropionates"
+    },
+    {
+      "AI ID": "ai-cymoxanil",
+      "Bahan Aktif Standar": "cymoxanil",
+      "Bahan Aktif Tampilan": "simoksanil",
+      "Variasi Nama Sumber": "cymoxanil; simoksanil",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-cypermethrin",
+      "Bahan Aktif Standar": "cypermethrin",
+      "Bahan Aktif Tampilan": "sipermetrin",
+      "Variasi Nama Sumber": "Sipermetrin; sipermetrin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-deltamethrin",
+      "Bahan Aktif Standar": "deltamethrin",
+      "Bahan Aktif Tampilan": "deltametrin",
+      "Variasi Nama Sumber": "Deltametrin; deltamethrin; deltametrin",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-diafenthiuron",
+      "Bahan Aktif Standar": "Diafenthiuron",
+      "Bahan Aktif Tampilan": "Diafenthiuron",
+      "Variasi Nama Sumber": "diafenthiuron",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 12A",
+      "Kelas Kimia": "Diafenthiuron"
+    },
+    {
+      "AI ID": "ai-diazinon",
+      "Bahan Aktif Standar": "diazinon",
+      "Bahan Aktif Tampilan": "diazinon",
+      "Variasi Nama Sumber": "diazinon",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1B",
+      "Kelas Kimia": "Organophosphates"
+    },
+    {
+      "AI ID": "ai-difenoconazole",
+      "Bahan Aktif Standar": "difenoconazole",
+      "Bahan Aktif Tampilan": "difenokonazol",
+      "Variasi Nama Sumber": "Difenokonazol; difenokonazol",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 3",
+      "Kelas Kimia": "DMI-fungicides (SBI Class I)"
+    },
+    {
+      "AI ID": "ai-difenoconazole-propiconazole",
+      "Bahan Aktif Standar": "difenoconazole + propiconazole",
+      "Bahan Aktif Tampilan": "difenoconazole + propiconazole",
+      "Variasi Nama Sumber": "difenoconazole + propiconazole",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-dikamba",
+      "Bahan Aktif Standar": "dikamba",
+      "Bahan Aktif Tampilan": "dikamba",
+      "Variasi Nama Sumber": "dikamba",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-dimehipo",
+      "Bahan Aktif Standar": "Dimehipo",
+      "Bahan Aktif Tampilan": "Dimehipo",
+      "Variasi Nama Sumber": "Dimehipo; dimehipo",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-dimethoate",
+      "Bahan Aktif Standar": "dimethoate",
+      "Bahan Aktif Tampilan": "dimetoat",
+      "Variasi Nama Sumber": "dimetoat",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1B",
+      "Kelas Kimia": "Organophosphates"
+    },
+    {
+      "AI ID": "ai-dimethomorph",
+      "Bahan Aktif Standar": "dimethomorph",
+      "Bahan Aktif Tampilan": "dimetomorf",
+      "Variasi Nama Sumber": "dimethomorph; dimetomorf",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 40",
+      "Kelas Kimia": "cinnamic acid amides; valinamide carbamates; mandelic acid amides"
+    },
+    {
+      "AI ID": "ai-dimpropyridaz",
+      "Bahan Aktif Standar": "Dimpropyridaz",
+      "Bahan Aktif Tampilan": "Dimpropyridaz",
+      "Variasi Nama Sumber": "Dimpropyridaz",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 36",
+      "Kelas Kimia": "Pyridazine pyrazolecarboxamides"
+    },
+    {
+      "AI ID": "ai-dimpyrargyl",
+      "Bahan Aktif Standar": "dimpyrargyl",
+      "Bahan Aktif Tampilan": "dimpyrargyl",
+      "Variasi Nama Sumber": "dimpyrargyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-dinotefuran",
+      "Bahan Aktif Standar": "dinotefuran",
+      "Bahan Aktif Tampilan": "dinotefuran",
+      "Variasi Nama Sumber": "dinotefuran",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 4A",
+      "Kelas Kimia": "Neonicotinoids"
+    },
+    {
+      "AI ID": "ai-diuron",
+      "Bahan Aktif Standar": "diuron",
+      "Bahan Aktif Tampilan": "diuron",
+      "Variasi Nama Sumber": "Diuron; diuron",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 5",
+      "Kelas Kimia": "Triazines; Ureas; Uracils; Phenylcarbamates; Amides; Triazinones"
+    },
+    {
+      "AI ID": "ai-edta",
+      "Bahan Aktif Standar": "EDTA",
+      "Bahan Aktif Tampilan": "EDTA",
+      "Variasi Nama Sumber": "EDTA",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-ekstrak-rumput-laut-ascophyllum-nodosum",
+      "Bahan Aktif Standar": "ekstrak rumput laut Ascophyllum nodosum",
+      "Bahan Aktif Tampilan": "ekstrak rumput laut Ascophyllum nodosum",
+      "Variasi Nama Sumber": "ekstrak rumput laut Ascophyllum nodosum",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-emamectin-benzoate",
+      "Bahan Aktif Standar": "emamectin benzoate",
+      "Bahan Aktif Tampilan": "emamektin benzoat",
+      "Variasi Nama Sumber": "Emamektin benzoat; emamectin benzoate; emamektin benzoat",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 6",
+      "Kelas Kimia": "Avermectins; Milbemycins"
+    },
+    {
+      "AI ID": "ai-emamectin-benzoate-21-g-l-beta-cypermethrin",
+      "Bahan Aktif Standar": "emamectin benzoate 21 g/L + beta-cypermethrin",
+      "Bahan Aktif Tampilan": "emamectin benzoate 21 g/L + beta-cypermethrin",
+      "Variasi Nama Sumber": "emamectin benzoate 21 g/L + beta-cypermethrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-emamektin-benzoat-35-g-l-klorantraniliprol",
+      "Bahan Aktif Standar": "emamektin benzoat 35 g/L + klorantraniliprol",
+      "Bahan Aktif Tampilan": "emamektin benzoat 35 g/L + klorantraniliprol",
+      "Variasi Nama Sumber": "emamektin benzoat 35 g/L + klorantraniliprol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-emamektin-benzoat-50-g-l-indoksakarb",
+      "Bahan Aktif Standar": "emamektin benzoat 50 g/L + indoksakarb",
+      "Bahan Aktif Tampilan": "emamektin benzoat 50 g/L + indoksakarb",
+      "Variasi Nama Sumber": "emamektin benzoat 50 g/L + indoksakarb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-emamektin-benzoat-7-klorbenzuron",
+      "Bahan Aktif Standar": "Emamektin benzoat 7% + Klorbenzuron",
+      "Bahan Aktif Tampilan": "Emamektin benzoat 7% + Klorbenzuron",
+      "Variasi Nama Sumber": "Emamektin benzoat 7% + Klorbenzuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-emamektin-benzoat-75-g-l-lufenuron",
+      "Bahan Aktif Standar": "emamektin benzoat 75 g/L + lufenuron",
+      "Bahan Aktif Tampilan": "emamektin benzoat 75 g/L + lufenuron",
+      "Variasi Nama Sumber": "emamektin benzoat 75 g/L + lufenuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-etaboksam",
+      "Bahan Aktif Standar": "Etaboksam",
+      "Bahan Aktif Tampilan": "Etaboksam",
+      "Variasi Nama Sumber": "Etaboksam",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-ethephon",
+      "Bahan Aktif Standar": "ethephon",
+      "Bahan Aktif Tampilan": "ethephon",
+      "Variasi Nama Sumber": "ethephon",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-ethoxysulfuron",
+      "Bahan Aktif Standar": "ethoxysulfuron",
+      "Bahan Aktif Tampilan": "etoksisulfuron",
+      "Variasi Nama Sumber": "Etoksisulfuron",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-etoksisulfuron-20-g-l",
+      "Bahan Aktif Standar": "Etoksisulfuron 20 g/l.",
+      "Bahan Aktif Tampilan": "Etoksisulfuron 20 g/l.",
+      "Variasi Nama Sumber": "Etoksisulfuron 20 g/l.",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-famoxadone-22-5-cymoxanil",
+      "Bahan Aktif Standar": "famoxadone 22.5% + cymoxanil",
+      "Bahan Aktif Tampilan": "famoxadone 22.5% + cymoxanil",
+      "Variasi Nama Sumber": "famoxadone 22.5% + cymoxanil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fe",
+      "Bahan Aktif Standar": "Fe",
+      "Bahan Aktif Tampilan": "Fe",
+      "Variasi Nama Sumber": "Fe",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fe-mn-zn-cu-b-mo-co",
+      "Bahan Aktif Standar": "Fe/Mn/Zn/Cu/B/Mo/Co",
+      "Bahan Aktif Tampilan": "Fe/Mn/Zn/Cu/B/Mo/Co",
+      "Variasi Nama Sumber": "Fe/Mn/Zn/Cu/B/Mo/Co",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenobucarb",
+      "Bahan Aktif Standar": "Fenobucarb",
+      "Bahan Aktif Tampilan": "Fenobucarb",
+      "Variasi Nama Sumber": "Fenobucarb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1A",
+      "Kelas Kimia": "Carbamates"
+    },
+    {
+      "AI ID": "ai-fenobukarb",
+      "Bahan Aktif Standar": "fenobukarb",
+      "Bahan Aktif Tampilan": "fenobukarb",
+      "Variasi Nama Sumber": "fenobukarb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenoksanil-112-g-l-prokloraz",
+      "Bahan Aktif Standar": "Fenoksanil 112 g/L + Prokloraz",
+      "Bahan Aktif Tampilan": "Fenoksanil 112 g/L + Prokloraz",
+      "Variasi Nama Sumber": "Fenoksanil 112 g/L + Prokloraz",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenoksikarb-75-g-l-diafentiuron",
+      "Bahan Aktif Standar": "Fenoksikarb 75 g/L + Diafentiuron",
+      "Bahan Aktif Tampilan": "Fenoksikarb 75 g/L + Diafentiuron",
+      "Variasi Nama Sumber": "Fenoksikarb 75 g/L + Diafentiuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenoxaprop-p-ethyl",
+      "Bahan Aktif Standar": "fenoxaprop-P-ethyl",
+      "Bahan Aktif Tampilan": "fenoksaprop-P-etil",
+      "Variasi Nama Sumber": "Fenoksaprop-P-etil; Fenoksaprop-p-etil; fenoksaprop-P-etil; fenoxaprop-P-ethyl",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenoxaprop-p-ethyl-ethyl",
+      "Bahan Aktif Standar": "fenoxaprop-P-ethyl + ethyl?",
+      "Bahan Aktif Tampilan": "fenoxaprop-P-ethyl + ethyl?",
+      "Variasi Nama Sumber": "fenoxaprop-P-ethyl + ethyl?",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenoxaprop-p-ethyl-69-g-l-ethoxysulfuron",
+      "Bahan Aktif Standar": "fenoxaprop-P-ethyl 69 g/L + ethoxysulfuron",
+      "Bahan Aktif Tampilan": "fenoxaprop-P-ethyl 69 g/L + ethoxysulfuron",
+      "Variasi Nama Sumber": "fenoxaprop-P-ethyl 69 g/L + ethoxysulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenpyrazone",
+      "Bahan Aktif Standar": "fenpyrazone",
+      "Bahan Aktif Tampilan": "fenpyrazone",
+      "Variasi Nama Sumber": "fenpyrazone",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fentin-asetat",
+      "Bahan Aktif Standar": "fentin asetat",
+      "Bahan Aktif Tampilan": "fentin asetat",
+      "Variasi Nama Sumber": "fentin asetat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenvalerat",
+      "Bahan Aktif Standar": "fenvalerat",
+      "Bahan Aktif Tampilan": "fenvalerat",
+      "Variasi Nama Sumber": "fenvalerat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fenvalerate",
+      "Bahan Aktif Standar": "fenvalerate",
+      "Bahan Aktif Tampilan": "fenvalerate",
+      "Variasi Nama Sumber": "fenvalerate",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-fipronil",
+      "Bahan Aktif Standar": "fipronil",
+      "Bahan Aktif Tampilan": "fipronil",
+      "Variasi Nama Sumber": "Fipronil; fipronil",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 2B",
+      "Kelas Kimia": "Phenylpyrazoles (Fiproles)"
+    },
+    {
+      "AI ID": "ai-flometoquin",
+      "Bahan Aktif Standar": "Flometoquin",
+      "Bahan Aktif Tampilan": "Flometoquin",
+      "Variasi Nama Sumber": "flometoquin",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 34",
+      "Kelas Kimia": "Flometoquin"
+    },
+    {
+      "AI ID": "ai-flonicamid-20-pymetrozine",
+      "Bahan Aktif Standar": "flonicamid 20% + pymetrozine",
+      "Bahan Aktif Tampilan": "flonicamid 20% + pymetrozine",
+      "Variasi Nama Sumber": "flonicamid 20% + pymetrozine",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-florpyrauxifen-benzyl",
+      "Bahan Aktif Standar": "Florpyrauxifen-benzyl",
+      "Bahan Aktif Tampilan": "Florpyrauxifen-benzyl",
+      "Variasi Nama Sumber": "Florpyrauxifen-benzyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-florpyrauxifen-benzyl-rinskor-bahan-aktif-pendamping",
+      "Bahan Aktif Standar": "Florpyrauxifen-benzyl (Rinskor) + bahan aktif pendamping",
+      "Bahan Aktif Tampilan": "Florpyrauxifen-benzyl (Rinskor) + bahan aktif pendamping",
+      "Variasi Nama Sumber": "Florpyrauxifen-benzyl (Rinskor) + bahan aktif pendamping",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluazinam",
+      "Bahan Aktif Standar": "fluazinam",
+      "Bahan Aktif Tampilan": "fluazinam",
+      "Variasi Nama Sumber": "fluazinam",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 29",
+      "Kelas Kimia": "dinitrophenyl-crotonates; 2,6-dinitro-anilines"
+    },
+    {
+      "AI ID": "ai-flubendiamida",
+      "Bahan Aktif Standar": "flubendiamida",
+      "Bahan Aktif Tampilan": "flubendiamida",
+      "Variasi Nama Sumber": "flubendiamida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flubendiamide",
+      "Bahan Aktif Standar": "Flubendiamide",
+      "Bahan Aktif Tampilan": "Flubendiamide",
+      "Variasi Nama Sumber": "flubendiamide",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 28",
+      "Kelas Kimia": "Diamides"
+    },
+    {
+      "AI ID": "ai-fluchloraminopyr",
+      "Bahan Aktif Standar": "fluchloraminopyr",
+      "Bahan Aktif Tampilan": "fluchloraminopyr",
+      "Variasi Nama Sumber": "fluchloraminopyr",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluchloraminopyr-tefuryl",
+      "Bahan Aktif Standar": "fluchloraminopyr-tefuryl",
+      "Bahan Aktif Tampilan": "fluchloraminopyr-tefuryl",
+      "Variasi Nama Sumber": "fluchloraminopyr-tefuryl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flufenauxirim-metotyl",
+      "Bahan Aktif Standar": "flufenauxirim-metotyl",
+      "Bahan Aktif Tampilan": "flufenauxirim-metotyl",
+      "Variasi Nama Sumber": "flufenauxirim-metotyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flufenazopyr",
+      "Bahan Aktif Standar": "flufenazopyr",
+      "Bahan Aktif Tampilan": "flufenazopyr",
+      "Variasi Nama Sumber": "flufenazopyr",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flufenoximacil",
+      "Bahan Aktif Standar": "flufenoximacil",
+      "Bahan Aktif Tampilan": "flufenoximacil",
+      "Variasi Nama Sumber": "flufenoximacil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluksapiroksad-250-g-l-piraklostrobin",
+      "Bahan Aktif Standar": "Fluksapiroksad 250 g/L + Piraklostrobin",
+      "Bahan Aktif Tampilan": "Fluksapiroksad 250 g/L + Piraklostrobin",
+      "Variasi Nama Sumber": "Fluksapiroksad 250 g/L + Piraklostrobin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flumioxazin",
+      "Bahan Aktif Standar": "flumioxazin",
+      "Bahan Aktif Tampilan": "flumioxazin",
+      "Variasi Nama Sumber": "flumioxazin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 14",
+      "Kelas Kimia": "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones"
+    },
+    {
+      "AI ID": "ai-flumioxazin-32-g-l-s-metolaklor",
+      "Bahan Aktif Standar": "Flumioxazin 32 g/L + S-metolaklor",
+      "Bahan Aktif Tampilan": "Flumioxazin 32 g/L + S-metolaklor",
+      "Variasi Nama Sumber": "Flumioxazin 32 g/L + S-metolaklor",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluopicolide",
+      "Bahan Aktif Standar": "fluopicolide",
+      "Bahan Aktif Tampilan": "fluopikolid",
+      "Variasi Nama Sumber": "Fluopikolid",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 43",
+      "Kelas Kimia": "pyridinylmethyl-benzamides"
+    },
+    {
+      "AI ID": "ai-fluopikolid-52-5-g-l-propamokarb-hcl",
+      "Bahan Aktif Standar": "Fluopikolid 52,5 g/L + Propamokarb HCl",
+      "Bahan Aktif Tampilan": "Fluopikolid 52,5 g/L + Propamokarb HCl",
+      "Variasi Nama Sumber": "Fluopikolid 52,5 g/L + Propamokarb HCl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluopikolid-62-5-g-l-propamokarb-hcl",
+      "Bahan Aktif Standar": "Fluopikolid 62,5 g/L + Propamokarb HCl",
+      "Bahan Aktif Tampilan": "Fluopikolid 62,5 g/L + Propamokarb HCl",
+      "Variasi Nama Sumber": "Fluopikolid 62,5 g/L + Propamokarb HCl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluopyram",
+      "Bahan Aktif Standar": "fluopyram",
+      "Bahan Aktif Tampilan": "fluopyram",
+      "Variasi Nama Sumber": "Fluopyram; fluopyram",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 7",
+      "Kelas Kimia": "phenyl-benzamides; pyrazole-4-carboxamides; pyridine-carboxamides"
+    },
+    {
+      "AI ID": "ai-fluoxapiprolin",
+      "Bahan Aktif Standar": "fluoxapiprolin",
+      "Bahan Aktif Tampilan": "fluoxapiprolin",
+      "Variasi Nama Sumber": "fluoxapiprolin",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 49",
+      "Kelas Kimia": "OSBPI-fungicides"
+    },
+    {
+      "AI ID": "ai-flupiradifuron",
+      "Bahan Aktif Standar": "flupiradifuron",
+      "Bahan Aktif Tampilan": "flupiradifuron",
+      "Variasi Nama Sumber": "flupiradifuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flupymezotiaz",
+      "Bahan Aktif Standar": "flupymezotiaz",
+      "Bahan Aktif Tampilan": "flupymezotiaz",
+      "Variasi Nama Sumber": "flupymezotiaz",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flupyradifurone-106-g-l-bifenthrin",
+      "Bahan Aktif Standar": "Flupyradifurone 106 g/L + Bifenthrin",
+      "Bahan Aktif Tampilan": "Flupyradifurone 106 g/L + Bifenthrin",
+      "Variasi Nama Sumber": "Flupyradifurone 106 g/L + Bifenthrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluroksipir-mhe",
+      "Bahan Aktif Standar": "Fluroksipir MHE",
+      "Bahan Aktif Tampilan": "Fluroksipir MHE",
+      "Variasi Nama Sumber": "Fluroksipir MHE",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fluroxypyr",
+      "Bahan Aktif Standar": "fluroxypyr",
+      "Bahan Aktif Tampilan": "fluroxypyr",
+      "Variasi Nama Sumber": "fluroxypyr",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 4",
+      "Kelas Kimia": "Pyridyloxycarboxylates; 6-Chloropicolinates; Phenoxycarboxylates; Benzoates"
+    },
+    {
+      "AI ID": "ai-flusulfinam",
+      "Bahan Aktif Standar": "flusulfinam",
+      "Bahan Aktif Tampilan": "flusulfinam",
+      "Variasi Nama Sumber": "flusulfinam",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flusulfinam-30-g-l-propanil",
+      "Bahan Aktif Standar": "flusulfinam 30 g/L + propanil",
+      "Bahan Aktif Tampilan": "flusulfinam 30 g/L + propanil",
+      "Variasi Nama Sumber": "flusulfinam 30 g/L + propanil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flusulfinam-40-g-l-tripirasulfon",
+      "Bahan Aktif Standar": "flusulfinam 40 g/L + tripirasulfon",
+      "Bahan Aktif Tampilan": "flusulfinam 40 g/L + tripirasulfon",
+      "Variasi Nama Sumber": "flusulfinam 40 g/L + tripirasulfon",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-flusulfinam-57-g-l-halauxifen-methyl",
+      "Bahan Aktif Standar": "flusulfinam 57 g/L + halauxifen-methyl",
+      "Bahan Aktif Tampilan": "flusulfinam 57 g/L + halauxifen-methyl",
+      "Variasi Nama Sumber": "flusulfinam 57 g/L + halauxifen-methyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fosthiazate",
+      "Bahan Aktif Standar": "fosthiazate",
+      "Bahan Aktif Tampilan": "fosthiazate",
+      "Variasi Nama Sumber": "fosthiazate",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1B",
+      "Kelas Kimia": "Organophosphates"
+    },
+    {
+      "AI ID": "ai-free-amino-acids",
+      "Bahan Aktif Standar": "free amino acids",
+      "Bahan Aktif Tampilan": "free amino acids",
+      "Variasi Nama Sumber": "Free amino acids",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-free-l-amino-acids",
+      "Bahan Aktif Standar": "Free L-amino acids",
+      "Bahan Aktif Tampilan": "Free L-amino acids",
+      "Variasi Nama Sumber": "Free L-amino acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-fulvic-acids",
+      "Bahan Aktif Standar": "Fulvic acids",
+      "Bahan Aktif Tampilan": "Fulvic acids",
+      "Variasi Nama Sumber": "Fulvic acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glifosat",
+      "Bahan Aktif Standar": "glifosat",
+      "Bahan Aktif Tampilan": "glifosat",
+      "Variasi Nama Sumber": "glifosat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glifosat-ipa-240-g-l-metsulfuron-methyl",
+      "Bahan Aktif Standar": "glifosat IPA 240 g/L + metsulfuron-methyl",
+      "Bahan Aktif Tampilan": "glifosat IPA 240 g/L + metsulfuron-methyl",
+      "Variasi Nama Sumber": "glifosat IPA 240 g/L + metsulfuron-methyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glifosat-ipa-300-g-l-2-4-d-dma",
+      "Bahan Aktif Standar": "glifosat IPA 300 g/L + 2,4-D DMA",
+      "Bahan Aktif Tampilan": "glifosat IPA 300 g/L + 2,4-D DMA",
+      "Variasi Nama Sumber": "glifosat IPA 300 g/L + 2,4-D DMA",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glifosat-ipa-310-g-l-2-4-d-dma",
+      "Bahan Aktif Standar": "glifosat IPA 310 g/L + 2,4-D DMA",
+      "Bahan Aktif Tampilan": "glifosat IPA 310 g/L + 2,4-D DMA",
+      "Variasi Nama Sumber": "glifosat IPA 310 g/L + 2,4-D DMA",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glifosat-ipa-360-g-l-metsulfuron-methyl",
+      "Bahan Aktif Standar": "glifosat IPA 360 g/L + metsulfuron-methyl",
+      "Bahan Aktif Tampilan": "glifosat IPA 360 g/L + metsulfuron-methyl",
+      "Variasi Nama Sumber": "glifosat IPA 360 g/L + metsulfuron-methyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glifosat-ipa-400-g-l-2-4-d-dma",
+      "Bahan Aktif Standar": "glifosat IPA 400 g/L + 2,4-D DMA",
+      "Bahan Aktif Tampilan": "glifosat IPA 400 g/L + 2,4-D DMA",
+      "Variasi Nama Sumber": "glifosat IPA 400 g/L + 2,4-D DMA",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glufosinat-p",
+      "Bahan Aktif Standar": "glufosinat-P",
+      "Bahan Aktif Tampilan": "glufosinat-P",
+      "Variasi Nama Sumber": "glufosinat-P",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glufosinate-ammonium",
+      "Bahan Aktif Standar": "Glufosinate-ammonium",
+      "Bahan Aktif Tampilan": "Glufosinate-ammonium",
+      "Variasi Nama Sumber": "Amonium Glufosinat; amonium glufosinat; glufosinate-ammonium",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 10",
+      "Kelas Kimia": "Phosphinic acids"
+    },
+    {
+      "AI ID": "ai-glukosa",
+      "Bahan Aktif Standar": "glukosa",
+      "Bahan Aktif Tampilan": "glukosa",
+      "Variasi Nama Sumber": "glukosa",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glyphosate",
+      "Bahan Aktif Standar": "glyphosate",
+      "Bahan Aktif Tampilan": "glyphosate",
+      "Variasi Nama Sumber": "glyphosate",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 9",
+      "Kelas Kimia": "Glycines"
+    },
+    {
+      "AI ID": "ai-glyphosate-isopropylamine-270-g-l-2-4-d-isopropylamine",
+      "Bahan Aktif Standar": "glyphosate isopropylamine 270 g/L + 2,4-D isopropylamine",
+      "Bahan Aktif Tampilan": "glyphosate isopropylamine 270 g/L + 2,4-D isopropylamine",
+      "Variasi Nama Sumber": "glyphosate isopropylamine 270 g/L + 2,4-D isopropylamine",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-glyphosate-isopropylammonium",
+      "Bahan Aktif Standar": "glyphosate-isopropylammonium",
+      "Bahan Aktif Tampilan": "glifosat IPA",
+      "Variasi Nama Sumber": "IPA Glifosat; IPA glifosat; glifosat IPA; glyphosate IPA",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-halauxifen-methyl",
+      "Bahan Aktif Standar": "halauxifen-methyl",
+      "Bahan Aktif Tampilan": "halauxifen-methyl",
+      "Variasi Nama Sumber": "halauxifen-methyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-haloxyfop-r-methyl-ester",
+      "Bahan Aktif Standar": "haloxyfop-R-methyl ester",
+      "Bahan Aktif Tampilan": "haloxyfop-R-methyl ester",
+      "Variasi Nama Sumber": "haloxyfop-R-methyl ester",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-hexaconazole",
+      "Bahan Aktif Standar": "hexaconazole",
+      "Bahan Aktif Tampilan": "heksakonazol",
+      "Variasi Nama Sumber": "Heksakonazol; heksakonazol; hexaconazole",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 3",
+      "Kelas Kimia": "DMI-fungicides (SBI Class I)"
+    },
+    {
+      "AI ID": "ai-hidrolisis-enzimatik-protein-400-g-l-asam-amino-bebas-100-g-l-zn-10-g-l-b",
+      "Bahan Aktif Standar": "hidrolisis enzimatik protein 400 g/L + asam amino bebas 100 g/L + Zn 10 g/L + B",
+      "Bahan Aktif Tampilan": "hidrolisis enzimatik protein 400 g/L + asam amino bebas 100 g/L + Zn 10 g/L + B",
+      "Variasi Nama Sumber": "hidrolisis enzimatik protein 400 g/L + asam amino bebas 100 g/L + Zn 10 g/L + B",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-himeksazol-320-g-l-metalaksil-m",
+      "Bahan Aktif Standar": "Himeksazol 320 g/L + Metalaksil-M",
+      "Bahan Aktif Tampilan": "Himeksazol 320 g/L + Metalaksil-M",
+      "Variasi Nama Sumber": "Himeksazol 320 g/L + Metalaksil-M",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-humic-acids",
+      "Bahan Aktif Standar": "Humic acids",
+      "Bahan Aktif Tampilan": "Humic acids",
+      "Variasi Nama Sumber": "Humic acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-imazetapir",
+      "Bahan Aktif Standar": "imazetapir",
+      "Bahan Aktif Tampilan": "imazetapir",
+      "Variasi Nama Sumber": "imazetapir",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-imidacloprid",
+      "Bahan Aktif Standar": "imidacloprid",
+      "Bahan Aktif Tampilan": "imidakloprid",
+      "Variasi Nama Sumber": "Imidakloprid; imidacloprid; imidakloprid",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 4A",
+      "Kelas Kimia": "Neonicotinoids"
+    },
+    {
+      "AI ID": "ai-imidacloprid-beta-cyfluthrin",
+      "Bahan Aktif Standar": "imidacloprid + beta-cyfluthrin",
+      "Bahan Aktif Tampilan": "imidacloprid + beta-cyfluthrin",
+      "Variasi Nama Sumber": "imidacloprid + beta-cyfluthrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-imidakloprid-2-monosultap",
+      "Bahan Aktif Standar": "Imidakloprid 2% + Monosultap",
+      "Bahan Aktif Tampilan": "Imidakloprid 2% + Monosultap",
+      "Variasi Nama Sumber": "Imidakloprid 2% + Monosultap",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-indaziflam",
+      "Bahan Aktif Standar": "indaziflam",
+      "Bahan Aktif Tampilan": "indaziflam",
+      "Variasi Nama Sumber": "Indaziflam",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 29",
+      "Kelas Kimia": "Benzonitriles; Indaziflam / related"
+    },
+    {
+      "AI ID": "ai-indoksakarb-100-g-l-emamektin-benzoat",
+      "Bahan Aktif Standar": "indoksakarb 100 g/L + emamektin benzoat",
+      "Bahan Aktif Tampilan": "indoksakarb 100 g/L + emamektin benzoat",
+      "Variasi Nama Sumber": "indoksakarb 100 g/L + emamektin benzoat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-indoksakarb-160-g-l-emamektin-benzoat",
+      "Bahan Aktif Standar": "Indoksakarb 160 g/L + Emamektin benzoat",
+      "Bahan Aktif Tampilan": "Indoksakarb 160 g/L + Emamektin benzoat",
+      "Variasi Nama Sumber": "Indoksakarb 160 g/L + Emamektin benzoat",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-indoxacarb",
+      "Bahan Aktif Standar": "indoxacarb",
+      "Bahan Aktif Tampilan": "indoksakarb",
+      "Variasi Nama Sumber": "Indoksakarb",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 22A",
+      "Kelas Kimia": "Oxadiazines"
+    },
+    {
+      "AI ID": "ai-iprodione",
+      "Bahan Aktif Standar": "iprodione",
+      "Bahan Aktif Tampilan": "iprodione",
+      "Variasi Nama Sumber": "iprodione",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 2",
+      "Kelas Kimia": "dicarboximides"
+    },
+    {
+      "AI ID": "ai-isocycloseram",
+      "Bahan Aktif Standar": "isocycloseram",
+      "Bahan Aktif Tampilan": "isocycloseram",
+      "Variasi Nama Sumber": "Isosikloseram",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 30",
+      "Kelas Kimia": "Isoxazolines; Meta-diamides"
+    },
+    {
+      "AI ID": "ai-isoflualamide",
+      "Bahan Aktif Standar": "isoflualamide",
+      "Bahan Aktif Tampilan": "isoflualamide",
+      "Variasi Nama Sumber": "isoflualamide",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-isoflualanam",
+      "Bahan Aktif Standar": "isoflualanam",
+      "Bahan Aktif Tampilan": "isoflualanam",
+      "Variasi Nama Sumber": "isoflualanam",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-isopropil-amina-glifosat",
+      "Bahan Aktif Standar": "ISOPROPIL AMINA GLIFOSAT",
+      "Bahan Aktif Tampilan": "ISOPROPIL AMINA GLIFOSAT",
+      "Variasi Nama Sumber": "ISOPROPIL AMINA GLIFOSAT",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-isoprothiolane",
+      "Bahan Aktif Standar": "isoprothiolane",
+      "Bahan Aktif Tampilan": "isoprotiolan",
+      "Variasi Nama Sumber": "isoprotiolan",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-isotianil",
+      "Bahan Aktif Standar": "isotianil",
+      "Bahan Aktif Tampilan": "isotianil",
+      "Variasi Nama Sumber": "Isotianil",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC P03",
+      "Kelas Kimia": "host defence inducer"
+    },
+    {
+      "AI ID": "ai-isoxadifen-ethyl-safener",
+      "Bahan Aktif Standar": "Isoxadifen-ethyl - safener",
+      "Bahan Aktif Tampilan": "Isoxadifen-ethyl - safener",
+      "Variasi Nama Sumber": "Isoxadifen-ethyl - safener",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-isoxaflutole",
+      "Bahan Aktif Standar": "isoxaflutole",
+      "Bahan Aktif Tampilan": "isoksaflutol",
+      "Variasi Nama Sumber": "Isoksaflutol",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 27",
+      "Kelas Kimia": "Triketones; Pyrazoles; Nitriles"
+    },
+    {
+      "AI ID": "ai-k2o",
+      "Bahan Aktif Standar": "K2O",
+      "Bahan Aktif Tampilan": "K2O",
+      "Variasi Nama Sumber": "K2O",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-karbaril",
+      "Bahan Aktif Standar": "Karbaril",
+      "Bahan Aktif Tampilan": "Karbaril",
+      "Variasi Nama Sumber": "Karbaril; karbaril",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-karbendazim-mankozeb",
+      "Bahan Aktif Standar": "Karbendazim + Mankozeb",
+      "Bahan Aktif Tampilan": "Karbendazim + Mankozeb",
+      "Variasi Nama Sumber": "Karbendazim + Mankozeb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-karbendazim-250-g-l-klorotalonil",
+      "Bahan Aktif Standar": "Karbendazim 250 g/L + Klorotalonil",
+      "Bahan Aktif Tampilan": "Karbendazim 250 g/L + Klorotalonil",
+      "Variasi Nama Sumber": "Karbendazim 250 g/L + Klorotalonil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-karbofuran",
+      "Bahan Aktif Standar": "karbofuran",
+      "Bahan Aktif Tampilan": "karbofuran",
+      "Variasi Nama Sumber": "karbofuran",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-karbosulfan",
+      "Bahan Aktif Standar": "Karbosulfan",
+      "Bahan Aktif Tampilan": "Karbosulfan",
+      "Variasi Nama Sumber": "Karbosulfan",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-klorantraniliprol-100-g-l-lamda-sihalotrin",
+      "Bahan Aktif Standar": "Klorantraniliprol 100 g/L + Lamda Sihalotrin",
+      "Bahan Aktif Tampilan": "Klorantraniliprol 100 g/L + Lamda Sihalotrin",
+      "Variasi Nama Sumber": "Klorantraniliprol 100 g/L + Lamda Sihalotrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-klorantraniliprol-60-g-l-isoflualanam",
+      "Bahan Aktif Standar": "klorantraniliprol 60 g/L + isoflualanam",
+      "Bahan Aktif Tampilan": "klorantraniliprol 60 g/L + isoflualanam",
+      "Variasi Nama Sumber": "klorantraniliprol 60 g/L + isoflualanam",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-klorpirifos-500-g-l-sipermetrin",
+      "Bahan Aktif Standar": "Klorpirifos 500 g/L + Sipermetrin",
+      "Bahan Aktif Tampilan": "Klorpirifos 500 g/L + Sipermetrin",
+      "Variasi Nama Sumber": "Klorpirifos 500 g/L + Sipermetrin; klorpirifos 500 g/L + sipermetrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-klorpirifos-550-g-l-sipermetrin",
+      "Bahan Aktif Standar": "klorpirifos 550 g/L + sipermetrin",
+      "Bahan Aktif Tampilan": "klorpirifos 550 g/L + sipermetrin",
+      "Variasi Nama Sumber": "klorpirifos 550 g/L + sipermetrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-kompleks-asam-amino",
+      "Bahan Aktif Standar": "Kompleks asam amino",
+      "Bahan Aktif Tampilan": "Kompleks asam amino",
+      "Variasi Nama Sumber": "Kompleks asam amino",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-komposisi-rinci-tidak-dipublikasikan-pada-halaman-produk",
+      "Bahan Aktif Standar": "komposisi rinci tidak dipublikasikan pada halaman produk",
+      "Bahan Aktif Tampilan": "komposisi rinci tidak dipublikasikan pada halaman produk",
+      "Variasi Nama Sumber": "komposisi rinci tidak dipublikasikan pada halaman produk",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-komposisi-rinci-tidak-ditemukan-pada-sumber-yang-diverifikasi",
+      "Bahan Aktif Standar": "komposisi rinci tidak ditemukan pada sumber yang diverifikasi",
+      "Bahan Aktif Tampilan": "komposisi rinci tidak ditemukan pada sumber yang diverifikasi",
+      "Variasi Nama Sumber": "komposisi rinci tidak ditemukan pada sumber yang diverifikasi",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-komposisi-konsentrasi-tidak-ditemukan-pada-sumber-yang-diverifikasi",
+      "Bahan Aktif Standar": "komposisi/konsentrasi tidak ditemukan pada sumber yang diverifikasi",
+      "Bahan Aktif Tampilan": "komposisi/konsentrasi tidak ditemukan pada sumber yang diverifikasi",
+      "Variasi Nama Sumber": "komposisi/konsentrasi tidak ditemukan pada sumber yang diverifikasi",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-konsentrasi-tidak-dipublikasikan-pada-halaman-produk",
+      "Bahan Aktif Standar": "konsentrasi tidak dipublikasikan pada halaman produk",
+      "Bahan Aktif Tampilan": "konsentrasi tidak dipublikasikan pada halaman produk",
+      "Variasi Nama Sumber": "konsentrasi tidak dipublikasikan pada halaman produk",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-kuinklorak-32-5-etil-pirazosulfuron",
+      "Bahan Aktif Standar": "Kuinklorak 32,5% + Etil pirazosulfuron",
+      "Bahan Aktif Tampilan": "Kuinklorak 32,5% + Etil pirazosulfuron",
+      "Variasi Nama Sumber": "Kuinklorak 32,5% + Etil pirazosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-kuinklorak-47-etil-pirazosulfuron",
+      "Bahan Aktif Standar": "Kuinklorak 47% + Etil pirazosulfuron",
+      "Bahan Aktif Tampilan": "Kuinklorak 47% + Etil pirazosulfuron",
+      "Variasi Nama Sumber": "Kuinklorak 47% + Etil pirazosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-l-free-amino-acids-28-8-w-v",
+      "Bahan Aktif Standar": "L-α free amino acids 28,8% w/v",
+      "Bahan Aktif Tampilan": "L-α free amino acids 28,8% w/v",
+      "Variasi Nama Sumber": "L-α free amino acids 28,8% w/v",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-lambda-sihalotrin",
+      "Bahan Aktif Standar": "Lambda sihalotrin",
+      "Bahan Aktif Tampilan": "Lambda sihalotrin",
+      "Variasi Nama Sumber": "Lambda sihalotrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-lambda-cyhalothrin",
+      "Bahan Aktif Standar": "lambda-cyhalothrin",
+      "Bahan Aktif Tampilan": "lambda-sihalotrin",
+      "Variasi Nama Sumber": "lambda-cyhalothrin; lambda-sihalotrin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-lambda-cyhalothrin-106-g-l-thiamethoxam",
+      "Bahan Aktif Standar": "lambda-cyhalothrin 106 g/L + thiamethoxam",
+      "Bahan Aktif Tampilan": "lambda-cyhalothrin 106 g/L + thiamethoxam",
+      "Variasi Nama Sumber": "lambda-cyhalothrin 106 g/L + thiamethoxam",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-lamda-sihalotrin",
+      "Bahan Aktif Standar": "Lamda Sihalotrin",
+      "Bahan Aktif Tampilan": "Lamda Sihalotrin",
+      "Variasi Nama Sumber": "Lamda Sihalotrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-lamda-sihalotrin-80-g-l-lufenuron",
+      "Bahan Aktif Standar": "Lamda Sihalotrin 80 g/L + Lufenuron",
+      "Bahan Aktif Tampilan": "Lamda Sihalotrin 80 g/L + Lufenuron",
+      "Variasi Nama Sumber": "Lamda Sihalotrin 80 g/L + Lufenuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-lufenuron",
+      "Bahan Aktif Standar": "lufenuron",
+      "Bahan Aktif Tampilan": "lufenuron",
+      "Variasi Nama Sumber": "Lufenuron",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 15",
+      "Kelas Kimia": "Benzoylureas"
+    },
+    {
+      "AI ID": "ai-lufenuron-53-g-l-tolfenpyrad",
+      "Bahan Aktif Standar": "Lufenuron 53 g/L + Tolfenpyrad",
+      "Bahan Aktif Tampilan": "Lufenuron 53 g/L + Tolfenpyrad",
+      "Variasi Nama Sumber": "Lufenuron 53 g/L + Tolfenpyrad",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-malation",
+      "Bahan Aktif Standar": "malation",
+      "Bahan Aktif Tampilan": "malation",
+      "Variasi Nama Sumber": "malation",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mancozeb",
+      "Bahan Aktif Standar": "mancozeb",
+      "Bahan Aktif Tampilan": "mankozeb",
+      "Variasi Nama Sumber": "Mankozeb; mancozeb; mankozeb",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC; IRAC",
+      "Kode MoA": "FRAC M03; IRAC UN",
+      "Kelas Kimia": "Various; dithiocarbamates and relatives (electrophiles)"
+    },
+    {
+      "AI ID": "ai-mancozeb-tricyclazole",
+      "Bahan Aktif Standar": "mancozeb + tricyclazole",
+      "Bahan Aktif Tampilan": "mancozeb + tricyclazole",
+      "Variasi Nama Sumber": "mancozeb + tricyclazole",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mandipropamid",
+      "Bahan Aktif Standar": "mandipropamid",
+      "Bahan Aktif Tampilan": "mandipropamid",
+      "Variasi Nama Sumber": "Mandipropamid",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 40",
+      "Kelas Kimia": "cinnamic acid amides; valinamide carbamates; mandelic acid amides"
+    },
+    {
+      "AI ID": "ai-maneb",
+      "Bahan Aktif Standar": "maneb",
+      "Bahan Aktif Tampilan": "maneb",
+      "Variasi Nama Sumber": "maneb",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC M03",
+      "Kelas Kimia": "dithiocarbamates and relatives (electrophiles)"
+    },
+    {
+      "AI ID": "ai-mankozeb-59-7-azoksistrobin-4-7-tebukonazol",
+      "Bahan Aktif Standar": "mankozeb 59.7% + azoksistrobin 4.7% + tebukonazol",
+      "Bahan Aktif Tampilan": "mankozeb 59.7% + azoksistrobin 4.7% + tebukonazol",
+      "Variasi Nama Sumber": "mankozeb 59.7% + azoksistrobin 4.7% + tebukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mankozeb-63-karbendazim",
+      "Bahan Aktif Standar": "mankozeb 63% + karbendazim",
+      "Bahan Aktif Tampilan": "mankozeb 63% + karbendazim",
+      "Variasi Nama Sumber": "mankozeb 63% + karbendazim",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mankozeb-70-karbendazim",
+      "Bahan Aktif Standar": "mankozeb 70% + karbendazim",
+      "Bahan Aktif Tampilan": "mankozeb 70% + karbendazim",
+      "Variasi Nama Sumber": "mankozeb 70% + karbendazim",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mefenoksam",
+      "Bahan Aktif Standar": "Mefenoksam",
+      "Bahan Aktif Tampilan": "Mefenoksam",
+      "Variasi Nama Sumber": "Mefenoksam",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mefentrifluconazole-200-g-l-fluxapyroxad",
+      "Bahan Aktif Standar": "mefentrifluconazole 200 g/L + fluxapyroxad",
+      "Bahan Aktif Tampilan": "mefentrifluconazole 200 g/L + fluxapyroxad",
+      "Variasi Nama Sumber": "mefentrifluconazole 200 g/L + fluxapyroxad",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mefentriflukonazol",
+      "Bahan Aktif Standar": "Mefentriflukonazol",
+      "Bahan Aktif Tampilan": "Mefentriflukonazol",
+      "Variasi Nama Sumber": "Mefentriflukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mengandung-l-amino-acids",
+      "Bahan Aktif Standar": "Mengandung L-α-amino acids",
+      "Bahan Aktif Tampilan": "Mengandung L-α-amino acids",
+      "Variasi Nama Sumber": "Mengandung L-α-amino acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mesotrion",
+      "Bahan Aktif Standar": "Mesotrion",
+      "Bahan Aktif Tampilan": "Mesotrion",
+      "Variasi Nama Sumber": "Mesotrion; mesotrion",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mesotrione-atrazine",
+      "Bahan Aktif Standar": "mesotrione + atrazine",
+      "Bahan Aktif Tampilan": "mesotrione + atrazine",
+      "Variasi Nama Sumber": "mesotrione + atrazine",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mesotrione-50-g-l-atrazine",
+      "Bahan Aktif Standar": "mesotrione 50 g/L + atrazine",
+      "Bahan Aktif Tampilan": "mesotrione 50 g/L + atrazine",
+      "Variasi Nama Sumber": "mesotrione 50 g/L + atrazine",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metalaksil-8-mankozeb",
+      "Bahan Aktif Standar": "metalaksil 8% + mankozeb",
+      "Bahan Aktif Tampilan": "metalaksil 8% + mankozeb",
+      "Variasi Nama Sumber": "metalaksil 8% + mankozeb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metalaksil-m-4-mankozeb",
+      "Bahan Aktif Standar": "metalaksil-M 4% + mankozeb",
+      "Bahan Aktif Tampilan": "metalaksil-M 4% + mankozeb",
+      "Variasi Nama Sumber": "metalaksil-M 4% + mankozeb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metaldehida",
+      "Bahan Aktif Standar": "metaldehida",
+      "Bahan Aktif Tampilan": "metaldehida",
+      "Variasi Nama Sumber": "metaldehida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metamifop",
+      "Bahan Aktif Standar": "metamifop",
+      "Bahan Aktif Tampilan": "metamifop",
+      "Variasi Nama Sumber": "metamifop",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 1",
+      "Kelas Kimia": "Cyclohexanediones; Aryloxyphenoxypropionates"
+    },
+    {
+      "AI ID": "ai-methomyl",
+      "Bahan Aktif Standar": "methomyl",
+      "Bahan Aktif Tampilan": "metomil",
+      "Variasi Nama Sumber": "Metomil; metomil",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1A",
+      "Kelas Kimia": "Carbamates"
+    },
+    {
+      "AI ID": "ai-metil-bensulfuron-4-pretilaklor",
+      "Bahan Aktif Standar": "Metil bensulfuron 4% + Pretilaklor",
+      "Bahan Aktif Tampilan": "Metil bensulfuron 4% + Pretilaklor",
+      "Variasi Nama Sumber": "Metil bensulfuron 4% + Pretilaklor",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metiram-55-piraklostrobin",
+      "Bahan Aktif Standar": "metiram 55% + piraklostrobin",
+      "Bahan Aktif Tampilan": "metiram 55% + piraklostrobin",
+      "Variasi Nama Sumber": "Metiram 55% + Piraklostrobin; metiram 55% + piraklostrobin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metoksifenosida",
+      "Bahan Aktif Standar": "Metoksifenosida",
+      "Bahan Aktif Tampilan": "Metoksifenosida",
+      "Variasi Nama Sumber": "Metoksifenosida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metoksifenosida-160-g-l-isoflualanam",
+      "Bahan Aktif Standar": "metoksifenosida 160 g/L + isoflualanam",
+      "Bahan Aktif Tampilan": "metoksifenosida 160 g/L + isoflualanam",
+      "Variasi Nama Sumber": "metoksifenosida 160 g/L + isoflualanam",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metribuzin",
+      "Bahan Aktif Standar": "metribuzin",
+      "Bahan Aktif Tampilan": "metribuzin",
+      "Variasi Nama Sumber": "metribuzin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 5",
+      "Kelas Kimia": "Triazines; Ureas; Uracils; Phenylcarbamates; Amides; Triazinones"
+    },
+    {
+      "AI ID": "ai-metsulfuron-methyl",
+      "Bahan Aktif Standar": "metsulfuron-methyl",
+      "Bahan Aktif Tampilan": "metsulfuron-metil",
+      "Variasi Nama Sumber": "Metil metsulfuron; metsulfuron-methyl",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-metsulfuron-methyl-0-7-chlorimuron-ethyl-0-7-2-4-d",
+      "Bahan Aktif Standar": "metsulfuron-methyl 0.7% + chlorimuron-ethyl 0.7% + 2,4-D",
+      "Bahan Aktif Tampilan": "metsulfuron-methyl 0.7% + chlorimuron-ethyl 0.7% + 2,4-D",
+      "Variasi Nama Sumber": "metsulfuron-methyl 0.7% + chlorimuron-ethyl 0.7% + 2,4-D",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metsulfuron-methyl-10-chlorimuron-ethyl",
+      "Bahan Aktif Standar": "metsulfuron-methyl 10% + chlorimuron-ethyl",
+      "Bahan Aktif Tampilan": "metsulfuron-methyl 10% + chlorimuron-ethyl",
+      "Variasi Nama Sumber": "metsulfuron-methyl 10% + chlorimuron-ethyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metsulfuron-metil",
+      "Bahan Aktif Standar": "Metsulfuron-metil",
+      "Bahan Aktif Tampilan": "Metsulfuron-metil",
+      "Variasi Nama Sumber": "Metsulfuron-metil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-metsulfuron-metil-bahan-aktif-pendamping",
+      "Bahan Aktif Standar": "Metsulfuron-metil + bahan aktif pendamping",
+      "Bahan Aktif Tampilan": "Metsulfuron-metil + bahan aktif pendamping",
+      "Variasi Nama Sumber": "Metsulfuron-metil + bahan aktif pendamping",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mg",
+      "Bahan Aktif Standar": "Mg",
+      "Bahan Aktif Tampilan": "Mg",
+      "Variasi Nama Sumber": "Mg",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mgo",
+      "Bahan Aktif Standar": "MgO",
+      "Bahan Aktif Tampilan": "MgO",
+      "Variasi Nama Sumber": "MgO",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mikro-nutrien-kelat-asam-amino-fe-mn-zn-mg-cu-b-mo",
+      "Bahan Aktif Standar": "Mikro-nutrien kelat asam amino: Fe, Mn, Zn, Mg, Cu, B, Mo",
+      "Bahan Aktif Tampilan": "Mikro-nutrien kelat asam amino: Fe, Mn, Zn, Mg, Cu, B, Mo",
+      "Variasi Nama Sumber": "Mikro-nutrien kelat asam amino: Fe, Mn, Zn, Mg, Cu, B, Mo",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-minyak-parafinik",
+      "Bahan Aktif Standar": "Minyak Parafinik",
+      "Bahan Aktif Tampilan": "Minyak Parafinik",
+      "Variasi Nama Sumber": "Minyak Parafinik",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mipc",
+      "Bahan Aktif Standar": "MIPC",
+      "Bahan Aktif Tampilan": "MIPC",
+      "Variasi Nama Sumber": "MIPC",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mn",
+      "Bahan Aktif Standar": "Mn",
+      "Bahan Aktif Tampilan": "Mn",
+      "Variasi Nama Sumber": "Mn",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mno",
+      "Bahan Aktif Standar": "MnO",
+      "Bahan Aktif Tampilan": "MnO",
+      "Variasi Nama Sumber": "MnO",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-mo",
+      "Bahan Aktif Standar": "Mo",
+      "Bahan Aktif Tampilan": "Mo",
+      "Variasi Nama Sumber": "Mo",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-monosultap-68-imidakloprid",
+      "Bahan Aktif Standar": "monosultap 68% + imidakloprid",
+      "Bahan Aktif Tampilan": "monosultap 68% + imidakloprid",
+      "Variasi Nama Sumber": "monosultap 68% + imidakloprid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-n",
+      "Bahan Aktif Standar": "N",
+      "Bahan Aktif Tampilan": "N",
+      "Variasi Nama Sumber": "N",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-natrium-5-nitroguaiakol",
+      "Bahan Aktif Standar": "natrium 5-nitroguaiakol",
+      "Bahan Aktif Tampilan": "natrium 5-nitroguaiakol",
+      "Variasi Nama Sumber": "natrium 5-nitroguaiakol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-natrium-bispiribak-20-etil-pirazosulfuron",
+      "Bahan Aktif Standar": "Natrium bispiribak 20% + Etil pirazosulfuron",
+      "Bahan Aktif Tampilan": "Natrium bispiribak 20% + Etil pirazosulfuron",
+      "Variasi Nama Sumber": "Natrium bispiribak 20% + Etil pirazosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-natrium-orto-nitrofenol",
+      "Bahan Aktif Standar": "natrium orto-nitrofenol",
+      "Bahan Aktif Tampilan": "natrium orto-nitrofenol",
+      "Variasi Nama Sumber": "natrium orto-nitrofenol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-natrium-para-nitrofenol",
+      "Bahan Aktif Standar": "natrium para-nitrofenol",
+      "Bahan Aktif Tampilan": "natrium para-nitrofenol",
+      "Variasi Nama Sumber": "natrium para-nitrofenol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-ni",
+      "Bahan Aktif Standar": "Ni",
+      "Bahan Aktif Tampilan": "Ni",
+      "Variasi Nama Sumber": "Ni",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-niclosamide",
+      "Bahan Aktif Standar": "niclosamide",
+      "Bahan Aktif Tampilan": "niclosamide",
+      "Variasi Nama Sumber": "niclosamide",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-nicosulfuron-30-g-l-atrazine",
+      "Bahan Aktif Standar": "nicosulfuron 30 g/L + atrazine?",
+      "Bahan Aktif Tampilan": "nicosulfuron 30 g/L + atrazine?",
+      "Variasi Nama Sumber": "nicosulfuron 30 g/L + atrazine?",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-nikosulfuron-2-mesotrion-4-atrazin",
+      "Bahan Aktif Standar": "nikosulfuron 2% + mesotrion 4% + atrazin",
+      "Bahan Aktif Tampilan": "nikosulfuron 2% + mesotrion 4% + atrazin",
+      "Variasi Nama Sumber": "nikosulfuron 2% + mesotrion 4% + atrazin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-nikosulfuron-30-g-l-mesotrion-50-g-l-atrazin",
+      "Bahan Aktif Standar": "nikosulfuron 30 g/L + mesotrion 50 g/L + atrazin",
+      "Bahan Aktif Tampilan": "nikosulfuron 30 g/L + mesotrion 50 g/L + atrazin",
+      "Variasi Nama Sumber": "nikosulfuron 30 g/L + mesotrion 50 g/L + atrazin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-nitenpiram-20-pimetrozin",
+      "Bahan Aktif Standar": "nitenpiram 20% + pimetrozin",
+      "Bahan Aktif Tampilan": "nitenpiram 20% + pimetrozin",
+      "Variasi Nama Sumber": "nitenpiram 20% + pimetrozin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-nitenpyram",
+      "Bahan Aktif Standar": "nitenpyram",
+      "Bahan Aktif Tampilan": "nitenpiram",
+      "Variasi Nama Sumber": "nitenpiram",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 4A",
+      "Kelas Kimia": "Neonicotinoids"
+    },
+    {
+      "AI ID": "ai-novaluron-100-g-l-lambda-sihalotrin",
+      "Bahan Aktif Standar": "novaluron 100 g/L + lambda-sihalotrin",
+      "Bahan Aktif Tampilan": "novaluron 100 g/L + lambda-sihalotrin",
+      "Variasi Nama Sumber": "novaluron 100 g/L + lambda-sihalotrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-npk-12-30-25",
+      "Bahan Aktif Standar": "NPK 12-30-25",
+      "Bahan Aktif Tampilan": "NPK 12-30-25",
+      "Variasi Nama Sumber": "NPK 12-30-25",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-npk-26-6-6",
+      "Bahan Aktif Standar": "NPK 26-6-6",
+      "Bahan Aktif Tampilan": "NPK 26-6-6",
+      "Variasi Nama Sumber": "NPK 26-6-6",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-oksadiazon",
+      "Bahan Aktif Standar": "oksadiazon",
+      "Bahan Aktif Tampilan": "oksadiazon",
+      "Variasi Nama Sumber": "oksadiazon",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-oksatiapiprolin-30-g-l-mandipropamid",
+      "Bahan Aktif Standar": "oksatiapiprolin 30 g/L + mandipropamid",
+      "Bahan Aktif Tampilan": "oksatiapiprolin 30 g/L + mandipropamid",
+      "Variasi Nama Sumber": "oksatiapiprolin 30 g/L + mandipropamid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-oksifluorfen",
+      "Bahan Aktif Standar": "oksifluorfen",
+      "Bahan Aktif Tampilan": "oksifluorfen",
+      "Variasi Nama Sumber": "Oksifluorfen; oksifluorfen",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-oxathiapiprolin",
+      "Bahan Aktif Standar": "oxathiapiprolin",
+      "Bahan Aktif Tampilan": "oxathiapiprolin",
+      "Variasi Nama Sumber": "Oksatiapiprolin; oxathiapiprolin",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 49",
+      "Kelas Kimia": "OSBPI-fungicides"
+    },
+    {
+      "AI ID": "ai-oxathiapiprolin-30-g-l-mandipropamid",
+      "Bahan Aktif Standar": "Oxathiapiprolin 30 g/L + Mandipropamid",
+      "Bahan Aktif Tampilan": "Oxathiapiprolin 30 g/L + Mandipropamid",
+      "Variasi Nama Sumber": "Oxathiapiprolin 30 g/L + Mandipropamid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-oxathiapiprolin-48-g-l-benthiavalicarb",
+      "Bahan Aktif Standar": "oxathiapiprolin 48 g/L + benthiavalicarb",
+      "Bahan Aktif Tampilan": "oxathiapiprolin 48 g/L + benthiavalicarb",
+      "Variasi Nama Sumber": "oxathiapiprolin 48 g/L + benthiavalicarb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-oxyfluorfen",
+      "Bahan Aktif Standar": "oxyfluorfen",
+      "Bahan Aktif Tampilan": "oksifluorfen",
+      "Variasi Nama Sumber": "oxyfluorfen",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 14",
+      "Kelas Kimia": "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones"
+    },
+    {
+      "AI ID": "ai-p-glufosinat-100-g-l-fluchloraminopyr-tefuryl",
+      "Bahan Aktif Standar": "p-glufosinat 100 g/L + fluchloraminopyr-tefuryl",
+      "Bahan Aktif Tampilan": "p-glufosinat 100 g/L + fluchloraminopyr-tefuryl",
+      "Variasi Nama Sumber": "p-glufosinat 100 g/L + fluchloraminopyr-tefuryl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-p-glufosinat-100-g-l-flufenoximacil",
+      "Bahan Aktif Standar": "p-glufosinat 100 g/L + flufenoximacil",
+      "Bahan Aktif Tampilan": "p-glufosinat 100 g/L + flufenoximacil",
+      "Variasi Nama Sumber": "p-glufosinat 100 g/L + flufenoximacil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-p-glufosinat-200-g-l-flufenoximacil",
+      "Bahan Aktif Standar": "p-glufosinat 200 g/L + flufenoximacil",
+      "Bahan Aktif Tampilan": "p-glufosinat 200 g/L + flufenoximacil",
+      "Variasi Nama Sumber": "p-glufosinat 200 g/L + flufenoximacil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-p2o5",
+      "Bahan Aktif Standar": "P2O5",
+      "Bahan Aktif Tampilan": "P2O5",
+      "Variasi Nama Sumber": "P2O5",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-paraquat",
+      "Bahan Aktif Standar": "paraquat",
+      "Bahan Aktif Tampilan": "parakuat diklorida",
+      "Variasi Nama Sumber": "Parakuat diklorida; paraquat diklorida",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 22",
+      "Kelas Kimia": "Pyridiniums"
+    },
+    {
+      "AI ID": "ai-paraquat-dichloride",
+      "Bahan Aktif Standar": "paraquat dichloride",
+      "Bahan Aktif Tampilan": "paraquat dichloride",
+      "Variasi Nama Sumber": "paraquat dichloride",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pendimethalin",
+      "Bahan Aktif Standar": "pendimethalin",
+      "Bahan Aktif Tampilan": "pendimetalin",
+      "Variasi Nama Sumber": "Pendimetalin; pendimetalin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 3",
+      "Kelas Kimia": "Dinitroanilines; Pyridines; Phosphoroamidates"
+    },
+    {
+      "AI ID": "ai-penoksulam-10-g-l-butil-sihalofop",
+      "Bahan Aktif Standar": "penoksulam 10 g/L + butil sihalofop",
+      "Bahan Aktif Tampilan": "penoksulam 10 g/L + butil sihalofop",
+      "Variasi Nama Sumber": "penoksulam 10 g/L + butil sihalofop",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-penoksulam-20-g-l-butil-sihalofop",
+      "Bahan Aktif Standar": "Penoksulam 20 g/L + Butil Sihalofop",
+      "Bahan Aktif Tampilan": "Penoksulam 20 g/L + Butil Sihalofop",
+      "Variasi Nama Sumber": "Penoksulam 20 g/L + Butil Sihalofop",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-penoxsulam",
+      "Bahan Aktif Standar": "penoxsulam",
+      "Bahan Aktif Tampilan": "penoksulam",
+      "Variasi Nama Sumber": "Penoksulam",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-penoxsulam-15-g-l-pretilachlor",
+      "Bahan Aktif Standar": "penoxsulam 15 g/L + pretilachlor",
+      "Bahan Aktif Tampilan": "penoxsulam 15 g/L + pretilachlor",
+      "Variasi Nama Sumber": "penoxsulam 15 g/L + pretilachlor",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-permethrin",
+      "Bahan Aktif Standar": "permethrin",
+      "Bahan Aktif Tampilan": "permethrin",
+      "Variasi Nama Sumber": "permethrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-permetrin",
+      "Bahan Aktif Standar": "Permetrin",
+      "Bahan Aktif Tampilan": "Permetrin",
+      "Variasi Nama Sumber": "Permetrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pidiflumetofen",
+      "Bahan Aktif Standar": "Pidiflumetofen",
+      "Bahan Aktif Tampilan": "Pidiflumetofen",
+      "Variasi Nama Sumber": "Pidiflumetofen",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pikoksistrobin-200-g-l-fluksapiroksad",
+      "Bahan Aktif Standar": "Pikoksistrobin 200 g/L + Fluksapiroksad",
+      "Bahan Aktif Tampilan": "Pikoksistrobin 200 g/L + Fluksapiroksad",
+      "Variasi Nama Sumber": "Pikoksistrobin 200 g/L + Fluksapiroksad",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-piraklostrobin-115-g-l-tebukonazol",
+      "Bahan Aktif Standar": "Piraklostrobin 115 g/L + Tebukonazol",
+      "Bahan Aktif Tampilan": "Piraklostrobin 115 g/L + Tebukonazol",
+      "Variasi Nama Sumber": "Piraklostrobin 115 g/L + Tebukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-piraklostrobin-150-g-l-epoksikonazol",
+      "Bahan Aktif Standar": "piraklostrobin 150 g/L + epoksikonazol",
+      "Bahan Aktif Tampilan": "piraklostrobin 150 g/L + epoksikonazol",
+      "Variasi Nama Sumber": "piraklostrobin 150 g/L + epoksikonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-piraklostrobin-170-g-l-protiokonazol",
+      "Bahan Aktif Standar": "Piraklostrobin 170 g/L + Protiokonazol",
+      "Bahan Aktif Tampilan": "Piraklostrobin 170 g/L + Protiokonazol",
+      "Variasi Nama Sumber": "Piraklostrobin 170 g/L + Protiokonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-potassium-glyphosate",
+      "Bahan Aktif Standar": "potassium glyphosate",
+      "Bahan Aktif Tampilan": "potassium glyphosate",
+      "Variasi Nama Sumber": "potassium glyphosate",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pretilaklor-30-pyrazosulfuron-ethyl",
+      "Bahan Aktif Standar": "pretilaklor 30% + pyrazosulfuron-ethyl",
+      "Bahan Aktif Tampilan": "pretilaklor 30% + pyrazosulfuron-ethyl",
+      "Variasi Nama Sumber": "pretilaklor 30% + pyrazosulfuron-ethyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pretilaklor-300-g-l-piribenzoksim",
+      "Bahan Aktif Standar": "Pretilaklor 300 g/L + Piribenzoksim",
+      "Bahan Aktif Tampilan": "Pretilaklor 300 g/L + Piribenzoksim",
+      "Variasi Nama Sumber": "Pretilaklor 300 g/L + Piribenzoksim",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-prochloraz",
+      "Bahan Aktif Standar": "prochloraz",
+      "Bahan Aktif Tampilan": "prochloraz",
+      "Variasi Nama Sumber": "prochloraz",
+      "Status Normalisasi": "review",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 3",
+      "Kelas Kimia": "DMI-fungicides (SBI Class I)"
+    },
+    {
+      "AI ID": "ai-procymidone",
+      "Bahan Aktif Standar": "procymidone",
+      "Bahan Aktif Tampilan": "procymidone",
+      "Variasi Nama Sumber": "procymidone",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 2",
+      "Kelas Kimia": "dicarboximides"
+    },
+    {
+      "AI ID": "ai-produk-terkait-seaweed-bioactives",
+      "Bahan Aktif Standar": "produk terkait seaweed bioactives",
+      "Bahan Aktif Tampilan": "produk terkait seaweed bioactives",
+      "Variasi Nama Sumber": "produk terkait seaweed bioactives",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-profenofos",
+      "Bahan Aktif Standar": "profenofos",
+      "Bahan Aktif Tampilan": "profenofos",
+      "Variasi Nama Sumber": "Profenofos; profenofos",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 1B",
+      "Kelas Kimia": "Organophosphates"
+    },
+    {
+      "AI ID": "ai-prokloraz-175-g-l-difenokonazol",
+      "Bahan Aktif Standar": "Prokloraz 175 g/L + Difenokonazol",
+      "Bahan Aktif Tampilan": "Prokloraz 175 g/L + Difenokonazol",
+      "Variasi Nama Sumber": "Prokloraz 175 g/L + Difenokonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-propamocarb-hydrochloride",
+      "Bahan Aktif Standar": "propamocarb hydrochloride",
+      "Bahan Aktif Tampilan": "propamocarb hydrochloride",
+      "Variasi Nama Sumber": "propamocarb hydrochloride",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-propamokarb",
+      "Bahan Aktif Standar": "propamokarb",
+      "Bahan Aktif Tampilan": "propamokarb",
+      "Variasi Nama Sumber": "propamokarb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-propamokarb-hidroklorida",
+      "Bahan Aktif Standar": "Propamokarb hidroklorida",
+      "Bahan Aktif Tampilan": "Propamokarb hidroklorida",
+      "Variasi Nama Sumber": "Propamokarb hidroklorida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-propanil-167-g-l-pretilaklor",
+      "Bahan Aktif Standar": "Propanil 167 g/L + Pretilaklor",
+      "Bahan Aktif Tampilan": "Propanil 167 g/L + Pretilaklor",
+      "Variasi Nama Sumber": "Propanil 167 g/L + Pretilaklor",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-propiconazole",
+      "Bahan Aktif Standar": "propiconazole",
+      "Bahan Aktif Tampilan": "propikonazol",
+      "Variasi Nama Sumber": "Propikonazol; propiconazole; propikonazol",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 3",
+      "Kelas Kimia": "DMI-fungicides (SBI Class I)"
+    },
+    {
+      "AI ID": "ai-propineb",
+      "Bahan Aktif Standar": "propineb",
+      "Bahan Aktif Tampilan": "propineb",
+      "Variasi Nama Sumber": "Propineb; propineb",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC M03",
+      "Kelas Kimia": "dithiocarbamates and relatives (electrophiles)"
+    },
+    {
+      "AI ID": "ai-propineb-54-2-tricyclazole",
+      "Bahan Aktif Standar": "propineb 54.2% + tricyclazole",
+      "Bahan Aktif Tampilan": "propineb 54.2% + tricyclazole",
+      "Variasi Nama Sumber": "propineb 54.2% + tricyclazole",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-proprietary-cellulose-alcohol-ethoxylated-polymer",
+      "Bahan Aktif Standar": "proprietary cellulose + alcohol ethoxylated polymer",
+      "Bahan Aktif Tampilan": "proprietary cellulose + alcohol ethoxylated polymer",
+      "Variasi Nama Sumber": "proprietary cellulose + alcohol ethoxylated polymer",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pymetrozine",
+      "Bahan Aktif Standar": "pymetrozine",
+      "Bahan Aktif Tampilan": "pimetrozin",
+      "Variasi Nama Sumber": "Pimetrozin; pymetrozine",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 9B",
+      "Kelas Kimia": "Pyridine azomethine derivatives"
+    },
+    {
+      "AI ID": "ai-pymetrozine-40-dinotefuran",
+      "Bahan Aktif Standar": "pymetrozine 40% + dinotefuran",
+      "Bahan Aktif Tampilan": "pymetrozine 40% + dinotefuran",
+      "Variasi Nama Sumber": "pymetrozine 40% + dinotefuran",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pymetrozine-60-nitenpyram",
+      "Bahan Aktif Standar": "pymetrozine 60% + nitenpyram",
+      "Bahan Aktif Tampilan": "pymetrozine 60% + nitenpyram",
+      "Variasi Nama Sumber": "pymetrozine 60% + nitenpyram",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-pyraclostrobin",
+      "Bahan Aktif Standar": "pyraclostrobin",
+      "Bahan Aktif Tampilan": "piraklostrobin",
+      "Variasi Nama Sumber": "Piraklostrobin",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 11",
+      "Kelas Kimia": "methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides"
+    },
+    {
+      "AI ID": "ai-pyrazosulfuron-ethyl",
+      "Bahan Aktif Standar": "pyrazosulfuron-ethyl",
+      "Bahan Aktif Tampilan": "pyrazosulfuron-ethyl",
+      "Variasi Nama Sumber": "pyrazosulfuron-ethyl",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-pyriproxyfen",
+      "Bahan Aktif Standar": "pyriproxyfen",
+      "Bahan Aktif Tampilan": "piriproksifen",
+      "Variasi Nama Sumber": "pyriproxyfen",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 7C",
+      "Kelas Kimia": "Pyriproxyfen"
+    },
+    {
+      "AI ID": "ai-pyriproxyfen-5-diafenthiuron",
+      "Bahan Aktif Standar": "pyriproxyfen 5% + diafenthiuron",
+      "Bahan Aktif Tampilan": "pyriproxyfen 5% + diafenthiuron",
+      "Variasi Nama Sumber": "pyriproxyfen 5% + diafenthiuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-s-metolaklor",
+      "Bahan Aktif Standar": "S-metolaklor",
+      "Bahan Aktif Tampilan": "S-metolaklor",
+      "Variasi Nama Sumber": "S-metolaklor",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-saflufenacil",
+      "Bahan Aktif Standar": "saflufenacil",
+      "Bahan Aktif Tampilan": "saflufenacil",
+      "Variasi Nama Sumber": "saflufenacil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 14",
+      "Kelas Kimia": "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones"
+    },
+    {
+      "AI ID": "ai-short-chain-amino-acids-organic-acids",
+      "Bahan Aktif Standar": "Short-chain amino acids + organic acids",
+      "Bahan Aktif Tampilan": "Short-chain amino acids + organic acids",
+      "Variasi Nama Sumber": "Short-chain amino acids + organic acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-sianoksol-cymoxanil",
+      "Bahan Aktif Standar": "sianoksol? / cymoxanil",
+      "Bahan Aktif Tampilan": "sianoksol? / cymoxanil",
+      "Variasi Nama Sumber": "sianoksol? / cymoxanil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-siazofamid-85-g-l-simoksanil",
+      "Bahan Aktif Standar": "Siazofamid 85 g/L + Simoksanil",
+      "Bahan Aktif Tampilan": "Siazofamid 85 g/L + Simoksanil",
+      "Variasi Nama Sumber": "Siazofamid 85 g/L + Simoksanil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-simetilin",
+      "Bahan Aktif Standar": "Simetilin",
+      "Bahan Aktif Tampilan": "Simetilin",
+      "Variasi Nama Sumber": "Simetilin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-simoksanil-8-mankozeb",
+      "Bahan Aktif Standar": "simoksanil 8% + mankozeb",
+      "Bahan Aktif Tampilan": "simoksanil 8% + mankozeb",
+      "Variasi Nama Sumber": "simoksanil 8% + mankozeb",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-siprokonazol-80-g-l-siantraniliprol",
+      "Bahan Aktif Standar": "siprokonazol 80 g/L + siantraniliprol",
+      "Bahan Aktif Tampilan": "siprokonazol 80 g/L + siantraniliprol",
+      "Variasi Nama Sumber": "siprokonazol 80 g/L + siantraniliprol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-siromazin",
+      "Bahan Aktif Standar": "Siromazin",
+      "Bahan Aktif Tampilan": "Siromazin",
+      "Variasi Nama Sumber": "Siromazin; siromazin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-sodium-bispyribac",
+      "Bahan Aktif Standar": "sodium bispyribac",
+      "Bahan Aktif Tampilan": "sodium bispyribac",
+      "Variasi Nama Sumber": "sodium bispyribac",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-spinetoram",
+      "Bahan Aktif Standar": "Spinetoram",
+      "Bahan Aktif Tampilan": "Spinetoram",
+      "Variasi Nama Sumber": "Spinetoram; spinetoram",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 5",
+      "Kelas Kimia": "Spinosyns"
+    },
+    {
+      "AI ID": "ai-spinetoram-300-g-l-methoxyfenozide",
+      "Bahan Aktif Standar": "spinetoram 300 g/L + methoxyfenozide",
+      "Bahan Aktif Tampilan": "spinetoram 300 g/L + methoxyfenozide",
+      "Variasi Nama Sumber": "spinetoram 300 g/L + methoxyfenozide",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-spinosad",
+      "Bahan Aktif Standar": "Spinosad",
+      "Bahan Aktif Tampilan": "Spinosad",
+      "Variasi Nama Sumber": "Spinosad",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 5",
+      "Kelas Kimia": "Spinosyns"
+    },
+    {
+      "AI ID": "ai-spiromesifen",
+      "Bahan Aktif Standar": "Spiromesifen",
+      "Bahan Aktif Tampilan": "Spiromesifen",
+      "Variasi Nama Sumber": "Spiromesifen; spiromesifen",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 23",
+      "Kelas Kimia": "Tetronic and Tetramic acid derivatives"
+    },
+    {
+      "AI ID": "ai-spiropidion",
+      "Bahan Aktif Standar": "spiropidion",
+      "Bahan Aktif Tampilan": "spiropidion",
+      "Variasi Nama Sumber": "Spiropidion",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 23",
+      "Kelas Kimia": "Tetronic and Tetramic acid derivatives"
+    },
+    {
+      "AI ID": "ai-spirotetramat",
+      "Bahan Aktif Standar": "Spirotetramat",
+      "Bahan Aktif Tampilan": "Spirotetramat",
+      "Variasi Nama Sumber": "Spirotetramat; spirotetramat",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 23",
+      "Kelas Kimia": "Tetronic and Tetramic acid derivatives"
+    },
+    {
+      "AI ID": "ai-sukrosa",
+      "Bahan Aktif Standar": "sukrosa",
+      "Bahan Aktif Tampilan": "sukrosa",
+      "Variasi Nama Sumber": "sukrosa",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-sulfentrazone",
+      "Bahan Aktif Standar": "Sulfentrazone",
+      "Bahan Aktif Tampilan": "Sulfentrazone",
+      "Variasi Nama Sumber": "Sulfentrazone",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 14",
+      "Kelas Kimia": "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones"
+    },
+    {
+      "AI ID": "ai-sulfosulfuron",
+      "Bahan Aktif Standar": "sulfosulfuron",
+      "Bahan Aktif Tampilan": "sulfosulfuron",
+      "Variasi Nama Sumber": "sulfosulfuron",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-sulfur",
+      "Bahan Aktif Standar": "Sulfur",
+      "Bahan Aktif Tampilan": "Sulfur",
+      "Variasi Nama Sumber": "sulfur",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC UN",
+      "Kelas Kimia": "Various"
+    },
+    {
+      "AI ID": "ai-sulfur-80-wdg",
+      "Bahan Aktif Standar": "sulfur 80% WDG",
+      "Bahan Aktif Tampilan": "sulfur 80% WDG",
+      "Variasi Nama Sumber": "sulfur 80% WDG",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tebuconazole",
+      "Bahan Aktif Standar": "tebuconazole",
+      "Bahan Aktif Tampilan": "tebukonazol",
+      "Variasi Nama Sumber": "Tebukonazol; tebukonazol",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 3",
+      "Kelas Kimia": "DMI-fungicides (SBI Class I)"
+    },
+    {
+      "AI ID": "ai-tebukonazol-trifloksistrobin",
+      "Bahan Aktif Standar": "tebukonazol + trifloksistrobin",
+      "Bahan Aktif Tampilan": "tebukonazol + trifloksistrobin",
+      "Variasi Nama Sumber": "tebukonazol + trifloksistrobin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tebukonazol-10-sulfur",
+      "Bahan Aktif Standar": "tebukonazol 10% + sulfur",
+      "Bahan Aktif Tampilan": "tebukonazol 10% + sulfur",
+      "Variasi Nama Sumber": "tebukonazol 10% + sulfur",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tebukonazol-200-g-l-trifloksistrobin",
+      "Bahan Aktif Standar": "Tebukonazol 200 g/L\nTrifloksistrobin",
+      "Bahan Aktif Tampilan": "Tebukonazol 200 g/L\nTrifloksistrobin",
+      "Variasi Nama Sumber": "Tebukonazol 200 g/L\nTrifloksistrobin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tefuryltrione",
+      "Bahan Aktif Standar": "tefuryltrione",
+      "Bahan Aktif Tampilan": "tefuryltrione",
+      "Variasi Nama Sumber": "Tefuryltrione",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 27",
+      "Kelas Kimia": "Triketones; Pyrazoles; Nitriles"
+    },
+    {
+      "AI ID": "ai-tembaga-hidroksida",
+      "Bahan Aktif Standar": "Tembaga hidroksida",
+      "Bahan Aktif Tampilan": "Tembaga hidroksida",
+      "Variasi Nama Sumber": "Tembaga hidroksida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tembaga-oksiklorida",
+      "Bahan Aktif Standar": "tembaga oksiklorida",
+      "Bahan Aktif Tampilan": "tembaga oksiklorida",
+      "Variasi Nama Sumber": "tembaga oksiklorida",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tembotrione",
+      "Bahan Aktif Standar": "tembotrione",
+      "Bahan Aktif Tampilan": "tembotrion",
+      "Variasi Nama Sumber": "Tembotrione; tembotrion",
+      "Status Normalisasi": "alias; review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 27",
+      "Kelas Kimia": "Triketones; Pyrazoles; Nitriles"
+    },
+    {
+      "AI ID": "ai-tetraniliprole",
+      "Bahan Aktif Standar": "tetraniliprole",
+      "Bahan Aktif Tampilan": "tetraniliprol",
+      "Variasi Nama Sumber": "Tetraniliprol; tetraniliprol",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 28",
+      "Kelas Kimia": "Diamides"
+    },
+    {
+      "AI ID": "ai-thiamethoxam",
+      "Bahan Aktif Standar": "thiamethoxam",
+      "Bahan Aktif Tampilan": "tiametoksam",
+      "Variasi Nama Sumber": "Tiametoksam; tiametoksam",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 4A",
+      "Kelas Kimia": "Neonicotinoids"
+    },
+    {
+      "AI ID": "ai-thiencarbazone-methyl",
+      "Bahan Aktif Standar": "thiencarbazone-methyl",
+      "Bahan Aktif Tampilan": "thiencarbazone-methyl",
+      "Variasi Nama Sumber": "Thiencarbazone-methyl",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-thiobencarb-2-4-d-ibe",
+      "Bahan Aktif Standar": "thiobencarb + 2,4-D IBE",
+      "Bahan Aktif Tampilan": "thiobencarb + 2,4-D IBE",
+      "Variasi Nama Sumber": "thiobencarb + 2,4-D IBE",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-thiophanate-methyl",
+      "Bahan Aktif Standar": "thiophanate-methyl",
+      "Bahan Aktif Tampilan": "thiophanate-methyl",
+      "Variasi Nama Sumber": "Metil tiofanat; metil tiofanat",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 1",
+      "Kelas Kimia": "benzimidazoles; thiophanates"
+    },
+    {
+      "AI ID": "ai-thiophanate-methyl-35-tricyclazole",
+      "Bahan Aktif Standar": "thiophanate-methyl 35% + tricyclazole",
+      "Bahan Aktif Tampilan": "thiophanate-methyl 35% + tricyclazole",
+      "Variasi Nama Sumber": "thiophanate-methyl 35% + tricyclazole",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tiafenacil",
+      "Bahan Aktif Standar": "tiafenacil",
+      "Bahan Aktif Tampilan": "tiafenacil",
+      "Variasi Nama Sumber": "tiafenacil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 14",
+      "Kelas Kimia": "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones"
+    },
+    {
+      "AI ID": "ai-tiakloprid",
+      "Bahan Aktif Standar": "tiakloprid",
+      "Bahan Aktif Tampilan": "tiakloprid",
+      "Variasi Nama Sumber": "tiakloprid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-tiametoksam-102-g-l-deltametrin",
+      "Bahan Aktif Standar": "Tiametoksam 102 g/L + Deltametrin",
+      "Bahan Aktif Tampilan": "Tiametoksam 102 g/L + Deltametrin",
+      "Variasi Nama Sumber": "Tiametoksam 102 g/L + Deltametrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-topramezon-10-g-l-atrazin",
+      "Bahan Aktif Standar": "topramezon 10 g/L + atrazin",
+      "Bahan Aktif Tampilan": "topramezon 10 g/L + atrazin",
+      "Variasi Nama Sumber": "topramezon 10 g/L + atrazin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-total-humic-extract",
+      "Bahan Aktif Standar": "Total humic extract",
+      "Bahan Aktif Tampilan": "Total humic extract",
+      "Variasi Nama Sumber": "Total humic extract",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-total-n-10-8-w-v",
+      "Bahan Aktif Standar": "Total N 10,8% w/v",
+      "Bahan Aktif Tampilan": "Total N 10,8% w/v",
+      "Variasi Nama Sumber": "Total N 10,8% w/v",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trehalose",
+      "Bahan Aktif Standar": "trehalose",
+      "Bahan Aktif Tampilan": "trehalose",
+      "Variasi Nama Sumber": "trehalose",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-triafamone",
+      "Bahan Aktif Standar": "triafamone",
+      "Bahan Aktif Tampilan": "triafamone",
+      "Variasi Nama Sumber": "Triafamone",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 2",
+      "Kelas Kimia": "Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones"
+    },
+    {
+      "AI ID": "ai-triazofos",
+      "Bahan Aktif Standar": "triazofos",
+      "Bahan Aktif Tampilan": "triazofos",
+      "Variasi Nama Sumber": "triazofos",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-triclopyr",
+      "Bahan Aktif Standar": "triclopyr",
+      "Bahan Aktif Tampilan": "triclopyr",
+      "Variasi Nama Sumber": "triclopyr BEE; triclopyr butoxyethyl ester",
+      "Status Normalisasi": "alias",
+      "Komite MoA": "HRAC",
+      "Kode MoA": "HRAC 4",
+      "Kelas Kimia": "Pyridyloxycarboxylates; 6-Chloropicolinates; Phenoxycarboxylates; Benzoates"
+    },
+    {
+      "AI ID": "ai-triclopyr-bee-670-g-l",
+      "Bahan Aktif Standar": "triclopyr BEE 670 g/L?",
+      "Bahan Aktif Tampilan": "triclopyr BEE 670 g/L?",
+      "Variasi Nama Sumber": "triclopyr BEE 670 g/L?",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trifloksistrobin",
+      "Bahan Aktif Standar": "trifloksistrobin",
+      "Bahan Aktif Tampilan": "trifloksistrobin",
+      "Variasi Nama Sumber": "Trifloksistrobin; trifloksistrobin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trifloksistrobin-100-g-l-isotianil",
+      "Bahan Aktif Standar": "Trifloksistrobin 100 g/L\nisotianil",
+      "Bahan Aktif Tampilan": "Trifloksistrobin 100 g/L\nisotianil",
+      "Variasi Nama Sumber": "Trifloksistrobin 100 g/L\nisotianil",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trifloksistrobin-25-tebukonazol",
+      "Bahan Aktif Standar": "trifloksistrobin 25% + tebukonazol",
+      "Bahan Aktif Tampilan": "trifloksistrobin 25% + tebukonazol",
+      "Variasi Nama Sumber": "trifloksistrobin 25% + tebukonazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trifloxistrobin-50-fluopikolid",
+      "Bahan Aktif Standar": "Trifloxistrobin 50% + Fluopikolid",
+      "Bahan Aktif Tampilan": "Trifloxistrobin 50% + Fluopikolid",
+      "Variasi Nama Sumber": "Trifloxistrobin 50% + Fluopikolid",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trifloxystrobin",
+      "Bahan Aktif Standar": "trifloxystrobin",
+      "Bahan Aktif Tampilan": "trifloxystrobin",
+      "Variasi Nama Sumber": "Trifloxystrobin",
+      "Status Normalisasi": "moa_exact",
+      "Komite MoA": "FRAC",
+      "Kode MoA": "FRAC 11",
+      "Kelas Kimia": "methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides"
+    },
+    {
+      "AI ID": "ai-triflumezopyrim",
+      "Bahan Aktif Standar": "triflumezopyrim",
+      "Bahan Aktif Tampilan": "triflumezopyrim",
+      "Variasi Nama Sumber": "Triflumezopirim; Triflumezopyrim",
+      "Status Normalisasi": "alias; moa_exact",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 4E",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-triklopir",
+      "Bahan Aktif Standar": "triklopir",
+      "Bahan Aktif Tampilan": "triklopir",
+      "Variasi Nama Sumber": "triklopir",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-triklopir-bee",
+      "Bahan Aktif Standar": "Triklopir BEE",
+      "Bahan Aktif Tampilan": "Triklopir BEE",
+      "Variasi Nama Sumber": "Triklopir BEE",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-triklopir-butoksi-etil-ester",
+      "Bahan Aktif Standar": "triklopir butoksi etil ester",
+      "Bahan Aktif Tampilan": "triklopir butoksi etil ester",
+      "Variasi Nama Sumber": "triklopir butoksi etil ester",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-trisiklazol",
+      "Bahan Aktif Standar": "Trisiklazol",
+      "Bahan Aktif Tampilan": "Trisiklazol",
+      "Variasi Nama Sumber": "Trisiklazol",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-zeta-cypermethrin",
+      "Bahan Aktif Standar": "zeta-cypermethrin",
+      "Bahan Aktif Tampilan": "zeta-cypermethrin",
+      "Variasi Nama Sumber": "zeta-cypermethrin",
+      "Status Normalisasi": "review",
+      "Komite MoA": "IRAC",
+      "Kode MoA": "IRAC 3A",
+      "Kelas Kimia": "Pyrethroids; Pyrethrins"
+    },
+    {
+      "AI ID": "ai-zn",
+      "Bahan Aktif Standar": "Zn",
+      "Bahan Aktif Tampilan": "Zn",
+      "Variasi Nama Sumber": "Zn",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    },
+    {
+      "AI ID": "ai-zn-3-66-b-0-16-fe-0-10-mn-0-02-amino-acids",
+      "Bahan Aktif Standar": "Zn 3.66% + B 0.16% + Fe 0.10% + Mn 0.02% + amino acids",
+      "Bahan Aktif Tampilan": "Zn 3.66% + B 0.16% + Fe 0.10% + Mn 0.02% + amino acids",
+      "Variasi Nama Sumber": "Zn 3.66% + B 0.16% + Fe 0.10% + Mn 0.02% + amino acids",
+      "Status Normalisasi": "review",
+      "Komite MoA": "",
+      "Kode MoA": "",
+      "Kelas Kimia": ""
+    }
+  ],
+  "notes": [
+    "Indonesian display names are retained where a known equivalent exists; standard/international name is used as the MoA linkage key."
+  ]
+}

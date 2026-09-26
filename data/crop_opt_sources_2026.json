@@ -26,7 +26,7 @@
         "type": "Penyakit",
         "common": "Busuk pelepah",
         "scientific": "Rhizoctonia solani",
-        "master_id": "rhizoctonia-solani-brassica",
+        "master_id": "rhizoctonia",
         "source_product": "Antracol",
         "source_page": 27,
         "source": "TABEL HAMA (ID).pdf"
@@ -524,240 +524,182 @@
     "cabai": [
       {
         "type": "Hama",
-        "common": "Hama penggerek buah",
-        "scientific": "",
-        "master_id": null,
-        "source_product": "Vayego",
-        "source_page": 7,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Thrips",
+        "scientific": "Thrips parvispinus",
+        "master_id": "thrips-parvispinus",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
+      },
+      {
+        "type": "Hama",
+        "common": "Kutu kebul",
+        "scientific": "Bemisia tabaci",
+        "master_id": "bemisia-tabaci",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Hama",
         "common": "Kutu daun",
-        "scientific": "Myzus persicae",
-        "master_id": "aphid",
-        "source_product": "Confidor",
-        "source_page": 7,
-        "source": "TABEL HAMA (ID).pdf"
+        "scientific": "Aphis gossypii",
+        "master_id": "aphis-gossypii",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Hama",
-        "common": "Myzus persicae",
-        "scientific": "",
-        "master_id": null,
-        "source_product": "Buldok",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Tungau kuning lebar",
+        "scientific": "Polyphagotarsonemus latus",
+        "master_id": "polyphagotarsonemus-latus",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Hama",
         "common": "Ulat buah",
         "scientific": "Helicoverpa armigera",
         "master_id": "helicoverpa-armigera",
-        "source_product": "Valacor",
-        "source_page": 7,
-        "source": "TABEL HAMA (ID).pdf"
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
+      },
+      {
+        "type": "Hama",
+        "common": "Lalat buah",
+        "scientific": "Bactrocera dorsalis",
+        "master_id": "bactrocera-dorsalis",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
+      },
+      {
+        "type": "Hama",
+        "common": "Ulat grayak",
+        "scientific": "Spodoptera litura",
+        "master_id": "spodoptera-litura",
+        "source": "Crop Expert normalized master",
+        "importance": ""
+      },
+      {
+        "type": "Hama",
+        "common": "Lalat pengorok daun",
+        "scientific": "Liriomyza spp.",
+        "master_id": "liriomyza",
+        "source": "Crop Expert normalized master",
+        "importance": "Perlu dipantau"
       },
       {
         "type": "Penyakit",
-        "common": "Antraknosa",
-        "scientific": "",
-        "master_id": "colletotrichum",
-        "source_product": "Antracol",
-        "source_page": 8,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Layu/busuk Phytophthora pada cabai",
+        "scientific": "Phytophthora capsici",
+        "master_id": "chili-phytophthora-capsici",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
-        "common": "Antraknosa",
-        "scientific": "Colletotrichum capsici",
-        "master_id": "colletotrichum",
-        "source_product": "Folicur WP",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Layu fusarium",
+        "scientific": "Fusarium oxysporum",
+        "master_id": "fusarium",
+        "source": "Crop Expert normalized master",
+        "importance": ""
       },
       {
         "type": "Penyakit",
-        "common": "Colletotrichum capsici",
-        "scientific": "Busuk buah",
-        "master_id": null,
-        "source_product": "Trivia",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Layu bakteri",
+        "scientific": "Ralstonia solanacearum species complex",
+        "master_id": "tomato-bacterial-wilt",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
-        "common": "Penyakit antraknosa",
-        "scientific": "Colletotrichum capsici",
-        "master_id": null,
-        "source_product": "Luna Smart",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Daun keriting kuning cabai",
+        "scientific": "Pepper yellow leaf curl Indonesia virus (PepYLCIV)",
+        "master_id": "pepylciv",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
-        "common": "Penyakit bercak daun",
-        "scientific": "Cercospora capsici",
-        "master_id": "chili-cercospora",
-        "source_product": "Folicur Gold",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Penyakit",
-        "common": "busuk daun dan busuk buah",
-        "scientific": "Phytophthora spp.",
-        "master_id": "phytophthora-brassica",
-        "source_product": "Previcur N",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Gulma",
-        "common": "Gulma golongan rumput",
-        "scientific": "Digitaria ciliaris",
-        "master_id": null,
-        "source_product": "Rumpas",
-        "source_page": 6,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Hawar daun bakteri",
+        "scientific": "Xanthomonas spp.",
+        "master_id": "xanthomonas",
+        "source": "Crop Expert normalized master",
+        "importance": "Perlu dipantau"
       }
     ],
     "tomat": [],
     "bawang": [
       {
         "type": "Hama",
-        "common": "Hama pengorok daun",
-        "scientific": "Liriomyza huidobrensis",
-        "master_id": null,
-        "source_product": "Vayego",
-        "source_page": 5,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Hama",
-        "common": "Hama trips",
-        "scientific": "Thrips tabaci",
-        "master_id": "thrips-tabaci",
-        "source_product": "",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Hama",
-        "common": "Kutu daun",
-        "scientific": "Myzus persicae",
-        "master_id": "aphid",
-        "source_product": "Movanto Energy",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Hama",
-        "common": "Ulat Grayak",
+        "common": "Ulat bawang / ulat grayak (beet armyworm)",
         "scientific": "Spodoptera exigua",
         "master_id": "spodoptera-exigua",
-        "source_product": "Buldok",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
+      },
+      {
+        "type": "Hama",
+        "common": "Thrips bawang",
+        "scientific": "Thrips tabaci",
+        "master_id": "thrips-tabaci",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
+      },
+      {
+        "type": "Hama",
+        "common": "Lalat pengorok daun",
+        "scientific": "Liriomyza spp.",
+        "master_id": "liriomyza",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
+      },
+      {
+        "type": "Hama",
+        "common": "Ulat tanah",
+        "scientific": "Agrotis ipsilon",
+        "master_id": "agrotis-ipsilon",
+        "source": "Crop Expert normalized master",
+        "importance": "Perlu dipantau"
       },
       {
         "type": "Penyakit",
-        "common": "Bercak ungu",
-        "scientific": "Alternaria alii",
-        "master_id": "alternaria-porri",
-        "source_product": "Antracol",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Busuk pangkal Fusarium / moler",
+        "scientific": "Fusarium oxysporum f. sp. cepae",
+        "master_id": "fusarium-cepae",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
         "common": "Bercak ungu",
         "scientific": "Alternaria porri",
         "master_id": "alternaria-porri",
-        "source_product": "Folicur WP",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
-        "common": "Penyakit Bercak ungu",
-        "scientific": "Alternaria porri",
-        "master_id": "alternaria-porri",
-        "source_product": "Folicur Gold",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Penyakit",
-        "common": "Penyakit busuk daun",
+        "common": "Embun bulu bawang",
         "scientific": "Peronospora destructor",
         "master_id": "onion-downy-mildew",
-        "source_product": "",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
-        "common": "Penyakit busuk leher",
-        "scientific": "Botrytis alii",
-        "master_id": null,
-        "source_product": "",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Bercak daun Stemphylium bawang",
+        "scientific": "Stemphylium vesicarium",
+        "master_id": "onion-stemphylium",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       },
       {
         "type": "Penyakit",
-        "common": "Penyakit embun bulu",
-        "scientific": "Peronospora destructor",
-        "master_id": "onion-downy-mildew",
-        "source_product": "Previcur N",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Penyakit",
-        "common": "Penyakit fusarium",
-        "scientific": "Fusarium oxysporum",
-        "master_id": "fusarium",
-        "source_product": "",
-        "source_page": 4,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Gulma",
-        "common": "Gulma berdaun lebar",
-        "scientific": "Alternanthera sesilis",
-        "master_id": null,
-        "source_product": "Rumpas",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Gulma",
-        "common": "Gulma berdaun lebar",
-        "scientific": "Amaranthus sp.",
-        "master_id": null,
-        "source_product": "",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Gulma",
-        "common": "Gulma golongan rumput",
-        "scientific": "Digitaria adcendens",
-        "master_id": null,
-        "source_product": "",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
-      },
-      {
-        "type": "Gulma",
-        "common": "Teki",
-        "scientific": "Cyperus iria",
-        "master_id": "cyperus",
-        "source_product": "",
-        "source_page": 3,
-        "source": "TABEL HAMA (ID).pdf"
+        "common": "Busuk leher bawang",
+        "scientific": "Botrytis aclada",
+        "master_id": "botrytis-aclada",
+        "source": "Crop Expert normalized master",
+        "importance": "Penting"
       }
     ],
     "kubis": [],

@@ -4,8 +4,11 @@
   "records": {
     "bawang": [
       "spodoptera-exigua",
-      "thrips-parvispinus",
-      "liriomyza"
+      "thrips-tabaci",
+      "liriomyza",
+      "fusarium-cepae",
+      "alternaria-porri",
+      "onion-downy-mildew"
     ],
     "padi": [
       "nilaparvata-lugens",
@@ -14,8 +17,12 @@
     ],
     "cabai": [
       "thrips-parvispinus",
+      "bemisia-tabaci",
+      "aphis-gossypii",
       "helicoverpa-armigera",
-      "bemisia-tabaci"
+      "colletotrichum",
+      "chili-phytophthora-capsici",
+      "pepylciv"
     ]
   },
   "note": "Kurasi navigasi untuk tampilan foto utama; bukan ranking universal atau ambang ekonomi."

@@ -276,9 +276,9 @@
       ],
       "growth_stages": [
         {
-          "name": "Persemaian",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Persemaian & bibit",
+          "hst": "0–30 HSS*",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -287,12 +287,12 @@
             "Mg",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
-          "name": "Vegetatif",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Vegetatif setelah pindah tanam",
+          "hst": "0–30 HST setelah pindah tanam*",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -301,12 +301,12 @@
             "Mg",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
           "name": "Pembungaan",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "hst": "±30–60 HST setelah pindah tanam*",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -315,12 +315,12 @@
             "Mg",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
-          "name": "Pembentukan buah",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Pembentukan & pembesaran buah",
+          "hst": "±45–90 HST setelah pindah tanam*",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -329,12 +329,12 @@
             "Mg",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
-          "name": "Pembesaran & pemasakan",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Pematangan & panen berulang",
+          "hst": "±70 HST+ setelah pindah tanam*",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -343,7 +343,7 @@
             "Mg",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         }
       ]
     },
@@ -444,9 +444,9 @@
       ],
       "growth_stages": [
         {
-          "name": "Pertumbuhan awal",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Awal pertumbuhan",
+          "hst": "0–14 HST",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -457,12 +457,12 @@
             "Zn",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
-          "name": "Vegetatif",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Vegetatif aktif",
+          "hst": "15–30 HST",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -473,12 +473,12 @@
             "Zn",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
           "name": "Pembentukan umbi",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "hst": "31–45 HST",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -489,12 +489,12 @@
             "Zn",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
           "name": "Pembesaran umbi",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "hst": "46–55 HST",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -505,12 +505,12 @@
             "Zn",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         },
         {
-          "name": "Pematangan",
-          "hst": "Belum ditetapkan secara universal",
-          "description": "Gunakan indikator fenologi tanaman dan varietas sebagai acuan; HST perlu disesuaikan dengan sistem budidaya dan sumber lokal.",
+          "name": "Pematangan & panen",
+          "hst": "56–65+ HST",
+          "description": "Fase fenologi dan risiko OPT diperbarui. HST adalah kisaran operasional; sesuaikan dengan varietas dan kondisi lapangan.",
           "key_nutrients": [
             "N",
             "P",
@@ -521,7 +521,7 @@
             "Zn",
             "B"
           ],
-          "opt_note": "Daftar OPT ditarik dari relasi crop/master; fase-spesifik perlu sumber khusus sebelum diberi label pasti."
+          "opt_note": "Lihat daftar OPT fase-spesifik pada Crop Growth Guideline."
         }
       ]
     },

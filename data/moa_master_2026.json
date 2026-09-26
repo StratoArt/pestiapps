@@ -15,7 +15,7 @@
         "Carbamates",
         "Alanycarb; Aldicarb; Bendiocarb; Benfuracarb; Butocarboxim; Butoxycarboxim; Carbaryl; Carbofuran; Carbosulfan; Ethiofencarb; Fenobucarb; Formetanate; Furathiocarb; Isoprocarb; Methiocarb; Methomyl; Metolcarb; Oxamyl; Pirimicarb; Propoxur; Thiodicarb; Thiofanox; Triazamate; Trimethacarb; XMC; Xylylcarb",
         "Nerve & Muscle",
-        ""
+        "pestdb-057;pestdb-065;pestdb-066;pestdb-077;pestdb-088;pestdb-097;pestdb-csv-0165;pestdb-csv-0298;pestdb-csv-0303;pestdb-csv-0407;pestdb-csv-0418;pestdb-csv-0421;pestdb-csv-0431;pestdb-csv-0459;pestdb-csv-0489;pestdb-csv-0542;pestdb-784;pestdb-808;pestdb-csv-0135"
       ],
       [
         "IRAC",
@@ -25,7 +25,7 @@
         "Organophosphates",
         "Acephate; Azamethiphos; Azinphos-ethyl; Azinphos-methyl; Cadusafos; Chlorethoxyfos; Chlorfenvinphos; Chlormephos; Chlorpyrifos; Chlorpyrifos-methyl; Coumaphos; Cyanophos; Demeton-S-methyl; Diazinon; Dichlorvos/DDVP; Dicrotophos; Dimethoate; Dimethylvinphos; Disulfoton; EPN; Ethion; Ethoprophos; Famphur; Fenamiphos; Fenitrothion; Fenthion; Fosthiazate; Heptenophos; Imicyafos; Isofenphos; Isopropyl O-(methoxyaminothiophosphoryl) salicylate; Isoxathion; Malathion; Mecarbam; Methamidophos; Methidathion; Mevinphos; Monocrotophos; Naled; Omethoate; Oxydemeton-methyl; Parathion; Parathion-methyl; Phenthoate; Phorate; Phosalone; Phosmet; Phosphamidon; Phoxim; Pirimiphos-methyl; Profenofos; Propetamphos; Prothiofos; Pyraclofos; Pyridaphenthion; Quinalphos; Sulfotep; Tebupirimfos; Temephos; Terbufos; Tetrachlorvinphos; Thiometon; Triazophos; Trichlorfon; Vamidothion",
         "Nerve & Muscle",
-        "pestdb-022"
+        "pestdb-022;pestdb-084;pestdb-csv-0202;pestdb-csv-0228;pestdb-csv-0269;pestdb-csv-0270;pestdb-csv-0271;pestdb-csv-0291;pestdb-csv-0294;pestdb-csv-0316;pestdb-csv-0369;pestdb-csv-0382;pestdb-csv-0409;pestdb-csv-0410;pestdb-csv-0415;pestdb-csv-0416;pestdb-csv-0420;pestdb-csv-0422;pestdb-csv-0428;pestdb-786;pestdb-787;pestdb-804;pestdb-805;pestdb-806"
       ],
       [
         "IRAC",
@@ -45,7 +45,7 @@
         "Phenylpyrazoles (Fiproles)",
         "Ethiprole; Fipronil",
         "Nerve & Muscle",
-        "pestdb-041"
+        "pestdb-041;pestdb-csv-0152;pestdb-csv-0153;pestdb-csv-0200;pestdb-csv-0280;pestdb-csv-0311"
       ],
       [
         "IRAC",
@@ -55,7 +55,7 @@
         "Pyrethroids; Pyrethrins",
         "Acrinathrin; Allethrin; d-cis-trans Allethrin; d-trans Allethrin; Bifenthrin; Bioallethrin; Bioallethrin S-cyclopentenyl isomer; Bioresmethrin; Cycloprothrin; Cyfluthrin; beta-Cyfluthrin; Cyhalothrin; lambda-Cyhalothrin; gamma-Cyhalothrin; Cypermethrin; alpha-Cypermethrin; beta-Cypermethrin; theta-Cypermethrin; zeta-Cypermethrin; Cyphenothrin (1R)-trans-isomers; Deltamethrin; Empenthrin (EZ)-(1R)-isomers; Esfenvalerate; Etofenprox; Fenpropathrin; Fenvalerate; Flucythrinate; Flumethrin; tau-Fluvalinate; Halfenprox; Imiprothrin; Kadethrin; Permethrin; Phenothrin (1R)-trans-isomer; Prallethrin; Pyrethrins (pyrethrum); Resmethrin; Silafluofen; Tefluthrin; Tetramethrin; Tetramethrin (1R)-isomers; Tralomethrin; Transfluthrin",
         "Nerve & Muscle",
-        "pestdb-003;pestdb-004;pestdb-069"
+        "pestdb-003;pestdb-004;pestdb-015;pestdb-039;pestdb-042;pestdb-056;pestdb-067;pestdb-068;pestdb-069;pestdb-081;pestdb-083;pestdb-084;pestdb-csv-0154;pestdb-csv-0162;pestdb-csv-0163;pestdb-csv-0164;pestdb-csv-0168;pestdb-csv-0201;pestdb-csv-0230;pestdb-csv-0231;pestdb-csv-0287;pestdb-csv-0288;pestdb-csv-0289;pestdb-csv-0296;pestdb-csv-0301;pestdb-csv-0313;pestdb-csv-0369;pestdb-csv-0382;pestdb-csv-0411;pestdb-csv-0423;pestdb-csv-0425;pestdb-csv-0426;pestdb-csv-0429;pestdb-csv-0430;pestdb-csv-0474;pestdb-805;pestdb-815;pestdb-843;pestdb-845;pestdb-851;pestdb-852;pestdb-csv-0137"
       ],
       [
         "IRAC",
@@ -75,7 +75,7 @@
         "Neonicotinoids",
         "Acetamiprid; Clothianidin; Dinotefuran; Imidacloprid; Nitenpyram; Thiacloprid; Thiamethoxam",
         "Nerve & Muscle",
-        "pestdb-002;pestdb-007;pestdb-073"
+        "pestdb-002;pestdb-015;pestdb-017;pestdb-020;pestdb-072;pestdb-073;pestdb-076;pestdb-089;pestdb-csv-0136;pestdb-csv-0221;pestdb-csv-0286;pestdb-csv-0293;pestdb-csv-0297;pestdb-csv-0300;pestdb-csv-0301;pestdb-csv-0306;pestdb-csv-0309;pestdb-csv-0312;pestdb-csv-0383;pestdb-csv-0408;pestdb-csv-0413;pestdb-csv-0424;pestdb-csv-0427;pestdb-csv-0491;pestdb-007;pestdb-csv-0544;pestdb-csv-0546;pestdb-782;pestdb-801;pestdb-807;pestdb-811;pestdb-814;pestdb-845;pestdb-853;pestdb-csv-0137;pestdb-csv-0138;pestdb-csv-0150"
       ],
       [
         "IRAC",
@@ -95,7 +95,7 @@
         "Sulfoximines",
         "Sulfoxaflor",
         "Nerve & Muscle",
-        ""
+        "pestdb-781;pestdb-801;pestdb-809"
       ],
       [
         "IRAC",
@@ -105,7 +105,7 @@
         "Butenolides",
         "Flupyradifurone",
         "Nerve & Muscle",
-        ""
+        "pestdb-056;pestdb-008"
       ],
       [
         "IRAC",
@@ -115,7 +115,7 @@
         "",
         "Dicloromezotiaz; Fenmezoditiaz; Triflumezopyrim",
         "Nerve & Muscle",
-        "pestdb-052"
+        "pestdb-019;pestdb-052"
       ],
       [
         "IRAC",
@@ -135,7 +135,7 @@
         "Spinosyns",
         "Spinetoram; Spinosad",
         "Nerve & Muscle",
-        "pestdb-051"
+        "pestdb-051;pestdb-csv-0468;pestdb-csv-0470;pestdb-850"
       ],
       [
         "IRAC",
@@ -145,7 +145,7 @@
         "Avermectins; Milbemycins",
         "Abamectin; Emamectin benzoate; Lepimectin; Milbemectin",
         "Nerve & Muscle",
-        ""
+        "pestdb-024;pestdb-040;pestdb-055;pestdb-078;pestdb-085;pestdb-087;pestdb-096;pestdb-099;pestdb-csv-0201;pestdb-csv-0226;pestdb-csv-0227;pestdb-csv-0259;pestdb-csv-0285;pestdb-csv-0292;pestdb-csv-0295;pestdb-csv-0302;pestdb-csv-0314;pestdb-csv-0408;pestdb-csv-0412;pestdb-csv-0417;pestdb-csv-0578;pestdb-785;pestdb-800;pestdb-802;pestdb-803;pestdb-810;pestdb-816;pestdb-844;pestdb-848;pestdb-006"
       ],
       [
         "IRAC",
@@ -165,7 +165,7 @@
         "Fenoxycarb",
         "Fenoxycarb",
         "Growth & Development",
-        ""
+        "pestdb-csv-0118"
       ],
       [
         "IRAC",
@@ -175,7 +175,7 @@
         "Pyriproxyfen",
         "Pyriproxyfen",
         "Growth & Development",
-        ""
+        "pestdb-csv-0305;pestdb-csv-0307"
       ],
       [
         "IRAC",
@@ -245,7 +245,7 @@
         "Pyridine azomethine derivatives",
         "Pymetrozine; Pyrifluquinazon",
         "Nerve & Muscle",
-        ""
+        "pestdb-016;pestdb-csv-0221;pestdb-csv-0306;pestdb-csv-0308;pestdb-csv-0312;pestdb-csv-0469;pestdb-814;pestdb-847"
       ],
       [
         "IRAC",
@@ -255,7 +255,7 @@
         "Pyropenes",
         "Afidopyropen",
         "Nerve & Muscle",
-        ""
+        "pestdb-040"
       ],
       [
         "IRAC",
@@ -275,7 +275,7 @@
         "Etoxazole",
         "Etoxazole",
         "Growth & Development",
-        ""
+        "pestdb-816"
       ],
       [
         "IRAC",
@@ -305,7 +305,7 @@
         "Diafenthiuron",
         "Diafenthiuron",
         "Respiration",
-        ""
+        "pestdb-csv-0118;pestdb-csv-0304;pestdb-csv-0307"
       ],
       [
         "IRAC",
@@ -345,7 +345,7 @@
         "Pyrroles; Dinitrophenols",
         "Sulfluramid; Chlorfenapyr; DNOC",
         "Respiration",
-        ""
+        "pestdb-086;pestdb-098;pestdb-csv-0223;pestdb-csv-0309;pestdb-csv-0315;pestdb-csv-0317;pestdb-csv-0482;pestdb-783"
       ],
       [
         "IRAC",
@@ -355,7 +355,7 @@
         "Nereistoxin analogues",
         "Bensultap; Cartap hydrochloride; Thiocyclam; Thiosultap-sodium",
         "Nerve & Muscle",
-        ""
+        "pestdb-074;pestdb-075;pestdb-076;pestdb-csv-0419"
       ],
       [
         "IRAC",
@@ -365,7 +365,7 @@
         "Benzoylureas",
         "Bistrifluron; Chlorfluazuron; Diflubenzuron; Flucycloxuron; Flufenoxuron; Hexaflumuron; Lufenuron; Novaluron; Noviflumuron; Teflubenzuron; Triflumuron",
         "Growth & Development",
-        "pestdb-023"
+        "pestdb-023;pestdb-039;pestdb-087;pestdb-csv-0232;pestdb-csv-0412;pestdb-csv-0474;pestdb-846;pestdb-849;pestdb-852"
       ],
       [
         "IRAC",
@@ -375,7 +375,7 @@
         "Buprofezin",
         "Buprofezin",
         "Growth & Development",
-        ""
+        "pestdb-081;pestdb-csv-0119;pestdb-csv-0224;pestdb-csv-0299;pestdb-csv-0406"
       ],
       [
         "IRAC",
@@ -385,7 +385,7 @@
         "Cyromazine",
         "Cyromazine",
         "Growth & Development",
-        ""
+        "pestdb-csv-0117;pestdb-813"
       ],
       [
         "IRAC",
@@ -395,7 +395,7 @@
         "Diacylhydrazines",
         "Chromafenozide; Halofenozide; Methoxyfenozide; Tebufenozide",
         "Growth & Development",
-        ""
+        "pestdb-csv-0470;pestdb-csv-0472"
       ],
       [
         "IRAC",
@@ -445,7 +445,7 @@
         "Bifenazate",
         "Bifenazate",
         "Respiration",
-        ""
+        "pestdb-csv-0290"
       ],
       [
         "IRAC",
@@ -455,7 +455,7 @@
         "METI acaricides and insecticides",
         "Fenazaquin; Fenpyroximate; Pyridaben; Pyrimidifen; Tebufenpyrad; Tolfenpyrad",
         "Respiration",
-        ""
+        "pestdb-849"
       ],
       [
         "IRAC",
@@ -475,7 +475,7 @@
         "Oxadiazines",
         "Indoxacarb",
         "Nerve & Muscle",
-        ""
+        "pestdb-055;pestdb-085;pestdb-csv-0223;pestdb-csv-0295;pestdb-csv-0317;pestdb-803"
       ],
       [
         "IRAC",
@@ -495,7 +495,7 @@
         "Tetronic and Tetramic acid derivatives",
         "Spidoxamat; Spirodiclofen; Spiromesifen; Spiropidion; Spirotetramat",
         "Growth & Development",
-        "pestdb-002;pestdb-005;pestdb-006;pestdb-020"
+        "pestdb-002;pestdb-020;pestdb-005;pestdb-csv-0578;pestdb-844;pestdb-csv-0403;pestdb-006"
       ],
       [
         "IRAC",
@@ -545,7 +545,7 @@
         "Diamides",
         "Chlorantraniliprole; Cyantraniliprole; Cyclaniliprole; Flubendiamide; Tetraniliprole",
         "Nerve & Muscle",
-        "pestdb-001;pestdb-005;pestdb-017;pestdb-058"
+        "pestdb-001;pestdb-017;pestdb-023;pestdb-058;pestdb-csv-0136;pestdb-csv-0139;pestdb-csv-0229;pestdb-csv-0310;pestdb-005;pestdb-csv-0472;pestdb-csv-0482;pestdb-csv-0548;pestdb-802;pestdb-812;pestdb-851;pestdb-854;pestdb-csv-0144"
       ],
       [
         "IRAC",
@@ -555,7 +555,7 @@
         "Flonicamid",
         "Flonicamid",
         "Nerve & Muscle",
-        ""
+        "pestdb-csv-0286;pestdb-csv-0469;pestdb-853"
       ],
       [
         "IRAC",
@@ -565,7 +565,7 @@
         "Isoxazolines; Meta-diamides",
         "Isocycloseram; Broflanilide; Cyproflanilide; Fluxametamide",
         "Nerve & Muscle",
-        ""
+        "pestdb-018;pestdb-021;pestdb-071;pestdb-csv-0604;pestdb-csv-0496;pestdb-csv-0497;pestdb-csv-0498;pestdb-csv-0155"
       ],
       [
         "IRAC",
@@ -605,7 +605,7 @@
         "Flometoquin",
         "Flometoquin",
         "Respiration",
-        ""
+        "pestdb-csv-0414"
       ],
       [
         "IRAC",
@@ -625,7 +625,7 @@
         "Pyridazine pyrazolecarboxamides",
         "Dimpropyridaz",
         "Nerve & Muscle",
-        ""
+        "pestdb-csv-0608;pestdb-csv-0156"
       ],
       [
         "IRAC",
@@ -717,7 +717,7 @@
         "acylalanines",
         "benalaxyl; benalaxyl-M; furalaxyl; metalaxyl; metalaxyl-M",
         "4",
-        "High",
+        "",
         ""
       ],
       [
@@ -728,7 +728,7 @@
         "hydroxy-(2-amino-) pyrimidines",
         "bupirimate; dimethirimol; ethirimol",
         "8",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -739,7 +739,7 @@
         "isoxazoles; isothiazolones; imino-tosyl pyrimidinone",
         "hymexazole; octhilinone; flumetylsulforim",
         "32",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -750,7 +750,7 @@
         "carboxylic acids",
         "oxolinic acid",
         "31",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -761,7 +761,7 @@
         "phenyl-propanol; dihydroisoquinoline; quinoline amide",
         "ipflufenoquin; quinofumelin; feneptamidoquin",
         "52",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -772,7 +772,7 @@
         "oxadiazol benzamides",
         "flufenoxadiazam",
         "56",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -783,7 +783,7 @@
         "benzimidazoles; thiophanates",
         "benomyl; carbendazim; fuberidazole; thiabendazole; thiophanate; thiophanate-methyl",
         "1",
-        "High",
+        "",
         ""
       ],
       [
@@ -794,7 +794,7 @@
         "N-phenyl carbamates",
         "diethofencarb",
         "10",
-        "High",
+        "",
         ""
       ],
       [
@@ -805,7 +805,7 @@
         "toluamides; ethylamino-thiazole-carboxamide",
         "zoxamide; ethaboxam",
         "22",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -816,7 +816,7 @@
         "phenylureas",
         "pencycuron",
         "20",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -827,7 +827,7 @@
         "pyridinylmethyl-benzamides",
         "fluopicolide; fluopimomide",
         "43",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -838,7 +838,7 @@
         "aminocyanoacrylates",
         "phenamacril",
         "47",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -849,7 +849,7 @@
         "pyridazine",
         "pyridachlometyl",
         "53",
-        "High",
+        "",
         ""
       ],
       [
@@ -860,7 +860,7 @@
         "pyrimidinamines; pyrazole carboxamides; quinazoline",
         "diflumetorim; tolfenpyrad; fenpyroximate; fenazaquin",
         "39",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -871,7 +871,7 @@
         "phenyl-benzamides; pyrazole-4-carboxamides; pyridine-carboxamides",
         "flutolanil; isofetamid; fluopyram; fluxapyroxad; boscalid; bixafen",
         "7",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -882,7 +882,7 @@
         "methoxy-acrylates; methoxy-carbamates; oximino-acetates; oximino-acetamides",
         "azoxystrobin; pyraclostrobin; kresoxim-methyl; trifloxystrobin; famoxadone",
         "11",
-        "High",
+        "",
         ""
       ],
       [
@@ -893,7 +893,7 @@
         "cyano-imidazole; sulfamoyl-triazole; picolinamides",
         "cyazofamid; amisulbrom; fenpicoxamid",
         "21",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -904,7 +904,7 @@
         "dinitrophenyl-crotonates; 2,6-dinitro-anilines",
         "binapacryl; meptyldinocap; dinocap; fluazinam",
         "29",
-        "Low",
+        "",
         ""
       ],
       [
@@ -915,7 +915,7 @@
         "tri-phenyl tin compounds",
         "fentin acetate; fentin chloride; fentin hydroxide",
         "30",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -926,7 +926,7 @@
         "thiophene-carboxamides",
         "silthiofam",
         "38",
-        "Low",
+        "",
         ""
       ],
       [
@@ -937,7 +937,7 @@
         "triazolo-pyrimidylamine",
         "ametoctradin",
         "45",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -948,7 +948,7 @@
         "anilino-pyrimidines",
         "cyprodinil; mepanipyrim; pyrimethanil",
         "9",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -959,7 +959,7 @@
         "enopyranuronic acid antibiotic",
         "blasticidin-S",
         "23",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -970,7 +970,7 @@
         "hexopyranosyl antibiotic",
         "kasugamycin",
         "24",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -981,7 +981,7 @@
         "glucopyranosyl antibiotic",
         "streptomycin",
         "25",
-        "High",
+        "",
         ""
       ],
       [
@@ -992,7 +992,7 @@
         "tetracycline antibiotic",
         "oxytetracycline",
         "41",
-        "High",
+        "",
         ""
       ],
       [
@@ -1003,7 +1003,7 @@
         "benzoxaboroles",
         "tavaborole",
         "54",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1014,7 +1014,7 @@
         "aryloxyquinoline; quinazolinone",
         "quinoxyfen; proquinazid",
         "13",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1025,7 +1025,7 @@
         "phenylpyrroles",
         "fenpiclonil; fludioxonil",
         "12",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -1036,7 +1036,7 @@
         "dicarboximides",
         "chlozolinate; dimethachlone; iprodione; procymidone; vinclozolin",
         "2",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -1047,7 +1047,7 @@
         "phosphoro-thiolates",
         "edifenphos; iprobenfos (IBP); pyrazophos",
         "6",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -1058,7 +1058,7 @@
         "aromatic hydrocarbons",
         "biphenyl; chloroneb; dicloran; quintozene (PCNB); tecnazene (TCNB); tolclofos-methyl",
         "14",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -1069,7 +1069,7 @@
         "carbamates",
         "iodocarb; propamocarb; prothiocarb",
         "28",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -1080,7 +1080,7 @@
         "polyene amphoteric macrolide antifungal antibiotic",
         "natamycin (pimaricin)",
         "48",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1091,7 +1091,7 @@
         "OSBPI-fungicides",
         "oxathiapiprolin; fluoxapiprolin",
         "49",
-        "Medium to High",
+        "",
         ""
       ],
       [
@@ -1102,7 +1102,7 @@
         "protein fragment polypeptide",
         "ASFBIOF01-02",
         "51",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1113,7 +1113,7 @@
         "DMI-fungicides (SBI Class I)",
         "triforine; pyrifenox; pyrisoxazole; fenarimol; nuarimol; imazalil; oxpoconazole; pefurazoate; prochloraz; triflumizole; azaconazole; bitertanol; bromuconazole; cyproconazole; difenoconazole; diniconazole; epoxiconazole; etaconazole; fenbuconazole; fluquinconazole; flusilazole; flutriafol; hexaconazole; imibenconazole; ipconazole; mefentrifluconazole; metconazole; myclobutanil; penconazole; propiconazole; simeconazole; tebuconazole; tetraconazole; triadimefon; triadimenol; triticonazole; prothioconazole",
         "3",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1124,7 +1124,7 @@
         "Amines (SBI Class II)",
         "aldimorph; dodemorph; fenpropimorph; tridemorph; fenpropidin; piperalin; spiroxamine",
         "5",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -1135,7 +1135,7 @@
         "KRI-fungicides (SBI Class III)",
         "fenhexamid; fenpyrazamine",
         "17",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -1146,7 +1146,7 @@
         "thiocarbamates; allylamines",
         "pyributicarb; naftifine; terbinafine",
         "18",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1157,7 +1157,7 @@
         "polyoxins",
         "polyoxin",
         "19",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1168,7 +1168,7 @@
         "cinnamic acid amides; valinamide carbamates; mandelic acid amides",
         "dimethomorph; flumorph; pyrimorph; benthiavalicarb; iprovalicarb; valifenalate; mandipropamid",
         "40",
-        "Low to Medium",
+        "",
         "pestdb-027"
       ],
       [
@@ -1179,7 +1179,7 @@
         "GWT-1 inhibitors",
         "aminopyrifen",
         "55",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1190,7 +1190,7 @@
         "MBI-R",
         "fthalide; pyroquilon; tricyclazole",
         "16.1",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1201,7 +1201,7 @@
         "MBI-D",
         "carpropamid; diclocymet; fenoxanil",
         "16.2",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1212,7 +1212,7 @@
         "MBI-P",
         "tolprocarb",
         "16.3",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1223,7 +1223,7 @@
         "RNAi-fungicides",
         "erysichrona",
         "57",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1234,7 +1234,7 @@
         "host defence inducer",
         "acibenzolar-S-methyl",
         "P01",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1245,7 +1245,7 @@
         "host defence inducer",
         "probenazole",
         "P02",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1256,7 +1256,7 @@
         "host defence inducer",
         "tiadinil; isotianil",
         "P03",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1267,7 +1267,7 @@
         "natural compound polysaccharides",
         "laminarin",
         "P04",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1278,7 +1278,7 @@
         "plant extract",
         "extract from Reynoutria sachalinensis",
         "P05",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1289,7 +1289,7 @@
         "microbial",
         "Bacillus mycoides isolate J; Saccharomyces cerevisiae strain LAS117",
         "P06",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1300,7 +1300,7 @@
         "phosphonates",
         "fosetyl-Al; phosphorous acid and salts",
         "P07",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1311,7 +1311,7 @@
         "isothiazolylmethyl ether",
         "dichlobentiazox",
         "P08",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1322,7 +1322,7 @@
         "flagellin peptide",
         "Flg22-Bt",
         "P09",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1333,7 +1333,7 @@
         "natural small molecule metabolite",
         "ascr#18",
         "P10",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1344,7 +1344,7 @@
         "plant extract",
         "beet extract (Beta vulgaris)",
         "P11",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1355,7 +1355,7 @@
         "guanidines",
         "dodine",
         "U06",
-        "Low to Medium",
+        "",
         ""
       ],
       [
@@ -1366,7 +1366,7 @@
         "thiazolidine",
         "flutianil",
         "U12",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1377,7 +1377,7 @@
         "pyrimidinone-hydrazones",
         "ferimzone",
         "U14",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1388,7 +1388,7 @@
         "4-quinolyl-acetate",
         "tebufloquin",
         "U16",
-        "Medium",
+        "",
         ""
       ],
       [
@@ -1399,7 +1399,7 @@
         "tetrazolyloxime",
         "picarbutrazox",
         "U17",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1410,7 +1410,7 @@
         "glucopyranosyl antibiotic",
         "validamycin",
         "U18",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1421,7 +1421,7 @@
         "nereistoxin analogues",
         "cartap",
         "U19",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1432,7 +1432,7 @@
         "mineral oils, organic oils, inorganic salts, biological-origin material",
         "diverse",
         "NC",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1443,7 +1443,7 @@
         "inorganic (electrophiles)",
         "inorganic copper (different salts)",
         "M01",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1454,7 +1454,7 @@
         "inorganic (electrophiles)",
         "inorganic sulphur",
         "M02",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1465,7 +1465,7 @@
         "dithiocarbamates and relatives (electrophiles)",
         "amobam; ferbam; mancozeb; maneb; metiram; propineb; thiram; zinc thiazole; zineb; ziram",
         "M03",
-        "Low",
+        "",
         "pestdb-009;pestdb-100"
       ],
       [
@@ -1476,7 +1476,7 @@
         "phthalimides (electrophiles)",
         "captan; captafol; folpet",
         "M04",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1487,7 +1487,7 @@
         "chloronitriles (phthalonitriles)",
         "chlorothalonil",
         "M05",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1498,7 +1498,7 @@
         "sulfamides (electrophiles)",
         "dichlofluanid; tolylfluanid",
         "M06",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1509,7 +1509,7 @@
         "bis-guanidines",
         "guazatine; iminoctadine",
         "M07",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1520,7 +1520,7 @@
         "triazines",
         "anilazine",
         "M08",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1531,7 +1531,7 @@
         "quinones (anthraquinones)",
         "dithianon",
         "M09",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1542,7 +1542,7 @@
         "quinoxalines (electrophiles)",
         "chinomethionat / quinomethionate",
         "M10",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1553,7 +1553,7 @@
         "maleimide (electrophiles)",
         "fluoroimide",
         "M11",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1564,7 +1564,7 @@
         "thiocarbamate (electrophiles)",
         "methasulfocarb",
         "M12",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1575,7 +1575,7 @@
         "inorganic (electrophiles)",
         "zinc oxide",
         "M13",
-        "Low",
+        "",
         ""
       ],
       [
@@ -1586,7 +1586,7 @@
         "plant extract / polypeptide (lectin)",
         "BLAD extract from lupine plantlets; extracts from Swinglea glutinosa; Melaleuca alternifolia tea tree oil; plant oils (eugenol, geraniol, thymol)",
         "BM01",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1597,7 +1597,7 @@
         "microbial",
         "Trichoderma spp.; Clonostachys rosea; Coniothyrium minitans; Hanseniaspora uvarum; Talaromyces flavus; Saccharomyces cerevisiae; Bacillus amyloliquefaciens; Bacillus subtilis; Bacillus velezensis; Erwinia PHC25279; Gluconobacter cerinus; Pseudomonas chlororaphis; Pseudomonas syringae; Rhizobium vitis; Streptomyces griseovirides; Streptomyces lydicus; Streptomyces griseofuscus; Willaertia magna strain C2c",
         "BM02",
-        "Unknown",
+        "",
         ""
       ],
       [
@@ -1608,7 +1608,7 @@
         "purified metabolites",
         "cinnamaldehyde; D-tagatose; choline pelargonate",
         "BM03",
-        "Unknown",
+        "",
         ""
       ]
     ],

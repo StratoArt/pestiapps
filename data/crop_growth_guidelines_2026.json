@@ -187,7 +187,7 @@
           "importance_note": "Sumber crop phenology menempatkan gosong palsu pada fase reproduktif akhir menuju pengisian bulir."
         },
         {
-          "opt_id": "rhizoctonia-solani-brassica",
+          "opt_id": "rhizoctonia",
           "type": "Penyakit",
           "stages": [
             "v2",
@@ -209,41 +209,6 @@
           "importance_note": "Gulma padi sangat relevan pada fase awal karena kompetisi awal; sumber TABEL HAMA mencantumkan Echinochloa pada sistem padi."
         }
       ]
-    },
-    {
-      "crop_id": "cabai",
-      "crop_name": "Cabai",
-      "source_status": "framework_only",
-      "sources": [],
-      "phases": [
-        {
-          "id": "cabai-1",
-          "name": "Perkecambahan & bibit",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "cabai-2",
-          "name": "Vegetatif",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "cabai-3",
-          "name": "Pembungaan",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "cabai-4",
-          "name": "Pembentukan buah",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "cabai-5",
-          "name": "Pembesaran & pematangan",
-          "group": "Kerangka umum"
-        }
-      ],
-      "opt_stage_links": [],
-      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
     },
     {
       "crop_id": "tomat",
@@ -1091,41 +1056,6 @@
       "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
     },
     {
-      "crop_id": "bawang",
-      "crop_name": "Bawang merah",
-      "source_status": "framework_only",
-      "sources": [],
-      "phases": [
-        {
-          "id": "bawang-1",
-          "name": "Perkecambahan/awal pertumbuhan",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "bawang-2",
-          "name": "Vegetatif",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "bawang-3",
-          "name": "Pembentukan umbi",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "bawang-4",
-          "name": "Pembesaran umbi",
-          "group": "Kerangka umum"
-        },
-        {
-          "id": "bawang-5",
-          "name": "Pematangan & panen",
-          "group": "Kerangka umum"
-        }
-      ],
-      "opt_stage_links": [],
-      "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
-    },
-    {
       "crop_id": "kacang",
       "crop_name": "Kacang panjang",
       "source_status": "framework_only",
@@ -1224,6 +1154,632 @@
       ],
       "opt_stage_links": [],
       "note": "Kerangka fase pertumbuhan untuk navigasi aplikasi. Belum digunakan untuk menyimpulkan fase serangan OPT atau kalender HST tanpa sumber khusus."
+    },
+    {
+      "crop_id": "bawang",
+      "crop_name": "Bawang merah",
+      "source_status": "source_supported",
+      "sources": [
+        {
+          "name": "Crop Expert / Bayer onion cultivation reference",
+          "note": "Kerangka lapangan 0–65 HST; kisaran dapat berubah menurut varietas, bahan tanam dan lokasi."
+        },
+        {
+          "name": "UF/IFAS shallots",
+          "note": "Shallot harvest commonly around 50–60 days after planting in the cited guide."
+        },
+        {
+          "name": "UPY harvest-age study",
+          "note": "Studi varietas Lembah Palu mengevaluasi umur panen 60–75 HST; menunjukkan variasi umur panen."
+        }
+      ],
+      "phases": [
+        {
+          "id": "bawang-1",
+          "name": "Awal pertumbuhan",
+          "group": "0–14 HST",
+          "hst": "0–14 HST",
+          "label": "Awal"
+        },
+        {
+          "id": "bawang-2",
+          "name": "Vegetatif aktif",
+          "group": "15–30 HST",
+          "hst": "15–30 HST",
+          "label": "Vegetatif"
+        },
+        {
+          "id": "bawang-3",
+          "name": "Pembentukan umbi",
+          "group": "31–45 HST",
+          "hst": "31–45 HST",
+          "label": "Pembentukan umbi"
+        },
+        {
+          "id": "bawang-4",
+          "name": "Pembesaran umbi",
+          "group": "46–55 HST",
+          "hst": "46–55 HST",
+          "label": "Pembesaran umbi"
+        },
+        {
+          "id": "bawang-5",
+          "name": "Pematangan & panen",
+          "group": "56–65+ HST",
+          "hst": "56–65+ HST",
+          "label": "Pematangan"
+        }
+      ],
+      "opt_stage_links": [
+        {
+          "stages": [
+            "bawang-1"
+          ],
+          "opt_id": "spodoptera-exigua",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-1"
+          ],
+          "opt_id": "agrotis-ipsilon",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-1"
+          ],
+          "opt_id": "fusarium-cepae",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-2"
+          ],
+          "opt_id": "spodoptera-exigua",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-2"
+          ],
+          "opt_id": "thrips-tabaci",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-2"
+          ],
+          "opt_id": "liriomyza",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-2"
+          ],
+          "opt_id": "fusarium-cepae",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-2"
+          ],
+          "opt_id": "alternaria-porri",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "thrips-tabaci",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "spodoptera-exigua",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "liriomyza",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "alternaria-porri",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "onion-downy-mildew",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "onion-stemphylium",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-3"
+          ],
+          "opt_id": "fusarium-cepae",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-4"
+          ],
+          "opt_id": "thrips-tabaci",
+          "type": "Hama",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-4"
+          ],
+          "opt_id": "alternaria-porri",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-4"
+          ],
+          "opt_id": "onion-downy-mildew",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-4"
+          ],
+          "opt_id": "onion-stemphylium",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-5"
+          ],
+          "opt_id": "alternaria-porri",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-5"
+          ],
+          "opt_id": "onion-stemphylium",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-5"
+          ],
+          "opt_id": "botrytis-aclada",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        },
+        {
+          "stages": [
+            "bawang-5"
+          ],
+          "opt_id": "fusarium-cepae",
+          "type": "Penyakit",
+          "evidence": "Sesuai jendela kerentanan/observasi budidaya; bukan kalender serangan pasti."
+        }
+      ],
+      "note": "HST adalah kisaran operasional, bukan ambang biologis universal. Prioritaskan fenologi aktual tanaman dan varietas."
+    },
+    {
+      "crop_id": "cabai",
+      "crop_name": "Cabai",
+      "source_status": "source_supported",
+      "sources": [
+        {
+          "name": "UC IPM Peppers",
+          "note": "Guideline membagi pengelolaan menjadi preplant, seedling/early vegetative, bloom, fruit development, harvest/postharvest."
+        },
+        {
+          "name": "PROSEA / Capsicum annuum",
+          "note": "Perkecambahan 6–21 hari; pembungaan berkelanjutan sekitar 60–90 hari setelah semai; buah mulai matang 4–5 minggu setelah berbunga."
+        },
+        {
+          "name": "Phenological growth stages of chilli (BBCH)",
+          "note": "Fenologi cabai mencakup perkecambahan, perkembangan vegetatif, pembungaan, perkembangan buah dan pemasakan."
+        },
+        {
+          "name": "FAO AGRIS — Central Java chili crop protection study",
+          "note": "Thrips, mites, whitefly, anthracnose, Gemini/Begomovirus dan Phytophthora termasuk masalah penting yang dilaporkan pada studi sentra cabai Jawa Tengah."
+        }
+      ],
+      "phases": [
+        {
+          "id": "cabai-1",
+          "name": "Persemaian & bibit",
+          "group": "0–30 HSS",
+          "hst": "0–30 HSS*",
+          "label": "Bibit"
+        },
+        {
+          "id": "cabai-2",
+          "name": "Vegetatif setelah pindah tanam",
+          "group": "0–30 HST",
+          "hst": "0–30 HST setelah pindah tanam*",
+          "label": "Vegetatif"
+        },
+        {
+          "id": "cabai-3",
+          "name": "Pembungaan",
+          "group": "30–60 HST*",
+          "hst": "±30–60 HST setelah pindah tanam*",
+          "label": "Berbunga"
+        },
+        {
+          "id": "cabai-4",
+          "name": "Pembentukan & pembesaran buah",
+          "group": "45–90 HST*",
+          "hst": "±45–90 HST setelah pindah tanam*",
+          "label": "Buah"
+        },
+        {
+          "id": "cabai-5",
+          "name": "Pematangan & panen berulang",
+          "group": "70 HST+*",
+          "hst": "±70 HST+ setelah pindah tanam*",
+          "label": "Panen"
+        }
+      ],
+      "opt_stage_links": [
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "bemisia-tabaci",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "thrips-parvispinus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "aphis-gossypii",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "polyphagotarsonemus-latus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "fusarium",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "tomato-bacterial-wilt",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-1"
+          ],
+          "opt_id": "pepylciv",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "thrips-parvispinus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "bemisia-tabaci",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "aphis-gossypii",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "polyphagotarsonemus-latus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "spodoptera-litura",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "liriomyza",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "fusarium",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "tomato-bacterial-wilt",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "pepylciv",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-2"
+          ],
+          "opt_id": "xanthomonas",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "thrips-parvispinus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "bemisia-tabaci",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "aphis-gossypii",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "helicoverpa-armigera",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "polyphagotarsonemus-latus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "pepylciv",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "chili-phytophthora-capsici",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-3"
+          ],
+          "opt_id": "xanthomonas",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "thrips-parvispinus",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "bemisia-tabaci",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "helicoverpa-armigera",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "bactrocera-dorsalis",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "spodoptera-litura",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "colletotrichum",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "chili-phytophthora-capsici",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-4"
+          ],
+          "opt_id": "xanthomonas",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "helicoverpa-armigera",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "bactrocera-dorsalis",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "bemisia-tabaci",
+          "type": "Hama",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "colletotrichum",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "chili-phytophthora-capsici",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "fusarium",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        },
+        {
+          "stages": [
+            "cabai-5"
+          ],
+          "opt_id": "pepylciv",
+          "type": "Penyakit",
+          "evidence": "Jendela risiko berbasis fase inang/biologi OPT dan pedoman IPM; bukan prediksi serangan pasti."
+        }
+      ],
+      "note": "*Kisaran HST/HSS bersifat operasional dan sangat dipengaruhi varietas, umur bibit, dataran, suhu, dan teknik budidaya. Gunakan fenologi aktual sebagai acuan."
     }
   ]
 }
