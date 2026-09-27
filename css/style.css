@@ -479,3 +479,92 @@ html.dark .app-version,html.dark .ai-result{background:#15221c;border-color:#2a4
     transform:translateX(-8%);
   }
 }
+
+/* Detail Jalan Masuk & Perpindahan Insektisida */
+.entry-card{
+  position:relative;
+  transition:.18s ease;
+}
+
+.entry-card > i{
+  margin-left:auto;
+  font-style:normal;
+  font-size:22px;
+  line-height:1;
+  color:#17779a;
+  align-self:center;
+}
+
+.entry-detail{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  margin:12px 0 20px;
+  padding:16px;
+  border:1px solid #cfe3eb;
+  border-radius:18px;
+  background:#f4f9fb;
+}
+
+.entry-detail-icon{
+  width:48px;
+  height:48px;
+  min-width:48px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:#e6f3f7;
+  font-size:27px;
+}
+
+.entry-detail h3{
+  margin:3px 0 6px;
+  font-size:18px;
+}
+
+.entry-detail p{
+  margin:0;
+  color:#596b73;
+  line-height:1.55;
+  font-size:14px;
+}
+
+@media(max-width:680px){
+  .entry-detail{
+    padding:14px;
+  }
+
+  .entry-detail-icon{
+    width:44px;
+    height:44px;
+    min-width:44px;
+    font-size:24px;
+  }
+}
+
+/* Stewardship PPE final illustration */
+.stewardship-illustration{
+  padding:0;
+  background:#fff;
+  overflow:hidden;
+}
+
+.stewardship-illustration img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  border-radius:18px;
+}
+
+@media(max-width:680px){
+  .stewardship-illustration{
+    margin-left:-2px;
+    margin-right:-2px;
+  }
+
+  .stewardship-illustration img{
+    width:100%;
+    height:auto;
+  }
+}

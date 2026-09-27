@@ -116,7 +116,16 @@ function renderPesticideMoa(){
     const targets=d.targets||[]; const active=targets.find(x=>x.id===root.dataset.target)||targets[0];
     const entry=d.entry||[];
     html+=`<div class="insect-guide-grid"><div class="insect-diagram-card"><div class="diagram-head"><strong>Peta tubuh & jalur masuk</strong><small>Sentuh target untuk melihat fungsi biologisnya</small></div><div class="caterpillar-map">${insectSvgGuide(active.id)}</div><div class="diagram-legend"><span><i class="dot cuticle"></i>Kutikula</span><span><i class="dot nerve"></i>Saraf</span><span><i class="dot gut"></i>Midgut</span><span><i class="dot blood"></i>Hemolimfa</span></div></div><div class="moa-target-panel"><div class="target-pill" style="--target:${active.color}">${escA(active.label)}</div><h3>${escA(active.short)}</h3><p>${escA(active.description)}</p><div class="moa-info-box"><b>Contoh mekanisme / target</b><span>${escA(active.examples)}</span></div><div class="moa-info-box"><b>Kelompok IRAC terkait</b><span>${escA(active.groups)}</span></div></div></div>`;
-    html+=`<h3 class="moa-guide-subhead">Jalan masuk & perpindahan</h3><div class="entry-grid">${entry.map(e=>`<button class="entry-card ${e.id===root.dataset.entry?'active':''}" data-entry="${escA(e.id)}"><span>${e.id==='contact'?'🖐️':e.id==='stomach'?'🍽️':e.id==='spiracle'?'💨':'🌿'}</span><div><b>${escA(e.title)}</b><p>${escA(e.body)}</p></div></button>`).join('')}</div>`;
+    const activeEntry=entry.find(e=>e.id===root.dataset.entry)||entry[0];
+    html+=`<h3 class="moa-guide-subhead">Jalan masuk & perpindahan</h3><div class="entry-grid">${entry.map(e=>`<button class="entry-card ${e.id===activeEntry.id?'active':''}" data-entry="${escA(e.id)}"><span>${e.id==='contact'?'🖐️':e.id==='stomach'?'🍽️':e.id==='spiracle'?'💨':'🌿'}</span><div><b>${escA(e.title)}</b><p>${escA(e.body)}</p></div><i>›</i></button>`).join('')}</div>
+    <div class="entry-detail">
+      <div class="entry-detail-icon">${activeEntry.id==='contact'?'🖐️':activeEntry.id==='stomach'?'🍽️':activeEntry.id==='spiracle'?'💨':'🌿'}</div>
+      <div>
+        <span class="eyebrow">MODE OF ENTRY / DELIVERY</span>
+        <h3>${escA(activeEntry.title)}</h3>
+        <p>${escA(activeEntry.body)}</p>
+      </div>
+    </div>`;
     html+=`<h3 class="moa-guide-subhead">Contoh target saraf yang sering dijumpai</h3><div class="neural-grid">${d.neural.map(n=>`<article><b>${escA(n.title)}</b><p>${escA(n.body)}</p><small>${escA(n.groups)}</small></article>`).join('')}</div>`;
     html+=`<div class="moa-guide-note"><b>Ingat:</b> "kontak", "ingesti", "sistemik" dan "translaminar" menjelaskan <i>delivery/mode of entry</i>; sedangkan IRAC group menjelaskan klasifikasi <i>Mode of Action</i>. Keduanya jangan disamakan.</div>`;
   } else {
