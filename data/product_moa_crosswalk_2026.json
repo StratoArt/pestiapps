@@ -1,8 +1,8 @@
 {
-  "version": "0.24.2",
+  "version": "2026-no-tc",
   "title": "Product → IRAC/FRAC/HRAC Crosswalk 2026",
   "source_file": "database_pestisida_indonesia_DEEP_SCRAPING_v10_PILARQUIM.xlsx",
-  "record_count": 845,
+  "record_count": 818,
   "records": [
     {
       "product_id": "pestdb-001",
@@ -4405,28 +4405,6 @@
       "classifications": []
     },
     {
-      "product_id": "pestdb-csv-0259",
-      "brand": "EMAMECTIN BENZOATE 95 TC",
-      "company": "PT Rainbow Agrosciences",
-      "category": "Insektisida",
-      "active_ingredients_source": [
-        "emamektin benzoat 95%"
-      ],
-      "active_ingredients_standard": [
-        "emamectin benzoate"
-      ],
-      "classifications": [
-        {
-          "committee": "IRAC",
-          "code": "6",
-          "group": "6",
-          "name": "Glutamate-gated chloride channel allosteric modulators",
-          "chemical_class": "Avermectins; Milbemycins",
-          "active_ingredient_match": "Emamectin benzoate"
-        }
-      ]
-    },
-    {
       "product_id": "pestdb-csv-0260",
       "brand": "MEPEAK 55/5 WG",
       "company": "PT Rainbow Agrosciences",
@@ -8450,184 +8428,6 @@
       "classifications": []
     },
     {
-      "product_id": "pestdb-csv-0529",
-      "brand": "CINFLUBROLIN 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "cinflubrolin 98%"
-      ],
-      "active_ingredients_standard": [
-        "cinflubrolin"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0530",
-      "brand": "FLUCHLORAMINOPYR-TEFURYL 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "fluchloraminopyr-tefuryl 98%"
-      ],
-      "active_ingredients_standard": [
-        "fluchloraminopyr-tefuryl"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0531",
-      "brand": "FLUFENOXIMACIL 95 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "flufenoximacil 95%"
-      ],
-      "active_ingredients_standard": [
-        "flufenoximacil"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0532",
-      "brand": "FLUSULFINAM 95 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "flusulfinam 95%"
-      ],
-      "active_ingredients_standard": [
-        "flusulfinam"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0533",
-      "brand": "ISOFLUALAMIDE 95 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "isoflualamide 95%"
-      ],
-      "active_ingredients_standard": [
-        "isoflualamide"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0534",
-      "brand": "HALAUXIFEN-METHYL 95 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "halauxifen-methyl 95%"
-      ],
-      "active_ingredients_standard": [
-        "halauxifen-methyl"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0535",
-      "brand": "FLUCHLORAMINOPYR 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "fluchloraminopyr 98%"
-      ],
-      "active_ingredients_standard": [
-        "fluchloraminopyr"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0536",
-      "brand": "SAFLUFENACIL 95 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "saflufenacil 95%"
-      ],
-      "active_ingredients_standard": [
-        "saflufenacil"
-      ],
-      "classifications": [
-        {
-          "committee": "HRAC",
-          "code": "14",
-          "group": "E",
-          "name": "Inhibition of Protoporphyrinogen Oxidase (PPO)",
-          "chemical_class": "Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones",
-          "active_ingredient_match": "saflufenacil"
-        }
-      ]
-    },
-    {
-      "product_id": "pestdb-csv-0537",
-      "brand": "CYCLOBUNOFEN 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "cyclobunofen 98%"
-      ],
-      "active_ingredients_standard": [
-        "cyclobunofen"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0538",
-      "brand": "FLUFENAZOPYR 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "flufenazopyr 98%"
-      ],
-      "active_ingredients_standard": [
-        "flufenazopyr"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0539",
-      "brand": "FLUFENAUXIRIM-METOTYL 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "flufenauxirim-metotyl 98%"
-      ],
-      "active_ingredients_standard": [
-        "flufenauxirim-metotyl"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0540",
-      "brand": "DIMPYRARGYL 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "dimpyrargyl 98%"
-      ],
-      "active_ingredients_standard": [
-        "dimpyrargyl"
-      ],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0541",
-      "brand": "FLUPYMEZOTIAZ 98 TC",
-      "company": "PT KingAgroot Biotechnology Indonesia",
-      "category": "Bahan Teknis",
-      "active_ingredients_source": [
-        "flupymezotiaz 98%"
-      ],
-      "active_ingredients_standard": [
-        "flupymezotiaz"
-      ],
-      "classifications": []
-    },
-    {
       "product_id": "pestdb-csv-0542",
       "brand": "BAYCARB 500 EC",
       "company": "PT Bayer Indonesia",
@@ -10096,96 +9896,6 @@
       "brand": "BIOKUM 0,005 BB",
       "company": "PT. BIOTIS AGRINDO",
       "category": "Pestisida",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0691",
-      "brand": "MONOSULTAP 95 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0692",
-      "brand": "IPA GLIFOSAT 62 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0693",
-      "brand": "GLIFOSAT 95 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0694",
-      "brand": "PARAKUAT DIKLORIDA 42 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0695",
-      "brand": "DELTAMETRIN 98 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0696",
-      "brand": "KLORPIRIFOS 98 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0697",
-      "brand": "LAMDA SIHALOTRIN 95 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0698",
-      "brand": "PROFENOFOS 94 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0699",
-      "brand": "SIPERMETRIN 92 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0700",
-      "brand": "FENVALERAT 94 TC",
-      "company": "PT. BIOTIS AGRINDO",
-      "category": "Bahan teknis",
       "active_ingredients_source": [],
       "active_ingredients_standard": [],
       "classifications": []
@@ -12853,33 +12563,6 @@
       "classifications": []
     },
     {
-      "product_id": "pestdb-csv-0584",
-      "brand": "DELTAMETRIN 98.5 TC",
-      "company": "Bayer Indonesia",
-      "category": "Pestisida (registri; tipe belum dipetakan)",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0585",
-      "brand": "IMIDAKLOPRID 97 TC",
-      "company": "Bayer Indonesia",
-      "category": "Pestisida (registri; tipe belum dipetakan)",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
-      "product_id": "pestdb-csv-0586",
-      "brand": "Beta Siflutrin 96,5 TC",
-      "company": "Bayer Indonesia",
-      "category": "Pestisida (registri; tipe belum dipetakan)",
-      "active_ingredients_source": [],
-      "active_ingredients_standard": [],
-      "classifications": []
-    },
-    {
       "product_id": "pestdb-csv-0587",
       "brand": "PROPINEB 83 TK",
       "company": "Bayer Indonesia",
@@ -12958,6 +12641,7 @@
     }
   ],
   "notes": [
-    "Canonical active ingredient is the linkage key; product classification is not inferred when source identity is insufficient."
+    "Canonical active ingredient is the linkage key; product classification is not inferred when source identity is insufficient.",
+    "Brand berakhiran 'TC' dikeluarkan dari product crosswalk karena merupakan bahan teknis."
   ]
 }

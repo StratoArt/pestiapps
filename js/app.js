@@ -272,19 +272,33 @@ function renderTypes(){
   const type=state.type;
   const source=type==='Hama'?state.opt.categories: type==='Penyakit'?state.opt.diseases:state.opt.weeds;
   if(type==='Hama'){
-    $('#typeGrid').innerHTML=source.map(x=>`<button class="type-card" data-cat="${esc(x.name)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.label)}</small><i>›</i></button>`).join('');
-    $$('.type-card').forEach(b=>b.addEventListener('click',()=>{state.pestFilter=b.dataset.cat;showScreen('pests');renderPests()}));
+    // Hama ditampilkan langsung sebagai daftar lengkap. Jenis hama/ordo
+    // tetap ditampilkan pada setiap kartu sehingga pengguna tidak perlu
+    // masuk ke menu kategori terlebih dahulu.
+    state.pestFilter='Semua';
+    showScreen('pests');
+    renderPests();
   }else{
     $('#typeGrid').innerHTML=source.map(x=>`<button class="type-card" data-go-list="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.common)}</small><i>›</i></button>`).join('');
     $$('.type-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
   }
 }
+function renderPestTabs(){
+  const el=$('#pestTabs');
+  if(!el) return;
+  const preferred=(state.opt.categories||[]).map(x=>x.name).filter(Boolean);
+  const existing=new Set((state.opt.pests||[]).map(x=>x.category).filter(Boolean));
+  const cats=[...preferred.filter(x=>existing.has(x)),...Array.from(existing).filter(x=>!preferred.includes(x)).sort()];
+  el.innerHTML=[`<button class="active" data-pest-filter="Semua">Semua <span>${state.opt.pests.length}</span></button>`,...cats.map(c=>`<button data-pest-filter="${esc(c)}">${esc(c)} <span>${state.opt.pests.filter(x=>x.category===c).length}</span></button>`)].join('');
+  $$('#pestTabs button').forEach(b=>b.addEventListener('click',()=>{state.pestFilter=b.dataset.pestFilter;renderPests();}));
+}
 function renderPests(){
+  renderPestTabs();
   let list=state.opt.pests;
   if(state.pestFilter && state.pestFilter!=='Semua' && state.pestFilter!=='Hama') list=list.filter(x=>x.category===state.pestFilter);
-  $('#pestList').innerHTML=list.map((x,i)=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)} · ${esc(x.family)}</small></div><span class="arrow">›</span></button>`).join('');
+  $('#pestList').innerHTML=list.map((x,i)=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small><b>Jenis hama:</b> ${esc(x.category||'Lainnya')}${x.family?` · ${esc(x.family)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
   $$('#pestList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.pests.find(x=>x.id===b.dataset.id),'Hama')));
-  $$('.pest-tabs button').forEach(b=>b.classList.toggle('active',b.dataset.pestFilter===state.pestFilter));
+  $$('#pestTabs button').forEach(b=>b.classList.toggle('active',b.dataset.pestFilter===state.pestFilter));
 }
 function renderDiseases(){
   $('#diseaseList').innerHTML=state.opt.diseases.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
@@ -791,7 +805,6 @@ $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
 }));
 $$('.committee-tabs button').forEach(b=>b.addEventListener('click',()=>setCommittee(b.dataset.c)));
 $$('.mini-tabs button[data-type]').forEach(b=>b.addEventListener('click',()=>{state.type=b.dataset.type;$$('.mini-tabs button[data-type]').forEach(x=>x.classList.toggle('active',x===b));renderTypes()}));
-$$('.pest-tabs button').forEach(b=>b.addEventListener('click',()=>{state.pestFilter=b.dataset.pestFilter;renderPests()}));
 $('#search').addEventListener('input',e=>{state.search=e.target.value;state.moaView==='emerging'?renderEmerging():renderList()});$('#clearSearch').addEventListener('click',()=>{$('#search').value='';state.search='';state.moaView==='emerging'?renderEmerging():renderList()});$('#focusSearch').addEventListener('click',()=>$('#search').focus());
 $('#optSearch').addEventListener('input',e=>{
   const q=e.target.value.toLowerCase();
