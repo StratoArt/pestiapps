@@ -34,10 +34,10 @@
   </div>
 
   <div class="home-grid">
-    <button class="feature-card green" data-go="pests"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
-    <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
-    <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
-    <button class="feature-card blue" data-go="explore"><span class="feature-icon image-icon"><img src="assets/ui/chemistry-flask.svg" alt=""></span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="pests"><span class="feature-icon">🐛</span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
+    <button class="feature-card coral" data-go="disease"><span class="feature-icon">🦠</span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
+    <button class="feature-card grass" data-go="weed"><span class="feature-icon">🌿</span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="explore"><span class="feature-icon">🧫</span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
     <button class="feature-card green" data-go="pesticides"><span class="feature-icon">🧴</span><span><strong>Database Pestisida</strong><small>Produk · Bahan Aktif · Sasaran · MoA</small></span><i>›</i></button>
     <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
     <button class="feature-card green" data-go="nutrition"><span class="feature-icon">🌱</span><span><strong>Panduan Hara Tanaman</strong><small>Fungsi hara · sumber pupuk · biostimulan · PGR</small></span><i>›</i></button>
@@ -45,6 +45,7 @@
     <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
     <button class="feature-card blue moa-guide-card" data-go="pesticide-moa"><span class="feature-icon">⚗️</span><span><strong>Cara Kerja Pestisida</strong><small>Insektisida · Fungisida · Herbisida</small></span><i>›</i></button>
+    <button class="feature-card green stewardship-card" data-go="stewardship"><span class="feature-icon">🛡️</span><span><strong>Stewardship</strong><small>6 Tepat · APD · Resistance Management</small></span><i>›</i></button>
     <button class="feature-card amber" data-go="calculators"><span class="feature-icon">🧮</span><span><strong>Calculator Suite</strong><small>Dosis · Area · Spray · Kalibrasi</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="weather"><span class="feature-icon">🌦️</span><span><strong>Weather & Spray Assist</strong><small>Cuaca lokal · jendela semprot</small></span><i>›</i></button>
   </div>
@@ -180,6 +181,143 @@
   <div class="moa-guide-tabs"><button class="active" data-guide="insecticide">🪲 Insektisida</button><button data-guide="fungicide">🍄 Fungisida</button><button data-guide="herbicide">🌿 Herbisida</button></div>
   <div id="moaGuideContent"></div>
   <div class="source-box"><strong>Basis klasifikasi</strong><p>Penjelasan edukatif dikombinasikan dari Agrobiology Library dan sumber resmi IRAC, FRAC, serta HRAC. Nomor kelompok dan klasifikasi aktif mengikuti master MoA aplikasi; gunakan label dan registrasi lokal untuk keputusan penggunaan.</p></div>
+</section>
+
+
+<section id="stewardship" class="screen">
+  <div class="section-head">
+    <button class="back-button" data-go="home">←</button>
+    <div>
+      <strong>Stewardship</strong>
+      <small>6 Tepat Penggunaan Pestisida</small>
+    </div>
+  </div>
+
+  <div class="stewardship-hero">
+    <span class="eyebrow">CROP EXPERT · RESPONSIBLE USE</span>
+    <h2>Mulai dari Diri, Aman Saat Aksi!</h2>
+    <p>
+      Penggunaan pestisida yang tepat membantu melindungi pengguna,
+      tanaman, pangan, organisme non-target dan lingkungan.
+    </p>
+  </div>
+
+  <div class="stewardship-illustration" aria-label="Ilustrasi alat pelindung diri">
+    <svg viewBox="0 0 600 420" role="img" aria-labelledby="ppeTitle ppeDesc">
+      <title id="ppeTitle">Alat Pelindung Diri saat menggunakan pestisida</title>
+      <desc id="ppeDesc">Ilustrasi petani menggunakan pelindung kepala, kacamata, masker, pakaian panjang, sarung tangan dan sepatu boot.</desc>
+
+      <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M250 105 Q300 55 350 105 L365 145 L235 145 Z"/>
+        <path d="M245 108 Q300 80 355 108"/>
+        <path d="M255 145 L345 145 L360 205 L340 235 L260 235 L240 205 Z"/>
+        <path d="M270 155 L292 175 L308 175 L330 155"/>
+        <path d="M278 182 L322 182 L328 205 L272 205 Z"/>
+        <path d="M270 235 L230 330"/>
+        <path d="M330 235 L370 330"/>
+        <path d="M230 330 L215 385 L270 385 L280 330"/>
+        <path d="M370 330 L385 385 L330 385 L320 330"/>
+        <path d="M240 210 L190 285"/>
+        <path d="M360 210 L410 285"/>
+        <path d="M190 285 L165 270"/>
+        <path d="M410 285 L435 270"/>
+        <path d="M250 250 L350 250"/>
+      </g>
+
+      <g class="stewardship-callout">
+        <circle cx="300" cy="75" r="10"/>
+        <circle cx="295" cy="193" r="10"/>
+        <circle cx="210" cy="275" r="10"/>
+        <circle cx="390" cy="275" r="10"/>
+        <circle cx="245" cy="355" r="10"/>
+        <circle cx="355" cy="355" r="10"/>
+      </g>
+
+      <g font-family="system-ui, sans-serif" font-size="18" fill="currentColor">
+        <text x="70" y="78">Pelindung Kepala</text>
+        <text x="405" y="190">Kacamata</text>
+        <text x="55" y="285">Masker</text>
+        <text x="415" y="285">Sarung Tangan</text>
+        <text x="70" y="360">Baju &amp; Celana Panjang</text>
+        <text x="390" y="365">Sepatu Boot</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="stewardship-intro">
+    <strong>6 Tepat Penggunaan Pestisida</strong>
+    <p>
+      Pilih salah satu prinsip untuk melihat penjelasan dan kaitannya
+      dengan fitur Crop Expert.
+    </p>
+  </div>
+
+  <div id="stewardshipSix" class="stewardship-six-grid">
+    <button class="stewardship-six-card active" data-stewardship="sasaran">
+      <span>🎯</span><strong>Tepat Sasaran</strong><small>Kenali OPT sebelum bertindak</small>
+    </button>
+    <button class="stewardship-six-card" data-stewardship="mutu">
+      <span>🛡️</span><strong>Tepat Mutu</strong><small>Produk berkualitas dan berlabel</small>
+    </button>
+    <button class="stewardship-six-card" data-stewardship="jenis">
+      <span>🧪</span><strong>Tepat Jenis</strong><small>Pilih sesuai OPT dan tanaman</small>
+    </button>
+    <button class="stewardship-six-card" data-stewardship="waktu">
+      <span>⏱️</span><strong>Tepat Waktu</strong><small>Gunakan berdasarkan kondisi yang tepat</small>
+    </button>
+    <button class="stewardship-six-card" data-stewardship="dosis">
+      <span>📏</span><strong>Tepat Dosis</strong><small>Dosis atau konsentrasi formulasi</small>
+    </button>
+    <button class="stewardship-six-card" data-stewardship="cara">
+      <span>💧</span><strong>Tepat Cara</strong><small>Metode aplikasi dan perlindungan diri</small>
+    </button>
+  </div>
+
+  <div id="stewardshipDetail" class="stewardship-detail"></div>
+
+  <div class="stewardship-section-head">
+    <span class="eyebrow">PERSONAL PROTECTION</span>
+    <h3>APD — Lindungi Diri Sebelum Aplikasi</h3>
+    <p>Klik bagian APD untuk melihat fungsi perlindungannya.</p>
+  </div>
+
+  <div id="ppeGrid" class="ppe-grid">
+    <button data-ppe="head"><span>🪖</span><b>Kepala</b></button>
+    <button data-ppe="eyes"><span>🥽</span><b>Mata</b></button>
+    <button data-ppe="respiratory"><span>😷</span><b>Pernapasan</b></button>
+    <button data-ppe="hands"><span>🧤</span><b>Tangan</b></button>
+    <button data-ppe="body"><span>🥼</span><b>Tubuh</b></button>
+    <button data-ppe="feet"><span>🥾</span><b>Kaki</b></button>
+  </div>
+
+  <div id="ppeDetail" class="ppe-detail"></div>
+
+  <div class="stewardship-section-head">
+    <span class="eyebrow">RESISTANCE MANAGEMENT</span>
+    <h3>Gunakan MoA Secara Bertanggung Jawab</h3>
+    <p>
+      Kenali kelompok mode of action dan hindari ketergantungan pada
+      mekanisme yang sama secara terus-menerus.
+    </p>
+  </div>
+
+  <div class="stewardship-moa-grid">
+    <button data-go="explore"><b>IRAC</b><small>Insektisida · Acaricide · Nematisida</small></button>
+    <button data-go="explore"><b>FRAC</b><small>Fungisida</small></button>
+    <button data-go="explore"><b>HRAC</b><small>Herbisida</small></button>
+  </div>
+
+  <div class="source-box">
+    <strong>Sumber utama</strong>
+    <p>
+      Prinsip 6 Tepat dirangkum dari materi resmi Kementerian Pertanian:
+      “6 Tepat Pestisida untuk Keamanan Pangan dan Lingkungan”.
+    </p>
+    <a href="https://pustaka.bppsdmp.pertanian.go.id/info-literasi/info-literasi-6-tepat-pestisida-untuk-keamanan-pangan-dan-lingkungan"
+       target="_blank" rel="noopener">
+      Buka sumber Kementan ↗
+    </a>
+  </div>
 </section>
 
 <section id="knowledge" class="screen">

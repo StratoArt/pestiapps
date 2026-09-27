@@ -794,11 +794,178 @@ async function shareScanToChatGPT(){
   window.open('https://chatgpt.com/','_blank','noopener'); alert('Browser ini tidak mendukung berbagi file langsung. ChatGPT sudah dibuka. Tempel foto secara manual lalu kirim prompt yang sudah disalin jika tersedia.');
 }
 async function copyScanPrompt(){try{await navigator.clipboard.writeText(buildScanPrompt());alert('Prompt analisis sudah disalin.')}catch(e){alert(buildScanPrompt())}}
+
+const stewardshipItems = {
+  sasaran: {
+    icon:'🎯',
+    title:'Tepat Sasaran',
+    text:'Kenali organisme pengganggu tanaman terlebih dahulu. Identifikasi hama, penyakit, atau gulma membantu memastikan tindakan yang dipilih memang ditujukan pada masalah yang diamati.',
+    actions:[
+      {label:'🐛 Hama',go:'pests'},
+      {label:'🦠 Penyakit',go:'disease'},
+      {label:'🌿 Gulma',go:'weed'}
+    ]
+  },
+  mutu: {
+    icon:'🛡️',
+    title:'Tepat Mutu',
+    text:'Gunakan produk yang kualitasnya baik, tidak rusak, tidak kedaluwarsa, bukan produk palsu, serta memiliki label yang dapat dibaca. Informasi pada label menjadi bagian penting dalam penggunaan yang aman.',
+    actions:[
+      {label:'🧴 Buka Database Pestisida',go:'pesticides'}
+    ]
+  },
+  jenis: {
+    icon:'🧪',
+    title:'Tepat Jenis Pestisida',
+    text:'Jenis pestisida harus sesuai dengan OPT sasaran dan tanaman yang dilindungi. Jangan menentukan pilihan hanya berdasarkan nama dagang; periksa bahan aktif, sasaran, label, dan klasifikasi MoA.',
+    actions:[
+      {label:'🧴 Database Pestisida',go:'pesticides'},
+      {label:'🧬 Bahan Aktif & MoA',go:'explore'}
+    ]
+  },
+  waktu: {
+    icon:'⏱️',
+    title:'Tepat Waktu Penggunaan',
+    text:'Waktu aplikasi perlu mempertimbangkan hasil pengamatan OPT, tingkat serangan, fase tanaman, kondisi lingkungan, serta ketentuan label produk. Cuaca dapat membantu membaca kondisi lingkungan, tetapi bukan pengganti label.',
+    actions:[
+      {label:'🌦️ Weather & Spray Assist',go:'weather'},
+      {label:'🌾 Crop Guideline',go:'crop-guidelines'}
+    ]
+  },
+  dosis: {
+    icon:'📏',
+    title:'Tepat Dosis / Konsentrasi',
+    text:'Gunakan dosis atau konsentrasi sesuai label produk dan hasil kalibrasi yang relevan. Kalkulator Crop Expert hanya membantu menghitung angka yang dimasukkan pengguna dan tidak menetapkan dosis penggunaan.',
+    actions:[
+      {label:'🧮 Calculator Suite',go:'calculators'}
+    ]
+  },
+  cara: {
+    icon:'💧',
+    title:'Tepat Cara Penggunaan',
+    text:'Metode penggunaan mengikuti karakteristik produk dan formulasi, misalnya penyemprotan, perlakuan benih, penaburan, pencelupan, atau metode lain yang tercantum pada label. Gunakan APD yang sesuai.',
+    actions:[
+      {label:'🛡️ Lihat Panduan APD',ppe:'head'}
+    ]
+  }
+};
+
+const ppeItems = {
+  head:{
+    icon:'🪖',
+    title:'Pelindung Kepala',
+    text:'Melindungi kepala dari kontak atau percikan bahan selama kegiatan aplikasi dan penanganan.'
+  },
+  eyes:{
+    icon:'🥽',
+    title:'Pelindung Mata',
+    text:'Membantu mencegah percikan atau aerosol mengenai mata. Pilih pelindung yang sesuai dengan risiko pekerjaan.'
+  },
+  respiratory:{
+    icon:'😷',
+    title:'Pelindung Pernapasan',
+    text:'Gunakan perlindungan pernapasan yang sesuai dengan petunjuk label dan risiko paparan. Masker biasa tidak otomatis setara dengan respirator.'
+  },
+  hands:{
+    icon:'🧤',
+    title:'Sarung Tangan',
+    text:'Tangan sering menjadi bagian tubuh yang berisiko kontak langsung saat mencampur, memindahkan, atau membersihkan peralatan.'
+  },
+  body:{
+    icon:'🥼',
+    title:'Pakaian Pelindung',
+    text:'Pakaian panjang atau pakaian pelindung membantu mengurangi kontak bahan dengan kulit dan pakaian sehari-hari.'
+  },
+  feet:{
+    icon:'🥾',
+    title:'Pelindung Kaki',
+    text:'Sepatu atau boot yang sesuai membantu mengurangi risiko kontak bahan dengan kaki dan bagian bawah tubuh.'
+  }
+};
+
+function renderStewardship(){
+  const detail=$('#stewardshipDetail');
+  const ppeDetail=$('#ppeDetail');
+  if(!detail)return;
+
+  const key=state.stewardshipKey||'sasaran';
+  const item=stewardshipItems[key]||stewardshipItems.sasaran;
+
+  $('#stewardshipSix button').forEach(b=>{
+    b.classList.toggle('active',b.dataset.stewardship===key);
+  });
+
+  detail.innerHTML=`
+    <div class="stewardship-detail-icon">${item.icon}</div>
+    <div class="stewardship-detail-copy">
+      <span class="eyebrow">PRINSIP 6 TEPAT</span>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+      <div class="stewardship-actions">
+        ${item.actions.map(a=>a.go
+          ? `<button class="secondary-btn" data-go="${a.go}">${a.label}</button>`
+          : `<button class="secondary-btn" data-ppe="${a.ppe}">${a.label}</button>`
+        ).join('')}
+      </div>
+    </div>
+  `;
+
+  $('#stewardshipSix button').forEach(b=>{
+    b.onclick=()=>{
+      state.stewardshipKey=b.dataset.stewardship;
+      renderStewardship();
+    };
+  });
+
+  detail.querySelectorAll('[data-go]').forEach(b=>{
+    b.onclick=()=>showScreen(b.dataset.go);
+  });
+
+  detail.querySelectorAll('[data-ppe]').forEach(b=>{
+    b.onclick=()=>{
+      state.ppeKey=b.dataset.ppe;
+      renderStewardship();
+      renderPpeDetail();
+    };
+  });
+
+  $('#ppeGrid button').forEach(b=>{
+    b.classList.toggle('active',b.dataset.ppe===(state.ppeKey||'head'));
+    b.onclick=()=>{
+      state.ppeKey=b.dataset.ppe;
+      renderPpeDetail();
+    };
+  });
+
+  renderPpeDetail();
+
+  $('.stewardship-moa-grid [data-go]').forEach(b=>{
+    b.onclick=()=>showScreen(b.dataset.go);
+  });
+}
+
+function renderPpeDetail(){
+  const root=$('#ppeDetail');
+  if(!root)return;
+
+  const key=state.ppeKey||'head';
+  const item=ppeItems[key]||ppeItems.head;
+
+  root.innerHTML=`
+    <div class="ppe-detail-icon">${item.icon}</div>
+    <div>
+      <span class="eyebrow">APD</span>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    </div>
+  `;
+}
+
 function showScreen(id,opts={}){
   if(opts.history!==false) pushNav(id);
   $$('.screen').forEach(s=>s.classList.toggle('active-screen',s.id===id));
   $$('.bottom-nav button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));
-  state.screen=id; if(id==='explore')render();
+  state.screen=id; if(id==='explore')render(); if(id==='stewardship')renderStewardship();
   if(id==='pesticide-moa')renderPesticideMoa(); if(id==='types')renderTypes(); if(id==='disease')renderDiseases(); if(id==='weed')renderWeeds(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary(); if(id==='pesticides')renderPesticides(); if(id==='nutrition')renderNutrition(); if(id==='crop-guidelines')renderCropGuidelines();
   window.scrollTo({top:0,behavior:'smooth'});
 }

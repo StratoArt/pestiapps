@@ -192,3 +192,290 @@ html.dark .moa-guide-hero,html.dark .insect-diagram-card,html.dark .cell-diagram
 html.dark .app-version,html.dark .ai-result{background:#15221c;border-color:#2a4438}html.dark .app-version b{background:#173a2a;color:#a9e3c2}html.dark .ai-result-head h3,html.dark .ai-candidate-top b,html.dark .ai-db>div b{color:#edf7f1}html.dark .ai-summary,html.dark .ai-diff,html.dark .ai-db-hit{background:#182b22}html.dark .ai-summary p,html.dark .ai-candidate li,html.dark .ai-diff{color:#b0c0b7}html.dark .ai-followup{background:#3a321b;border-color:#675a2e}
 @media(max-width:480px){.app-version{font-size:8px;margin-top:10px}.ai-result{padding:12px}.ai-result-head h3{font-size:17px}}
 .supported-by{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin:4px auto 18px;padding:7px 10px 9px;width:max-content;max-width:min(92vw,360px);color:var(--muted);font-size:8px;letter-spacing:.2px}.supported-by span{font-weight:800;text-transform:uppercase;opacity:.75}.supported-by img{display:block;width:min(145px,42vw);height:auto;max-height:42px;object-fit:contain;border-radius:5px;background:#000;box-shadow:0 2px 8px rgba(0,0,0,.08)}.about-card .about-credit strong{display:inline-block}.about-card .about-credit span{display:block}.about-card .about-tagline{max-width:620px;margin-left:auto;margin-right:auto;line-height:1.5}
+/* =========================
+   STEWARDSHIP
+   ========================= */
+
+.stewardship-hero{
+  margin:14px 0;
+  padding:20px;
+  border:1px solid #d9e9df;
+  border-radius:20px;
+  background:linear-gradient(135deg,#eef9f2,#f8fcfa);
+}
+
+.stewardship-hero h2{
+  margin:6px 0 8px;
+  font-size:25px;
+  line-height:1.15;
+}
+
+.stewardship-hero p{
+  margin:0;
+  color:#5c6d65;
+  line-height:1.55;
+}
+
+.stewardship-illustration{
+  margin:12px 0 16px;
+  padding:12px;
+  border:1px solid #dfe9e4;
+  border-radius:20px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.stewardship-illustration svg{
+  display:block;
+  width:100%;
+  max-width:620px;
+  height:auto;
+  margin:auto;
+  color:#087443;
+}
+
+.stewardship-callout{
+  fill:#087443;
+  stroke:none;
+}
+
+.stewardship-intro{
+  margin:16px 0 10px;
+}
+
+.stewardship-intro strong{
+  display:block;
+  font-size:18px;
+}
+
+.stewardship-intro p{
+  margin:5px 0 0;
+  color:#6b7772;
+  font-size:14px;
+}
+
+.stewardship-six-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+
+.stewardship-six-card{
+  border:1px solid #dbe6e1;
+  background:#fff;
+  border-radius:17px;
+  padding:14px;
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  cursor:pointer;
+  transition:.18s ease;
+}
+
+.stewardship-six-card:hover{
+  transform:translateY(-1px);
+}
+
+.stewardship-six-card.active{
+  border-color:#087443;
+  background:#eef9f2;
+  box-shadow:0 3px 12px rgba(8,116,67,.10);
+}
+
+.stewardship-six-card span{
+  font-size:25px;
+}
+
+.stewardship-six-card strong{
+  font-size:15px;
+}
+
+.stewardship-six-card small{
+  color:#718078;
+  line-height:1.35;
+}
+
+.stewardship-detail{
+  display:flex;
+  gap:14px;
+  margin:12px 0 22px;
+  padding:16px;
+  border:1px solid #cfe4d8;
+  border-radius:18px;
+  background:#f7fcf9;
+}
+
+.stewardship-detail-icon{
+  width:48px;
+  height:48px;
+  min-width:48px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:#e4f5eb;
+  font-size:27px;
+}
+
+.stewardship-detail-copy{
+  min-width:0;
+}
+
+.stewardship-detail h3{
+  margin:3px 0 6px;
+  font-size:18px;
+}
+
+.stewardship-detail p{
+  margin:0;
+  color:#596961;
+  line-height:1.55;
+  font-size:14px;
+}
+
+.stewardship-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+
+.stewardship-section-head{
+  margin:22px 0 10px;
+}
+
+.stewardship-section-head h3{
+  margin:4px 0;
+  font-size:18px;
+}
+
+.stewardship-section-head p{
+  margin:0;
+  color:#6b7772;
+  font-size:14px;
+}
+
+.ppe-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+}
+
+.ppe-grid button{
+  border:1px solid #dbe6e1;
+  background:#fff;
+  border-radius:15px;
+  padding:12px 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.ppe-grid button.active{
+  border-color:#087443;
+  background:#eef9f2;
+}
+
+.ppe-grid button span{
+  font-size:25px;
+}
+
+.ppe-grid button b{
+  font-size:12px;
+}
+
+.ppe-detail{
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+  padding:14px;
+  border-radius:16px;
+  border:1px solid #dbe6e1;
+  background:#fff;
+}
+
+.ppe-detail-icon{
+  font-size:30px;
+}
+
+.ppe-detail h3{
+  margin:2px 0 5px;
+  font-size:16px;
+}
+
+.ppe-detail p{
+  margin:0;
+  color:#65736d;
+  line-height:1.5;
+  font-size:13px;
+}
+
+.stewardship-moa-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+  margin-bottom:16px;
+}
+
+.stewardship-moa-grid button{
+  border:1px solid #dbe6e1;
+  background:#fff;
+  border-radius:15px;
+  padding:13px 10px;
+  text-align:left;
+  cursor:pointer;
+}
+
+.stewardship-moa-grid b{
+  display:block;
+  font-size:16px;
+}
+
+.stewardship-moa-grid small{
+  display:block;
+  margin-top:4px;
+  color:#6b7772;
+  line-height:1.35;
+}
+
+@media(max-width:680px){
+  .stewardship-six-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stewardship-six-card{
+    padding:12px;
+  }
+
+  .stewardship-six-card span{
+    font-size:22px;
+  }
+
+  .stewardship-detail{
+    padding:14px;
+  }
+
+  .stewardship-actions{
+    flex-direction:column;
+  }
+
+  .stewardship-actions button{
+    width:100%;
+  }
+
+  .ppe-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .stewardship-moa-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stewardship-illustration svg{
+    min-width:520px;
+    transform:translateX(-8%);
+  }
+}
