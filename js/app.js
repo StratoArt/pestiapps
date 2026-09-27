@@ -287,11 +287,11 @@ function renderPests(){
   $$('.pest-tabs button').forEach(b=>b.classList.toggle('active',b.dataset.pestFilter===state.pestFilter));
 }
 function renderDiseases(){
-  $('#diseaseList').innerHTML=state.opt.diseases.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}</small></div><span class="arrow">›</span></button>`).join('');
+  $('#diseaseList').innerHTML=state.opt.diseases.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
   $$('#diseaseList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.diseases.find(x=>x.id===b.dataset.id),'Penyakit')));
 }
 function renderWeeds(){
-  $('#weedList').innerHTML=state.opt.weeds.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}</small></div><span class="arrow">›</span></button>`).join('');
+  $('#weedList').innerHTML=state.opt.weeds.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
   $$('#weedList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.weeds.find(x=>x.id===b.dataset.id),'Gulma')));
 }
 function renderCrops(){
@@ -686,7 +686,7 @@ function openOptDetail(x,type){
     <div class="detail-code">${esc(type)} · ${esc(x.category||x.family||'')}</div>${photoBlock(x)}
     <div style="text-align:center;margin:16px 0 6px"><img src="assets/opt/${esc(x.icon)}" style="width:180px;height:150px;color:#0a7548"></div>
     <h2><i>${esc(x.name)}</i></h2><p class="muted">${esc(x.common||'')}</p>
-    <div class="detail-grid"><div><label>Nama umum</label><strong>${esc(x.common||'—')}</strong></div><div><label>Kelompok</label><strong>${esc(x.category||'—')}</strong></div>${x.family?`<div><label>Famili</label><strong>${esc(x.family)}</strong></div>`:''}<div><label>Type OPT</label><strong>${esc(type)}</strong></div></div>
+    <div class="detail-grid"><div><label>Nama umum</label><strong>${esc(x.common||'—')}</strong></div><div><label>Klasifikasi</label><strong>${esc(x.classification||x.category||'—')}</strong></div>${x.classification_group?`<div><label>Golongan teknis</label><strong>${esc(x.classification_group)}</strong></div>`:''}${x.family?`<div><label>Famili</label><strong>${esc(x.family)}</strong></div>`:''}<div><label>Type OPT</label><strong>${esc(type)}</strong></div></div>
     ${hosts.length?`<h3>Tanaman Inang</h3><div class="tag-row">${hosts.map(h=>`<span>${esc(h)}</span>`).join('')}</div>`:''}
     ${x.description?`<h3>Deskripsi</h3><div class="source-box"><p style="margin:0;font-size:11px;line-height:1.55">${esc(x.description)}</p></div>`:''}
     ${x.symptoms?.length?`<h3>Gejala / ciri</h3><div class="source-box"><ul style="margin:0;padding-left:17px">${x.symptoms.map(s=>`<li style="font-size:10px;margin:6px 0">${esc(s)}</li>`).join('')}</ul></div>`:''}
@@ -709,7 +709,7 @@ function openCropDetail(crop){
   if(state.historyReady && !state.historyLock) history.pushState({...navState(),detail:true,detailRef:state.detailRef},'',location.href);
   const master=[...state.opt.pests,...state.opt.diseases,...state.opt.weeds];
   const sourceRows=(state.cropOptSources?.records?.[crop.id]||[]);
-  const fallback=master.filter(x=>(x.hosts||[]).some(h=>h.toLowerCase().includes(crop.name.split(' ')[0].toLowerCase())||crop.name.toLowerCase().includes(h.toLowerCase()))).map(x=>({type:x.category==='Fungi'||x.category==='Bacteria'||x.category==='Fungi-like'?'Penyakit':x.category==='Grass'||x.category==='Broadleaf'||x.category==='Sedge'?'Gulma':'Hama',common:x.common||x.name,scientific:x.name,master_id:x.id,source:'master'}));
+  const fallback=master.filter(x=>(x.hosts||[]).some(h=>h.toLowerCase().includes(crop.name.split(' ')[0].toLowerCase())||crop.name.toLowerCase().includes(h.toLowerCase()))).map(x=>({type:['Jamur','Jamur Basah','Bakteri','Virus','Fungi','Fungi-like','Oomycete','Bacteria'].includes(x.category)?'Penyakit':['Rumput','Daun Sempit','Daun Lebar','Grass','Broadleaf','Sedge','Aquatic'].includes(x.category)?'Gulma':'Hama',common:x.common||x.name,scientific:x.name,master_id:x.id,source:'master'}));
   const rows=sourceRows.length?sourceRows:fallback;
   const sections=['Hama','Penyakit','Gulma'].map(type=>{const list=rows.filter(x=>x.type===type); if(!list.length)return ''; return `<div class="crop-opt-section"><div class="crop-opt-section-head"><strong>${type}</strong><span>${list.length}</span></div><div class="opt-list">${list.map(x=>{const m=x.master_id?master.find(v=>v.id===x.master_id):null; const ref=`${type}|${x.master_id||''}|${x.scientific||x.common||''}|${x.common||''}`; return `<button class="opt-card crop-opt-link" data-opt-ref="${esc(ref)}"><img src="assets/opt/${esc(m?.icon|| (type==='Hama'?'category-pest.svg':type==='Penyakit'?'category-disease.svg':'category-weed.svg'))}"><div class="opt-main"><h3>${esc(x.scientific||x.common)}</h3><p>${esc(x.common||'')}</p><small>${esc(type)}${x.source&&x.source!=='master'?' · sumber tabel pengguna':''}</small></div><span class="arrow">›</span></button>`}).join('')}</div></div>`}).join('');
   $('#detail').innerHTML=`<div class="detail-backdrop" id="detailBackdrop"></div><aside class="detail-sheet">

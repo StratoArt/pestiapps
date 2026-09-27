@@ -2457,7 +2457,7 @@
       "id": "phytophthora",
       "name": "Phytophthora infestans",
       "common": "Busuk daun / late blight",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Tomat",
@@ -2480,13 +2480,16 @@
           "attribution": "Phytophthora infestans — Wikimedia Commons source.",
           "notes": "Reference image of Phytophthora infestans."
         }
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "colletotrichum",
       "name": "Colletotrichum spp.",
       "common": "Antraknosa",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Cabai",
@@ -2542,13 +2545,16 @@
           "Konidia menyebar"
         ],
         "source_note": "Gejala antraknosa cabai merujuk studi diagnostik pepper anthracnose; visual lokal adalah ilustrasi AI fallback."
-      }
+      },
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "xanthomonas",
       "name": "Xanthomonas spp.",
       "common": "Hawar daun bakteri",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi",
@@ -2605,7 +2611,10 @@
           "Eksudat & penyebaran percikan"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "mosaic",
@@ -2623,13 +2632,16 @@
         "Daun keriting",
         "Pertumbuhan terhambat"
       ],
-      "images": []
+      "images": [],
+      "classification": "Virus",
+      "classification_group": "Virus",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "fusarium",
       "name": "Fusarium oxysporum",
       "common": "Layu fusarium",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Cabai",
@@ -2641,13 +2653,16 @@
         "Perubahan warna pembuluh",
         "Tanaman kerdil"
       ],
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "downy",
       "name": "Peronospora spp.",
       "common": "Embun bulu",
-      "category": "Oomycete",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang",
@@ -2670,13 +2685,16 @@
           "attribution": "Peronospora spp. — Wikimedia Commons source.",
           "notes": "Howard F. Schwartz / Bugwood; downy mildew on onion."
         }
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rhizoctonia",
       "name": "Rhizoctonia solani",
       "common": "Rebah semai / busuk pangkal",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi",
@@ -2711,13 +2729,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-blast",
       "name": "Magnaporthe oryzae",
       "common": "Blas padi",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -2727,13 +2748,16 @@
         "Leher malai dapat membusuk",
         "Malai mengering"
       ],
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-bacterial-blight",
       "name": "Xanthomonas oryzae pv. oryzae",
       "common": "Hawar daun bakteri",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -2743,7 +2767,10 @@
         "Hawar memanjang",
         "Gejala kresek pada tanaman muda"
       ],
-      "images": []
+      "images": [],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-tungro",
@@ -2759,13 +2786,16 @@
         "Tanaman kerdil",
         "Anakan berkurang"
       ],
-      "images": []
+      "images": [],
+      "classification": "Virus",
+      "classification_group": "Virus",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "tomato-bacterial-wilt",
       "name": "Ralstonia solanacearum species complex",
       "common": "Layu bakteri",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Tomat",
@@ -2812,13 +2842,16 @@
           "Penyebaran melalui tanah/air"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "cercospora",
       "name": "Cercospora spp.",
       "common": "Bercak daun cercospora",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kedelai",
@@ -2830,13 +2863,16 @@
         "Daun menguning",
         "Defoliasi bila berat"
       ],
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "alternaria",
       "name": "Alternaria spp.",
       "common": "Bercak alternaria",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Tomat",
@@ -2860,13 +2896,16 @@
           "attribution": "Alternaria spp. — Wikimedia Commons source.",
           "notes": "New Zealand Fungal and Plant Disease Collection (PDD) / Landcare Research."
         }
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "powdery-mildew",
       "name": "Podosphaera / Erysiphe spp.",
       "common": "Embun tepung",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Mentimun",
@@ -2878,13 +2917,16 @@
         "Daun menguning",
         "Fotosintesis menurun"
       ],
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "downy-cucurbits",
       "name": "Pseudoperonospora cubensis",
       "common": "Embun bulu mentimun",
-      "category": "Oomycete",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Mentimun",
@@ -2907,13 +2949,16 @@
           "attribution": "Pseudoperonospora cubensis — Wikimedia Commons source.",
           "notes": "Nathan T. Jones / iNaturalist; cucurbit downy mildew."
         }
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "fusarium-wilt",
       "name": "Fusarium oxysporum complex",
       "common": "Layu fusarium",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Cabai",
@@ -2935,13 +2980,16 @@
         "Fusarium wilt",
         "Layu Fusarium"
       ],
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "black-rot",
       "name": "Xanthomonas campestris pv. campestris",
       "common": "Busuk hitam kubis",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -2958,13 +3006,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "citrus-canker",
       "name": "Xanthomonas citri pv. citri",
       "common": "Kanker jeruk",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jeruk"
@@ -2974,13 +3025,16 @@
         "Halo kuning",
         "Lesi pada daun dan buah"
       ],
-      "images": []
+      "images": [],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "fusarium-cepae",
       "name": "Fusarium oxysporum f. sp. cepae",
       "common": "Busuk pangkal Fusarium / moler",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang merah",
@@ -3040,13 +3094,16 @@
           "Pembentukan inokulum & bertahan di tanah"
         ],
         "source_note": "Foto gejala spesifik busuk pangkal bawang tersedia pada WSU/UC IPM; visual lokal adalah ilustrasi AI fallback."
-      }
+      },
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-brown-spot",
       "name": "Bipolaris oryzae",
       "common": "Bercak cokelat padi",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -3062,13 +3119,16 @@
         "url": "https://gd.eppo.int/taxon/COCHMI/photos",
         "name": "Bipolaris oryzae"
       },
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-bacterial-leaf-streak",
       "name": "Xanthomonas oryzae pv. oryzicola",
       "common": "Bacterial leaf streak / hawar daun bergaris",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -3084,13 +3144,16 @@
         "url": "https://gd.eppo.int/taxon/XANTTO/photos",
         "name": "Xanthomonas oryzae pv. oryzicola"
       },
-      "images": []
+      "images": [],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-bakanae",
       "name": "Fusarium fujikuroi",
       "common": "Bakanae padi",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -3106,13 +3169,16 @@
         "url": "https://gd.eppo.int/taxon/FUSAFJ/photos",
         "name": "Fusarium fujikuroi"
       },
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-false-smut",
       "name": "Ustilaginoidea virens",
       "common": "False smut / gosong palsu padi",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -3128,13 +3194,16 @@
         "url": "https://gd.eppo.int/taxon/USTIVI/photos",
         "name": "Ustilaginoidea virens"
       },
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "rice-narrow-brown-leaf-spot",
       "name": "Cercospora janseana",
       "common": "Narrow brown leaf spot",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Padi"
@@ -3150,13 +3219,16 @@
         "url": "https://gd.eppo.int/taxon/CERCOR/photos",
         "name": "Cercospora janseana"
       },
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "onion-downy-mildew",
       "name": "Peronospora destructor",
       "common": "Embun bulu bawang",
-      "category": "Oomycete",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang merah",
@@ -3209,13 +3281,16 @@
           "Penyebaran & infeksi sekunder"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "onion-stemphylium",
       "name": "Stemphylium vesicarium",
       "common": "Bercak daun Stemphylium bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang merah",
@@ -3241,13 +3316,16 @@
       "references": [
         "UC IPM Onion & Garlic diseases"
       ],
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "chili-phytophthora-capsici",
       "name": "Phytophthora capsici",
       "common": "Layu/busuk Phytophthora pada cabai",
-      "category": "Oomycete",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Cabai"
@@ -3300,13 +3378,16 @@
           "Sporulasi & penyebaran air"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "chili-cercospora",
       "name": "Cercospora capsici",
       "common": "Bercak daun Cercospora cabai",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Cabai"
@@ -3322,13 +3403,16 @@
         "url": "https://gd.eppo.int/taxon/CERCCP/photos",
         "name": "Cercospora capsici"
       },
-      "images": []
+      "images": [],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "stromatinia-cepivorum",
       "name": "Stromatinia cepivorum",
       "common": "Busuk putih bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang merah",
@@ -3343,13 +3427,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "botryotinia-squamosa",
       "name": "Botryotinia squamosa",
       "common": "Bercak daun/daun busuk bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3361,13 +3448,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "phytophthora-porri",
       "name": "Phytophthora porri",
       "common": "Ujung putih",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang daun",
@@ -3380,13 +3470,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "alternaria-porri",
       "name": "Alternaria porri",
       "common": "Bercak ungu",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang merah",
@@ -3445,13 +3538,16 @@
           "Penyebaran oleh angin/percikan"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "cladosporium-allii",
       "name": "Cladosporium spp.",
       "common": "Bercak daun Cladosporium",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3463,13 +3559,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "puccinia-allii",
       "name": "Puccinia allii",
       "common": "Karat bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang putih",
@@ -3482,13 +3581,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "urocystis-cepulae",
       "name": "Urocystis cepulae",
       "common": "Gosong bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3500,13 +3602,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "botrytis-aclada",
       "name": "Botrytis aclada",
       "common": "Busuk leher bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3553,13 +3658,16 @@
           "Sporulasi/penyebaran"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "colletotrichum-circinans",
       "name": "Colletotrichum dematium f.sp. circinans",
       "common": "Smudge/bercak gelap bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3571,13 +3679,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "pyrenochaeta-terrestris",
       "name": "Pyrenochaeta terrestris",
       "common": "Akar merah muda",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3589,13 +3700,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "fusarium-culmorum",
       "name": "Fusarium culmorum",
       "common": "Busuk pangkal/kaki",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang",
@@ -3608,13 +3722,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "aspergillus-niger",
       "name": "Aspergillus niger",
       "common": "Kapang hitam bawang",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3626,13 +3743,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "penicillium-spp",
       "name": "Penicillium spp.",
       "common": "Kapang biru",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3644,13 +3764,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "burkholderia-gladioli-alliicola",
       "name": "Burkholderia gladioli pv. alliicola",
       "common": "Busuk leher bakteri",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Bawang"
@@ -3662,13 +3785,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "setosphaeria-turcica",
       "name": "Setosphaeria turcica",
       "common": "Hawar daun utara jagung",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3680,13 +3806,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "sphacelotheca-reiliana",
       "name": "Sphacelotheca reiliana",
       "common": "Gosong kepala jagung",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3698,13 +3827,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "ustilago-maydis",
       "name": "Ustilago maydis",
       "common": "Gosong jagung",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3728,13 +3860,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "pythium-maize",
       "name": "Pythium spp.",
       "common": "Pencokelatan akar jagung",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3746,13 +3881,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "fusarium-maize",
       "name": "Fusarium spp.",
       "common": "Busuk akar, batang dan tongkol jagung",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3764,13 +3902,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "colletotrichum-graminicola",
       "name": "Colletotrichum graminicola",
       "common": "Antraknosa jagung",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3782,13 +3923,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "sclerophthora-macrospora",
       "name": "Sclerophthora macrospora",
       "common": "Bulai/top gila jagung",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Jagung"
@@ -3800,13 +3944,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "leptosphaeria-maculans",
       "name": "Leptosphaeria maculans",
       "common": "Kanker batang dan bercak daun Brassica",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3819,13 +3966,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "mycosphaerella-brassicicola",
       "name": "Mycosphaerella brassicicola",
       "common": "Bercak cincin Brassica",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3838,13 +3988,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "peronospora-parasitica",
       "name": "Peronospora parasitica",
       "common": "Embun bulu Brassica",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3857,13 +4010,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "albugo-candida",
       "name": "Albugo candida",
       "common": "Karatan/blas putih Brassica",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3876,13 +4032,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "erysiphe-cruciferarum",
       "name": "Erysiphe cruciferarum",
       "common": "Embun tepung Brassica",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3895,13 +4054,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "alternaria-brassicae",
       "name": "Alternaria brassicae",
       "common": "Bercak daun gelap Brassica",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3914,13 +4076,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "alternaria-brassicicola",
       "name": "Alternaria brassicicola",
       "common": "Bercak daun gelap Brassica",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3933,13 +4098,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "pyrenopeziza-brassicae",
       "name": "Pyrenopeziza brassicae",
       "common": "Bercak daun terang Brassica",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3952,13 +4120,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "botrytis-cinerea-brassica",
       "name": "Botrytis cinerea",
       "common": "Kapang abu-abu",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3971,13 +4142,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "plasmodiophora-brassicae",
       "name": "Plasmodiophora brassicae",
       "common": "Akar gada",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -3990,13 +4164,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Plasmodiophorids (bukan Oomycetes)",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "phytophthora-brassica",
       "name": "Phytophthora spp.",
       "common": "Busuk akar/penyimpanan",
-      "category": "Fungi-like",
+      "category": "Jamur Basah",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -4009,13 +4186,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur Basah",
+      "classification_group": "Oomycetes",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "verticillium-dahliae",
       "name": "Verticillium dahliae",
       "common": "Layu Verticillium",
-      "category": "Fungi",
+      "category": "Jamur",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -4028,13 +4208,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Jamur",
+      "classification_group": "Fungi",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "erwinia-pseudomonas-brassica",
       "name": "Erwinia dan Pseudomonas spp.",
       "common": "Busuk lunak",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -4047,13 +4230,16 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "pseudomonas-syringae-maculicola",
       "name": "Pseudomonas syringae pv. maculicola",
       "common": "Bercak bakteri",
-      "category": "Bacteria",
+      "category": "Bakteri",
       "icon": "disease-leaf.svg",
       "hosts": [
         "Kubis",
@@ -4066,7 +4252,10 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Bakteri",
+      "classification_group": "Bacteria",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "cauliflower-mosaic-virus",
@@ -4085,7 +4274,10 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Virus",
+      "classification_group": "Virus",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "turnip-mosaic-virus",
@@ -4104,7 +4296,10 @@
         "EPPO PP 2/4 Allium Crops",
         "EPPO PP 2/17 Maize",
         "EPPO PP 2/7 Vegetable Brassicas"
-      ]
+      ],
+      "classification": "Virus",
+      "classification_group": "Virus",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "pepylciv",
@@ -4164,7 +4359,10 @@
           "Penyebaran oleh vektor"
         ],
         "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
-      }
+      },
+      "classification": "Virus",
+      "classification_group": "Virus",
+      "classification_source": "Crop Expert classification standard 2026"
     }
   ],
   "weeds": [
@@ -4172,7 +4370,7 @@
       "id": "echinochloa",
       "name": "Echinochloa crus-galli",
       "common": "Jajagoan",
-      "category": "Grass",
+      "category": "Rumput",
       "icon": "weed-grass.svg",
       "hosts": [
         "Padi"
@@ -4192,13 +4390,16 @@
           "attribution": "Echinochloa crus-galli — Wikimedia Commons source.",
           "notes": "Robert H. Mohlenbrock / USDA-NRCS."
         }
-      ]
+      ],
+      "classification": "Rumput",
+      "classification_group": "Poaceae / grass",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "cyperus",
       "name": "Cyperus rotundus",
       "common": "Teki",
-      "category": "Sedge",
+      "category": "Daun Sempit",
       "icon": "weed-sedge.svg",
       "hosts": [
         "Jagung",
@@ -4221,13 +4422,16 @@
           "attribution": "Cyperus rotundus — Wikimedia Commons source.",
           "notes": "Cyperus iria category; selected photo file."
         }
-      ]
+      ],
+      "classification": "Daun Sempit",
+      "classification_group": "Cyperaceae / sedge",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "eleusine",
       "name": "Eleusine indica",
       "common": "Rambut belulang",
-      "category": "Grass",
+      "category": "Rumput",
       "icon": "weed-grass.svg",
       "hosts": [
         "Jagung",
@@ -4237,13 +4441,16 @@
       "symptoms": [
         "Rumput berumpun",
         "Kompetisi tinggi pada lahan terbuka"
-      ]
+      ],
+      "classification": "Rumput",
+      "classification_group": "Poaceae / grass",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "amaranthus",
       "name": "Amaranthus spinosus",
       "common": "Bayam duri",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Jagung",
@@ -4253,13 +4460,16 @@
       "symptoms": [
         "Tumbuh cepat",
         "Menghasilkan banyak biji"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "ageratum",
       "name": "Ageratum conyzoides",
       "common": "Babadotan",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Jagung",
@@ -4269,13 +4479,16 @@
       "symptoms": [
         "Membentuk populasi rapat",
         "Kompetisi dengan tanaman utama"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "fimb",
       "name": "Fimbristylis miliacea",
       "common": "Jekeng",
-      "category": "Sedge",
+      "category": "Daun Sempit",
       "icon": "weed-sedge.svg",
       "hosts": [
         "Padi"
@@ -4283,13 +4496,16 @@
       "symptoms": [
         "Tumbuh cepat pada lahan sawah",
         "Kompetisi dengan padi"
-      ]
+      ],
+      "classification": "Daun Sempit",
+      "classification_group": "Cyperaceae / sedge",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "monochoria-vaginalis",
       "name": "Monochoria vaginalis",
       "common": "Eceng padi",
-      "category": "Aquatic",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Padi"
@@ -4311,13 +4527,16 @@
           "attribution": "Monochoria vaginalis — Wikimedia Commons source.",
           "notes": "Dinesh Valke; Monochoria vaginalis."
         }
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "ludwigia",
       "name": "Ludwigia hyssopifolia",
       "common": "Jukut weru / kayu apu sawah",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Padi"
@@ -4325,13 +4544,16 @@
       "symptoms": [
         "Tumbuh cepat pada sawah",
         "Bersaing dengan padi"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "sphenochlea",
       "name": "Sphenochlea zeylanica",
       "common": "Gonda",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Padi"
@@ -4339,13 +4561,16 @@
       "symptoms": [
         "Populasi rapat",
         "Kompetisi pada lahan sawah"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "ischaemum",
       "name": "Ischaemum rugosum",
       "common": "Ischaemum",
-      "category": "Grass",
+      "category": "Rumput",
       "icon": "weed-grass.svg",
       "hosts": [
         "Padi"
@@ -4353,13 +4578,16 @@
       "symptoms": [
         "Rumput berumpun",
         "Kompetisi kuat dengan padi"
-      ]
+      ],
+      "classification": "Rumput",
+      "classification_group": "Poaceae / grass",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "leptochloa",
       "name": "Leptochloa chinensis",
       "common": "Timunan",
-      "category": "Grass",
+      "category": "Rumput",
       "icon": "weed-grass.svg",
       "hosts": [
         "Padi"
@@ -4367,13 +4595,16 @@
       "symptoms": [
         "Tumbuh pada sawah",
         "Bersaing memperebutkan nutrisi"
-      ]
+      ],
+      "classification": "Rumput",
+      "classification_group": "Poaceae / grass",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "echinochloa-crus",
       "name": "Echinochloa colona",
       "common": "Jajagoan kecil",
-      "category": "Grass",
+      "category": "Rumput",
       "icon": "weed-grass.svg",
       "hosts": [
         "Padi",
@@ -4382,13 +4613,16 @@
       "symptoms": [
         "Rumput berumpun",
         "Tumbuh cepat pada kondisi terbuka"
-      ]
+      ],
+      "classification": "Rumput",
+      "classification_group": "Poaceae / grass",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "cyperus-difformis",
       "name": "Cyperus difformis",
       "common": "Teki kecil",
-      "category": "Sedge",
+      "category": "Daun Sempit",
       "icon": "weed-sedge.svg",
       "hosts": [
         "Padi"
@@ -4396,13 +4630,16 @@
       "symptoms": [
         "Tumbuh cepat pada sawah",
         "Menghasilkan banyak biji"
-      ]
+      ],
+      "classification": "Daun Sempit",
+      "classification_group": "Cyperaceae / sedge",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "portulaca",
       "name": "Portulaca oleracea",
       "common": "Krokot",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Sayuran",
@@ -4411,13 +4648,16 @@
       "symptoms": [
         "Tumbuh menjalar",
         "Bersaing pada lahan terbuka"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "commelina",
       "name": "Commelina benghalensis",
       "common": "Gewor",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Jagung",
@@ -4426,13 +4666,16 @@
       "symptoms": [
         "Pertumbuhan menjalar",
         "Sulit ditekan bila sudah membentuk populasi"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     },
     {
       "id": "mimosa",
       "name": "Mimosa pudica",
       "common": "Putri malu",
-      "category": "Broadleaf",
+      "category": "Daun Lebar",
       "icon": "weed-broadleaf.svg",
       "hosts": [
         "Perkebunan",
@@ -4441,7 +4684,10 @@
       "symptoms": [
         "Tumbuh menyemak",
         "Mengganggu akses dan kompetisi tanaman"
-      ]
+      ],
+      "classification": "Daun Lebar",
+      "classification_group": "Broadleaf",
+      "classification_source": "Crop Expert classification standard 2026"
     }
   ],
   "crops": [
