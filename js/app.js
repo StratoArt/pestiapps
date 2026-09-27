@@ -272,15 +272,12 @@ function renderTypes(){
   const type=state.type;
   const source=type==='Hama'?state.opt.categories: type==='Penyakit'?state.opt.diseases:state.opt.weeds;
   if(type==='Hama'){
-    // Hama ditampilkan langsung sebagai daftar lengkap. Jenis hama/ordo
-    // tetap ditampilkan pada setiap kartu sehingga pengguna tidak perlu
-    // masuk ke menu kategori terlebih dahulu.
     state.pestFilter='Semua';
-    showScreen('pests');
-    renderPests();
+    return;
   }else{
     $('#typeGrid').innerHTML=source.map(x=>`<button class="type-card" data-go-list="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.common)}</small><i>›</i></button>`).join('');
-    $$('.type-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
+    $$( '.type-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
+    $$(".type-card").forEach(b=>b.addEventListener("click",()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
   }
 }
 function renderPestTabs(){
@@ -772,7 +769,7 @@ function setScanFile(file){
   preview.querySelector('span').textContent='✓'; $('#scanPreviewTitle').textContent=file.name||'Foto siap dianalisis'; $('#scanPreviewHint').textContent='Foto siap. Kamu bisa lanjut ke Google Lens atau ChatGPT.';
   $('#scanFileMeta').hidden=false; $('#scanFileMeta').textContent=`${file.name||'foto'} · ${Math.round(file.size/1024)} KB`; $('#analyzeChatGPTBtn').disabled=false; $('#copyScanPromptBtn').disabled=false; $('#googleLensBtn').disabled=false; window.CropExpertAI?.onFileReady?.();
 }
-function buildScanPrompt(){return `Saya sedang menggunakan Crop Expert untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.\n\nTugas:\n1. Identifikasi tanaman/komoditas jika dapat terlihat.\n2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA.\n3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian.\n4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung.\n5. Jelaskan ciri yang membedakannya dari kandidat lain.\n6. Jika foto tidak cukup, minta foto tambahan yang spesifik.\n7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas.\n8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan.\n9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.\n\nJawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
+function buildScanPrompt(){return `Saya sedang menggunakan Crop Expert untuk identifikasi awal OPT tanaman. Analisis foto yang saya lampirkan.  Tugas: 1. Identifikasi tanaman/komoditas jika dapat terlihat. 2. Tentukan apakah foto lebih mungkin menunjukkan HAMA, PENYAKIT, GULMA, gangguan ABIOTIK, atau KERUSAKAN PESTISIDA. 3. Berikan maksimal 3 kandidat berdasarkan kecocokan ciri visual yang terlihat; jangan mengarang kepastian. 4. Untuk setiap kandidat tuliskan nama umum Indonesia, nama ilmiah bila dapat ditentukan, dan ciri foto yang mendukung. 5. Jelaskan ciri yang membedakannya dari kandidat lain. 6. Jika foto tidak cukup, minta foto tambahan yang spesifik. 7. Beri tingkat keyakinan kualitatif: tinggi/sedang/rendah, bukan angka probabilitas. 8. Jangan menyatakan diagnosis pasti hanya dari foto. Untuk penyakit, pertimbangkan bahwa konfirmasi profesional/laboratorium mungkin diperlukan. 9. Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto.  Jawab dalam Bahasa Indonesia dan gunakan nama ilmiah/istilah teknis aslinya bila relevan.`}
 function openGoogleLens(){
   if(!state.scanFile)return;
   window.open('https://lens.google.com/','_blank','noopener');
@@ -813,7 +810,7 @@ $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
 }));
 $$('.committee-tabs button').forEach(b=>b.addEventListener('click',()=>setCommittee(b.dataset.c)));
 $$('.mini-tabs button[data-type]').forEach(b=>b.addEventListener('click',()=>{state.type=b.dataset.type;$$('.mini-tabs button[data-type]').forEach(x=>x.classList.toggle('active',x===b));renderTypes()}));
-$$('#diseaseTabs button[data-disease-filter]').forEach(b=>b.addEventListener('click',()=>{state.diseaseFilter=b.dataset.diseaseFilter;renderDiseases()}));\n$$('#weedTabs button[data-weed-filter]').forEach(b=>b.addEventListener('click',()=>{state.weedFilter=b.dataset.weedFilter;renderWeeds()}));
+$$('#diseaseTabs button[data-disease-filter]').forEach(b=>b.addEventListener('click',()=>{state.diseaseFilter=b.dataset.diseaseFilter;renderDiseases()})); $$('#weedTabs button[data-weed-filter]').forEach(b=>b.addEventListener('click',()=>{state.weedFilter=b.dataset.weedFilter;renderWeeds()}));
 $('#search').addEventListener('input',e=>{state.search=e.target.value;state.moaView==='emerging'?renderEmerging():renderList()});$('#clearSearch').addEventListener('click',()=>{$('#search').value='';state.search='';state.moaView==='emerging'?renderEmerging():renderList()});$('#focusSearch').addEventListener('click',()=>$('#search').focus());
 $('#optSearch').addEventListener('input',e=>{
   const q=e.target.value.toLowerCase();
