@@ -1,0 +1,40 @@
+{
+  "version": "2026",
+  "disease": [
+    {
+      "display": "Jamur",
+      "technical_group": "Fungi"
+    },
+    {
+      "display": "Jamur Basah",
+      "technical_group": "Oomycetes"
+    },
+    {
+      "display": "Bakteri",
+      "technical_group": "Bacteria"
+    },
+    {
+      "display": "Virus",
+      "technical_group": "Virus"
+    }
+  ],
+  "weed": [
+    {
+      "display": "Rumput",
+      "technical_group": "Poaceae / grass"
+    },
+    {
+      "display": "Daun Sempit",
+      "technical_group": "Cyperaceae / sedge"
+    },
+    {
+      "display": "Daun Lebar",
+      "technical_group": "Broadleaf"
+    }
+  ],
+  "notes": [
+    "Klasifikasi UI mengikuti bahasa petani. Nama ilmiah dan golongan teknis dipertahankan.",
+    "Phytophthora, Pythium, Peronospora, Pseudoperonospora, Sclerophthora dan Albugo diperlakukan sebagai Oomycetes.",
+    "Plasmodiophora brassicae ditempatkan pada bucket Jamur Basah untuk UI, tetapi golongan teknis dicatat sebagai Plasmodiophorids (bukan Oomycetes)."
+  ]
+}

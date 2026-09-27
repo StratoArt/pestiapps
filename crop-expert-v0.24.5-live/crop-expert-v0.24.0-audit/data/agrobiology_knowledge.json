@@ -1,0 +1,546 @@
+{
+  "version": "0.11.0",
+  "notes": "Ekstraksi pengetahuan dari materi pengguna. Isi source-derived dipertahankan dengan framing sumber; contoh bahan aktif/produk dan angka pada materi tidak dianggap sebagai current regulatory master.",
+  "sections": [
+    {
+      "id": "adjuvants",
+      "title": "Formulation & Spray Adjuvants",
+      "icon": "🧴",
+      "source_id": "formulation-adjuvants-bioscience",
+      "pages": "2-7",
+      "intro": "Adjuvan dijelaskan sebagai komponen yang dapat memengaruhi retensi, penyebaran, uptake, dan karakter spray solution.",
+      "items": [
+        {
+          "name": "Thickener",
+          "role": "Membantu karakter fisik formulasi",
+          "benefits": [
+            "Termasuk dalam overview adjuvant formulasi"
+          ]
+        },
+        {
+          "name": "Dispersant",
+          "role": "Membantu dispersi partikel",
+          "benefits": [
+            "Termasuk dalam overview adjuvant formulasi"
+          ]
+        },
+        {
+          "name": "Emulsifier",
+          "role": "Membantu pembentukan/stabilitas emulsi",
+          "benefits": [
+            "Termasuk dalam overview adjuvant formulasi"
+          ]
+        },
+        {
+          "name": "Water conditioner",
+          "role": "Membantu kondisi air",
+          "benefits": [
+            "Termasuk dalam overview adjuvant formulasi"
+          ]
+        },
+        {
+          "name": "Wetter",
+          "role": "Membantu pembasahan permukaan",
+          "benefits": [
+            "Mengurangi surface tension dalam konteks adjuvant"
+          ]
+        },
+        {
+          "name": "Spreader",
+          "role": "Meningkatkan penyebaran droplet",
+          "benefits": [
+            "Meningkatkan area kontak",
+            "Membantu coverage"
+          ]
+        },
+        {
+          "name": "Sticker",
+          "role": "Meningkatkan retensi",
+          "benefits": [
+            "Mengurangi kehilangan dari permukaan"
+          ]
+        },
+        {
+          "name": "Humectant",
+          "role": "Memperlambat pengeringan",
+          "benefits": [
+            "Peningkatan drying time dapat mendukung uptake pada kondisi tertentu"
+          ]
+        },
+        {
+          "name": "Penetrant",
+          "role": "Mendukung penetrasi/uptake",
+          "benefits": [
+            "Meningkatkan uptake bahan aktif dalam konteks sumber"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adjuvant-behavior",
+      "title": "Apa yang terjadi tanpa dan dengan adjuvan?",
+      "icon": "💧",
+      "source_id": "formulation-adjuvants-bioscience",
+      "pages": "5-7",
+      "items": [
+        {
+          "name": "No adjuvant",
+          "summary": "Surface tension tinggi; retensi dan area kontak terbatas.",
+          "tag": "Baseline"
+        },
+        {
+          "name": "Spreader / Super spreader",
+          "summary": "Spreader meningkatkan spreading; super spreader meningkatkan contact area dan uptake, tetapi sumber juga mencatat rapid drying/runoff sebagai trade-off pada konteks tertentu.",
+          "tag": "Activator"
+        },
+        {
+          "name": "Sticker",
+          "summary": "Meningkatkan retensi; sumber mencatat bahwa retensi yang lebih tinggi dapat disertai reduced uptake pada konteks kontak.",
+          "tag": "Retention"
+        },
+        {
+          "name": "Humectant",
+          "summary": "Meningkatkan drying time dan dapat meningkatkan uptake.",
+          "tag": "Drying"
+        },
+        {
+          "name": "Penetrator",
+          "summary": "Meningkatkan uptake bahan aktif lipofilik; sumber memperingatkan potensi kerusakan daun yang dapat menurunkan uptake.",
+          "tag": "Uptake"
+        }
+      ]
+    },
+    {
+      "id": "spray-quality",
+      "title": "Spray Quality",
+      "icon": "💦",
+      "source_id": "formulation-application-bioscience",
+      "pages": "3-10",
+      "intro": "Kualitas aplikasi dipandang melalui empat komponen: droplet size, droplet spreading, spray volume dan drying time.",
+      "items": [
+        {
+          "name": "Droplet size",
+          "summary": "Droplet lebih kecil cenderung memberi coverage lebih baik karena surface area lebih tinggi, tetapi lebih rentan drift dan dapat memiliki penetrasi kanopi lebih rendah. Droplet lebih besar lebih tahan drift tetapi coverage bisa kurang seragam.",
+          "tag": "Coverage · Drift"
+        },
+        {
+          "name": "Droplet spreading",
+          "summary": "Spreading yang efektif memberi coverage lebih homogen. Surfactant dapat membantu dengan menurunkan surface tension dan memperbaiki adhesi ke permukaan daun.",
+          "tag": "Retention · Uptake"
+        },
+        {
+          "name": "Spray volume",
+          "summary": "Sumber memberi contoh volume lebih tinggi untuk contact pesticide dan lebih rendah untuk soil-applied pesticide, tetapi menekankan pengaruh region, crop dan growth stage.",
+          "tag": "Coverage · Penetration"
+        },
+        {
+          "name": "Drying time",
+          "summary": "Waktu pengeringan memengaruhi lama bahan aktif tersedia untuk absorpsi. Pengeringan terlalu cepat dapat mengurangi efektivitas; terlalu lambat juga dapat meningkatkan risiko degradasi/loss tertentu.",
+          "tag": "Uptake · Rainfastness"
+        }
+      ],
+      "technology": [
+        {
+          "parameter": "Volume",
+          "example": "200 L/ha",
+          "note": "Contoh standard parameter pada spray chamber sumber."
+        },
+        {
+          "parameter": "Speed",
+          "example": "5–10 km/h",
+          "note": "Rentang contoh pada standard parameters."
+        },
+        {
+          "parameter": "Pressure",
+          "example": "1.5–5 bar",
+          "note": "Contoh parameter sumber; bukan rekomendasi universal."
+        },
+        {
+          "parameter": "Nozzle",
+          "example": "Flat fan",
+          "note": "Contoh pada standard parameter."
+        },
+        {
+          "parameter": "Boom height",
+          "example": "50 cm",
+          "note": "Contoh pada standard parameter."
+        }
+      ]
+    },
+    {
+      "id": "insecticide-delivery",
+      "title": "Insecticide: Contact, Translaminar & Systemic",
+      "icon": "🪲",
+      "source_id": "insecticide-formulation-moa-bioscience",
+      "pages": "3-14",
+      "items": [
+        {
+          "mode": "Contact",
+          "target": "Target non-feeding insects",
+          "advantages": [
+            "Rapid knockdown",
+            "Repellent potential",
+            "Fewer residues in the source discussion"
+          ],
+          "challenges": [
+            "Shorter residual/exposure",
+            "Wash-off and pollution",
+            "Bloom-time considerations"
+          ]
+        },
+        {
+          "mode": "Translaminar / locally systemic",
+          "target": "Mites / grazers in the source discussion",
+          "advantages": [
+            "More rainfast",
+            "UV stability",
+            "Longer residual activity"
+          ],
+          "challenges": [
+            "Some phytotoxicity",
+            "Single-site resistance context"
+          ]
+        },
+        {
+          "mode": "Systemic",
+          "target": "New growth, sucking pests, pollen feeders",
+          "advantages": [
+            "More rainfast",
+            "UV stable",
+            "Long residual",
+            "Fewer applications in the source discussion"
+          ],
+          "challenges": [
+            "Residue/MRL considerations",
+            "Potential phytotoxicity from systemic accumulation",
+            "Single-site resistance context"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "family": "Pyridine",
+          "active": "Pymetrozine",
+          "logP": "-0.2",
+          "systemicity": "Systemic, translaminar",
+          "activity": "Ingestion (sucking)"
+        },
+        {
+          "family": "Tetronic acid derivatives",
+          "active": "Spirotetramat",
+          "logP": "2.5",
+          "systemicity": "Systemic, translaminar",
+          "activity": "Ingestion & contact"
+        },
+        {
+          "family": "Neonicotinoids",
+          "active": "Imidacloprid",
+          "logP": "0.6",
+          "systemicity": "Systemic, translaminar",
+          "activity": "Ingestion (sucking)"
+        },
+        {
+          "family": "Carbamates",
+          "active": "Carbofuran",
+          "logP": "1.5",
+          "systemicity": "Limited systemic, translaminar",
+          "activity": "Contact & ingestion"
+        },
+        {
+          "family": "Diamides",
+          "active": "CTPR",
+          "logP": "2.8",
+          "systemicity": "Limited systemic, translaminar",
+          "activity": "Ingestion (& contact)"
+        },
+        {
+          "family": "IGRs",
+          "active": "Diflubenzuron",
+          "logP": "3.9",
+          "systemicity": "Contact, translaminar",
+          "activity": "Contact & ingestion"
+        },
+        {
+          "family": "Phenyl-pyrazole",
+          "active": "Fipronil",
+          "logP": "4",
+          "systemicity": "Contact",
+          "activity": "Contact & ingestion"
+        },
+        {
+          "family": "Avermectins",
+          "active": "Abamectin",
+          "logP": "4.4",
+          "systemicity": "Contact, translaminar",
+          "activity": "Contact & ingestion"
+        },
+        {
+          "family": "Spinosyns",
+          "active": "Spinosad",
+          "logP": "4.5",
+          "systemicity": "Contact, translaminar",
+          "activity": "Contact & ingestion"
+        },
+        {
+          "family": "Organophosphates",
+          "active": "Chlorpyrifos",
+          "logP": "4.7",
+          "systemicity": "Contact",
+          "activity": "Contact & ingestion"
+        },
+        {
+          "family": "Pyrethroids",
+          "active": "Cyhalothrin",
+          "logP": "6.9",
+          "systemicity": "Contact",
+          "activity": "Contact & ingestion"
+        }
+      ],
+      "uptake_logic": [
+        "Mode of entry: contact vs ingestion (stomach)",
+        "Uptake: insect contact; foliar, shoots, roots for ingestion",
+        "Translocation: contact, systemic via xylem/phloem, translaminar",
+        "Solubility: hydrophilic or lipophilic",
+        "Mode of action: nerve/muscle, development, respiratory, other"
+      ]
+    },
+    {
+      "id": "insecticide-targeting",
+      "title": "Insecticide Targeting & Modes of Entry",
+      "icon": "🎯",
+      "source_id": "insecticide-formulation-moa-bioscience",
+      "pages": "4-6",
+      "items": [
+        {
+          "name": "Direct contact",
+          "summary": "Kontak langsung pada integument/cuticle."
+        },
+        {
+          "name": "Secondary contact",
+          "summary": "Kontak sekunder setelah bahan aktif berada pada lingkungan/permukaan yang relevan."
+        },
+        {
+          "name": "Ingestion / stomach",
+          "summary": "Masuk melalui mouthparts dan saluran pencernaan."
+        },
+        {
+          "name": "Vapour / fumigant",
+          "summary": "Masuk melalui spiracle sebagai kontak/vapor."
+        },
+        {
+          "name": "Systemic",
+          "summary": "Bahan aktif diambil tanaman dan mencapai jaringan target dalam konteks sumber."
+        },
+        {
+          "name": "Repellant",
+          "summary": "Pendekatan targeting yang mengandalkan efek penolak."
+        },
+        {
+          "name": "Attractant",
+          "summary": "Pendekatan targeting yang mengandalkan daya tarik."
+        }
+      ]
+    },
+    {
+      "id": "insecticide-mechanisms",
+      "title": "Insecticide Mechanisms — Neural & Energy",
+      "icon": "⚡",
+      "source_id": "insecticide-mechanisms-bioscience",
+      "pages": "2-8",
+      "source_snapshot": {
+        "groups": 82,
+        "note": "Snapshot yang ditampilkan dalam materi sumber; bukan jumlah current IRAC 2026."
+      },
+      "items": [
+        {
+          "name": "Nerve or muscle action",
+          "summary": "Target saraf/otot; materi menyebut kelompok ini umumnya fast acting.",
+          "mechanisms": [
+            "GABA-activated chloride channel modulation",
+            "Cholinergic/ACh synapse",
+            "Sodium/potassium/chloride channel modulators"
+          ]
+        },
+        {
+          "name": "Energy metabolism",
+          "summary": "Menghambat pembentukan ATP sehingga energi sel terganggu dan dapat menyebabkan paralysis.",
+          "mechanisms": [
+            "ATP synthase inhibition",
+            "Complex I inhibition",
+            "Complex II inhibition",
+            "Complex III inhibition",
+            "Complex III Qi inhibition",
+            "Complex IV inhibition",
+            "Proton gradient uncoupling"
+          ]
+        },
+        {
+          "name": "Physiological disruption",
+          "summary": "Gangguan fisik/fisiologis pada target; materi memberi contoh protective wax/foam dan peluang pendekatan formulasi/adjuvant.",
+          "mechanisms": [
+            "Mechanical/physical disruption",
+            "Detergents/oils",
+            "Wax absorbers",
+            "Desiccants & film formers",
+            "Antifoam formulation inerts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fungicide-mechanisms",
+      "title": "Fungicide Mechanism of Action",
+      "icon": "🍄",
+      "source_id": "mechanism-of-action-bioscience",
+      "pages": "3-5",
+      "items": [
+        {
+          "name": "Cell wall",
+          "target": "Chitin; cellulose",
+          "examples": [
+            "Cellulose biosynthesis inhibitors such as dimethomorph in the source diagram"
+          ]
+        },
+        {
+          "name": "Cell membrane",
+          "target": "Ergosterol",
+          "examples": [
+            "DMI: imidazoles, pyrimidines, triazoles",
+            "Morpholines"
+          ]
+        },
+        {
+          "name": "DMI / demethylation inhibitors",
+          "target": "Sterol biosynthesis",
+          "examples": [
+            "Tebuconazole",
+            "Flutriafol",
+            "Epoxiconazole",
+            "Propiconazole"
+          ]
+        },
+        {
+          "name": "Morpholines",
+          "target": "Steroid reduction/isomerization",
+          "examples": [
+            "Fenpropidin",
+            "Fenpropimorph"
+          ]
+        },
+        {
+          "name": "Electron transport / ATP formation",
+          "target": "Mitochondrial energy metabolism",
+          "examples": [
+            "Qo strobilurins",
+            "Complex II carboxamides",
+            "Qi cyazofamid",
+            "Complex I examples in source",
+            "ATP synthase inhibitors"
+          ]
+        },
+        {
+          "name": "H+ uncouplers",
+          "target": "Proton gradient",
+          "examples": [
+            "Fluazinam"
+          ]
+        }
+      ],
+      "note": "Materi menekankan single-site MOA dan resistance context untuk beberapa kelompok; current FRAC classification tetap berada di master FRAC 2026."
+    },
+    {
+      "id": "herbicide-pathways",
+      "title": "Herbicide Target Pathways",
+      "icon": "🌿",
+      "source_id": "mechanism-of-action-bioscience",
+      "pages": "6-7",
+      "items": [
+        {
+          "name": "PSII inhibition",
+          "target": "Photosynthetic electron transport",
+          "examples": [
+            "Diuron",
+            "Atrazine"
+          ]
+        },
+        {
+          "name": "PSI inhibition",
+          "target": "Photosynthetic electron transport / ROS",
+          "examples": [
+            "Diquat",
+            "Paraquat"
+          ]
+        },
+        {
+          "name": "HPPD inhibition",
+          "target": "Pigment-related pathway",
+          "examples": [
+            "Isoxaflutole",
+            "Sulcotrione",
+            "Mesotrione"
+          ]
+        },
+        {
+          "name": "EPSPS inhibition",
+          "target": "Aromatic amino acid pathway",
+          "examples": [
+            "Glyphosate"
+          ]
+        },
+        {
+          "name": "GS inhibition",
+          "target": "Glutamine synthetase",
+          "examples": [
+            "Glufosinate"
+          ]
+        },
+        {
+          "name": "PDS inhibition",
+          "target": "Pigment synthesis",
+          "examples": [
+            "Clomazone"
+          ]
+        },
+        {
+          "name": "PPO inhibition",
+          "target": "ROS / membrane damage",
+          "examples": [
+            "Fomesafen",
+            "Aclonifen"
+          ]
+        },
+        {
+          "name": "ALS inhibition",
+          "target": "Amino acid synthesis",
+          "examples": [
+            "Metsulfuron",
+            "Tribenuron",
+            "Thifensulfuron",
+            "Rimsulfuron",
+            "Florasulam",
+            "Imazapyr",
+            "Imazethapyr"
+          ]
+        },
+        {
+          "name": "ACCase inhibition",
+          "target": "Fatty acid synthesis",
+          "examples": [
+            "Fenoxaprop",
+            "Clodinafop",
+            "Clethodim"
+          ]
+        },
+        {
+          "name": "VLCFA inhibition",
+          "target": "Very-long-chain fatty acid synthesis",
+          "examples": [
+            "Prosulfocarb",
+            "Metazachlor",
+            "Pyroxasulfone"
+          ]
+        }
+      ]
+    }
+  ]
+}

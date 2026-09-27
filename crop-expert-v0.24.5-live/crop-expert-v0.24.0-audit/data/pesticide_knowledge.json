@@ -1,0 +1,15 @@
+{
+  "source_id": "pestisida-kementan",
+  "title": "PESTISIDA — Pusat Penelitian dan Pengembangan Hortikultura, Badan Penelitian dan Pengembangan Pertanian, Kementerian Pertanian",
+  "source_pages": "2-28",
+  "notes": "Materi sumber pengguna dipertahankan sebagai referensi/pengetahuan historis. Kode MoA dan status produk tidak diperlakukan sebagai master terkini.",
+  "sections": [
+    {"id":"classes","title":"Kelas pestisida menurut sasaran OPT","items":["Serangga → Insektisida","Tungau/akarina → Akarisida","Cendawan/jamur → Fungisida","Bakteri → Bakterisida","Gulma → Herbisida","Tikus → Rodentisida","Siput/moluska → Moluskisida","Nematoda → Nematisida"],"pages":"4"},
+    {"id":"movement","title":"Pergerakan pada tanaman","items":["Non-systemic / contact","Systemic","Translaminar"],"pages":"6-8"},
+    {"id":"entry","title":"Cara masuk / entry","items":["Stomach","Contact","Respiratory"],"pages":"6-8"},
+    {"id":"fungicide-behavior","title":"Perilaku fungisida","items":["Non-systemic/contact","Systemic","Translaminar","Anti-sporulation","Spore killer"],"pages":"9-10"},
+    {"id":"formulations","title":"Kode formulasi yang dibahas","items":["WP","EC","SC/WSC","S/SP","G","WG/WDG"],"pages":"12-14"},
+    {"id":"resistance","title":"Resistensi dan rotasi MoA","items":["Bahan aktif berbeda dapat memiliki MoA yang sama","Rotasi dimaksudkan untuk memperlambat perkembangan resistensi","Materi mengarahkan penggunaan kelompok MoA berbeda dalam rotasi","IRAC untuk insektisida, FRAC untuk fungisida, HRAC untuk herbisida"],"pages":"15-18"},
+    {"id":"historical-example","title":"Contoh rotasi historis pada ulat bawang","items":["Generasi 1 → 3A","Generasi 2 → 1A","Generasi 3 → 15"],"pages":"25-26","warning":"Contoh dari materi sumber; bukan rekomendasi otomatis atau master terkini."}
+  ]
+}

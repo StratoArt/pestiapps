@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#087443">
+<meta name="description" content="Crop Expert — Al-Kitab untuk Sales, Formulator dan Petani Mbois.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>Crop Expert</title>
+</head>
+<body>
+<div class="app-shell">
+<header class="app-header">
+  <button class="icon-button" id="menuBtn" aria-label="Menu">☰</button>
+  <a class="brand" href="#home">
+    <img src="assets/icons/icon.svg" alt="" class="brand-logo">
+    <span><strong>Crop Expert</strong></span>
+  </a>
+  <div class="header-actions"><button class="icon-button" id="themeBtn" aria-label="Tema">☾</button><button class="install-button" id="installBtn" hidden>Install</button></div>
+</header>
+
+<main>
+<section id="home" class="screen active-screen">
+  <div class="hero">
+    <div class="hero-bg"></div><div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">AL-KITAB UNTUK SALES, FORMULATOR DAN PETANI MBOIS</p>
+      <h1>Menuju Pertanian<br><span>yang Lebih Baik</span></h1>
+      <p class="hero-copy">Basis pengetahuan hama, penyakit, gulma, nutrisi dan bahan aktif pestisida untuk pertanian yang lebih baik</p>
+      <button class="hero-search" data-go="types"><span>⌕</span><span class="placeholder">Cari OPT, tanaman, atau bahan aktif...</span><b>⌗</b></button>
+    </div>
+  </div>
+
+  <div class="home-grid">
+    <button class="feature-card green" data-go="types"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
+    <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
+    <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="explore"><span class="feature-icon image-icon"><img src="assets/ui/chemistry-flask.svg" alt=""></span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="pesticides"><span class="feature-icon">🧴</span><span><strong>Database Pestisida</strong><small>Produk · Bahan Aktif · Sasaran · MoA</small></span><i>›</i></button>
+    <button class="feature-card teal" data-go="formulations"><span class="feature-icon">🧪</span><span><strong>Formulasi</strong><small>SG · WP · SC · EC · EW · ME</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="nutrition"><span class="feature-icon">🌱</span><span><strong>Panduan Hara Tanaman</strong><small>Fungsi hara · sumber pupuk · biostimulan · PGR</small></span><i>›</i></button>
+    <button class="feature-card teal" data-go="crop-guidelines"><span class="feature-icon">🌾</span><span><strong>Crop Guideline</strong><small>30 crop · fase · nutrisi · diagnosis</small></span><i>›</i></button>
+    <button class="feature-card amber" data-go="scan"><span class="feature-icon">◉</span><span><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="library"><span class="feature-icon">📚</span><span><strong>Agrobiology Library</strong><small>Adjuvan · Spray · MoA · Fusarium</small></span><i>›</i></button>
+    <button class="feature-card blue moa-guide-card" data-go="pesticide-moa"><span class="feature-icon">⚗️</span><span><strong>Cara Kerja Pestisida</strong><small>Insektisida · Fungisida · Herbisida</small></span><i>›</i></button>
+    <button class="feature-card amber" data-go="calculators"><span class="feature-icon">🧮</span><span><strong>Calculator Suite</strong><small>Dosis · Area · Spray · Kalibrasi</small></span><i>›</i></button>
+    <button class="feature-card blue" data-go="weather"><span class="feature-icon">🌦️</span><span><strong>Weather & Spray Assist</strong><small>Cuaca lokal · jendela semprot</small></span><i>›</i></button>
+  </div>
+
+  <div class="stats-card"><div><strong id="homeOpt">—</strong><span>OPT</span></div><div><strong id="homeAI">—</strong><span>Bahan Aktif</span></div><div><strong id="homeFormulations">—</strong><span>Formulasi</span></div></div>
+  <p class="quote">“Pertanian yang lebih tangguh, dimulai dari pengetahuan.”</p>
+  <div class="app-version" aria-label="Versi aplikasi"><span>Crop Expert</span><b>v0.24.5</b><em>AI Vision + OPT Visual</em></div>
+   <div class="supported-by" aria-label="Supported by Soilferti Agriculture"><span>Supported by</span><img src="assets/branding/soilferti-agriculture.png" alt="Soilferti Agriculture"></div>
+</section>
+
+<section id="types" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Jenis OPT</strong><small>Pilih kelompok organisme pengganggu tanaman</small></div><button class="icon-button light" id="typeSearchBtn">⌕</button></div>
+  <div class="search-box"><span>⌕</span><input id="optSearch" placeholder="Cari jenis OPT..." autocomplete="off"><button id="clearOptSearch">×</button></div>
+  <div class="mini-tabs"><button class="active" data-type="Hama">Hama</button><button data-type="Penyakit">Penyakit</button><button data-type="Gulma">Gulma</button></div>
+  <div id="typeGrid" class="type-grid"></div>
+  <div class="promo-strip"><img src="assets/opt/crop-rice.svg"><div><strong>Kenali Musuh Tanaman</strong><small>Lindungi Hasil Panen dengan keputusan berbasis informasi.</small></div></div>
+</section>
+
+<section id="pests" class="screen">
+  <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Hama</strong><small>Serangga · Tungau · Nematoda</small></div><button class="icon-button light" id="pestSearchBtn">⌕</button></div>
+  <div class="mini-tabs pest-tabs"><button class="active" data-pest-filter="Semua">Semua</button><button data-pest-filter="Lepidoptera">Lepidoptera</button><button data-pest-filter="Hemiptera">Hemiptera</button><button data-pest-filter="Thysanoptera">Thysanoptera</button></div>
+  <div id="pestList" class="opt-list"></div>
+</section>
+
+<section id="disease" class="screen">
+  <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Penyakit</strong><small>Fungi · Bacteria · Virus · Oomycete</small></div><button class="icon-button light">⌕</button></div>
+  <div class="mini-tabs"><button class="active">Semua</button><button>Fungi</button><button>Bacteria</button><button>Virus</button></div>
+  <div id="diseaseList" class="opt-list"></div>
+</section>
+
+<section id="weed" class="screen">
+  <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Gulma</strong><small>Grass · Broadleaf · Sedge · Aquatic</small></div><button class="icon-button light">⌕</button></div>
+  <div class="mini-tabs"><button class="active">Semua</button><button>Grass</button><button>Broadleaf</button><button>Sedge</button></div>
+  <div id="weedList" class="opt-list"></div>
+</section>
+
+<section id="crops" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Crop Guideline</strong><small>Fase · HST · nutrisi · OPT</small></div><button class="icon-button light">⌕</button></div>
+  <div class="mini-tabs"><button class="active">Semua</button><button>Sayuran</button><button>Buah</button><button>Pangan</button><button>Perkebunan</button></div>
+  <div id="cropGrid" class="crop-grid"></div>
+</section>
+
+<section id="explore" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong id="exploreTitle">IRAC</strong><small id="exploreSub">Insecticide · Acaricide · Nematicide</small></div><button class="icon-button light" id="focusSearch">⌕</button></div>
+  <div class="search-box"><span>⌕</span><input id="search" placeholder="Cari group, MoA, chemical class, atau bahan aktif..." autocomplete="off"><button id="clearSearch">×</button></div>
+  <div class="committee-tabs"><button class="active" data-c="IRAC">IRAC</button><button data-c="FRAC">FRAC</button><button data-c="HRAC">HRAC</button></div>
+  <div class="moa-view-tabs"><button class="active" data-moa-view="ai">Bahan Aktif</button><button data-moa-view="group">Kelompok MoA</button><button data-moa-view="emerging">Emerging</button></div>
+  <div id="groupFilters" class="chips"></div>
+  <div class="list-meta"><span><b id="resultCount">—</b> klasifikasi</span><span id="activeCommittee">IRAC 2026</span></div>
+  <div id="cards" class="moa-list"></div>
+</section>
+
+<section id="formulations" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Formulation Explorer</strong><small>Kenali bentuk formulasi dan perilaku di spray solution</small></div><button class="icon-button light" id="formulationSearchBtn">⌕</button></div>
+  <div class="bio-card">
+    <div class="bio-head"><div><span class="eyebrow">DARI FORMULASI KE TARGET SITE</span><h2>Bioavailability</h2><p>Ilustrasi sumber tentang retention, uptake/translocation dan target-site delivery.</p></div><span class="bio-pill">SOURCE</span></div>
+    <div class="bio-flow">
+      <div class="bio-stage"><strong>100%</strong><span>Retention & Coverage</span></div><div class="bio-arrow">→</div><div class="bio-stage"><strong>10%</strong><span>Uptake / Translocation</span></div><div class="bio-arrow">→</div><div class="bio-stage"><strong>0.1%</strong><span>Target-site Delivery</span></div>
+    </div>
+    <div class="loss-row"><span>Potensi kehilangan:</span><div id="bioLosses"></div></div>
+    <small class="source-footnote">Angka 100% / 10% / 0,1% dipertahankan sebagai ilustrasi dari sumber, bukan efisiensi universal.</small>
+  </div>
+  <div class="search-box"><span>⌕</span><input id="formulationSearch" placeholder="Cari kode atau tipe formulasi..." autocomplete="off"><button id="clearFormulationSearch">×</button></div>
+  <div class="formulation-tabs"><button class="active" data-form-filter="ALL">Semua</button><button data-form-filter="Dry / solid">Padat</button><button data-form-filter="Liquid">Cair</button><button data-form-filter="Emulsion">Emulsi</button></div>
+  <div id="formulationList" class="formulation-grid"></div>
+  <div class="source-box"><strong>Basis sumber</strong><p>Materi formulasi ini diekstrak dari PDF “Agrobiology of Agrochemical Formulations I - Essentials · Formulation Types”. Karakteristik kelebihan/kekurangan mengikuti framing sumber dan tidak dianggap sebagai aturan universal.</p></div>
+</section>
+
+<section id="nutrition" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Panduan Hara Tanaman</strong><small>Fungsi hara · sumber pupuk · biostimulan · PGR</small></div><button class="icon-button light" id="nutritionSearchBtn">⌕</button></div>
+  <div class="nutrition-hero"><span class="eyebrow">PANDUAN HARA TANAMAN</span><h2>Dari unsur hara → fungsi → sumber pupuk</h2><p>Pelajari fungsi unsur hara, bentuk yang diserap tanaman, contoh pupuk/sumber hara, serta konteks biostimulan dan PGR.</p></div>
+  <div class="search-box"><span>⌕</span><input id="nutritionSearch" placeholder="Cari N, K, Boron, CPPU, humat, asam amino..." autocomplete="off"><button id="clearNutritionSearch">×</button></div>
+  <div id="nutritionFramework" class="nutrition-framework"></div>
+  <div class="nutrition-tabs"><button class="active" data-nutrition-filter="ALL">Semua</button><button data-nutrition-filter="essential_macro">Makro</button><button data-nutrition-filter="essential_micro">Mikro</button><button data-nutrition-filter="beneficial_nonessential">Bermanfaat</button><button data-nutrition-filter="biostimulants">Biostimulan</button><button data-nutrition-filter="growth_regulators">PGR</button></div>
+  <div id="nutritionList" class="nutrition-list"></div>
+  <div class="source-box"><strong>Catatan ilmiah</strong><p>Makro/mikro menunjukkan jumlah relatif yang dibutuhkan, bukan tingkat kepentingan. Biostimulan dan PGR bukan pengganti unsur hara esensial. Respons aplikasi dapat berbeda menurut spesies, varietas, fase tanaman, sumber bahan, konsentrasi dan lingkungan.</p></div>
+</section>
+
+<section id="crop-guidelines" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Crop Guideline</strong><small>30 crop · fase · HST · nutrisi · OPT</small></div></div>
+  <div class="search-box"><span>⌕</span><input id="cropGuidelineSearch" placeholder="Cari padi, cabai, jagung, nutrisi..." autocomplete="off"></div>
+  <div id="cropGuidelineList" class="crop-guideline-list"></div>
+  <div class="source-box"><strong>Catatan penting</strong><p>Ini adalah framework kualitatif, bukan rekomendasi pemupukan. Prioritas hara harus dikonfirmasi dengan varietas, target produksi, analisis tanah/jaringan, pH, air dan kondisi lapangan.</p></div>
+</section>
+
+<section id="library" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Agrobiology Library</strong><small>Ekstraksi pengetahuan dari sumber yang kamu tambahkan</small></div><button class="icon-button light" id="librarySearchBtn">⌕</button></div>
+  <div class="library-hero"><div><span class="eyebrow">SOURCE-DERIVED KNOWLEDGE</span><h2>Dari formulasi sampai target site</h2><p>Materi baru dipecah menjadi konsep yang bisa dibaca cepat: adjuvan, kualitas semprotan, delivery insektisida, mekanisme aksi, dan studi Fusarium semangka.</p></div><div class="library-flow"><span>FORMULATION</span><b>→</b><span>SPRAY</span><b>→</b><span>UPTAKE</span><b>→</b><span>TARGET</span></div></div>
+  <div class="search-box"><span>⌕</span><input id="librarySearch" placeholder="Cari konsep, bahan aktif, atau istilah..." autocomplete="off"><button id="clearLibrarySearch">×</button></div>
+  <div class="library-tabs"><button class="active" data-library-filter="ALL">Semua</button><button data-library-filter="formulation">Formulasi</button><button data-library-filter="adjuvant">Adjuvan</button><button data-library-filter="spray-quality">Spray Quality</button><button data-library-filter="insecticide">Insektisida</button><button data-library-filter="mechanism">Mekanisme Aksi</button><button data-library-filter="fusarium">Fusarium</button></div>
+  <div id="libraryList" class="library-list"></div>
+  <div id="hamaSourceCard" class="source-box"></div>
+</section>
+
+<section id="calculators" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Calculator Suite</strong><small>Hitung dari label & hasil kalibrasi — bukan rekomendasi dosis</small></div></div>
+  <div class="calc-note"><strong>⚠️ Prinsip keamanan</strong><p>Masukkan angka yang berasal dari label produk, hasil kalibrasi, atau data lapangan. Kalkulator hanya menghitung; tidak menetapkan dosis, konsentrasi, interval, PHI, atau produk yang harus digunakan.</p></div>
+  <div class="calc-tabs" id="calcTabs">
+    <button class="active" data-calc="area">📐 Area</button><button data-calc="spray">💧 Spray</button><button data-calc="dose">🧪 Dosis</button><button data-calc="backpack">🎒 Backpack</button><button data-calc="sprayer">🚜 Sprayer</button><button data-calc="tank">🧴 / Tank</button><button data-calc="granule">🌾 Granule</button><button data-calc="ai">⚗️ AI</button><button data-calc="seed">🌱 Seed</button><button data-calc="calibration">🧰 Kalibrasi</button><button data-calc="seedrate">🌱 Benih</button><button data-calc="fertilizer">🧪 Pupuk</button>
+  </div>
+  <div id="calculatorPanel"></div>
+  <div id="calculatorExternalTools"></div>
+  <div class="calc-sources"><strong>Metode perhitungan</strong><p>Rumus area, spray volume, dosis per tank dan kalibrasi mengikuti metode yang dijelaskan dalam sumber extension/pertanian; satuan aplikasi ditampilkan dalam sistem metrik. Selalu cek label dan registrasi lokal sebelum aplikasi.</p><div class="calc-source-links"><a href="https://www.dpi.nsw.gov.au/biosecurity/weeds/weed-control/herbicides/spray-equipment-calibration-methods" target="_blank" rel="noopener">NSW DPI · Calibration ↗</a><a href="https://extension.uga.edu/publications/detail.html?number=C683" target="_blank" rel="noopener">UGA Extension · Calibration ↗</a><a href="https://mplk.politanikoe.ac.id/index.php/142-perlintan/praktek-perlintan/221-teknik-kalibrasi-pestisida-dan-alat-semprot" target="_blank" rel="noopener">Politeknik Negeri Kupang · Kalibrasi ↗</a></div></div>
+</section>
+
+<section id="weather" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Weather & Spray Assist</strong><small>Cuaca lokal untuk membantu perencanaan waktu aplikasi</small></div><button class="icon-button light" id="weatherRefresh">↻</button></div>
+  <div class="weather-note"><strong>⚠️ Indikator cuaca, bukan resep aplikasi</strong><p>Data cuaca dipakai untuk membaca kondisi lingkungan. Keputusan aplikasi tetap harus mengikuti label produk, komoditas, OPT sasaran, alat, PPE, interval, PHI, dan kondisi lapangan.</p></div>
+  <div class="weather-actions"><button class="primary-btn" id="weatherLocate">📍 Gunakan lokasi perangkat</button><button class="secondary-btn" id="weatherManual">⌖ Masukkan koordinat</button></div>
+  <div id="weatherPanel" class="weather-panel"><div class="empty">Aktifkan lokasi perangkat untuk memuat cuaca lokal.</div></div>
+</section>
+
+<section id="scan" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Scan & Identifikasi</strong><small>Analisa foto tanaman</small></div></div>
+  <div class="scan-box scan-live">
+    <div class="scan-preview" id="scanPreview"><div class="scan-corners"></div><span>📷</span><strong id="scanPreviewTitle">Ambil foto / pilih foto</strong><small id="scanPreviewHint">Foto dianalisis langsung oleh Crop Expert AI. Jika foto belum cukup jelas, AI akan meminta foto tambahan.</small></div>
+    <div class="scan-actions"><button class="primary-btn" id="cameraBtn">📷 Buka Kamera</button><button class="secondary-btn" id="galleryBtn">🖼 Pilih dari Galeri</button></div>
+    <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
+    <input id="galleryInput" type="file" accept="image/*" hidden>
+    <div id="scanFileMeta" class="scan-file-meta" hidden></div>
+    <button class="lens-btn" id="googleLensBtn" disabled>🔎 Identifikasi dengan Google Lens</button>
+    <button class="chatgpt-btn" id="analyzeChatGPTBtn" disabled>✦ Analisis lanjutan dengan ChatGPT</button>
+    <button class="ghost-btn" id="copyScanPromptBtn" disabled>Salin prompt analisis</button>
+  </div>
+  <div class="scan-info"><strong>🤖 AI Vision + Database Crop Expert</strong><ol><li>Ambil atau pilih foto OPT/gejala tanaman.</li><li>Tekan <b>Analisis dengan Crop Expert AI</b>.</li><li>AI memberikan maksimal 3 kandidat berdasarkan ciri yang terlihat.</li><li>Jika ada kecocokan, hasil dapat dibuka langsung di database Crop Expert.</li></ol><p><b>Catatan:</b> AI adalah alat identifikasi awal, bukan diagnosis pasti. Foto yang kurang jelas akan diminta untuk diulang/ditambah.</p><p><a href="https://lens.google.com/" target="_blank" rel="noopener">Buka Google Lens ↗</a></p></div>
+  <div class="analysis-card scan-return-card"><h3>Sudah dapat nama dari Lens?</h3><p class="scan-return-copy">Masukkan nama kandidat dari Google Lens untuk mencari kecocokan di database Crop Expert.</p><div class="scan-return-row"><input id="lensResultSearch" placeholder="Contoh: Spodoptera exigua / Thrips tabaci" autocomplete="off"><button id="lensResultSearchBtn">Cari OPT</button></div></div>
+  <div class="analysis-card" id="analysisGuideCard"><h3>Format hasil yang diminta</h3><div class="analysis-row"><b>1</b><div><strong>Kandidat utama</strong><small>Nama umum + nama ilmiah + ciri yang cocok</small></div></div><div class="analysis-row"><b>2</b><div><strong>Kandidat pembanding</strong><small>Perbedaan utama dengan kandidat lain</small></div></div><div class="analysis-row"><b>3</b><div><strong>Langkah verifikasi</strong><small>Foto/observasi tambahan yang diperlukan</small></div></div></div>
+</section>
+
+<section id="pesticide-moa" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Cara Kerja Pestisida</strong><small>Target biologis · site of action · efek</small></div></div>
+  <div class="moa-guide-hero"><span class="eyebrow">CROP EXPERT · MODE OF ACTION</span><h2>Bagaimana pestisida bekerja?</h2><p>Mulai dari <b>jalan masuk</b>, lanjut ke <b>jaringan/proses biologis</b>, lalu ke <b>target site</b> dan akhirnya efek pada organisme sasaran.</p><div class="moa-chain"><span>Masuk</span><b>→</b><span>Distribusi</span><b>→</b><span>Target</span><b>→</b><span>Efek</span></div></div>
+  <div class="moa-guide-tabs"><button class="active" data-guide="insecticide">🪲 Insektisida</button><button data-guide="fungicide">🍄 Fungisida</button><button data-guide="herbicide">🌿 Herbisida</button></div>
+  <div id="moaGuideContent"></div>
+  <div class="source-box"><strong>Basis klasifikasi</strong><p>Penjelasan edukatif dikombinasikan dari Agrobiology Library dan sumber resmi IRAC, FRAC, serta HRAC. Nomor kelompok dan klasifikasi aktif mengikuti master MoA aplikasi; gunakan label dan registrasi lokal untuk keputusan penggunaan.</p></div>
+</section>
+
+<section id="knowledge" class="screen">
+  <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Pestisida — Knowledge</strong><small>Ekstraksi materi PDF Kementan</small></div></div>
+  <div class="source-box"><strong>Lapisan referensi Kementan</strong><p>Materi ini dibaca sebagai sumber pengetahuan dan konteks historis. Kode MoA terkini tetap mengikuti klasifikasi IRAC, FRAC dan HRAC yang terpisah.</p></div>
+  <div id="knowledgeList" class="knowledge-list"></div>
+</section>
+
+<section id="about" class="screen">
+  <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Tentang Aplikasi</strong><small>Crop Expert · Crop Protection Knowledge Engine</small></div></div>
+  <div class="about-card">
+    <div class="about-mark">◈</div>
+    <span class="eyebrow">CROP EXPERT</span>
+    <h2>Menuju Pertanian yang Lebih Baik</h2>
+    <p class="about-tagline">Basis pengetahuan hama, penyakit, gulma, nutrisi dan bahan aktif pestisida untuk pertanian yang lebih baik</p>
+    <div class="about-divider"></div>
+    <p class="about-credit">Dibuat oleh <strong>Amrizal Ivan Pratama S.P.</strong><br>Bayer District Representative Nganjuk<br><strong>Co-Founder Soilferti Agriculture</strong><br><span>Co Writer: Eber Lonameo S.P.<br><span>CEO PT Agri Chemical Indonesia</span><br><span>2026 all rights reserved</span></p>
+  </div>
+  <div class="source-box">
+    <strong>Tentang Crop Expert</strong>
+    <p>Aplikasi ini menggabungkan eksplorasi OPT, tanaman/inang, formulasi, mode of action, resistance management, knowledge library dan calculator tools dalam satu PWA yang dapat digunakan secara offline.</p>
+  </div>
+  <div class="source-box">
+    <strong>Catatan sumber</strong>
+    <p>Database aplikasi memuat 15 PDF sumber pengguna serta referensi eksternal IRAC, FRAC, HRAC dan EPPO. Materi historis/source-derived dipisahkan dari klasifikasi MoA terkini dan tidak otomatis menjadi rekomendasi penggunaan produk.</p>
+  </div>
+</section>
+
+<section id="sources" class="screen">
+  <div class="section-head"><button class="back-button" data-go="menu">←</button><div><strong>Database & Sumber</strong><small>Jejak sumber untuk membaca data dengan nyaman</small></div></div>
+  <div id="sourceList" class="source-list"></div>
+  <div class="source-box"><strong>Catatan penggunaan</strong><p>PDF pengguna dipakai sebagai lapisan pengetahuan/reference. Klasifikasi MoA terkini tetap dipisahkan dari materi historis; selalu verifikasi label dan registrasi lokal sebelum aplikasi.</p></div>
+</section>
+
+<section id="pesticides" class="screen">
+  <div class="section-head"><button class="back-button" data-go="home">←</button><div><strong>Database Pestisida</strong><small>Produk Indonesia · bahan aktif · sasaran · MoA</small></div><button class="icon-button light" id="pesticideSearchBtn">⌕</button></div>
+  <div class="pesticide-hero">
+    <div><span class="eyebrow">DATASET PENGGUNA</span><h2>Produk → Bahan Aktif → Sasaran → MoA</h2><p>Database ini menghubungkan data produk yang kamu upload dengan database Crop Expert dan klasifikasi MoA yang sudah ada.</p></div>
+    <div class="pesticide-stat"><strong id="pesticideCount">—</strong><span>produk</span></div>
+  </div>
+  <div class="search-box"><span>⌕</span><input id="pesticideSearch" placeholder="Cari produk, bahan aktif, perusahaan, atau sasaran..." autocomplete="off"><button id="clearPesticideSearch">×</button></div>
+  <div class="pesticide-tabs"><button class="active" data-pesticide-filter="ALL">Semua</button><button data-pesticide-filter="Insektisida">Insektisida</button><button data-pesticide-filter="Fungisida">Fungisida</button><button data-pesticide-filter="Herbisida">Herbisida</button><button data-pesticide-filter="LAINNYA">Lainnya</button></div>
+  <div class="list-meta"><span><b id="pesticideResultCount">—</b> hasil</span><span id="pesticideSourceLabel">Dataset pengguna</span></div>
+  <div id="pesticideList" class="pesticide-list"></div>
+  <div class="source-box"><strong>Catatan data</strong><p>Basis utama adalah CSV pestisida yang kamu upload. Nama produk unik digabung dari baris sumber yang memiliki nama sama, sementara varian/sumber asal tetap disimpan di database. Klasifikasi dan sasaran ditampilkan sesuai dataset; ini bukan konfirmasi registrasi, label, dosis, PHI, kompatibilitas, atau status pasar terkini.</p></div>
+</section>
+
+<section id="menu" class="screen">
+  <div class="menu-head"><button class="back-button" data-go="home">←</button><h2>Menu</h2></div>
+  <div class="menu-list">
+    <button id="openAbout"><span>◈</span><b>Tentang Aplikasi</b><i>›</i></button>
+    <button id="openSources"><span>▣</span><b>Database & Sumber</b><i>›</i></button>
+    <button id="openKnowledge"><span>📘</span><b>Pestisida — Knowledge</b><small>Ekstrak PDF Kementan</small><i>›</i></button>
+    <button id="openNutrition"><span>🧪</span><b>Nutrition Knowledge</b><small>Ensiklopedia unsur hara & biostimulan</small><i>›</i></button>
+    <button id="openCropGuidelines"><span>🌱</span><b>Crop Guideline</b><small>30 crop · fase · HST · nutrisi · OPT</small><i>›</i></button>
+    <button id="openFormulations"><span>🧪</span><b>Formulation Explorer</b><small>SG · WP · SC · EC · EW · ME</small><i>›</i></button>
+    <button id="openLibrary"><span>📚</span><b>Agrobiology Library</b><small>Ekstrak sumber formulasi, adjuvan, MoA & Fusarium</small><i>›</i></button>
+    <button id="openPesticideMoa"><span>⚗️</span><b>Cara Kerja Pestisida</b><small>Insektisida · Fungisida · Herbisida</small><i>›</i></button>
+    <button id="openPesticides"><span>🧴</span><b>Database Pestisida Indonesia</b><small>Produk · bahan aktif · sasaran · MoA</small><i>›</i></button>
+    <button id="openCalculators"><span>🧮</span><b>Calculator Suite</b><small>Area · Dosis · Spray · Kalibrasi · Seed</small><i>›</i></button>
+    <button id="openWeather"><span>🌦️</span><b>Weather & Spray Assist</b><small>Cuaca lokal · jendela semprot</small><i>›</i></button>
+    <button><span>◉</span><b>Mode Offline</b><em class="toggle on"></em></button>
+    <button id="menuTheme"><span>☼</span><b>Tema</b><small>Terang / Gelap</small><i>›</i></button>
+    <button><span>⌁</span><b>Bahasa</b><small>Indonesia</small><i>›</i></button>
+    <button><span>↗</span><b>Bagikan Aplikasi</b><i>›</i></button>
+    <button><span>ⓘ</span><b>Versi</b><small>v0.24.5</small></button>
+  </div>
+  <div class="source-box"><strong>Sumber klasifikasi</strong><p>Database OPT adalah dataset aplikasi untuk eksplorasi awal. Klasifikasi MoA mengacu pada IRAC, FRAC dan HRAC. Selalu verifikasi label dan registrasi lokal.</p></div>
+</section>
+</main>
+
+<nav class="bottom-nav">
+  <button class="active" data-go="home"><span>⌂</span><small>Beranda</small></button>
+  <button data-go="types"><span>⌕</span><small>Cari</small></button>
+  <button data-go="scan"><span>▣</span><small>Scan</small></button>
+  <button data-go="crop-guidelines"><span>🌱</span><small>Crop</small></button>
+  <button data-go="menu"><span>☰</span><small>Menu</small></button>
+</nav>
+<div id="detail"></div>
+<script src="js/app.js"></script>
+<script src="js/scan-ai.js"></script>
+<script src="js/calculators.js"></script>
+<script src="js/weather.js"></script>
+</div>
+</body>
+</html>

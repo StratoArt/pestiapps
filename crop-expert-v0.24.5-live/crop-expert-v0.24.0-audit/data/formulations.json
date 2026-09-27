@@ -1,0 +1,27 @@
+{
+  "source_id": "formulation-types-bioscience-academy",
+  "title": "Agrobiology of Agrochemical Formulations I - Essentials · Formulation Types",
+  "source_pages": "1-10",
+  "notes": "Ekstraksi materi sumber pengguna. Kelebihan/kekurangan dipertahankan sebagai karakteristik yang dinyatakan sumber, bukan aturan universal untuk semua produk.",
+  "bioavailability": {
+    "title": "Bioavailability — from spray solution to target site",
+    "stages": [
+      {"label":"Retention & Coverage","value":"100%","note":"Source illustration: starting spray deposit/coverage."},
+      {"label":"Uptake / Translocation","value":"10%","note":"Illustrative source value; not a universal field efficiency."},
+      {"label":"Target-site delivery","value":"0.1%","note":"Illustrative source value; not a universal field efficiency."}
+    ],
+    "losses": ["precipitation","degradation / drift","miss","evaporation / bounce","runoff","volatility","washoff","binding","sequestration","non-target binding"]
+  },
+  "items": [
+    {"code":"SG","name":"Soluble Granules","category":"Dry / solid","system":"Solution","advantages":["High loading","Low dust","Cheap packaging, easy transport, simple application equipment"],"disadvantages":["Can be expensive","Slow solution in cold water"],"mixing":"Dissolves to form a solution.","visual":"solution","pages":"3"},
+    {"code":"WP","name":"Wettable Powder","category":"Dry / solid","system":"Suspension","advantages":["No solvent","Temperature stable"],"disadvantages":["Dust difficult to handle","Nozzle blockage, stirring"],"mixing":"Disperses in water to form a suspension; agitation/stirring is relevant.","visual":"suspension","pages":"4"},
+    {"code":"G","name":"Granules","category":"Dry / solid","system":"Soil / granule application","advantages":["Long term effect","Cheap packaging"],"disadvantages":["Only in/on soil","Requires special equipment, rain/irrigation"],"mixing":"Not presented as a conventional spray-tank dilution in the source table.","visual":"granule","pages":"4"},
+    {"code":"WDG","name":"Water-dispersible Granules","category":"Dry / solid","system":"Suspension","advantages":["Minimal dust","Convenient handling","Minimum packaging"],"disadvantages":["Complicated manufacture","Nozzle blockage"],"mixing":"Disperses in water to form a suspension.","visual":"suspension","pages":"5"},
+    {"code":"T","name":"Tablets","category":"Dry / solid","system":"Application unit","advantages":["Convenient application","Precise dosing","Minimum packaging"],"disadvantages":["Only for highly active a.i.s"],"mixing":"Source presents tablets as a convenient application format.","visual":"tablet","pages":"5"},
+    {"code":"SL","name":"Soluble Concentrate","category":"Liquid solution / suspension","system":"Solution","advantages":["Easy production","Low cost","No precipitation"],"disadvantages":["Soluble ai salts may have lower biological activity than their esters","Requires spreader"],"mixing":"Dissolves to form a clear solution.","visual":"solution","pages":"6"},
+    {"code":"SC","name":"Suspension Concentrate","category":"Liquid solution / suspension","system":"Suspension","advantages":["No solvent","High load","Reduced toxicity (water based)"],"disadvantages":["Complicated manufacturing procedure","Often poor storage stability","Potential tank mix compatibility issues","Residues"],"mixing":"Particles remain dispersed/suspended in the spray solution.","visual":"suspension","pages":"7"},
+    {"code":"EC","name":"Emulsifiable Concentrate","category":"Liquid formulation — emulsion","system":"Emulsion","advantages":["Ease of manufacture","High efficacy, low precipitation, little residue"],"disadvantages":["Based on solvents","Requires stirring","Risk of phytotoxicity"],"mixing":"The source states: active ingredient dissolved in oil becomes an emulsion in the spray tank.","visual":"emulsion","pages":"8","droplet":"0.1–10 µm"},
+    {"code":"EW","name":"Oil-in-water Emulsion (Emulsion concentrate)","category":"Liquid formulation — emulsion","system":"Emulsion","advantages":["High efficacy","Minimal solvent content","Water-based"],"disadvantages":["Difficult manufacture","Complex recipe"],"mixing":"The source states: active ingredient dissolved in oil in water is already a concentrated emulsion and is diluted in the spray tank.","visual":"emulsion","pages":"9","droplet":"0.1–10 µm"},
+    {"code":"ME","name":"Microemulsion","category":"Liquid formulation — emulsion","system":"Microemulsion","advantages":["Ease of manufacture","Water based","Very stable"],"disadvantages":["Expensive (materials)","Low loading","High surfactant (foaming)"],"mixing":"Presented as a water-based microemulsion with very small emulsion droplets.","visual":"microemulsion","pages":"10","droplet":"<100 nm"}
+  ]
+}

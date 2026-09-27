@@ -1,0 +1,237 @@
+{
+  "policy": "Use real photos only when the source/license permits reuse. Keep attribution metadata with every asset.",
+  "preferred_sources": [
+    {
+      "source": "Wikimedia Commons",
+      "use": "Good candidate for reusable pest/disease/weed photos; verify the license of each individual file.",
+      "url": "https://commons.wikimedia.org/"
+    },
+    {
+      "source": "EPPO Global Database",
+      "use": "Excellent reference/photo discovery source, but EPPO photo pages state images are for educational purposes; obtain permission before commercial redistribution.",
+      "url": "https://gd.eppo.int/"
+    }
+  ],
+  "asset_record_fields": [
+    "entity_id",
+    "image_type",
+    "local_path",
+    "source_url",
+    "source_name",
+    "license",
+    "author",
+    "attribution",
+    "accessed_date",
+    "notes"
+  ],
+  "image_types": [
+    "hero",
+    "thumbnail",
+    "symptom",
+    "organism",
+    "life_cycle"
+  ],
+  "assets": {
+    "spodoptera-exigua": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.png",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.png",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "author": "Unknown author (file page)",
+      "attribution": "Spodoptera exigua larva feeding on Nicotiana attenuata — Wikimedia Commons, CC BY 2.5.",
+      "notes": "Real larva photo. Verify attribution text on the file page before redistribution."
+    },
+    "bemisia-tabaci": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bemisia_tabaci_from_USDA_2.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bemisia_tabaci_from_USDA_2.jpg",
+      "source_name": "Wikimedia Commons / USDA ARS",
+      "license": "Public domain",
+      "author": "See source page",
+      "attribution": "Bemisia tabaci — Wikimedia Commons source.",
+      "notes": "Stephen Ausmus / USDA ARS."
+    },
+    "phytophthora": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Phytophthora_infestans.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phytophthora_infestans.webp",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "author": "See source page",
+      "attribution": "Phytophthora infestans — Wikimedia Commons source.",
+      "notes": "Reference image of Phytophthora infestans."
+    },
+    "fusarium-cepae": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/K7725-1-sm.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:K7725-1-sm.jpg",
+      "source_name": "Wikimedia Commons / USDA",
+      "license": "Public domain",
+      "author": "Keith Weller / USDA-ARS",
+      "attribution": "Plant-pathogenic strain of Fusarium oxysporum — Keith Weller, USDA-ARS, public domain.",
+      "notes": "Generic F. oxysporum reference image; not a shallot-specific symptom photo."
+    },
+    "echinochloa": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Echinochloa_crus-galli.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Echinochloa_crus-galli.jpg",
+      "source_name": "Wikimedia Commons / USDA-NRCS",
+      "license": "Public domain",
+      "author": "See source page",
+      "attribution": "Echinochloa crus-galli — Wikimedia Commons source.",
+      "notes": "Robert H. Mohlenbrock / USDA-NRCS."
+    },
+    "plutella-xylostella": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Plutella.xylostella.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plutella.xylostella.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 2.5/3.0",
+      "author": "See source page",
+      "attribution": "Plutella xylostella — Wikimedia Commons source.",
+      "notes": "James K. Lindsey; diamondback moth."
+    },
+    "aphis-gossypii": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aphis_gossypii.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aphis_gossypii.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "author": "See source page",
+      "attribution": "Aphis gossypii — Wikimedia Commons source.",
+      "notes": "Seo Hong-ryeol; Aphis gossypii."
+    },
+    "spodoptera-litura": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_litura_larvae.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_litura_larvae.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "verify license on file page",
+      "author": "See source page",
+      "attribution": "Spodoptera litura — Wikimedia Commons source.",
+      "notes": "Larval photo; check current file license."
+    },
+    "downy": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Peronospora_destructor.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peronospora_destructor.JPG",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 / CC BY 3.0 US",
+      "author": "See source page",
+      "attribution": "Peronospora spp. — Wikimedia Commons source.",
+      "notes": "Howard F. Schwartz / Bugwood; downy mildew on onion."
+    },
+    "rhizoctonia": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rhizoctonia_solani.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rhizoctonia_solani.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 3.0 US",
+      "author": "See source page",
+      "attribution": "Rhizoctonia solani — Wikimedia Commons source.",
+      "notes": "David B. Langston / University of Georgia / Bugwood."
+    },
+    "tomato-bacterial-wilt": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ralstonia_solanacearum_symptoms.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ralstonia_solanacearum_symptoms.jpg",
+      "source_name": "Wikimedia Commons / USDA",
+      "license": "Public domain",
+      "author": "See source page",
+      "attribution": "Ralstonia solanacearum species complex — Wikimedia Commons source.",
+      "notes": "Tomato bacterial wilt symptoms."
+    },
+    "alternaria": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alternaria_porri.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alternaria_porri.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "author": "See source page",
+      "attribution": "Alternaria spp. — Wikimedia Commons source.",
+      "notes": "New Zealand Fungal and Plant Disease Collection (PDD) / Landcare Research."
+    },
+    "downy-cucurbits": {
+      "image_type": "symptom",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pseudoperonospora_cubensis_147541589.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pseudoperonospora_cubensis_147541589.jpg",
+      "source_name": "Wikimedia Commons / iNaturalist",
+      "license": "CC BY 4.0",
+      "author": "See source page",
+      "attribution": "Pseudoperonospora cubensis — Wikimedia Commons source.",
+      "notes": "Nathan T. Jones / iNaturalist; cucurbit downy mildew."
+    },
+    "cyperus": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cyperus_iria_(2724216169).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/Category:Cyperus_iria",
+      "source_name": "Wikimedia Commons",
+      "license": "verify license on file page",
+      "author": "See source page",
+      "attribution": "Cyperus rotundus — Wikimedia Commons source.",
+      "notes": "Cyperus iria category; selected photo file."
+    },
+    "monochoria": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Monochoria_vaginalis_(5781099211).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monochoria_vaginalis_(5781099211).jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "author": "See source page",
+      "attribution": "Monochoria vaginalis — Wikimedia Commons source.",
+      "notes": "Dinesh Valke; Monochoria vaginalis."
+    },
+    "ostrinia-nubilalis": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ostrinia_nubilalis.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ostrinia_nubilalis.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "author": "See source page",
+      "attribution": "Ostrinia nubilalis — Wikimedia Commons, lihat lisensi file.",
+      "accessed_date": "2026-09-22",
+      "notes": "Foto nyata; ikuti lisensi/atribusi pada halaman file sebelum redistribusi."
+    },
+    "ustilago-maydis": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ustilago_maydis_J1a.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ustilago_maydis_J1a.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "Periksa halaman sumber",
+      "author": "See source page",
+      "attribution": "Ustilago maydis — Wikimedia Commons.",
+      "accessed_date": "2026-09-22",
+      "notes": "Foto nyata; ikuti lisensi/atribusi pada halaman file sebelum redistribusi."
+    },
+    "alternaria-porri": {
+      "image_type": "organism",
+      "local_path": "",
+      "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alternaria_porri.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alternaria_porri.jpg",
+      "source_name": "Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "author": "See source page",
+      "attribution": "Alternaria porri — New Zealand Fungal and Plant Disease Collection / Wikimedia Commons, CC BY 3.0.",
+      "accessed_date": "2026-09-22",
+      "notes": "Foto nyata; ikuti lisensi/atribusi pada halaman file sebelum redistribusi."
+    }
+  }
+}

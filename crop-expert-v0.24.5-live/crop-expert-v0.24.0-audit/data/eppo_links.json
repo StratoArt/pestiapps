@@ -1,0 +1,16 @@
+{
+  "purpose": "External reference links to EPPO Global Database photo pages. No EPPO photos are copied into this project.",
+  "policy": "Open the original EPPO page; do not mirror or redistribute EPPO photos without permission.",
+  "links": {
+    "spodoptera-exigua": {
+      "code": "LAPHEG",
+      "url": "https://gd.eppo.int/taxon/LAPHEG/photos",
+      "name": "Spodoptera exigua"
+    },
+    "fusarium-cepae": {
+      "code": "FUSACE",
+      "url": "https://gd.eppo.int/taxon/FUSACE/photos",
+      "name": "Fusarium oxysporum f. sp. cepae"
+    }
+  }
+}

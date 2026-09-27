@@ -1,0 +1,31 @@
+{
+  "version": "0.13.3",
+  "new_sources": [
+    "fusarium-watermelon-seminis-2016",
+    "mechanism-of-action-bioscience",
+    "formulation-types-adjuvants-bioscience",
+    "formulation-types-essentials-bioscience",
+    "insecticide-formulation-moa-bioscience",
+    "formulation-adjuvants-bioscience",
+    "formulation-application-bioscience",
+    "insecticide-mechanisms-bioscience",
+    "tabel-hama-indonesia",
+    "irac-nematicides-2026",
+    "irac-pests-2026",
+    "irac-lepidoptera-poster-2025",
+    "irac-target-site-poster",
+    "eppo-cucurbits-pp2-032",
+    "eppo-solanaceous-pp2-030"
+  ],
+  "extracted_files": [
+    "agrobiology_knowledge.json",
+    "fusarium_watermelon.json",
+    "hama_source_table.json",
+    "irac_nematicides_2026.json",
+    "irac_pests_2026.json",
+    "irac_target_site_map.json",
+    "irm_spodoptera_exigua_2025.json",
+    "crop_guidelines.json"
+  ],
+  "source_policy": "Source-derived knowledge is kept separate from current IRAC/FRAC/HRAC master classifications and from current Indonesian product registration. IRAC 2026 is the master for current MoA; EPPO and older posters are contextual/source-derived layers."
+}
