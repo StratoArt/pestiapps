@@ -301,12 +301,20 @@ function renderPests(){
   $$('#pestTabs button').forEach(b=>b.classList.toggle('active',b.dataset.pestFilter===state.pestFilter));
 }
 function renderDiseases(){
-  $('#diseaseList').innerHTML=state.opt.diseases.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
-  $$('#diseaseList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.diseases.find(x=>x.id===b.dataset.id),'Penyakit')));
+  const filter=state.diseaseFilter||'Semua';
+  let list=state.opt.diseases;
+  if(filter!=='Semua') list=list.filter(x=>String(x.category||'').toLowerCase()===filter.toLowerCase());
+  $('#diseaseList').innerHTML=list.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
+  $$( '#diseaseList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.diseases.find(x=>x.id===b.dataset.id),'Penyakit')));
+  $$( '#diseaseTabs button').forEach(b=>b.classList.toggle('active',b.dataset.diseaseFilter===filter));
 }
 function renderWeeds(){
-  $('#weedList').innerHTML=state.opt.weeds.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
-  $$('#weedList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.weeds.find(x=>x.id===b.dataset.id),'Gulma')));
+  const filter=state.weedFilter||'Semua';
+  let list=state.opt.weeds;
+  if(filter!=='Semua') list=list.filter(x=>String(x.category||'').toLowerCase()===filter.toLowerCase());
+  $('#weedList').innerHTML=list.map(x=>`<button class="opt-card" data-id="${esc(x.id)}">${photoThumb(x)}<div class="opt-main"><h3>${esc(x.name)}</h3><p>${esc(x.common)}</p><small>${esc(x.category)}${x.classification_group?` · ${esc(x.classification_group)}`:''}</small></div><span class="arrow">›</span></button>`).join('');
+  $$( '#weedList .opt-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(state.opt.weeds.find(x=>x.id===b.dataset.id),'Gulma')));
+  $$( '#weedTabs button').forEach(b=>b.classList.toggle('active',b.dataset.weedFilter===filter));
 }
 function renderCrops(){
   $('#cropGrid').innerHTML=state.opt.crops.map(x=>`<button class="crop-card" data-id="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.latin)}</small></button>`).join('');
@@ -794,7 +802,7 @@ function showScreen(id,opts={}){
   $$('.screen').forEach(s=>s.classList.toggle('active-screen',s.id===id));
   $$('.bottom-nav button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));
   state.screen=id; if(id==='explore')render();
-  if(id==='pesticide-moa')renderPesticideMoa(); if(id==='types')renderTypes(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary(); if(id==='pesticides')renderPesticides(); if(id==='nutrition')renderNutrition(); if(id==='crop-guidelines')renderCropGuidelines();
+  if(id==='pesticide-moa')renderPesticideMoa(); if(id==='types')renderTypes(); if(id==='disease')renderDiseases(); if(id==='weed')renderWeeds(); if(id==='calculators'&&window.renderCalculator)window.renderCalculator(); if(id==='pests')renderPests(); if(id==='formulations')renderFormulations(); if(id==='knowledge')renderKnowledge(); if(id==='sources')renderSources(); if(id==='library')renderLibrary(); if(id==='pesticides')renderPesticides(); if(id==='nutrition')renderNutrition(); if(id==='crop-guidelines')renderCropGuidelines();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function setCommittee(c){state.committee=c;state.moaView='ai';state.group='ALL';state.search='';$('#search').value='';$$('.committee-tabs button').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render()}
@@ -805,6 +813,7 @@ $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
 }));
 $$('.committee-tabs button').forEach(b=>b.addEventListener('click',()=>setCommittee(b.dataset.c)));
 $$('.mini-tabs button[data-type]').forEach(b=>b.addEventListener('click',()=>{state.type=b.dataset.type;$$('.mini-tabs button[data-type]').forEach(x=>x.classList.toggle('active',x===b));renderTypes()}));
+$$('#diseaseTabs button[data-disease-filter]').forEach(b=>b.addEventListener('click',()=>{state.diseaseFilter=b.dataset.diseaseFilter;renderDiseases()}));\n$$('#weedTabs button[data-weed-filter]').forEach(b=>b.addEventListener('click',()=>{state.weedFilter=b.dataset.weedFilter;renderWeeds()}));
 $('#search').addEventListener('input',e=>{state.search=e.target.value;state.moaView==='emerging'?renderEmerging():renderList()});$('#clearSearch').addEventListener('click',()=>{$('#search').value='';state.search='';state.moaView==='emerging'?renderEmerging():renderList()});$('#focusSearch').addEventListener('click',()=>$('#search').focus());
 $('#optSearch').addEventListener('input',e=>{
   const q=e.target.value.toLowerCase();

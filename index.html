@@ -34,7 +34,7 @@
   </div>
 
   <div class="home-grid">
-    <button class="feature-card green" data-go="types"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
+    <button class="feature-card green" data-go="pests"><span class="feature-icon image-icon"><img src="assets/opt/category-pest.svg" alt=""></span><span><strong>Hama</strong><small>Insect · Mite · Nematode</small></span><i>›</i></button>
     <button class="feature-card coral" data-go="disease"><span class="feature-icon image-icon"><img src="assets/opt/category-disease.svg" alt=""></span><span><strong>Penyakit</strong><small>Fungi · Bacteria · Virus</small></span><i>›</i></button>
     <button class="feature-card grass" data-go="weed"><span class="feature-icon image-icon"><img src="assets/opt/category-weed.svg" alt=""></span><span><strong>Gulma</strong><small>Grass · Broadleaf · Sedge</small></span><i>›</i></button>
     <button class="feature-card blue" data-go="explore"><span class="feature-icon image-icon"><img src="assets/ui/chemistry-flask.svg" alt=""></span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC</small></span><i>›</i></button>
@@ -71,13 +71,13 @@
 
 <section id="disease" class="screen">
   <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Penyakit</strong><small>Fungi · Bacteria · Virus · Oomycete</small></div><button class="icon-button light">⌕</button></div>
-  <div class="mini-tabs"><button class="active">Semua</button><button>Fungi</button><button>Bacteria</button><button>Virus</button></div>
+  <div id="diseaseTabs" class="mini-tabs"><button class="active" data-disease-filter="Semua">Semua</button><button data-disease-filter="Jamur">Jamur</button><button data-disease-filter="Jamur Basah">Jamur Basah</button><button data-disease-filter="Bakteri">Bakteri</button><button data-disease-filter="Virus">Virus</button></div>
   <div id="diseaseList" class="opt-list"></div>
 </section>
 
 <section id="weed" class="screen">
   <div class="section-head"><button class="back-button" data-go="types">←</button><div><strong>Gulma</strong><small>Grass · Broadleaf · Sedge · Aquatic</small></div><button class="icon-button light">⌕</button></div>
-  <div class="mini-tabs"><button class="active">Semua</button><button>Grass</button><button>Broadleaf</button><button>Sedge</button></div>
+  <div id="weedTabs" class="mini-tabs"><button class="active" data-weed-filter="Semua">Semua</button><button data-weed-filter="Rumput">Rumput</button><button data-weed-filter="Daun Lebar">Daun Lebar</button><button data-weed-filter="Daun Sempit">Daun Sempit</button></div>
   <div id="weedList" class="opt-list"></div>
 </section>
 
