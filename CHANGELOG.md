@@ -1,0 +1,23 @@
+# Changelog
+
+## v0.24.9
+- Perbaikan visual OPT Spodoptera exigua dan Spodoptera litura.
+- Foto user-provided dipisahkan per entity dan tahap.
+- Fallback ilustrasi Thrips tidak lagi dipakai untuk S. exigua/S. litura.
+- Siklus hidup dibuat tahan terhadap data `life_cycle_reference` maupun `life`.
+- Perbaikan mobile layout Cara Kerja Pestisida.
+- Resize ilustrasi Target Sites untuk layar HP.
+- Detail Target Site menampilkan target molekuler/proses, kelompok IRAC, dan contoh bahan aktif.
+- Detail mode of entry menampilkan contoh bahan aktif/agen.
+- Database MoA dinaikkan ke 2026.2.
+- Version tracking ditambahkan melalui `VERSION`.
+
+### v0.24.9 — FAW visual update
+- Tambah alias **Fall Armyworm (FAW)** untuk `Spodoptera frugiperda`.
+- Tambah visual larva FAW, referensi ciri larva, dan ilustrasi siklus hidup.
+- Seluruh aset FAW dikunci ke entity `spodoptera-frugiperda`.
+
+### v0.24.9 — Larva thumbnail & white stem borer visuals
+- Tambah foto gejala whitehead/beluk dan foto larva user-provided untuk `Scirpophaga innotata`.
+- Foto larva `Scirpophaga innotata` menjadi thumbnail utama penggerek batang padi putih.
+- `photoThumb()` kini memprioritaskan aset dengan `stage: larva` untuk thumbnail; berlaku juga untuk OPT lain yang sudah memiliki foto larva lokal.

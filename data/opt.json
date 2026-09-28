@@ -128,20 +128,40 @@
       "notes": "Hama penting pada bawang dan beberapa tanaman sayuran.",
       "images": [
         {
-          "image_type": "organism",
-          "local_path": "",
-          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_exigua.JPG",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.JPG",
-          "attribution": "Wikimedia Commons — public domain",
-          "notes": "Foto referensi berlisensi/sumber publik; cek halaman sumber untuk ketentuan penggunaan."
-        },
-        {
-          "image_type": "ai_illustration",
-          "local_path": "assets/opt/photos/spodoptera-exigua.webp",
+          "image_type": "symptom_reference",
+          "stage": "gejala",
+          "local_path": "assets/opt/photos/spodoptera-exigua-symptom.webp",
           "remote_url": "",
           "source_url": "",
-          "attribution": "Crop Expert — ilustrasi AI",
-          "notes": "Ilustrasi AI untuk pembelajaran bentuk/gejala; BUKAN foto diagnostik."
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto gejala serangan pada bawang; digunakan sebagai visual lapangan dan bukan penentu spesies secara tunggal."
+        },
+        {
+          "image_type": "organism",
+          "stage": "imago",
+          "local_path": "assets/opt/photos/spodoptera-exigua-adult.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto imago yang diberikan pengguna."
+        },
+        {
+          "image_type": "organism",
+          "stage": "larva",
+          "local_path": "assets/opt/photos/spodoptera-exigua-larva.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto larva yang diberikan pengguna."
+        },
+        {
+          "image_type": "lifecycle",
+          "stage": "lifecycle",
+          "local_path": "assets/opt/photos/spodoptera-exigua-lifecycle.jpg",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Ilustrasi pengguna — Crop Expert",
+          "notes": "Ilustrasi siklus hidup Spodoptera exigua pada bawang merah."
         }
       ],
       "eppo": {
@@ -156,9 +176,9 @@
           "Telur",
           "Larva",
           "Pupa",
-          "Dewasa"
+          "Imago"
         ],
-        "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
+        "source_note": "Siklus disederhanakan untuk pembelajaran; durasi aktual dipengaruhi suhu, inang, varietas dan kondisi lapangan."
       },
       "description": "Ulat bawang adalah larva ngengat yang merusak jaringan daun dengan menggerek/mengikis permukaan dan membuat lubang. Pada bawang merah, kerusakan berat mengurangi luas daun aktif sehingga pembentukan dan pengisian umbi dapat terganggu.",
       "diagnostic": "Cari telur/larva pada daun, lubang tidak beraturan, serta kotoran (frass). Larva sering lebih aktif sore–malam.",
@@ -175,7 +195,7 @@
     {
       "id": "spodoptera-frugiperda",
       "name": "Spodoptera frugiperda",
-      "common": "Fall armyworm / ulat grayak jagung",
+      "common": "Fall Armyworm (FAW) / ulat grayak jagung",
       "category": "Lepidoptera",
       "family": "Noctuidae",
       "icon": "spodoptera.svg",
@@ -194,7 +214,39 @@
         "Imago"
       ],
       "notes": "Sering menyerang titik tumbuh jagung.",
-      "images": []
+      "images": [
+        {
+          "image_type": "organism",
+          "stage": "larva",
+          "local_path": "assets/opt/photos/spodoptera-frugiperda-larva.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto larva Spodoptera frugiperda yang diberikan pengguna."
+        },
+        {
+          "image_type": "species_reference",
+          "stage": "larva",
+          "local_path": "assets/opt/photos/spodoptera-frugiperda-characteristics.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Ilustrasi pengguna — Crop Expert",
+          "notes": "Ilustrasi ciri morfologi larva Fall Armyworm (FAW); digunakan sebagai referensi visual, bukan satu-satunya dasar identifikasi."
+        },
+        {
+          "image_type": "lifecycle",
+          "stage": "lifecycle",
+          "local_path": "assets/opt/photos/spodoptera-frugiperda-lifecycle.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Ilustrasi pengguna — Crop Expert",
+          "notes": "Ilustrasi siklus hidup Fall Armyworm (FAW): telur, larva, pupa, dan imago."
+        }
+      ],
+      "aliases": [
+        "FAW",
+        "Fall Armyworm"
+      ]
     },
     {
       "id": "plutella-xylostella",
@@ -729,6 +781,86 @@
       ]
     },
     {
+      "id": "scirpophaga-innotata",
+      "name": "Scirpophaga innotata",
+      "common": "Penggerek batang padi putih / Rice white stem borer",
+      "category": "Lepidoptera",
+      "family": "Crambidae",
+      "icon": "lepidoptera.svg",
+      "hosts": [
+        "Padi"
+      ],
+      "symptoms": [
+        "Sundep (deadheart) pada fase vegetatif",
+        "Beluk / whitehead pada fase generatif",
+        "Batang terserang mudah dicabut",
+        "Panikel dapat gagal muncul atau menghasilkan gabah putih/hampa"
+      ],
+      "life": [
+        "Telur",
+        "Larva",
+        "Pupa",
+        "Imago"
+      ],
+      "notes": "Larva menggerek di antara pelepah dan batang menuju titik tumbuh. Sumber PPPW mencatat larva dapat mengalami diapause; identifikasi perlu hati-hati karena gejalanya mirip dengan penggerek batang padi lain, termasuk S. incertulas.",
+      "diagnostic": "Dibedakan dari S. incertulas antara lain dengan ciri sayap depan; PPPW mencatat S. innotata tidak memiliki bintik pada sayap depan. Identifikasi spesies tetap sebaiknya dikonfirmasi oleh ahli taksonomi karena beberapa penggerek batang padi memiliki gejala yang sangat mirip.",
+      "life_cycle_reference": {
+        "stages": [
+          "Telur",
+          "Larva",
+          "Pupa",
+          "Imago"
+        ],
+        "duration_notes": "Telur sekitar 1 minggu hingga menetas; perkembangan larva sekitar 20–30 hari pada kondisi yang mendukung; pupa sekitar 6–9 hari. Larva dapat mengalami diapause selama kondisi tidak sesuai.",
+        "source_note": "Pacific Pests, Pathogens, Weeds & Pesticides (PPPW v13), Fact Sheet 411."
+      },
+      "images": [
+        {
+          "image_type": "symptom_reference",
+          "stage": "gejala",
+          "local_path": "assets/opt/photos/scirpophaga-innotata-whitehead.webp",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Foto pengguna (user-provided)",
+          "license": "User-provided",
+          "author": "",
+          "attribution": "Foto pengguna: gejala whitehead / beluk pada padi.",
+          "notes": "Foto pengguna untuk referensi gejala whitehead / beluk. Gejala whitehead dapat terjadi akibat penggerek batang dan tidak sendirinya memastikan spesies."
+        },
+        {
+          "image_type": "organism",
+          "stage": "larva",
+          "local_path": "assets/opt/photos/scirpophaga-innotata-larva.webp",
+          "remote_url": "",
+          "source_url": "",
+          "source_name": "Foto pengguna (user-provided)",
+          "license": "User-provided",
+          "author": "",
+          "attribution": "Foto pengguna: larva penggerek batang padi putih.",
+          "notes": "Foto larva user-provided; dipakai sebagai thumbnail utama entity ini."
+        },
+        {
+          "image_type": "organism",
+          "stage": "imago",
+          "local_path": "",
+          "remote_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Scirpophaga_innotata_%28ento-csiro-au%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Scirpophaga_innotata_(ento-csiro-au).jpg",
+          "source_name": "Wikimedia Commons / CSIRO",
+          "license": "Public domain (as stated on Wikimedia Commons file page)",
+          "author": "",
+          "attribution": "Scirpophaga innotata (ento-csiro-au).jpg — Wikimedia Commons; public domain status stated on file page.",
+          "notes": "Ilustrasi imago. Gunakan sebagai referensi visual; local_path sengaja kosong karena file tidak dimirror ke repository."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PPPW v13 Fact Sheet 411 — Rice white stem borer",
+          "url": "https://apps.lucidcentral.org/pppw_v13/text/web_full/entities/rice_white_stem_borer_411.htm",
+          "source": "Pacific Pests, Pathogens, Weeds & Pesticides"
+        }
+      ]
+    },
+    {
       "id": "chilo-suppressalis",
       "name": "Chilo suppressalis",
       "common": "Penggerek batang padi",
@@ -898,20 +1030,31 @@
       "notes": "Polifag dan menyerang banyak tanaman budidaya.",
       "images": [
         {
-          "image_type": "organism",
-          "local_path": "",
-          "remote_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spodoptera_litura_larvae.jpg",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Spodoptera_litura_larvae.jpg",
-          "attribution": "Wikimedia Commons — CC BY-SA 4.0",
-          "notes": "Foto larva Spodoptera litura; cek halaman sumber untuk lisensi."
-        },
-        {
-          "image_type": "ai_illustration",
-          "local_path": "assets/opt/photos/spodoptera-litura.webp",
+          "image_type": "symptom_reference",
+          "stage": "gejala",
+          "local_path": "assets/opt/photos/spodoptera-exigua-symptom.webp",
           "remote_url": "",
           "source_url": "",
-          "attribution": "Crop Expert — ilustrasi AI",
-          "notes": "Ilustrasi AI, bukan foto diagnostik."
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto gejala serangan pada bawang yang juga dapat digunakan sebagai contoh gejala lapangan S. litura; gejala bersifat tumpang tindih dan tidak menentukan spesies secara tunggal."
+        },
+        {
+          "image_type": "organism",
+          "stage": "imago",
+          "local_path": "assets/opt/photos/spodoptera-litura-adult.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto imago S. litura yang diberikan pengguna."
+        },
+        {
+          "image_type": "organism",
+          "stage": "larva",
+          "local_path": "assets/opt/photos/spodoptera-litura-larva.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto larva S. litura yang diberikan pengguna."
         }
       ],
       "life_cycle_reference": {
@@ -919,9 +1062,9 @@
           "Telur",
           "Larva",
           "Pupa",
-          "Dewasa"
+          "Imago"
         ],
-        "source_note": "Urutan siklus disederhanakan untuk pembelajaran; durasi aktual bergantung suhu, inang, varietas dan kondisi lapangan."
+        "source_note": "Siklus disederhanakan untuk pembelajaran; durasi aktual dipengaruhi suhu, inang, varietas dan kondisi lapangan."
       }
     },
     {
@@ -1199,6 +1342,24 @@
           "source_url": "",
           "attribution": "Crop Expert — ilustrasi AI",
           "notes": "Ilustrasi AI untuk pembelajaran bentuk/gejala; BUKAN foto diagnostik."
+        },
+        {
+          "image_type": "lifecycle",
+          "stage": "lifecycle",
+          "local_path": "assets/opt/photos/thrips-tabaci-lifecycle.jpg",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Ilustrasi pengguna — Crop Expert",
+          "notes": "Ilustrasi siklus hidup Thrips tabaci pada bawang merah."
+        },
+        {
+          "image_type": "organism",
+          "stage": "imago",
+          "local_path": "assets/opt/photos/thrips-tabaci-adult.webp",
+          "remote_url": "",
+          "source_url": "",
+          "attribution": "Foto pengguna — Crop Expert",
+          "notes": "Foto imago Thrips tabaci yang diberikan pengguna."
         }
       ],
       "life_cycle_reference": {

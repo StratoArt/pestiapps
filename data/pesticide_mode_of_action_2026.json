@@ -1,47 +1,315 @@
 {
-  "version": "2026.1",
+  "version": "2026.2",
   "title": "Cara Kerja Pestisida",
   "description": "Panduan visual untuk memahami bagaimana insektisida, fungisida dan herbisida mencapai target, mengganggu proses biologis dan menghasilkan gejala/efek pada organisme sasaran.",
   "sources": [
-    {"id":"IRAC","title":"IRAC Mode of Action Classification v11.5 (Feb 2026)","url":"https://irac-online.org/mode-of-action/"},
-    {"id":"FRAC","title":"FRAC Code List 2026 & background information","url":"https://www.frac.info/publications/all-downloads/"},
-    {"id":"HRAC","title":"HRAC Global Herbicide MoA Classification 2026","url":"https://hracglobal.com/tools/2026-hrac-global-herbicide-moa-classification"},
-    {"id":"AGROBIOLOGY","title":"Insecticide / Fungicide / Herbicide Mechanisms — sumber pengguna","url":""}
+    {
+      "id": "IRAC",
+      "title": "IRAC Mode of Action Classification v11.5 (Feb 2026)",
+      "url": "https://irac-online.org/mode-of-action/"
+    },
+    {
+      "id": "FRAC",
+      "title": "FRAC Code List 2026 & background information",
+      "url": "https://www.frac.info/publications/all-downloads/"
+    },
+    {
+      "id": "HRAC",
+      "title": "HRAC Global Herbicide MoA Classification 2026",
+      "url": "https://hracglobal.com/tools/2026-hrac-global-herbicide-moa-classification"
+    },
+    {
+      "id": "AGROBIOLOGY",
+      "title": "Insecticide / Fungicide / Herbicide Mechanisms — sumber pengguna",
+      "url": ""
+    }
   ],
   "insecticide": {
-    "title":"Insektisida",
-    "subtitle":"Dari jalan masuk → jaringan sasaran → target molekuler → efek pada hama",
+    "title": "Insektisida",
+    "subtitle": "Dari jalan masuk → jaringan sasaran → target molekuler → efek pada hama",
     "entry": [
-      {"id":"contact","title":"Kontak", "body":"Bahan aktif mengenai permukaan tubuh/integrument dan dapat menembus kutikula sesuai sifat fisikokimianya."},
-      {"id":"stomach","title":"Ingesti / stomach", "body":"Bahan aktif tertelan melalui mouthparts dan masuk ke saluran pencernaan; penting untuk hama pemakan."},
-      {"id":"spiracle","title":"Spirakel / uap", "body":"Sebagian bahan atau formulasi dapat masuk melalui sistem pernapasan serangga dalam konteks penggunaan yang sesuai label."},
-      {"id":"systemic","title":"Systemic / ingestion dari tanaman", "body":"Bahan aktif diserap tanaman dan dapat mencapai jaringan yang dimakan hama, tergantung sifat bahan aktif dan sistem transport tanaman."}
+      {
+        "id": "contact",
+        "title": "Kontak",
+        "body": "Bahan aktif mengenai permukaan tubuh/integument dan dapat menembus kutikula sesuai sifat fisikokimia, formulasi dan kondisi aplikasi.",
+        "examples": [
+          "Bifenthrin — IRAC 3A",
+          "Lambda-cyhalothrin — IRAC 3A",
+          "Fipronil — IRAC 2B",
+          "Broflanilide — IRAC 30",
+          "Chlorantraniliprole — IRAC 28"
+        ]
+      },
+      {
+        "id": "stomach",
+        "title": "Ingesti / stomach",
+        "body": "Bahan aktif tertelan melalui mouthparts dan masuk ke saluran pencernaan. Jalur ini penting pada hama yang aktif makan.",
+        "examples": [
+          "Spinosad — IRAC 5",
+          "Emamectin benzoate — IRAC 6",
+          "Indoxacarb — IRAC 22A",
+          "Chlorantraniliprole — IRAC 28",
+          "Tetraniliprole — IRAC 28",
+          "Bt — IRAC 11"
+        ]
+      },
+      {
+        "id": "spiracle",
+        "title": "Spirakel / uap",
+        "body": "Pada bahan atau formulasi tertentu, paparan dapat terjadi melalui sistem pernapasan/spirakel. Relevansi jalur ini bergantung pada bahan, formulasi dan label penggunaan.",
+        "examples": [
+          "Phosphine — IRAC 24A",
+          "Sulfuryl fluoride — IRAC 8C"
+        ]
+      },
+      {
+        "id": "systemic",
+        "title": "Systemic / ingestion dari tanaman",
+        "body": "Bahan aktif diserap tanaman dan dapat mencapai jaringan yang dimakan hama. Systemic adalah sifat perpindahan/eksposur, bukan kelompok IRAC.",
+        "examples": [
+          "Imidacloprid — IRAC 4A",
+          "Thiamethoxam — IRAC 4A",
+          "Acetamiprid — IRAC 4A",
+          "Spirotetramat — IRAC 23",
+          "Cyantraniliprole — IRAC 28"
+        ]
+      }
     ],
     "targets": [
-      {"id":"nerve","label":"Saraf & otot", "short":"Nerve / Muscle", "color":"#0b6fa4", "description":"Target pada sistem saraf atau otot. IRAC menempatkan banyak insektisida pada kategori ini; secara umum kelompok ini cenderung bekerja relatif cepat.", "examples":"AChE inhibitors; GABA-gated chloride channel modulators/antagonists; sodium channel modulators; nAChR agonists; GluCl agonists; ryanodine receptor modulators", "groups":"IRAC 1, 2, 3, 4, 5, 6, 28 dan kelompok saraf/otot lain sesuai klasifikasi"},
-      {"id":"midgut","label":"Usus tengah / Midgut", "short":"Midgut", "color":"#2f8f5b", "description":"Target utama pada epitel usus tengah. Contoh penting adalah toksin mikroba spesifik Lepidoptera yang bekerja setelah tertelan.", "examples":"Microbial midgut disruptors", "groups":"IRAC 11"},
-      {"id":"growth","label":"Pertumbuhan & kutikula", "short":"Growth / Development", "color":"#b48a2b", "description":"Mengganggu hormon perkembangan, pembentukan/deposisi kutikula atau proses fisiologis yang diperlukan untuk moulting dan perkembangan.", "examples":"Juvenile hormone mimics; ecdysone receptor agonists; chitin biosynthesis inhibitors; lipid biosynthesis inhibitors", "groups":"IRAC 7, 10, 15, 16, 17 dan kelompok terkait"},
-      {"id":"respiration","label":"Respirasi / mitokondria", "short":"Respiration", "color":"#7b4aa6", "description":"Mengganggu rantai transport elektron atau fosforilasi oksidatif sehingga produksi energi sel terganggu.", "examples":"Complex I, III, IV inhibitors; ATP synthase inhibitors; oxidative phosphorylation disruptors", "groups":"IRAC 12, 13, 20, 21, 24, 25 dan kelompok energi lain"},
-      {"id":"protein","label":"Protein / proses lain", "short":"Protein & Other", "color":"#6f777c", "description":"Mencakup target yang lebih spesifik atau fungsi biologis lain yang tidak tepat dimasukkan hanya ke saraf, pertumbuhan, respirasi atau midgut.", "examples":"Protein suppressors; unknown/non-specific functions; physiological disruption", "groups":"IRAC kategori protein suppressors dan unknown/non-specific"}
+      {
+        "id": "nerve",
+        "label": "Saraf & otot",
+        "short": "Nerve & Muscle",
+        "color": "#0b6fa4",
+        "description": "Menargetkan sistem saraf, kanal ion, reseptor atau fungsi neuromuskular serangga. IRAC mengelompokkan sebagian besar insektisida berdasarkan target saraf/otot.",
+        "target": "AChE, GABA-gated chloride channels, sodium channels, nAChR, GluCl, ryanodine receptor, chordotonal organs, KCa2 dan VAChT.",
+        "groups": [
+          "IRAC 1",
+          "IRAC 2",
+          "IRAC 3",
+          "IRAC 4",
+          "IRAC 5",
+          "IRAC 6",
+          "IRAC 9",
+          "IRAC 14",
+          "IRAC 19",
+          "IRAC 22",
+          "IRAC 28",
+          "IRAC 29",
+          "IRAC 30",
+          "IRAC 32",
+          "IRAC 33",
+          "IRAC 36",
+          "IRAC 37"
+        ],
+        "actives": [
+          "Imidacloprid",
+          "Spinosad",
+          "Emamectin benzoate",
+          "Chlorantraniliprole",
+          "Tetraniliprole",
+          "Broflanilide",
+          "Fluxametamide",
+          "Indoxacarb",
+          "Flonicamid",
+          "Oxazosulfyl"
+        ],
+        "examples": "AChE inhibitors; GABA modulators; sodium channel modulators; nAChR modulators; GluCl; ryanodine receptor; chordotonal targets; VAChT"
+      },
+      {
+        "id": "growth",
+        "label": "Pertumbuhan & perkembangan",
+        "short": "Growth & Development",
+        "color": "#b48a2b",
+        "description": "Mengganggu hormon perkembangan, pergantian kulit, pembentukan kitin atau biosintesis lipid yang diperlukan untuk pertumbuhan dan metamorfosis.",
+        "target": "Juvenile hormone receptor, ecdysone receptor, CHS1/chitin biosynthesis dan acetyl-CoA carboxylase.",
+        "groups": [
+          "IRAC 7",
+          "IRAC 10",
+          "IRAC 15",
+          "IRAC 16",
+          "IRAC 17",
+          "IRAC 18",
+          "IRAC 23"
+        ],
+        "actives": [
+          "Pyriproxyfen",
+          "Fenoxycarb",
+          "Methoprene",
+          "Lufenuron",
+          "Novaluron",
+          "Buprofezin",
+          "Cyromazine",
+          "Methoxyfenozide",
+          "Spirotetramat"
+        ],
+        "examples": "Juvenile hormone receptor modulators; chitin biosynthesis inhibitors; moulting disruptors; ecdysone agonists; ACCase inhibitors"
+      },
+      {
+        "id": "respiration",
+        "label": "Respirasi / energi",
+        "short": "Respiration & Energy Metabolism",
+        "color": "#7b4aa6",
+        "description": "Mengganggu respirasi mitokondria, transpor elektron atau fosforilasi oksidatif sehingga produksi dan pemanfaatan energi sel terganggu.",
+        "target": "Mitochondrial ATP synthase dan electron transport complexes I, II, III dan IV.",
+        "groups": [
+          "IRAC 12",
+          "IRAC 13",
+          "IRAC 20",
+          "IRAC 21",
+          "IRAC 24",
+          "IRAC 25",
+          "IRAC 34"
+        ],
+        "actives": [
+          "Diafenthiuron",
+          "Chlorfenapyr",
+          "Hydramethylnon",
+          "Pyridaben",
+          "Phosphine",
+          "Cyenopyrafen",
+          "Flometoquin"
+        ],
+        "examples": "ATP synthase inhibitors; oxidative phosphorylation uncouplers; Complex I, II, III-Qo, III-Qi dan IV inhibitors"
+      },
+      {
+        "id": "midgut",
+        "label": "Usus tengah / Midgut",
+        "short": "Midgut",
+        "color": "#2f8f5b",
+        "description": "Menargetkan epitel atau proses biologis pada usus tengah. Contoh penting berasal dari toksin mikroba yang bekerja setelah tertelan.",
+        "target": "Membran/sel epitel midgut dan proses infeksi spesifik pada baculovirus.",
+        "groups": [
+          "IRAC 11",
+          "IRAC 31"
+        ],
+        "actives": [
+          "Bacillus thuringiensis",
+          "Cydia pomonella GV",
+          "Helicoverpa armigera NPV"
+        ],
+        "examples": "Microbial disruptors of insect midgut membranes; baculoviruses"
+      },
+      {
+        "id": "protein",
+        "label": "Protein suppressors",
+        "short": "Protein Suppressors",
+        "color": "#6f777c",
+        "description": "Menurunkan jumlah protein target tertentu melalui mekanisme RNA interference sehingga fungsi biologis penting pada hama terganggu.",
+        "target": "Target messenger RNA (mRNA) spesifik → penurunan protein target.",
+        "groups": [
+          "IRAC 35"
+        ],
+        "actives": [
+          "Ledprona"
+        ],
+        "examples": "RNA interference mediated target suppressors"
+      },
+      {
+        "id": "other",
+        "label": "Lainnya / belum pasti",
+        "short": "Unknown / Uncertain / Non-specific",
+        "color": "#8a8f98",
+        "description": "Kelompok dengan target atau mekanisme yang belum diketahui, belum pasti, atau bersifat non-spesifik/mechanical/physical.",
+        "target": "Target molekuler belum terkarakterisasi atau mekanisme tidak dikaitkan dengan satu target molekuler spesifik.",
+        "groups": [
+          "IRAC UN",
+          "IRAC UNB",
+          "IRAC UNE",
+          "IRAC UNF",
+          "IRAC UNM",
+          "IRAC UNP",
+          "IRAC UNV"
+        ],
+        "actives": [
+          "Azadirachtin",
+          "Beauveria bassiana",
+          "Metarhizium brunneum",
+          "Neem oil"
+        ],
+        "examples": "Compounds of unknown or uncertain MoA; bacterial/fungal agents; botanical agents; mechanical and physical disruptors"
+      }
     ],
     "neural": [
-      {"title":"AChE", "body":"Asetilkolinesterase mengakhiri sinyal asetilkolin pada sinaps. Penghambatan enzim ini menyebabkan akumulasi asetilkolin dan gangguan transmisi saraf.", "groups":"IRAC 1A/1B"},
-      {"title":"GABA-gated chloride channel", "body":"Modulasi kanal klorida terkait GABA mengubah transmisi inhibitori dan keseimbangan eksitasi sistem saraf.", "groups":"IRAC 2"},
-      {"title":"Sodium channel", "body":"Modulasi kanal natrium mengubah pembentukan dan penghantaran impuls listrik pada neuron.", "groups":"IRAC 3 dan 22"},
-      {"title":"nAChR", "body":"Agonis atau modulator alosterik reseptor asetilkolin nikotinik mengganggu transmisi kolinergik pada sinaps.", "groups":"IRAC 4 dan 5"},
-      {"title":"GluCl", "body":"Agonis kanal klorida yang diaktifkan glutamat meningkatkan hambatan saraf dan dapat menyebabkan kelumpuhan.", "groups":"IRAC 6"}
+      {
+        "title": "AChE",
+        "body": "Asetilkolinesterase mengakhiri sinyal asetilkolin pada sinaps. Penghambatan enzim ini menyebabkan akumulasi asetilkolin dan gangguan transmisi saraf.",
+        "groups": "IRAC 1A/1B"
+      },
+      {
+        "title": "GABA-gated chloride channel",
+        "body": "Modulasi kanal klorida terkait GABA mengubah transmisi inhibitori dan keseimbangan eksitasi sistem saraf.",
+        "groups": "IRAC 2"
+      },
+      {
+        "title": "Sodium channel",
+        "body": "Modulasi kanal natrium mengubah pembentukan dan penghantaran impuls listrik pada neuron.",
+        "groups": "IRAC 3 dan 22"
+      },
+      {
+        "title": "nAChR",
+        "body": "Agonis atau modulator alosterik reseptor asetilkolin nikotinik mengganggu transmisi kolinergik pada sinaps.",
+        "groups": "IRAC 4 dan 5"
+      },
+      {
+        "title": "GluCl",
+        "body": "Agonis kanal klorida yang diaktifkan glutamat meningkatkan hambatan saraf dan dapat menyebabkan kelumpuhan.",
+        "groups": "IRAC 6"
+      }
     ]
   },
   "fungicide": {
-    "title":"Fungisida",
-    "subtitle":"Pahami proses sel jamur: membran, dinding sel, respirasi, pembelahan, biosintesis dan multi-site",
+    "title": "Fungisida",
+    "subtitle": "Pahami proses sel jamur: membran, dinding sel, respirasi, pembelahan, biosintesis dan multi-site",
     "targets": [
-      {"id":"membrane","label":"Membran sel", "short":"Sterol / membrane", "description":"Mengganggu biosintesis sterol atau fungsi membran sehingga integritas dan fungsi membran sel jamur terganggu.", "examples":"DMI / SBI dan kelompok target sterol lainnya", "frac":"Contoh: FRAC 3 dan kelompok sterol lain"},
-      {"id":"respiration","label":"Mitokondria / respirasi", "short":"Respiration", "description":"Menghambat kompleks tertentu pada rantai respirasi atau pembentukan energi sel jamur.", "examples":"QoI, SDHI, QiI dan target respirasi lain", "frac":"Contoh: FRAC 7, 11, 21"},
-      {"id":"cellwall","label":"Dinding sel / biosintesis", "short":"Cell wall", "description":"Mengganggu pembentukan atau deposisi komponen dinding sel dan proses pertumbuhan hifa/spora.", "examples":"Cell wall / phospholipid-related targets", "frac":"Contoh: FRAC 40 untuk CAA pada oomycetes"},
-      {"id":"division","label":"Pembelahan & sitoskeleton", "short":"Cell division", "description":"Mengganggu mikrotubulus atau proses pembelahan sel yang diperlukan untuk pertumbuhan dan perkembangan patogen.", "examples":"Tubulin-related targets", "frac":"Contoh: FRAC 1 dan kelompok terkait"},
-      {"id":"nucleic","label":"Asam nukleat / protein", "short":"Nucleic acid / protein", "description":"Mengganggu biosintesis asam nukleat, protein atau proses seluler spesifik yang dibutuhkan patogen.", "examples":"RNA/DNA, protein biosynthesis and signaling targets", "frac":"Gunakan kode target-site FRAC pada master current"},
-      {"id":"multisite","label":"Multi-site", "short":"Multi-site", "description":"Beberapa target seluler dipengaruhi sekaligus sehingga mekanismenya tidak bergantung pada satu target molekuler tunggal.", "examples":"Protectant multisite fungicides", "frac":"FRAC M groups"}
+      {
+        "id": "membrane",
+        "label": "Membran sel",
+        "short": "Sterol / membrane",
+        "description": "Mengganggu biosintesis sterol atau fungsi membran sehingga integritas dan fungsi membran sel jamur terganggu.",
+        "examples": "DMI / SBI dan kelompok target sterol lainnya",
+        "frac": "Contoh: FRAC 3 dan kelompok sterol lain"
+      },
+      {
+        "id": "respiration",
+        "label": "Mitokondria / respirasi",
+        "short": "Respiration",
+        "description": "Menghambat kompleks tertentu pada rantai respirasi atau pembentukan energi sel jamur.",
+        "examples": "QoI, SDHI, QiI dan target respirasi lain",
+        "frac": "Contoh: FRAC 7, 11, 21"
+      },
+      {
+        "id": "cellwall",
+        "label": "Dinding sel / biosintesis",
+        "short": "Cell wall",
+        "description": "Mengganggu pembentukan atau deposisi komponen dinding sel dan proses pertumbuhan hifa/spora.",
+        "examples": "Cell wall / phospholipid-related targets",
+        "frac": "Contoh: FRAC 40 untuk CAA pada oomycetes"
+      },
+      {
+        "id": "division",
+        "label": "Pembelahan & sitoskeleton",
+        "short": "Cell division",
+        "description": "Mengganggu mikrotubulus atau proses pembelahan sel yang diperlukan untuk pertumbuhan dan perkembangan patogen.",
+        "examples": "Tubulin-related targets",
+        "frac": "Contoh: FRAC 1 dan kelompok terkait"
+      },
+      {
+        "id": "nucleic",
+        "label": "Asam nukleat / protein",
+        "short": "Nucleic acid / protein",
+        "description": "Mengganggu biosintesis asam nukleat, protein atau proses seluler spesifik yang dibutuhkan patogen.",
+        "examples": "RNA/DNA, protein biosynthesis and signaling targets",
+        "frac": "Gunakan kode target-site FRAC pada master current"
+      },
+      {
+        "id": "multisite",
+        "label": "Multi-site",
+        "short": "Multi-site",
+        "description": "Beberapa target seluler dipengaruhi sekaligus sehingga mekanismenya tidak bergantung pada satu target molekuler tunggal.",
+        "examples": "Protectant multisite fungicides",
+        "frac": "FRAC M groups"
+      }
     ],
     "principles": [
       "MoA menggambarkan proses biologis yang dipengaruhi; target site adalah titik molekuler spesifik yang terkena.",
@@ -50,16 +318,65 @@
     ]
   },
   "herbicide": {
-    "title":"Herbisida",
-    "subtitle":"Target utama berada pada proses metabolisme, fotosintesis, pembelahan, pertumbuhan dan integritas sel gulma",
+    "title": "Herbisida",
+    "subtitle": "Target utama berada pada proses metabolisme, fotosintesis, pembelahan, pertumbuhan dan integritas sel gulma",
     "targets": [
-      {"id":"photosynthesis","label":"Kloroplas / fotosintesis", "short":"Photosynthesis", "description":"Mengganggu transfer elektron fotosintesis atau proses yang berkaitan dengan pembentukan energi/ROS pada jaringan hijau.", "examples":"PSII inhibitors; PSI electron diversion", "hrac":"Contoh HRAC 5 dan 22"},
-      {"id":"amino","label":"Sintesis asam amino", "short":"Amino acid synthesis", "description":"Menghambat enzim kunci jalur biosintesis asam amino sehingga pertumbuhan gulma terhenti.", "examples":"ALS, EPSPS, GS inhibitors", "hrac":"Contoh HRAC 2, 9, 10"},
-      {"id":"lipid","label":"Sintesis asam lemak", "short":"Fatty acid synthesis", "description":"Mengganggu pembentukan asam lemak yang diperlukan untuk membran dan pertumbuhan sel.", "examples":"ACCase and VLCFA inhibitors", "hrac":"Contoh HRAC 1 dan 15"},
-      {"id":"pigment","label":"Pigmen / klorofil", "short":"Pigment biosynthesis", "description":"Mengganggu biosintesis pigmen sehingga jaringan baru kehilangan perlindungan fotosintetik dan mengalami pemutihan/kerusakan.", "examples":"HPPD, PDS and related pigment pathways", "hrac":"Contoh HRAC 12 dan 27"},
-      {"id":"cellwall","label":"Dinding sel", "short":"Cell wall", "description":"Menghambat biosintesis komponen dinding sel atau proses yang menopang integritas jaringan tanaman.", "examples":"Cellulose biosynthesis inhibitors", "hrac":"Kelompok sesuai HRAC 2026"},
-      {"id":"auxin","label":"Pertumbuhan / auksin", "short":"Auxin mimic", "description":"Meniru atau mengganggu sinyal auksin sehingga pertumbuhan tidak normal, epinasti, pembengkokan dan gangguan perkembangan dapat muncul.", "examples":"Synthetic auxins", "hrac":"HRAC 4"},
-      {"id":"microtubule","label":"Mikrotubulus / mitosis", "short":"Cell division", "description":"Mengganggu pembentukan atau fungsi mikrotubulus sehingga pembelahan dan pertumbuhan sel terhambat.", "examples":"Microtubule assembly inhibitors", "hrac":"HRAC 3"}
+      {
+        "id": "photosynthesis",
+        "label": "Kloroplas / fotosintesis",
+        "short": "Photosynthesis",
+        "description": "Mengganggu transfer elektron fotosintesis atau proses yang berkaitan dengan pembentukan energi/ROS pada jaringan hijau.",
+        "examples": "PSII inhibitors; PSI electron diversion",
+        "hrac": "Contoh HRAC 5 dan 22"
+      },
+      {
+        "id": "amino",
+        "label": "Sintesis asam amino",
+        "short": "Amino acid synthesis",
+        "description": "Menghambat enzim kunci jalur biosintesis asam amino sehingga pertumbuhan gulma terhenti.",
+        "examples": "ALS, EPSPS, GS inhibitors",
+        "hrac": "Contoh HRAC 2, 9, 10"
+      },
+      {
+        "id": "lipid",
+        "label": "Sintesis asam lemak",
+        "short": "Fatty acid synthesis",
+        "description": "Mengganggu pembentukan asam lemak yang diperlukan untuk membran dan pertumbuhan sel.",
+        "examples": "ACCase and VLCFA inhibitors",
+        "hrac": "Contoh HRAC 1 dan 15"
+      },
+      {
+        "id": "pigment",
+        "label": "Pigmen / klorofil",
+        "short": "Pigment biosynthesis",
+        "description": "Mengganggu biosintesis pigmen sehingga jaringan baru kehilangan perlindungan fotosintetik dan mengalami pemutihan/kerusakan.",
+        "examples": "HPPD, PDS and related pigment pathways",
+        "hrac": "Contoh HRAC 12 dan 27"
+      },
+      {
+        "id": "cellwall",
+        "label": "Dinding sel",
+        "short": "Cell wall",
+        "description": "Menghambat biosintesis komponen dinding sel atau proses yang menopang integritas jaringan tanaman.",
+        "examples": "Cellulose biosynthesis inhibitors",
+        "hrac": "Kelompok sesuai HRAC 2026"
+      },
+      {
+        "id": "auxin",
+        "label": "Pertumbuhan / auksin",
+        "short": "Auxin mimic",
+        "description": "Meniru atau mengganggu sinyal auksin sehingga pertumbuhan tidak normal, epinasti, pembengkokan dan gangguan perkembangan dapat muncul.",
+        "examples": "Synthetic auxins",
+        "hrac": "HRAC 4"
+      },
+      {
+        "id": "microtubule",
+        "label": "Mikrotubulus / mitosis",
+        "short": "Cell division",
+        "description": "Mengganggu pembentukan atau fungsi mikrotubulus sehingga pembelahan dan pertumbuhan sel terhambat.",
+        "examples": "Microtubule assembly inhibitors",
+        "hrac": "HRAC 3"
+      }
     ],
     "principles": [
       "HRAC mengelompokkan herbisida berdasarkan site of action dan MoA untuk membantu resistance management.",

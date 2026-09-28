@@ -11,6 +11,11 @@
       "code": "FUSACE",
       "url": "https://gd.eppo.int/taxon/FUSACE/photos",
       "name": "Fusarium oxysporum f. sp. cepae"
+    },
+    "scirpophaga-innotata": {
+      "code": "SCIPIN",
+      "url": "https://gd.eppo.int/taxon/SCIPIN/photos",
+      "name": "Scirpophaga innotata"
     }
   }
 }

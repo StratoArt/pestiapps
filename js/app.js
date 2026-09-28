@@ -115,7 +115,23 @@ function renderPesticideMoa(){
   if(mode==='insecticide'){
     const targets=d.targets||[]; const active=targets.find(x=>x.id===root.dataset.target)||targets[0];
     const entry=d.entry||[];
-    html+=`<div class="insect-guide-grid"><div class="insect-diagram-card"><div class="diagram-head"><strong>Peta tubuh & jalur masuk</strong><small>Sentuh target untuk melihat fungsi biologisnya</small></div><div class="caterpillar-map">${insectSvgGuide(active.id)}</div><div class="diagram-legend"><span><i class="dot cuticle"></i>Kutikula</span><span><i class="dot nerve"></i>Saraf</span><span><i class="dot gut"></i>Midgut</span><span><i class="dot blood"></i>Hemolimfa</span></div></div><div class="moa-target-panel"><div class="target-pill" style="--target:${active.color}">${escA(active.label)}</div><h3>${escA(active.short)}</h3><p>${escA(active.description)}</p><div class="moa-info-box"><b>Contoh mekanisme / target</b><span>${escA(active.examples)}</span></div><div class="moa-info-box"><b>Kelompok IRAC terkait</b><span>${escA(active.groups)}</span></div></div></div>`;
+    html+=`<div class="insect-guide-grid"><div class="insect-diagram-card"><div class="diagram-head"><strong>Peta tubuh & jalur masuk</strong><small>Sentuh target untuk melihat fungsi biologisnya</small></div><div class="caterpillar-map">${insectSvgGuide(active.id)}</div><div class="diagram-legend"><span><i class="dot cuticle"></i>Kutikula</span><span><i class="dot nerve"></i>Saraf</span><span><i class="dot gut"></i>Midgut</span><span><i class="dot blood"></i>Hemolimfa</span></div></div><div class="moa-target-panel">
+      <div class="target-pill" style="--target:${active.color}">${escA(active.label)}</div>
+      <h3>${escA(active.short)}</h3>
+      <p>${escA(active.description)}</p>
+      <div class="moa-info-box">
+        <b>🎯 Target molekuler / proses</b>
+        <span>${escA(active.target||active.examples||'-')}</span>
+      </div>
+      <div class="moa-info-box">
+        <b>🔢 Kelompok IRAC terkait</b>
+        <div class="moa-tag-list">${(active.groups||[]).map(g=>`<span>${escA(g)}</span>`).join('')}</div>
+      </div>
+      <div class="moa-info-box">
+        <b>🧪 Contoh bahan aktif</b>
+        <div class="moa-active-list">${(active.actives||[]).map(a=>`<span>${escA(a)}</span>`).join('')}</div>
+      </div>
+    </div></div>`;
     const activeEntry=entry.find(e=>e.id===root.dataset.entry)||entry[0];
     html+=`<h3 class="moa-guide-subhead">Jalan masuk & perpindahan</h3><div class="entry-grid">${entry.map(e=>`<button class="entry-card ${e.id===activeEntry.id?'active':''}" data-entry="${escA(e.id)}"><span>${e.id==='contact'?'🖐️':e.id==='stomach'?'🍽️':e.id==='spiracle'?'💨':'🌿'}</span><div><b>${escA(e.title)}</b><p>${escA(e.body)}</p></div><i>›</i></button>`).join('')}</div>
     <div class="entry-detail">
@@ -124,6 +140,10 @@ function renderPesticideMoa(){
         <span class="eyebrow">MODE OF ENTRY / DELIVERY</span>
         <h3>${escA(activeEntry.title)}</h3>
         <p>${escA(activeEntry.body)}</p>
+        <div class="entry-examples">
+          <b>🧪 Contoh bahan aktif / agen</b>
+          <div>${(activeEntry.examples||[]).map(x=>`<span>${escA(x)}</span>`).join('')}</div>
+        </div>
       </div>
     </div>`;
     html+=`<h3 class="moa-guide-subhead">Contoh target saraf yang sering dijumpai</h3><div class="neural-grid">${d.neural.map(n=>`<article><b>${escA(n.title)}</b><p>${escA(n.body)}</p><small>${escA(n.groups)}</small></article>`).join('')}</div>`;
@@ -141,8 +161,7 @@ function renderPesticideMoa(){
   $$('.entry-card').forEach(b=>b.onclick=()=>{root.dataset.entry=b.dataset.entry;renderPesticideMoa()});
 }
 function insectSvgGuide(active){
-  const fills={nerve:'#0b6fa4',midgut:'#2f8f5b',growth:'#b48a2b',respiration:'#7b4aa6',protein:'#6f777c'};
-  return `<svg viewBox="0 0 520 330" class="guide-svg" role="img" aria-label="Larva dengan label integument, spirakel, mouthparts, CNS, midgut dan hemolimfa"><path d="M55 170 C62 118 105 88 160 94 C218 101 250 123 300 124 C352 124 405 103 446 121 C480 136 490 178 468 206 C442 238 389 238 341 218 C294 198 249 196 203 211 C143 230 86 221 61 197 C51 188 50 178 55 170Z" fill="#d7e8a5" stroke="#56733b" stroke-width="4"/><path d="M95 111 Q80 77 61 69 M110 106 Q101 70 91 57" fill="none" stroke="#56733b" stroke-width="5" stroke-linecap="round"/><path d="M56 168 Q28 158 19 139 M57 183 Q28 189 19 207" fill="none" stroke="#56733b" stroke-width="5" stroke-linecap="round"/><circle cx="79" cy="165" r="8" fill="#dbe8ee" stroke="#355a68" stroke-width="3"/><path d="M112 155 Q83 164 66 177" fill="none" stroke="#704093" stroke-width="7"/><path d="M120 162 C170 133 205 194 249 159 S330 136 374 170 S426 193 455 157" fill="none" stroke="${fills.midgut}" stroke-width="8"/><path d="M118 177 C166 157 201 211 248 177 S331 156 374 186 S426 211 451 178" fill="none" stroke="${fills.nerve}" stroke-width="9"/><g font-family="Arial,sans-serif" font-size="12" font-weight="800"><text x="8" y="36" fill="#3f5e2e">INTEGUMENT / CUTICLE</text><text x="10" y="275" fill="#355a68">SPIRAKEL</text><text x="8" y="326" fill="#56733b">MOUTHPARTS</text><text x="310" y="49" fill="#0b6fa4">CNS / SARAF</text><text x="330" y="84" fill="#2f8f5b">STOMACH / MIDGUT</text><text x="414" y="299" fill="#704093">HEMOLYMPH</text></g><g><circle cx="250" cy="177" r="13" fill="${fills[active]||'#0b6fa4'}" opacity=".25" stroke="${fills[active]||'#0b6fa4'}" stroke-width="3"/><circle cx="250" cy="177" r="5" fill="${fills[active]||'#0b6fa4'}"/></g></svg>`;
+  return '<img src="assets/ui/lepidoptera-target-sites.webp" class="guide-svg guide-image" alt="Target site dan jalur kerja insektisida pada Lepidoptera" loading="lazy">';
 }
 function fungusCellSvg(active){return `<svg viewBox="0 0 500 300" class="guide-svg" role="img" aria-label="Diagram sel jamur dengan membran, mitokondria, nukleus dan dinding sel"><rect x="55" y="45" width="390" height="210" rx="72" fill="#f1eadf" stroke="#8b5a3c" stroke-width="7"/><rect x="72" y="62" width="356" height="176" rx="58" fill="#fff8ef" stroke="#d6a779" stroke-width="4"/><ellipse cx="245" cy="153" rx="62" ry="45" fill="#ead8ee" stroke="#7b4aa6" stroke-width="4"/><circle cx="245" cy="153" r="18" fill="#b48a2b"/><ellipse cx="142" cy="115" rx="32" ry="20" fill="#d7e8ef" stroke="#0b6fa4" stroke-width="4"/><ellipse cx="349" cy="194" rx="34" ry="22" fill="#d7e8ef" stroke="#0b6fa4" stroke-width="4"/><path d="M145 105 q15 10 0 20 M135 110 q15 10 0 20 M351 183 q15 10 0 20 M341 188 q15 10 0 20" fill="none" stroke="#0b6fa4" stroke-width="3"/><text x="95" y="34" font-size="14" font-weight="800" fill="#8b5a3c">DINDING SEL</text><text x="360" y="88" font-size="13" font-weight="800" fill="#8b5a3c">MEMBRAN</text><text x="212" y="215" font-size="13" font-weight="800" fill="#704093">NUKLEUS</text><text x="105" y="155" font-size="12" font-weight="800" fill="#0b6fa4">MITOKONDRIA</text><circle cx="245" cy="153" r="${active==='division'?58:10}" fill="none" stroke="${active==='division'?'#b48a2b':'transparent'}" stroke-width="5" stroke-dasharray="7 5"/></svg>`}
 function plantCellSvg(active){return `<svg viewBox="0 0 500 300" class="guide-svg" role="img" aria-label="Diagram sel tanaman dengan kloroplas, mitokondria, vakuola dan nukleus"><rect x="45" y="35" width="410" height="230" rx="32" fill="#d8efbd" stroke="#3f7c38" stroke-width="7"/><rect x="58" y="48" width="384" height="204" rx="25" fill="#eef8dc" stroke="#b7d88e" stroke-width="4"/><ellipse cx="248" cy="150" rx="82" ry="62" fill="#dcecf4" stroke="#7b4aa6" stroke-width="4"/><ellipse cx="125" cy="105" rx="38" ry="23" fill="#bfe1a4" stroke="#2f8f5b" stroke-width="4"/><ellipse cx="367" cy="190" rx="38" ry="23" fill="#bfe1a4" stroke="#2f8f5b" stroke-width="4"/><ellipse cx="355" cy="96" rx="34" ry="20" fill="#d7e8ef" stroke="#0b6fa4" stroke-width="4"/><text x="80" y="28" font-size="14" font-weight="800" fill="#3f7c38">DINDING SEL</text><text x="363" y="52" font-size="13" font-weight="800" fill="#2f8f5b">KLOROPLAS</text><text x="332" y="230" font-size="13" font-weight="800" fill="#0b6fa4">MITOKONDRIA</text><text x="215" y="155" font-size="13" font-weight="800" fill="#704093">NUKLEUS</text><circle cx="125" cy="105" r="${active==='photosynthesis'||active==='pigment'?31:8}" fill="none" stroke="${active==='photosynthesis'||active==='pigment'?'#2f8f5b':'transparent'}" stroke-width="5" stroke-dasharray="7 5"/></svg>`}
@@ -265,16 +284,17 @@ function photoBlock(x){
   if(!imgs.length) return '';
   return `<section class="media-gallery"><div class="media-gallery-head"><div><span class="eyebrow">VISUAL REFERENSI</span><h3>Foto & ilustrasi OPT</h3></div><span>${imgs.length} aset</span></div><div class="media-gallery-grid">${imgs.map((img,i)=>{
     const src=img.local_path || img.remote_url;
-    const label=img.image_type==='lifecycle'?'Siklus hidup':img.image_type==='species_reference'?'Tabel spesies / inang':img.image_type==='organism'?'Foto organisme':img.image_type==='symptom_reference'?'Foto gejala':img.image_type==='ai_illustration'?'Ilustrasi AI':'Referensi visual';
+    const label=img.stage==='imago'?'Foto imago':img.stage==='larva'?'Foto larva':img.stage==='gejala'?'Foto gejala':img.image_type==='lifecycle'?'Siklus hidup':img.image_type==='species_reference'?'Tabel spesies / inang':img.image_type==='organism'?'Foto organisme':img.image_type==='symptom_reference'?'Foto gejala':img.image_type==='ai_illustration'?'Ilustrasi AI':'Referensi visual';
     const link=img.source_url?`<a href="${esc(img.source_url)}" target="_blank" rel="noopener">Sumber ↗</a>`:'';
     return `<article class="media-card"><div class="media-image"><img src="${esc(src)}" alt="${esc(label)} ${esc(x.name)}" loading="lazy" onerror="this.closest('.media-card').classList.add('media-error')"><div class="media-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""><span>Visual tidak tersedia offline</span></div></div><div class="media-caption"><strong>${esc(label)}</strong><small>${esc(img.notes||img.attribution||'Referensi visual')}</small>${link}</div></article>`;
   }).join('')}</div></section>`;
 }
 function photoThumb(x){
-  const img=(x.images||[])[0];
+  const imgs=(x.images||[]).filter(img=>img && (img.local_path||img.remote_url));
+  const img=imgs.find(img=>img.stage==='larva') || imgs[0];
   if(!img) return `<img src="assets/opt/${esc(x.icon)}" alt="">`;
   const src=img.local_path || img.remote_url;
-  return `<div class="thumb-photo"><img src="${esc(src)}" alt="" loading="lazy" onerror="this.parentElement.classList.add('photo-error')"><div class="thumb-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""></div></div>`;
+  return `<div class="thumb-photo"><img src="${esc(src)}" alt="${esc(img.stage==='larva'?'Foto larva':x.name)}" loading="lazy" onerror="this.parentElement.classList.add('photo-error')"><div class="thumb-fallback"><img src="assets/opt/${esc(x.icon)}" alt=""></div></div>`;
 }
 
 function renderTypes(){
@@ -693,10 +713,11 @@ function growthBlockForOpt(x){
   </section>`;
 }
 function lifeCycleBlock(x){
-  const ref=x.life_cycle_reference;
-  if(!ref) return '';
-  return `<section class="lifecycle-section"><div class="growth-head"><div><span class="eyebrow">BIOLOGI OPT</span><h3>Siklus hidup</h3></div><span class="growth-status">REFERENSI</span></div>
-    <div class="lifecycle-stages">${(ref.stages||[]).map((v,i)=>`<div class="lifecycle-stage"><span>${i+1}</span><strong>${esc(v)}</strong>${i<(ref.stages||[]).length-1?'<b>→</b>':''}</div>`).join('')}</div>
+  const ref=x.life_cycle_reference || {stages:x.life||[]};
+  const stages=ref.stages||[];
+  if(!stages.length) return '';
+  return `<section class="lifecycle-section"><div class="growth-head"><div><span class="eyebrow">BIOLOGI OPT</span><h3>Siklus hidup</h3></div><span class="growth-status">${stages.length} TAHAP</span></div>
+    <div class="lifecycle-stages">${stages.map((v,i)=>`<div class="lifecycle-stage"><span>${i+1}</span><strong>${esc(v)}</strong>${i<stages.length-1?'<b>→</b>':''}</div>`).join('')}</div>
     ${ref.source_note?`<div class="source-note">${esc(ref.source_note)}</div>`:''}
   </section>`;
 }

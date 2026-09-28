@@ -1,5 +1,5 @@
 {
-  "version": "2026.09",
+  "version": "2026.1",
   "user_provided": [
     {
       "file": "assets/opt/reference/fusarium/fusarium-bawang-merah-gejala-utama.png",
@@ -9,6 +9,31 @@
     {
       "file": "assets/opt/reference/fusarium/fusarium-bawang-merah-gejala-galeri.png",
       "usage": "Galeri gejala busuk pangkal bawang merah",
+      "license": "user-provided"
+    },
+    {
+      "file": "assets/opt/photos/spodoptera-exigua-symptom.webp",
+      "usage": "Foto gejala serangan Spodoptera pada bawang; visual lapangan pengguna",
+      "license": "user-provided"
+    },
+    {
+      "file": "assets/opt/photos/spodoptera-exigua-adult.webp",
+      "usage": "Foto imago Spodoptera exigua; visual pengguna",
+      "license": "user-provided"
+    },
+    {
+      "file": "assets/opt/photos/spodoptera-exigua-larva.webp",
+      "usage": "Foto larva Spodoptera exigua; visual pengguna",
+      "license": "user-provided"
+    },
+    {
+      "file": "assets/opt/photos/spodoptera-litura-adult.webp",
+      "usage": "Foto imago Spodoptera litura; visual pengguna",
+      "license": "user-provided"
+    },
+    {
+      "file": "assets/opt/photos/spodoptera-litura-larva.webp",
+      "usage": "Foto larva Spodoptera litura; visual pengguna",
       "license": "user-provided"
     }
   ],
@@ -85,5 +110,14 @@
       "author": "Stephen Ausmus / USDA ARS",
       "attribution": "Bemisia tabaci — USDA ARS via Wikimedia Commons, public domain."
     }
+  },
+  "spodoptera-frugiperda": {
+    "source_type": "user_provided",
+    "attribution": "Foto/ilustrasi pengguna — Crop Expert",
+    "assets": [
+      "assets/opt/photos/spodoptera-frugiperda-larva.webp",
+      "assets/opt/photos/spodoptera-frugiperda-characteristics.webp",
+      "assets/opt/photos/spodoptera-frugiperda-lifecycle.webp"
+    ]
   }
 }
