@@ -116,22 +116,6 @@ function renderPesticideMoa(){
     const targets=d.targets||[]; const active=targets.find(x=>x.id===root.dataset.target)||targets[0];
     const entry=d.entry||[];
     html+=`<div class="moa-target-site-grid">${targets.map(t=>`<button class="${t.id===active.id?'active':''}" data-target="${escA(t.id)}"><b>${escA(t.label)}</b><small>${escA(t.short)}</small></button>`).join('')}</div><div class="insect-guide-grid"><div class="insect-diagram-card"><div class="diagram-head"><strong>Peta tubuh & jalur masuk</strong><small>Target site membantu memahami fungsi biologis yang dipengaruhi</small></div><div class="caterpillar-map">${insectSvgGuide(active.id)}</div><div class="diagram-legend"><span><i class="dot cuticle"></i>Kutikula</span><span><i class="dot nerve"></i>Saraf</span><span><i class="dot gut"></i>Midgut</span><span><i class="dot blood"></i>Hemolimfa</span></div></div><div class="moa-target-panel"><div class="target-pill" style="--target:${active.color}">${escA(active.label)}</div><h3>${escA(active.short)}</h3><p>${escA(active.description)}</p><div class="moa-info-box"><b>Target molekuler / proses</b><span>${escA(active.target||active.examples)}</span></div><div class="moa-info-box"><b>Kelompok IRAC terkait</b><div class="moa-tag-list">${(active.groups||[]).map(g=>`<span>${escA(g)}</span>`).join('')}</div></div><div class="moa-info-box"><b>Contoh bahan aktif</b><div class="moa-active-list">${(active.actives||[]).map(a=>`<span>${escA(a)}</span>`).join('')}</div></div></div></div>`;
-      <div class="target-pill" style="--target:${active.color}">${escA(active.label)}</div>
-      <h3>${escA(active.short)}</h3>
-      <p>${escA(active.description)}</p>
-      <div class="moa-info-box">
-        <b>🎯 Target molekuler / proses</b>
-        <span>${escA(active.target||active.examples||'-')}</span>
-      </div>
-      <div class="moa-info-box">
-        <b>🔢 Kelompok IRAC terkait</b>
-        <div class="moa-tag-list">${(active.groups||[]).map(g=>`<span>${escA(g)}</span>`).join('')}</div>
-      </div>
-      <div class="moa-info-box">
-        <b>🧪 Contoh bahan aktif</b>
-        <div class="moa-active-list">${(active.actives||[]).map(a=>`<span>${escA(a)}</span>`).join('')}</div>
-      </div>
-    </div></div>`;
     const activeEntry=entry.find(e=>e.id===root.dataset.entry)||entry[0];
     html+=`<h3 class="moa-guide-subhead">Jalan masuk & perpindahan</h3><div class="entry-grid">${entry.map(e=>`<button class="entry-card ${e.id===activeEntry.id?'active':''}" data-entry="${escA(e.id)}"><span>${e.id==='contact'?'🖐️':e.id==='stomach'?'🍽️':e.id==='spiracle'?'💨':'🌿'}</span><div><b>${escA(e.title)}</b><p>${escA(e.body)}</p></div><i>›</i></button>`).join('')}</div>
     <div class="entry-detail">
