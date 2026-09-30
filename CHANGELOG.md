@@ -21,3 +21,12 @@
 - Tambah foto gejala whitehead/beluk dan foto larva user-provided untuk `Scirpophaga innotata`.
 - Foto larva `Scirpophaga innotata` menjadi thumbnail utama penggerek batang padi putih.
 - `photoThumb()` kini memprioritaskan aset dengan `stage: larva` untuk thumbnail; berlaku juga untuk OPT lain yang sudah memiliki foto larva lokal.
+
+## v0.24.10
+- Perluasan UI Target Site insektisida menjadi 6 kategori.
+- Detail Target Site diseragamkan: target molekuler/proses, kelompok IRAC terkait, dan contoh bahan aktif.
+- Target Site dapat dipilih langsung dari grid.
+- Summary fitur utama dipindahkan ke bagian Tentang Crop Expert.
+- Credit dipindahkan ke footer: “Dikembangkan bersama PEST AI”.
+- Blok “Catatan data” pada Database Pestisida dihapus dari tampilan.
+- PWA cache dinaikkan ke v0.24.10.

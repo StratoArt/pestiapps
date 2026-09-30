@@ -685,3 +685,80 @@ html.dark .entry-examples > div > span{
   border-color:#31515b;
   color:#d6e8ed;
 }
+
+/* v0.24.10 — About summary & footer credit */
+.about-summary{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+  margin-top:14px;
+}
+.about-summary>div{
+  display:grid;
+  gap:4px;
+  padding:11px 12px;
+  border:1px solid #dbe8e1;
+  border-radius:14px;
+  background:#f8fcfa;
+}
+.about-summary b{font-size:10px;color:#234b39}
+.about-summary span{font-size:9px;line-height:1.45;color:#687970}
+.about-credit-bottom{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  text-align:center;
+  color:var(--muted);
+  font-size:9px;
+}
+.about-credit-bottom strong{color:var(--green)}
+.about-credit-bottom span{display:inline-block;margin-top:4px}
+html.dark .about-summary>div{background:#14231c;border-color:#294337}
+html.dark .about-summary b{color:#edf7f1}
+html.dark .about-summary span{color:#aabbb2}
+@media(max-width:680px){
+  .about-summary{grid-template-columns:1fr}
+}
+
+/* v0.24.10 — Target Site expansion */
+.moa-target-site-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.moa-target-site-grid button{
+  border:1px solid #dbe6eb;
+  background:#fff;
+  border-radius:14px;
+  padding:10px;
+  text-align:left;
+  cursor:pointer;
+  transition:.18s ease;
+}
+.moa-target-site-grid button.active{
+  border-color:#78afd0;
+  background:#eef7fb;
+  box-shadow:0 2px 9px rgba(11,114,168,.07);
+}
+.moa-target-site-grid button b{
+  display:block;
+  font-size:10px;
+  color:#23495b;
+}
+.moa-target-site-grid button small{
+  display:block;
+  margin-top:3px;
+  font-size:8px;
+  line-height:1.35;
+  color:#77868b;
+}
+html.dark .moa-target-site-grid button{
+  background:#15231d;
+  border-color:#2a4438;
+}
+html.dark .moa-target-site-grid button.active{background:#18333a;border-color:#4a7889}
+html.dark .moa-target-site-grid button b{color:#edf7f1}
+html.dark .moa-target-site-grid button small{color:#aabbb2}
+@media(max-width:680px){
+  .moa-target-site-grid{grid-template-columns:repeat(2,1fr)}
+}
