@@ -1,3 +1,11 @@
+## v0.24.11
+- Weather dipindahkan ke bawah Search.
+- Lokasi perangkat diminta saat awal membuka aplikasi agar weather lokal langsung tersedia.
+- Spray Assist ditempatkan di samping Weather pada Beranda.
+- Palette visual Crop Expert diperbarui mengikuti palette baru.
+- Credit diperbarui: Amrizal Ivan Pratama ditonjolkan bold dan lebih besar, diikuti Eber Lonameo dan Erwin Elyatalatof, lalu “Engineered by S.T.R.A.T.O”.
+- Cache PWA dinaikkan ke v0.24.11.
+
 # Changelog
 
 ## v0.24.9

@@ -762,3 +762,103 @@ html.dark .moa-target-site-grid button small{color:#aabbb2}
 @media(max-width:680px){
   .moa-target-site-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* =========================================================
+   Crop Expert Visual System v1.0 — v0.24.11
+   ========================================================= */
+:root{
+  --ce-blue-deep:#00617E;
+  --ce-blue:#0092DF;
+  --ce-cyan:#00BBFE;
+  --ce-green-deep:#014421;
+  --ce-green:#2B6636;
+  --ce-lime:#89D328;
+  --ce-bright-green:#67B513;
+  --ce-purple-deep:#443346;
+  --ce-purple:#614963;
+  --ce-danger:#D20F4B;
+  --ce-danger-bright:#FF3162;
+  --ce-navy:#10394F;
+}
+
+.home-weather-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(122px,.42fr);
+  gap:9px;
+  margin-top:12px;
+}
+.home-weather-card,.home-spray-assist{
+  min-width:0;
+  border-radius:15px;
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+.home-weather-card{
+  background:rgba(255,255,255,.96);
+  color:#18334a;
+  padding:11px 12px;
+}
+.home-weather-empty,.home-weather-loading{
+  min-height:62px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.home-weather-empty>span{font-size:23px}
+.home-weather-empty>div{min-width:0;flex:1}
+.home-weather-empty b{display:block;font-size:11px}
+.home-weather-empty small{display:block;font-size:8px;color:#718078;line-height:1.35;margin-top:2px}
+.home-weather-empty button{
+  border:0;border-radius:9px;background:#00617E;color:#fff;
+  padding:7px 8px;font-size:9px;font-weight:800;cursor:pointer
+}
+.home-weather-main{display:flex;align-items:center;gap:9px}
+.home-weather-icon{font-size:27px;line-height:1}
+.home-weather-main .eyebrow{color:#00617E}
+.home-weather-main strong{display:block;font-size:24px;line-height:1;margin:3px 0}
+.home-weather-main small{display:block;font-size:8px;color:#718078;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.home-weather-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+.home-weather-meta span{font-size:8px;color:#52645c;background:#eef6f8;border-radius:7px;padding:4px 6px}
+.home-spray-assist{
+  appearance:none;border:0;background:#67B513;color:#fff;padding:10px;
+  text-align:left;display:flex;align-items:center;gap:7px;cursor:pointer;transition:.18s
+}
+.home-spray-assist:hover{transform:translateY(-1px)}
+.home-spray-assist .eyebrow{color:rgba(255,255,255,.82)}
+.home-spray-assist b{display:block;font-size:11px;margin-top:2px}
+.home-spray-assist small{display:block;font-size:8px;line-height:1.35;opacity:.9;margin-top:3px}
+.spray-mini-icon{font-size:23px;flex:none}
+.spray-mini-arrow{font-size:23px;margin-left:auto;opacity:.8}
+.home-spray-assist.good{background:#67B513}
+.home-spray-assist.warn{background:#443346}
+.home-spray-assist.bad{background:#D20F4B}
+
+.about-credit-bottom{
+  display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:22px
+}
+.about-credit-bottom .credit-label{font-size:9px;letter-spacing:.5px;opacity:.78}
+.about-credit-bottom .credit-primary{font-size:18px;line-height:1.2;font-weight:900}
+.about-credit-bottom .credit-team{font-size:10px;opacity:.86}
+.about-credit-bottom .credit-engineered{
+  margin-top:9px;font-size:9px;letter-spacing:1.1px;text-transform:uppercase;opacity:.78
+}
+.about-credit-bottom .credit-engineered b{font-size:10px;letter-spacing:1.4px}
+.about-credit-bottom .credit-year{font-size:8px;opacity:.62;margin-top:4px}
+
+.dark .home-weather-card{background:#15221c;color:var(--ink)}
+.dark .home-weather-empty small,.dark .home-weather-main small{color:#a9bbb2}
+.dark .home-weather-meta span{background:#1b3329;color:#b7c8bf}
+.dark .home-weather-empty button{background:#0092DF}
+
+@media(max-width:520px){
+  .home-weather-row{grid-template-columns:minmax(0,1fr) minmax(112px,.43fr);gap:7px}
+  .home-weather-card{padding:9px}
+  .home-weather-main strong{font-size:21px}
+  .home-weather-meta{gap:4px}
+  .home-weather-meta span{font-size:7px;padding:4px 5px}
+  .home-spray-assist{padding:8px}
+  .home-spray-assist b{font-size:10px}
+  .home-spray-assist small{font-size:7px}
+  .spray-mini-icon{font-size:20px}
+  .about-credit-bottom .credit-primary{font-size:16px}
+}

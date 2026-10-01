@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#087443">
+<meta name="theme-color" content="#00617E">
 <meta name="description" content="Crop Expert — Al-Kitab untuk Sales, Formulator dan Petani Mbois.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
@@ -30,6 +30,20 @@
       <h1>Menuju Pertanian<br><span>yang Lebih Baik</span></h1>
       <p class="hero-copy">Basis pengetahuan hama, penyakit, gulma, nutrisi dan bahan aktif pestisida untuk pertanian yang lebih baik</p>
       <button class="hero-search" data-go="types"><span>⌕</span><span class="placeholder">Cari OPT, tanaman, atau bahan aktif...</span><b>⌗</b></button>
+      <div class="home-weather-row" aria-label="Cuaca lokal dan Spray Assist">
+        <div id="homeWeatherPanel" class="home-weather-card">
+          <div class="home-weather-empty">
+            <span>📍</span>
+            <div><b>Cuaca lokal</b><small>Aktifkan lokasi untuk menampilkan cuaca</small></div>
+            <button id="homeWeatherLocate" type="button">Izinkan</button>
+          </div>
+        </div>
+        <button id="homeSprayAssist" class="home-spray-assist" type="button">
+          <span class="spray-mini-icon">🌱</span>
+          <div><span class="eyebrow">SPRAY ASSIST</span><b>Aktifkan lokasi</b><small>Butuh data cuaca</small></div>
+          <span class="spray-mini-arrow">›</span>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -312,7 +326,13 @@
       <div><b>🌦️ Weather & Spray Assist</b><span>Cuaca lokal dan indikator kondisi lingkungan untuk membantu perencanaan waktu aplikasi.</span></div>
       <div><b>📚 Agrobiology Library</b><span>Knowledge layer untuk formulasi, adjuvan, spray quality, insektisida, mekanisme aksi dan Fusarium.</span></div>
     </div>
-    <div class="about-credit about-credit-bottom">Dikembangkan bersama <strong>PEST AI</strong><br><span>2026 · Crop Expert</span></div>
+    <div class="about-credit about-credit-bottom">
+      <span class="credit-label">Dikembangkan oleh</span>
+      <strong class="credit-primary">Amrizal Ivan Pratama</strong>
+      <span class="credit-team">Eber Lonameo · Erwin Elyatalatof</span>
+      <span class="credit-engineered">Engineered by <b>S.T.R.A.T.O</b></span>
+      <span class="credit-year">2026 · Crop Expert</span>
+    </div>
   </div>
   <div class="source-box">
     <strong>Data & Referensi</strong>
