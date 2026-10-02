@@ -781,58 +781,6 @@ html.dark .moa-target-site-grid button small{color:#aabbb2}
   --ce-navy:#10394F;
 }
 
-.home-weather-row{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(122px,.42fr);
-  gap:9px;
-  margin-top:12px;
-}
-.home-weather-card,.home-spray-assist{
-  min-width:0;
-  border-radius:15px;
-  border:1px solid rgba(255,255,255,.22);
-  box-shadow:0 8px 25px rgba(0,0,0,.12);
-}
-.home-weather-card{
-  background:rgba(255,255,255,.96);
-  color:#18334a;
-  padding:11px 12px;
-}
-.home-weather-empty,.home-weather-loading{
-  min-height:62px;
-  display:flex;
-  align-items:center;
-  gap:9px;
-}
-.home-weather-empty>span{font-size:23px}
-.home-weather-empty>div{min-width:0;flex:1}
-.home-weather-empty b{display:block;font-size:11px}
-.home-weather-empty small{display:block;font-size:8px;color:#718078;line-height:1.35;margin-top:2px}
-.home-weather-empty button{
-  border:0;border-radius:9px;background:#00617E;color:#fff;
-  padding:7px 8px;font-size:9px;font-weight:800;cursor:pointer
-}
-.home-weather-main{display:flex;align-items:center;gap:9px}
-.home-weather-icon{font-size:27px;line-height:1}
-.home-weather-main .eyebrow{color:#00617E}
-.home-weather-main strong{display:block;font-size:24px;line-height:1;margin:3px 0}
-.home-weather-main small{display:block;font-size:8px;color:#718078;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.home-weather-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
-.home-weather-meta span{font-size:8px;color:#52645c;background:#eef6f8;border-radius:7px;padding:4px 6px}
-.home-spray-assist{
-  appearance:none;border:0;background:#67B513;color:#fff;padding:10px;
-  text-align:left;display:flex;align-items:center;gap:7px;cursor:pointer;transition:.18s
-}
-.home-spray-assist:hover{transform:translateY(-1px)}
-.home-spray-assist .eyebrow{color:rgba(255,255,255,.82)}
-.home-spray-assist b{display:block;font-size:11px;margin-top:2px}
-.home-spray-assist small{display:block;font-size:8px;line-height:1.35;opacity:.9;margin-top:3px}
-.spray-mini-icon{font-size:23px;flex:none}
-.spray-mini-arrow{font-size:23px;margin-left:auto;opacity:.8}
-.home-spray-assist.good{background:#67B513}
-.home-spray-assist.warn{background:#443346}
-.home-spray-assist.bad{background:#D20F4B}
-
 .about-credit-bottom{
   display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:22px
 }
@@ -845,10 +793,7 @@ html.dark .moa-target-site-grid button small{color:#aabbb2}
 .about-credit-bottom .credit-engineered b{font-size:10px;letter-spacing:1.4px}
 .about-credit-bottom .credit-year{font-size:8px;opacity:.62;margin-top:4px}
 
-.dark .home-weather-card{background:#15221c;color:var(--ink)}
-.dark .home-weather-empty small,.dark .home-weather-main small{color:#a9bbb2}
-.dark .home-weather-meta span{background:#1b3329;color:#b7c8bf}
-.dark .home-weather-empty button{background:#0092DF}
+/* Legacy Home Weather overrides removed in v0.24.11.2 */
 
 @media(max-width:520px){
   .home-weather-row{grid-template-columns:minmax(0,1fr) minmax(112px,.43fr);gap:7px}
@@ -861,4 +806,296 @@ html.dark .moa-target-site-grid button small{color:#aabbb2}
   .home-spray-assist small{font-size:7px}
   .spray-mini-icon{font-size:20px}
   .about-credit-bottom .credit-primary{font-size:16px}
+}
+
+/* =========================================================
+   Crop Expert v0.24.11.1 — Weather + Night Mode polish
+   ========================================================= */
+html.dark .credit-primary,
+html.dark .credit-team{color:#fff !important;}
+
+/* Keep common Home/menu cards dark in Night Mode. */
+html.dark .home-menu-card,
+html.dark .menu-card,
+html.dark .home-card,
+html.dark .feature-card,
+html.dark .type-card,
+html.dark .crop-card,
+html.dark .tool-card,
+html.dark .knowledge-card,
+html.dark .library-card,
+html.dark .pesticide-card,
+html.dark .formulation-card,
+html.dark .opt-card{
+  background:var(--dark-card, #16231e) !important;
+  color:var(--dark-text, #eef7f1) !important;
+  border-color:rgba(255,255,255,.10) !important;
+}
+
+html.dark .home-menu-card *,
+html.dark .menu-card *,
+html.dark .home-card *,
+html.dark .feature-card *,
+html.dark .type-card *,
+html.dark .crop-card *,
+html.dark .tool-card *,
+html.dark .knowledge-card *,
+html.dark .library-card *,
+html.dark .pesticide-card *,
+html.dark .formulation-card *,
+html.dark .opt-card *{
+  color:inherit;
+}
+
+/* v0.24.11.1 — Credit text white in Light + Night mode */
+.about-credit-bottom .credit-primary,
+.about-credit-bottom .credit-team{
+  color:#fff !important;
+}
+
+/* =========================================================
+   v0.24.11.2 — Home Weather Summary
+   ========================================================= */
+
+.home-weather-row{
+  display:block;
+  width:100%;
+  margin-top:12px;
+}
+
+.home-weather-card{
+  width:100%;
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.home-weather-empty,
+.home-weather-summary{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid rgba(16,57,79,.10);
+  border-radius:18px;
+  background:#fff;
+  color:#10394F;
+  box-shadow:0 8px 24px rgba(16,57,79,.08);
+}
+
+.home-weather-empty{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px;
+}
+
+.home-weather-empty>span{
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  flex:0 0 40px;
+  border-radius:12px;
+  background:#EAF8FC;
+  font-size:21px;
+}
+
+.home-weather-empty>div{
+  min-width:0;
+  flex:1;
+}
+
+.home-weather-empty b{
+  display:block;
+  font-size:14px;
+  line-height:1.2;
+}
+
+.home-weather-empty small{
+  display:block;
+  margin-top:3px;
+  color:#667B85;
+  font-size:11px;
+  line-height:1.35;
+}
+
+.home-weather-empty button{
+  flex:0 0 auto;
+  border:0;
+  border-radius:10px;
+  padding:9px 12px;
+  background:#00617E;
+  color:#fff;
+  font-size:11px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.home-weather-summary{
+  padding:14px;
+}
+
+.home-weather-summary-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.home-weather-summary-head>div:first-child{
+  min-width:0;
+}
+
+.home-weather-summary-head .eyebrow{
+  display:block;
+  margin-bottom:3px;
+  font-size:9px;
+  letter-spacing:.08em;
+  font-weight:800;
+  color:#0092DF;
+}
+
+.home-weather-summary-head b{
+  display:block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:13px;
+}
+
+.home-weather-temp{
+  flex:0 0 auto;
+  font-size:28px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.04em;
+  color:#00617E;
+}
+
+.home-weather-condition{
+  margin-top:5px;
+  font-size:12px;
+  font-weight:700;
+  color:#526873;
+}
+
+.home-weather-metrics{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  margin-top:12px;
+}
+
+.home-weather-metrics>div{
+  min-width:0;
+  padding:9px 7px;
+  border-radius:12px;
+  background:#F4FAFC;
+  border:1px solid rgba(16,57,79,.07);
+  text-align:center;
+}
+
+.home-weather-metrics b{
+  display:block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:12px;
+  font-weight:900;
+  color:#10394F;
+}
+
+.home-weather-metrics span{
+  display:block;
+  margin-top:3px;
+  font-size:9px;
+  color:#71828A;
+}
+
+.home-weather-detail{
+  width:100%;
+  margin-top:10px;
+  padding:10px 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  border:1px solid rgba(0,97,126,.16);
+  border-radius:11px;
+  background:#EAF8FC;
+  color:#00617E;
+  font-size:11px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.home-weather-detail span{
+  font-size:17px;
+  line-height:10px;
+}
+
+/* Night mode */
+html.dark .home-weather-empty,
+html.dark .home-weather-summary{
+  background:#16231e !important;
+  color:#eef7f1 !important;
+  border-color:rgba(255,255,255,.10) !important;
+  box-shadow:none;
+}
+
+html.dark .home-weather-empty>span{
+  background:#1d3028;
+}
+
+html.dark .home-weather-empty small,
+html.dark .home-weather-condition{
+  color:#aabbb2;
+}
+
+html.dark .home-weather-empty button{
+  background:#0092DF;
+  color:#fff;
+}
+
+html.dark .home-weather-summary-head .eyebrow{
+  color:#67C8F5;
+}
+
+html.dark .home-weather-temp{
+  color:#67C8F5;
+}
+
+html.dark .home-weather-metrics>div{
+  background:#1b2b24;
+  border-color:rgba(255,255,255,.08);
+}
+
+html.dark .home-weather-metrics b{
+  color:#eef7f1;
+}
+
+html.dark .home-weather-metrics span{
+  color:#aabbb2;
+}
+
+html.dark .home-weather-detail{
+  background:#1b3440;
+  border-color:rgba(103,200,245,.20);
+  color:#8edcff;
+}
+
+@media(max-width:380px){
+  .home-weather-empty{
+    align-items:flex-start;
+  }
+
+  .home-weather-empty button{
+    padding:8px 9px;
+  }
+
+  .home-weather-temp{
+    font-size:25px;
+  }
+
+  .home-weather-metrics{
+    gap:5px;
+  }
 }

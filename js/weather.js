@@ -24,9 +24,49 @@
     }
     return out.join('');
   }
+  function renderHome(){
+    const p=$('#homeWeatherPanel');if(!p)return;
+
+    if(!W.data){
+      p.innerHTML=`<div class="home-weather-empty">
+        <span>🌦️</span>
+        <div>
+          <b>Cuaca lokal</b>
+          <small>Buka detail untuk melihat cuaca dan prakiraan.</small>
+        </div>
+        <button id="homeWeatherDetail" type="button">Lihat detail</button>
+      </div>`;
+      $('#homeWeatherDetail')?.addEventListener('click',open);
+      return;
+    }
+
+    const c=W.data.current||{};
+    p.innerHTML=`<div class="home-weather-summary">
+      <div class="home-weather-summary-head">
+        <div>
+          <span class="eyebrow">CUACA LOKAL</span>
+          <b>${esc(W.name)}</b>
+        </div>
+        <div class="home-weather-temp">${f(c.temperature_2m,0)}°C</div>
+      </div>
+      <div class="home-weather-condition">${wmo(c.weather_code)}</div>
+      <div class="home-weather-metrics">
+        <div><b>${f(c.relative_humidity_2m,0)}%</b><span>Kelembapan</span></div>
+        <div><b>${f(c.wind_speed_10m,0)} km/jam</b><span>Angin</span></div>
+        <div><b>${f(c.precipitation,1)} mm</b><span>Hujan</span></div>
+      </div>
+      <button id="homeWeatherDetail" class="home-weather-detail" type="button">Lihat detail cuaca <span>›</span></button>
+    </div>`;
+    $('#homeWeatherDetail')?.addEventListener('click',open);
+  }
+
   function render(){
     const p=$('#weatherPanel');if(!p)return;
-    if(!W.data){p.innerHTML='<div class="empty">Aktifkan lokasi perangkat untuk memuat cuaca lokal.</div>';return;}
+    if(!W.data){
+      p.innerHTML='<div class="empty">Aktifkan lokasi perangkat untuk memuat cuaca lokal.</div>';
+      return;
+    }
+
     const c=W.data.current||{}; const s=sprayStatus(c,0);
     p.innerHTML=`<div class="weather-current"><div><span class="eyebrow">LOKASI</span><h2>${esc(W.name)}</h2><small>${f(W.lat,4)}, ${f(W.lon,4)}</small></div><div class="weather-temp"><b>${f(c.temperature_2m,0)}°C</b><span>${wmo(c.weather_code)}</span></div></div>
       <div class="weather-metrics"><div><b>${f(c.relative_humidity_2m,0)}%</b><span>Kelembapan</span></div><div><b>${f(c.wind_speed_10m,0)} km/jam</b><span>Angin</span></div><div><b>${f(c.precipitation,1)} mm</b><span>Presipitasi</span></div></div>
@@ -34,13 +74,30 @@
       <h3 class="weather-subhead">Perkiraan jam terdekat</h3><div class="weather-hours">${hourlyCards()}</div>
       <div class="source-note">Data cuaca berasal dari Open-Meteo. Indikator Spray Assist adalah penyaring kondisi cuaca umum dan tidak menggantikan label, kalibrasi alat, pengamatan lapangan, atau keputusan agronomis.</div>`;
   }
+
   async function load(lat,lon){
-    const p=$('#weatherPanel');if(p)p.innerHTML='<div class="empty">Memuat cuaca lokal…</div>';
+    const p=$('#weatherPanel');
+    if(p)p.innerHTML='<div class="empty">Memuat cuaca lokal…</div>';
+
     try{
       const u=`https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&current=temperature_2m,relative_humidity_2m,precipitation,weather_code,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,precipitation,weather_code,wind_speed_10m&forecast_days=2&timezone=auto`;
-      const r=await fetch(u);if(!r.ok)throw new Error('weather'); W.data=await r.json(); W.lat=lat;W.lon=lon; render();
-    }catch(e){if(p)p.innerHTML='<div class="calc-error">Cuaca belum bisa dimuat. Cek koneksi internet atau coba lagi.</div>';}
+
+      const r=await fetch(u);
+      if(!r.ok)throw new Error('weather');
+
+      W.data=await r.json();
+      W.lat=lat;
+      W.lon=lon;
+
+      renderHome();
+      render();
+
+    }catch(e){
+      if(p)p.innerHTML='<div class="calc-error">Cuaca belum bisa dimuat. Cek koneksi internet atau coba lagi.</div>';
+      renderHome();
+    }
   }
+
   function locate(){
     if(!navigator.geolocation){alert('Browser ini tidak menyediakan lokasi perangkat.');return;}
     navigator.geolocation.getCurrentPosition(pos=>load(pos.coords.latitude,pos.coords.longitude),()=>alert('Izin lokasi ditolak atau tidak tersedia. Kamu bisa memasukkan koordinat secara manual.'));
@@ -53,7 +110,12 @@
   function open(){if(typeof showScreen==='function')showScreen('weather');if(!W.data)locate();}
   window.renderWeather=render;
   window.addEventListener('DOMContentLoaded',()=>{
-    $('#weatherLocate')?.addEventListener('click',locate);$('#weatherManual')?.addEventListener('click',manual);$('#weatherRefresh')?.addEventListener('click',()=>{if(W.lat!==null)load(W.lat,W.lon);else locate();});$('#openWeather')?.addEventListener('click',open);
+    renderHome();
+    $('#weatherLocate')?.addEventListener('click',locate);
+    $('#weatherManual')?.addEventListener('click',manual);
+    $('#weatherRefresh')?.addEventListener('click',()=>{if(W.lat!==null)load(W.lat,W.lon);else locate();});
+    $('#openWeather')?.addEventListener('click',open);
+    $('#homeWeatherDetail')?.addEventListener('click',open);
     if(location.hash==='#weather')setTimeout(open,0);
   });
   if(document.readyState!=='loading')setTimeout(()=>$('#openWeather')?.addEventListener('click',open),0);
