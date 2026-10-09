@@ -1,0 +1,716 @@
+{
+  "version": "2026.2",
+  "title": "Crop Nutrition Guideline",
+  "language": "id",
+  "purpose": "Basis pengetahuan tentang unsur hara esensial, bahan bioaktif/biostimulan, pengatur tumbuh tanaman, dan unsur bermanfaat/non-esensial.",
+  "classification_note": "Istilah makro dan mikro menunjukkan jumlah relatif yang dibutuhkan, bukan tingkat kepentingan. C, H, dan O merupakan unsur esensial yang terutama diperoleh dari CO2 dan air; 14 unsur mineral esensial lainnya terutama berasal dari tanah atau input nutrisi.",
+  "categories": [
+    {
+      "id": "essential_macro",
+      "name": "Unsur Hara Makro Esensial",
+      "description": "Unsur mineral yang dibutuhkan dalam jumlah relatif besar: N, P, K, Ca, Mg, dan S. N, P, K sering disebut hara primer; Ca, Mg, S hara sekunder.",
+      "items": [
+        {
+          "id": "N",
+          "name": "Nitrogen",
+          "symbol": "N",
+          "group": "Makro primer",
+          "forms": [
+            "NO3-",
+            "NH4+"
+          ],
+          "role": [
+            "Komponen asam amino, protein dan enzim",
+            "Mendukung pembentukan klorofil dan fotosintesis",
+            "Mendukung pertumbuhan vegetatif dan pembentukan biomassa"
+          ],
+          "note": "Kebutuhan N tinggi, tetapi kelebihan N dapat mengubah keseimbangan pertumbuhan dan meningkatkan kerentanan tertentu tergantung tanaman dan kondisi.",
+          "mobility": "mobile",
+          "diagnostic_clue": "Umumnya dimulai pada daun tua: hijau pucat/kuning merata, pertumbuhan terhambat.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "P",
+          "name": "Fosfor",
+          "symbol": "P",
+          "group": "Makro primer",
+          "forms": [
+            "H2PO4-",
+            "HPO4--"
+          ],
+          "role": [
+            "Bagian dari ATP dan transfer energi",
+            "Komponen asam nukleat dan fosfolipid",
+            "Mendukung perkembangan akar, pembungaan dan pembentukan biji/buah"
+          ],
+          "note": "Ketersediaan P sangat dipengaruhi pH dan fiksasi tanah.",
+          "mobility": "mobile",
+          "diagnostic_clue": "Sering mulai pada daun tua; pertumbuhan lambat, warna hijau gelap/keunguan dapat muncul pada kondisi tertentu.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "K",
+          "name": "Kalium",
+          "symbol": "K",
+          "group": "Makro primer",
+          "forms": [
+            "K+"
+          ],
+          "role": [
+            "Mengatur keseimbangan air dan tekanan turgor",
+            "Mengaktifkan banyak enzim",
+            "Mendukung regulasi stomata, translokasi asimilat dan toleransi stres"
+          ],
+          "note": "K bukan komponen struktural utama molekul organik seperti N atau P, tetapi berperan besar sebagai ion pengatur.",
+          "mobility": "mobile",
+          "diagnostic_clue": "Umumnya daun tua: klorosis/nekrosis tepi atau scorch, vigor menurun.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Ca",
+          "name": "Kalsium",
+          "symbol": "Ca",
+          "group": "Makro sekunder",
+          "forms": [
+            "Ca2+"
+          ],
+          "role": [
+            "Komponen dinding sel dan lamela tengah",
+            "Menjaga integritas membran",
+            "Berfungsi sebagai sinyal sekunder dalam respons sel"
+          ],
+          "note": "Ca relatif tidak mobil dalam floem; suplai dan transpirasi memengaruhi distribusinya.",
+          "mobility": "immobile",
+          "diagnostic_clue": "Umumnya jaringan muda: daun baru terdistorsi, titik tumbuh/ujung akar dapat terganggu.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Mg",
+          "name": "Magnesium",
+          "symbol": "Mg",
+          "group": "Makro sekunder",
+          "forms": [
+            "Mg2+"
+          ],
+          "role": [
+            "Atom pusat molekul klorofil",
+            "Aktivator/pendukung berbagai enzim",
+            "Berperan dalam metabolisme energi dan pembentukan protein"
+          ],
+          "note": "Mg juga berinteraksi dengan ATP dan sistem fotosintesis.",
+          "mobility": "mobile",
+          "diagnostic_clue": "Umumnya daun tua: klorosis antartulang daun.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "S",
+          "name": "Sulfur",
+          "symbol": "S",
+          "group": "Makro sekunder",
+          "forms": [
+            "SO4--"
+          ],
+          "role": [
+            "Komponen asam amino sistein dan metionin",
+            "Mendukung pembentukan protein dan senyawa sulfur",
+            "Berperan dalam metabolisme dan sistem pertahanan tanaman"
+          ],
+          "note": "S berkaitan erat dengan metabolisme N dan kualitas protein.",
+          "mobility": "mobile/intermediate",
+          "diagnostic_clue": "Dapat lebih jelas pada daun muda karena mobilitasnya lebih terbatas daripada N; klorosis relatif seragam dapat muncul.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        }
+      ]
+    },
+    {
+      "id": "essential_micro",
+      "name": "Unsur Hara Mikro Esensial",
+      "description": "Unsur mineral yang dibutuhkan dalam jumlah relatif kecil tetapi tetap esensial bagi penyelesaian siklus hidup tanaman.",
+      "items": [
+        {
+          "id": "Fe",
+          "name": "Besi",
+          "symbol": "Fe",
+          "group": "Mikro",
+          "forms": [
+            "Fe2+",
+            "Fe3+",
+            "kelat Fe"
+          ],
+          "role": [
+            "Transfer elektron pada sistem fotosintesis dan respirasi",
+            "Mendukung pembentukan dan fungsi protein/enzim terkait redoks",
+            "Diperlukan untuk metabolisme klorofil secara tidak langsung"
+          ],
+          "note": "Fe bukan atom pusat klorofil; kekurangan Fe sering berkaitan dengan klorosis daun muda.",
+          "mobility": "immobile",
+          "diagnostic_clue": "Daun muda: klorosis antartulang daun, tulang daun tetap lebih hijau.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Mn",
+          "name": "Mangan",
+          "symbol": "Mn",
+          "group": "Mikro",
+          "forms": [
+            "Mn2+"
+          ],
+          "role": [
+            "Komponen penting kompleks evolusi oksigen pada fotosintesis",
+            "Aktivator berbagai enzim",
+            "Berperan dalam metabolisme dan sistem pertahanan tanaman"
+          ],
+          "mobility": "immobile",
+          "diagnostic_clue": "Daun muda: klorosis antartulang daun dengan pola dapat bervariasi menurut tanaman dan pH.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Zn",
+          "name": "Seng",
+          "symbol": "Zn",
+          "group": "Mikro",
+          "forms": [
+            "Zn2+",
+            "kelat Zn"
+          ],
+          "role": [
+            "Kofaktor/aktivator berbagai enzim",
+            "Berperan pada regulasi ekspresi gen dan metabolisme",
+            "Mendukung sintesis protein dan pertumbuhan"
+          ],
+          "mobility": "immobile/low mobility",
+          "diagnostic_clue": "Daun muda/daun muda-baru: klorosis, daun kecil atau ruas pendek dapat terjadi tergantung tanaman.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Cu",
+          "name": "Tembaga",
+          "symbol": "Cu",
+          "group": "Mikro",
+          "forms": [
+            "Cu+",
+            "Cu2+",
+            "kelat Cu"
+          ],
+          "role": [
+            "Komponen kofaktor protein redoks dan enzim",
+            "Mendukung fotosintesis, respirasi dan lignifikasi",
+            "Berperan pada metabolisme pertahanan tanaman"
+          ],
+          "note": "Rentang antara cukup dan toksik dapat sempit pada beberapa kondisi tanah.",
+          "mobility": "immobile",
+          "diagnostic_clue": "Jaringan muda: layu/klorosis atau gangguan reproduktif dapat muncul tergantung tanaman.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "B",
+          "name": "Boron",
+          "symbol": "B",
+          "group": "Mikro",
+          "forms": [
+            "H3BO3",
+            "borat"
+          ],
+          "role": [
+            "Mendukung struktur dinding sel",
+            "Berperan dalam pertumbuhan jaringan muda dan meristem",
+            "Penting pada perkembangan bunga, serbuk sari dan reproduksi pada banyak tanaman"
+          ],
+          "mobility": "immobile/limited",
+          "diagnostic_clue": "Titik tumbuh, bunga, akar muda: pertumbuhan abnormal, gangguan jaringan/reproduksi dapat terjadi.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Mo",
+          "name": "Molibdenum",
+          "symbol": "Mo",
+          "group": "Mikro",
+          "forms": [
+            "MoO4--"
+          ],
+          "role": [
+            "Kofaktor enzim reduktase nitrat",
+            "Penting untuk pemanfaatan nitrat",
+            "Berperan dalam fiksasi N biologis melalui sistem enzim terkait nitrogenase"
+          ],
+          "note": "Kebutuhan Mo sangat kecil, tetapi kekurangan dapat mengganggu metabolisme N.",
+          "mobility": "mobile/intermediate",
+          "diagnostic_clue": "Gejala berkaitan dengan metabolisme N; pola dapat menyerupai gangguan N pada beberapa tanaman.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Cl",
+          "name": "Klorin",
+          "symbol": "Cl",
+          "group": "Mikro",
+          "forms": [
+            "Cl-"
+          ],
+          "role": [
+            "Berperan dalam keseimbangan osmotik dan ionik",
+            "Terlibat pada fungsi fotosintesis, termasuk kompleks evolusi oksigen",
+            "Mendukung regulasi sel dan aktivitas enzim tertentu"
+          ],
+          "mobility": "mobile",
+          "diagnostic_clue": "Gejala defisiensi jarang; dapat berkaitan dengan gangguan keseimbangan air/fotosintesis.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Ni",
+          "name": "Nikel",
+          "symbol": "Ni",
+          "group": "Mikro",
+          "forms": [
+            "Ni2+"
+          ],
+          "role": [
+            "Komponen esensial urease",
+            "Mendukung metabolisme urea dan penggunaan N pada tanaman",
+            "Berperan pada beberapa proses metabolik dan reproduktif"
+          ],
+          "note": "Ni diakui sebagai unsur esensial tanaman; kebutuhannya sangat kecil dan kelebihan dapat toksik.",
+          "mobility": "limited mobility",
+          "diagnostic_clue": "Gejala spesifik jarang; terkait fungsi urease dan metabolisme urea.",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        }
+      ]
+    },
+    {
+      "id": "essential_non_mineral",
+      "name": "Unsur Esensial Non-Mineral",
+      "description": "C, H, dan O esensial bagi tanaman dan terutama diperoleh dari karbon dioksida dan air, bukan dipasok seperti pupuk mineral biasa.",
+      "items": [
+        {
+          "id": "C",
+          "name": "Karbon",
+          "symbol": "C",
+          "group": "Esensial non-mineral",
+          "forms": [
+            "CO2"
+          ],
+          "role": [
+            "Kerangka karbon biomolekul",
+            "Bahan utama pembentukan karbohidrat melalui fotosintesis",
+            "Menjadi dasar pembentukan biomassa"
+          ],
+          "mobility": "not applicable",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "H",
+          "name": "Hidrogen",
+          "symbol": "H",
+          "group": "Esensial non-mineral",
+          "forms": [
+            "H2O",
+            "H+"
+          ],
+          "role": [
+            "Bagian dari air dan molekul organik",
+            "Terlibat dalam gradien proton dan transfer energi",
+            "Mendukung keseimbangan asam-basa dan metabolisme"
+          ],
+          "mobility": "not applicable",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "O",
+          "name": "Oksigen",
+          "symbol": "O",
+          "group": "Esensial non-mineral",
+          "forms": [
+            "O2",
+            "H2O",
+            "CO2"
+          ],
+          "role": [
+            "Bagian dari air dan banyak molekul organik",
+            "Diperlukan untuk respirasi aerob",
+            "Berperan dalam fotosintesis dan berbagai reaksi oksidasi-reduksi"
+          ],
+          "mobility": "not applicable",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        }
+      ]
+    },
+    {
+      "id": "beneficial_nonessential",
+      "name": "Unsur Bermanfaat / Non-esensial",
+      "description": "Unsur yang tidak memenuhi kriteria esensial universal untuk semua tanaman, tetapi dapat memberi manfaat pada tanaman tertentu atau kondisi tertentu.",
+      "items": [
+        {
+          "id": "Si",
+          "name": "Silikon",
+          "symbol": "Si",
+          "group": "Bermanfaat",
+          "forms": [
+            "H4SiO4"
+          ],
+          "role": [
+            "Dapat memperkuat jaringan dan mendukung ketahanan mekanis",
+            "Dapat membantu respons tanaman terhadap beberapa stres biotik dan abiotik",
+            "Berperan penting pada beberapa tanaman akumulator Si seperti padi dan tebu"
+          ],
+          "note": "Si tidak diklasifikasikan sebagai unsur esensial universal untuk semua tanaman.",
+          "mobility": "not classified as essential",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Na",
+          "name": "Natrium",
+          "symbol": "Na",
+          "group": "Bermanfaat pada kondisi tertentu",
+          "forms": [
+            "Na+"
+          ],
+          "role": [
+            "Dapat berkontribusi pada keseimbangan osmotik pada tanaman tertentu",
+            "Pada sebagian spesies dapat menggantikan sebagian fungsi K pada proses tertentu",
+            "Dapat menjadi unsur bermanfaat pada tanaman halofit/C4 tertentu"
+          ],
+          "note": "Na bukan pengganti umum K dan dapat menjadi toksik pada konsentrasi tinggi.",
+          "mobility": "not classified as essential",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Co",
+          "name": "Kobalt",
+          "symbol": "Co",
+          "group": "Bermanfaat pada kondisi tertentu",
+          "forms": [
+            "Co2+"
+          ],
+          "role": [
+            "Berkaitan dengan sistem biologis yang melibatkan mikroorganisme penambat N",
+            "Dapat memengaruhi nodulasi dan metabolisme tanaman tertentu melalui hubungan tanaman-mikroba"
+          ],
+          "note": "Perannya lebih spesifik dan tidak dianggap unsur esensial universal tanaman tingkat tinggi.",
+          "mobility": "not classified as essential",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        },
+        {
+          "id": "Se",
+          "name": "Selenium",
+          "symbol": "Se",
+          "group": "Bermanfaat pada kondisi tertentu",
+          "forms": [
+            "selenat",
+            "selenit"
+          ],
+          "role": [
+            "Pada dosis rendah dapat memodulasi sistem antioksidan dan respons stres pada sebagian tanaman",
+            "Dapat meningkatkan akumulasi Se untuk biofortifikasi pada sistem tertentu"
+          ],
+          "note": "Se bukan unsur esensial universal tanaman; rentang aman dapat sempit dan dosis tinggi toksik.",
+          "mobility": "not classified as essential",
+          "diagnostic_caution": "Gejala visual bukan diagnosis tunggal; konfirmasi dengan analisis tanah/jaringan, pH, akar, air dan riwayat pemupukan bila keputusan korektif akan dibuat."
+        }
+      ]
+    }
+  ],
+  "biostimulants": [
+    {
+      "id": "amino-acids",
+      "name": "Asam amino / protein hydrolysates",
+      "category": "Biostimulan",
+      "what": "Senyawa organik penyusun protein dan/atau campuran peptida-asam amino yang dapat digunakan sebagai input biostimulan.",
+      "role": [
+        "Menyediakan molekul organik yang dapat berinteraksi dengan metabolisme N dan C",
+        "Dapat mendukung respons tanaman terhadap stres tergantung sumber, komposisi dan metode aplikasi",
+        "Protein hydrolysates dapat memengaruhi nutrisi, pertumbuhan dan metabolisme tanaman"
+      ],
+      "note": "Efek tidak sama untuk semua produk; komposisi bahan dan kondisi tanaman sangat menentukan."
+    },
+    {
+      "id": "humic-acid",
+      "name": "Asam humat",
+      "category": "Substansi humat / biostimulan",
+      "what": "Fraksi substansi humat dengan struktur kimia kompleks yang berasal dari bahan organik terhumifikasi.",
+      "role": [
+        "Dapat memengaruhi pertumbuhan akar dan arsitektur akar",
+        "Dapat meningkatkan mobilisasi/ketersediaan dan efisiensi penggunaan nutrien pada kondisi tertentu",
+        "Dapat memengaruhi aktivitas H+-ATPase, metabolisme dan respons stres"
+      ],
+      "note": "Respons sangat bergantung pada sumber, karakter kimia, konsentrasi, tanaman dan kondisi lingkungan."
+    },
+    {
+      "id": "fulvic-acid",
+      "name": "Asam fulvat",
+      "category": "Substansi humat / biostimulan",
+      "what": "Fraksi substansi humat yang lebih larut dibanding fraksi humat berberat molekul lebih tinggi.",
+      "role": [
+        "Dapat memengaruhi penyerapan dan transport nutrien",
+        "Dapat berinteraksi dengan metabolisme akar dan daun",
+        "Berpotensi membantu respons terhadap stres melalui perubahan proses fisiologis"
+      ],
+      "note": "Asam fulvat bukan unsur hara dan tidak menggantikan kebutuhan nutrisi mineral."
+    },
+    {
+      "id": "seaweed-extract",
+      "name": "Ekstrak rumput laut",
+      "category": "Biostimulan",
+      "what": "Ekstrak dari alga/rumput laut yang mengandung campuran senyawa bioaktif dan mineral dengan komposisi bergantung bahan baku dan proses ekstraksi.",
+      "role": [
+        "Dapat memodulasi pertumbuhan dan perkembangan",
+        "Dapat mendukung respons terhadap stres",
+        "Dapat memengaruhi aktivitas metabolik dan fisiologis"
+      ],
+      "note": "Jangan menyamakan semua ekstrak rumput laut; kandungan dan respons sangat bergantung produk."
+    }
+  ],
+  "growth_regulators": [
+    {
+      "id": "auxins",
+      "name": "Auksin",
+      "examples": [
+        "IAA",
+        "IBA",
+        "NAA"
+      ],
+      "category": "Plant Growth Regulator (PGR)",
+      "role": [
+        "Mengatur pemanjangan dan diferensiasi sel",
+        "Berperan pada inisiasi akar",
+        "Terlibat dalam dominansi apikal, tropisme dan perkembangan buah"
+      ],
+      "note": "IAA adalah auksin alami; IBA dan NAA adalah auksin/PGR sintetik atau analog yang digunakan pada aplikasi tertentu. Efek sangat bergantung konsentrasi dan fase tanaman."
+    },
+    {
+      "id": "gibberellins",
+      "name": "Giberelin",
+      "examples": [
+        "GA3"
+      ],
+      "category": "Plant Growth Regulator (PGR)",
+      "role": [
+        "Mendukung pemanjangan batang pada konteks tertentu",
+        "Berperan pada perkecambahan dan transisi perkembangan",
+        "Dapat memengaruhi pembungaan dan perkembangan buah pada tanaman tertentu"
+      ],
+      "note": "Respons GA3 sangat spesifik terhadap spesies, varietas, dosis dan fase perkembangan."
+    },
+    {
+      "id": "cytokinins",
+      "name": "Sitokinin",
+      "examples": [
+        "6-BA/BAP",
+        "Kinetin",
+        "Zeatin",
+        "CPPU / Forchlorfenuron"
+      ],
+      "category": "Plant Growth Regulator (PGR)",
+      "role": [
+        "Merangsang pembelahan sel dan perkembangan jaringan",
+        "Berinteraksi dengan auksin dalam pembentukan organ",
+        "CPPU merupakan PGR sintetis dengan aktivitas mirip sitokinin dan telah diteliti untuk fruit set/fruit expansion pada sejumlah tanaman buah"
+      ],
+      "note": "CPPU bukan hormon tanaman alami; ia merupakan regulator pertumbuhan sintetis dengan aktivitas sitokinin."
+    },
+    {
+      "id": "cppu",
+      "name": "CPPU / Forchlorfenuron",
+      "examples": [
+        "CPPU",
+        "Forchlorfenuron",
+        "KT-30"
+      ],
+      "category": "Plant Growth Regulator (PGR) · sitokinin-like",
+      "role": [
+        "Regulator pertumbuhan sintetis dengan aktivitas mirip sitokinin",
+        "Dapat memengaruhi pembelahan/pembesaran sel dan perkembangan organ pada konteks tertentu",
+        "Telah diteliti untuk fruit set dan fruit expansion pada sejumlah komoditas"
+      ],
+      "note": "Bukan unsur hara dan bukan hormon tanaman alami. Efek sangat spesifik komoditas, varietas, konsentrasi, timing dan kondisi; penggunaan harus mengikuti label/registrasi lokal."
+    },
+    {
+      "id": "triacontanol",
+      "name": "Triakontanol",
+      "examples": [
+        "Triacontanol / TRIA"
+      ],
+      "category": "Plant Growth Regulator / growth bioregulator",
+      "role": [
+        "Dapat memodulasi fotosintesis, aktivitas enzim dan metabolisme",
+        "Dilaporkan dapat memengaruhi pertumbuhan dan hasil pada berbagai tanaman",
+        "Dapat berinteraksi dengan respons fisiologis terhadap stres"
+      ],
+      "note": "Triakontanol sebaiknya disebut PGR/bioregulator, bukan disamakan begitu saja dengan fitohormon klasik. Respons dapat bergantung konsentrasi dan kondisi tanaman."
+    },
+    {
+      "id": "ethylene",
+      "name": "Etilen / ethylene-releasing PGR",
+      "examples": [
+        "Ethephon"
+      ],
+      "category": "Plant Growth Regulator (PGR)",
+      "role": [
+        "Mengatur pematangan, senesens, absisi dan respons terhadap stres",
+        "Ethephon dapat melepaskan etilen di jaringan tanaman dan digunakan pada tujuan fisiologis tertentu"
+      ],
+      "note": "Penggunaan sangat spesifik tanaman dan tujuan; jangan dianggap sebagai input nutrisi."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "essentiality",
+      "name": "Apa itu unsur hara esensial?",
+      "summary": "Unsur disebut esensial bila tanaman tidak dapat menyelesaikan siklus hidup tanpa unsur tersebut, fungsinya tidak dapat digantikan unsur lain, dan unsur terlibat langsung dalam nutrisi/metabolisme tanaman."
+    },
+    {
+      "id": "macro-micro",
+      "name": "Makro vs mikro",
+      "summary": "Makro dan mikro membedakan jumlah relatif yang dibutuhkan tanaman. Unsur mikro tetap sama pentingnya secara fisiologis meskipun kebutuhannya jauh lebih kecil."
+    },
+    {
+      "id": "nutrition-vs-biostimulant",
+      "name": "Nutrisi vs biostimulan vs PGR",
+      "summary": "Nutrisi memasok unsur yang dibutuhkan tanaman. Biostimulan memengaruhi proses nutrisi, efisiensi penggunaan, pertumbuhan atau toleransi stres melalui mekanisme yang tidak sekadar memasok unsur. PGR terutama digunakan untuk memodulasi proses pertumbuhan/perkembangan."
+    }
+  ],
+  "sources": [
+    {
+      "title": "FAO Fertilizer Manual",
+      "url": "https://www.fao.org/fileadmin/templates/ess/ess_test_folder/Publications/ManualFertilizers.pdf",
+      "scope": "Kriteria dan daftar unsur esensial."
+    },
+    {
+      "title": "UF/IFAS Plant Essential Nutrients and Their Role",
+      "url": "https://ask.ifas.ufl.edu/publication/AG462",
+      "scope": "Klasifikasi dan fungsi hara mineral."
+    },
+    {
+      "title": "Texas A&M AgriLife Extension — Essential Nutrients for Plants",
+      "url": "https://agrilifeextension.tamu.edu/library/gardening/essential-nutrients-for-plants/",
+      "scope": "Bentuk ion dan fungsi unsur hara."
+    },
+    {
+      "title": "Triacontanol as a dynamic growth regulator for plants under diverse environmental conditions",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32377038/",
+      "scope": "Peran dan respons fisiologis triakontanol."
+    },
+    {
+      "title": "Research progress on phenylurea-derived plant growth regulators",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2773237124000315",
+      "scope": "CPPU/forchlorfenuron sebagai PGR dengan aktivitas mirip sitokinin."
+    },
+    {
+      "title": "Humic and fulvic acids as biostimulants in horticulture",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304423815301771",
+      "scope": "Peran substansi humat pada akar, penyerapan nutrien dan respons stres."
+    },
+    {
+      "title": "Humic substances for abiotic stress resilience: current knowledge and perspectives",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42302557/",
+      "scope": "Variabilitas efek humic substances dan respons terhadap stres abiotik."
+    },
+    {
+      "id": "plant-nutrients-tamu",
+      "title": "Essential Nutrients for Plants",
+      "publisher": "Texas A&M AgriLife Extension Service",
+      "type": "External extension reference",
+      "scope": "Essentiality, nutrient groups, forms, uptake and major functions",
+      "year": "2021",
+      "url": "https://agrilifeextension.tamu.edu/library/gardening/essential-nutrients-for-plants/"
+    },
+    {
+      "id": "plant-nutrients-umn-2026",
+      "title": "Foliar testing for fruit and vegetable crops",
+      "publisher": "University of Minnesota Extension",
+      "type": "External extension reference",
+      "scope": "14 soil-derived essential nutrients and crop nutrient testing",
+      "year": "2026",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/foliar-testing-for-fruit-and-vegetable-crops"
+    },
+    {
+      "id": "nutrient-mobility-ufifas",
+      "title": "Movement of Plant Nutrients",
+      "publisher": "UF/IFAS Extension",
+      "type": "External extension reference",
+      "scope": "Mobile versus immobile nutrients and diagnostic positioning of symptoms",
+      "year": "2025",
+      "url": "https://ask.ifas.ufl.edu/publication/HS1373"
+    },
+    {
+      "id": "nutrient-interactions-missouri",
+      "title": "When More Is Less: How Excess Nutrients Can Cause Deficiencies in Crops",
+      "publisher": "University of Missouri Extension",
+      "type": "External extension reference",
+      "scope": "Nutrient antagonism, cation competition and pH effects",
+      "year": "2025",
+      "url": "https://extension.missouri.edu/publications/g9069"
+    },
+    {
+      "id": "biostimulants-frontiers-2016",
+      "title": "Biostimulants in Plant Science: A Global Perspective",
+      "publisher": "Frontiers in Plant Science",
+      "type": "Scientific review",
+      "scope": "Biostimulant concept and categories",
+      "year": "2016",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.02049/full"
+    },
+    {
+      "id": "humic-fulvic-2015",
+      "title": "Humic and fulvic acids as biostimulants in horticulture",
+      "publisher": "Scientia Horticulturae / ScienceDirect",
+      "type": "Scientific review",
+      "scope": "Humic substances, roots, nutrient uptake and stress responses",
+      "year": "2015",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304423815301771"
+    },
+    {
+      "id": "triacontanol-pubmed",
+      "title": "Triacontanol as a dynamic growth regulator for plants under diverse environmental conditions",
+      "publisher": "PubMed",
+      "type": "Scientific review",
+      "scope": "Triacontanol physiological and stress-response effects",
+      "year": "2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32377038/"
+    },
+    {
+      "id": "cytokinin-pubmed",
+      "title": "Cytokinins as central regulators during plant growth and stress response",
+      "publisher": "PubMed",
+      "type": "Scientific review",
+      "scope": "Cytokinin biology, development and stress response",
+      "year": "2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33025178/"
+    }
+  ],
+  "diagnostic_framework": {
+    "title": "Kerangka diagnosis nutrisi",
+    "steps": [
+      "Amati posisi gejala: daun tua vs muda/titik tumbuh.",
+      "Periksa pola: klorosis merata, antartulang daun, marginal, nekrosis, deformasi.",
+      "Periksa pH, kelembapan, salinitas, akar, varietas dan riwayat pemupukan.",
+      "Bandingkan dengan analisis tanah atau jaringan sebelum menyimpulkan defisiensi."
+    ],
+    "note": "Gejala nutrisi dapat tumpang tindih dengan penyakit, OPT, kerusakan akar, salinitas, kekeringan, pH dan fitotoksisitas. Jangan menjadikan foto sebagai satu-satunya dasar diagnosis."
+  },
+  "interaction_examples": [
+    {
+      "pair": "K ↔ Mg",
+      "type": "antagonisme dapat terjadi",
+      "note": "K berlebih dapat menekan pengambilan Mg pada kondisi tertentu; keseimbangan K/Mg penting."
+    },
+    {
+      "pair": "K ↔ Ca",
+      "type": "antagonisme dapat terjadi",
+      "note": "K tinggi dapat menekan pengambilan Ca pada kondisi tertentu."
+    },
+    {
+      "pair": "P ↔ Zn",
+      "type": "antagonisme dapat terjadi",
+      "note": "P tinggi dapat menurunkan ketersediaan/pengambilan Zn pada kondisi tertentu."
+    },
+    {
+      "pair": "pH ↔ Fe/Mn/Zn/Cu",
+      "type": "ketersediaan berubah",
+      "note": "Perubahan pH dapat mengubah kelarutan dan ketersediaan beberapa mikronutrien."
+    },
+    {
+      "pair": "B ↔ Ca/N/P/K/Zn",
+      "type": "interaksi fisiologis",
+      "note": "B berinteraksi dengan berbagai unsur; kebutuhan dan respons sangat tergantung tanaman dan kondisi."
+    }
+  ]
+}

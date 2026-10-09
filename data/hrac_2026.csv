@@ -1,0 +1,24 @@
+﻿committee,hrac_code,legacy_hrac,mode_of_action,chemical_family,active_ingredients
+HRAC,1,A,Inhibition of Acetyl CoA Carboxylase (ACCase),Cyclohexanediones; Aryloxyphenoxypropionates,clethodim; sethoxydim; pinoxaden; haloxyfop-methyl; fenoxaprop-ethyl; cyhalofop-butyl
+HRAC,2,B,Inhibition of Acetolactate Synthase (ALS),Imidazolinones; Sulfonylureas; Triazolopyrimidines; Triazolinones,imazamox; imazapyr; imazethapyr; imazosulfuron; chlorsulfuron; nicosulfuron; metsulfuron-methyl; penoxsulam; pyroxsulam; flucarbazone-Na
+HRAC,3,K1,Inhibition of Microtubule Assembly / α-Tubulin,Dinitroanilines; Pyridines; Phosphoroamidates,pendimethalin; trifluralin; prodiamine; dithiopyr; butamifos
+HRAC,4,O,Auxin Mimics,Pyridyloxycarboxylates; 6-Chloropicolinates; Phenoxycarboxylates; Benzoates,"fluroxypyr; triclopyr; aminopyralid; 2,4-D; dicamba; clopyralid; picloram; quinclorac"
+HRAC,5,"C1,2",Inhibition of Photosynthesis at PS II – D1 Serine 264 binders,Triazines; Ureas; Uracils; Phenylcarbamates; Amides; Triazinones,prometryne; simazine; atrazine; isoproturon; diuron; linuron; metribuzin; propanil
+HRAC,6,C3,Inhibition of Photosynthesis at PS II – D1 Histidine 215 binders,Nitriles,bromoxynil; ioxynil
+HRAC,9,G,Inhibition of EPSPS,Glycines,glyphosate
+HRAC,10,H,Inhibition of Glutamine Synthetase (GS),Phosphinic acids,glufosinate-ammonium
+HRAC,12,F1,Inhibition of Phytoene Desaturase (PDS),Diphenyl heterocycles; N-Phenyl heterocycles,norflurazon; fluridone; diflufenican; flurochloridone
+HRAC,13,F4,Inhibition of Deoxy-D-Xylulose Phosphate Synthase (DXPS),Pyrimidinyl / related,cyclopyrimorate
+HRAC,14,E,Inhibition of Protoporphyrinogen Oxidase (PPO),Diphenyl ethers; N-Phenylimides; N-Phenyltriazolinones,oxyfluorfen; acifluorfen; fomesafen; flumioxazin; carfentrazone-ethyl; sulfentrazone; saflufenacil; tiafenacil
+HRAC,15,K3,Inhibition of Very Long-Chain Fatty Acid Synthesis (VLCFA),α-Chloroacetamides; Thiocarbamates; α-Oxyacetamides; α-Thioacetamides,acetochlor; alachlor; metolachlor; pretilachlor; butachlor; dimethenamid; thiobencarb; pyroxasulfone
+HRAC,18,I,Inhibition of Dihydropteroate Synthase (DHPS),Carbamates,asulam
+HRAC,19,P,Auxin Transport Inhibitors,Arylcarboxylates,diflufenzopyr
+HRAC,22,D,PS I Electron Diversion,Pyridiniums,diquat; paraquat
+HRAC,23,K2,Microtubule Interference – Unclear Site of Action,Benzamides; Carbamates,propyzamide; pronamide; carbetamide; chlorpropham
+HRAC,27,F2,Inhibition of Hydroxyphenyl Pyruvate Dioxygenase (HPPD),Triketones; Pyrazoles; Nitriles,topramezone; mesotrione; tembotrione; sulcotrione; isoxaflutole; benzofenap
+HRAC,28,none,Inhibition of Dihydroorotate Dehydrogenase (DHODH),Pyrimidine carboxamides / related,tetflupyrolimet
+HRAC,29,L,Inhibition of Cellulose Synthesis,Benzonitriles; Indaziflam / related,dichlobenil; indaziflam; isoxaben
+HRAC,30,Q,Inhibition of Fatty Acid Thioesterase (FAT),Benzyl ethers; Pyridines,cinmethylin; methiozolin
+HRAC,32,S,Inhibition of Solanesyl Diphosphate Synthase (SDPS),Benzobicyclon / related,benzobicyclon; cyclopyrimorate
+HRAC,33,T,Inhibition of Homogentisate Solanesyltransferase (HST),Isoxazolidinones / related,bixlozone; clomazone
+HRAC,Ø,Z,Unknown Mode of Action,Unknown / inconclusive,aclonifen; MSMA

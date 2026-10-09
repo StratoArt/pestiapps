@@ -1,0 +1,96 @@
+{
+  "source_id": "fusarium-watermelon-seminis-2016",
+  "title": "Management of Fusarium Wilt in Watermelon",
+  "year": "2016",
+  "pages": "1-2",
+  "pathogen": {
+    "name": "Fusarium oxysporum forma specialis niveum",
+    "abbreviation": "FON",
+    "host": "watermelon"
+  },
+  "key_facts": [
+    "Fusarium wilt is described as one of the economically important diseases of watermelon.",
+    "The pathogen can remain viable in soil for 15–20 years in the source discussion.",
+    "Four races are described: Race 0, Race 1, Race 2 and Race 3.",
+    "FON infects roots and enters xylem, restricting water and nutrient flow and producing wilt."
+  ],
+  "races": [
+    {
+      "race": "Race 0",
+      "source_note": "Able to infect varieties with no specific resistance genes in the source."
+    },
+    {
+      "race": "Race 1",
+      "source_note": "Can overcome resistance present in Sugar Baby; described as prevalent in the U.S. source context."
+    },
+    {
+      "race": "Race 2",
+      "source_note": "Causes severe disease on almost all commercial cultivars in the source context."
+    },
+    {
+      "race": "Race 3",
+      "source_note": "Described as able to overcome Race 2 resistance gene; recently detected in Maryland in the source context."
+    }
+  ],
+  "symptoms": [
+    "Dull gray-green leaves and wilting during the heat of the day.",
+    "Older leaves tend to wilt first; wilt can initially be unilateral.",
+    "Initially wilted vines may recover at night, later becoming permanent.",
+    "Brown streaking/discoloration in vascular tissue of lower stem and vines.",
+    "Fruit may be small, misshapen, crack or sunburn with age.",
+    "Infected plants can occur in clusters/foci that enlarge as the pathogen spreads in soil.",
+    "Symptoms can resemble other vascular wilts; testing may be needed to verify cause."
+  ],
+  "favorable_conditions": [
+    "Light and sandy soils",
+    "Acidic soils",
+    "Nitrate (NO3)-based fertilizers",
+    "Plant-parasitic nematodes such as root-knot nematodes",
+    "Root infection favored by cool, moist spring conditions",
+    "Wilt expression most pronounced during warm, dry periods"
+  ],
+  "management": [
+    {
+      "title": "Clean transplants",
+      "items": [
+        "Inspect transplants before planting",
+        "Discard or thoroughly sanitize seedling trays before reuse"
+      ]
+    },
+    {
+      "title": "Sanitation",
+      "items": [
+        "Clean tools and equipment to prevent moving soilborne inoculum into non-infested fields"
+      ]
+    },
+    {
+      "title": "Resistant varieties",
+      "items": [
+        "Use wilt-resistant varieties where available",
+        "Source notes resistance can be overcome under high pathogen populations or favorable disease conditions"
+      ]
+    },
+    {
+      "title": "Grafting",
+      "items": [
+        "Graft susceptible scion onto resistant bottle gourd or squash rootstocks",
+        "Source describes rootstock resistance as a way to prevent root infection of susceptible scion"
+      ]
+    },
+    {
+      "title": "Crop rotation",
+      "items": [
+        "Long-term crop rotation is described as important because inoculum persists in soil",
+        "Source reports one study with inoculum declines of 20% after one year, 40% after two years and 50% after three years out of watermelon",
+        "Source recommends watermelon only once every five to seven years and not in the same location two years in a row"
+      ]
+    },
+    {
+      "title": "Chemical management",
+      "items": [
+        "Source reports progress with fungicides; one cited study used prothioconazole through drip irrigation",
+        "Only fungicides labeled for Fusarium wilt on watermelon should be used and label directions followed"
+      ]
+    }
+  ]
+}

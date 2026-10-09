@@ -1,0 +1,14 @@
+{
+  "title": "Panduan Analisis Foto OPT",
+  "language": "Bahasa Indonesia",
+  "prompt_version": "1.0",
+  "workflow": [
+    "Identifikasi tanaman/komoditas jika terlihat.",
+    "Pisahkan kemungkinan hama, penyakit, gulma, gangguan abiotik, dan kerusakan pestisida.",
+    "Berikan maksimal 3 kandidat dan alasan berdasarkan ciri visual yang terlihat.",
+    "Jangan menyatakan diagnosis pasti hanya dari foto; tandai bagian yang perlu pemeriksaan lapangan atau laboratorium.",
+    "Jika foto tidak cukup jelas, minta foto tambahan: seluruh tanaman, close-up gejala, sisi bawah daun, batang, akar, buah, atau organisme penyebab.",
+    "Jangan memberikan dosis pestisida atau campuran tangki otomatis dari hasil foto."
+  ],
+  "tomato_guide_context": "Panduan Tomat yang diunggah pengguna mencakup penyakit bakteri, jamur/oomycete, nematoda, tanaman parasit, fitoplasma, virus, viroid, gangguan abiotik, kerusakan serangga, gangguan nutrisi dan cedera pestisida. Panduan tersebut menegaskan bahwa diagnosis hanya dari panduan/foto tidak dianjurkan sebagai pengganti pendapat profesional dan konfirmasi laboratorium/greenhouse dapat diperlukan."
+}

@@ -1,0 +1,181 @@
+{
+  "release": "v0.24.8",
+  "source": "database_pestisida_crop_expert_v14-1.csv",
+  "rule": "Nama Merk berakhiran TC (case-insensitive, setelah trim)",
+  "removed_count_csv": 24,
+  "removed_count_production_json": 24,
+  "removed_count_moa_crosswalk": 27,
+  "remaining_csv": 905,
+  "remaining_production_json": 905,
+  "remaining_moa_crosswalk": 818,
+  "removed_products": [
+    {
+      "Nama Merk": "DELTAMETRIN 98 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "FENVALERAT 94 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "GLIFOSAT 95 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "IPA GLIFOSAT 62 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "KLORPIRIFOS 98 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "LAMDA SIHALOTRIN 95 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "MONOSULTAP 95 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "PARAKUAT DIKLORIDA 42 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "PROFENOFOS 94 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "SIPERMETRIN 92 TC",
+      "Perusahaan": "PT. BIOTIS AGRINDO",
+      "Bahan Aktif": "",
+      "Formulasi": "",
+      "Kategori": "Bahan teknis"
+    },
+    {
+      "Nama Merk": "CINFLUBROLIN 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "cinflubrolin 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "CYCLOBUNOFEN 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "cyclobunofen 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "DIMPYRARGYL 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "dimpyrargyl 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUCHLORAMINOPYR 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "fluchloraminopyr 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUCHLORAMINOPYR-TEFURYL 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "fluchloraminopyr-tefuryl 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUFENAUXIRIM-METOTYL 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "flufenauxirim-metotyl 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUFENAZOPYR 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "flufenazopyr 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUFENOXIMACIL 95 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "flufenoximacil 95%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUPYMEZOTIAZ 98 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "flupymezotiaz 98%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "FLUSULFINAM 95 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "flusulfinam 95%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "HALAUXIFEN-METHYL 95 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "halauxifen-methyl 95%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "ISOFLUALAMIDE 95 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "isoflualamide 95%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "SAFLUFENACIL 95 TC",
+      "Perusahaan": "PT KingAgroot Biotechnology Indonesia",
+      "Bahan Aktif": "saflufenacil 95%",
+      "Formulasi": "TC",
+      "Kategori": "Bahan Teknis"
+    },
+    {
+      "Nama Merk": "EMAMECTIN BENZOATE 95 TC",
+      "Perusahaan": "PT Rainbow Agrosciences",
+      "Bahan Aktif": "emamektin benzoat 95%",
+      "Formulasi": "TC",
+      "Kategori": "Insektisida"
+    }
+  ]
+}

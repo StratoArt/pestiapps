@@ -1,0 +1,3450 @@
+{
+  "report_version": "0.1.0",
+  "generated_at": "2026-10-06T07:24:48.444Z",
+  "purpose": "Audit kandidat recovery database produk Data Center dari legacy PestiApps tanpa mengubah canonical data.",
+  "sources": {
+    "canonical": "https://raw.githubusercontent.com/StratoArt/Data-Manager/main/data/products/pestisida.json",
+    "legacy": "data/pesticide_database_id.json"
+  },
+  "policy": {
+    "canonical_is_primary": true,
+    "legacy_is_recovery_source": true,
+    "auto_write_canonical": false,
+    "conflicts_preserve_canonical": true
+  },
+  "summary": {
+    "canonical_total": 1058,
+    "legacy_total": 905,
+    "unique_brand_matches": 875,
+    "canonical_unmatched_by_brand": 135,
+    "ambiguous_brand_matches": 48,
+    "canonical_duplicate_brand_groups": 47,
+    "legacy_duplicate_brand_groups": 24,
+    "recovery_active_ingredient": 1,
+    "recovery_target": 12,
+    "recovery_both": 1,
+    "conflicts_active_ingredient": 46,
+    "conflicts_target": 27
+  },
+  "recovery_candidates": {
+    "active_ingredients": [
+      {
+        "id": "pestdb-clean-0689",
+        "brand_name": "SUMIBOXAM 100 SC",
+        "product_category": "Pestisida",
+        "legacy_id": "pestdb-csv-0741",
+        "legacy_match_count": 2,
+        "canonical": {
+          "active_ingredients_raw": "",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Etaboksam 100 g/L",
+          "targets_raw": "Phytophthora infestans; embun bulu"
+        },
+        "recover_fields": [
+          "active_ingredients_raw",
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": true,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      }
+    ],
+    "targets": [
+      {
+        "id": "pestdb-clean-0689",
+        "brand_name": "SUMIBOXAM 100 SC",
+        "product_category": "Pestisida",
+        "legacy_id": "pestdb-csv-0741",
+        "legacy_match_count": 2,
+        "canonical": {
+          "active_ingredients_raw": "",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Etaboksam 100 g/L",
+          "targets_raw": "Phytophthora infestans; embun bulu"
+        },
+        "recover_fields": [
+          "active_ingredients_raw",
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": true,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0877",
+        "brand_name": "AVIDOR 25 WP",
+        "product_category": "Insektisida",
+        "legacy_id": "pestdb-0875",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "",
+          "targets_raw": "Wereng coklat padi dan hama cabai"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": true,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0880",
+        "brand_name": "DETANNEB 80 WP",
+        "product_category": "Fungisida",
+        "legacy_id": "pestdb-0878",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "mancozeb 80%",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Mankozeb 80%",
+          "targets_raw": "Bercak daun bawang; busuk daun kentang"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0891",
+        "brand_name": "POSBAN 200 EC",
+        "product_category": "Insektisida",
+        "legacy_id": "pestdb-0890",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "chlorpyrifos 200 g/L",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Klorpirifos 200 g/L",
+          "targets_raw": "Spodoptera exigua bawang; Thrips cabai; Spodoptera litura kedelai"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0898",
+        "brand_name": "SENTRAL 11 PA",
+        "product_category": "Zat Pengatur Tumbuh",
+        "legacy_id": "pestdb-0895",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "",
+          "targets_raw": "Merangsang keluarnya getah karet"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0916",
+        "brand_name": "SAGRI-BAT 70 WP",
+        "product_category": "Fungisida",
+        "legacy_id": "pestdb-091",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "azoxystrobin 10% + dimethomorph 60%",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Bahan aktif formulasi 70%",
+          "targets_raw": "Penyakit jamur sesuai label produk"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": true,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0926",
+        "brand_name": "SAGRI-MANZIM 65/20 WP",
+        "product_category": "Fungisida",
+        "legacy_id": "pestdb-092",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "mancozeb 65% + carbendazim 20%",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Karbendazim + Mankozeb",
+          "targets_raw": "bercak daun; antraknosa; hawar"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0928",
+        "brand_name": "SAGRI-NIL 77 WP",
+        "product_category": "Fungisida",
+        "legacy_id": "pestdb-094",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "chlorothalonil 77%",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Bahan aktif formulasi 77%",
+          "targets_raw": "Penyakit jamur sesuai label produk"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": true,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0936",
+        "brand_name": "SAGRI-ZEB 85 WP",
+        "product_category": "Fungisida",
+        "legacy_id": "pestdb-093",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "mancozeb 85%",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Mankozeb 85%",
+          "targets_raw": "bercak daun; antraknosa; hawar"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0969",
+        "brand_name": "FASCINATE 150 SL",
+        "product_category": "Herbisida",
+        "legacy_id": "pestdb-csv-0473",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "glufosinate-ammonium 150 g/L",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "amonium glufosinat 150 g/L",
+          "targets_raw": "Pestisida terdaftar/label UPL"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": true,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-0997",
+        "brand_name": "PENNCOZEB-BLUE 80 WP",
+        "product_category": "Fungisida",
+        "legacy_id": "pestdb-csv-0237",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "mancozeb 80%",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "mancozeb 80%",
+          "targets_raw": "Penyakit jamur"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": true,
+          "status": "candidate"
+        }
+      },
+      {
+        "id": "pestdb-clean-1021",
+        "brand_name": "TARANG 280 SL",
+        "product_category": "Herbisida",
+        "legacy_id": "pestdb-csv-0471",
+        "legacy_match_count": 1,
+        "canonical": {
+          "active_ingredients_raw": "glufosinate-ammonium 280 g/L",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "amonium glufosinat 280 g/L",
+          "targets_raw": "Pestisida terdaftar/label UPL"
+        },
+        "recover_fields": [
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": false,
+          "legacy_target_generic": true,
+          "status": "candidate"
+        }
+      }
+    ],
+    "both": [
+      {
+        "id": "pestdb-clean-0689",
+        "brand_name": "SUMIBOXAM 100 SC",
+        "product_category": "Pestisida",
+        "legacy_id": "pestdb-csv-0741",
+        "legacy_match_count": 2,
+        "canonical": {
+          "active_ingredients_raw": "",
+          "targets_raw": ""
+        },
+        "legacy": {
+          "active_ingredients_raw": "Etaboksam 100 g/L",
+          "targets_raw": "Phytophthora infestans; embun bulu"
+        },
+        "recover_fields": [
+          "active_ingredients_raw",
+          "targets_raw"
+        ],
+        "review": {
+          "ambiguous_brand": true,
+          "legacy_target_generic": false,
+          "status": "candidate"
+        }
+      }
+    ]
+  },
+  "conflicts": {
+    "active_ingredients": [
+      {
+        "id": "pestdb-clean-0162",
+        "brand_name": "Brofreya 53 SC",
+        "canonical": "broflanilide",
+        "legacy": "Broflanilida 53%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0169",
+        "brand_name": "Mospilan 30 EC",
+        "canonical": "acetamiprid",
+        "legacy": "Asetamiprid 30 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0171",
+        "brand_name": "Sevin 85 SP",
+        "canonical": "carbaryl 85%",
+        "legacy": "Karbaril 85%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0282",
+        "brand_name": "Demolish 18 EC",
+        "canonical": "Abamektin 18 g/L",
+        "legacy": "abamectin?",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0283",
+        "brand_name": "Dense 520 SC",
+        "canonical": "Metil tiofanat 520 g/L",
+        "legacy": "thiophanate-methyl 520 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0284",
+        "brand_name": "Dense 70 WP",
+        "canonical": "Metil tiofanat 70%",
+        "legacy": "thiophanate-methyl 70%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0802",
+        "brand_name": "DIFENTAM 480 SC",
+        "canonical": "mesotrione 480 g/L",
+        "legacy": "mesotrion 480 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0803",
+        "brand_name": "FENAPIR 450 SC",
+        "canonical": "chlorfenapyr 450 g/L",
+        "legacy": "klorfenapir 450 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0804",
+        "brand_name": "GAPLUS 20 TB",
+        "canonical": "gibberellic acid 20%",
+        "legacy": "asam giberelat 20%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0805",
+        "brand_name": "GAPLUS 40 SL",
+        "canonical": "gibberellic acid 40 g/L",
+        "legacy": "asam giberelat 40 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0806",
+        "brand_name": "HOSTADION 400 EC",
+        "canonical": "triazophos 400 g/L",
+        "legacy": "triazofos 400 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0807",
+        "brand_name": "KLOOPIR 666 EC",
+        "canonical": "triclopyr 666 g/L",
+        "legacy": "triklopir 666 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0808",
+        "brand_name": "MACERIO 48/4 WP",
+        "canonical": "atrazine 48% + nicosulfuron 4%",
+        "legacy": "atrazin 48% + nikosulfuron 4%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0809",
+        "brand_name": "NEXUS 40 SP",
+        "canonical": "methomyl 40%",
+        "legacy": "metomil 40%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0810",
+        "brand_name": "NOSTRO 440 EC",
+        "canonical": "isoprothiolane 440 g/L",
+        "legacy": "isoprotiolan 440 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0811",
+        "brand_name": "OXATOP 380 SC",
+        "canonical": "oxadiazon 380 g/L",
+        "legacy": "oksadiazon 380 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0812",
+        "brand_name": "PINAMEC 20 EC",
+        "canonical": "abamectin 20 g/L",
+        "legacy": "abamektin 20 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0813",
+        "brand_name": "PIRIBAC 400 SC",
+        "canonical": "bispyribac-sodium 400 g/L",
+        "legacy": "natrium bispiribak 400 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0815",
+        "brand_name": "PROVEN 80 WP",
+        "canonical": "mancozeb 80%",
+        "legacy": "mankozeb 80%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0816",
+        "brand_name": "PULSAR 120 EW",
+        "canonical": "fenoxaprop-P-ethyl 120 g/L",
+        "legacy": "fenoksaprop-P-etil 120 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0817",
+        "brand_name": "QAISHAR 10 WP",
+        "canonical": "nitenpyram 10%",
+        "legacy": "nitenpiram 10%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0818",
+        "brand_name": "SPARTAN 400 SL",
+        "canonical": "dimehypo 400 g/L",
+        "legacy": "dimehipo 400 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0819",
+        "brand_name": "STRIKE 75 SP",
+        "canonical": "acephate 75%",
+        "legacy": "asefat 75%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0820",
+        "brand_name": "VECTRAL 200 SL",
+        "canonical": "glufosinate-ammonium 200 g/L",
+        "legacy": "amonium glufosinat 200 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0880",
+        "brand_name": "DETANNEB 80 WP",
+        "canonical": "mancozeb 80%",
+        "legacy": "Mankozeb 80%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0891",
+        "brand_name": "POSBAN 200 EC",
+        "canonical": "chlorpyrifos 200 g/L",
+        "legacy": "Klorpirifos 200 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0906",
+        "brand_name": "Sagri Bat 70 WP",
+        "canonical": "azoxystrobin 10% + dimethomorph 60%",
+        "legacy": "Bahan aktif formulasi 70%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0910",
+        "brand_name": "Sagri Manzim 65/20 WP",
+        "canonical": "mancozeb 65% + carbendazim 20%",
+        "legacy": "Karbendazim + Mankozeb",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0912",
+        "brand_name": "Sagri Nil 77 WP",
+        "canonical": "chlorothalonil 77%",
+        "legacy": "Bahan aktif formulasi 77%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0915",
+        "brand_name": "Sagri Zeb 85 WP",
+        "canonical": "mancozeb 85%",
+        "legacy": "Mankozeb 85%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0916",
+        "brand_name": "SAGRI-BAT 70 WP",
+        "canonical": "azoxystrobin 10% + dimethomorph 60%",
+        "legacy": "Bahan aktif formulasi 70%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0918",
+        "brand_name": "SAGRI-BEZZ 30 EC",
+        "canonical": "Emamektin Benzoat 30 g/L",
+        "legacy": "Asetamiprid 30 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0920",
+        "brand_name": "SAGRI-CLEAR 30/30 WP",
+        "canonical": "Klotianidin 30 % + Metidation 30 %",
+        "legacy": "Bahan aktif kombinasi 30/30%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0926",
+        "brand_name": "SAGRI-MANZIM 65/20 WP",
+        "canonical": "mancozeb 65% + carbendazim 20%",
+        "legacy": "Karbendazim + Mankozeb",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0928",
+        "brand_name": "SAGRI-NIL 77 WP",
+        "canonical": "chlorothalonil 77%",
+        "legacy": "Bahan aktif formulasi 77%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0936",
+        "brand_name": "SAGRI-ZEB 85 WP",
+        "canonical": "mancozeb 85%",
+        "legacy": "Mankozeb 85%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0968",
+        "brand_name": "Fascinate 150 SL",
+        "canonical": "glufosinate-ammonium 150 g/L",
+        "legacy": "amonium glufosinat 150 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0969",
+        "brand_name": "FASCINATE 150 SL",
+        "canonical": "glufosinate-ammonium 150 g/L",
+        "legacy": "amonium glufosinat 150 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-0996",
+        "brand_name": "Oblivion 300 SC",
+        "canonical": "klorfenapir 180 g/L + indoksakarb 120 g/L",
+        "legacy": "chlorfenapyr 180 g/L + indoxacarb 120 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1015",
+        "brand_name": "Siklon 5.7 WG",
+        "canonical": "emamektin benzoat 5.7%",
+        "legacy": "emamectin benzoate 5.7%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1020",
+        "brand_name": "Tarang 280 SL",
+        "canonical": "glufosinate-ammonium 280 g/L",
+        "legacy": "amonium glufosinat 280 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1021",
+        "brand_name": "TARANG 280 SL",
+        "canonical": "glufosinate-ammonium 280 g/L",
+        "legacy": "amonium glufosinat 280 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1030",
+        "brand_name": "Wiper 50 EC",
+        "canonical": "abamektin 50 g/L",
+        "legacy": "abamectin 50 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1044",
+        "brand_name": "Elestal Neo 30/24 WG",
+        "canonical": "Spiropidion 30%; Asetamiprid 24%",
+        "legacy": "spiropidion 30% + acetamiprid 24%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1052",
+        "brand_name": "Orondis Opti 6/400 SC",
+        "canonical": "Klorotalonil 400 g/L; Oksatiapiprolin 6 g/L",
+        "legacy": "oksatiapiprolin 6 g/L + klorotalonil 400 g/L",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      },
+      {
+        "id": "pestdb-clean-1063",
+        "brand_name": "Vestoria 20 WG",
+        "canonical": "Triflumezopirim 20%",
+        "legacy": "triflumezopyrim 20%",
+        "note": "Canonical tetap dipertahankan; perbedaan dapat berupa normalisasi nama AI, konsentrasi, bahasa, atau format."
+      }
+    ],
+    "targets": [
+      {
+        "id": "pestdb-clean-0162",
+        "brand_name": "Brofreya 53 SC",
+        "canonical": "Ulat/trips",
+        "legacy": "ulat grayak; ulat Lepidoptera",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0169",
+        "brand_name": "Mospilan 30 EC",
+        "canonical": "Serangga pengisap",
+        "legacy": "kutu daun; kutu kebul; trips; wereng",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0171",
+        "brand_name": "Sevin 85 SP",
+        "canonical": "Serangga pengunyah",
+        "legacy": "ulat; kumbang",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0282",
+        "brand_name": "Demolish 18 EC",
+        "canonical": "thrips; tungau; pengorok daun",
+        "legacy": "Hama cabai, bawang, kubis, padi, kentang, tomat, kacang panjang, krisan, sawit",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0283",
+        "brand_name": "Dense 520 SC",
+        "canonical": "bercak daun; antraknosa; busuk jamur",
+        "legacy": "Penyakit jamur",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0284",
+        "brand_name": "Dense 70 WP",
+        "canonical": "bercak daun; antraknosa; busuk jamur",
+        "legacy": "Penyakit jamur",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0467",
+        "brand_name": "LANNATE 40 SP",
+        "canonical": "Produk MKD / artikel dan katalog 2026",
+        "legacy": "Pestisida terdaftar/portfolio Corteva",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0873",
+        "brand_name": "MEPEAK 55/5 WG",
+        "canonical": "Bawang merah — antraknosa; Cabai — antraknosa; Semangka — antraknosa",
+        "legacy": "Antraknosa pada bawang merah, cabai, semangka",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0917",
+        "brand_name": "SAGRI-BEAT 7/30 WP",
+        "canonical": "Bawang merah — Ulat bawang; Jagung — Ulat grayak jagung; Padi — Wereng coklat",
+        "legacy": "ulat; ulat grayak; ulat buah",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0918",
+        "brand_name": "SAGRI-BEZZ 30 EC",
+        "canonical": "Bawang merah — Pengorok daun bawang — 1,5 ml/L",
+        "legacy": "kutu daun; kutu kebul; trips; wereng",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0920",
+        "brand_name": "SAGRI-CLEAR 30/30 WP",
+        "canonical": "Jeruk — Kutu loncat — 1 g/L",
+        "legacy": "Hama serangga sesuai label produk",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0945",
+        "brand_name": "SUMILEX 50 WP",
+        "canonical": "Bercak ungu bawang merah",
+        "legacy": "Bercak ungu/penyakit jamur",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0981",
+        "brand_name": "Kirari 50 WG",
+        "canonical": "Pestisida terdaftar/label UPL",
+        "legacy": "Oomycetes",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0986",
+        "brand_name": "Lugen 100 EC",
+        "canonical": "Pestisida terdaftar/label UPL",
+        "legacy": "Wereng",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-0996",
+        "brand_name": "Oblivion 300 SC",
+        "canonical": "Pestisida terdaftar/label UPL",
+        "legacy": "Hama ulat",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1015",
+        "brand_name": "Siklon 5.7 WG",
+        "canonical": "Pestisida terdaftar/label UPL",
+        "legacy": "Ulat",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1030",
+        "brand_name": "Wiper 50 EC",
+        "canonical": "Pestisida terdaftar/label UPL",
+        "legacy": "Thrips, kutu daun, pengorok daun",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1037",
+        "brand_name": "Amistar Top 325 SC",
+        "canonical": "antraknosa; bercak daun; embun tepung",
+        "legacy": "Antraknosa, bercak daun, penyakit jamur",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1040",
+        "brand_name": "Bion M 1/48 MZ",
+        "canonical": "bercak daun; antraknosa; hawar",
+        "legacy": "Penyakit jamur dan bakteri",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1044",
+        "brand_name": "Elestal Neo 30/24 WG",
+        "canonical": "kutu daun; kutu kebul; trips; wereng",
+        "legacy": "Kutu daun, kutu kebul, trips pada cabai/tomat",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1045",
+        "brand_name": "Filia 525 SE",
+        "canonical": "bercak daun; karat; embun tepung",
+        "legacy": "Blas padi, bercak ungu",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1047",
+        "brand_name": "Incipio 200 SC",
+        "canonical": "Hama serangga sesuai label produk",
+        "legacy": "Penggerek batang padi kuning (Scirpophaga incertulas)",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1050",
+        "brand_name": "Minecto Xtra 200/200 SC",
+        "canonical": "ulat Lepidoptera; kutu kebul; trips",
+        "legacy": "Ulat buah, pengorok daun, Spodoptera",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1051",
+        "brand_name": "Miravis Duo 75/125 SC",
+        "canonical": "antraknosa; bercak daun; embun tepung",
+        "legacy": "Bercak ungu, embun tepung, bercak kering",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1052",
+        "brand_name": "Orondis Opti 6/400 SC",
+        "canonical": "bercak daun; hawar; antraknosa",
+        "legacy": "Embun bulu/downy mildew",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1055",
+        "brand_name": "Revus Opti 440 SC",
+        "canonical": "bercak daun; hawar; antraknosa",
+        "legacy": "Phytophthora, bercak dan penyakit jamur",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      },
+      {
+        "id": "pestdb-clean-1063",
+        "brand_name": "Vestoria 20 WG",
+        "canonical": "wereng",
+        "legacy": "Wereng batang coklat (Nilaparvata lugens)",
+        "note": "Canonical tetap dipertahankan; legacy hanya menjadi referensi historis."
+      }
+    ]
+  },
+  "unmatched_canonical": [
+    {
+      "id": "pestdb-clean-0781",
+      "brand_name": "K-BALINEX 60 WP",
+      "product_category": "Moluskisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0782",
+      "brand_name": "K-BLUTANIL 75 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0783",
+      "brand_name": "K-BROADKIL 250 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0784",
+      "brand_name": "K-CELMEC 18 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "abamectin 18 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0785",
+      "brand_name": "K-CLINSO 20/100 OD",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0786",
+      "brand_name": "K-COZIM 70/5 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0787",
+      "brand_name": "K-CYMONEX 500/50 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0788",
+      "brand_name": "K-DORAIN 80 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0789",
+      "brand_name": "K-FASTMIL 40 SP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "methomyl 40%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0790",
+      "brand_name": "K-FENOPHOS 500 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "profenofos 500 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0791",
+      "brand_name": "K-FINOLEX 75 SP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0792",
+      "brand_name": "K-GOMIX 72/8 WG",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0793",
+      "brand_name": "K-KINGFIELD 60/20 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0794",
+      "brand_name": "K-KINGGOLD 10 WP",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0795",
+      "brand_name": "K-MACOBLU 80 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0796",
+      "brand_name": "K-MACOZIN 12/63 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0797",
+      "brand_name": "K-METCARB 20/5 WP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0798",
+      "brand_name": "K-ODIAM 50 SC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0799",
+      "brand_name": "K-THION 500 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0800",
+      "brand_name": "K-THION PLUS 400/50 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0801",
+      "brand_name": "K-VOLTAZ 180/120 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0874",
+      "brand_name": "DOBELMAN 36/18 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0875",
+      "brand_name": "STUNTMAN 500 SL",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0876",
+      "brand_name": "VIPER 600 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0881",
+      "brand_name": "DISCO 75 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0882",
+      "brand_name": "ERAKUS 80 P",
+      "product_category": "Rodentisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0884",
+      "brand_name": "HORUS 127 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0885",
+      "brand_name": "KOZIMA 50 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0886",
+      "brand_name": "LUXON 139 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0887",
+      "brand_name": "OMERTA 135 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0888",
+      "brand_name": "ORIZ 50 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0892",
+      "brand_name": "PREDOTONG 276 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0893",
+      "brand_name": "QUARTA 137 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0894",
+      "brand_name": "QUATXONE 135 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0896",
+      "brand_name": "RAMOXONE 276 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0897",
+      "brand_name": "RG 50 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0902",
+      "brand_name": "TUPORMIN 865 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0903",
+      "brand_name": "ZATARA 125 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0904",
+      "brand_name": "BOLDZ-UP 485 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "isopropylamine glyphosate 485 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0905",
+      "brand_name": "HOLYZEB 80 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0914",
+      "brand_name": "SAGRI STORM 400/50/100 SC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0919",
+      "brand_name": "SAGRI-CLEAN 150/350 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "fipronil 150 g/L + methoxyfenozide 350 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0921",
+      "brand_name": "SAGRI-FIX 45 SL",
+      "product_category": "Zat Pengatur Tumbuh",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0922",
+      "brand_name": "SAGRI-FLAZZ 20/100 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Emamektin Benzoat 20 g/L + Tiametoksam 100 g/L",
+      "targets_raw": "Cabai — Hama Trips — 0,75 ml/L"
+    },
+    {
+      "id": "pestdb-clean-0923",
+      "brand_name": "SAGRI-GREAT 300/50 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Emamektin Benzoat 50 g/L + Klorfenvinfos 300 g/L",
+      "targets_raw": "Bawang merah — Ulat bawang — 2 ml/L"
+    },
+    {
+      "id": "pestdb-clean-0924",
+      "brand_name": "SAGRI-GUARD 8/54 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "hexaconazole 8% + prochloraz 54%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0925",
+      "brand_name": "SAGRI-M7 100/150 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Klorfenapir 100 g/L + Asefat 150 g/L",
+      "targets_raw": "Bawang merah — Pengorok daun kentang — 1 ml/L"
+    },
+    {
+      "id": "pestdb-clean-0927",
+      "brand_name": "SAGRI-NEB 75 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "propineb 75%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0929",
+      "brand_name": "SAGRI-PANCA 30/10 WP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "pymetrozine 30% + nitenpyram 10%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0930",
+      "brand_name": "SAGRI-PAS 287 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Abamektin 37 g/L + Klorfenapir 250 g/L",
+      "targets_raw": "Tidak ada penggunaan berlabel tercatat"
+    },
+    {
+      "id": "pestdb-clean-0931",
+      "brand_name": "SAGRI-POWER 288 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Abamektin 37 g/L + Fenpropatrin 251 g/L",
+      "targets_raw": "Bawang merah — Pengorok daun kentang — 1,5 ml/L"
+    },
+    {
+      "id": "pestdb-clean-0932",
+      "brand_name": "SAGRI-PURE 400/200 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Fipronil 200 g/L + Metidation 400 g/L",
+      "targets_raw": "Apel — Kutu daun apel — 1 ml/L"
+    },
+    {
+      "id": "pestdb-clean-0933",
+      "brand_name": "SAGRI-SHIELD 20/20 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "tebuconazole 20% + copper acetate 20%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0934",
+      "brand_name": "SAGRI-SNAIL 63/10 WP",
+      "product_category": "Moluskisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0935",
+      "brand_name": "SAGRI-TREAT 300/150 EC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "flusilazole 300 g/L + myclobutanil 150 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0937",
+      "brand_name": "SAGRI-ZIN 50 WP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "Buprofezin 25 % + MIPC 25 %",
+      "targets_raw": "Tidak ada penggunaan berlabel tercatat"
+    },
+    {
+      "id": "pestdb-clean-0938",
+      "brand_name": "SAGRI-ZONE 450 SC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "carbendazim 100 g/L + prochloraz 350 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0939",
+      "brand_name": "sagriTOP 35/20 WP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "methoxyfenozide 20% + chlorbenzuron 35%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0940",
+      "brand_name": "SAHARA 500 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "isopropylamine glyphosate 500 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0941",
+      "brand_name": "SELEKTIF PADI 400/150 SC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0946",
+      "brand_name": "AMONIUM GLUFOSINATE 96 TK",
+      "product_category": "Pestisida (registri)",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0947",
+      "brand_name": "AVALON 500/50 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "cypermethrin 50 g/L + chlorpyrifos 500 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0948",
+      "brand_name": "AVIATE 70/5 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 70% + azoxystrobin 5%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0949",
+      "brand_name": "BENZA 480 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "bentazone 480 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0950",
+      "brand_name": "BETAPRO 300 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "fipronil 175 g/L + beta-cypermethrin 125 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0951",
+      "brand_name": "BETTUP 200 EC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "tebuconazole 200 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0952",
+      "brand_name": "BLACK HAWK 75 SP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "acephate 75%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0953",
+      "brand_name": "BRINKA 240 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "spirodiclofen 240 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0954",
+      "brand_name": "CANON-PLUS 5 SG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "permethrin 5%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0955",
+      "brand_name": "CHECKPOINT 75 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "chlorothalonil 75%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0956",
+      "brand_name": "CHIX-GOLD 175/125 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "fipronil 175 g/L + beta-cypermethrin 125 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0958",
+      "brand_name": "CONSTEL 105/420 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "chlorantraniliprole 105 g/L + methoxyfenozide 420 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0959",
+      "brand_name": "COUNTER 50/1.8 SP",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "imidacloprid 1.8% + acephate 50%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0960",
+      "brand_name": "CYPERMETHRIN 94 TK",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "cypermethrin 94%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0961",
+      "brand_name": "CYPERSECT 50 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "cypermethrin 50 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0962",
+      "brand_name": "DEVRINOL 50 WG",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "napropamide 50%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0963",
+      "brand_name": "DITHANE M-45 80 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0964",
+      "brand_name": "DOST 330 EC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "pendimethalin 330 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0965",
+      "brand_name": "EMERGE 300 EC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "difenoconazole 150 g/L + propiconazole 150 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0966",
+      "brand_name": "EPIKO 500 SC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "sulfentrazone 500 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0967",
+      "brand_name": "EVOCLEAN 180 EC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "cyhalofop-butyl 180 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0970",
+      "brand_name": "FLONEX 80 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0971",
+      "brand_name": "FLUMET 25/37.5 ME",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "metalaxyl 37.5 g/L + fludioxonil 25 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0972",
+      "brand_name": "FONAS 150 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "glufosinate-ammonium 150 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0973",
+      "brand_name": "HARMETRY 50 WG",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "glufosinate-ammonium 50 g/L (equivalent glufosinate 37 g/L)",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0974",
+      "brand_name": "HOKUTO 250 SC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "ipfencarbazone 250 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0975",
+      "brand_name": "HOLDOWN 307/129 CS",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "pendimethalin 307 g/L + clomazone 129 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0976",
+      "brand_name": "IMIDAGOLD 200 SL",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "imidacloprid 200 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0977",
+      "brand_name": "IMIGO 600 FS",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "imidacloprid 600 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0978",
+      "brand_name": "KACHI 175 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "imidacloprid 125 g/L + lambda-cyhalothrin 50 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0979",
+      "brand_name": "KAROBIZ 336 SC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "topramezone 336 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0980",
+      "brand_name": "KIBOSH 11/36 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "pymetrozine 36% + dinotefuran 11%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0982",
+      "brand_name": "KLINTOP 59,7/4,7/5,6 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 59.7 g/L + azoxystrobin 4.7 g/L + tebuconazole 5.6 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0983",
+      "brand_name": "LANCER-GOLD 55 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "imidacloprid 5% + acephate 50%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0985",
+      "brand_name": "LIFELINE 280 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0987",
+      "brand_name": "MAGNAPHOS 56 PB*",
+      "product_category": "Fumigan",
+      "active_ingredients_raw": "magnesium phosphide 56%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0988",
+      "brand_name": "MAGNAPHOS 66 TB*",
+      "product_category": "Fumigan",
+      "active_ingredients_raw": "magnesium phosphide 66%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0989",
+      "brand_name": "MANCOZEB 80 TK",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0990",
+      "brand_name": "MANDEX 80 WP",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0991",
+      "brand_name": "MANIC 62,5 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 62.5%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0992",
+      "brand_name": "METSY 20 WG",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "metsulfuron-methyl 20%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0993",
+      "brand_name": "NATULAR 7,48 DT",
+      "product_category": "Pestisida (registri)",
+      "active_ingredients_raw": "",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0994",
+      "brand_name": "NAUTILE 68/5 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 68% + cymoxanil 5%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0995",
+      "brand_name": "NOVICURE-D 81 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "tribasic copper sulfate 81%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0998",
+      "brand_name": "PERMETHRIN 94 TK",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "permethrin 94%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-0999",
+      "brand_name": "PIRAZO 0.75/30 DF",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "ethyl pyrazosulfuron 0.75% + pretilachlor 30%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1000",
+      "brand_name": "PULSOR 240 SC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "thifluzamide 240 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1001",
+      "brand_name": "PYLON 50 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "pymetrozine 50%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1002",
+      "brand_name": "QUICKMITE 50 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "bifenazate 50%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1003",
+      "brand_name": "QUICKPHOS 56 P*",
+      "product_category": "Fumigan",
+      "active_ingredients_raw": "aluminium phosphide 56%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1004",
+      "brand_name": "QUICKPHOS 56 T*",
+      "product_category": "Fumigan",
+      "active_ingredients_raw": "aluminium phosphide 56%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1005",
+      "brand_name": "RAMPART-MAX 317 FS",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "metalaxyl 317 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1006",
+      "brand_name": "RICEBAC 400 SC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "bispyribac-sodium 400 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1007",
+      "brand_name": "RICESOLO 60/7,5 DF",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "propanil 60% + MCPA 7.5%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1008",
+      "brand_name": "RICETOP 111,6/37,2 OD",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "bispyribac-sodium 37.2 g/L + cyhalofop-butyl 111.6 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1009",
+      "brand_name": "RIP 200 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "chlorfenapyr 200 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1010",
+      "brand_name": "RONDO LOGICO 75 SG",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "ammonium glyphosate 75% (equivalent glyphosate 56%)",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1011",
+      "brand_name": "SEKITO 56/92 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "chlorantraniliprole 56 g/L + novaluron 92 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1012",
+      "brand_name": "SELECT 240 EC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "clethodim 240 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1013",
+      "brand_name": "SHENZI 400 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "chlorantraniliprole 400 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1014",
+      "brand_name": "SHENZI SMART 50 SC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "chlorantraniliprole 50 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1016",
+      "brand_name": "SPADA 60 DF",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "propanil 60%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1017",
+      "brand_name": "STAM-F 340 EC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "propanil 347.5 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1018",
+      "brand_name": "STARTHENE 75 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "acephate 75%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1019",
+      "brand_name": "SWEEP 480 SL",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "isopropylamine glyphosate 480 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1022",
+      "brand_name": "Tecam 80 WG",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "fipronil 80%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1023",
+      "brand_name": "TRAJET 25 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "lambda-cyhalothrin 25 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1025",
+      "brand_name": "TRIDIUM 70 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 59.7% + azoxystrobin 4.7% + tebuconazole 5.6%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1026",
+      "brand_name": "UNISHIELD 250 EC",
+      "product_category": "Moluskisida",
+      "active_ingredients_raw": "niclosamide 250 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1027",
+      "brand_name": "UTHANE 75 WG",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mancozeb 75%",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1028",
+      "brand_name": "WEEDTOX 480 EC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "triclopyr 480 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1029",
+      "brand_name": "WEEDTOX 670 EC",
+      "product_category": "Herbisida",
+      "active_ingredients_raw": "triclopyr butoxyethyl ester 670 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1031",
+      "brand_name": "YANKEE 80/640 SC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "sulfur 640 g/L + tribasic copper sulfate 80 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1032",
+      "brand_name": "ZEEPER 50 EC",
+      "product_category": "Insektisida",
+      "active_ingredients_raw": "permethrin 50 g/L",
+      "targets_raw": ""
+    },
+    {
+      "id": "pestdb-clean-1033",
+      "brand_name": "ZEVOMO 250 SC",
+      "product_category": "Fungisida",
+      "active_ingredients_raw": "mandipropamid 250 g/L",
+      "targets_raw": ""
+    }
+  ],
+  "ambiguous_matches": [
+    {
+      "id": "pestdb-clean-0013",
+      "brand_name": "Brofreya 53 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-071",
+        "pestdb-0907"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0014",
+      "brand_name": "Mospilan 30 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-072",
+        "pestdb-0908"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0017",
+      "brand_name": "Sevin 85 SP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-077",
+        "pestdb-0909"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0157",
+      "brand_name": "SUMI BOXAM 100 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0741",
+        "pestdb-0906"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0162",
+      "brand_name": "Brofreya 53 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-071",
+        "pestdb-0907"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0169",
+      "brand_name": "Mospilan 30 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-072",
+        "pestdb-0908"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0171",
+      "brand_name": "Sevin 85 SP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-077",
+        "pestdb-0909"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0251",
+      "brand_name": "Lannate 40 SP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0459",
+        "pestdb-0946"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0264",
+      "brand_name": "Demolish 18 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-078",
+        "pestdb-0910"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0265",
+      "brand_name": "Dense 520 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-079",
+        "pestdb-0911"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0266",
+      "brand_name": "Dense 70 WP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-080",
+        "pestdb-0912"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0282",
+      "brand_name": "Demolish 18 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-078",
+        "pestdb-0910"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0283",
+      "brand_name": "Dense 520 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-079",
+        "pestdb-0911"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0284",
+      "brand_name": "Dense 70 WP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-080",
+        "pestdb-0912"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0467",
+      "brand_name": "LANNATE 40 SP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0459",
+        "pestdb-0946"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0485",
+      "brand_name": "Kirari 50 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0236",
+        "pestdb-0976"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0486",
+      "brand_name": "Lugen 100 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0224",
+        "pestdb-0977"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0493",
+      "brand_name": "Oblivion 300 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0223",
+        "pestdb-0978"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0497",
+      "brand_name": "Siklon 5.7 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0227",
+        "pestdb-0979"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0501",
+      "brand_name": "Sumilex 50 WP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0241",
+        "pestdb-0971"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0508",
+      "brand_name": "Wiper 50 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0226",
+        "pestdb-0980"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0603",
+      "brand_name": "Amistar Top 325 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-026",
+        "pestdb-0981"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0604",
+      "brand_name": "Bion M 1/48 MZ",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-032",
+        "pestdb-0982"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0605",
+      "brand_name": "Elestal Neo 30/24 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-020",
+        "pestdb-0983"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0606",
+      "brand_name": "Filia 525 SE",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-030",
+        "pestdb-0984"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0607",
+      "brand_name": "Incipio 200 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-018",
+        "pestdb-0985"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0609",
+      "brand_name": "Minecto Xtra 200/200 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-023",
+        "pestdb-0986"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0610",
+      "brand_name": "Miravis Duo 75/125 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-031",
+        "pestdb-0987"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0611",
+      "brand_name": "Orondis Opti 6/400 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-029",
+        "pestdb-0988"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0613",
+      "brand_name": "Revus Opti 440 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-027",
+        "pestdb-0989"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0614",
+      "brand_name": "Vestoria 20 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-019",
+        "pestdb-0990"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0689",
+      "brand_name": "SUMIBOXAM 100 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0741",
+        "pestdb-0906"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0945",
+      "brand_name": "SUMILEX 50 WP",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0241",
+        "pestdb-0971"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0981",
+      "brand_name": "Kirari 50 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0236",
+        "pestdb-0976"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0986",
+      "brand_name": "Lugen 100 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0224",
+        "pestdb-0977"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-0996",
+      "brand_name": "Oblivion 300 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0223",
+        "pestdb-0978"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1015",
+      "brand_name": "Siklon 5.7 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0227",
+        "pestdb-0979"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1030",
+      "brand_name": "Wiper 50 EC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-csv-0226",
+        "pestdb-0980"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1037",
+      "brand_name": "Amistar Top 325 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-026",
+        "pestdb-0981"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1040",
+      "brand_name": "Bion M 1/48 MZ",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-032",
+        "pestdb-0982"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1044",
+      "brand_name": "Elestal Neo 30/24 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-020",
+        "pestdb-0983"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1045",
+      "brand_name": "Filia 525 SE",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-030",
+        "pestdb-0984"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1047",
+      "brand_name": "Incipio 200 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-018",
+        "pestdb-0985"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1050",
+      "brand_name": "Minecto Xtra 200/200 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-023",
+        "pestdb-0986"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1051",
+      "brand_name": "Miravis Duo 75/125 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-031",
+        "pestdb-0987"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1052",
+      "brand_name": "Orondis Opti 6/400 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-029",
+        "pestdb-0988"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1055",
+      "brand_name": "Revus Opti 440 SC",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-027",
+        "pestdb-0989"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    },
+    {
+      "id": "pestdb-clean-1063",
+      "brand_name": "Vestoria 20 WG",
+      "legacy_match_count": 2,
+      "legacy_ids": [
+        "pestdb-019",
+        "pestdb-0990"
+      ],
+      "note": "Lebih dari satu record legacy memiliki nama merek yang sama."
+    }
+  ],
+  "duplicate_brands": {
+    "canonical": [
+      {
+        "normalized_brand": "brofreya53sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0013",
+            "brand_name": "Brofreya 53 SC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0162",
+            "brand_name": "Brofreya 53 SC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "mospilan30ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0014",
+            "brand_name": "Mospilan 30 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0169",
+            "brand_name": "Mospilan 30 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sevin85sp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0017",
+            "brand_name": "Sevin 85 SP",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0171",
+            "brand_name": "Sevin 85 SP",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "avidor25wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0069",
+            "brand_name": "Avidor 25 WP",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0877",
+            "brand_name": "AVIDOR 25 WP",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "avimax20100ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0070",
+            "brand_name": "Avimax 20/100 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0878",
+            "brand_name": "AVIMAX 20/100 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "bomup520sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0071",
+            "brand_name": "Bom UP 520 SL",
+            "product_category": "Herbisida"
+          },
+          {
+            "id": "pestdb-clean-0879",
+            "brand_name": "BOM-UP 520 SL",
+            "product_category": "Herbisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "detanneb80wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0072",
+            "brand_name": "Detan-neb 80 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0880",
+            "brand_name": "DETANNEB 80 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "pentacur722sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0082",
+            "brand_name": "Pentacur 722 SL",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0889",
+            "brand_name": "PENTACUR 722 SL",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "posat480sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0083",
+            "brand_name": "Posat 480 SL",
+            "product_category": "Herbisida"
+          },
+          {
+            "id": "pestdb-clean-0890",
+            "brand_name": "POSAT 480 SL",
+            "product_category": "Herbisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "posban200ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0084",
+            "brand_name": "Posban 200 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0891",
+            "brand_name": "POSBAN 200 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "quatxone150sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0087",
+            "brand_name": "Quatxone 150 SL",
+            "product_category": "Herbisida"
+          },
+          {
+            "id": "pestdb-clean-0895",
+            "brand_name": "QUATXONE 150 SL",
+            "product_category": "Herbisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sentral11pa",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0089",
+            "brand_name": "Sentral 11 PA",
+            "product_category": "Zat Pengatur Tumbuh"
+          },
+          {
+            "id": "pestdb-clean-0898",
+            "brand_name": "SENTRAL 11 PA",
+            "product_category": "Zat Pengatur Tumbuh"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "taft75wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0092",
+            "brand_name": "Taft 75 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0899",
+            "brand_name": "TAFT 75 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "topsat240sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0095",
+            "brand_name": "Top-Sat 240 SL",
+            "product_category": "Herbisida"
+          },
+          {
+            "id": "pestdb-clean-0900",
+            "brand_name": "TOPSAT 240 SL",
+            "product_category": "Herbisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "tumagonplus240ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0098",
+            "brand_name": "Tumagon Plus 240 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0901",
+            "brand_name": "TUMAGON PLUS 240 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sumiboxam100sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0157",
+            "brand_name": "SUMI BOXAM 100 SC",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0689",
+            "brand_name": "SUMIBOXAM 100 SC",
+            "product_category": "Pestisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "lannate40sp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0251",
+            "brand_name": "Lannate 40 SP",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0467",
+            "brand_name": "LANNATE 40 SP",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "demolish18ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0264",
+            "brand_name": "Demolish 18 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0282",
+            "brand_name": "Demolish 18 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "dense520sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0265",
+            "brand_name": "Dense 520 SC",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0283",
+            "brand_name": "Dense 520 SC",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "dense70wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0266",
+            "brand_name": "Dense 70 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0284",
+            "brand_name": "Dense 70 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "kirari50wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0485",
+            "brand_name": "Kirari 50 WG",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0981",
+            "brand_name": "Kirari 50 WG",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "lugen100ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0486",
+            "brand_name": "Lugen 100 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0986",
+            "brand_name": "Lugen 100 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "oblivion300sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0493",
+            "brand_name": "Oblivion 300 SC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0996",
+            "brand_name": "Oblivion 300 SC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "penncozebblue80wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0494",
+            "brand_name": "Penncozeb Blue 80 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0997",
+            "brand_name": "PENNCOZEB-BLUE 80 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "siklon57wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0497",
+            "brand_name": "Siklon 5.7 WG",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-1015",
+            "brand_name": "Siklon 5.7 WG",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sumilex50wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0501",
+            "brand_name": "Sumilex 50 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0945",
+            "brand_name": "SUMILEX 50 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "wiper50ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0508",
+            "brand_name": "Wiper 50 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-1030",
+            "brand_name": "Wiper 50 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "mepeak555wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0591",
+            "brand_name": "MEPEAK 55/5 WG",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0873",
+            "brand_name": "MEPEAK 55/5 WG",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "amistartop325sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0603",
+            "brand_name": "Amistar Top 325 SC",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-1037",
+            "brand_name": "Amistar Top 325 SC",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "bionm148mz",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0604",
+            "brand_name": "Bion M 1/48 MZ",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-1040",
+            "brand_name": "Bion M 1/48 MZ",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "elestalneo3024wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0605",
+            "brand_name": "Elestal Neo 30/24 WG",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-1044",
+            "brand_name": "Elestal Neo 30/24 WG",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "filia525se",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0606",
+            "brand_name": "Filia 525 SE",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-1045",
+            "brand_name": "Filia 525 SE",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "incipio200sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0607",
+            "brand_name": "Incipio 200 SC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-1047",
+            "brand_name": "Incipio 200 SC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "minectoxtra200200sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0609",
+            "brand_name": "Minecto Xtra 200/200 SC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-1050",
+            "brand_name": "Minecto Xtra 200/200 SC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "miravisduo75125sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0610",
+            "brand_name": "Miravis Duo 75/125 SC",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-1051",
+            "brand_name": "Miravis Duo 75/125 SC",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "orondisopti6400sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0611",
+            "brand_name": "Orondis Opti 6/400 SC",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-1052",
+            "brand_name": "Orondis Opti 6/400 SC",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "revusopti440sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0613",
+            "brand_name": "Revus Opti 440 SC",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-1055",
+            "brand_name": "Revus Opti 440 SC",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "vestoria20wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0614",
+            "brand_name": "Vestoria 20 WG",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-1063",
+            "brand_name": "Vestoria 20 WG",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagribat70wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0906",
+            "brand_name": "Sagri Bat 70 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0916",
+            "brand_name": "SAGRI-BAT 70 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagribeat730wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0907",
+            "brand_name": "Sagri Beat 7/30 WP",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0917",
+            "brand_name": "SAGRI-BEAT 7/30 WP",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagribezz30ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0908",
+            "brand_name": "Sagri Bezz 30 EC",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0918",
+            "brand_name": "SAGRI-BEZZ 30 EC",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagriclear3030wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0909",
+            "brand_name": "Sagri Clear 30/30 WP",
+            "product_category": "Insektisida"
+          },
+          {
+            "id": "pestdb-clean-0920",
+            "brand_name": "SAGRI-CLEAR 30/30 WP",
+            "product_category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagrimanzim6520wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0910",
+            "brand_name": "Sagri Manzim 65/20 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0926",
+            "brand_name": "SAGRI-MANZIM 65/20 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagrinil77wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0912",
+            "brand_name": "Sagri Nil 77 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0928",
+            "brand_name": "SAGRI-NIL 77 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sagrizeb85wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0915",
+            "brand_name": "Sagri Zeb 85 WP",
+            "product_category": "Fungisida"
+          },
+          {
+            "id": "pestdb-clean-0936",
+            "brand_name": "SAGRI-ZEB 85 WP",
+            "product_category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "fascinate150sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-0968",
+            "brand_name": "Fascinate 150 SL",
+            "product_category": "Herbisida"
+          },
+          {
+            "id": "pestdb-clean-0969",
+            "brand_name": "FASCINATE 150 SL",
+            "product_category": "Herbisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "tarang280sl",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-clean-1020",
+            "brand_name": "Tarang 280 SL",
+            "product_category": "Herbisida"
+          },
+          {
+            "id": "pestdb-clean-1021",
+            "brand_name": "TARANG 280 SL",
+            "product_category": "Herbisida"
+          }
+        ]
+      }
+    ],
+    "legacy": [
+      {
+        "normalized_brand": "brofreya53sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-071",
+            "brand_name": "Brofreya 53 SC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0907",
+            "brand_name": "Brofreya 53 SC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "mospilan30ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-072",
+            "brand_name": "Mospilan 30 EC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0908",
+            "brand_name": "Mospilan 30 EC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sevin85sp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-077",
+            "brand_name": "Sevin 85 SP",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0909",
+            "brand_name": "Sevin 85 SP",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sumiboxam100sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0741",
+            "brand_name": "SUMI BOXAM 100 SC",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0906",
+            "brand_name": "SUMIBOXAM 100 SC",
+            "category": "Pestisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "lannate40sp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0459",
+            "brand_name": "Lannate 40 SP",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0946",
+            "brand_name": "LANNATE 40 SP",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "demolish18ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-078",
+            "brand_name": "Demolish 18 EC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0910",
+            "brand_name": "Demolish 18 EC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "dense520sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-079",
+            "brand_name": "Dense 520 SC",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0911",
+            "brand_name": "Dense 520 SC",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "dense70wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-080",
+            "brand_name": "Dense 70 WP",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0912",
+            "brand_name": "Dense 70 WP",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "kirari50wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0236",
+            "brand_name": "Kirari 50 WG",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0976",
+            "brand_name": "Kirari 50 WG",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "lugen100ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0224",
+            "brand_name": "Lugen 100 EC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0977",
+            "brand_name": "Lugen 100 EC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "oblivion300sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0223",
+            "brand_name": "Oblivion 300 SC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0978",
+            "brand_name": "Oblivion 300 SC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "siklon57wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0227",
+            "brand_name": "Siklon 5.7 WG",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0979",
+            "brand_name": "Siklon 5.7 WG",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "sumilex50wp",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0241",
+            "brand_name": "Sumilex 50 WP",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0971",
+            "brand_name": "SUMILEX 50 WP",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "wiper50ec",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-csv-0226",
+            "brand_name": "Wiper 50 EC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0980",
+            "brand_name": "Wiper 50 EC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "amistartop325sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-026",
+            "brand_name": "Amistar Top 325 SC",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0981",
+            "brand_name": "Amistar Top 325 SC",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "bionm148mz",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-032",
+            "brand_name": "Bion M 1/48 MZ",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0982",
+            "brand_name": "Bion M 1/48 MZ",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "elestalneo3024wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-020",
+            "brand_name": "Elestal Neo 30/24 WG",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0983",
+            "brand_name": "Elestal Neo 30/24 WG",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "filia525se",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-030",
+            "brand_name": "Filia 525 SE",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0984",
+            "brand_name": "Filia 525 SE",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "incipio200sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-018",
+            "brand_name": "Incipio 200 SC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0985",
+            "brand_name": "Incipio 200 SC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "minectoxtra200200sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-023",
+            "brand_name": "Minecto Xtra 200/200 SC",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0986",
+            "brand_name": "Minecto Xtra 200/200 SC",
+            "category": "Insektisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "miravisduo75125sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-031",
+            "brand_name": "Miravis Duo 75/125 SC",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0987",
+            "brand_name": "Miravis Duo 75/125 SC",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "orondisopti6400sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-029",
+            "brand_name": "Orondis Opti 6/400 SC",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0988",
+            "brand_name": "Orondis Opti 6/400 SC",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "revusopti440sc",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-027",
+            "brand_name": "Revus Opti 440 SC",
+            "category": "Fungisida"
+          },
+          {
+            "id": "pestdb-0989",
+            "brand_name": "Revus Opti 440 SC",
+            "category": "Fungisida"
+          }
+        ]
+      },
+      {
+        "normalized_brand": "vestoria20wg",
+        "count": 2,
+        "records": [
+          {
+            "id": "pestdb-019",
+            "brand_name": "Vestoria 20 WG",
+            "category": "Insektisida"
+          },
+          {
+            "id": "pestdb-0990",
+            "brand_name": "Vestoria 20 WG",
+            "category": "Insektisida"
+          }
+        ]
+      }
+    ]
+  }
+}

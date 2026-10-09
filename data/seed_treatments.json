@@ -1,0 +1,12 @@
+{
+  "source_id":"onion-seed-treatments-seminis-2015",
+  "scope":"Historical/source-derived onion seed treatment examples; not Indonesian registration guidance.",
+  "items":[
+    {"code":"141","segment":"Standard","product":"Thiram","active_ingredients":[{"name":"Thiram","rate":"1.875 g AI/kg seed"}],"targets":["Soil-borne fungal disease"]},
+    {"code":"144","segment":"Special","product":"PRO-GRO","active_ingredients":[{"name":"Carboxin","rate":"7.50 g AI/kg seed"},{"name":"Thiram","rate":"12.50 g AI/kg seed"}],"targets":["Onion smut (Urocystis)"]},
+    {"code":"146","segment":"Special+","product":"PRO-GRO + Trigard","active_ingredients":[{"name":"Carboxin","rate":"7.50 g AI/kg seed"},{"name":"Thiram","rate":"12.50 g AI/kg seed"},{"name":"Cyromazine","rate":"49.5 g AI/kg seed"}],"targets":["Onion smut (Urocystis)","Onion seed maggot"]},
+    {"code":"080","segment":"Premium","product":"FarMore F300","active_ingredients":[{"name":"Mefenoxam","rate":"0.075 g AI/kg seed"},{"name":"Fludioxonil","rate":"0.025 g AI/kg seed"},{"name":"Azoxystrobin","rate":"0.250 g AI/kg seed"}],"targets":["Pythium/Phytophthora","Fusarium/Rhizoctonia","Soil/seed-borne fungal disease"]},
+    {"code":"806","segment":"Premium+","product":"FarMore F300 + PRO-GRO + Trigard","active_ingredients":[{"name":"Mefenoxam","rate":"0.075 g AI/kg seed"},{"name":"Fludioxonil","rate":"0.025 g AI/kg seed"},{"name":"Azoxystrobin","rate":"0.025 g AI/kg seed"},{"name":"Carboxin","rate":"7.50 g AI/kg seed"},{"name":"Thiram","rate":"12.50 g AI/kg seed"},{"name":"Cyromazine","rate":"49.5 g AI/kg seed"}],"targets":["Pythium/Phytophthora","Fusarium/Rhizoctonia","Soil/seed-borne fungal disease","Onion smut (Urocystis)","Onion seed maggot"]},
+    {"code":"800","segment":"Supreme","product":"FarMore FI500","active_ingredients":[{"name":"Mefenoxam","rate":"0.15 g AI/kg seed"},{"name":"Fludioxonil","rate":"0.025 g AI/kg seed"},{"name":"Azoxystrobin","rate":"0.025 g AI/kg seed"},{"name":"Spinosad","rate":"0.20 mg AI/seed"},{"name":"Thiamethoxam","rate":"0.2 mg AI/seed"}],"targets":["Pythium/Phytophthora","Fusarium/Rhizoctonia","Soil/seed-borne fungal disease","Seed corn maggot/onion maggot","Systemic insecticide targets listed by source"]}
+  ]
+}

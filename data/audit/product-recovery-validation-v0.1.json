@@ -1,0 +1,413 @@
+{
+  "validation_version": "0.1.0",
+  "generated_at": "2026-10-06T07:29:47.036Z",
+  "purpose": "Klasifikasi kandidat recovery legacy PestiApps tanpa mengubah canonical Data Center.",
+  "policy": {
+    "canonical_is_primary": true,
+    "legacy_is_evidence": true,
+    "auto_write_canonical": false,
+    "external_verification_required": true
+  },
+  "summary": {
+    "total_candidates": 13,
+    "safe_candidates": 5,
+    "review_ambiguous": 2,
+    "review_generic": 6,
+    "review_external": 0,
+    "no_recovery": 0
+  },
+  "candidates": [
+    {
+      "candidate_type": "active_ingredient",
+      "id": "pestdb-clean-0689",
+      "brand_name": "SUMIBOXAM 100 SC",
+      "product_category": "Pestisida",
+      "legacy_id": "pestdb-csv-0741",
+      "legacy_match_count": 2,
+      "canonical": {
+        "active_ingredients_raw": "",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Etaboksam 100 g/L",
+        "targets_raw": "Phytophthora infestans; embun bulu"
+      },
+      "recover_fields": [
+        "active_ingredients_raw",
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_AMBIGUOUS",
+        "reasons": [
+          "Lebih dari satu record legacy cocok dengan nama merek."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0689",
+      "brand_name": "SUMIBOXAM 100 SC",
+      "product_category": "Pestisida",
+      "legacy_id": "pestdb-csv-0741",
+      "legacy_match_count": 2,
+      "canonical": {
+        "active_ingredients_raw": "",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Etaboksam 100 g/L",
+        "targets_raw": "Phytophthora infestans; embun bulu"
+      },
+      "recover_fields": [
+        "active_ingredients_raw",
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_AMBIGUOUS",
+        "reasons": [
+          "Lebih dari satu record legacy cocok dengan nama merek."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0877",
+      "brand_name": "AVIDOR 25 WP",
+      "product_category": "Insektisida",
+      "legacy_id": "pestdb-0875",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "",
+        "targets_raw": "Wereng coklat padi dan hama cabai"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_GENERIC",
+        "reasons": [
+          "Target legacy bersifat generik dan tidak cukup spesifik sebagai target OPT."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0880",
+      "brand_name": "DETANNEB 80 WP",
+      "product_category": "Fungisida",
+      "legacy_id": "pestdb-0878",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "mancozeb 80%",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Mankozeb 80%",
+        "targets_raw": "Bercak daun bawang; busuk daun kentang"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "SAFE_CANDIDATE",
+        "reasons": [
+          "Satu match legacy, field canonical kosong, dan nilai recovery tersedia."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": false
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0891",
+      "brand_name": "POSBAN 200 EC",
+      "product_category": "Insektisida",
+      "legacy_id": "pestdb-0890",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "chlorpyrifos 200 g/L",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Klorpirifos 200 g/L",
+        "targets_raw": "Spodoptera exigua bawang; Thrips cabai; Spodoptera litura kedelai"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "SAFE_CANDIDATE",
+        "reasons": [
+          "Satu match legacy, field canonical kosong, dan nilai recovery tersedia."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": false
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0898",
+      "brand_name": "SENTRAL 11 PA",
+      "product_category": "Zat Pengatur Tumbuh",
+      "legacy_id": "pestdb-0895",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "",
+        "targets_raw": "Merangsang keluarnya getah karet"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "SAFE_CANDIDATE",
+        "reasons": [
+          "Satu match legacy, field canonical kosong, dan nilai recovery tersedia."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": false
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0916",
+      "brand_name": "SAGRI-BAT 70 WP",
+      "product_category": "Fungisida",
+      "legacy_id": "pestdb-091",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "azoxystrobin 10% + dimethomorph 60%",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Bahan aktif formulasi 70%",
+        "targets_raw": "Penyakit jamur sesuai label produk"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_GENERIC",
+        "reasons": [
+          "Target legacy bersifat generik dan tidak cukup spesifik sebagai target OPT."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0926",
+      "brand_name": "SAGRI-MANZIM 65/20 WP",
+      "product_category": "Fungisida",
+      "legacy_id": "pestdb-092",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "mancozeb 65% + carbendazim 20%",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Karbendazim + Mankozeb",
+        "targets_raw": "bercak daun; antraknosa; hawar"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "SAFE_CANDIDATE",
+        "reasons": [
+          "Satu match legacy, field canonical kosong, dan nilai recovery tersedia."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": false
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0928",
+      "brand_name": "SAGRI-NIL 77 WP",
+      "product_category": "Fungisida",
+      "legacy_id": "pestdb-094",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "chlorothalonil 77%",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Bahan aktif formulasi 77%",
+        "targets_raw": "Penyakit jamur sesuai label produk"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_GENERIC",
+        "reasons": [
+          "Target legacy bersifat generik dan tidak cukup spesifik sebagai target OPT."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0936",
+      "brand_name": "SAGRI-ZEB 85 WP",
+      "product_category": "Fungisida",
+      "legacy_id": "pestdb-093",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "mancozeb 85%",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "Mankozeb 85%",
+        "targets_raw": "bercak daun; antraknosa; hawar"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "SAFE_CANDIDATE",
+        "reasons": [
+          "Satu match legacy, field canonical kosong, dan nilai recovery tersedia."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": false
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0969",
+      "brand_name": "FASCINATE 150 SL",
+      "product_category": "Herbisida",
+      "legacy_id": "pestdb-csv-0473",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "glufosinate-ammonium 150 g/L",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "amonium glufosinat 150 g/L",
+        "targets_raw": "Pestisida terdaftar/label UPL"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_GENERIC",
+        "reasons": [
+          "Target legacy bersifat generik dan tidak cukup spesifik sebagai target OPT."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-0997",
+      "brand_name": "PENNCOZEB-BLUE 80 WP",
+      "product_category": "Fungisida",
+      "legacy_id": "pestdb-csv-0237",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "mancozeb 80%",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "mancozeb 80%",
+        "targets_raw": "Penyakit jamur"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_GENERIC",
+        "reasons": [
+          "Target legacy bersifat generik dan tidak cukup spesifik sebagai target OPT."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    },
+    {
+      "candidate_type": "target",
+      "id": "pestdb-clean-1021",
+      "brand_name": "TARANG 280 SL",
+      "product_category": "Herbisida",
+      "legacy_id": "pestdb-csv-0471",
+      "legacy_match_count": 1,
+      "canonical": {
+        "active_ingredients_raw": "glufosinate-ammonium 280 g/L",
+        "targets_raw": ""
+      },
+      "legacy": {
+        "active_ingredients_raw": "amonium glufosinat 280 g/L",
+        "targets_raw": "Pestisida terdaftar/label UPL"
+      },
+      "recover_fields": [
+        "targets_raw"
+      ],
+      "classification": {
+        "status": "REVIEW_GENERIC",
+        "reasons": [
+          "Target legacy bersifat generik dan tidak cukup spesifik sebagai target OPT."
+        ]
+      },
+      "policy": {
+        "auto_write": false,
+        "canonical_remains_primary": true,
+        "requires_external_verification": true
+      }
+    }
+  ]
+}

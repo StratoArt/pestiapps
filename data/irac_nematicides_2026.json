@@ -1,0 +1,400 @@
+{
+  "version": "IRAC Nematicide MoA Classification — 2026 reference layer",
+  "language": "Bahasa Indonesia",
+  "source": "IRAC Nematode Working Group",
+  "source_url": "https://irac-online.org/documents/nematicides-poster/",
+  "note": "Hanya perwakilan utama yang ditampilkan oleh IRAC. Keberadaan bahan/agen di tabel tidak berarti otomatis terdaftar untuk penggunaan tertentu di Indonesia. Kelompok N digunakan untuk klasifikasi MoA nematisida; rotasi resistensi mengikuti nomor kelompok, bukan warna kategori fisiologis.",
+  "physiology_categories": [
+    {
+      "id": "nerve-muscle",
+      "name_id": "Saraf & otot",
+      "description_id": "Menarget sistem saraf/otot nematoda, termasuk penghambatan AChE dan modulasi kanal klorida yang dipengaruhi glutamat."
+    },
+    {
+      "id": "growth-development",
+      "name_id": "Pertumbuhan & perkembangan",
+      "description_id": "Mengganggu biosintesis lipid atau proses perkembangan sehingga pertumbuhan, pergantian kulit, atau fekunditas terganggu."
+    },
+    {
+      "id": "respiration",
+      "name_id": "Respirasi",
+      "description_id": "Mengganggu respirasi mitokondria melalui hambatan transport elektron."
+    },
+    {
+      "id": "unknown",
+      "name_id": "Tidak diketahui / non-spesifik",
+      "description_id": "Target aksi belum terdefinisi dengan baik atau bekerja secara non-spesifik/multisitus."
+    }
+  ],
+  "groups": [
+    {
+      "group": "N-1",
+      "moa_en": "Acetylcholinesterase (AChE) inhibitors",
+      "moa_id": "Penghambat asetilkolinesterase (AChE)",
+      "physiology": "Saraf & otot",
+      "subgroups": [
+        {
+          "code": "N-1A",
+          "class_en": "Carbamates",
+          "class_id": "Karbamat",
+          "active_ingredients": [
+            "Aldicarb",
+            "Oxamyl",
+            "Carbofuran",
+            "Carbosulfan",
+            "Benfuracarb",
+            "Thiodicarb"
+          ]
+        },
+        {
+          "code": "N-1B",
+          "class_en": "Organophosphates",
+          "class_id": "Organofosfat",
+          "active_ingredients": [
+            "Fenamiphos",
+            "Cadusafos",
+            "Terbufos",
+            "Ethoprophos",
+            "Phorate",
+            "Fosthiazate",
+            "Imicyafos"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-2",
+      "moa_en": "Glutamate-gated chloride channel (GluCl) allosteric modulators",
+      "moa_id": "Modulator alosterik kanal klorida berpintu glutamat (GluCl)",
+      "physiology": "Saraf & otot",
+      "subgroups": [
+        {
+          "code": "N-2",
+          "class_en": "Avermectins",
+          "class_id": "Avermektin",
+          "active_ingredients": [
+            "Abamectin"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-3",
+      "moa_en": "Mitochondrial complex II electron transport inhibitors. Succinate-coenzyme Q reductase",
+      "moa_id": "Penghambat transport elektron kompleks II mitokondria (suksinat–koenzim Q reduktase)",
+      "physiology": "Respirasi",
+      "subgroups": [
+        {
+          "code": "N-3",
+          "class_en": "Pyridinyl-ethyl-benzamides; Phenethyl pyridineamides",
+          "class_id": "Pyridinil-etil-benzamida; fenetil piridin amida",
+          "active_ingredients": [
+            "Fluopyram",
+            "Cyclobutrifluram"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-4",
+      "moa_en": "Lipid synthesis, growth regulation. Inhibitors of acetyl CoA carboxylase",
+      "moa_id": "Sintesis lipid / regulasi pertumbuhan; penghambat asetil-KoA karboksilase (ACCase)",
+      "physiology": "Pertumbuhan & perkembangan",
+      "subgroups": [
+        {
+          "code": "N-4",
+          "class_en": "Tetronic and Tetramic acid derivatives",
+          "class_id": "Turunan asam tetronat dan tetramat",
+          "active_ingredients": [
+            "Spirotetramat"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-UN",
+      "moa_en": "Compounds of unknown or uncertain MoA",
+      "moa_id": "Senyawa dengan MoA belum diketahui atau belum pasti",
+      "physiology": "Tidak diketahui / non-spesifik",
+      "subgroups": [
+        {
+          "code": "N-UN",
+          "class_en": "Various chemistries",
+          "class_id": "Berbagai kimia",
+          "active_ingredients": [
+            "Furfural",
+            "Fluazaindolizine",
+            "Fluensulfone",
+            "Iprodione"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-UNX",
+      "moa_en": "Compounds of unknown or uncertain MoA: presumed multi-site inhibitor",
+      "moa_id": "MoA belum diketahui/belum pasti: diduga bekerja sebagai penghambat multisitus",
+      "physiology": "Tidak diketahui / non-spesifik",
+      "subgroups": [
+        {
+          "code": "N-UNX",
+          "class_en": "Volatile sulphur generator",
+          "class_id": "Penghasil sulfur volatil",
+          "active_ingredients": [
+            "Carbon disulfide",
+            "Dimethyl disulfide (DMDS)"
+          ]
+        },
+        {
+          "code": "N-UNX",
+          "class_en": "Carbon disulfide liberator",
+          "class_id": "Pelepas karbon disulfida",
+          "active_ingredients": [
+            "Sodium tetrathiocarbonate"
+          ]
+        },
+        {
+          "code": "N-UNX",
+          "class_en": "Alkyl halides",
+          "class_id": "Alkil halida",
+          "active_ingredients": [
+            "Methyl bromide",
+            "Methyl iodide (iodomethane)"
+          ]
+        },
+        {
+          "code": "N-UNX",
+          "class_en": "Halogenated hydrocarbon",
+          "class_id": "Hidrokarbon terhalogenasi",
+          "active_ingredients": [
+            "1,2-Dibromo-3-chloropropane (DBCP)",
+            "1,3-Dichloropropene",
+            "Ethylene dibromide"
+          ]
+        },
+        {
+          "code": "N-UNX",
+          "class_en": "Chloropicrin",
+          "class_id": "Kloropikrin",
+          "active_ingredients": [
+            "Chloropicrin"
+          ]
+        },
+        {
+          "code": "N-UNX",
+          "class_en": "Methyl isothiocyanate generator",
+          "class_id": "Penghasil metil isotiosianat",
+          "active_ingredients": [
+            "Dazomet",
+            "Metam potassium",
+            "Allyl isothiocyanate",
+            "Metam sodium"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-UNB",
+      "moa_en": "Bacterial agents (non-Bt) of unknown or uncertain MoA",
+      "moa_id": "Agen bakteri non-Bt dengan MoA belum diketahui/belum pasti",
+      "physiology": "Tidak diketahui / non-spesifik",
+      "subgroups": [
+        {
+          "code": "N-UNB",
+          "class_en": "Burkholderia spp.",
+          "class_id": "Burkholderia spp.",
+          "active_ingredients": [
+            "Burkholderia rinojensis A396"
+          ]
+        },
+        {
+          "code": "N-UNB",
+          "class_en": "Bacillus spp.",
+          "class_id": "Bacillus spp.",
+          "active_ingredients": [
+            "Bacillus firmus",
+            "Bacillus subtilis"
+          ]
+        },
+        {
+          "code": "N-UNB",
+          "class_en": "Streptomyces spp.",
+          "class_id": "Streptomyces spp.",
+          "active_ingredients": [
+            "Streptomyces lydicus",
+            "Streptomyces dicklowii",
+            "Streptomyces albogriseolus",
+            "Streptomyces strain SYM00257"
+          ]
+        },
+        {
+          "code": "N-UNB",
+          "class_en": "Pasteuria spp.",
+          "class_id": "Pasteuria spp.",
+          "active_ingredients": [
+            "Pasteuria penetrans",
+            "Pasteuria nishizawae"
+          ]
+        },
+        {
+          "code": "N-UNB",
+          "class_en": "Pseudomonas spp.",
+          "class_id": "Pseudomonas spp.",
+          "active_ingredients": [
+            "Pseudomonas chlororaphis",
+            "Pseudomonas fluorescens",
+            "Pseudomonas oryzihabitans strain SYM23945"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-UNF",
+      "moa_en": "Fungal agents of unknown or uncertain MoA",
+      "moa_id": "Agen jamur dengan MoA belum diketahui/belum pasti",
+      "physiology": "Tidak diketahui / non-spesifik",
+      "subgroups": [
+        {
+          "code": "N-UNF",
+          "class_en": "Arthrobotrys spp.",
+          "class_id": "Arthrobotrys spp.",
+          "active_ingredients": [
+            "Arthrobotrys oligospora"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Muscodor spp.",
+          "class_id": "Muscodor spp.",
+          "active_ingredients": [
+            "Muscodor albus"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Pochonia spp.",
+          "class_id": "Pochonia spp.",
+          "active_ingredients": [
+            "Pochonia chlamydosporia"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Myrothecium spp.",
+          "class_id": "Myrothecium spp.",
+          "active_ingredients": [
+            "Myrothecium verrucaria"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Paecilomyces spp.",
+          "class_id": "Paecilomyces spp.",
+          "active_ingredients": [
+            "Paecilomyces lilacinus (syn. Purpureocillium lilacinum)",
+            "Paecilomyces carneus",
+            "Paecilomyces fumosoroseus"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Actinomyces spp.",
+          "class_id": "Actinomyces spp.",
+          "active_ingredients": [
+            "Actinomyces streptococcus"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Trichoderma spp.",
+          "class_id": "Trichoderma spp.",
+          "active_ingredients": [
+            "Trichoderma harzianum",
+            "Trichoderma viride",
+            "Trichoderma atroviride"
+          ]
+        },
+        {
+          "code": "N-UNF",
+          "class_en": "Aspergillus spp.",
+          "class_id": "Aspergillus spp.",
+          "active_ingredients": [
+            "Aspergillus niger"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "N-UNE",
+      "moa_en": "Botanical or animal derived agents including synthetic, extracts and unrefined oils with unknown or uncertain MoA",
+      "moa_id": "Agen asal tumbuhan/hewan, ekstrak, atau minyak yang MoA-nya belum diketahui/belum pasti",
+      "physiology": "Tidak diketahui / non-spesifik",
+      "subgroups": [
+        {
+          "code": "N-UNE",
+          "class_en": "Azadirachtin",
+          "class_id": "Azadirachtin",
+          "active_ingredients": [
+            "Azadirachtin"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Quillaja saponaria extract",
+          "class_id": "Ekstrak Quillaja saponaria",
+          "active_ingredients": [
+            "Quillaja saponaria extract"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Camellia seed cake",
+          "class_id": "Bungkil biji Camellia",
+          "active_ingredients": [
+            "Camellia seed cake"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Terpenes",
+          "class_id": "Terpena",
+          "active_ingredients": [
+            "Carvacrol"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Chitin",
+          "class_id": "Kitin",
+          "active_ingredients": [
+            "Chitin"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Garlic extract",
+          "class_id": "Ekstrak bawang putih",
+          "active_ingredients": [
+            "Garlic extract"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Essential oils",
+          "class_id": "Minyak atsiri",
+          "active_ingredients": [
+            "Essential oils"
+          ]
+        },
+        {
+          "code": "N-UNE",
+          "class_en": "Pongamia oil",
+          "class_id": "Minyak Pongamia",
+          "active_ingredients": [
+            "Pongamia oil"
+          ]
+        }
+      ]
+    }
+  ]
+}

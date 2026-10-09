@@ -1,0 +1,102 @@
+{
+  "version": "2026.09",
+  "title": "Visual OPT Bawang Merah & Cabai",
+  "policy": "Foto organisme/gejala menggunakan sumber publik/berlisensi yang ditautkan; jika foto spesifik tidak tersedia dengan lisensi yang jelas, Crop Expert memakai ilustrasi AI yang diberi label eksplisit dan tidak boleh dianggap foto diagnostik.",
+  "real_photo_sources": [
+    {
+      "id": "thrips-tabaci",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Thrips_tabaci.jpg"
+    },
+    {
+      "id": "spodoptera-exigua",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Spodoptera_exigua.JPG"
+    },
+    {
+      "id": "agrotis-ipsilon",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Agrotis_ipsilon.jpg"
+    },
+    {
+      "id": "alternaria-porri",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Alternaria_porri.jpg"
+    },
+    {
+      "id": "onion-downy-mildew",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Peronospora_destructor.JPG"
+    },
+    {
+      "id": "botrytis-aclada",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Botryis_allii_a1.jpg"
+    },
+    {
+      "id": "bemisia-tabaci",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Bemisia_tabaci"
+    },
+    {
+      "id": "aphis-gossypii",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Aphis_gossypii.jpg"
+    },
+    {
+      "id": "helicoverpa-armigera",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Helicoverpa_armigera.png"
+    },
+    {
+      "id": "polyphagotarsonemus-latus",
+      "source": "Wikimedia Commons / USDA",
+      "url": "https://commons.wikimedia.org/wiki/File:Polyphagotarsonemus_latus,_USDA_BARC.jpg"
+    },
+    {
+      "id": "bactrocera-dorsalis",
+      "source": "Wikimedia Commons / USDA ARS",
+      "url": "https://commons.wikimedia.org/wiki/File:Bactrocera_dorsalis.jpg"
+    },
+    {
+      "id": "chili-phytophthora-capsici",
+      "source": "Wikimedia Commons / Bugwood",
+      "url": "https://commons.wikimedia.org/wiki/File:Capsicum_annuum_with_Phytophthora_capsici.jpg"
+    },
+    {
+      "id": "tomato-bacterial-wilt",
+      "source": "Wikimedia Commons / CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bacterial_wilt_of_pepper_(9159744719).jpg"
+    },
+    {
+      "id": "xanthomonas",
+      "source": "Wikimedia Commons / CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bacterial_leaf_spot_of_pepper_(Capsicum_sp.)_(43614805831).jpg"
+    },
+    {
+      "id": "pepylciv",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Kuning_cabai.JPG"
+    },
+    {
+      "id": "fusarium-cepae",
+      "source": "UC IPM",
+      "url": "https://ipm.ucanr.edu/PMG/F/D-OG-FOXC-FO.003.html"
+    },
+    {
+      "id": "thrips-parvispinus",
+      "source": "EPPO Global Database",
+      "url": "https://gd.eppo.int/taxon/THRIPV/photos"
+    },
+    {
+      "id": "onion-stemphylium",
+      "source": "Cornell / APS",
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/stemphylium-leaf-blight-of-onion/"
+    },
+    {
+      "id": "colletotrichum",
+      "source": "Plant pathology literature",
+      "url": "https://www.mdpi.com/2223-7747/13/5/728"
+    }
+  ]
+}

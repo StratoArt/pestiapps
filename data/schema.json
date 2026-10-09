@@ -1,0 +1,91 @@
+{
+  "version": "0.6",
+  "entities": {
+    "opt": [
+      "id",
+      "type",
+      "scientific_name",
+      "common_name",
+      "taxonomy",
+      "hosts",
+      "symptoms",
+      "life_cycle",
+      "images"
+    ],
+    "crop": [
+      "id",
+      "name",
+      "latin",
+      "aliases",
+      "opt_relations"
+    ],
+    "active_ingredient": [
+      "id",
+      "name",
+      "committee",
+      "moa_code",
+      "chemical_class",
+      "target_site",
+      "formulation_notes"
+    ],
+    "moa": [
+      "committee",
+      "code",
+      "mode_of_action",
+      "chemical_class",
+      "active_ingredients"
+    ],
+    "product": [
+      "id",
+      "brand",
+      "registrant",
+      "active_ingredients",
+      "formulation",
+      "concentration",
+      "registration"
+    ],
+    "resistance": [
+      "opt_id",
+      "committee",
+      "moa_code",
+      "risk",
+      "rotation_notes",
+      "source"
+    ],
+    "mixing": [
+      "component_a",
+      "component_b",
+      "compatibility",
+      "sequence",
+      "notes"
+    ],
+    "dose": [
+      "product_id",
+      "crop_id",
+      "opt_id",
+      "dose_low",
+      "dose_high",
+      "unit",
+      "water_volume",
+      "interval",
+      "max_applications",
+      "source"
+    ],
+    "area_calculation": [
+      "area",
+      "unit",
+      "water_volume",
+      "tank_capacity",
+      "product_dose",
+      "result"
+    ]
+  },
+  "planned_modules": [
+    "resistance-management",
+    "tank-mix-sequence",
+    "dose-calculator",
+    "area-calculator",
+    "product-label",
+    "offline-sync"
+  ]
+}
