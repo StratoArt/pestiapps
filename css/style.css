@@ -3609,7 +3609,7 @@ html,body,.app-shell{background:var(--bg);color:var(--ink)}
 #home .home-weather-empty button{background:#10384F;color:#fff;border:0;border-radius:10px;padding:9px 11px;font-weight:700}
 #home .home-food-price-row[hidden]{display:none!important}
 #home .home-category-section{background:transparent!important;border:0!important;box-shadow:none!important;margin:9px 0!important;overflow:visible!important}
-#home .home-category-section:not(.is-open) > :not(.home-category-title){display:none!important}
+/* Category contents are controlled by the stable v0.26 dashboard rules at the end of this file. */
 #home .home-category-title{min-height:72px!important;justify-content:flex-start!important;text-align:left!important;padding:13px 16px!important;gap:13px;border:1px solid #D9C7B0!important;border-radius:18px!important;background:#E6D2B5!important;box-shadow:0 4px 12px rgba(74,53,31,.05);cursor:pointer!important}
 #home .home-category-title>div{display:grid!important;grid-template-columns:42px minmax(0,1fr);grid-template-rows:auto auto;align-items:center;text-align:left!important;column-gap:12px;width:100%!important}
 #home .home-menu-icon{grid-row:1 / span 2;grid-column:1;display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#10384F;color:#fff;font-size:22px;box-shadow:0 4px 10px rgba(16,56,79,.16)}
@@ -3629,9 +3629,7 @@ html,body,.app-shell{background:var(--bg);color:var(--ink)}
 #home .feature-card small{color:#776A5A!important;font-size:10px!important;line-height:1.35}
 #home .feature-card i{color:#10384F!important}
 #home .feature-icon{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;border-radius:13px;background:rgba(255,255,255,.68);font-size:23px}
-#home .home-single-tool .home-single-tool-content{display:none!important}
-#home .home-single-tool.is-open .home-single-tool-content{display:block!important}
-#home .home-single-tool.is-open .home-single-tool-content .feature-card{width:100%}
+/* Single-tool visibility is defined once in the v0.26 dashboard rules below. */
 #home .home-utility-row{display:flex;justify-content:flex-end;margin:8px 0 12px}
 #home .home-utility-icon{width:78px;min-height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid #D9C7B0;border-radius:17px;background:#E6D2B5;color:#10384F;cursor:pointer;box-shadow:0 4px 12px rgba(74,53,31,.05)}
 #home .home-utility-icon span{font-size:23px}
@@ -3719,13 +3717,38 @@ html.dark .section-head{background:rgba(9,19,31,.96)!important;border-color:rgba
 #home .home-commodity-grid span{display:flex;flex-direction:column;gap:4px;min-width:0}
 #home .home-commodity-grid b{font-size:11px;line-height:1.25}
 #home .home-commodity-grid small{font-size:8px;color:#776A5A;line-height:1.3}
-/* The dashboard is no longer an accordion; keep all existing feature sections visible. */
-#home .home-category-section:not(.is-open)>:not(.home-category-title){display:initial!important}
-#home .home-category-section:not(.is-open)>.home-category-grid,#home .home-category-section:not(.is-open)>.home-feature-wide{display:grid!important}
-#home .home-category-section:not(.is-open)>.home-feature-wide{display:flex!important}
-#home .home-single-tool .home-single-tool-content{display:block!important;padding:12px!important;background:#FFF9F2;border:1px solid #E1D2BF;border-radius:15px}
+/* v0.26.0 CSS stabilization: one explicit dashboard visibility model. */
+#home .home-category-section > .home-category-grid{display:grid!important;min-width:0}
+#home .home-category-section > .home-feature-wide{display:flex!important;min-width:0}
+#home .home-category-section > .home-single-tool-content,
+#home .home-single-tool .home-single-tool-content{display:block!important;min-width:0;padding:12px!important;background:#FFF9F2;border:1px solid #E1D2BF;border-radius:15px}
 #home .home-category-title{cursor:default!important}
 #home .home-category-title::after{display:none!important}
+#home .home-category-grid,
+#home .home-feature-wide,
+#home .home-single-tool-content{min-width:0}
+#home .feature-card{min-width:0;overflow-wrap:anywhere}
+#home .feature-card span:nth-child(2){min-width:0}
+#home button:focus-visible,
+.bottom-nav button:focus-visible,
+.icon-button:focus-visible,
+.back-button:focus-visible{outline:3px solid #0092DF;outline-offset:3px}
+@media(max-width:520px){
+  #home .home-category-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #home .home-category-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #home .home-category-title{padding:12px!important;gap:10px!important}
+  #home .home-category-title>div{grid-template-columns:38px minmax(0,1fr);column-gap:10px}
+  #home .home-menu-icon{width:38px;height:38px;font-size:20px}
+  #home .home-category-title h2{font-size:14px!important}
+  #home .feature-card{padding:11px!important;gap:9px!important}
+}
+@media(max-width:360px){
+  #home .home-quick-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  #home .home-quick-grid button{min-height:82px}
+  #home .home-quick-grid button b{font-size:8px}
+  #home .home-commodity-grid button{gap:7px;padding:8px}
+  #home .home-commodity-grid img{width:48px;height:48px;flex-basis:48px}
+}
 html.dark #home .home-location{background:#112438;border-color:rgba(53,214,255,.18)}
 html.dark #home .home-location-pin{background:#B4FF39;color:#09131F}
 html.dark #home .home-location-copy small,html.dark #home .home-location-copy span{color:#A9C1D0}
