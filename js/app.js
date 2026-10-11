@@ -9,19 +9,54 @@ const ID_MOA={
 'Inhibition of Acetyl CoA Carboxylase (ACCase)':'Penghambatan asetil-KoA karboksilase (ACCase)','Inhibition of Acetolactate Synthase (ALS)':'Penghambatan asetolaktat sintase (ALS)','Inhibition of Microtubule Assembly / α-Tubulin':'Penghambatan pembentukan mikrotubulus / α-tubulin','Auxin Mimics':'Mimetik auksin','Inhibition of Photosynthesis at PS II – D1 Serine 264 binders':'Penghambatan fotosintesis PS II – pengikat D1 Serin 264','Inhibition of Photosynthesis at PS II – D1 Histidine 215 binders':'Penghambatan fotosintesis PS II – pengikat D1 Histidin 215','Inhibition of EPSPS':'Penghambatan EPSPS','Inhibition of Glutamine Synthetase (GS)':'Penghambatan glutamin sintetase (GS)','Inhibition of Phytoene Desaturase (PDS)':'Penghambatan fitoena desaturase (PDS)','Inhibition of Deoxy-D-Xylulose Phosphate Synthase (DXPS)':'Penghambatan deoksi-D-xilulosa fosfat sintase (DXPS)','Inhibition of Protoporphyrinogen Oxidase (PPO)':'Penghambatan protoporfirinogen oksidase (PPO)','Inhibition of Very Long-Chain Fatty Acid Synthesis (VLCFA)':'Penghambatan sintesis asam lemak rantai sangat panjang (VLCFA)','Inhibition of Dihydropteroate Synthase (DHPS)':'Penghambatan dihidropteroat sintase (DHPS)','Auxin Transport Inhibitors':'Penghambat transport auksin','PS I Electron Diversion':'Pengalihan elektron PSI','Microtubule Interference – Unclear Site of Action':'Gangguan mikrotubulus – situs kerja belum jelas','Inhibition of Hydroxyphenyl Pyruvate Dioxygenase (HPPD)':'Penghambatan hidroksifenil piruvat dioksigenase (HPPD)','Inhibition of Dihydroorotate Dehydrogenase (DHODH)':'Penghambatan dihidroorotat dehidrogenase (DHODH)','Inhibition of Cellulose Synthesis':'Penghambatan sintesis selulosa','Inhibition of Fatty Acid Thioesterase (FAT)':'Penghambatan fatty acid thioesterase (FAT)','Inhibition of Solanesyl Diphosphate Synthase (SDPS)':'Penghambatan solanesil difosfat sintase (SDPS)','Inhibition of Homogentisate Solanesyltransferase (HST)':'Penghambatan homogentisat solanesiltransferase (HST)','Unknown Mode of Action':'Mekanisme kerja belum diketahui'};
 const moaLabel=x=>ID_MOA[x]||x;
 
+async function jsonOr(path, fallback){
+  // Data Center sebagai sumber utama untuk data OPT.
+  if(path === 'data/opt.json' && window.DataCenterCompat?.getOPT){
+    try{
+      const dc = await window.DataCenterCompat.getOPT();
 
-async function jsonOr(path,fallback){
+      const hasData = ['pests', 'diseases', 'weeds'].some(
+        key => Array.isArray(dc?.[key]) && dc[key].length > 0
+      );
+
+      if(hasData){
+        // Jika satu kategori kosong, gunakan kategori lokal
+        // sebagai fallback tanpa mengganti kategori DC yang tersedia.
+        const response = await fetch(path, {cache:'no-cache'});
+
+        if(response.ok){
+          const local = await response.json();
+
+          return {
+            ...local,
+            ...dc,
+            pests: dc.pests?.length ? dc.pests : (local.pests || []),
+            diseases: dc.diseases?.length ? dc.diseases : (local.diseases || []),
+            weeds: dc.weeds?.length ? dc.weeds : (local.weeds || []),
+            crops: dc.crops?.length ? dc.crops : (local.crops || [])
+          };
+        }
+
+        return dc;
+      }
+
+      console.warn('[Data Center] Data OPT kosong, mencoba data lokal.');
+    }catch(err){
+      console.warn('[Data Center] Gagal memuat OPT:', err);
+    }
+  }
+
+  // Fallback untuk OPT maupun file lokal lainnya.
   try{
-    if(path==="data/opt.json" && window.DataCenterCompat?.getOPT){
-      console.info("[Data Center] Memuat OPT dari Data Center");
-      return await window.DataCenterCompat.getOPT();
+    const response = await fetch(path, {cache:'no-cache'});
+
+    if(!response.ok){
+      throw new Error(`${response.status} ${path}`);
     }
 
-    const r=await fetch(path,{cache:'no-cache'});
-    if(!r.ok) throw new Error(`${r.status} ${path}`);
-    return await r.json();
+    return await response.json();
   }catch(err){
-    console.warn('[Crop Expert] Data tidak tersedia:',path,err);
+    console.warn('[Crop Expert] Data tidak tersedia:', path, err);
     return fallback;
   }
 }
