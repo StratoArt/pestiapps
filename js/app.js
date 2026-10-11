@@ -9,6 +9,7 @@ const ID_MOA={
 'Inhibition of Acetyl CoA Carboxylase (ACCase)':'Penghambatan asetil-KoA karboksilase (ACCase)','Inhibition of Acetolactate Synthase (ALS)':'Penghambatan asetolaktat sintase (ALS)','Inhibition of Microtubule Assembly / α-Tubulin':'Penghambatan pembentukan mikrotubulus / α-tubulin','Auxin Mimics':'Mimetik auksin','Inhibition of Photosynthesis at PS II – D1 Serine 264 binders':'Penghambatan fotosintesis PS II – pengikat D1 Serin 264','Inhibition of Photosynthesis at PS II – D1 Histidine 215 binders':'Penghambatan fotosintesis PS II – pengikat D1 Histidin 215','Inhibition of EPSPS':'Penghambatan EPSPS','Inhibition of Glutamine Synthetase (GS)':'Penghambatan glutamin sintetase (GS)','Inhibition of Phytoene Desaturase (PDS)':'Penghambatan fitoena desaturase (PDS)','Inhibition of Deoxy-D-Xylulose Phosphate Synthase (DXPS)':'Penghambatan deoksi-D-xilulosa fosfat sintase (DXPS)','Inhibition of Protoporphyrinogen Oxidase (PPO)':'Penghambatan protoporfirinogen oksidase (PPO)','Inhibition of Very Long-Chain Fatty Acid Synthesis (VLCFA)':'Penghambatan sintesis asam lemak rantai sangat panjang (VLCFA)','Inhibition of Dihydropteroate Synthase (DHPS)':'Penghambatan dihidropteroat sintase (DHPS)','Auxin Transport Inhibitors':'Penghambat transport auksin','PS I Electron Diversion':'Pengalihan elektron PSI','Microtubule Interference – Unclear Site of Action':'Gangguan mikrotubulus – situs kerja belum jelas','Inhibition of Hydroxyphenyl Pyruvate Dioxygenase (HPPD)':'Penghambatan hidroksifenil piruvat dioksigenase (HPPD)','Inhibition of Dihydroorotate Dehydrogenase (DHODH)':'Penghambatan dihidroorotat dehidrogenase (DHODH)','Inhibition of Cellulose Synthesis':'Penghambatan sintesis selulosa','Inhibition of Fatty Acid Thioesterase (FAT)':'Penghambatan fatty acid thioesterase (FAT)','Inhibition of Solanesyl Diphosphate Synthase (SDPS)':'Penghambatan solanesil difosfat sintase (SDPS)','Inhibition of Homogentisate Solanesyltransferase (HST)':'Penghambatan homogentisat solanesiltransferase (HST)','Unknown Mode of Action':'Mekanisme kerja belum diketahui'};
 const moaLabel=x=>ID_MOA[x]||x;
 
+
 async function jsonOr(path, fallback){
   // Data Center sebagai sumber utama untuk data OPT.
   if(path === 'data/opt.json' && window.DataCenterCompat?.getOPT){
@@ -21,7 +22,7 @@ async function jsonOr(path, fallback){
 
       if(hasData){
         // Jika satu kategori kosong, gunakan kategori lokal
-        // sebagai fallback tanpa mengganti kategori DC yang tersedia.
+        // sebagai fallback tanpa mengganti kategori Data Center yang tersedia.
         const response = await fetch(path, {cache:'no-cache'});
 
         if(response.ok){
@@ -1024,6 +1025,64 @@ function showScreen(id,opts={}){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function setCommittee(c){state.committee=c;state.moaView='ai';state.group='ALL';state.search='';$('#search').value='';$$('.committee-tabs button').forEach(x=>x.classList.toggle('active',x.dataset.c===c));render()}
+
+// Pencarian global di beranda: OPT, produk, bahan aktif/MoA, dan komoditas.
+const homeSearchInput = $('#homeGlobalSearch');
+const homeSearchResults = $('#homeSearchResults');
+let currentHomeSearchItems = [];
+function buildHomeSearchItems(query){
+  const q=normalizeText(query);
+  const out=[];
+  const add=(label,detail,screen,term,field,record=null,kind='')=>{ if(label && normalizeText(`${label} ${detail}`).includes(q)) out.push({label,detail,screen,term,field,record,kind}); };
+  (state.opt?.pests||[]).forEach(x=>add(x.name,x.common||x.scientific_name||'Hama','pests',x.name,'opt',x,'Hama'));
+  (state.opt?.diseases||[]).forEach(x=>add(x.name,x.common||x.scientific_name||'Penyakit','disease',x.name,'opt',x,'Penyakit'));
+  (state.opt?.weeds||[]).forEach(x=>add(x.name,x.common||x.scientific_name||'Gulma','weed',x.name,'opt',x,'Gulma'));
+  pesticideRecords().forEach(x=>add(x['Nama Merk'],`${x['Bahan Aktif']||''} · ${x['Perusahaan']||''}`,'pesticides',x['Nama Merk'],'pesticide',x));
+  ['IRAC','FRAC','HRAC'].forEach(c=>{
+    (state.data?.records?.[c]||[]).forEach(r=>add(r[2],`${c} ${r[1]} · ${r[4]||''} · ${r[5]||''}`,'explore',r[5]||r[2],'moa'));
+  });
+  (state.formulations?.items||[]).forEach(x=>add(x.name||x.code||x.formulation,x.description||'Formulasi pestisida','formulations',x.name||x.code||'','formulation'));
+  ['Padi','Bawang Merah','Cabai','Kubis','Jagung','Tomat','Kentang','Anggur','Sawi','Brokoli'].forEach(c=>add(c,'Komoditas tanaman','crop-guidelines',c,'crop'));
+  return out.slice(0,8);
+}
+function renderHomeSearch(){
+  const q=homeSearchInput?.value.trim()||'';
+  if(!homeSearchResults)return;
+  if(q.length<2){homeSearchResults.hidden=true;homeSearchResults.innerHTML='';currentHomeSearchItems=[];return;}
+  currentHomeSearchItems=buildHomeSearchItems(q);
+  homeSearchResults.innerHTML=currentHomeSearchItems.length?currentHomeSearchItems.map((x,i)=>`<button type="button" role="option" class="home-search-result" data-home-result="${i}"><strong>${esc(x.label)}</strong><small>${esc(x.detail)}</small></button>`).join(''):'<div class="home-search-empty">Tidak ada hasil yang cocok.</div>';
+  homeSearchResults.hidden=false;
+}
+function openHomeSearchItem(index){
+  const item=currentHomeSearchItems[index];if(!item)return;
+  homeSearchResults.hidden=true;
+  if(item.field==='opt' && item.record){openOptDetail(item.record,item.kind);return;}
+  if(item.field==='pesticide' && item.record){openPesticideDetail(item.record);return;}
+  showScreen(item.screen);
+  const input=item.field==='pesticide'?$('#pesticideSearch'):item.field==='moa'?$('#search'):item.field==='formulation'?$('#formulationSearch'):item.field==='crop'?$('#cropGuidelineSearch'):item.field==='opt'?$('#optSearch'):null;
+  if(input){
+    input.value=item.term;
+    input.dispatchEvent(new Event('input',{bubbles:true}));
+    input.focus({preventScroll:true});
+  }
+}
+if(homeSearchInput){
+  homeSearchInput.addEventListener('input',renderHomeSearch);
+  homeSearchInput.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){homeSearchResults.hidden=true;return;}
+    if(e.key==='Enter'){
+      e.preventDefault();
+      if(currentHomeSearchItems[0]) openHomeSearchItem(0);
+      else if(homeSearchInput.value.trim()){showScreen('types');$('#optSearch').value=homeSearchInput.value.trim();$('#optSearch').dispatchEvent(new Event('input',{bubbles:true}));}
+    }
+  });
+  homeSearchResults?.addEventListener('click',e=>{
+    const b=e.target.closest('[data-home-result]');
+    if(b)openHomeSearchItem(Number(b.dataset.homeResult));
+  });
+  document.addEventListener('click',e=>{if(!e.target.closest('.hero-search-wrap'))homeSearchResults.hidden=true;});
+}
+
 $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
   if(b.dataset.committee)setCommittee(b.dataset.committee);
   if(b.classList.contains('back-button') && state.historyReady && history.length>1){ history.back(); return; }

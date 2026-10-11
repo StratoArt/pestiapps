@@ -48,15 +48,14 @@
         <button type="button" id="homeLocationBtn" aria-label="Gunakan lokasi perangkat">GPS</button>
       </div>
 
-      <button class="hero-search"
-              data-go="types"
-              type="button">
-        <span>⌕</span>
-        <span class="placeholder">
-          Cari OPT, tanaman, atau bahan aktif...
-        </span>
-        <b>⌗</b>
-      </button>
+      <div class="hero-search-wrap">
+        <label class="hero-search" for="homeGlobalSearch">
+          <span aria-hidden="true">⌕</span>
+          <input id="homeGlobalSearch" type="search" placeholder="Cari OPT, tanaman, atau bahan aktif..." autocomplete="off" aria-label="Cari OPT, tanaman, produk, atau bahan aktif">
+          <kbd aria-hidden="true">↵</kbd>
+        </label>
+        <div id="homeSearchResults" class="home-search-results" role="listbox" aria-label="Hasil pencarian" hidden></div>
+      </div>
 
       <div class="home-weather-row" aria-label="Ringkasan cuaca lokal">
         <div id="homeWeatherPanel" class="home-weather-card">
@@ -94,16 +93,19 @@
 
 
   <section class="home-quick-section" aria-labelledby="quickTitle">
-    <div class="home-section-heading"><div><small>JALUR CEPAT</small><h2 id="quickTitle">Akses Cepat</h2></div><span>Semua tools utama</span></div>
+    <div class="home-section-heading">
+      <div><small>JALUR CEPAT</small><h2 id="quickTitle">Akses Cepat</h2></div>
+      <button class="home-all-tools" type="button" data-go="menu">Semua tools utama <span aria-hidden="true">›</span></button>
+    </div>
     <div class="home-quick-grid">
-      <button data-go="pests"><span>🐛</span><b>Hama</b></button>
-      <button data-go="disease"><span>🦠</span><b>Penyakit</b></button>
-      <button data-go="weed"><span>🌿</span><b>Gulma</b></button>
-      <button data-go="pesticides"><span>🧴</span><b>Pestisida</b></button>
-      <button data-go="nutrition"><span>🌱</span><b>Panduan Hara</b></button>
-      <button data-go="crop-guidelines"><span>🌾</span><b>Crop Guideline</b></button>
-      <button data-go="calculators"><span>🧮</span><b>Kalkulator</b></button>
-      <button data-go="stewardship"><span>🛡️</span><b>Stewardship</b></button>
+      <button type="button" data-go="pests"><span>🐛</span><b>Hama</b></button>
+      <button type="button" data-go="disease"><span>🦠</span><b>Penyakit</b></button>
+      <button type="button" data-go="weed"><span>🌿</span><b>Gulma</b></button>
+      <button type="button" data-go="explore" data-committee="IRAC"><span>🧫</span><b>MoA Explorer</b></button>
+      <button type="button" data-go="pesticides"><span>🧴</span><b>Pestisida</b></button>
+      <button type="button" data-go="nutrition"><span>🌱</span><b>Panduan Hara</b></button>
+      <button type="button" data-go="crop-guidelines"><span>🌾</span><b>Crop Guideline</b></button>
+      <button type="button" data-go="calculators"><span>🧮</span><b>Kalkulator</b></button>
     </div>
   </section>
 
@@ -119,322 +121,7 @@
     </div>
   </section>
 
-  <!-- =====================================================
-       HAMA & PENYAKIT TANAMAN
-       ===================================================== -->
-
-  <section class="home-category-section">
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🐛</span><span class="home-category-kicker">PENGETAHUAN OPT</span>
-        <h2>Hama &amp; Penyakit Tanaman</h2>
-      </div>
-    </div>
-
-    <div class="home-category-grid three">
-
-      <button class="feature-card green"
-              data-go="pests"
-              type="button">
-        <span class="feature-icon">🐛</span>
-        <span>
-          <strong>Hama</strong>
-          <small>Insect · Mite · Nematode</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card coral"
-              data-go="disease"
-              type="button">
-        <span class="feature-icon">🦠</span>
-        <span>
-          <strong>Penyakit</strong>
-          <small>Fungi · Bacteria · Virus</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card grass"
-              data-go="weed"
-              type="button">
-        <span class="feature-icon">🌿</span>
-        <span>
-          <strong>Gulma</strong>
-          <small>Grass · Broadleaf · Sedge</small>
-        </span>
-        <i>›</i>
-      </button>
-
-    </div>
-  </section>
-
-
-  <!-- =====================================================
-       DATABASE PESTISIDA
-       ===================================================== -->
-
-  <section class="home-category-section">
-
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🧴</span><span class="home-category-kicker">DATABASE</span>
-        <h2>Database Pestisida</h2>
-      </div>
-    </div>
-
-    <button class="feature-card blue home-feature-wide"
-            data-go="pesticides"
-            type="button">
-      <span class="feature-icon">🧴</span>
-      <span>
-        <strong>Pestisida</strong>
-        <small>Produk · Bahan Aktif · Sasaran · MoA</small>
-      </span>
-      <i>›</i>
-    </button>
-
-  </section>
-
-
-  <!-- BAHAN AKTIF PESTISIDA -->
-  <section class="home-category-section home-single-tool">
-    <div class="home-category-title">
-      <div><span class="home-menu-icon" aria-hidden="true">🧫</span><span class="home-category-kicker">KLASIFIKASI MoA</span><h2>Bahan Aktif Pestisida</h2></div>
-    </div>
-    <div class="home-single-tool-content">
-      <button class="feature-card blue home-feature-wide" data-go="explore" type="button">
-        <span class="feature-icon">🧫</span><span><strong>Bahan Aktif Pestisida</strong><small>IRAC · FRAC · HRAC · kelompok MoA</small></span><i>›</i>
-      </button>
-    </div>
-  </section>
-
-  <!-- =====================================================
-       TENTANG PESTISIDA
-       ===================================================== -->
-
-  <section class="home-category-section">
-
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🧪</span><span class="home-category-kicker">PENGETAHUAN</span>
-        <h2>Tentang Pestisida</h2>
-      </div>
-    </div>
-
-    <div class="home-category-grid three">
-
-      <button class="feature-card teal"
-              data-go="formulations"
-              type="button">
-        <span class="feature-icon">🧪</span>
-        <span>
-          <strong>Formulasi Pestisida</strong>
-          <small>SC · EC · WP · WG · SL · lainnya</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card blue moa-guide-card"
-              data-go="pesticide-moa"
-              type="button">
-        <span class="feature-icon">⚗️</span>
-        <span>
-          <strong>Cara Kerja Pestisida</strong>
-          <small>Insektisida · Fungisida · Herbisida</small>
-        </span>
-        <i>›</i>
-      </button>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       KALKULATOR PERTANIAN
-       ===================================================== -->
-
-  <section class="home-category-section">
-
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🧮</span><span class="home-category-kicker">TOOLS</span>
-        <h2>Kalkulator Pertanian</h2>
-      </div>
-    </div>
-
-    <button class="feature-card amber home-feature-wide"
-            data-go="calculators"
-            type="button">
-      <span class="feature-icon">🧮</span>
-      <span>
-        <strong>Calculator Suite</strong>
-        <small>Dosis · Area · Spray · Kalibrasi · seluruh kalkulator</small>
-      </span>
-      <i>›</i>
-    </button>
-
-  </section>
-
-
-  <!-- PANDUAN HARA TANAMAN -->
-  <section class="home-category-section home-single-tool">
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🌱</span>
-        <span class="home-category-kicker">NUTRISI TANAMAN</span>
-        <h2>Panduan Hara Tanaman</h2>
-      </div>
-    </div>
-    <div class="home-single-tool-content">
-      <button class="feature-card green home-feature-wide" data-go="nutrition" type="button">
-        <span class="feature-icon">🌱</span><span><strong>Panduan Hara Tanaman</strong><small>Fungsi hara · sumber pupuk · biostimulan · PGR</small></span><i>›</i>
-      </button>
-    </div>
-  </section>
-
-  <!-- CROP GUIDELINE -->
-  <section class="home-category-section home-single-tool">
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🌾</span>
-        <span class="home-category-kicker">PANDUAN BUDIDAYA</span>
-        <h2>Crop Guideline</h2>
-      </div>
-    </div>
-    <div class="home-single-tool-content">
-      <button class="feature-card teal home-feature-wide" data-go="crop-guidelines" type="button">
-        <span class="feature-icon">🌾</span><span><strong>Crop Guideline</strong><small>Fase · nutrisi · diagnosis · budidaya</small></span><i>›</i>
-      </button>
-    </div>
-  </section>
-
-  <!-- =====================================================
-       ILMU TANAH
-       ===================================================== -->
-
-  <section class="home-category-section">
-
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🌱</span><span class="home-category-kicker">DASAR KESUBURAN TANAH</span>
-        <h2>Ilmu Tanah</h2>
-      </div>
-    </div>
-
-    <div class="home-category-grid">
-
-      <button class="feature-card green" data-go="soil" type="button">
-        <span class="feature-icon">🌱</span>
-        <span>
-          <strong>Kesuburan Tanah</strong>
-          <small>Konsep dan faktor pembatas kesuburan tanah</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card green" data-go="soil" type="button">
-        <span class="feature-icon">🧬</span>
-        <span>
-          <strong>Hara Esensial</strong>
-          <small>Unsur esensial dan fungsi hara tanaman</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card teal" data-go="soil" type="button">
-        <span class="feature-icon">💧</span>
-        <span>
-          <strong>Serapan Hara</strong>
-          <small>Intersepsi akar · aliran massa · difusi</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card blue" data-go="soil" type="button">
-        <span class="feature-icon">🪨</span>
-        <span>
-          <strong>Sumber Hara</strong>
-          <small>Mineral · organik · biologis · air hujan</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card green" data-go="soil" type="button">
-        <span class="feature-icon">⚖️</span>
-        <span>
-          <strong>Fungsi &amp; Neraca Hara</strong>
-          <small>Fungsi · status · interaksi · gejala</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card amber" data-go="soil" type="button">
-        <span class="feature-icon">🧪</span>
-        <span>
-          <strong>Pupuk</strong>
-          <small>Pupuk mineral dan sumber bahan organik</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card coral" data-go="soil" type="button">
-        <span class="feature-icon">🧂</span>
-        <span>
-          <strong>Kegaraman Tanah</strong>
-          <small>Garam · tekanan osmotik · respons tanaman</small>
-        </span>
-        <i>›</i>
-      </button>
-
-      <button class="feature-card teal" data-go="soil" type="button">
-        <span class="feature-icon">🌾</span>
-        <span>
-          <strong>Pemupukan</strong>
-          <small>Analisis tanah · tanaman · efisiensi hara</small>
-        </span>
-        <i>›</i>
-      </button>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       STEWARDSHIP
-       ===================================================== -->
-
-  <section class="home-category-section">
-
-    <div class="home-category-title">
-      <div>
-        <span class="home-menu-icon" aria-hidden="true">🛡️</span><span class="home-category-kicker">PENGGUNAAN YANG BERTANGGUNG JAWAB</span>
-        <h2>Stewardship</h2>
-      </div>
-    </div>
-
-    <button class="feature-card green stewardship-card home-feature-wide"
-            data-go="stewardship"
-            type="button">
-      <span class="feature-icon">🛡️</span>
-      <span>
-        <strong>Stewardship</strong>
-        <small>6 Tepat · APD · Resistance Management</small>
-      </span>
-      <i>›</i>
-    </button>
-
-  </section>
-
-  <div class="home-utility-row" aria-label="Menu tambahan">
-    <button class="home-utility-icon" data-go="food-prices" type="button" aria-label="Harga Pangan" title="Harga Pangan">
-      <span aria-hidden="true">📊</span>
-    </button>
-  </div>
-
-  <!-- HARGA PANGAN DETAIL SCREEN IS PRESERVED BELOW -->
+    <!-- Tools utama tersedia di Akses Cepat; daftar kategori berulang di dashboard dihilangkan. -->
 
   <div class="stats-card">
     <div>
