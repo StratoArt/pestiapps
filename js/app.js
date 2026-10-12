@@ -631,10 +631,12 @@ function openPesticideDetail(p){
   }));
 }
 function pesticideBlock(x){
-  if(!state.pesticides)return '';
-  const ids=[];
-  const all=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];
-  const p=state.pesticides.records.filter(v=>(v.linked_opt_ids||[]).includes(x.id));
+  // Pestisida terkait bersifat opsional; detail OPT tetap harus terbuka
+  // jika dataset produk belum tersedia atau format records belum valid.
+  const records=Array.isArray(state.pesticides?.records)
+    ? state.pesticides.records
+    : [];
+  const p=records.filter(v=>Array.isArray(v.linked_opt_ids) && v.linked_opt_ids.includes(x.id));
   if(!p.length)return '';
   return `<h3>Produk dalam Database Pestisida</h3>
     <p class="source-note">Ditautkan dari kecocokan sasaran pada dataset produk. Bukan rekomendasi penggunaan dan bukan validasi label.</p>
