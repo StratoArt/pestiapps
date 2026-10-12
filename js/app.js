@@ -330,8 +330,7 @@ function renderTypes(){
     return;
   }else{
     $('#typeGrid').innerHTML=source.map(x=>`<button class="type-card" data-go-list="${esc(x.id)}"><img src="assets/opt/${esc(x.icon)}"><strong>${esc(x.name)}</strong><small>${esc(x.common)}</small><i>›</i></button>`).join('');
-    $$( '.type-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
-    $$(".type-card").forEach(b=>b.addEventListener("click",()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
+    $$('.type-card').forEach(b=>b.addEventListener('click',()=>openOptDetail(source.find(x=>x.id===b.dataset.goList),type)));
   }
 }
 function renderPestTabs(){
@@ -632,10 +631,12 @@ function openPesticideDetail(p){
   }));
 }
 function pesticideBlock(x){
-  if(!state.pesticides)return '';
-  const ids=[];
-  const all=[...(state.opt?.pests||[]),...(state.opt?.diseases||[]),...(state.opt?.weeds||[])];
-  const p=state.pesticides.records.filter(v=>(v.linked_opt_ids||[]).includes(x.id));
+  // Pestisida terkait bersifat opsional; detail OPT tetap harus terbuka
+  // jika dataset produk belum tersedia atau format records belum valid.
+  const records=Array.isArray(state.pesticides?.records)
+    ? state.pesticides.records
+    : [];
+  const p=records.filter(v=>Array.isArray(v.linked_opt_ids) && v.linked_opt_ids.includes(x.id));
   if(!p.length)return '';
   return `<h3>Produk dalam Database Pestisida</h3>
     <p class="source-note">Ditautkan dari kecocokan sasaran pada dataset produk. Bukan rekomendasi penggunaan dan bukan validasi label.</p>
@@ -1085,9 +1086,22 @@ if(homeSearchInput){
 
 $$('[data-go]').forEach(b=>b.addEventListener('click',()=>{
   if(b.dataset.committee)setCommittee(b.dataset.committee);
-  if(b.classList.contains('back-button') && state.historyReady && history.length>1){ history.back(); return; }
+  if(b.classList.contains('back-button')){
+    showScreen(b.dataset.go,{history:false});
+    if(state.historyReady && !state.historyLock) history.replaceState({...navState(),screen:b.dataset.go},'',location.href);
+    return;
+  }
   showScreen(b.dataset.go);
 }));
+
+// Dashboard commodity cards open only the selected crop. 'Lihat semua' remains the list entry point.
+$$('.home-commodity-grid button[data-crop-name]').forEach(b=>b.addEventListener('click',()=>{
+  const wanted=normalizeText(b.dataset.cropName);
+  const crop=(state.opt?.crops||[]).find(c=>normalizeText(c.name)===wanted || normalizeText(c.name).includes(wanted) || wanted.includes(normalizeText(c.name)));
+  if(crop) openCropDetail(crop);
+  else { showScreen('crop-guidelines'); const input=$('#cropGuidelineSearch'); if(input){input.value=b.dataset.cropName;renderCropGuidelines();} }
+}));
+
 $$('.committee-tabs button').forEach(b=>b.addEventListener('click',()=>setCommittee(b.dataset.c)));
 $$('.mini-tabs button[data-type]').forEach(b=>b.addEventListener('click',()=>{state.type=b.dataset.type;$$('.mini-tabs button[data-type]').forEach(x=>x.classList.toggle('active',x===b));renderTypes()}));
 $$('#diseaseTabs button[data-disease-filter]').forEach(b=>b.addEventListener('click',()=>{state.diseaseFilter=b.dataset.diseaseFilter;renderDiseases()})); $$('#weedTabs button[data-weed-filter]').forEach(b=>b.addEventListener('click',()=>{state.weedFilter=b.dataset.weedFilter;renderWeeds()}));
