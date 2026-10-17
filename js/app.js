@@ -21,6 +21,7 @@ async function jsonOr(path, fallback){
       );
 
       if(hasData){
+        window.__optSource='Data Center';
         // Jika satu kategori kosong, gunakan kategori lokal
         // sebagai fallback tanpa mengganti kategori Data Center yang tersedia.
         const response = await fetch(path, {cache:'no-cache'});
@@ -48,6 +49,7 @@ async function jsonOr(path, fallback){
   }
 
   // Fallback untuk OPT maupun file lokal lainnya.
+  if(path === 'data/opt.json') window.__optSource='lokal (Data Center gagal/kosong)';
   try{
     const response = await fetch(path, {cache:'no-cache'});
 
@@ -304,21 +306,34 @@ function handlePopState(e){
 }
 window.addEventListener('popstate',handlePopState);
 
+function optMediaSrc(img){
+  if(!img) return '';
+  if(img.remote_url) return img.remote_url;
+  const path=img.local_path || img.url || '';
+  if(!path) return '';
+  if(/^https?:\/\//i.test(path) || path.startsWith('data:')) return path;
+  // Data Center owns canonical OPT media. Resolve relative paths against it,
+  // including legacy assets/opt/photos paths retained in older records.
+  if(window.DataCenterCompat && typeof window.DataCenterCompat.resolveMediaPath==='function'){
+    return window.DataCenterCompat.resolveMediaPath(path);
+  }
+  return path;
+}
 function photoBlock(x){
-  const imgs=(x.images||[]).filter(img=>img && (img.local_path||img.remote_url));
+  const imgs=(x.images||[]).filter(img=>img && (img.local_path||img.remote_url||img.url));
   if(!imgs.length) return '';
   return `<section class="media-gallery"><div class="media-gallery-head"><div><span class="eyebrow">VISUAL REFERENSI</span><h3>Foto & ilustrasi OPT</h3></div><span>${imgs.length} aset</span></div><div class="media-gallery-grid">${imgs.map((img,i)=>{
-    const src=img.local_path || img.remote_url;
+    const src=optMediaSrc(img);
     const label=img.stage==='imago'?'Foto imago':img.stage==='larva'?'Foto larva':img.stage==='gejala'?'Foto gejala':img.image_type==='lifecycle'?'Siklus hidup':img.image_type==='species_reference'?'Tabel spesies / inang':img.image_type==='organism'?'Foto organisme':img.image_type==='symptom_reference'?'Foto gejala':img.image_type==='ai_illustration'?'Ilustrasi AI':'Referensi visual';
     const link=img.source_url?`<a href="${esc(img.source_url)}" target="_blank" rel="noopener">Sumber ↗</a>`:'';
-    return `<article class="media-card"><div class="media-image"><img src="${esc(src)}" alt="${esc(label)} ${esc(x.name)}" loading="lazy" onerror="this.closest('.media-card').classList.add('media-error')"><div class="media-fallback"><img src="assets/opt/${esc(x.icon || 'category-pest.svg')}" alt=""><span>Visual tidak tersedia offline</span></div></div><div class="media-caption"><strong>${esc(label)}</strong><small>${esc(img.notes||img.attribution||'Referensi visual')}</small>${link}</div></article>`;
+    return `<article class="media-card"><div class="media-image"><img src="${esc(src)}" alt="${esc(label)} ${esc(x.name)}" loading="lazy" onerror="this.closest('.media-card').classList.add('media-error')"><div class="media-fallback"><img src="assets/opt/${esc(x.icon || 'category-pest.svg')}" alt=""><span>Visual tidak tersedia offline</span><small class="media-debug" style="display:block;margin-top:6px;font-size:10px;line-height:1.3;word-break:break-all;opacity:.65">${esc(src)}<br>data: ${esc(window.__optSource||'?')}</small></div></div><div class="media-caption"><strong>${esc(label)}</strong><small>${esc(img.notes||img.attribution||'Referensi visual')}</small>${link}</div></article>`;
   }).join('')}</div></section>`;
 }
 function photoThumb(x){
-  const imgs=(x.images||[]).filter(img=>img && (img.local_path||img.remote_url));
+  const imgs=(x.images||[]).filter(img=>img && (img.local_path||img.remote_url||img.url));
   const img=imgs.find(img=>img.stage==='larva') || imgs[0];
   if(!img) return `<img src="assets/opt/${esc(x.icon || 'category-pest.svg')}" alt="">`;
-  const src=img.local_path || img.remote_url;
+  const src=optMediaSrc(img);
   return `<div class="thumb-photo"><img src="${esc(src)}" alt="${esc(img.stage==='larva'?'Foto larva':x.name)}" loading="lazy" onerror="this.parentElement.classList.add('photo-error')"><div class="thumb-fallback"><img src="assets/opt/${esc(x.icon || 'category-pest.svg')}" alt=""></div></div>`;
 }
 
